@@ -1,0 +1,1 @@
+docs/lab/J-4107_hand_labels.json (53 labels, scored against docs/lab/J-4107_hand_key.json: real 25/40 YES, ctrl 1/13 YES); docs/lab/J-4107_granite.json (ctrl 40/40 score>=4, real 40/40); docs/reviews/J-3312_draft_keyed_second_recall_replay.md section 5c. Du and live data untouched (read-only on docs/lab/J-4045_sample.json, no Du imports).

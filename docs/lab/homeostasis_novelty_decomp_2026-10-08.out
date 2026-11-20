@@ -1,0 +1,25 @@
+steps: 2861  unclipped (coherence strictly inside (0,1) at prev and in the forecast): 2818
+
+PREDICTOR LEAGUE (MAE, and sign test vs naive; ties = |diff|<=1e-12)
+  P0 naive        MAE=0.0634  beats naive on 0 / loses 0 / ties 2861  p=nan
+  P1 causal       MAE=0.0925  beats naive on 897 / loses 1962 / ties 2  p=3.26e-90
+  P2 hybrid       MAE=0.0271  beats naive on 2309 / loses 506 / ties 46  p=1.37e-273
+  P3 half-hybrid  MAE=0.0384  beats naive on 2473 / loses 342 / ties 46  p=0
+
+BIAS: mean(actual - causal) = +0.0903   median = +0.0777
+      mean(causal - naive) = -0.0903; share of steps where causal < naive: 83.40%
+      direction agreement (sign of causal adjustment vs sign of actual change, both > 1e-4): 1061/2839 = 37.4%
+
+VARIANCE of per-step novelty change (n=2802): total 0.00760; dissonance term 0.00794; rest (quietness+surprise) 0.00047
+
+LARGEST actual novelty jumps (ts, d_nov, dissonance-term part, causal adj):
+  09-16 09:20  d_nov=+0.451  diss_part=0.007  causal_adj=+0.001
+  10-04 00:49  d_nov=-0.372  diss_part=-0.173  causal_adj=-0.320
+  10-03 07:05  d_nov=+0.345  diss_part=0.029  causal_adj=-0.077
+  09-21 10:39  d_nov=+0.333  diss_part=0.058  causal_adj=-0.049
+  09-21 11:56  d_nov=-0.303  diss_part=-0.184  causal_adj=-0.187
+  09-16 10:00  d_nov=-0.270  diss_part=0.075  causal_adj=+0.045
+  09-05 10:14  d_nov=-0.248  diss_part=None  causal_adj=-0.312
+  09-30 08:48  d_nov=-0.243  diss_part=-0.242  causal_adj=-0.255
+
+STEP SIZE: |d_nov| < 0.01 on 378/2861 steps (13.2%); |causal adj| > 0.05 on 1486 steps

@@ -1,0 +1,29 @@
+source files: replay_results*.jsonl
+gold 81 pairs: {'R': 35, 'A': 20, 'T': 26}; by source {('confirmed', 'R'): 26, ('confirmed', 'A'): 15, ('pending', 'T'): 7, ('confirmed', 'T'): 19, ('pending', 'R'): 9, ('pending', 'A'): 5}
+
+### V0
+- rulings 46 of 81 labelled; decided 42/46 = 91% [80-97]; how {'tiebreak': 17, 'unavailable': 4, 'agreed': 25}
+- pass rate (all labelled, decided): 36/42 = 86% [72-93]
+- agreement with gold: 15/42 = 36% [23-51]
+- agreement, labeler-unsure items dropped: 11/37 = 30% [17-46]
+- FALSE-KEEP (gold non-advance passed): 27/33 = 82% [66-91]   [restate R: 14/17 = 82% [59-94]; tour T: 13/16 = 81% [57-93]]
+- FALSE-REJECT (gold advance refused): 0/9 = 0% [0-30]
+- KEEP RATE on the panel-confirmed sample: 29/34 = 85% [70-94]
+- pass rate on the not-yet-judged pending items: 7/8 = 88% [53-98]
+- kappa(panel, gold) = 0.09
+- judge gemma4:12b v1: says yes 27/42 = 64% [49-77]; agrees with gold 22/42 = 52% [38-67]
+- judge falcon3:7b v2: says yes 42/46 = 91% [80-97]; agrees with gold 13/46 = 28% [17-43]
+
+### V1
+- rulings 0 of 81 labelled; decided n/a (0); how {}
+
+### V2
+- rulings 0 of 81 labelled; decided n/a (0); how {}
+
+### V3
+- rulings 0 of 81 labelled; decided n/a (0); how {}
+
+### paired change vs V0 (decided in both)
+- V1: n=0; pass->fail 0 (of which correct, gold non-advance: 0; wrong, gold advance lost: 0); fail->pass 0
+- V2: n=0; pass->fail 0 (of which correct, gold non-advance: 0; wrong, gold advance lost: 0); fail->pass 0
+- V3: n=0; pass->fail 0 (of which correct, gold non-advance: 0; wrong, gold advance lost: 0); fail->pass 0

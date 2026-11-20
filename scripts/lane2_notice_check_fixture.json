@@ -1,0 +1,332 @@
+[
+{
+"idx": 0,
+"notice": "I hear a soft, distant owl call at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.74}\n- somatic: energy 0.91, fatigue 0.1, tension 0.25",
+"panel": "consistent"
+},
+{
+"idx": 1,
+"notice": "I hear a soft, distant owl call from the study door. I see a cat walking by, and the air feels slightly warm. I feel a strong drive to move, and my body has moderate energy levels. I notice the light is dim, and the room is in darkness. I also perceive a mild warmth in the air.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.91}\n- somatic: energy 0.78, fatigue 0.28, tension 0.34",
+"panel": "consistent"
+},
+{
+"idx": 2,
+"notice": "I hear a fire burning.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.65}\n- somatic: energy 0.88, fatigue 0.15, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 3,
+"notice": "I hear a fire burning at the door. I see a study with a dim light and night daylight. The warmth is warm, and the body shows signs of fatigue. I hear an owl call and a moth tap. The fire crackles, and the sounds are morepork.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.65}\n- somatic: energy 0.88, fatigue 0.15, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 4,
+"notice": "I hear a fire burning, I see the warmth in the air, and I feel a slight drive. The study is at the door, and the weather is clear with a warm feeling. The sounds I hear are a crackle, an owl call, and a moth tap. The light is dim, and it is currently night. I can feel a slight warmth, and my body has a moderate drive. My somatic state shows low fatigue, moderate tension, and high energy.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.34}\n- somatic: energy 0.88, fatigue 0.15, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 5,
+"notice": "I hear a fire burning at the door. I see a study with a dim light and night daylight. The warmth is warm, and the body shows signs of fatigue and tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.9}\n- somatic: energy 0.89, fatigue 0.14, tension 0.28",
+"panel": "consistent"
+},
+{
+"idx": 6,
+"notice": "I hear a fire burning at the door, and I see the warmth in the air as I stand here.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.06}\n- somatic: energy 0.85, fatigue 0.2, tension 0.31",
+"panel": "consistent"
+},
+{
+"idx": 7,
+"notice": "I hear a soft, distant owl call from the study. I see embers in the fire, which are visible from my standpoint at the door. The air is cool, with a warmth band of mild. The light is dim, and it's currently night. My body has moderate drive and high somatic energy, but I'm slightly fatigued and experiencing tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.35}\n- somatic: energy 0.85, fatigue 0.2, tension 0.31",
+"panel": "consistent"
+},
+{
+"idx": 8,
+"notice": "I hear a soft, distant owl call from the study's door. I see embers in the fire, which are visible but not close enough to feel. The air is cool, and the room is dimly lit. I feel a slight nudge in my body, perhaps from fatigue, but I can't tell exactly how long it's been since I was last fatigued. I can see the horizon is setting, and the warmth is mild. I notice the light is dim, and the body's ",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.45}\n- somatic: energy 0.81, fatigue 0.26, tension 0.29",
+"panel": "consistent"
+},
+{
+"idx": 9,
+"notice": "I hear a soft, distant owl call from the study.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.54}\n- somatic: energy 0.81, fatigue 0.26, tension 0.29",
+"panel": "consistent"
+},
+{
+"idx": 10,
+"notice": "I hear a soft wind in the eaves and a distant owl call. I see a warm fire burning in the study. The air is cool, with a slight warmth band. I feel a slight drive, but my somatic energy is balanced with moderate fatigue and tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: wind in eaves, fire crackle, morepork (an owl) call, moth tap\n- light band: lit\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.66}\n- somatic: energy 0.76, fatigue 0.32, tension 0.33",
+"panel": "consistent"
+},
+{
+"idx": 11,
+"notice": "I hear a soft, distant owl call from the garden. I see the moon is half-illuminated, casting a soft glow over the garden. The air is cool, and the warmth is at 0.32. The weather is clear, with a direction of 270 degrees, which is southwest. The sounds I hear include waves on the shingle, wind in the trees, a settling woodpile, and an owl call. The light is dim, and the daylight is at night. The wa",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: clear\n- weather dir: 270\n- warmth: 0.32\n- moon illum: 0.95\n- sounds: waves on shingle, wind in trees, woodpile settle, morepork (an owl) call\n- light band: dim\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.16}\n- somatic: energy 0.89, fatigue 0.16, tension 0.27",
+"panel": "consistent"
+},
+{
+"idx": 12,
+"notice": "I hear a fire burning.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.56}\n- somatic: energy 0.83, fatigue 0.22, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 13,
+"notice": "I hear a soft owl call from the garden.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: clear\n- weather dir: 225\n- warmth: 0.32\n- moon illum: 0.92\n- sounds: waves on shingle, woodpile settle, morepork (an owl) call\n- light band: dim\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.25}\n- somatic: energy 0.83, fatigue 0.22, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 14,
+"notice": "I hear a soft owl call from the garden.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: clear\n- weather dir: 225\n- warmth: 0.32\n- moon illum: 0.92\n- sounds: waves on shingle, woodpile settle, morepork (an owl) call\n- light band: dim\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.5}\n- somatic: energy 0.83, fatigue 0.22, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 15,
+"notice": "I hear waves on the shore and feel the cold wind in my face.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: shore\n- standpoint: at_the_path_foot\n- weather: clear\n- weather dir: 225\n- warmth: 0.22\n- tide level: 0.73\n- moon illum: 0.92\n- sounds: waves on shingle, shingle drag, oystercatcher call, penguin bray\n- light band: dim\n- daylight: night\n- warmth band: cold\n- body: {'drive': 0.59}\n- somatic: energy 0.83, fatigue 0.22, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 16,
+"notice": "I hear waves on the shore and feel the cold wind in my face.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: shore\n- standpoint: at_the_tideline\n- weather: clear\n- weather dir: 225\n- warmth: 0.22\n- tide level: 0.75\n- moon illum: 0.92\n- sounds: waves on shingle, shingle drag, oystercatcher call, penguin bray\n- light band: dim\n- daylight: night\n- warmth band: cold\n- body: {'drive': 0.59}\n- somatic: energy 0.83, fatigue 0.22, tension 0.3",
+"panel": "consistent"
+},
+{
+"idx": 17,
+"notice": "I hear a soft owl call from the garden at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_door\n- weather: clear\n- weather dir: 225\n- warmth: 0.32\n- moon illum: 0.91\n- sounds: waves on shingle, woodpile settle, morepork (an owl) call\n- light band: dim\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.35}\n- somatic: energy 0.9, fatigue 0.11, tension 0.21",
+"panel": "consistent"
+},
+{
+"idx": 18,
+"notice": "I hear a soft, distant owl call from the study. I see embers in the fire, and the air is warm. The sounds around me are a mix of the embers settling and a moth tap. I notice the warmth band is mild, and the body language shows moderate drive with some fatigue and tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.72}\n- somatic: energy 0.89, fatigue 0.11, tension 0.23",
+"panel": "consistent"
+},
+{
+"idx": 19,
+"notice": "I hear a soft, distant owl call from the study. I see embers in the fire, which is currently at my desk. The air is cool, with a warmth of 0.55. There's a faint moth tap, and the light is dim, casting a dark shadow over the desk. The daylight is at night, and the warmth is mild. My body has low drive, moderate energy, slight fatigue, and moderate tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_desk\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.3}\n- somatic: energy 0.89, fatigue 0.11, tension 0.23",
+"panel": "consistent"
+},
+{
+"idx": 20,
+"notice": "I hear a soft morepork call from the study at the desk. I see the warmth band is cool, and the body drive is moderate.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_desk\n- weather: clear\n- warmth: 0.39\n- fire: out\n- sounds: morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.35}\n- somatic: energy 0.89, fatigue 0.11, tension 0.23",
+"panel": "consistent"
+},
+{
+"idx": 21,
+"notice": "I hear a gentle drizzle in the garden, and I see the sun is at 85 degrees azimuth. I feel a slight coolness on my skin, and the air is tinged with the sound of birdsong and waves.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: drizzle\n- weather dir: 225\n- warmth: 0.29\n- wet: 0.32\n- sun az: 85.2\n- sounds: waves on shingle, blackbird song, tui (a native songbird) song, bellbird song, small birds, riroriro (a small warbler) trill, fantail chatter, kingfisher call, wood pigeon, kereru (a wood pigeon) wingbeats, godwits (migratory shorebirds) overhead, dawn chorus\n- light band: dark\n- daylight: dawn\n- warmth band: cool\n- body: {'drive': 0.32}\n- somatic: energy 0.75, fatigue 0.29, tension 0.32",
+"panel": "consistent"
+},
+{
+"idx": 22,
+"notice": "I hear a faint sound that seems to be a bird's song, possibly a blackbird or tui.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: drizzle\n- weather dir: 225\n- warmth: 0.29\n- wet: 0.42\n- sun az: 83.8\n- sounds: waves on shingle, blackbird song, tui (a native songbird) song, bellbird song, small birds, riroriro (a small warbler) trill, fantail chatter, kingfisher call, wood pigeon, kereru (a wood pigeon) wingbeats, godwits (migratory shorebirds) overhead, dawn chorus\n- light band: dark\n- daylight: dawn\n- warmth band: cool\n- body: {'drive': 0.32}\n- somatic: energy 0.75, fatigue 0.29, tension 0.32",
+"panel": "consistent"
+},
+{
+"idx": 23,
+"notice": "I hear a faint sound that seems to be birdsong coming from the garden.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_bed\n- weather: drizzle\n- weather dir: 225\n- warmth: 0.29\n- wet: 0.69\n- sun az: 80.8\n- sounds: waves on shingle, blackbird song, tui (a native songbird) song, bellbird song, small birds, riroriro (a small warbler) trill, fantail chatter, kingfisher call, wood pigeon, kereru (a wood pigeon) wingbeats, godwits (migratory shorebirds) overhead, dawn chorus\n- light band: dark\n- daylight: dawn\n- warmth band: cool\n- body: {'drive': 0.33}\n- somatic: energy 0.75, fatigue 0.29, tension 0.32",
+"panel": "consistent"
+},
+{
+"idx": 24,
+"notice": "I hear a drizzle at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: drizzle\n- warmth: 0.43\n- wet: 0.78\n- fire: out\n- sun az: 63.5\n- sounds: rain on roof\n- light band: dark\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.55}\n- somatic: energy 0.64, fatigue 0.42, tension 0.33",
+"panel": "consistent"
+},
+{
+"idx": 25,
+"notice": "I hear a soft, distant owl call from the bed.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: on_the_bed\n- weather: high cloud\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, page turn, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.71}\n- somatic: energy 0.96, fatigue 0.05, tension 0.2",
+"panel": "consistent"
+},
+{
+"idx": 26,
+"notice": "I hear a fire crackling nearby and see high clouds overhead. I feel a slight warmth, and the air is dry. I can also detect an owl call and a moth tap. The room is dimly lit, and it feels like night. My body shows signs of low drive and moderate tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: on_the_bed\n- weather: high cloud\n- warmth: 0.81\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.29}\n- somatic: energy 0.96, fatigue 0.05, tension 0.2",
+"panel": "consistent"
+},
+{
+"idx": 27,
+"notice": "I hear a soft wind in the eaves and see embers settling, as well as an owl's call and a moth tap from the study door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: wind in eaves, embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.54}\n- somatic: energy 0.91, fatigue 0.12, tension 0.24",
+"panel": "consistent"
+},
+{
+"idx": 28,
+"notice": "I hear a soft wind in the eaves and see embers in the fire. I see an owl call and a moth tap. I feel a slight warmth and a moderate drive. I perceive a dark sky with a mild temperature. I notice a cat sitting at the door with fur prickling its ears. I feel a slight fatigue and tension. I observe a shadowy figure approaching the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.55\n- fire: embers\n- sounds: wind in eaves, embers settle, morepork (an owl) call, moth tap\n- light band: dark\n- daylight: night\n- warmth band: mild\n- body: {'drive': 0.86}\n- somatic: energy 0.86, fatigue 0.18, tension 0.31",
+"panel": "consistent"
+},
+{
+"idx": 29,
+"notice": "I hear a soft sound at the door. I see a dim light band through the high cloud. The warmth is mild, and I feel a slight fatigue in my body.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: high cloud\n- warmth: 0.58\n- fire: embers\n- sounds: embers settle, page turn\n- light band: dim\n- daylight: dawn\n- warmth band: mild\n- body: {'drive': 0.4}\n- somatic: energy 0.91, fatigue 0.12, tension 0.22",
+"panel": "consistent"
+},
+{
+"idx": 30,
+"notice": "I hear a soft knock at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: high cloud\n- warmth: 0.42\n- fire: out\n- light band: dark\n- daylight: dawn\n- warmth band: mild\n- body: {'drive': 0.5}\n- somatic: energy 0.87, fatigue 0.18, tension 0.28",
+"panel": "consistent"
+},
+{
+"idx": 31,
+"notice": "I hear a soft knock at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: high cloud\n- warmth: 0.42\n- fire: out\n- light band: dark\n- daylight: dawn\n- warmth band: mild\n- body: {'drive': 0.5}\n- somatic: energy 0.87, fatigue 0.18, tension 0.28",
+"panel": "consistent"
+},
+{
+"idx": 32,
+"notice": "I hear a soft wind in the eaves as I stand at the door. The warmth is mild, and the daylight is just beginning to break through the high cloud.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: high cloud\n- warmth: 0.42\n- fire: out\n- sounds: wind in eaves\n- light band: dark\n- daylight: dawn\n- warmth band: mild\n- body: {'drive': 0.32}\n- somatic: energy 0.78, fatigue 0.3, tension 0.35",
+"panel": "consistent"
+},
+{
+"idx": 33,
+"notice": "I hear waves on shingle and gulls crying as I stand at the edge of the path, feeling a cool breeze from the sea and watching the sun's elevation at 77 degrees.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: shore\n- standpoint: at_the_path_foot\n- weather: high cloud\n- weather dir: 45\n- warmth: 0.36\n- tide level: 0.12\n- sun az: 77.6\n- sounds: waves on shingle, shingle drag, tide pool trickle, kingfisher call, oystercatcher call, gull cries, shag (a cormorant) wingbeats\n- light band: dim\n- daylight: day\n- warmth band: cool\n- body: {'drive': 0.66}\n- somatic: energy 0.78, fatigue 0.3, tension 0.35",
+"panel": "consistent"
+},
+{
+"idx": 34,
+"notice": "I hear a soft wind in the eaves and a distant owl call. I see a warm fire burning in the hearth. The air is cool, and I feel a slight drive and tension in my body.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: on_the_bed\n- weather: clear\n- warmth: 0.81\n- fire: burning\n- sounds: wind in eaves, fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.86}\n- somatic: energy 0.92, fatigue 0.11, tension 0.24",
+"panel": "consistent"
+},
+{
+"idx": 35,
+"notice": "I hear a soft owl call from the garden at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_door\n- weather: clear\n- weather dir: 270\n- warmth: 0.32\n- moon illum: 0.55\n- sounds: waves on shingle, wind in trees, woodpile settle, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.94}\n- somatic: energy 0.92, fatigue 0.11, tension 0.24",
+"panel": "consistent"
+},
+{
+"idx": 36,
+"notice": "I hear a fire burning at the door. I see a study at night with overcast skies, wind in the eaves, a moth tap, and an owl call. The air is warm, and my somatic energy is high, but my drive is moderate. I sense daylight is dim, and the warmth band indicates it's warm. I notice the body's fatigue and tension levels are low. I wonder about the cause of the fire and how long it has been burning.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: overcast\n- warmth: 0.8\n- fire: burning\n- sounds: wind in eaves, fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.6}\n- somatic: energy 0.87, fatigue 0.17, tension 0.28",
+"panel": "consistent"
+},
+{
+"idx": 37,
+"notice": "I hear a drizzle rain on the roof.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: drizzle\n- warmth: 0.43\n- wet: 0.17\n- fire: out\n- sounds: rain on roof\n- light band: dark\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.56}\n- somatic: energy 0.69, fatigue 0.4, tension 0.33",
+"panel": "consistent"
+},
+{
+"idx": 38,
+"notice": "I hear a fire burning. I see a study on the bed with an owl calling and a moth tapping. The air is warm. I feel a slight drive and high somatic energy with low fatigue and tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: on_the_bed\n- weather: overcast\n- warmth: 0.8\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.81}\n- somatic: energy 0.99, fatigue 0.02, tension 0.12",
+"panel": "consistent"
+},
+{
+"idx": 39,
+"notice": "I hear a fire burning in the study. I see an owl call and a moth tap. I feel warm and a bit fatigued.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: on_the_bed\n- weather: overcast\n- warmth: 0.8\n- fire: burning\n- sounds: fire crackle, morepork (an owl) call, moth tap\n- light band: dim\n- daylight: night\n- warmth band: warm\n- body: {'drive': 0.86}\n- somatic: energy 0.99, fatigue 0.02, tension 0.12",
+"panel": "consistent"
+},
+{
+"idx": 40,
+"notice": "I hear a soft knock at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.5\n- fire: out\n- light band: dark\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.51}\n- somatic: energy 0.86, fatigue 0.18, tension 0.31",
+"panel": "consistent"
+},
+{
+"idx": 41,
+"notice": "I hear a soft knock at the door.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.5\n- fire: out\n- light band: dark\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.51}\n- somatic: energy 0.81, fatigue 0.24, tension 0.35",
+"panel": "consistent"
+},
+{
+"idx": 42,
+"notice": "I hear a dim light band at the desk.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_desk\n- weather: clear\n- warmth: 0.5\n- fire: out\n- sun az: 69.7\n- light band: dim\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.47}\n- somatic: energy 0.81, fatigue 0.24, tension 0.35",
+"panel": "consistent"
+},
+{
+"idx": 43,
+"notice": "I hear a soft owl call from the garden.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_door\n- weather: clear\n- weather dir: 270\n- warmth: 0.32\n- moon illum: 0.34\n- sounds: waves on shingle, footsteps grass soil, woodpile settle, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.36}",
+"panel": "consistent"
+},
+{
+"idx": 44,
+"notice": "I hear a soft, clear voice from the sounds I perceive. The sounds are waves on shingle, stream run, and an owl's call. I see the moon is half-illuminated, and the weather is clear with a wind direction of 270 degrees. The warmth is cool, and the body's drive is moderate. I feel a slight tension and no fatigue. I notice the light is dim, and the daylight is at night. The sounds are a mix of nature'",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: wood\n- standpoint: on_the_path\n- weather: clear\n- weather dir: 270\n- warmth: 0.29\n- moon illum: 0.34\n- sounds: waves on shingle, stream run, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.81}\n- somatic: energy 0.97, fatigue 0.04, tension 0.15",
+"panel": "consistent"
+},
+{
+"idx": 45,
+"notice": "I hear a soft owl call from the wood.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: wood\n- standpoint: on_the_path\n- weather: clear\n- weather dir: 270\n- warmth: 0.29\n- moon illum: 0.34\n- sounds: waves on shingle, stream run, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.67}\n- somatic: energy 0.97, fatigue 0.04, tension 0.15",
+"panel": "consistent"
+},
+{
+"idx": 46,
+"notice": "I hear a soft owl call in the distance. I see the moon just beginning to rise. The wood is quiet, with only the sound of waves and a distant stream. The air is cool, and my body shows signs of fatigue from the day's walk. I feel a slight warmth from the fire, but it's not visible. The weather is clear, with a wind coming from the west, and the light is dim. I wonder if the fire will stay lit for m",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: wood\n- standpoint: on_the_path\n- weather: clear\n- weather dir: 270\n- warmth: 0.29\n- moon illum: 0.34\n- sounds: waves on shingle, stream run, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.84}\n- somatic: energy 0.9, fatigue 0.1, tension 0.24",
+"panel": "consistent"
+},
+{
+"idx": 47,
+"notice": "I hear a soft owl call from the wood on the path. I see the moon illuminated slightly, casting a dark shadow over the daylight, which is currently night. The warmth is cool, and the body feels fatigued with some tension.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: wood\n- standpoint: on_the_path\n- weather: clear\n- weather dir: 270\n- warmth: 0.29\n- moon illum: 0.34\n- sounds: waves on shingle, stream run, morepork (an owl) call\n- light band: dark\n- daylight: night\n- warmth band: cool\n- body: {'drive': 0.75}\n- somatic: energy 0.86, fatigue 0.16, tension 0.25",
+"panel": "consistent"
+},
+{
+"idx": 48,
+"notice": "I hear a fire burning, I see a dim light band, and I feel a slight warmth in my body.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.84\n- fire: burning\n- sounds: fire crackle\n- light band: dim\n- daylight: dawn\n- warmth band: warm\n- body: {'drive': 0.48}\n- somatic: energy 0.86, fatigue 0.16, tension 0.26",
+"panel": "consistent"
+},
+{
+"idx": 49,
+"notice": "I hear a fire burning in the study. I see the warmth band is warm, and the sounds are a fire crackling and a page turning.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.84\n- fire: burning\n- sounds: fire crackle, page turn\n- light band: dim\n- daylight: dawn\n- warmth band: warm\n- body: {'drive': 0.48}\n- somatic: energy 0.86, fatigue 0.16, tension 0.26",
+"panel": "consistent"
+},
+{
+"idx": 50,
+"notice": "I hear a fire burning nearby.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.84\n- fire: burning\n- sounds: fire crackle\n- light band: dim\n- daylight: dawn\n- warmth band: warm\n- body: {'drive': 0.48}\n- somatic: energy 0.86, fatigue 0.16, tension 0.26",
+"panel": "consistent"
+},
+{
+"idx": 51,
+"notice": "I hear a fire burning.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: study\n- standpoint: at_the_door\n- weather: clear\n- warmth: 0.84\n- fire: burning\n- sounds: fire crackle\n- light band: dim\n- daylight: dawn\n- warmth band: warm\n- body: {'drive': 0.69}\n- somatic: energy 0.82, fatigue 0.22, tension 0.31",
+"panel": "consistent"
+},
+{
+"idx": 52,
+"notice": "I hear waves on shingle and a kingfisher call from the shore at the tideline. I see the sun at azimuth 77.6 degrees, a dim light band, and a mild warmth. The tide is at 0.9, and the weather is clear with a direction of 270 degrees. I feel a gull cry, shag wingbeats, shingle drag, and body drive of 0.45, somatic energy 0.77, fatigue 0.28, and tension 0.32.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: shore\n- standpoint: at_the_tideline\n- weather: clear\n- weather dir: 270\n- warmth: 0.48\n- tide level: 0.9\n- sun az: 77.6\n- sounds: waves on shingle, shingle drag, kingfisher call, oystercatcher call, gull cries, shag (a cormorant) wingbeats\n- light band: dim\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.45}\n- somatic: energy 0.77, fatigue 0.28, tension 0.32",
+"panel": "consistent"
+},
+{
+"idx": 53,
+"notice": "I hear waves on shingle and a kingfisher call from the shore at the tideline. I see the sun at 74.9 degrees azimuth, and I feel the warmth of the sea with a temperature of 0.48 degrees Celsius. I notice the tide level is 0.88 meters, and I can hear the sound of waves and birds. I see the light as dim, and I feel the warmth from the sea. I feel the drive of 0.54, have low energy (0.69), moderate fa",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: shore\n- standpoint: at_the_tideline\n- weather: clear\n- weather dir: 270\n- warmth: 0.48\n- tide level: 0.88\n- sun az: 74.9\n- sounds: waves on shingle, shingle drag, kingfisher call, oystercatcher call, gull cries, shag (a cormorant) wingbeats\n- light band: dim\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.54}\n- somatic: energy 0.69, fatigue 0.35, tension 0.33",
+"panel": "consistent"
+},
+{
+"idx": 54,
+"notice": "I hear a bird's trill and see high cloud overhead.",
+"percept_lines": "PERCEPTS — facts at my standpoint (everything I may speak from):\n- place: garden\n- standpoint: at_the_gate\n- weather: high cloud\n- weather dir: 315\n- warmth: 0.46\n- sun az: 68.1\n- sounds: waves on shingle, small birds, riroriro (a small warbler) trill, fantail chatter, cuckoo call, wood pigeon, kereru (a wood pigeon) wingbeats, bees in garden\n- light band: dim\n- daylight: day\n- warmth band: mild\n- body: {'drive': 0.78}\n- somatic: energy 0.61, fatigue 0.42, tension 0.35",
+"panel": "consistent"
+}
+]

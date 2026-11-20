@@ -1,0 +1,4 @@
+old: n=40 parsed=28 frameWordsNet=16 (mean 0.57) q=0 frame=7 medlen=264 over300=4 | judged=28 particular=28 adds_motive=28 particular&no_motive=0
+A: n=40 parsed=28 frameWordsNet=2 (mean 0.07) q=1 frame=1 medlen=299 over300=14 | judged=28 particular=28 adds_motive=22 particular&no_motive=6
+B: n=40 parsed=29 frameWordsNet=1 (mean 0.03) q=4 frame=0 medlen=317 over300=17 | judged=29 particular=29 adds_motive=14 particular&no_motive=15
+C: n=40 parsed=30 frameWordsNet=4 (mean 0.13) q=2 frame=3 medlen=289 over300=13 | judged=30 particular=30 adds_motive=17 particular&no_motive=13

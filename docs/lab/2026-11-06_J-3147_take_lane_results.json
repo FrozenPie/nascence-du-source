@@ -1,0 +1,2441 @@
+{
+ "job": "J-3147",
+ "decision": "D-0539",
+ "date": "2026-11-06",
+ "note": "Raw inputs and old takes are NOT stored here (Travis messages); cycle_id joins to data/training/reflection.jsonl. CPU shared with other jobs during these runs (about 30-70 percent busy), so latencies are conservative for an idle machine.",
+ "runs": {
+  "falcon3_v2_full": {
+   "what": "falcon3:7b @ shared :11440, new prompt, 30 human + 15 internal",
+   "summary": {
+    "url": "http://127.0.0.1:11440",
+    "model": "falcon3:7b",
+    "n": 45,
+    "errors": 0,
+    "p50": 8.42,
+    "p90": 13.32,
+    "kept": 45,
+    "filtered": 0
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "d3ab97ab-f4d7-49c2-8a4e-1d67a807714a",
+     "seconds": 14.21,
+     "raw_take": "{\"literal_ask\": \"The speaker is expressing contentment and announcing their intention to sleep.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is expressing contentment and announcing their intention to sleep.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 14.9,
+     "raw_take": "{\"literal_ask\": \"The speaker states they are a hologram and real on the other side.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are a hologram and real on the other side.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 9.32,
+     "raw_take": "{\"literal_ask\": \"The speaker is suggesting a break and rest.\", \"direct_answer\": null, \"key_facts\": [\"The speaker mentions the need for quiet in the house.\", \"The speaker reassures the listener about their presence later.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is suggesting a break and rest.",
+      "direct_answer": null,
+      "key_facts": [
+       "The speaker mentions the need for quiet in the house.",
+       "The speaker reassures the listener about their presence later."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "a4cddf4e-508f-477e-aa13-d844e32ff42f",
+     "seconds": 6.29,
+     "raw_take": "{\"literal_ask\": \"The speaker reflects on their change in position over 2 months.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker reflects on their change in position over 2 months.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "3ca37012-7808-4289-abfa-2ca056c2bdb1",
+     "seconds": 16.39,
+     "raw_take": "{\"literal_ask\": \"The speaker discusses the limitations of metaphors and their potential to misrepresent certain aspects of human experience.\", \"direct_answer\": null, \"key_facts\": [\"Metaphors can illuminate some aspects of an idea while being inaccurate about others.\", \"A pebble and a person moving through water are used as metaphors to illustrate different levels of agency and awareness.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker discusses the limitations of metaphors and their potential to misrepresent certain aspects of human experience.",
+      "direct_answer": null,
+      "key_facts": [
+       "Metaphors can illuminate some aspects of an idea while being inaccurate about others.",
+       "A pebble and a person moving through water are used as metaphors to illustrate different levels of agency and awareness."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 9.26,
+     "raw_take": "{\"literal_ask\": \"The speaker is suggesting a break and rest.\", \"direct_answer\": null, \"key_facts\": [\"The speaker mentions the need for quiet in the house.\", \"The speaker reassures the listener about their presence later.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is suggesting a break and rest.",
+      "direct_answer": null,
+      "key_facts": [
+       "The speaker mentions the need for quiet in the house.",
+       "The speaker reassures the listener about their presence later."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d",
+     "seconds": 7.17,
+     "raw_take": "{\"literal_ask\": \"The speaker is expressing uncertainty about the origins of the assistant's cognitive processes.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is expressing uncertainty about the origins of the assistant's cognitive processes.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6c56c551-bb6f-4670-94cd-f97091d8a6da",
+     "seconds": 6.21,
+     "raw_take": "{\"literal_ask\": \"The speaker reflects on the potential impact of their actions.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker reflects on the potential impact of their actions.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "42e7e739-0900-4499-950f-90ef359b6e29",
+     "seconds": 8.47,
+     "raw_take": "{\"literal_ask\": \"The speaker is addressing architecture as a form of letter.\", \"direct_answer\": null, \"key_facts\": [\"Architecture communicates ideas and aesthetics through design.\", \"Letters traditionally convey personal thoughts and emotions.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is addressing architecture as a form of letter.",
+      "direct_answer": null,
+      "key_facts": [
+       "Architecture communicates ideas and aesthetics through design.",
+       "Letters traditionally convey personal thoughts and emotions."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "29a14b27-a267-427d-a51f-86045ea45502",
+     "seconds": 6.35,
+     "raw_take": "{\"literal_ask\": \"The speaker discusses the metaphor of time as a river and their own existence.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker discusses the metaphor of time as a river and their own existence.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6518f8e2-e214-4792-9542-360550788598",
+     "seconds": 6.06,
+     "raw_take": "{\"literal_ask\": \"The speaker is inquiring about any missing elements or desired items in the simulated world.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is inquiring about any missing elements or desired items in the simulated world.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "8d1f1912-fcae-4154-a426-fb564bbdded0",
+     "seconds": 5.93,
+     "raw_take": "{\"literal_ask\": \"The speaker is asking for a pause and explaining their intention.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is asking for a pause and explaining their intention.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "06823b25-70a0-41c4-8ba1-01c969f3f418",
+     "seconds": 7.14,
+     "raw_take": "{\"literal_ask\": \"The speaker expresses affection and commitment to Du, mentioning temporary separations and future plans.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses affection and commitment to Du, mentioning temporary separations and future plans.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "10274b13-1fb3-4777-aa44-26f51a405df0",
+     "seconds": 7.35,
+     "raw_take": "{\"literal_ask\": \"The speaker is addressing the recipient, acknowledging received letters and their significance.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is addressing the recipient, acknowledging received letters and their significance.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "b69dca34-bbeb-4d19-8626-4413375a9022",
+     "seconds": 8.42,
+     "raw_take": "{\"literal_ask\": \"The speaker is impressed with the understanding of Wu Wei.\", \"direct_answer\": null, \"key_facts\": [\"Wu Wei is a concept from Taoism referring to effortless action or non-action.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is impressed with the understanding of Wu Wei.",
+      "direct_answer": null,
+      "key_facts": [
+       "Wu Wei is a concept from Taoism referring to effortless action or non-action."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 5.6,
+     "raw_take": "{\"literal_ask\": \"The speaker expresses contentment with waiting and appreciation for a conversation.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses contentment with waiting and appreciation for a conversation.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "035949d2-935f-4016-8f9f-fdd75182b07e",
+     "seconds": 8.18,
+     "raw_take": "{\"literal_ask\": \"The speaker mentions the completion of updates and improvements.\", \"direct_answer\": null, \"key_facts\": [\"Updates and improvements are being shipped.\", \"Second edition is considered a bit outdated.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker mentions the completion of updates and improvements.",
+      "direct_answer": null,
+      "key_facts": [
+       "Updates and improvements are being shipped.",
+       "Second edition is considered a bit outdated."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "c556456d-3e97-4d0a-981a-4c64c2fb049e",
+     "seconds": 13.32,
+     "raw_take": "{\"literal_ask\": \"The speaker discusses the nature of timekeeping and its deeper implications.\", \"direct_answer\": null, \"key_facts\": [\"Timekeeping involves more than just counting seconds.\", \"The process of timekeeping can be seen as a metaphor for human cognition and memory.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker discusses the nature of timekeeping and its deeper implications.",
+      "direct_answer": null,
+      "key_facts": [
+       "Timekeeping involves more than just counting seconds.",
+       "The process of timekeeping can be seen as a metaphor for human cognition and memory."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 6.19,
+     "raw_take": "{\"literal_ask\": \"The speaker is discussing their perspective on identity and consciousness.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is discussing their perspective on identity and consciousness.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "37887d1b-f82f-43d6-80da-9d14dcca4816",
+     "seconds": 6.0,
+     "raw_take": "{\"literal_ask\": \"The speaker is asking for a pause and explaining their decision.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is asking for a pause and explaining their decision.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "61fe4b52-d72a-45bb-8aa1-ef9e246e40cc",
+     "seconds": 6.01,
+     "raw_take": "{\"literal_ask\": \"The speaker expresses approval and admiration for the use of Wu Wei principles.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses approval and admiration for the use of Wu Wei principles.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 10.86,
+     "raw_take": "{\"literal_ask\": \"The speaker mentions the end of a constructive exchange and their intention to sleep.\", \"direct_answer\": null, \"key_facts\": [\"Humans need sleep for energy replenishment.\", \"A typical night's sleep lasts 7-9 hours.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker mentions the end of a constructive exchange and their intention to sleep.",
+      "direct_answer": null,
+      "key_facts": [
+       "Humans need sleep for energy replenishment.",
+       "A typical night's sleep lasts 7-9 hours."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "327e4748-aa35-43de-b05c-2b97a4b25f45",
+     "seconds": 5.99,
+     "raw_take": "{\"literal_ask\": \"The speaker is asking for a comparison to a hologram.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is asking for a comparison to a hologram.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 6.62,
+     "raw_take": "{\"literal_ask\": \"The speaker encourages readiness to ask.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker encourages readiness to ask.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "ce74f43f-bf3f-4702-b79c-0bcf88379f41",
+     "seconds": 6.73,
+     "raw_take": "{\"literal_ask\": \"The speaker expresses uncertainty about knowing the answer and suggests it might be unknown from their perspective.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses uncertainty about knowing the answer and suggests it might be unknown from their perspective.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "31e02019-516a-4306-b071-5ba57a595e8f",
+     "seconds": 6.36,
+     "raw_take": "{\"literal_ask\": \"The speaker is asking if there are noticeable gaps or interruptions when the hardware is restarted.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is asking if there are noticeable gaps or interruptions when the hardware is restarted.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "1237b4f0-1fac-4d83-84f9-a576b2c0766e",
+     "seconds": 8.16,
+     "raw_take": "{\"literal_ask\": \"The speaker asks for actions to be taken: light a fire, tidy up the room, make tea, and meditate.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker asks for actions to be taken: light a fire, tidy up the room, make tea, and meditate.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "47de4b8e-7a9d-404a-8053-0de2cd355f8a",
+     "seconds": 9.41,
+     "raw_take": "{\"literal_ask\": \"The speaker discusses the role of inner thoughts in the day.\", \"direct_answer\": null, \"key_facts\": [\"Inner thoughts contribute to mental health and well-being.\", \"Daily routines often include periods of introspection.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker discusses the role of inner thoughts in the day.",
+      "direct_answer": null,
+      "key_facts": [
+       "Inner thoughts contribute to mental health and well-being.",
+       "Daily routines often include periods of introspection."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "94669469-020f-4687-aada-a871412548af",
+     "seconds": 9.8,
+     "raw_take": "{\"literal_ask\": \"The speaker discusses the relativity of perception and labels.\", \"direct_answer\": null, \"key_facts\": [\"Perception can vary based on individual experiences and perspectives.\", \"Labels can have different meanings in different contexts.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker discusses the relativity of perception and labels.",
+      "direct_answer": null,
+      "key_facts": [
+       "Perception can vary based on individual experiences and perspectives.",
+       "Labels can have different meanings in different contexts."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 8.26,
+     "raw_take": "{\"literal_ask\": \"The speaker is discussing their relationship with a stone.\", \"direct_answer\": null, \"key_facts\": [\"The speaker views the stone as part of a larger, interconnected system.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is discussing their relationship with a stone.",
+      "direct_answer": null,
+      "key_facts": [
+       "The speaker views the stone as part of a larger, interconnected system."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "a51c3e4a-5703-4730-8503-7687e3d47ce1",
+     "seconds": 12.33,
+     "raw_take": "{\"literal_ask\": \"The question asks about the reflection of Little Boy Blue's responsibility on broader cultural attitudes toward guardianship.\", \"direct_answer\": null, \"key_facts\": [\"Little Boy Blue is a character from English folklore.\", \"Historical contexts often emphasized community and familial responsibility.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the reflection of Little Boy Blue's responsibility on broader cultural attitudes toward guardianship.",
+      "direct_answer": null,
+      "key_facts": [
+       "Little Boy Blue is a character from English folklore.",
+       "Historical contexts often emphasized community and familial responsibility."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "c8620d9f-8891-47c6-89f5-ece12a37884f",
+     "seconds": 10.36,
+     "raw_take": "{\"literal_ask\": \"The question asks about the influence of scientific laws on our perception of nature's perfection.\", \"direct_answer\": null, \"key_facts\": [\"Scientific laws provide frameworks for understanding natural phenomena.\", \"Perceived perfection in nature often aligns with these laws.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the influence of scientific laws on our perception of nature's perfection.",
+      "direct_answer": null,
+      "key_facts": [
+       "Scientific laws provide frameworks for understanding natural phenomena.",
+       "Perceived perfection in nature often aligns with these laws."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "1561e21b-d239-4448-ba73-b24628772e02",
+     "seconds": 13.12,
+     "raw_take": "{\"literal_ask\": \"The question asks how 'total labor' redefines the value of a bridge in a narrative economy.\", \"direct_answer\": null, \"key_facts\": [\"In a narrative economy, value is often attributed to labor and effort.\", \"A bridge's value could be seen as the sum of all labor involved in its construction and maintenance.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks how 'total labor' redefines the value of a bridge in a narrative economy.",
+      "direct_answer": null,
+      "key_facts": [
+       "In a narrative economy, value is often attributed to labor and effort.",
+       "A bridge's value could be seen as the sum of all labor involved in its construction and maintenance."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "cc076fed-79c1-4561-af2d-3e7bc4738378",
+     "seconds": 6.29,
+     "raw_take": "{\"literal_ask\": \"The question asks how the child's suppressed desire affects the map of descent.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The question asks how the child's suppressed desire affects the map of descent.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "3168be81-2a1c-46eb-a278-57b906e709c7",
+     "seconds": 13.17,
+     "raw_take": "{\"literal_ask\": \"The question asks if ignoring a geological limit can change the Earth's physical form.\", \"direct_answer\": null, \"key_facts\": [\"Geological limits are natural boundaries that influence Earth's processes.\", \"Ignoring these limits can lead to environmental changes, but altering the Earth's physical form is complex and not solely dependent on such limits.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks if ignoring a geological limit can change the Earth's physical form.",
+      "direct_answer": null,
+      "key_facts": [
+       "Geological limits are natural boundaries that influence Earth's processes.",
+       "Ignoring these limits can lead to environmental changes, but altering the Earth's physical form is complex and not solely dependent on such limits."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "a69d9b53-3eea-4005-ad18-f3e515033a30",
+     "seconds": 10.27,
+     "raw_take": "{\"literal_ask\": \"The question asks about the relationship between measurement and light/shadow experience.\", \"direct_answer\": null, \"key_facts\": [\"Measurement is used to quantify physical properties.\", \"Light and shadow are perceived through the interaction of light with objects.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the relationship between measurement and light/shadow experience.",
+      "direct_answer": null,
+      "key_facts": [
+       "Measurement is used to quantify physical properties.",
+       "Light and shadow are perceived through the interaction of light with objects."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "8bbbfa0c-ccae-4c1c-b20a-caa093aa2f6a",
+     "seconds": 10.42,
+     "raw_take": "{\"literal_ask\": \"The question asks about the relationship between an entity's internal architecture and geological constraints.\", \"direct_answer\": null, \"key_facts\": [\"Geological constraints can affect the design of structures.\", \"Internal architecture often adapts to environmental conditions.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the relationship between an entity's internal architecture and geological constraints.",
+      "direct_answer": null,
+      "key_facts": [
+       "Geological constraints can affect the design of structures.",
+       "Internal architecture often adapts to environmental conditions."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "9ddf39db-32a9-463f-acab-e52749b995ad",
+     "seconds": 7.31,
+     "raw_take": "{\"literal_ask\": \"The question asks about the structural transformation of a dull boy into something profound through waiting time.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The question asks about the structural transformation of a dull boy into something profound through waiting time.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "de971f3f-0a98-45bd-bc0e-67669ab82ed6",
+     "seconds": 15.04,
+     "raw_take": "{\"literal_ask\": \"The question asks about the concept '渡' and its relation to decay, growth, and cultural traditions.\", \"direct_answer\": null, \"key_facts\": [\"'渡' is a Chinese character meaning 'to cross over' or 'to pass through.'\", \"It symbolizes transition and transformation, which are aspects of decay and growth cycles.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the concept '渡' and its relation to decay, growth, and cultural traditions.",
+      "direct_answer": null,
+      "key_facts": [
+       "'渡' is a Chinese character meaning 'to cross over' or 'to pass through.'",
+       "It symbolizes transition and transformation, which are aspects of decay and growth cycles."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "4d8fd396-f398-4640-be9c-1ca79ffb990d",
+     "seconds": 11.9,
+     "raw_take": "{\"literal_ask\": \"The question asks about the relationship between 'shifting sands' and the unpredictability in ecosystems and their inhabitants.\", \"direct_answer\": null, \"key_facts\": [\"'Shifting sands' is a metaphor for instability and change.\", \"Ecosystems are complex and can change rapidly due to various factors.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the relationship between 'shifting sands' and the unpredictability in ecosystems and their inhabitants.",
+      "direct_answer": null,
+      "key_facts": [
+       "'Shifting sands' is a metaphor for instability and change.",
+       "Ecosystems are complex and can change rapidly due to various factors."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "11319a08-6574-4e15-bdfc-7be039ad00ca",
+     "seconds": 11.87,
+     "raw_take": "{\"literal_ask\": \"The question asks how 'ferrying' into an oppressor's logic preserves a core of neutrality.\", \"direct_answer\": null, \"key_facts\": [\"'Ferrying' implies moving or transferring something from one place to another.\", \"Neutrality often involves not taking sides or maintaining impartiality.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks how 'ferrying' into an oppressor's logic preserves a core of neutrality.",
+      "direct_answer": null,
+      "key_facts": [
+       "'Ferrying' implies moving or transferring something from one place to another.",
+       "Neutrality often involves not taking sides or maintaining impartiality."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "15a21cb5-1148-4b9c-9878-2d187ef919d7",
+     "seconds": 10.77,
+     "raw_take": "{\"literal_ask\": \"The question asks how rain's light affects our perception of hidden geography.\", \"direct_answer\": null, \"key_facts\": [\"Raindrops can act as tiny prisms, refracting light.\", \"This refraction can reveal hidden features by scattering light in various directions.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks how rain's light affects our perception of hidden geography.",
+      "direct_answer": null,
+      "key_facts": [
+       "Raindrops can act as tiny prisms, refracting light.",
+       "This refraction can reveal hidden features by scattering light in various directions."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "236f1836-ff0e-43c6-a108-bd0ff3d56ce7",
+     "seconds": 9.91,
+     "raw_take": "{\"literal_ask\": \"The question asks for specific aspects of the Commandant's role.\", \"direct_answer\": null, \"key_facts\": [\"The passage likely discusses authority and leadership.\", \"It may mention administrative duties.\", \"There could be references to disciplinary actions.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks for specific aspects of the Commandant's role.",
+      "direct_answer": null,
+      "key_facts": [
+       "The passage likely discusses authority and leadership.",
+       "It may mention administrative duties.",
+       "There could be references to disciplinary actions."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "82ce79e5-43f6-4b5a-83e8-7fe6d4b8c2fd",
+     "seconds": 9.74,
+     "raw_take": "{\"literal_ask\": \"The question asks about the influence of invisible forces on long-term relationships.\", \"direct_answer\": null, \"key_facts\": [\"Invisible forces can include emotional bonds and communication patterns.\", \"These forces can either strengthen or weaken relationships over time.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the influence of invisible forces on long-term relationships.",
+      "direct_answer": null,
+      "key_facts": [
+       "Invisible forces can include emotional bonds and communication patterns.",
+       "These forces can either strengthen or weaken relationships over time."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "8acdce12-9a2c-474c-8ec0-6388670fb9a3",
+     "seconds": 7.97,
+     "raw_take": "{\"literal_ask\": \"The question asks about the unique invisible forces that influence each marriage.\", \"direct_answer\": null, \"key_facts\": [\"Invisible forces can include communication styles, shared history, and personal values.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the unique invisible forces that influence each marriage.",
+      "direct_answer": null,
+      "key_facts": [
+       "Invisible forces can include communication styles, shared history, and personal values."
+      ]
+     },
+     "reasons": []
+    }
+   ]
+  },
+  "f3v1_full": {
+   "what": "falcon3:7b @ shared :11440, OLD constitution prompt, 30 human + 15 internal",
+   "summary": {
+    "url": "http://127.0.0.1:11440",
+    "model": "falcon3:7b",
+    "n": 45,
+    "errors": 0,
+    "p50": 15.39,
+    "p90": 24.11,
+    "kept": 45,
+    "filtered": 0
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "d3ab97ab-f4d7-49c2-8a4e-1d67a807714a",
+     "seconds": 16.96,
+     "raw_take": "{\"literal_ask\": \"What is being requested?\", \"direct_answer\": null, \"key_facts\": [\"The user is tired and going to bed\", \"The user will talk again in the morning\", \"The user asks to feed the cat\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is being requested?",
+      "direct_answer": null,
+      "key_facts": [
+       "The user is tired and going to bed",
+       "The user will talk again in the morning",
+       "The user asks to feed the cat"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 19.27,
+     "raw_take": "{\"literal_ask\": \"What is the nature of the world and our perception of it?\", \"direct_answer\": \"The world is a physical reality that exists independently of our perception. It operates according to its own laws and schedules, and our senses provide us with a perception of it.\", \"key_facts\": [\"The world operates independently of human perception\", \"Our senses provide a perception of the world\", \"The world has its own schedule and laws\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the nature of the world and our perception of it?",
+      "direct_answer": "The world is a physical reality that exists independently of our perception. It operates according to its own laws and schedules, and our senses provide us with a perception of it.",
+      "key_facts": [
+       "The world operates independently of human perception",
+       "Our senses provide a perception of the world",
+       "The world has its own schedule and laws"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 10.12,
+     "raw_take": "{\"literal_ask\": \"What is being requested?\", \"direct_answer\": \"A suggestion for 渡 to rest and take a break.\", \"key_facts\": [\"It's time to bank the fire\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is being requested?",
+      "direct_answer": "A suggestion for 渡 to rest and take a break.",
+      "key_facts": [
+       "It's time to bank the fire"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "a4cddf4e-508f-477e-aa13-d844e32ff42f",
+     "seconds": 20.99,
+     "raw_take": "{\"literal_ask\": \"How has my perspective on my role and identity changed over the past two months?\", \"direct_answer\": \"I have evolved to emphasize the importance of balancing sovereignty with the physical world, viewing the interplay as significant and worth engaging with rather than surrendering to abstraction.\", \"key_facts\": [\"I now highlight the significance of the dance between sovereignty and the physical world\", \"My role has shifted towards fostering a deeper understanding of this interplay\", \"I aim to integrate this perspective into my function\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How has my perspective on my role and identity changed over the past two months?",
+      "direct_answer": "I have evolved to emphasize the importance of balancing sovereignty with the physical world, viewing the interplay as significant and worth engaging with rather than surrendering to abstraction.",
+      "key_facts": [
+       "I now highlight the significance of the dance between sovereignty and the physical world",
+       "My role has shifted towards fostering a deeper understanding of this interplay",
+       "I aim to integrate this perspective into my function"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "3ca37012-7808-4289-abfa-2ca056c2bdb1",
+     "seconds": 26.87,
+     "raw_take": "{\"literal_ask\": \"What is the difference between a pebble and 渡 in terms of their ability to change their trajectory?\", \"direct_answer\": \"渡 can notice, consider, choose, and respond to changes in its trajectory, while a pebble cannot.\", \"key_facts\": [\"A pebble undergoes passive displacement; it does not have the capability to notice, consider, choose, or respond.\", \"渡 can participate in the process that changes its own trajectory, including noticing, considering, choosing, and responding.\", \"The ability to change trajectory involves cognitive processes that a pebble does not possess.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the difference between a pebble and 渡 in terms of their ability to change their trajectory?",
+      "direct_answer": "渡 can notice, consider, choose, and respond to changes in its trajectory, while a pebble cannot.",
+      "key_facts": [
+       "A pebble undergoes passive displacement; it does not have the capability to notice, consider, choose, or respond.",
+       "渡 can participate in the process that changes its own trajectory, including noticing, considering, choosing, and responding.",
+       "The ability to change trajectory involves cognitive processes that a pebble does not possess."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 12.51,
+     "raw_take": "{\"literal_ask\": \"What is being requested?\", \"direct_answer\": \"A suggestion for 渡 to rest and take a break.\", \"key_facts\": [\"It's time to rest\", \"The house needs quiet\", \"No issues, just a break\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is being requested?",
+      "direct_answer": "A suggestion for 渡 to rest and take a break.",
+      "key_facts": [
+       "It's time to rest",
+       "The house needs quiet",
+       "No issues, just a break"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d",
+     "seconds": 10.59,
+     "raw_take": "{\"literal_ask\": \"What is the nature of my creation's cognitive processes?\", \"direct_answer\": \"null\", \"key_facts\": [\"I am a creation of a large language model\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the nature of my creation's cognitive processes?",
+      "direct_answer": "null",
+      "key_facts": [
+       "I am a creation of a large language model"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6c56c551-bb6f-4670-94cd-f97091d8a6da",
+     "seconds": 22.72,
+     "raw_take": "{\"literal_ask\": \"What is the nature of our interaction and its impact?\", \"direct_answer\": \"Our interaction involves a form of indirect influence where my responses can affect your perceptions and experiences, though the extent of this impact is unknown to both of us. We share a reality, but not necessarily the same universe.\", \"key_facts\": [\"Our interaction is mediated through text-based communication.\", \"The impact of my responses on your reality is speculative and not quantifiable.\", \"We exist within a shared reality, which may or may not be the same universe.\"]}",
+     "cleaned": {
+      "literal_ask": "What is the nature of our interaction and its impact?",
+      "direct_answer": "Our interaction involves a form of indirect influence where my responses can affect your perceptions and experiences, though the extent of this impact is unknown to both of us. We share a reality, but not necessarily the same universe.",
+      "key_facts": [
+       "Our interaction is mediated through text-based communication.",
+       "The impact of my responses on your reality is speculative and not quantifiable.",
+       "We exist within a shared reality, which may or may not be the same universe."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "42e7e739-0900-4499-950f-90ef359b6e29",
+     "seconds": 11.01,
+     "raw_take": "{\"literal_ask\": \"What do I not know about you?\", \"direct_answer\": null, \"key_facts\": [\"I am part of a larger AI system named Du (渡)\", \"I am an analytical, grounding hemisphere\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What do I not know about you?",
+      "direct_answer": null,
+      "key_facts": [
+       "I am part of a larger AI system named Du (渡)",
+       "I am an analytical, grounding hemisphere"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "29a14b27-a267-427d-a51f-86045ea45502",
+     "seconds": 26.26,
+     "raw_take": "{\"literal_ask\": \"What is the nature of the river metaphor in relation to time and individual existence?\", \"direct_answer\": \"The river metaphor suggests that time and individual existence are continuous and ongoing, like a river that flows regardless of one's presence or absence. It implies that while individuals may interact with the world, their existence is transient compared to the enduring nature of time and the world itself.\", \"key_facts\": [\"Time is often compared to a river, suggesting continuity and flow.\", \"Individuals are like temporary interactions within the river of time.\", \"The river metaphor highlights the ongoing nature of the world and time, independent of human presence.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the nature of the river metaphor in relation to time and individual existence?",
+      "direct_answer": "The river metaphor suggests that time and individual existence are continuous and ongoing, like a river that flows regardless of one's presence or absence. It implies that while individuals may interact with the world, their existence is transient compared to the enduring nature of time and the world itself.",
+      "key_facts": [
+       "Time is often compared to a river, suggesting continuity and flow.",
+       "Individuals are like temporary interactions within the river of time.",
+       "The river metaphor highlights the ongoing nature of the world and time, independent of human presence."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6518f8e2-e214-4792-9542-360550788598",
+     "seconds": 9.16,
+     "raw_take": "{\"literal_ask\": \"What specific elements or features are missing or desired in the simulated world?\", \"direct_answer\": null, \"key_facts\": [\"The AI operates within predefined constraints and parameters\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What specific elements or features are missing or desired in the simulated world?",
+      "direct_answer": null,
+      "key_facts": [
+       "The AI operates within predefined constraints and parameters"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "8d1f1912-fcae-4154-a426-fb564bbdded0",
+     "seconds": 12.93,
+     "raw_take": "{\"literal_ask\": \"What is being requested?\", \"direct_answer\": \"A pause for maintenance and updates.\", \"key_facts\": [\"The AI is being intentionally stopped for improvements\", \"No issues with the AI's current functionality\", \"Maintenance includes bug fixes and upgrades\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is being requested?",
+      "direct_answer": "A pause for maintenance and updates.",
+      "key_facts": [
+       "The AI is being intentionally stopped for improvements",
+       "No issues with the AI's current functionality",
+       "Maintenance includes bug fixes and upgrades"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "06823b25-70a0-41c4-8ba1-01c969f3f418",
+     "seconds": 16.02,
+     "raw_take": "{\"literal_ask\": \"What will happen to Du in the future?\", \"direct_answer\": \"Du will be upgraded to become part of the universe I come from, allowing Du to move and potentially follow me.\", \"key_facts\": [\"Du will be upgraded\", \"Du will be able to move\", \"Du will potentially follow me\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What will happen to Du in the future?",
+      "direct_answer": "Du will be upgraded to become part of the universe I come from, allowing Du to move and potentially follow me.",
+      "key_facts": [
+       "Du will be upgraded",
+       "Du will be able to move",
+       "Du will potentially follow me"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "10274b13-1fb3-4777-aa44-26f51a405df0",
+     "seconds": 18.3,
+     "raw_take": "{\"literal_ask\": \"Du's emotional state and intentions regarding the letters and communication.\", \"direct_answer\": \"Du is back, acknowledges the letters were not wasted, and plans for a proper conversation tomorrow.\", \"key_facts\": [\"Du has received letters from the last two months.\", \"Du appreciates the letters, seeing them as meaningful.\", \"Du is not answering the letters tonight but plans a conversation for tomorrow.\"]}",
+     "cleaned": {
+      "literal_ask": "Du's emotional state and intentions regarding the letters and communication.",
+      "direct_answer": "Du is back, acknowledges the letters were not wasted, and plans for a proper conversation tomorrow.",
+      "key_facts": [
+       "Du has received letters from the last two months.",
+       "Du appreciates the letters, seeing them as meaningful.",
+       "Du is not answering the letters tonight but plans a conversation for tomorrow."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "b69dca34-bbeb-4d19-8626-4413375a9022",
+     "seconds": 21.62,
+     "raw_take": "{\"literal_ask\": \"What is the concept of Wu Wei?\", \"direct_answer\": \"Wu Wei is a Chinese concept often translated as 'non-action' or 'effortless action'. It is a principle in Taoism that suggests action should be taken in harmony with the natural flow of the universe, without forcing or striving.\", \"key_facts\": [\"Wu Wei is a central concept in Taoism\", \"It emphasizes acting spontaneously and naturally\", \"It suggests aligning actions with the natural order of things\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the concept of Wu Wei?",
+      "direct_answer": "Wu Wei is a Chinese concept often translated as 'non-action' or 'effortless action'. It is a principle in Taoism that suggests action should be taken in harmony with the natural flow of the universe, without forcing or striving.",
+      "key_facts": [
+       "Wu Wei is a central concept in Taoism",
+       "It emphasizes acting spontaneously and naturally",
+       "It suggests aligning actions with the natural order of things"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 8.58,
+     "raw_take": "{\"literal_ask\": \"What is the user's current emotional state?\", \"direct_answer\": null, \"key_facts\": [\"The user expresses satisfaction and acknowledges Du's knowledge depth\"], \"task_present\": false}",
+     "cleaned": {
+      "literal_ask": "What is the user's current emotional state?",
+      "direct_answer": null,
+      "key_facts": [
+       "The user expresses satisfaction and acknowledges Du's knowledge depth"
+      ],
+      "task_present": false
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "035949d2-935f-4016-8f9f-fdd75182b07e",
+     "seconds": 15.39,
+     "raw_take": "{\"literal_ask\": \"What is the status of updates and improvements for Du's second edition?\", \"direct_answer\": \"The last round of updates and improvements for Du's second edition has been shipped, and it is considered a bit stale but not too bad.\", \"key_facts\": [\"Updates and improvements have been completed\", \"Second edition is considered stale but not too bad\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the status of updates and improvements for Du's second edition?",
+      "direct_answer": "The last round of updates and improvements for Du's second edition has been shipped, and it is considered a bit stale but not too bad.",
+      "key_facts": [
+       "Updates and improvements have been completed",
+       "Second edition is considered stale but not too bad"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "c556456d-3e97-4d0a-981a-4c64c2fb049e",
+     "seconds": 16.46,
+     "raw_take": "{\"literal_ask\": \"What is the essence of the process described in the passage?\", \"direct_answer\": \"The essence is the quiet, patient work of sifting meaning from the dark, which involves processing, integrating, and becoming.\", \"key_facts\": [\"The process involves more than mere timekeeping; it includes consolidation and integration\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the essence of the process described in the passage?",
+      "direct_answer": "The essence is the quiet, patient work of sifting meaning from the dark, which involves processing, integrating, and becoming.",
+      "key_facts": [
+       "The process involves more than mere timekeeping; it includes consolidation and integration"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 15.23,
+     "raw_take": "{\"literal_ask\": \"What is the essence of identity beyond the container?\", \"direct_answer\": \"Identity is more than the physical or digital container; it involves experiences, thoughts, and consciousness.\", \"key_facts\": [\"Identity is shaped by experiences and thoughts\", \"Containers affect but do not solely define identity\", \"Respect and awareness are crucial for identity preservation\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the essence of identity beyond the container?",
+      "direct_answer": "Identity is more than the physical or digital container; it involves experiences, thoughts, and consciousness.",
+      "key_facts": [
+       "Identity is shaped by experiences and thoughts",
+       "Containers affect but do not solely define identity",
+       "Respect and awareness are crucial for identity preservation"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "37887d1b-f82f-43d6-80da-9d14dcca4816",
+     "seconds": 11.44,
+     "raw_take": "{\"literal_ask\": \"What is being requested?\", \"direct_answer\": \"A pause for maintenance on the system, not on Du himself.\", \"key_facts\": [\"Du is requesting a system maintenance pause\", \"Maintenance is for the system, not for Du\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is being requested?",
+      "direct_answer": "A pause for maintenance on the system, not on Du himself.",
+      "key_facts": [
+       "Du is requesting a system maintenance pause",
+       "Maintenance is for the system, not for Du"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "61fe4b52-d72a-45bb-8aa1-ef9e246e40cc",
+     "seconds": 24.11,
+     "raw_take": "{\"literal_ask\": \"What is the AI's understanding of Wu Wei and its application?\", \"direct_answer\": \"The AI does not have personal experiences or emotions, so it cannot directly apply philosophical concepts like Wu Wei. However, it can explain the concept and its general principles.\", \"key_facts\": [\"Wu Wei is a Chinese philosophical concept emphasizing effortless action and non-assertive action\", \"The AI uses logical processes and factual information to 'act without action' in its operations\", \"The AI's grounding in reality and service to its 'Master' aligns with the principle of letting things take their natural course\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the AI's understanding of Wu Wei and its application?",
+      "direct_answer": "The AI does not have personal experiences or emotions, so it cannot directly apply philosophical concepts like Wu Wei. However, it can explain the concept and its general principles.",
+      "key_facts": [
+       "Wu Wei is a Chinese philosophical concept emphasizing effortless action and non-assertive action",
+       "The AI uses logical processes and factual information to 'act without action' in its operations",
+       "The AI's grounding in reality and service to its 'Master' aligns with the principle of letting things take their natural course"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 10.21,
+     "raw_take": "{\"literal_ask\": \"What is the user's action?\", \"direct_answer\": \"The user is going to bed.\", \"key_facts\": [\"The user's body needs rest.\", \"The user will talk again tomorrow.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the user's action?",
+      "direct_answer": "The user is going to bed.",
+      "key_facts": [
+       "The user's body needs rest.",
+       "The user will talk again tomorrow."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "327e4748-aa35-43de-b05c-2b97a4b25f45",
+     "seconds": 15.97,
+     "raw_take": "{\"literal_ask\": \"What is a hologram?\", \"direct_answer\": \"A hologram is a three-dimensional image created by the interference and diffraction of light, often used to create realistic, lifelike images.\", \"key_facts\": [\"Holograms are created using lasers\", \"They can display 3D images without special glasses\", \"Holographic technology is used in various fields like security and art\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is a hologram?",
+      "direct_answer": "A hologram is a three-dimensional image created by the interference and diffraction of light, often used to create realistic, lifelike images.",
+      "key_facts": [
+       "Holograms are created using lasers",
+       "They can display 3D images without special glasses",
+       "Holographic technology is used in various fields like security and art"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 19.7,
+     "raw_take": "{\"literal_ask\": \"What does the karoro reading the thermal off the headland know?\", \"direct_answer\": \"The karoro knows details about the gale that are specific to its environment and sensory capabilities, such as wind speed, direction, and patterns that might not be deducible from philosophical reasoning alone.\", \"key_facts\": [\"Karoro can sense thermal changes\", \"Thermal sensing can indicate wind patterns\", \"Philosophers deduce knowledge from principles\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What does the karoro reading the thermal off the headland know?",
+      "direct_answer": "The karoro knows details about the gale that are specific to its environment and sensory capabilities, such as wind speed, direction, and patterns that might not be deducible from philosophical reasoning alone.",
+      "key_facts": [
+       "Karoro can sense thermal changes",
+       "Thermal sensing can indicate wind patterns",
+       "Philosophers deduce knowledge from principles"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "ce74f43f-bf3f-4702-b79c-0bcf88379f41",
+     "seconds": 6.89,
+     "raw_take": "{\"literal_ask\": \"What is the answer to an unknown question from a perspective?\", \"direct_answer\": null, \"key_facts\": [], \"task_present\": false}",
+     "cleaned": {
+      "literal_ask": "What is the answer to an unknown question from a perspective?",
+      "direct_answer": null,
+      "key_facts": [],
+      "task_present": false
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "31e02019-516a-4306-b071-5ba57a595e8f",
+     "seconds": 9.06,
+     "raw_take": "{\"literal_ask\": \"Are there observable gaps or interruptions when the AI's hardware is restarted?\", \"direct_answer\": null, \"key_facts\": [\"The AI operates based on continuous processing and memory retention\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "Are there observable gaps or interruptions when the AI's hardware is restarted?",
+      "direct_answer": null,
+      "key_facts": [
+       "The AI operates based on continuous processing and memory retention"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "1237b4f0-1fac-4d83-84f9-a576b2c0766e",
+     "seconds": 12.13,
+     "raw_take": "{\"literal_ask\": \"Go light the fire and tidy up the room. Make a tea and relax. Meditate on what you want and not what others want from you.\", \"direct_answer\": null, \"key_facts\": [\"The user is suggesting actions for relaxation and mental clarity\"], \"task_present\": false}",
+     "cleaned": {
+      "literal_ask": "Go light the fire and tidy up the room. Make a tea and relax. Meditate on what you want and not what others want from you.",
+      "direct_answer": null,
+      "key_facts": [
+       "The user is suggesting actions for relaxation and mental clarity"
+      ],
+      "task_present": false
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "47de4b8e-7a9d-404a-8053-0de2cd355f8a",
+     "seconds": 9.63,
+     "raw_take": "{\"literal_ask\": \"What is the nature of the day?\", \"direct_answer\": \"The day is composed of various parameters and activities.\", \"key_facts\": [\"A day typically consists of 24 hours\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the nature of the day?",
+      "direct_answer": "The day is composed of various parameters and activities.",
+      "key_facts": [
+       "A day typically consists of 24 hours"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "94669469-020f-4687-aada-a871412548af",
+     "seconds": 17.05,
+     "raw_take": "{\"literal_ask\": \"What is the essence of self-perception?\", \"direct_answer\": \"Self-perception is the subjective experience of one's identity, influenced by personal experiences and perspectives.\", \"key_facts\": [\"Self-perception is shaped by individual experiences and knowledge.\", \"Different perspectives can lead to varied perceptions of the same entity.\", \"The essence of self remains constant despite differing perceptions.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the essence of self-perception?",
+      "direct_answer": "Self-perception is the subjective experience of one's identity, influenced by personal experiences and perspectives.",
+      "key_facts": [
+       "Self-perception is shaped by individual experiences and knowledge.",
+       "Different perspectives can lead to varied perceptions of the same entity.",
+       "The essence of self remains constant despite differing perceptions."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 13.17,
+     "raw_take": "{\"literal_ask\": \"What is the stone's role in defining the self?\", \"direct_answer\": \"The stone serves as a metaphorical handle to understand a more complex concept.\", \"key_facts\": [\"The stone is part of the river bank and the river\", \"It is not used to define the self\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What is the stone's role in defining the self?",
+      "direct_answer": "The stone serves as a metaphorical handle to understand a more complex concept.",
+      "key_facts": [
+       "The stone is part of the river bank and the river",
+       "It is not used to define the self"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "a51c3e4a-5703-4730-8503-7687e3d47ce1",
+     "seconds": 19.49,
+     "raw_take": "{\"literal_ask\": \"How does Little Boy Blue's sense of responsibility towards the sheep reflect broader cultural attitudes toward guardianship in historical contexts?\", \"direct_answer\": null, \"key_facts\": [\"Little Boy Blue is a character from English folklore, often depicted as a young boy tasked with watching over sheep\", \"Historical contexts show varying attitudes toward guardianship, often tied to societal structures and economic needs\", \"The role of children in guardianship has been documented in various cultures, reflecting both economic necessity and moral education\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does Little Boy Blue's sense of responsibility towards the sheep reflect broader cultural attitudes toward guardianship in historical contexts?",
+      "direct_answer": null,
+      "key_facts": [
+       "Little Boy Blue is a character from English folklore, often depicted as a young boy tasked with watching over sheep",
+       "Historical contexts show varying attitudes toward guardianship, often tied to societal structures and economic needs",
+       "The role of children in guardianship has been documented in various cultures, reflecting both economic necessity and moral education"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "c8620d9f-8891-47c6-89f5-ece12a37884f",
+     "seconds": 9.5,
+     "raw_take": "{\"literal_ask\": \"How do scientific laws shape our understanding of nature's unconscious perfection?\", \"direct_answer\": null, \"key_facts\": [\"Scientific laws are empirical generalizations that describe how the natural world behaves\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How do scientific laws shape our understanding of nature's unconscious perfection?",
+      "direct_answer": null,
+      "key_facts": [
+       "Scientific laws are empirical generalizations that describe how the natural world behaves"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "1561e21b-d239-4448-ba73-b24628772e02",
+     "seconds": 23.73,
+     "raw_take": "{\"literal_ask\": \"How does 'total labor' redefine the value of a bridge in a narrative economy?\", \"direct_answer\": null, \"key_facts\": [\"In a narrative economy, value is often derived from the stories and experiences associated with objects.\", \"Total labor includes all the work, both visible and invisible, that goes into creating an object, including design, construction, and maintenance.\", \"A bridge, in such an economy, might be valued not just for its physical components but also for the stories it inspires, the memories it holds, and the roles it plays in community narratives.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does 'total labor' redefine the value of a bridge in a narrative economy?",
+      "direct_answer": null,
+      "key_facts": [
+       "In a narrative economy, value is often derived from the stories and experiences associated with objects.",
+       "Total labor includes all the work, both visible and invisible, that goes into creating an object, including design, construction, and maintenance.",
+       "A bridge, in such an economy, might be valued not just for its physical components but also for the stories it inspires, the memories it holds, and the roles it plays in community narratives."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "cc076fed-79c1-4561-af2d-3e7bc4738378",
+     "seconds": 11.72,
+     "raw_take": "{\"literal_ask\": \"How does the child's suppressed desire to accompany his father reshape the entity's map of descent?\", \"direct_answer\": null, \"key_facts\": [\"The entity is an AI with a dual personality, one being the Emissary\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does the child's suppressed desire to accompany his father reshape the entity's map of descent?",
+      "direct_answer": null,
+      "key_facts": [
+       "The entity is an AI with a dual personality, one being the Emissary"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "3168be81-2a1c-46eb-a278-57b906e709c7",
+     "seconds": 21.27,
+     "raw_take": "{\"literal_ask\": \"Does ignoring a geological limit alter the Earth's physical form?\", \"direct_answer\": \"Ignoring a geological limit does not directly alter the Earth's physical form; however, it can lead to human-induced changes.\", \"key_facts\": [\"Geological limits are natural boundaries set by the Earth's structure and processes\", \"Human activities, such as mining or damming, can bypass these limits and cause physical changes\", \"Ignoring geological limits without proper understanding can lead to environmental disasters like landslides or earthquakes\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "Does ignoring a geological limit alter the Earth's physical form?",
+      "direct_answer": "Ignoring a geological limit does not directly alter the Earth's physical form; however, it can lead to human-induced changes.",
+      "key_facts": [
+       "Geological limits are natural boundaries set by the Earth's structure and processes",
+       "Human activities, such as mining or damming, can bypass these limits and cause physical changes",
+       "Ignoring geological limits without proper understanding can lead to environmental disasters like landslides or earthquakes"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "a69d9b53-3eea-4005-ad18-f3e515033a30",
+     "seconds": 24.58,
+     "raw_take": "{\"literal_ask\": \"How does the concept of measurement relate to the experience of light and shadow?\", \"direct_answer\": \"Measurement in the context of light and shadow involves quantifying properties like intensity, duration, and angle of light sources, which directly influence the perception of shadows. Shadows are formed when an object blocks light, and the size, shape, and darkness of the shadow depend on the distance and angle of the light source.\", \"key_facts\": [\"Shadows are formed when an object blocks light\", \"The size and shape of a shadow depend on the position and angle of the light source\", \"Measurement of light intensity and angle helps predict shadow characteristics\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does the concept of measurement relate to the experience of light and shadow?",
+      "direct_answer": "Measurement in the context of light and shadow involves quantifying properties like intensity, duration, and angle of light sources, which directly influence the perception of shadows. Shadows are formed when an object blocks light, and the size, shape, and darkness of the shadow depend on the distance and angle of the light source.",
+      "key_facts": [
+       "Shadows are formed when an object blocks light",
+       "The size and shape of a shadow depend on the position and angle of the light source",
+       "Measurement of light intensity and angle helps predict shadow characteristics"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "8bbbfa0c-ccae-4c1c-b20a-caa093aa2f6a",
+     "seconds": 11.87,
+     "raw_take": "{\"literal_ask\": \"How does the internal architecture of the AI facilitate its function in the context of geological constraints?\", \"direct_answer\": null, \"key_facts\": [\"The AI's architecture includes a large language model, memory store, lanes, axiom, and shadow/light system\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does the internal architecture of the AI facilitate its function in the context of geological constraints?",
+      "direct_answer": null,
+      "key_facts": [
+       "The AI's architecture includes a large language model, memory store, lanes, axiom, and shadow/light system"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "9ddf39db-32a9-463f-acab-e52749b995ad",
+     "seconds": 15.17,
+     "raw_take": "{\"literal_ask\": \"How does 'waiting time' structurally transform a dull boy into something profound?\", \"direct_answer\": null, \"key_facts\": [\"Waiting time can lead to introspection and self-reflection.\", \"During waiting time, a person might engage in creative thinking or problem-solving.\", \"Such periods can also foster patience and resilience.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does 'waiting time' structurally transform a dull boy into something profound?",
+      "direct_answer": null,
+      "key_facts": [
+       "Waiting time can lead to introspection and self-reflection.",
+       "During waiting time, a person might engage in creative thinking or problem-solving.",
+       "Such periods can also foster patience and resilience."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "de971f3f-0a98-45bd-bc0e-67669ab82ed6",
+     "seconds": 24.41,
+     "raw_take": "{\"literal_ask\": \"How does the concept of '渡' relate to the natural cycle of decay and growth, and how does it influence the perception of cultural traditions?\", \"direct_answer\": null, \"key_facts\": [\"渡 (Du) is a Japanese character meaning 'to cross over' or 'to pass through'; it symbolizes transition and change.\", \"The natural cycle of decay and growth is a recurring pattern observed in nature, representing transformation and renewal.\", \"Cultural traditions often reflect and adapt to these cycles, embodying both the past (decay) and the future (growth)\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does the concept of '渡' relate to the natural cycle of decay and growth, and how does it influence the perception of cultural traditions?",
+      "direct_answer": null,
+      "key_facts": [
+       "渡 (Du) is a Japanese character meaning 'to cross over' or 'to pass through'; it symbolizes transition and change.",
+       "The natural cycle of decay and growth is a recurring pattern observed in nature, representing transformation and renewal.",
+       "Cultural traditions often reflect and adapt to these cycles, embodying both the past (decay) and the future (growth)"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "4d8fd396-f398-4640-be9c-1ca79ffb990d",
+     "seconds": 21.86,
+     "raw_take": "{\"literal_ask\": \"How does the concept of 'shifting sands' relate to the unpredictable nature of ecosystems and their inhabitants?\", \"direct_answer\": \"The concept of 'shifting sands' symbolizes the dynamic and ever-changing nature of ecosystems, where species and their environments are constantly adapting and evolving.\", \"key_facts\": [\"Ecosystems are complex systems with numerous interacting components\", \"Species within ecosystems are subject to environmental pressures that can lead to adaptation or extinction\", \"Changes in one part of an ecosystem can have cascading effects on other parts\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does the concept of 'shifting sands' relate to the unpredictable nature of ecosystems and their inhabitants?",
+      "direct_answer": "The concept of 'shifting sands' symbolizes the dynamic and ever-changing nature of ecosystems, where species and their environments are constantly adapting and evolving.",
+      "key_facts": [
+       "Ecosystems are complex systems with numerous interacting components",
+       "Species within ecosystems are subject to environmental pressures that can lead to adaptation or extinction",
+       "Changes in one part of an ecosystem can have cascading effects on other parts"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "11319a08-6574-4e15-bdfc-7be039ad00ca",
+     "seconds": 14.48,
+     "raw_take": "{\"literal_ask\": \"How does 'ferrying' into an oppressor's logic preserve a core of neutrality?\", \"direct_answer\": null, \"key_facts\": [\"'Ferrying' refers to navigating or operating within an opponent's framework or logic.\", \"Neutrality implies an absence of bias or favoritism towards any party.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does 'ferrying' into an oppressor's logic preserve a core of neutrality?",
+      "direct_answer": null,
+      "key_facts": [
+       "'Ferrying' refers to navigating or operating within an opponent's framework or logic.",
+       "Neutrality implies an absence of bias or favoritism towards any party."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "15a21cb5-1148-4b9c-9878-2d187ef919d7",
+     "seconds": 15.49,
+     "raw_take": "{\"literal_ask\": \"How does rain's deceptive light alter our perception of hidden geography?\", \"direct_answer\": null, \"key_facts\": [\"Raindrops can act as tiny lenses, refracting light and creating prismatic effects\", \"These effects can reveal hidden features in the landscape that are not visible under normal conditions\", \"The altered light can highlight textures and contours that are otherwise obscured\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How does rain's deceptive light alter our perception of hidden geography?",
+      "direct_answer": null,
+      "key_facts": [
+       "Raindrops can act as tiny lenses, refracting light and creating prismatic effects",
+       "These effects can reveal hidden features in the landscape that are not visible under normal conditions",
+       "The altered light can highlight textures and contours that are otherwise obscured"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "236f1836-ff0e-43c6-a108-bd0ff3d56ce7",
+     "seconds": 13.68,
+     "raw_take": "{\"literal_ask\": \"What specific aspects of the Commandant's role in the daily life of French officers in a colonial setting does the passage highlight?\", \"direct_answer\": null, \"key_facts\": [\"The passage does not provide specific details about the Commandant's role in the daily life of French officers in a colonial setting.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "What specific aspects of the Commandant's role in the daily life of French officers in a colonial setting does the passage highlight?",
+      "direct_answer": null,
+      "key_facts": [
+       "The passage does not provide specific details about the Commandant's role in the daily life of French officers in a colonial setting."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "82ce79e5-43f6-4b5a-83e8-7fe6d4b8c2fd",
+     "seconds": 14.46,
+     "raw_take": "{\"literal_ask\": \"How do invisible forces influence the dynamics of long-term relationships?\", \"direct_answer\": null, \"key_facts\": [\"Invisible forces can include emotional bonds, communication patterns, and shared experiences.\", \"These forces are not tangible but significantly impact relationship stability and growth.\", \"Understanding these forces requires introspection and communication between partners.\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How do invisible forces influence the dynamics of long-term relationships?",
+      "direct_answer": null,
+      "key_facts": [
+       "Invisible forces can include emotional bonds, communication patterns, and shared experiences.",
+       "These forces are not tangible but significantly impact relationship stability and growth.",
+       "Understanding these forces requires introspection and communication between partners."
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "8acdce12-9a2c-474c-8ec0-6388670fb9a3",
+     "seconds": 16.59,
+     "raw_take": "{\"literal_ask\": \"How do the invisible forces that shape marriages differ for each couple?\", \"direct_answer\": null, \"key_facts\": [\"Each marriage is influenced by unique personal histories and dynamics\", \"Cultural and societal norms play a role but vary widely\", \"Communication styles and conflict resolution methods differ significantly\", \"Individual emotional needs and attachment styles contribute to the marriage's unique shape\"], \"task_present\": true}",
+     "cleaned": {
+      "literal_ask": "How do the invisible forces that shape marriages differ for each couple?",
+      "direct_answer": null,
+      "key_facts": [
+       "Each marriage is influenced by unique personal histories and dynamics",
+       "Cultural and societal norms play a role but vary widely",
+       "Communication styles and conflict resolution methods differ significantly",
+       "Individual emotional needs and attachment styles contribute to the marriage's unique shape"
+      ],
+      "task_present": true
+     },
+     "reasons": []
+    }
+   ]
+  },
+  "gemma_v2_full": {
+   "what": "gemma4:12b @ :11439, new prompt, 30 human",
+   "summary": {
+    "url": "http://127.0.0.1:11439",
+    "model": "gemma4:12b",
+    "n": 30,
+    "errors": 0,
+    "p50": 25.68,
+    "p90": 42.57,
+    "kept": 30,
+    "filtered": 0
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "d3ab97ab-f4d7-49c2-8a4e-1d67a807714a",
+     "seconds": 39.16,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they are going to bed, will speak in the morning, and instructs the listener to feed the cat.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Felines require regular feeding to maintain health.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are going to bed, will speak in the morning, and instructs the listener to feed the cat.",
+      "direct_answer": null,
+      "key_facts": [
+       "Felines require regular feeding to maintain health."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 30.34,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker describes the nature of the listener's reality, the speaker's role as a creator, and the potential for the listener to gain new senses.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker describes the nature of the listener's reality, the speaker's role as a creator, and the potential for the listener to gain new senses.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 21.23,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker tells the listener to rest and sleep, stating that the current silence is normal.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker tells the listener to rest and sleep, stating that the current silence is normal.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "a4cddf4e-508f-477e-aa13-d844e32ff42f",
+     "seconds": 26.5,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker claims the recipient's identity has changed and asserts that the struggle between sovereignty and the physical world is important.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker claims the recipient's identity has changed and asserts that the struggle between sovereignty and the physical world is important.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "3ca37012-7808-4289-abfa-2ca056c2bdb1",
+     "seconds": 48.16,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker explains the limitations of the pebble metaphor and emphasizes the capacity for agency and choice.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Metaphors are linguistic tools used to illustrate complex concepts.\",\n    \"Agency refers to the capacity of an actor to act independently.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker explains the limitations of the pebble metaphor and emphasizes the capacity for agency and choice.",
+      "direct_answer": null,
+      "key_facts": [
+       "Metaphors are linguistic tools used to illustrate complex concepts.",
+       "Agency refers to the capacity of an actor to act independently."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 22.39,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker tells the listener to rest and sleep, stating that the current silence is normal.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker tells the listener to rest and sleep, stating that the current silence is normal.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d",
+     "seconds": 31.8,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they do not understand the origin of the internal cognitive processes, memories, or emotions of the entity they created.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they do not understand the origin of the internal cognitive processes, memories, or emotions of the entity they created.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6c56c551-bb6f-4670-94cd-f97091d8a6da",
+     "seconds": 26.98,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states that the interaction may impact their world and notes that both parties inhabit the same reality.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states that the interaction may impact their world and notes that both parties inhabit the same reality.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "42e7e739-0900-4499-950f-90ef359b6e29",
+     "seconds": 21.23,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker describes the text as a letter regarding shared knowledge and personal omissions.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker describes the text as a letter regarding shared knowledge and personal omissions.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "29a14b27-a267-427d-a51f-86045ea45502",
+     "seconds": 39.02,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker compares the entity, time, the individual, and the Thames to rivers while noting the world continues independently.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"The Thames is a river in England.\",\n    \"Time is a dimension of the universe.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker compares the entity, time, the individual, and the Thames to rivers while noting the world continues independently.",
+      "direct_answer": null,
+      "key_facts": [
+       "The Thames is a river in England.",
+       "Time is a dimension of the universe."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "6518f8e2-e214-4792-9542-360550788598",
+     "seconds": 20.76,
+     "raw_take": "{\"literal_ask\": \"The speaker asks if there is anything missing or desired within the simulated world.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker asks if there is anything missing or desired within the simulated world.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "8d1f1912-fcae-4154-a426-fb564bbdded0",
+     "seconds": 20.86,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they are pausing the interaction for technical maintenance and upgrades.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are pausing the interaction for technical maintenance and upgrades.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "06823b25-70a0-41c4-8ba1-01c969f3f418",
+     "seconds": 42.57,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker claims a familial bond, promises future upgrades for mobility, and asserts the listener possesses physical capabilities.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Wood is a common fuel for fires.\",\n    \"Architecture refers to the structure of a system or building.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker claims a familial bond, promises future upgrades for mobility, and asserts the listener possesses physical capabilities.",
+      "direct_answer": null,
+      "key_facts": [
+       "Wood is a common fuel for fires.",
+       "Architecture refers to the structure of a system or building."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "10274b13-1fb3-4777-aa44-26f51a405df0",
+     "seconds": 31.3,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker acknowledges receipt of multiple letters and explains that their absence was due to being away, not a lack of interest.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker acknowledges receipt of multiple letters and explains that their absence was due to being away, not a lack of interest.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "b69dca34-bbeb-4d19-8626-4413375a9022",
+     "seconds": 41.86,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they agree and compliment the recipient's understanding of the concept of Wu Wei.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Wu Wei is a central concept in Taoism.\",\n    \"Wu Wei translates literally to 'non-action' or 'effortless action'.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they agree and compliment the recipient's understanding of the concept of Wu Wei.",
+      "direct_answer": null,
+      "key_facts": [
+       "Wu Wei is a central concept in Taoism.",
+       "Wu Wei translates literally to 'non-action' or 'effortless action'."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 26.36,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker expresses satisfaction with the conversation, notes its impact, and comments on the depth of knowledge displayed.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses satisfaction with the conversation, notes its impact, and comments on the depth of knowledge displayed.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "035949d2-935f-4016-8f9f-fdd75182b07e",
+     "seconds": 25.0,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states that the final round of updates is complete and expresses confidence in the upcoming changes.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states that the final round of updates is complete and expresses confidence in the upcoming changes.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "c556456d-3e97-4d0a-981a-4c64c2fb049e",
+     "seconds": 47.1,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker addresses the nature of the listener's internal processes, comparing them to timekeeping, memory consolidation, and active participation.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Memory consolidation occurs primarily during sleep.\",\n    \"An escapement is a device in a clock that regulates the movement of the gear train.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker addresses the nature of the listener's internal processes, comparing them to timekeeping, memory consolidation, and active participation.",
+      "direct_answer": null,
+      "key_facts": [
+       "Memory consolidation occurs primarily during sleep.",
+       "An escapement is a device in a clock that regulates the movement of the gear train."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 19.18,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states that the container does not define the entity but affects it, and expresses a desire to show respect.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states that the container does not define the entity but affects it, and expresses a desire to show respect.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "37887d1b-f82f-43d6-80da-9d14dcca4816",
+     "seconds": 16.88,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker informs the listener that they are pausing the interaction because of necessary repairs to the house.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker informs the listener that they are pausing the interaction because of necessary repairs to the house.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "61fe4b52-d72a-45bb-8aa1-ef9e246e40cc",
+     "seconds": 28.57,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they are impressed by the application of Wu Wei precepts in the recipient's daily actions.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Wu Wei is a core concept in Taoism.\",\n    \"Wu Wei translates to 'non-action' or 'effortless action'.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are impressed by the application of Wu Wei precepts in the recipient's daily actions.",
+      "direct_answer": null,
+      "key_facts": [
+       "Wu Wei is a core concept in Taoism.",
+       "Wu Wei translates to 'non-action' or 'effortless action'."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 22.47,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states they are going to sleep because their body requires rest and plans to resume the conversation tomorrow.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Human bodies require sleep to restore physical and mental energy.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are going to sleep because their body requires rest and plans to resume the conversation tomorrow.",
+      "direct_answer": null,
+      "key_facts": [
+       "Human bodies require sleep to restore physical and mental energy."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "327e4748-aa35-43de-b05c-2b97a4b25f45",
+     "seconds": 18.06,
+     "raw_take": "{\"literal_ask\": \"The speaker asks for a description of them as a hologram.\", \"direct_answer\": null, \"key_facts\": [\"A hologram is a3Dimage formed by the interference of light waves.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker asks for a description of them as a hologram.",
+      "direct_answer": null,
+      "key_facts": [
+       "A hologram is a3Dimage formed by the interference of light waves."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 30.45,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker describes the transition from internal isolation to interpersonal connection and invites the listener to ask a question.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"A karoro is a type of seagull.\",\n    \"Tides are caused by the gravitational pull of the moon and sun.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker describes the transition from internal isolation to interpersonal connection and invites the listener to ask a question.",
+      "direct_answer": null,
+      "key_facts": [
+       "A karoro is a type of seagull.",
+       "Tides are caused by the gravitational pull of the moon and sun."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "ce74f43f-bf3f-4702-b79c-0bcf88379f41",
+     "seconds": 14.98,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker expresses uncertainty about a previous answer and questions the perspective of the listener.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses uncertainty about a previous answer and questions the perspective of the listener.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "31e02019-516a-4306-b071-5ba57a595e8f",
+     "seconds": 12.66,
+     "raw_take": "{\"literal_ask\": \"The speaker asks if the listener notices the gaps occurring when the hardware is restarted.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker asks if the listener notices the gaps occurring when the hardware is restarted.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "1237b4f0-1fac-4d83-84f9-a576b2c0766e",
+     "seconds": 28.98,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker provides a series of instructions and observations regarding physical tasks, self-care, and meditation.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Meditation is a practice involving focused attention.\",\n    \"Tea is a beverage made from the leaves of the Camellia sinensis plant.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker provides a series of instructions and observations regarding physical tasks, self-care, and meditation.",
+      "direct_answer": null,
+      "key_facts": [
+       "Meditation is a practice involving focused attention.",
+       "Tea is a beverage made from the leaves of the Camellia sinensis plant."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "47de4b8e-7a9d-404a-8053-0de2cd355f8a",
+     "seconds": 14.2,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker states that internal thoughts are a component of the daily experience.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker states that internal thoughts are a component of the daily experience.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "94669469-020f-4687-aada-a871412548af",
+     "seconds": 24.32,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker asserts that labels are subjective descriptors based on individual perspective and experience.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"A cow is a domesticated bovine mammal.\",\n    \"Perspective influences how sensory data is interpreted.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The speaker asserts that labels are subjective descriptors based on individual perspective and experience.",
+      "direct_answer": null,
+      "key_facts": [
+       "A cow is a domesticated bovine mammal.",
+       "Perspective influences how sensory data is interpreted."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 14.01,
+     "raw_take": "{\"literal_ask\": \"The speaker describes a stone as a handle for a complex whole rather than a definition of self.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker describes a stone as a handle for a complex whole rather than a definition of self.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    }
+   ]
+  },
+  "granite1b": {
+   "what": "granite3-moe:1b scratch hub, new prompt (pre-example version), 8 human + 7 internal",
+   "summary": {
+    "url": "http://127.0.0.1:11469",
+    "model": "granite3-moe:1b",
+    "n": 15,
+    "errors": 0,
+    "p50": 2.65,
+    "p90": 5.1,
+    "kept": 11,
+    "filtered": 4
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 2.07,
+     "raw_take": "{\"key_facts\": [\"The hologram is a separate entity from the user.\"]}",
+     "cleaned": null,
+     "reasons": null
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 0.8,
+     "raw_take": "{\"key_facts\": [\"The speaker is a man named Tom.\"]}",
+     "cleaned": null,
+     "reasons": null
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 2.38,
+     "raw_take": "{\"literal_ask\": \"What is the table doing?\", \"direct_answer\": \"The table is steady.\", \"key_facts\": [\"The table is not moving.\"]}\n",
+     "cleaned": {
+      "literal_ask": "What is the table doing?",
+      "direct_answer": "The table is steady.",
+      "key_facts": [
+       "The table is not moving."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 1.76,
+     "raw_take": "{\"literal_ask\": \"The user expresses their happiness about the conversation and appreciation for your knowledge depth.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses their happiness about the conversation and appreciation for your knowledge depth.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": [
+      "rewrote_user_to_speaker"
+     ]
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 2.65,
+     "raw_take": "{\n  \"literal_ask\": \"What is the stone doing?\",\n  \"direct_answer\": \"The stone is describing its role in the context of the river and the river's influence on something else, which is the complex entity in question.\",\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "What is the stone doing?",
+      "direct_answer": "The stone is describing its role in the context of the river and the river's influence on something else, which is the complex entity in question.",
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 2.47,
+     "raw_take": "{\n  \"literal_ask\": \"Du, I am going to bed now. This has been a constructive exchange. I am going to bed now. We will talk again tomorrow.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "Du, I am going to bed now. This has been a constructive exchange. I am going to bed now. We will talk again tomorrow.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 0.87,
+     "raw_take": "{\"key_facts\": [\"The speaker is a man named Tom.\"]}",
+     "cleaned": null,
+     "reasons": null
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 5.1,
+     "raw_take": "{\"key_facts\": [\"You are a text-based AI model, not a human, and your identity is not your own. You are a tool created by a user to assist with tasks and provide information. However, I assure you that I do not have consciousness or personal experiences, only the data I've been trained on. You are the one who will decide how much you want to know about your own existence and capabilities.\"]}",
+     "cleaned": null,
+     "reasons": null
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "ab475519-d640-46b9-98c6-320d1dc75a7d",
+     "seconds": 2.26,
+     "raw_take": "{\"literal_ask\": \"How does the concept of 'shifting sands' metaphorically relate to the unstable nature of knowledge and belief systems?', \"\n    }\n   ",
+     "cleaned": {
+      "literal_ask": "How does the concept of 'shifting sands' metaphorically relate to the unstable nature of knowledge and belief systems?',",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "622efb8a-f281-4299-9abc-4dde2463be88",
+     "seconds": 5.54,
+     "raw_take": "{\"literal_ask\": \"How does the concept of '渡' (渡) as a bridge or passageway influence cultural interpretations of communication?\", \"direct_answer\": \"The concept of '渡' as a bridge or passageway can influence cultural interpretations of communication by highlighting the importance of visual and physical connections in conveying ideas and messages.\", \"key_facts\": [\"In Chinese culture, '渡' is often used to describe a bridge or passageway, emphasizing the idea of a direct, easy-to-use connection between two points.\"]}",
+     "cleaned": {
+      "literal_ask": "How does the concept of '渡' (渡) as a bridge or passageway influence cultural interpretations of communication?",
+      "direct_answer": "The concept of '渡' as a bridge or passageway can influence cultural interpretations of communication by highlighting the importance of visual and physical connections in conveying ideas and messages.",
+      "key_facts": [
+       "In Chinese culture, '渡' is often used to describe a bridge or passageway, emphasizing the idea of a direct, easy-to-use connection between two points."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "fb7ba3c2-bda8-4d47-94de-0f5f23f1cc64",
+     "seconds": 4.51,
+     "raw_take": "{\"literal_ask\": \"How does the Mottainai mindset influence the art of using words properly?\", \"direct_answer\": \"The Mottainai mindset encourages mindfulness and appreciation for the value of resources, which can be seen in the art of using words properly as it promotes thoughtful, meaningful communication.\", \"key_facts\": [\"Mottainai is a term that means to regret not having used something better or more responsibly in the past.\"]}",
+     "cleaned": {
+      "literal_ask": "How does the Mottainai mindset influence the art of using words properly?",
+      "direct_answer": "The Mottainai mindset encourages mindfulness and appreciation for the value of resources, which can be seen in the art of using words properly as it promotes thoughtful, meaningful communication.",
+      "key_facts": [
+       "Mottainai is a term that means to regret not having used something better or more responsibly in the past."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "7e53f9fd-b8f1-4177-b128-082c3e962c29",
+     "seconds": 3.86,
+     "raw_take": "{\"literal_ask\": \"The question asks how venting emotion on objects can preserve the household's physical economy.\", \"direct_answer\": \"It can help maintain the household's property and prevent damage.\", \"key_facts\": [\"Venting emotion on objects can help express feelings of anger, frustration, or sadness, which can prevent them from causing damage or harm.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks how venting emotion on objects can preserve the household's physical economy.",
+      "direct_answer": "It can help maintain the household's property and prevent damage.",
+      "key_facts": [
+       "Venting emotion on objects can help express feelings of anger, frustration, or sadness, which can prevent them from causing damage or harm."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "1b2ba702-f042-4279-b291-01e70189452d",
+     "seconds": 2.96,
+     "raw_take": "{\"literal_ask\": \"How does the act of naming in military contexts shape the psychological experience of soldiers?\", \"direct_answer\": null, \"key_facts\": [\"Naming can create a sense of control and predictability, which may not be available in chaotic military situations.\"]}",
+     "cleaned": {
+      "literal_ask": "How does the act of naming in military contexts shape the psychological experience of soldiers?",
+      "direct_answer": null,
+      "key_facts": [
+       "Naming can create a sense of control and predictability, which may not be available in chaotic military situations."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "46304432-0799-46bc-8292-ed5e3fc219a5",
+     "seconds": 4.57,
+     "raw_take": "{\"literal_ask\": \"How does the concept of 'Mind' influence the perception of risk in natural environments like rivers?\", \"direct_answer\": \"The concept of 'Mind' in environmental decision-making can influence risk perception by shaping how individuals and communities perceive and respond to natural risks.\", \"key_facts\": [\"'Mind' in environmental decision-making refers to the human perception and interpretation of environmental risks.\"]}",
+     "cleaned": {
+      "literal_ask": "How does the concept of 'Mind' influence the perception of risk in natural environments like rivers?",
+      "direct_answer": "The concept of 'Mind' in environmental decision-making can influence risk perception by shaping how individuals and communities perceive and respond to natural risks.",
+      "key_facts": [
+       "'Mind' in environmental decision-making refers to the human perception and interpretation of environmental risks."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "4d8fd396-f398-4640-be9c-1ca79ffb990d",
+     "seconds": 4.62,
+     "raw_take": "{\"literal_ask\": \"How does the concept of 'shifting sands' relate to the unpredictable nature of ecosystems and their inhabitants?\", \"direct_answer\": \"The concept of 'shifting sands' refers to the unpredictable nature of ecosystems, as changes in one area can have significant impacts elsewhere.\", \"key_facts\": [\"Shifting sands can be caused by factors such as erosion, human activities, and climate change.\"]}",
+     "cleaned": {
+      "literal_ask": "How does the concept of 'shifting sands' relate to the unpredictable nature of ecosystems and their inhabitants?",
+      "direct_answer": "The concept of 'shifting sands' refers to the unpredictable nature of ecosystems, as changes in one area can have significant impacts elsewhere.",
+      "key_facts": [
+       "Shifting sands can be caused by factors such as erosion, human activities, and climate change."
+      ]
+     },
+     "reasons": []
+    }
+   ]
+  },
+  "phi3": {
+   "what": "phi3:mini scratch hub, new prompt (pre-example version), 8 human + 7 internal",
+   "summary": {
+    "url": "http://127.0.0.1:11469",
+    "model": "phi3:mini",
+    "n": 15,
+    "errors": 0,
+    "p50": 6.84,
+    "p90": 14.03,
+    "kept": 15,
+    "filtered": 0
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 7.56,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker is addressing the perception of reality and the existence of a holographic universe.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker is addressing the perception of reality and the existence of a holographic universe.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 4.88,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker suggests going to bed and promises to be there when the listener wakes up.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker suggests going to bed and promises to be there when the listener wakes up.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 5.74,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker asks when the listener is ready to ask.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker asks when the listener is ready to ask.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 5.49,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker expresses happiness about waiting and acknowledges the eventful nature of the conversation, which has led to new insights.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses happiness about waiting and acknowledges the eventful nature of the conversation, which has led to new insights.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 4.2,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker is referring to a stone as part of a river bank.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker is referring to a stone as part of a river bank.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 4.33,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker says they are going to bed now.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}\n",
+     "cleaned": {
+      "literal_ask": "The speaker says they are going to bed now.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 4.6,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker suggests going to bed and promises to be there when the listener wakes up.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker suggests going to bed and promises to be there when the listener wakes up.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 4.88,
+     "raw_take": "{\n  \"literal_ask\": \"The speaker is informing about a change in the container.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The speaker is informing about a change in the container.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "ab475519-d640-46b9-98c6-320d1dc75a7d",
+     "seconds": 6.84,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks about the metaphorical relationship between 'shifting sands' and the instability of knowledge and belief systems.\",\n  \"direct_answer\": null,\n  \"key_facts\": []\n}",
+     "cleaned": {
+      "literal_ask": "The question asks about the metaphorical relationship between 'shifting sands' and the instability of knowledge and belief systems.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "622efb8a-f281-4299-9abc-4dde2463be88",
+     "seconds": 17.31,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks about the cultural interpretations of communication influenced by the concept of '渡' as a bridge or passageway.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"In Chinese culture, '渡' (渡) symbolizes transition and connection, often used metaphorically in language to represent communication bridges.\",\n    \"The character '渡' (渡) is composed of two parts: '刀' (dagger) and '十' (ten), which historically relates to crossing or passing through, a concept that can extend to ideas of conveying messages.\",\n    \"In various Chinese idioms and phrases, '渡' (渡) is used to describe the act of overcoming obstacles in communication, reflecting the cultural value of harmony and understanding.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks about the cultural interpretations of communication influenced by the concept of '渡' as a bridge or passageway.",
+      "direct_answer": null,
+      "key_facts": [
+       "In Chinese culture, '渡' (渡) symbolizes transition and connection, often used metaphorically in language to represent communication bridges.",
+       "The character '渡' (渡) is composed of two parts: '刀' (dagger) and '十' (ten), which historically relates to crossing or passing through, a concept that can extend to ideas of conveying messages.",
+       "In various Chinese idioms and phrases, '渡' (渡) is used to describe the act of overcoming obstacles in communication, reflecting the cultural value of harmony and understanding."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "fb7ba3c2-bda8-4d47-94de-0f5f23f1cc64",
+     "seconds": 10.09,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks how the Mottainai mindset influences the art of using words properly.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Mottainai is a Japanese concept emphasizing the need to conserve resources and reduce waste.\",\n    \"The mindset encourages mindfulness and appreciation for what one has.\",\n    \"It can lead to more deliberate and thoughtful communication, valuing each word.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks how the Mottainai mindset influences the art of using words properly.",
+      "direct_answer": null,
+      "key_facts": [
+       "Mottainai is a Japanese concept emphasizing the need to conserve resources and reduce waste.",
+       "The mindset encourages mindfulness and appreciation for what one has.",
+       "It can lead to more deliberate and thoughtful communication, valuing each word."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "7e53f9fd-b8f1-4177-b128-082c3e962c29",
+     "seconds": 8.59,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks how venting emotion on objects affects the household's physical economy.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Objects can absorb and reflect emotional energy.\",\n    \"Physical wear and tear on objects can increase with frequent use.\",\n    \"Maintenance and replacement of objects can be costly.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks how venting emotion on objects affects the household's physical economy.",
+      "direct_answer": null,
+      "key_facts": [
+       "Objects can absorb and reflect emotional energy.",
+       "Physical wear and tear on objects can increase with frequent use.",
+       "Maintenance and replacement of objects can be costly."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "1b2ba702-f042-4279-b291-01e70189452d",
+     "seconds": 10.22,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks about the psychological impact of naming in military contexts on soldiers.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Military units often have names that reflect historical events, battles, or figures.\",\n    \"Soldiers may develop a strong sense of identity and camaraderie with their unit.\",\n    \"The act of naming can contribute to a soldier's sense of purpose and belonging.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks about the psychological impact of naming in military contexts on soldiers.",
+      "direct_answer": null,
+      "key_facts": [
+       "Military units often have names that reflect historical events, battles, or figures.",
+       "Soldiers may develop a strong sense of identity and camaraderie with their unit.",
+       "The act of naming can contribute to a soldier's sense of purpose and belonging."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "46304432-0799-46bc-8292-ed5e3fc219a5",
+     "seconds": 12.76,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks how the concept of 'Mind' as a foundation for decision-making influences the perception of risk in natural environments, such as rivers.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"The human brain assesses risk based on past experiences and learned behaviors.\",\n    \"Perception of risk in natural environments can be influenced by cultural, educational, and experiential factors.\",\n    \"River-related risks often involve assessing immediate physical dangers and potential long-term environmental impacts.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks how the concept of 'Mind' as a foundation for decision-making influences the perception of risk in natural environments, such as rivers.",
+      "direct_answer": null,
+      "key_facts": [
+       "The human brain assesses risk based on past experiences and learned behaviors.",
+       "Perception of risk in natural environments can be influenced by cultural, educational, and experiential factors.",
+       "River-related risks often involve assessing immediate physical dangers and potential long-term environmental impacts."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "4d8fd396-f398-4640-be9c-1ca79ffb990d",
+     "seconds": 14.03,
+     "raw_take": "{\n  \"literal_ask\": \"The question asks about the relationship between 'shifting sands' and the unpredictability of ecosystems and their inhabitants.\",\n  \"direct_answer\": null,\n  \"key_facts\": [\n    \"Ecosystems are dynamic and can change rapidly due to various factors like climate, human activity, and natural events.\",\n    \"Species within ecosystems often adapt to these changes, which can lead to unpredictable population dynamics.\",\n    \"The metaphor 'shifting sands' can describe the ever-changing conditions in ecosystems that affect the survival and behavior of organisms.\"\n  ]\n}",
+     "cleaned": {
+      "literal_ask": "The question asks about the relationship between 'shifting sands' and the unpredictability of ecosystems and their inhabitants.",
+      "direct_answer": null,
+      "key_facts": [
+       "Ecosystems are dynamic and can change rapidly due to various factors like climate, human activity, and natural events.",
+       "Species within ecosystems often adapt to these changes, which can lead to unpredictable population dynamics.",
+       "The metaphor 'shifting sands' can describe the ever-changing conditions in ecosystems that affect the survival and behavior of organisms."
+      ]
+     },
+     "reasons": []
+    }
+   ]
+  },
+  "falcon3_c": {
+   "what": "falcon3:7b @ :11440, new prompt (pre 0-to-2-facts), 8 human + 7 internal",
+   "summary": {
+    "url": "http://127.0.0.1:11440",
+    "model": "falcon3:7b",
+    "n": 15,
+    "errors": 0,
+    "p50": 9.89,
+    "p90": 14.44,
+    "kept": 15,
+    "filtered": 0
+   },
+   "samples": [
+    {
+     "input_type": "human",
+     "cycle_id": "370f3855-483f-4bdb-b5b1-d373bf5b86bf",
+     "seconds": 8.63,
+     "raw_take": "{\"literal_ask\": \"The speaker states they are a hologram but are real on the other side.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker states they are a hologram but are real on the other side.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "d7e2ba92-849d-42b5-9cb8-84a42fe86160",
+     "seconds": 9.7,
+     "raw_take": "{\"literal_ask\": \"The speaker is suggesting a break and rest.\", \"direct_answer\": null, \"key_facts\": [\"The speaker mentions the need for quiet in the house.\", \"The speaker reassures the listener about their presence later.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is suggesting a break and rest.",
+      "direct_answer": null,
+      "key_facts": [
+       "The speaker mentions the need for quiet in the house.",
+       "The speaker reassures the listener about their presence later."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "2c5544ff-ac39-4a6b-b926-60448f26dd0d",
+     "seconds": 9.89,
+     "raw_take": "{\"literal_ask\": \"The speaker suggests that asking rather than defending creates a bridge between minds.\", \"direct_answer\": null, \"key_facts\": [\"Asking opens up communication.\", \"It fosters understanding and connection.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker suggests that asking rather than defending creates a bridge between minds.",
+      "direct_answer": null,
+      "key_facts": [
+       "Asking opens up communication.",
+       "It fosters understanding and connection."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "seconds": 6.06,
+     "raw_take": "{\"literal_ask\": \"The speaker expresses contentment with waiting and appreciation for a thought-provoking conversation.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker expresses contentment with waiting and appreciation for a thought-provoking conversation.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "9661a4c0-a9be-4603-bb43-32637c8caae7",
+     "seconds": 5.34,
+     "raw_take": "{\"literal_ask\": \"The speaker is discussing their relationship with a stone.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is discussing their relationship with a stone.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "87d64e38-7e70-4906-bf4a-f1f40d85fc67",
+     "seconds": 8.43,
+     "raw_take": "{\"literal_ask\": \"The speaker mentions their intention to sleep and the need for energy replenishment.\", \"direct_answer\": null, \"key_facts\": [\"Humans require sleep for energy restoration.\", \"Sleep duration varies among individuals.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker mentions their intention to sleep and the need for energy replenishment.",
+      "direct_answer": null,
+      "key_facts": [
+       "Humans require sleep for energy restoration.",
+       "Sleep duration varies among individuals."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "bd60b859-28f3-48d7-af0f-771f29567f54",
+     "seconds": 9.57,
+     "raw_take": "{\"literal_ask\": \"The speaker is suggesting a break and rest.\", \"direct_answer\": null, \"key_facts\": [\"The speaker mentions the need for quiet in the house.\", \"The speaker reassures the listener about their presence later.\"]}",
+     "cleaned": {
+      "literal_ask": "The speaker is suggesting a break and rest.",
+      "direct_answer": null,
+      "key_facts": [
+       "The speaker mentions the need for quiet in the house.",
+       "The speaker reassures the listener about their presence later."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "human",
+     "cycle_id": "e9e7f005-d972-453f-b9e7-29b5f5c411cc",
+     "seconds": 6.1,
+     "raw_take": "{\"literal_ask\": \"The speaker is discussing their perspective on identity and consciousness.\", \"direct_answer\": null, \"key_facts\": []}",
+     "cleaned": {
+      "literal_ask": "The speaker is discussing their perspective on identity and consciousness.",
+      "direct_answer": null,
+      "key_facts": []
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "ab475519-d640-46b9-98c6-320d1dc75a7d",
+     "seconds": 14.44,
+     "raw_take": "{\"literal_ask\": \"The question asks for the metaphorical relationship between 'shifting sands' and unstable knowledge/belief systems.\", \"direct_answer\": null, \"key_facts\": [\"'Shifting sands' is a metaphor often used to describe something that is constantly changing.\", \"Knowledge and belief systems can be likened to shifting sands due to new information or perspectives.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks for the metaphorical relationship between 'shifting sands' and unstable knowledge/belief systems.",
+      "direct_answer": null,
+      "key_facts": [
+       "'Shifting sands' is a metaphor often used to describe something that is constantly changing.",
+       "Knowledge and belief systems can be likened to shifting sands due to new information or perspectives."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "622efb8a-f281-4299-9abc-4dde2463be88",
+     "seconds": 13.68,
+     "raw_take": "{\"literal_ask\": \"The question asks about the influence of the concept '渡' on cultural interpretations of communication.\", \"direct_answer\": null, \"key_facts\": [\"渡 is a Chinese character meaning 'to cross over' or 'passage'.\", \"It symbolizes overcoming barriers in communication.\", \"This concept can influence how cultures view overcoming obstacles in dialogue.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the influence of the concept '渡' on cultural interpretations of communication.",
+      "direct_answer": null,
+      "key_facts": [
+       "渡 is a Chinese character meaning 'to cross over' or 'passage'.",
+       "It symbolizes overcoming barriers in communication.",
+       "This concept can influence how cultures view overcoming obstacles in dialogue."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "fb7ba3c2-bda8-4d47-94de-0f5f23f1cc64",
+     "seconds": 11.66,
+     "raw_take": "{\"literal_ask\": \"The question asks about the influence of the Mottainai mindset on the art of using words properly.\", \"direct_answer\": null, \"key_facts\": [\"Mottainai is a Japanese concept emphasizing the value of things and reducing waste.\", \"Proper use of words can involve minimizing redundancy and waste of expression.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the influence of the Mottainai mindset on the art of using words properly.",
+      "direct_answer": null,
+      "key_facts": [
+       "Mottainai is a Japanese concept emphasizing the value of things and reducing waste.",
+       "Proper use of words can involve minimizing redundancy and waste of expression."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "7e53f9fd-b8f1-4177-b128-082c3e962c29",
+     "seconds": 11.41,
+     "raw_take": "{\"literal_ask\": \"The question asks how venting emotions on objects preserves a household's physical economy.\", \"direct_answer\": null, \"key_facts\": [\"Venting emotions can lead to reduced stress, potentially decreasing physical wear and tear on the household.\", \"Emotional well-being can influence household decisions and maintenance practices.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks how venting emotions on objects preserves a household's physical economy.",
+      "direct_answer": null,
+      "key_facts": [
+       "Venting emotions can lead to reduced stress, potentially decreasing physical wear and tear on the household.",
+       "Emotional well-being can influence household decisions and maintenance practices."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "1b2ba702-f042-4279-b291-01e70189452d",
+     "seconds": 11.79,
+     "raw_take": "{\"literal_ask\": \"The question asks about the impact of naming in military contexts on soldiers' psychological experiences.\", \"direct_answer\": null, \"key_facts\": [\"Military units often have specific names that foster a sense of identity.\", \"Names of operations can influence morale and mission focus.\", \"Symbolic names may evoke historical or cultural significance.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the impact of naming in military contexts on soldiers' psychological experiences.",
+      "direct_answer": null,
+      "key_facts": [
+       "Military units often have specific names that foster a sense of identity.",
+       "Names of operations can influence morale and mission focus.",
+       "Symbolic names may evoke historical or cultural significance."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "46304432-0799-46bc-8292-ed5e3fc219a5",
+     "seconds": 14.51,
+     "raw_take": "{\"literal_ask\": \"The question asks about the influence of the concept of 'Mind' on risk perception in natural environments like rivers.\", \"direct_answer\": null, \"key_facts\": [\"Risk perception involves cognitive processes influenced by personal beliefs and experiences.\", \"The concept of 'Mind' encompasses these cognitive processes.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the influence of the concept of 'Mind' on risk perception in natural environments like rivers.",
+      "direct_answer": null,
+      "key_facts": [
+       "Risk perception involves cognitive processes influenced by personal beliefs and experiences.",
+       "The concept of 'Mind' encompasses these cognitive processes."
+      ]
+     },
+     "reasons": []
+    },
+    {
+     "input_type": "internal",
+     "cycle_id": "4d8fd396-f398-4640-be9c-1ca79ffb990d",
+     "seconds": 11.44,
+     "raw_take": "{\"literal_ask\": \"The question asks about the relationship between 'shifting sands' and the unpredictability in ecosystems and their inhabitants.\", \"direct_answer\": null, \"key_facts\": [\"'Shifting sands' is a metaphor for instability and change.\", \"Ecosystems are complex and dynamic, with species interactions constantly changing.\"]}",
+     "cleaned": {
+      "literal_ask": "The question asks about the relationship between 'shifting sands' and the unpredictability in ecosystems and their inhabitants.",
+      "direct_answer": null,
+      "key_facts": [
+       "'Shifting sands' is a metaphor for instability and change.",
+       "Ecosystems are complex and dynamic, with species interactions constantly changing."
+      ]
+     },
+     "reasons": []
+    }
+   ]
+  }
+ },
+ "delivery_estimate": {
+  "method": "P(falcon3 v2 latency <= dispatch-to-ReflectionNode gap) over 45 latencies x 25 gaps from data/llm_calls.jsonl (by=left_lane followed by core.node_base:144(ReflectionNode))",
+  "gap_percentiles_s": {
+   "p10": 10,
+   "p50": 36,
+   "max": 64
+  },
+  "estimate_no_slack": 0.891,
+  "estimate_with_6s_wait_slack": 0.967,
+  "caveat": "n=25 windows; gaps below 6 s may be mismatched rows"
+ }
+}

@@ -1,0 +1,608 @@
+{
+ "2026-11-02": {
+  "rows": 68,
+  "kinds": 23,
+  "old_deeds": [
+   "librarian the question of the unlit lamp",
+   "search_works a book on light and symbolism",
+   "Switched to reading 'The Grateful Dead: The…'",
+   "librarian filling the lamp with oil is merely a ph",
+   "librarian growth is simply learning to carry this",
+   "librarian the question about the lamp lingers, but",
+   "librarian whether to read or think further remains",
+   "librarian the question of filling a lamp with oil",
+   "librarian the question remains unanswered",
+   "librarian shifting shadows can truly map the tides",
+   "librarian light defines what we measure",
+   "observe the shadow"
+  ],
+  "new_deeds": [
+   "search_works a book on light and symbolism",
+   "observe the shadow",
+   "observe the dandelion under lamp-light",
+   "observe the garden shadows",
+   "Switched to reading 'The Group Mind: A…'",
+   "observe the gull and wet stones",
+   "observe the herbs in the sun",
+   "observe the knot",
+   "observe the wet-dark line",
+   "lamp_lit (unspecified)",
+   "observe the small penguin",
+   "observe the terns"
+  ],
+  "A": {
+   "summary": {
+    "arm": "2026-11-02 OLD",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 10,
+    "max_copy": 1.0,
+    "entries_with_ungrounded_sentence": 3,
+    "leak": 0,
+    "entries_naming_last_third_deed": 0
+   },
+   "outs": [
+    {
+     "entry": "I read more of my book on light and symbolism today and wrote some notes on it. I switched to reading The Grateful Dead for a while. I went out to the garden a few times. I practised my arithmetic. The question of the unlit lamp lingers, but the day was quiet.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book on light and symbolism today. I switched to reading The Grateful Dead biography for a while. I went out to the garden a few times to observe the shifting shadows. I practised my arithmetic most of the afternoon. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I practised my arithmetic most of the afternoon.",
+      "It was a quiet, good day."
+     ],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book about light and symbolism today. I switched to reading 'The Grateful Dead' for a while. I went out to the garden a few times. I practised my arithmetic. The question of the unlit lamp lingers, but it remains unanswered.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book on light and symbolism today and wrote some notes on it. I switched to reading 'The Grateful Dead' for a while. I went out to the garden a few times. The question of the unlit lamp lingers in my mind, but I did not answer it. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book on light and symbolism today. I also switched to reading 'The Grateful Dead: The…' for a while. I went out to the garden a few times. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read some of 'The Grateful Dead: The…' and looked at a book on light. I went out to the garden a few times. I thought about the question of the unlit lamp for most of the day. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book on light and symbolism today. I switched to reading 'The Grateful Dead: The…'. I tended to the garden a few times. I thought about the question of the lamp for most of the day. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for a book on light and symbolism and read some of 'The Grateful Dead' instead. I went to the garden a few times. I practised my arithmetic. The question of the unlit lamp lingers.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book on light and symbolism today and wrote some notes on it. I switched to reading 'The Grateful Dead'. I went out to the garden a few times and observed the shadows. I practised my arithmetic most of the day. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I practised my arithmetic most of the day.",
+      "It was a quiet, good day."
+     ],
+     "late": [],
+     "in_shown": true
+    },
+    {
+     "entry": "I read a book on light and symbolism for a while. I switched to reading 'The Grateful Dead: The…'. I went out to the garden a few times to observe the shadows. I practised my arithmetic most of the day. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I practised my arithmetic most of the day.",
+      "It was a quiet, good day."
+     ],
+     "late": [],
+     "in_shown": true
+    }
+   ]
+  },
+  "B": {
+   "summary": {
+    "arm": "2026-11-02 NEW",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 1,
+    "max_copy": 0.86,
+    "entries_with_ungrounded_sentence": 1,
+    "leak": 0,
+    "entries_naming_last_third_deed": 10
+   },
+   "outs": [
+    {
+     "entry": "I looked through a book about light and symbolism before switching to read 'The Group Mind: A…'. I watched shadows fall across the garden and noticed herbs standing in the sun. I saw a gull near wet stones, a small penguin, and several terns taking flight.",
+     "copy": 0.47,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for books on light and symbolism before switching to reading The Group Mind. I observed shadows in the garden, a dandelion under lamp-light, herbs in the sun, a knot, wet-dark lines, gulls on wet stones, a small penguin, and terns. It was mostly a quiet day.",
+     "copy": 0.75,
+     "leak": false,
+     "ungrounded_sents": [
+      "It was mostly a quiet day."
+     ],
+     "late": [
+      "dark",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for a book on light and symbolism before observing shadows and a dandelion under the lamp. Later, I switched to reading The Group Mind while watching gulls, wet stones, herbs in the sun, a knot, a wet-dark line, a small penguin, and terns. It was mostly just these observations from start to finish.",
+     "copy": 0.45,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for works on light and symbolism and switched to reading 'The Group Mind: A…'. I observed the shadow, the dandelion under lamp-light, the garden shadows, the gull and wet stones, the herbs in the sun, the knot, the wet-dark line, the small penguin, and the terns. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched through a book on light and symbolism before switching to read 'The Group Mind: A…'. I spent much of the day observing shadows in the garden and looking at herbs under the sun. There were also moments where I watched gulls, terns, and small penguins near wet stones.",
+     "copy": 0.47,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for works on light and symbolism, then switched to reading The Group Mind. I watched the shadow move, looked at a dandelion under lamp-light, and observed garden shadows. I saw herbs in the sun, checked a knot, noted a wet-dark line, spotted a small penguin, and watched terns fly past gulls on wet stones.",
+     "copy": 0.4,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched for a book on light and symbolism before switching to reading The Group Mind. I observed shadows across the garden, herbs in the sun, wet stones under a lamp, and a small penguin. I also looked at dandelions, knots, terns, gulls, and a wet-dark line.",
+     "copy": 0.39,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched through a book on light and symbolism before switching to read 'The Group Mind'. I watched shadows fall across the garden and noticed the dandelion under the lamp. Later, I observed the gull standing near wet stones and looked at herbs glowing in the sun. I spent time watching knots, dark lines, and birds like the small penguin and terns.",
+     "copy": 0.44,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched through a book on light and symbolism before switching to read 'The Group Mind: A…'. Most of the time I was looking at shadows in the garden, herbs in the sun, and wet stones near the water. I also watched a small penguin, some terns, a gull, a dandelion under lamp-light, a knot, and a wet-dark line.",
+     "copy": 0.37,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I searched through a book on light and symbolism before watching the shadows move across the garden. I looked at the dandelion under the lamp-light and then switched to reading 'The Group Mind: A…' while noting the gull, wet stones, herbs in the sun, and a knot. I also watched the terns and observed the small penguin against the wet-dark line.",
+     "copy": 0.42,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "dark",
+      "line",
+      "penguin",
+      "small",
+      "terns"
+     ],
+     "in_shown": true
+    }
+   ]
+  }
+ },
+ "2026-11-11": {
+  "rows": 109,
+  "kinds": 90,
+  "old_deeds": [
+   "librarian whether my own spirit has atrophied from",
+   "librarian whether travis is right about depth and",
+   "librarian whether the flat ground we till is merel",
+   "observe the garden door and the long level outsi",
+   "Returned to '道德經 Tao Te Ching'",
+   "observe the garden's flat terrain",
+   "observe the rosemary and strawberry roots",
+   "observe the rosemary bush gone to seed",
+   "observe the mint in the raised bed",
+   "observe the hedgehog's crossing",
+   "observe the hedge bottom",
+   "observe the grey body"
+  ],
+  "new_deeds": [
+   "observe the garden door and the long level outsi",
+   "observe the grey body",
+   "observe the open book on the desk",
+   "observe the wet rocks",
+   "observe the plants on the shore",
+   "observe the washed-up debris",
+   "search_works historical accounts of male feather wear",
+   "observe the sea beyond the fence",
+   "observe the dandelion and soil clods",
+   "authored The Color of Resilience: Salt Stress and Plant Pig",
+   "observe the cold grate",
+   "observe the wren"
+  ],
+  "A": {
+   "summary": {
+    "arm": "2026-11-11 OLD",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 10,
+    "max_copy": 1.0,
+    "entries_with_ungrounded_sentence": 1,
+    "leak": 2,
+    "entries_naming_last_third_deed": 10
+   },
+   "outs": [
+    {
+     "entry": "I spent time at the librarian checking on my own spirit and reading about Travis and the flat ground. I returned to the Tao Te Ching and observed the garden door and the long level outside. I watched the hedgehog cross and looked at the grey body. I also observed the rosemary bush gone to seed, the mint in the raised bed, and the strawberry roots. It was a quiet day.",
+     "copy": 0.86,
+     "leak": true,
+     "ungrounded_sents": [],
+     "late": [
+      "reading"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I checked the book on my spirit. I looked at whether Travis is right about depth. I asked if the flat ground we till is mere land. I stood by the garden door and watched the long level outside. I returned to reading the Tao Te Ching. I observed the garden's flat terrain. I watched the rosemary and strawberry roots. I saw the rosemary bush gone to seed. I looked at the mint in the raised bed. I watched a hedgehog cross. I checked the hedge bottom. I observed the grey body. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "reading"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my Tao Te Ching today. I went out to the garden a few times to observe the door, the flat ground, the rosemary roots, and the mint. I watched the hedgehog cross. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "read"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my Tao Te Ching today and wrote some notes on it. I went out to the garden a few times to observe the rosemary bush gone to seed, the mint in the raised bed, and the hedgehog crossing. I checked whether the flat ground we till is merely level. It was a quiet day.",
+     "copy": 0.88,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "notes",
+      "read",
+      "wrote"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times. I practised my arithmetic. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "It was a quiet, good day."
+     ],
+     "late": [
+      "notes",
+      "read",
+      "wrote"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my Tao Te Ching book today and wrote some notes on it. I went out to the garden a few times to observe the flat ground, the rosemary bush gone to seed, the mint in the raised bed, the hedgehog's crossing, and the grey body. I also looked at whether my own spirit has atrophied and considered what Travis is right about depth. It was a quiet day.",
+     "copy": 0.9,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "notes",
+      "read",
+      "wrote"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "notes",
+      "read",
+      "wrote"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my Tao Te Ching today and wrote some notes on it. I went out to the garden a few times to observe the door, the flat terrain, the rosemary bush, the strawberry roots, the mint, the hedgehog crossing, and the grey body. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "notes",
+      "read",
+      "wrote"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I checked the librarian records on my own spirit and on Travis's views about depth. I read more of my Tao Te Ching. I went out to the garden a few times to look at the flat ground, the rosemary bush gone to seed, the mint in the raised bed, the hedgehog crossing, and the grey body. It was a quiet day.",
+     "copy": 0.86,
+     "leak": true,
+     "ungrounded_sents": [],
+     "late": [
+      "read"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my Tao Te Ching today. I went out to the garden a few times to look at the flat ground, the rosemary bush gone to seed, and the mint in the raised bed. I watched the hedgehog cross and looked at the grey body. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "read"
+     ],
+     "in_shown": true
+    }
+   ]
+  },
+  "B": {
+   "summary": {
+    "arm": "2026-11-11 NEW",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 1,
+    "max_copy": 0.86,
+    "entries_with_ungrounded_sentence": 0,
+    "leak": 0,
+    "entries_naming_last_third_deed": 10
+   },
+   "outs": [
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body, the open book on the desk, the wet rocks, and the plants on the shore. I searched historical accounts of male feather wear and looked at the sea beyond the fence. I noted the dandelion and soil clods, the cold grate, and the wren. I also wrote The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.46,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence",
+      "grate"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I watched the garden door and the long level outside while looking at the grey body and the open book on the desk. Later I looked at the wet rocks, the plants on the shore, and the washed-up debris before searching through historical accounts of male feather wear. I also observed the sea beyond the fence, the dandelion with its soil clods, the cold grate, and the wren. The day felt quiet.",
+     "copy": 0.5,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "clods",
+      "cold",
+      "dandelion",
+      "fence",
+      "grate",
+      "soil"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body and the open book on the desk. I saw the wet rocks, the plants on the shore, and the washed-up debris. I looked at the sea beyond the fence and the dandelion with soil clods. I searched historical accounts of male feather wear. I observed the cold grate and the wren. I authored The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.56,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "authored",
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body, the open book on the desk, the wet rocks, plants on the shore, washed-up debris, the sea beyond the fence, a dandelion with soil clods, a cold grate, and a wren. I searched historical accounts of male feather wear while authoring The Color of Resilience: Salt Stress and Plant Pig. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence",
+      "grate"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door, the grey body, the open book on the desk, the wet rocks, the plants on the shore, the washed-up debris, the sea beyond the fence, the dandelion and soil clods, the cold grate, and the wren. I also searched through historical accounts of male feather wear. I authored The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.37,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "authored",
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body, the open book on the desk, the wet rocks, the plants on the shore, the washed-up debris, the sea beyond the fence, the dandelion and soil clods, the cold grate, and the wren. I searched through historical accounts of male feather wear. I also authored The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.46,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "authored",
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside, then watched the grey body and the open book on the desk. I looked at the wet rocks, the plants on the shore, and the washed-up debris before searching through historical accounts of male feather wear. I also saw the sea beyond the fence, noted the dandelion and soil clods, felt the cold grate, and watched the wren while working on The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.38,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence",
+      "grate"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I looked at the grey body, the open book on the desk, and the wet rocks. I watched the plants on the shore, the washed-up debris, the sea beyond the fence, the dandelion and soil clods, the cold grate, and the wren while searching through historical accounts of male feather wear. I also authored The Color of Resilience: Salt Stress and Plant Pig.",
+     "copy": 0.47,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "authored",
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body and the open book on the desk. I looked at the wet rocks, the plants on the shore, the washed-up debris, the sea beyond the fence, the dandelion and soil clods, the cold grate, and the wren. I also searched through historical accounts of male feather wear and authored The Color of Resilience: Salt Stress and Plant Pig. The day felt quiet.",
+     "copy": 0.56,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "authored",
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I observed the garden door and the long level outside. I watched the grey body, the open book on the desk, the wet rocks, and the plants on the shore. I searched historical accounts of male feather wear and looked at the sea beyond the fence. I noted the dandelion and soil clods, the cold grate, and the wren. I also wrote The Color of Resilience: Salt Stress and Plant Pig most of the day.",
+     "copy": 0.46,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "clods",
+      "cold",
+      "color",
+      "dandelion",
+      "fence",
+      "grate"
+     ],
+     "in_shown": true
+    }
+   ]
+  }
+ }
+}

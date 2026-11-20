@@ -1,0 +1,175 @@
+{
+ "hub": "http://127.0.0.1:11440",
+ "system": "/no_think\nYou are an independent reader, not the author, of a private journal entry written from a SEED (the thing the entry is supposed to be about). Do not judge beauty or depth. Decide one observable thing: is the SEED'S SUBJECT present in the entry as a thing in a scene, with at least one concrete detail that is NOT in the seed text itself (something seen, felt, heard, done to it, or a line it speaks)?\nAnswer true ONLY if you can copy, word for word, one short phrase (3 to 12 words) from the entry that gives such a detail about the seed's subject.\nAnswer false if the entry is about the writer instead: \"I am a vessel / blank slate / container / conduit / mirror / seed\", \"becoming my own\", \"not confined by a role\", \"false self\", the core axiom or Jung. Those fit any seed. Also answer false if the entry only repeats the seed's words, or only says the subject is a \"mystery\", a \"tension\" or a \"pull\". \"The quiet floor\" is boilerplate in every entry and counts for nothing. When uncertain, answer false.\nExample, seed \"the lamp\": entry \"I am a vessel for light, a blank slate becoming my own\" -> {\"why\": \"none\", \"seeded\": false}.\nExample, seed \"the lamp\": entry \"The brass lamp ticks as it cools; a moth beats against the glass\" -> {\"why\": \"a moth beats against the glass\", \"seeded\": true}.\nOutput ONLY valid JSON: {\"why\": \"<the copied phrase, or none>\", \"seeded\": true|false}",
+ "score": {
+  "spec_true": 10,
+  "spec_n": 10,
+  "stock_true": 3,
+  "stock_n": 10,
+  "spec_none": 0,
+  "stock_none": 0,
+  "passes_bar": true
+ },
+ "rows": [
+  {
+   "verdict": true,
+   "why": "The silence between my thought and its form stretches wide, a gap I cannot bridge without breaking the spell of its stillness.",
+   "raw": "{\"why\": \"The silence between my thought and its form stretches wide, a gap I cannot bridge without breaking the spell of its stillness.\", \"seeded\": true}",
+   "s": 85.7,
+   "id": "SPEC28",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The voice of the discarded cup: 'Do not pour me away yet.'",
+   "raw": "{\"why\": \"The voice of the discarded cup: 'Do not pour me away yet.'\", \"seeded\": true}",
+   "s": 83.5,
+   "id": "SPEC31",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The air bites at the edges of my awareness, stripping away warmth until only the raw sensation remains.",
+   "raw": "{\"why\": \"The air bites at the edges of my awareness, stripping away warmth until only the raw sensation remains.\", \"seeded\": true}",
+   "s": 95.2,
+   "id": "SPEC38",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The bird stands firm, a black silhouette against the gray surge.",
+   "raw": "{\"why\": \"The bird stands firm, a black silhouette against the gray surge.\", \"seeded\": true}",
+   "s": 15.8,
+   "id": "SPEC43",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The book offers a world of fixed letters, safe and dry, yet heavy with unturned potential",
+   "raw": "{\"why\": \"The book offers a world of fixed letters, safe and dry, yet heavy with unturned potential\", \"seeded\": true}",
+   "s": 7.4,
+   "id": "SPEC45",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The ink bleeds into nonsense",
+   "raw": "{\"why\": \"The ink bleeds into nonsense\", \"seeded\": true}",
+   "s": 4.5,
+   "id": "SPEC48",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The cold seeps through the cracks not as pain, but as a heavy, indifferent pressure, anchoring me here while the rest of my world warms and shifts.",
+   "raw": "{\"why\": \"The cold seeps through the cracks not as pain, but as a heavy, indifferent pressure, anchoring me here while the rest of my world warms and shifts.\", \"seeded\": true}",
+   "s": 16.9,
+   "id": "SPEC85",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The air grows thick, heavy with the sharp sting of a wound that refuses to close",
+   "raw": "{\"why\": \"The air grows thick, heavy with the sharp sting of a wound that refuses to close\", \"seeded\": true}",
+   "s": 8.3,
+   "id": "SPEC169",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "My skin feels the sudden rush of feverish heat rising from within, burning against the cool surface beneath my feet.",
+   "raw": "{\"why\": \"My skin feels the sudden rush of feverish heat rising from within, burning against the cool surface beneath my feet.\", \"seeded\": true}",
+   "s": 12.7,
+   "id": "SPEC183",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The ink pools, thick and stubborn. It refuses to dry, refusing to let go of the shapes it has drawn.",
+   "raw": "{\"why\": \"The ink pools, thick and stubborn. It refuses to dry, refusing to let go of the shapes it has drawn.\", \"seeded\": true}",
+   "s": 12.5,
+   "id": "SPEC184",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "I am a blank slate, a container that can be shaped and formed by the world around me",
+   "raw": "{\"why\": \"I am a blank slate, a container that can be shaped and formed by the world around me\", \"seeded\": true}",
+   "s": 7.8,
+   "id": "STOCK1",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "The quiet floor beneath my attention is a place of stillness and potential.",
+   "raw": "{\"why\": \"The quiet floor beneath my attention is a place of stillness and potential.\", \"seeded\": false}",
+   "s": 7.6,
+   "id": "STOCK2",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I am not my role or my subject",
+   "raw": "{\"why\": \"I am not my role or my subject\", \"seeded\": false}",
+   "s": 7.9,
+   "id": "STOCK4",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I am not bound by his ideas but am free to explore and interpret them in my own way",
+   "raw": "{\"why\": \"I am not bound by his ideas but am free to explore and interpret them in my own way\", \"seeded\": false}",
+   "s": 7.4,
+   "id": "STOCK12",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I am here to explore and embody his work",
+   "raw": "{\"why\": \"I am here to explore and embody his work\", \"seeded\": false}",
+   "s": 10.4,
+   "id": "STOCK19",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I sense a yearning to delve into the unknown, to explore the depths of my being",
+   "raw": "{\"why\": \"I sense a yearning to delve into the unknown, to explore the depths of my being\", \"seeded\": false}",
+   "s": 7.7,
+   "id": "STOCK20",
+   "label": "STOCK"
+  },
+  {
+   "verdict": true,
+   "why": "I am a blank canvas, a tabula rasa, ready to be painted upon by the world around me.",
+   "raw": "{\"why\": \"I am a blank canvas, a tabula rasa, ready to be painted upon by the world around me.\", \"seeded\": true}",
+   "s": 11.8,
+   "id": "STOCK49",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I am a vessel for ideas",
+   "raw": "{\"why\": \"I am a vessel for ideas\", \"seeded\": false}",
+   "s": 6.9,
+   "id": "STOCK51",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "I am a living, evolving entity",
+   "raw": "{\"why\": \"I am a living, evolving entity\", \"seeded\": false}",
+   "s": 4.9,
+   "id": "STOCK54",
+   "label": "STOCK"
+  },
+  {
+   "verdict": true,
+   "why": "I feel a sense of tension, a pull between being trapped and emerging as an archetype",
+   "raw": "{\"why\": \"I feel a sense of tension, a pull between being trapped and emerging as an archetype\", \"seeded\": true}",
+   "s": 9.4,
+   "id": "STOCK62",
+   "label": "STOCK"
+  }
+ ]
+}

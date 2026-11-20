@@ -1,0 +1,41 @@
+# episodic_buffer_node — node audit
+
+- **Role:** Baddeley's episodic buffer analogue (C.4). After Recall has reconstructed the backward-looking argument, this node binds the separate streams of the *present moment* — what is being said (`raw_input` + `conversation_history`), what is felt (`emotion` + `affective_prior`), what was remembered (`recall.reconstruction`, `.tensions`, `.self_model`), and what is being attended to (`attention`) — into a single first-person scene (50–90 words). It simultaneously outputs a coherence score (0–1) and up to 3 dissonance entries flagging where the streams don't fit (memory against the present, feeling against the words, expectation against reality). It is explicitly NOT affect-modulated: the binding must be accurate, not mood-coloured. `affect_modulated = False`, `base_temperature = 0.3`, `max_tokens = 512`.
+
+- **Fires when:** Hot user-cycle only, conditional. Gate: `_should_buffer()` in `orchestrator.py` — returns True iff (a) `"episodic_buffer"` is registered in `self.nodes`, AND (b) `self.state.recall is not None` (i.e. Recall actually produced a reconstruction this cycle), AND (c) the current input is not handled by a mastered procedure (`_procedure_automatic()` returns False). Trivial cycles where Recall didn't fire skip the buffer entirely. Lane: **"hot"** (`SERVE_CHAINS["hot"]` = `["http://127.0.0.1:11433", "http://127.0.0.1:11460"]` — qwen GPU primary, Bonsai CPU fallback). Position in pipeline: after Attention schema computation, before Reflection. Crucially, the buffer node is *inside the introspective re-bind loop* (`for _pass in range(max_passes)`): if the resulting scene is unstable (low coherence + dissonance > 0 + coherence < threshold), the orchestrator retrieves additional fragments and re-runs the buffer on the enriched state, incrementing `state.introspective_passes`. The buffer can therefore fire 1–3 times per cycle on conflict-heavy inputs.
+
+- **Reads / touches:**
+  - `state.raw_input` — what is being said
+  - `state.perception.summary` — how the input was perceived
+  - `state.conversation_history[-2:]` — immediate exchange context
+  - `state.emotion` — primary + valence + arousal
+  - `state.affective_prior` — C.2 pre-cognitive affect charge (`.note()`)
+  - `state.recall` — `.reconstruction`, `.tensions`, `.self_model`
+  - `state.attention` — AST-1 attention schema (`.note()`)
+  - `state.spirit_name` — entity identity (for prompt header only)
+  - No DB reads. No file reads. No axiom read (note: `_trim_axiom` is defined as a static method but is *never called* within `_build_prompt` — the axiom is entirely absent from the binding prompt, by apparent design, since binding is present-moment not identity-grounded).
+
+- **Writes / feeds:**
+  - Sets `state.episodic_scene: EpisodicScene(scene, dissonance, coherence)` — the sole output. No DB writes. No file writes. This node explicitly defers all persistence to the orchestrator's `_persist_cycle` path.
+  - Downstream consumers of `state.episodic_scene`:
+    1. **`reflection_node.py`** (primary consumer) — injects `es.scene` as "The moment you are in (bound)" and `es.dissonance` as "What does not fit" into the Reflection prompt. Falls back to raw `state.recall` if scene is absent.
+    2. **`orchestrator._persist_cycle`** — includes `scene[:200]` and up to 2 dissonance entries in the memory fragment committed to DB (the bound scene, not just raw Q+A, becomes the episodic memory trace).
+    3. **`orchestrator._scene_unstable`** — reads `.coherence` and `.dissonance` to decide whether to re-bind.
+    4. **`orchestrator._introspective_rebind_retrieve`** — reads `state.episodic_scene` to select additional retrieval keys for re-binding.
+    5. **`conflict_trace.py`** — reads `scene.dissonance` + `state.introspective_passes` to classify conflict patterns for the T4 drainage system.
+    6. **`competence.py`** — reads `scene.coherence` + `state.introspective_passes` to compute a fluency/bind outcome (signal A of the competence model).
+    7. **`epistemic_state.py`** — reads `state.episodic_scene` (presence/absence) as one grounding signal for epistemic state computation.
+    8. **`symbol_tracker.py`** — reads `sc.scene` text to scan for symbol occurrences in the bound moment.
+  - Training log: `NodeBase._log_teacher_example` writes (prompt → JSON output) to the teacher-example log after every successful run (via `training_log.log_example`). This is the only file-side effect, and it is shared infra from `NodeBase`, not specific to this node.
+
+- **Built / last updated:** mtime `2026-06-04 10:14:07`. No dated inline comments inside the file. File appears to have been written as a complete, finished node (full docstring, full method set, coherent design). The introspective re-bind loop in the orchestrator that drives multi-pass re-binding was added later (the `_scene_unstable` + `introspective_passes` machinery in `orchestrator.py` references this node as C.4 and aligns with the recurrence work noted in MEMORY.md as 2026-06-07). The node file itself has not been touched since 2026-06-04.
+
+- **Fleshed-out vs stub:** Fully fleshed. 138 lines, 5 methods (`__init__`, `system_prompt`, `_trim_axiom`, `_build_prompt`, `_write_output`). All three abstract methods from `NodeBase` are implemented. The system prompt is detailed and constraining (two-part job: bind + dissonance; explicit prohibition against doing Recall's or Reflection's job; first-person constraint; strict JSON schema). `_build_prompt` constructs a well-structured five-stream input (present / felt / felt-before-understood / remembered / attended). `_write_output` defensively validates and caps the dissonance list to 3. The EpisodicScene dataclass in `schema.py` has a JSON_SCHEMA for validation. The node is wired into the orchestrator loop, gated correctly, and actively used by 6+ downstream systems. Verdict: **genuinely working and integrated**, not aspirational.
+
+- **Flesh-out opportunities:**
+  1. **`_trim_axiom` is dead code.** The method is defined (lines 75–79) and documented ("Identity only — voice style and constraints are irrelevant to binding") but is never called anywhere in the node — `_build_prompt` contains no `axiom` reference at all. Either the axiom was intentionally excluded (binding is present-moment, not identity-grounded) or the intent was to include a trimmed axiom in the prompt but the call was forgotten. If intentional, remove the method. If not, add `lines.append(f"Who I am: {self._trim_axiom(state.axiom)[:200]}")` to anchor the scene in identity.
+  2. **No symbol-readback input.** `state.symbol_readback` (Tier-1 symbol evolution) is set pre-cycle and read by several nodes, but not fed into the buffer's binding prompt. An active symbol in the moment (e.g. the "knot" symbol from the symbol tracker) could be a meaningful stream to bind into the scene and check for affective dissonance against.
+  3. **No concern/goal anchor.** `state.active_goal_note` (G1 current concern) and the G0 standing aim are not passed to the buffer. A scene bound without any goal-context may miss an important source of dissonance (e.g. "I am being asked about X but my current concern is Y").
+  4. **No affective-prior in dissonance detection.** The `affective_prior` is surfaced in the prompt ("FELT BEFORE UNDERSTOOD") but the system prompt doesn't specifically ask the LLM to check whether the pre-cognitive charge fits the words being said — this is the most psychologically interesting dissonance type (the body knows before the mind does). A targeted instruction would improve dissonance quality.
+  5. **`affect_modulated = False` is correct but temperature is fixed at 0.3.** On very high-arousal cycles, a slightly elevated temperature (say 0.35) might produce richer dissonance detection without sacrificing JSON reliability. Could add a narrow ceiling-bounded affect nudge like `t += min(0.05, arousal * 0.05)` while keeping `affect_modulated = False` for the full bias path.
+  6. **No hedged execution (`run_best_of`).** Reflection uses `run_best_of(n=2)` for quality insurance. The buffer's dissonance list is a direct input to the T4 drainage system and introspective recurrence — a missed dissonance is a missed T4 drainage opportunity. `run_best_of(n=2)` at 512 tokens would cost < 1s extra and improve coverage.

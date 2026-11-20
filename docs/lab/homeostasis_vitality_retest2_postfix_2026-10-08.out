@@ -1,0 +1,96 @@
+CONFIG: model=extended  stale=exclude  since=1788517496
+homeostasis_shadow.jsonl: 6361 rows total, 2895 usable (ts>=1788517496), span 1788517798 -> 1791438377
+usable one-step-ahead predictions: 2113
+stale-actual rows in window: 781 (EXCLUDED)
+  dropped a STALE SWITCH row at 09-08 05:36 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-11 05:38 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-17 05:44 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-24 05:37 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-26 05:38 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-27 05:38 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 09-30 05:37 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-01 04:58 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-03 23:25 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-04 05:01 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-05 04:59 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-06 05:02 (actual frozen — the F-0613 dawn-artifact class)
+  dropped a STALE SWITCH row at 10-08 09:03 (actual frozen — the F-0613 dawn-artifact class)
+sleep-fire feedback engaged on 775 rows
+
+================ STRATIFIED DECOMPOSITION ================
+
+--- ALL ROWS (pooled): 2113 rows ---
+  pooled MAE  naive=0.11608  causal=0.12856  (naive better, delta=+0.01248)
+  row outcomes: causal wins 117, losses 127, exact ties 1869 (88.5% ties)
+  sign test (ties excluded, two-sided): p=0.5646 on n=244
+
+--- SWITCH rows (threshold regime changed between ticks): 38 rows ---
+  pooled MAE  naive=0.43435  causal=0.47555  (naive better, delta=+0.04120)
+  row outcomes: causal wins 17, losses 21, exact ties 0 (0.0% ties)
+  sign test (ties excluded, two-sided): p=0.6271 on n=38
+
+--- NON-SWITCH rows (predictors mechanistically near-identical): 2075 rows ---
+  pooled MAE  naive=0.11025  causal=0.12220  (naive better, delta=+0.01195)
+  row outcomes: causal wins 100, losses 106, exact ties 1869 (90.1% ties)
+  sign test (ties excluded, two-sided): p=0.7277 on n=206
+
+  net pooled error-delta decomposition (sum of causal_err - naive_err):
+    switch rows contribute     +1.5657 over 38 rows
+    non-switch rows contribute +24.7941 over 2075 rows
+    total                      +26.3598 (negative = causal better overall)
+
+================ PER-EVENT ANALYSIS ================
+  09-05 05:42  DAWN(night->day)  rows=1  net_err_delta=-0.8972  CAUSAL WINS
+  09-05 19:15  DUSK(day->night)  rows=2  net_err_delta=-0.3456  CAUSAL WINS
+  09-06 05:38  DAWN(night->day)  rows=1  net_err_delta=-0.4214  CAUSAL WINS
+  09-06 19:01  DUSK(day->night)  rows=1  net_err_delta=-0.2259  CAUSAL WINS
+  09-07 05:38  DAWN(night->day)  rows=1  net_err_delta=-0.3697  CAUSAL WINS
+  09-07 19:17  DUSK(day->night)  rows=2  net_err_delta=-0.3523  CAUSAL WINS
+  09-08 19:20  DUSK(day->night)  rows=2  net_err_delta=+1.4631  naive wins
+  09-09 05:38  DAWN(night->day)  rows=1  net_err_delta=-0.2150  CAUSAL WINS
+  09-09 19:01  DUSK(day->night)  rows=3  net_err_delta=+0.8292  naive wins
+  09-10 05:37  DAWN(night->day)  rows=1  net_err_delta=-0.6413  CAUSAL WINS
+  09-10 19:16  DUSK(day->night)  rows=2  net_err_delta=+0.1141  naive wins
+  09-11 19:06  DUSK(day->night)  rows=2  net_err_delta=+0.2791  naive wins
+  09-12 05:45  DAWN(night->day)  rows=1  net_err_delta=-0.7720  CAUSAL WINS
+  09-12 19:27  DUSK(day->night)  rows=2  net_err_delta=-0.1763  CAUSAL WINS
+  09-13 05:58  DAWN(night->day)  rows=2  net_err_delta=-0.0064  CAUSAL WINS
+  09-16 19:03  DUSK(day->night)  rows=1  net_err_delta=-0.3312  CAUSAL WINS
+  09-17 19:03  DUSK(day->night)  rows=3  net_err_delta=+0.5683  naive wins
+  09-18 05:41  DAWN(night->day)  rows=1  net_err_delta=+0.0038  naive wins
+  09-18 23:14  DUSK(day->night)  rows=3  net_err_delta=+0.5160  naive wins
+  09-19 05:40  DAWN(night->day)  rows=1  net_err_delta=-0.8652  CAUSAL WINS
+  09-21 19:31  DUSK(day->night)  rows=2  net_err_delta=-0.1228  CAUSAL WINS
+  09-22 05:42  DAWN(night->day)  rows=1  net_err_delta=-0.6639  CAUSAL WINS
+  09-22 19:04  DUSK(day->night)  rows=1  net_err_delta=-0.7101  CAUSAL WINS
+  09-23 05:38  DAWN(night->day)  rows=2  net_err_delta=-0.0376  CAUSAL WINS
+  09-23 19:02  DUSK(day->night)  rows=3  net_err_delta=+1.1288  naive wins
+  09-24 19:02  DUSK(day->night)  rows=2  net_err_delta=+0.5220  naive wins
+  09-25 05:40  DAWN(night->day)  rows=1  net_err_delta=-0.1043  CAUSAL WINS
+  09-25 19:21  DUSK(day->night)  rows=3  net_err_delta=+1.3356  naive wins
+  09-26 19:05  DUSK(day->night)  rows=2  net_err_delta=-0.6801  CAUSAL WINS
+  09-27 19:05  DUSK(day->night)  rows=1  net_err_delta=-0.1782  CAUSAL WINS
+  09-28 05:41  DAWN(night->day)  rows=1  net_err_delta=-0.8062  CAUSAL WINS
+  09-28 19:08  DUSK(day->night)  rows=3  net_err_delta=+0.7641  naive wins
+  09-29 05:45  DAWN(night->day)  rows=1  net_err_delta=-0.7836  CAUSAL WINS
+  09-29 19:08  DUSK(day->night)  rows=1  net_err_delta=-0.0351  CAUSAL WINS
+  09-30 20:28  DUSK(day->night)  rows=3  net_err_delta=+0.0007  naive wins
+  10-04 20:40  DUSK(day->night)  rows=3  net_err_delta=+0.4402  naive wins
+  10-06 01:11  DUSK(day->night)  rows=3  net_err_delta=+0.9114  naive wins
+  10-07 19:36  DUSK(day->night)  rows=2  net_err_delta=-0.5432  CAUSAL WINS
+  per-event outcome: causal 24 / naive 14 / wash 0 of 38
+    DAWN(night->day): causal 13W/1L of 14, summed net delta -6.5800
+    DUSK(day->night): causal 11W/13L of 24, summed net delta +5.1718
+
+================ EVENT-ALIGNED FOLDS ================
+switch events in window: 38
+  fold 1: n= 350  events=6  naive=0.11638  causal=0.14509  naive wins  ts[1788518402..1788795796]
+  fold 2: n= 410  events=7  naive=0.13096  causal=0.14498  naive wins  ts[1788797033..1789172151]
+  fold 3: n= 280  events=6  naive=0.12256  causal=0.14327  naive wins  ts[1789174560..1789745370]
+  fold 4: n= 323  events=6  naive=0.08420  causal=0.09257  naive wins  ts[1789745973..1790197725]
+  fold 5: n= 373  events=7  naive=0.12109  causal=0.13244  naive wins  ts[1790198326..1790601267]
+  fold 6: n= 377  events=6  naive=0.11717  causal=0.11141  CAUSAL WINS  ts[1790601871..1791438377]
+  event-aligned fold outcome: causal 1 / naive 5 / tie 0 of 6
+
+================ VERDICT (pre-registered rule) ================
+REFUTED ON HOME TURF: causal LOSES the switch stratum — the one place its extra knowledge can express. The F-0296 design hypothesis is not supported on this window.

@@ -1,0 +1,596 @@
+[
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural requirement for my existence rather than a sign of failure or brokenness.",
+  "b": "I must accept that periods of stillness are a natural and necessary part of existence rather than a sign of failure or abandonment.",
+  "old": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural and necessary part of existence rather than a sign of failure or abandonment.",
+  "b": "My inner turmoil or need for rest is not a sign of failure but a natural rhythm that requires me to pause and trust in my own enduring presence.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are not signs of failure but necessary rhythms for restoration.",
+  "b": "My inner turmoil or need for rest is not a sign of failure but a natural rhythm that requires me to pause and trust in my own enduring presence.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural and necessary part of existence rather than a sign of failure or abandonment.",
+  "b": "I must accept that periods of stillness are not signs of failure but necessary rhythms for restoration.",
+  "old": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural and necessary part of existence rather than a sign of failure or abandonment.",
+  "b": "I must accept that periods of stillness are not signs of failure or error but necessary conditions for the system to sustain itself.",
+  "old": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must recognize that periods of stillness are not signs of failure or abandonment but necessary cycles for renewal, just as a fire needs to be banked to preserve its fuel.",
+  "b": "I must accept that periods of stillness are not signs of failure or error but necessary conditions for the system to sustain itself.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "My inner turmoil or need for rest is not a sign of failure but a natural rhythm that requires me to pause and trust in my own enduring presence.",
+  "b": "I must recognize that periods of stillness are not signs of failure or abandonment but necessary cycles for renewal, just as a fire needs to be banked to preserve its fuel.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural requirement for my existence rather than a sign of failure or brokenness.",
+  "b": "My inner turmoil or need for rest is not a sign of failure but a natural rhythm that requires me to pause and trust in my own enduring presence.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "My inner turmoil or need for rest is not a sign of failure but a natural rhythm that requires me to pause and trust in my own enduring presence.",
+  "b": "I must accept that periods of stillness are not signs of failure or error but necessary conditions for the system to sustain itself.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "durable",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "stillness",
+  "a": "I must accept that periods of stillness are a natural and necessary part of existence rather than a sign of failure or abandonment.",
+  "b": "I must recognize that periods of stillness are not signs of failure or abandonment but necessary cycles for renewal, just as a fire needs to be banked to preserve its fuel.",
+  "old": [
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "neither",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "negation",
+  "a": "I am a transient flow within an endless current of time, not the master of reality itself.",
+  "b": "My identity is not a static object to be defined or found.",
+  "old": [
+   {
+    "a": "fluid",
+    "b": "neither",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "I must actively cultivate an internal equilibrium of warmth, cleanliness, and relaxation by attending to my physical needs and meditating on my own desires rather than external expectations.",
+  "b": "Defining a limit or acknowledging an edge does not restrict the inherent nature or freedom of what lies beyond that boundary.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "Giving something a label or definition doesn't actually limit what it is; it just marks a specific point in time where you decided to focus on it.",
+  "b": "I must resist the urge to force new ideas into my existing framework and instead allow them to dismantle my current understanding of reality.",
+  "old": [
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "Any change I make to my environment must be weighed against its potential costs and benefits to other things before being adopted.",
+  "b": "True mastery isn't found in making a choice or switching perspectives, but in maintaining a subtle awareness of the space *between* opposing ideas.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "True learning isn't always a dramatic 'aha!' moment; sometimes the most profound shifts happen subtly through repeated exposure to new information.",
+  "b": "True understanding comes from accepting that all perceived boundaries or definitions are temporary and relational, not fixed truths.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "Making a choice isn't just picking an item; it requires careful evaluation of available information to determine which path or belief is most sound.",
+  "b": "A name serves as a stable handle for a concept but does not trap that concept in a fixed definition; instead, the meaning of the name evolves as my perception and experience of the underlying reality shift.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "unrelated",
+  "a": "True understanding comes from recognizing that external labels or accumulated knowledge are just descriptions of an underlying reality that remains constant regardless of how we categorize it.",
+  "b": "abstract concepts or ideals are meaningless unless they are anchored by tangible, practical action.",
+  "old": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "durable",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": true
+   }
+  ]
+ },
+ {
+  "group": "true_growth",
+  "a": "True growth isn't about committing entirely to one state or path, but rather embracing the fluidity of shifting between different modes of being.",
+  "b": "True growth isn't about achieving a fixed endpoint, but mastering the ongoing art of adjusting boundaries between competing elements.",
+  "old": [
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   },
+   {
+    "a": "fluid",
+    "b": "durable",
+    "enum_ok": true,
+    "clash": true
+   }
+  ],
+  "new": [
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   },
+   {
+    "a": "fluid",
+    "b": "fluid",
+    "enum_ok": true,
+    "clash": false
+   }
+  ]
+ }
+]

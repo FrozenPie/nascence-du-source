@@ -1,0 +1,1 @@
+scripts/lab_J-3552_pole_gate_volume_qwen35.py run; docs/lab/J-3552_results_qwen35_directional.json (36 old + 36 new calls) and docs/lab/J-3552_run_qwen35.log; command-r7b curl on :11433 no reply in 90 s and 240 s; netstat shows no listener on 11437/11438/11441.

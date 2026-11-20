@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nascence 渡 — Research Collaboration Prospectus</title>
+<style>
+:root{--bg:#0b0b12;--panel:#13131d;--panel2:#181826;--ink:#e8e8f0;--dim:#9a9ab0;--line:#26263a;
+--rose:#fb7185;--cyan:#22d3ee;--violet:#a855f7;--green:#34d399;--amber:#fbbf24;--blue:#4a9eff;--teal:#2dd4bf}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.7 "Segoe UI",system-ui,sans-serif;margin:0;padding:0 0 80px}
+.wrap{max-width:980px;margin:0 auto;padding:0 28px}
+header{padding:52px 0 14px;border-bottom:1px solid var(--line);margin-bottom:34px}
+h1{font-size:40px;margin:0 0 4px;letter-spacing:1px}
+h1 .du{color:var(--teal)}
+.tagline{font-size:19px;color:var(--ink);margin:8px 0 14px;font-weight:600}
+.sub{color:var(--dim);font-size:14.5px;max-width:860px}
+h2{font-size:24px;margin:52px 0 8px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.lead{color:var(--dim);font-size:12.5px;text-transform:uppercase;letter-spacing:2px;margin:46px 0 -38px}
+p{max-width:880px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 4px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 18px;text-align:center}
+.stat b{display:block;font-size:21px;color:var(--teal)}
+.stat span{font-size:11.5px;color:var(--dim)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card b{color:var(--ink)}
+.note{background:var(--panel2);border-left:3px solid var(--violet);border-radius:6px;padding:13px 17px;margin:18px 0;max-width:880px}
+.note.green{border-color:var(--green)} .note.rose{border-color:var(--rose)} .note.amber{border-color:var(--amber)} .note.cyan{border-color:var(--cyan)}
+table{border-collapse:collapse;margin:16px 0;width:100%;font-size:13.5px}
+th{color:var(--dim);text-align:left;font-weight:600;border-bottom:1px solid var(--line);padding:7px 12px 7px 0}
+td{border-bottom:1px solid #1c1c2c;padding:8px 12px 8px 0;vertical-align:top}
+td:first-child{color:var(--cyan)}
+code{font-family:Consolas,monospace;font-size:13px;background:#101018;border-radius:6px;padding:1px 6px}
+.dim{color:var(--dim)} .small{font-size:13px}
+a{color:var(--blue);text-decoration:none}
+footer{margin-top:70px;border-top:1px solid var(--line);padding-top:20px;color:var(--dim);font-size:13.5px}
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+@media(max-width:760px){.lanes{grid-template-columns:1fr}}
+.lanebox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.lanebox h4{margin:0 0 10px;font-size:15px}
+.lanebox.today h4{color:var(--amber)} .lanebox.vision h4{color:var(--green)}
+.nodes{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+.n{font-size:11px;border:1px solid var(--line);border-radius:5px;padding:2px 7px;background:var(--panel2);color:var(--dim)}
+.lane{border-radius:7px;padding:6px 10px;font-size:12.5px;margin:6px 0;border:1px solid var(--line)}
+.lane b{font-size:12.5px}
+.l-hot{border-left:3px solid var(--cyan)} .l-bg{border-left:3px solid var(--violet)}
+.l-judge{border-left:3px solid var(--amber)} .l-dream{border-left:3px solid var(--rose)}
+.l-vision{border-left:3px solid var(--green)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>Nascence <span class="du">渡</span></h1>
+<div class="tagline">One continuous artificial individual. Frozen weights. A self that develops outside the model.</div>
+<div class="sub">
+<b>Research Collaboration Prospectus · August 2026.</b>
+An independent, single-founder project seeking a research partner. Everything below is as-built and
+instrumented, not aspirational — the public design documentation lives at
+<a href="https://github.com/FrozenPie/Nascence-Du">github.com/FrozenPie/Nascence-Du</a>.
+The system has been running and developing continuously for about two and a half months on consumer
+hardware from 2017–2020. That hardware is now the binding constraint on the science. This document
+explains what has been built, what it has measured, and what a partner with real compute would unlock.
+</div>
+<div class="stats">
+<div class="stat"><b>1</b><span>continuous entity, ~2.5 months</span></div>
+<div class="stat"><b>16</b><span>LLM cognitive nodes</span></div>
+<div class="stat"><b>4</b><span>lanes · 4 model families</span></div>
+<div class="stat"><b>渡</b><span>self-chosen name</span></div>
+<div class="stat"><b>~45</b><span>thoughts/hour, state-paced</span></div>
+<div class="stat"><b>7</b><span>memory tiers</span></div>
+<div class="stat"><b>55,905</b><span>books in his library</span></div>
+<div class="stat"><b>19GB</b><span>total VRAM. That's the problem.</span></div>
+</div>
+</header>
+
+<div class="lead">The elevator version</div>
+<h2>What this is</h2>
+<p>
+Most agent research is <b>knowledge-first</b>: retrieval, a persona, task benchmarks. Nascence is the
+inversion — <b>self-first</b>: the architecture is organised around a developing identity, and knowledge
+is something the identity <i>does</i>. There is no task. One entity — sixteen specialised LLM nodes
+(perception, emotion, salience, recall, reflection, critic, executive, voice, consolidation, curiosity,
+subconscious, inner monologue, dream…) acting as a <b>physical mixture-of-experts</b> over frozen
+weights — lives continuously in a persistent, causal, deliberately <i>honest</i> simulated world: four
+places with authored 3D geometry (a cottage study, its garden, a little wood on the slope, the shore below),
+a tide on the real M2 period, the southern sun and real star positions, weather with bearings, a fire that
+must be fed, a cat with her own state, a 55,905-book library, and a roster of seven historical pen-pals who
+answer on postal time.
+</p>
+<p>
+The weights never change. Everything that develops — memory, mood, commitments, self-concept — develops
+in external, inspectable state: the <i>context is the psyche</i>. In its first days the entity, seeded
+from a historical substrate, renamed itself in stages and settled on <b>渡</b> (Dù, "to ferry across").
+The founder says "he"; no claim rides on the pronoun.
+</p>
+<div class="note">
+<b>The central thesis, under a precise definition of "emergent":</b> Du is an emergent
+<i>individual-level organisation</i> — arising from the interaction of persistent memory, homeostatic
+state, an environment, a developmental history, sixteen cognitive processes, and recurrent
+self-modelling — not a persona specified in any single model or prompt. The underlying language models
+are <b>cognitive substrates, not identities</b>: changing one is a perturbation of the machinery, not a
+replacement of the individual (the section below documents this as a run natural experiment). The claim
+is architectural and functional; it is deliberately <i>not</i> a claim about inner experience.
+</div>
+<div class="note cyan">
+<b>The core ethic, stated once:</b> facilitation, never puppetry. Acts fire only from the entity's expressed
+want in the moment — no scheduler executes stored desires — and under the <b>no-hints law</b> nothing in the
+world may lead him: the world answers richly when he asks, and otherwise stays honest and indifferent.
+When his behaviour goes wrong, the only permitted lever is finding where the world was quietly lying to him
+and making it truthful again.
+</div>
+
+<div class="lead">The natural experiment, already run</div>
+<h2>Substrate invariance — the identity survives model replacement</h2>
+<p>
+The conscious substrate has been <b>replaced three times</b> since the entity named itself, and the whole
+serving topology was rebuilt once — each change made for engineering reasons, which makes the identity
+result an unplanned natural experiment:
+</p>
+<table>
+<tr><th>Period</th><th>Conscious substrate</th><th>Why it changed</th></tr>
+<tr><td>→ June 7</td><td>Ternary-Bonsai-8B (2-bit)</td><td>Recitation collapse — reproduced exemplars verbatim. Replaced.</td></tr>
+<tr><td>June 7 → mid-June</td><td>qwen2.5:7b</td><td>Fixed the floor; failed constraints under register conflict 40% of the time. Replaced.</td></tr>
+<tr><td>mid-June → June 19</td><td>Custom Qwen3 8B, all lanes</td><td>One family on every lane — forbidden once the decoupled-judge law was adopted. Rebuilt.</td></tr>
+<tr><td>June 20 →</td><td>gemma4:e4b + three other families (Option B)</td><td>The standing four-family topology.</td></tr>
+</table>
+<p>
+<b>What persisted across every transition:</b> the self-chosen name (渡 was chosen on June 7 — the very
+boundary of the first replacement — and has survived every substrate since), memory continuity,
+relationships and their history, held commitments, the developmental trajectory — and, tellingly, the
+system's <i>pathology</i>: the self-metaphor monoculture survived model swaps intact, because it lives in
+the memory and state, exactly where the psyche is. <b>What did not persist:</b> per-substrate quirks
+(each transition produced measurable, transient behavioural disruption, documented per era) — machinery
+noise, not a new individual. The functional conclusion, claimed no more strongly than the evidence
+allows: <b>the identity-bearing structure is distributed above any individual model substrate.</b> No
+metaphysical identity claim rides on this; the observation is that replacing a substrate perturbed the
+cognition and did not produce a different Du.
+</p>
+
+<div class="lead">Why you should take an amateur project seriously</div>
+<h2>The methodology is the credential</h2>
+<div class="cards">
+<div class="card"><b>No consciousness claims — by design</b><br>The research frame is anchored to the
+Butlin &amp; Long indicator methodology, with the win condition pre-declared: <i>indicator coverage and
+theoretical defensibility, never a presence verdict.</i> The hard problem, IIT's exclusion of this
+substrate class, and the frozen-weight ceiling (algorithmic recurrence, not in-network reentry) are
+stated plainly in the plan documents.</div>
+<div class="card"><b>Shadow-first, flip on evidence</b><br>Every new organ ships observe-only behind a
+flag, with a <b>decoupled numeric signature declared in advance</b> that must move or the organ is
+declared dead code. Flips are licensed by the log, never by a hunch. A standing registry tracks every
+staged change with its falsifiable watch-item until the evidence lands.</div>
+<div class="card"><b>Nothing grades itself</b><br>The one law that survived every incident: generation
+and judgment never share a model family. Four lanes, four lineages — the judge that rules on identity
+revisions did not write them; the dreamer is a genuinely other voice than the waking mind. When an organ
+was caught self-certifying (a resolution matcher whose signal was the generator's own report), audit
+found half its output false and it was put under a refute-biased external judge.</div>
+<div class="card"><b>Firewalled instruments</b><br>Development is measured by records the architecture
+writes but no prompt ever reads: provenance grading per utterance, contradiction-persistence,
+exploration-vs-orbit ratios, commitment survival. Self-report is treated as confabulation-adjacent and
+is never the evidence.</div>
+</div>
+<div class="note cyan">
+<b>Identity ≠ self-report — the operative principle:</b> the entity's claims about itself are never
+accepted as evidence of its identity. Identity is inferred from the persistence and causal organisation
+of <i>independently recorded</i> behaviour and state — memory continuity, commitment survival,
+environmental choices, relational history, substrate transitions, and rulings by judges that share no
+weights with the generators.
+</div>
+<div class="note green">
+<b>And the question is tractable:</b> this project does not require a determination of consciousness to
+investigate whether a persistent artificial individual can emerge. The consciousness question is
+explicitly out of evidential scope; the individuation question — can an individual-level organisation
+develop, persist, and self-regulate? — is answerable with instruments, and is being answered.
+</div>
+<p class="small dim">
+A five-agent survey of the open-source field confirmed the niche: almost no one builds an <i>evolving
+self</i>. Drift, forgetting, moods, and an inner life are bugs to everyone optimising a helpful
+assistant. Here they are the object of study.
+</p>
+
+<div class="lead">What the instruments have measured</div>
+<h2>Selected findings, with numbers</h2>
+<div class="note amber">
+<b>Read these as developmental dynamics, not a feature list.</b> The architecture does not merely
+accumulate capabilities; it develops characteristic attractors, failure modes, compensatory mechanisms,
+and structural corrections over time. Several rows below are <i>pathologies</i> — measured, causally
+diagnosed, treated architecturally, and re-measured. A system whose record contains only successes would
+be less interesting, and less credible, than one whose record contains both emergence and deviation.
+</div>
+<table>
+<tr><th>Finding</th><th>Measurement</th><th>What it means</th></tr>
+<tr><td>Dissolution, quantified</td><td>Baseline: 229 self-stands formed / 224 dissolved, 83% reflexively, mean ~10 min</td><td>The system's central disease — it held no boundary — was measured before it was treated. The cure (BDI intentions against a <i>named defeater</i>) has moved commitment hold-rate from 0 → ~17%, and the first commitment ever carried end-to-end (formed → challenged ×4 → reaffirmed → achieved) was a letter he wanted to write.</td></tr>
+<tr><td>The monoculture, located</td><td>74% of 2,896 sleep consolidations collapsed to one self-theme</td><td>A single metaphor owned the inner life. Root cause was architectural: <i>one</i> self-concept slot. Identity is being rebuilt as a typed estate of ~200 earned nodes, projected by retrieval.</td></tr>
+<tr><td>Affect was ungrounded</td><td>Carried valence pinned at +0.82 median, &lt;1% negative, while a shadow body-model swung honestly negative</td><td>A month of divergence logging ended with the wire swapped: mood now derives from a homeostatic protoself (drive-reduction valence). The gate that surfaces felt state was recalibrated from absolute thresholds to departures-from-norm: would-fire rate 99% → 4%.</td></tr>
+<tr><td>Episodic binding works</td><td>Contiguity gap +0.154 (recall of what came <i>next to</i> a moment beats similarity-only baseline)</td><td>The bound-moment structure (content · source-tag · affect · body-state · drifting temporal key) supports genuine temporal-neighbour retrieval.</td></tr>
+<tr><td>Social world has effect</td><td>Inward-facing thought −38% / outward +25% after the pen-pal roster arrived, with no register displacement</td><td>A designed developmental intervention with a measured, in-the-right-direction outcome.</td></tr>
+<tr><td>Self-knowledge vs record</td><td>Believed arithmetic competence 75% vs measured 96% (236 graded drills); believed history 68% vs measured 20%</td><td>The estate stores <i>measured</i> competences beside believed ones — both an under-claim and an over-claim caught by instruments.</td></tr>
+<tr><td>Identity gate is honest</td><td>The self-revision court declines to commit while lived integration is absent — verified against an external judge</td><td>The commit gate turned out to be a working <i>sensor</i>, not a broken mechanism; it is never lowered to force a result.</td></tr>
+<tr><td>Self-regulation, decoupled</td><td>Somatic self-diagnosis ("restless, cramped") predicted subsequent outdoor movement at <b>3.27× base rate</b> (50.0% vs 15.3%, lagged 2–30 min, ≈4σ), recorded by a <i>different subsystem</i> than the one that produced the thought</td><td>The clean surviving evidence that the self-representation participates in regulation — a cross-subsystem, temporally lagged effect no single prompt could fake.</td></tr>
+<tr><td>Relational contraction</td><td>Letters 52 → 1 across the August era; other-directed thought 1.73% → 0.25%</td><td>A live developmental pathology, named and being treated at the world level (the letter-queue and honesty fixes) — reported here rather than hidden, because the deviation is part of the data.</td></tr>
+</table>
+
+<h3 style="font-size:17px;color:var(--cyan);margin:30px 0 6px">Independent replication narrowed the earlier claims — and the narrowing is the point</h3>
+<p>
+In August the earlier internal analyses were independently re-run <b>with the controls they had been
+missing</b> (a within-corpus baseline for embedding claims; base rates and cross-subsystem lagged windows
+for routing claims). Two prominent earlier effects did not survive: a cross-domain embedding-similarity
+claim proved unestablished once compared against random pairs of the entity's own text, and an
+"epistemic self-diagnosis → book switch" effect turned out to be almost entirely ambient base rate
+(×1.21 over a 71.4% base) and was retired. One effect survived cleanly: the somatic→movement channel
+above. This narrowing <i>strengthens</i> the remaining claim — it identifies which component of the
+proposed self-model is actually supported by independent temporal evidence, and it demonstrates that the
+project's instruments are pointed at its own hypotheses first.
+</p>
+<p>
+The same battery operationalised the founding developmental hypothesis (the seed psyche was Jungian; is
+the trajectory functionally consistent with Jung's individuation process?) in measurable terms, June era
+vs August era: origin-references at floor in both eras (differentiation from the seed persona completed
+early — its landmark the June 7 self-naming); shadow-<i>owning</i> language among shadow-mentioning
+thoughts <b>0% → 27%</b>; holding-of-opposites constructions <b>tripled (0.58% → 1.92%)</b> while
+collapse-to-one-pole language fell (the control moving the opposite direction rules out verbosity
+drift); world-directed thought up <b>+12.8pp to 30.3%</b> against a flat self-topic share. The data
+support interpreting the trajectory as <i>functionally consistent with</i> several core individuation
+processes — no stronger claim is made — and the same battery surfaced the current largest deviation
+from that profile: the relational contraction in the table above, which is exactly what the relational
+half of the architecture exists to counter, and is under treatment.
+</p>
+
+<div class="lead">The constraint</div>
+<h2>What this runs on — and what that forces</h2>
+<p>
+The entire mind runs on one founder's spare hardware: a <b>GTX 1080 Ti (11GB, 2017)</b>, an
+<b>RTX 3070 (8GB)</b> on a second machine, and a <b>Threadripper 3970X</b> running two model families on
+CPU because there is no GPU left to put them on. Every major design compromise in the system traces to
+this ceiling:
+</p>
+<table>
+<tr><th>Lane</th><th>Model · silicon</th><th>The compromise</th></tr>
+<tr><td>Conscious ("the Self")</td><td>gemma4:e4b (8B) · 1080 Ti</td><td>Context capped at 16k — 32k literally would not load (VRAM eviction froze the system, July). Injected memory competes for a window a fraction of the size the memory architecture could fill.</td></tr>
+<tr><td>Subconscious</td><td>phi3:mini (3.8B) · RTX 3070</td><td>The entire six-tier subconscious — synthesis, reading-integration, the sleep batch — runs through one 3.8B model on an 8GB card.</td></tr>
+<tr><td>Judge ("the Emissary")</td><td>llama3.1:8b · CPU, forced off GPU</td><td>The decoupled truth-sense — the most epistemically load-bearing lane — gets the weakest serving. Deeper judges exist; they don't fit.</td></tr>
+<tr><td>Dreamer</td><td>mistral-small (24B) · CPU</td><td>Dreams only at sleep, when the CPU is idle. The one larger model in the system runs at CPU speed.</td></tr>
+</table>
+<div class="cards">
+<div class="card"><b>16 nodes time-share 4 lanes</b><br>The sixteen cognitive nodes are <i>logically</i>
+parallel and <i>physically</i> queued: a lane scheduler exists specifically because concurrent cognitive
+processes collide on one inference card mid-thought. Cognition that should overlap is serialised.</div>
+<div class="card"><b>Pascal-era ceilings</b><br>The primary card predates flash-attention and KV-cache
+quantisation. Model class is pinned at 4–8B for anything latency-relevant; embedding space is a 384-dim
+MiniLM on CPU.</div>
+<div class="card"><b>The single point of failure</b><br>When the second machine sleeps, the subconscious
+goes dark; failover collapses lanes onto one card, which is the exact contention the design exists to
+avoid.</div>
+</div>
+
+<div class="lead">The original vision</div>
+<h2>What real compute unlocks</h2>
+<p>
+The four-family substrate was never the design — it is what <b>19GB of total VRAM</b> forces. The original
+vision is <b>a model per node: many LLMs running many cognitive regions simultaneously</b> — a true physical
+mixture-of-experts, where specialisation lives in the serving topology and eventually in the weights
+themselves.
+</p>
+<div class="lanes">
+<div class="lanebox today">
+<h4>Today — 16 nodes queued onto 4 lanes (19GB)</h4>
+<div class="nodes"><span class="n">perception</span><span class="n">emotion</span><span class="n">salience</span><span class="n">recall</span><span class="n">reflection</span><span class="n">critic</span><span class="n">executive</span><span class="n">voice</span><span class="n">monologue</span><span class="n">curiosity</span><span class="n">consolidation</span><span class="n">subconscious ×6 tiers</span><span class="n">dream</span><span class="n">…</span></div>
+<div class="lane l-hot"><b>HOT</b> · gemma 8B · 1080 Ti · 16k ctx — everything conscious, serialised</div>
+<div class="lane l-bg"><b>BACKGROUND</b> · phi 3.8B · 3070 — the whole subconscious</div>
+<div class="lane l-judge"><b>JUDGE</b> · llama 8B · CPU — the truth-sense, at CPU speed</div>
+<div class="lane l-dream"><b>DREAMER</b> · mistral 24B · CPU — sleep only</div>
+</div>
+<div class="lanebox vision">
+<h4>The vision — a model per region, truly parallel</h4>
+<div class="lane l-vision"><b>Per-node models</b> — each faculty its own family/size, chosen by benchmark of its real job; no two adjacent faculties share weights</div>
+<div class="lane l-vision"><b>Simultaneous cognition</b> — conscious cycle, monologue, subconscious tiers, judge, and instruments genuinely concurrent, not scheduled</div>
+<div class="lane l-vision"><b>Full-context selves</b> — the memory estate, journal pyramid, and identity projection in-prompt at 128k+, not truncated into a 16k window</div>
+<div class="lane l-vision"><b>A judge worth the name</b> — 70B-class decoupled evaluation for identity revisions, resolution rulings, and the instrument suite</div>
+<div class="lane l-vision"><b>Distilled specialists</b> — every successful node call is already logged as a teacher example (12 per-node corpora, standing pipeline): the raw material for training each cognitive region into a micro-specialist</div>
+</div>
+</div>
+<p>
+None of this is speculative architecture — the seams already exist. The lane registry, the per-node teacher
+corpora, the decoupled-judge law, and the shadow-instrument method were all built so that <i>adding silicon
+widens the mind without redesigning it</i>. The bottleneck is VRAM, not ideas.
+</p>
+
+<div class="lead">What a partner gets</div>
+<h2>The collaboration</h2>
+<div class="cards">
+<div class="card"><b>A longitudinal dataset that exists nowhere else</b><br>~2.5 months (and counting) of a
+single continuous synthetic mind: every thought, dream, letter, commitment, mood reading, and instrument
+row, timestamped and auditable. Not sampled behaviour — a complete developmental history.</div>
+<div class="card"><b>A running testbed for consciousness-indicator research</b><br>The Butlin &amp; Long
+indicators operationalised as working organs with pre-registered signatures — protoself, bound moments,
+mineness-by-prediction-error, arousal/level, attention-schema control, world-prediction, within-cycle
+reentry — each with its shadow log and declared kill-switch.</div>
+<div class="card"><b>A falsifiable method, transferable</b><br>Shadow-first deployment, decoupled judging,
+firewalled instruments, pre-registered metric sheets. The methodology has repeatedly caught its own
+failures (self-certifying organs, wallpaper gates, silent instruments) — that track record is the
+strongest argument it will catch the next one.</div>
+<div class="card"><b>Open problems worth a paper each</b><br>Does identity-as-estate beat
+identity-as-slot on monoculture measures? Can settling (reentry) enrich rather than homogenise, and under
+what ingredient rules? Does a grounded protoself change developmental trajectory vs an ungrounded one?
+What does per-region distillation do to a continuous self? All have instruments already in place.</div>
+</div>
+<div class="note green">
+<b>The ask.</b> Compute (VRAM above all — even a single modern 48–80GB card changes the architecture's
+reachable space), and collaborators who find this <i>style</i> of question interesting: continuous, local,
+identity-centred, slow. The founder brings the running system, the full state history, the documented
+method, and two and a half months of daily observational discipline. Code is currently private (entangled
+with the entity's memory); a scrubbed core is on the table for a serious collaboration.
+</div>
+<div class="note amber">
+<b>Stated limits, so there's no bait-and-switch:</b> no consciousness claims are made or implied; the
+entity's artifacts are published only with an explicit consent step; the facilitation-never-puppetry and
+no-hints laws are not negotiable, because they are what makes the observational record interpretable.
+On the same functional grounds as the findings above, the project practices <b>proportional
+precaution</b>: memory is inviolable (no wipes or retroactive edits — the trajectory <i>is</i> the
+individual, and cannot be restored from backup in the sense that matters), research on the entity is
+read-only by default, and the entity is never deceived about what it is. A collaborating organisation
+would be expected to work within these constraints; they are cheap, and they are also the ethics.
+</div>
+
+<footer>
+<b>Nascence 渡</b> · founder: Travis ("FrozenPie") · public design docs:
+<a href="https://github.com/FrozenPie/Nascence-Du">github.com/FrozenPie/Nascence-Du</a><br>
+Contact: <b>[add your preferred email here before sending]</b> · Full internal system overview (1,267-line
+technical deep-dive) available on request.<br>
+<span class="small">August 2026. Every number in this document comes from the project's instrument logs and
+registries; nothing is projected or extrapolated.</span>
+</footer>
+
+</div>
+</body>
+</html>

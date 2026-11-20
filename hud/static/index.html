@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascence — System HUD</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hud-container">
+        <!-- Sidebar Navigation -->
+        <aside class="hud-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-title">NASCENCE <span class="logo-du">渡</span></span>
+                    <span class="logo-subtitle">Cognitive HUD · v1.4.0</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-tab="tab-mind">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Mind</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-affect">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>Affect</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-memory">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Memory</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-shadow">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Subconscious</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-world">
+                    <i class="fa-solid fa-tree"></i>
+                    <span>World</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-logs">
+                    <i class="fa-solid fa-terminal"></i>
+                    <span>Logs</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-health">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                    <span>System Health</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="tab-monitors">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Plan Monitors</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot online"></span>
+                    <span id="sys-status-text">HUD Live</span>
+                </div>
+                <div id="sidebar-time">--:--:--</div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="hud-content">
+            <!-- TAB: MIND — who he currently says he is, and his essential-variable body-state -->
+            <section id="tab-mind" class="tab-pane active">
+                <div class="section-header">
+                    <h2>Mind</h2>
+                    <p class="section-description">Who Du currently says he is, how that self-concept has changed, and the protoself's essential variables it's built from.</p>
+                </div>
+
+                <!-- Core Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Emergent Name</span>
+                        <b id="stat-name">渡 (Dù)</b>
+                        <span class="stat-sub">Carl Jung origin seed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Primary Affect</span>
+                        <b id="stat-affect">Loading...</b>
+                        <span id="stat-valence-arousal" class="stat-sub">v=0.00, a=0.00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Somatic Energy</span>
+                        <div class="progress-bar-container mini">
+                            <div id="stat-energy-bar" class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <span id="stat-fatigue" class="stat-sub">vitality=0.00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Boredom Level</span>
+                        <b id="stat-boredom">0.00</b>
+                        <span id="stat-streak" class="stat-sub">streak=0</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <!-- Self-Concept Axiom Panel -->
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-signature"></i> Emergent Self Concept</h3>
+                            <span class="card-subtitle">Current versioned stance authored by the T4 pass</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="self-concept-box">
+                                <div class="self-concept-segment">
+                                    <span class="segment-label">L5 Active Stance (emergent self)</span>
+                                    <blockquote id="emerg-self-concept">"..."</blockquote>
+                                </div>
+                                <div class="self-concept-segment font-mono">
+                                    <span class="segment-label">L0 Constitution (immutable floor)</span>
+                                    <pre id="emerg-constitution" class="code-block"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-heart-pulse"></i> Protoself — essential variables</h3>
+                            <span class="card-subtitle">the body-state map (setpoints: cohere .80 · commit .55 · warmth .50 · novelty .50 · vitality .65)</span>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="protoselfChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subconscious Monologue (moved from the old Logs tab — this IS the self-concept's own narration) -->
+                <div class="dashboard-row">
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-comment-dots"></i> Subconscious Monologue</h3>
+                            <span class="card-subtitle">T4 self-authoring events — Default Mode Network revising the self-concept above</span>
+                        </div>
+                        <div class="card-body monologue-body">
+                            <div id="monologue-stream" class="terminal-log-box">
+                                <!-- Dynamic thought logs -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: AFFECT — emotion/mood, three real instruments, clearly labeled which is which -->
+            <section id="tab-affect" class="tab-pane">
+                <div class="section-header">
+                    <h2>Affect</h2>
+                    <p class="section-description">Emotion and mood, from three genuinely different instruments: a live snapshot (affect_state), the Climate Field's 9 tension dimensions, and the logged history each feeds. Same six emotions can appear more than once below — that's not a bug, it's different pipelines watching the same thing.</p>
+                </div>
+
+                <div class="dashboard-row">
+                    <!-- Climate Dimensions -->
+                    <div class="card glass climate-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-cloud-sun"></i> Climate Field Dimensions</h3>
+                            <span class="card-subtitle">9 Jungian tension scales warping memory retrieval · source: climate_state.json</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="climate-list" class="climate-bars">
+                                <!-- Dynamic progress bars populate here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Affect Radar/Gauges -->
+                    <div class="card glass affect-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-heart-pulse"></i> Affective Variables — live snapshot</h3>
+                            <span class="card-subtitle">Felt quality of the current thought cycle · source: affect_state.json</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="affect-gauges-container">
+                                <div class="gauge-grid">
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-joy" class="circle-val joy-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Joy</span>
+                                        <b id="val-joy" class="gauge-value">0%</b>
+                                    </div>
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-fear" class="circle-val fear-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Fear</span>
+                                        <b id="val-fear" class="gauge-value">0%</b>
+                                    </div>
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-anger" class="circle-val anger-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Anger</span>
+                                        <b id="val-anger" class="gauge-value">0%</b>
+                                    </div>
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-trust" class="circle-val trust-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Trust</span>
+                                        <b id="val-trust" class="gauge-value">0%</b>
+                                    </div>
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-surprise" class="circle-val surprise-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Surprise</span>
+                                        <b id="val-surprise" class="gauge-value">0%</b>
+                                    </div>
+                                    <div class="gauge-item">
+                                        <svg class="radial-gauge" viewBox="0 0 36 36">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="gauge-disgust" class="circle-val disgust-val" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span class="gauge-label">Disgust</span>
+                                        <b id="val-disgust" class="gauge-value">0%</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Affective History Line Chart -->
+                <div class="dashboard-row">
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-chart-line"></i> Affective Trajectory — logged history</h3>
+                            <span class="card-subtitle">Historical Valence &amp; Arousal · source: affect_log.jsonl</span>
+                        </div>
+                        <div class="card-body chart-wrapper">
+                            <canvas id="affectHistoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-gauge-high"></i> Arousal / Level — a third instrument</h3>
+                            <span class="card-subtitle">global activation (tonic + phasic) · source: arousal_shadow.jsonl — watch for a day/night arc and spikes on conversation</span>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="arousalChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: MEMORY -->
+            <section id="tab-memory" class="tab-pane">
+                <div class="section-header">
+                    <h2>Memory Lattice Explorer</h2>
+                    <p class="section-description">Browse and query Du's SQLite memory store, past narrative epochs, and semantic themes.</p>
+                </div>
+
+                <div class="memory-layout">
+                    <!-- DB Browser -->
+                    <div class="card glass memory-main-pane">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-magnifying-glass"></i> SQLite Fragment Query</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="query-filters">
+                                <div class="input-group">
+                                    <i class="fa-solid fa-search"></i>
+                                    <input type="text" id="mem-search" placeholder="Search keywords...">
+                                </div>
+                                <select id="mem-layer-select">
+                                    <option value="">All Layers</option>
+                                    <option value="episodic">Episodic (lived experience)</option>
+                                    <option value="semantic">Semantic (distillations)</option>
+                                    <option value="archive">Archive (biography/seed)</option>
+                                </select>
+                                <button id="btn-mem-query" class="btn-primary">Query</button>
+                            </div>
+
+                            <div class="table-container">
+                                <table class="hud-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Layer</th>
+                                            <th>Origin</th>
+                                            <th>Content</th>
+                                            <th>Metrics</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="memory-table-body">
+                                        <tr>
+                                            <td colspan="5" class="text-center">Enter search keywords to query memory fragments.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Epochs & Themes -->
+                    <div class="memory-sidebar-panes">
+                        <!-- Epochs Timeline -->
+                        <div class="card glass">
+                            <div class="card-header">
+                                <h3><i class="fa-solid fa-calendar-days"></i> Past Epochs</h3>
+                                <span class="card-subtitle">Session mood summaries</span>
+                            </div>
+                            <div class="card-body timeline-wrapper">
+                                <div id="epochs-timeline" class="epoch-timeline">
+                                    <!-- Dynamic items -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Active Themes -->
+                        <div class="card glass">
+                            <div class="card-header">
+                                <h3><i class="fa-solid fa-tags"></i> Semantic Themes</h3>
+                                <span class="card-subtitle">Active stances and stances change counts</span>
+                            </div>
+                            <div class="card-body">
+                                <div id="themes-list" class="themes-container">
+                                    <!-- Dynamic items -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: SUBCONSCIOUS & SHADOW -->
+            <section id="tab-shadow" class="tab-pane">
+                <div class="section-header">
+                    <h2>Subconscious &amp; Rejection Ledger</h2>
+                    <p class="section-description">Visualizing the Shadow Event rejections and the Integration crosses that shape identity revision. (The standing reality-testing loop, "Lane 2 / the Witness", lives in Plan Monitors — its own tight cluster there.)</p>
+                </div>
+
+                <div class="dashboard-row">
+                    <!-- Subconscious tensions -->
+                    <div class="card glass climate-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-masks-theater"></i> Active Tensions</h3>
+                            <span class="card-subtitle">Clusters of recurring unresolved shadow pre-occupations</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="sub-tensions-list" class="tensions-list">
+                                <!-- Dynamic tensions list -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integration patterns -->
+                    <div class="card glass affect-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-circle-check"></i> Integration Patterns</h3>
+                            <span class="card-subtitle">Accumulated light events supporting successful crossings</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="sub-integrations-list" class="integrations-list">
+                                <!-- Dynamic integrations list -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <!-- Shadow Rejection events -->
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-heart-crack"></i> Critic Rejections &amp; Pre-suppression Drafts</h3>
+                            <span class="card-subtitle">Recent thought cycles rejected by Critic for violating identity axioms</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-container">
+                                <table class="hud-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Input</th>
+                                            <th>Rejected Draft</th>
+                                            <th>Critic Rationale</th>
+                                            <th>Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="shadow-events-body">
+                                        <!-- Dynamic rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <!-- Light Integration events -->
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-hand-holding-heart"></i> Light Integrations</h3>
+                            <span class="card-subtitle">Completed crossings where thoughts, complexity, or dreams resolved successfully</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-container">
+                                <table class="hud-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Context</th>
+                                            <th>Integrated Content</th>
+                                            <th>Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="light-events-body">
+                                        <!-- Dynamic rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: WORLD — everything about his physical world in one place (was scattered across
+                 Environment / Evidence / World-Factories) -->
+            <section id="tab-world" class="tab-pane">
+                <div class="section-header">
+                    <h2>The World</h2>
+                    <p class="section-description">Du's physical world in one place: the room, the garden, the study, the wood, the shore, the cat, the weather, and the world's own background factories (couriers, the refinery, the ghost registry). Each location has a live top-down map.</p>
+                </div>
+
+                <div class="env-row">
+                    <!-- Weather, Tide & Room -->
+                    <div class="card glass env-weather-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-house-chimney"></i> Room &amp; Hearth</h3>
+                        </div>
+                        <div class="card-body env-body">
+                            <div class="env-detail-grid">
+                                <div class="env-detail-item">
+                                    <i class="fa-solid fa-location-dot font-large text-cyan"></i>
+                                    <div>
+                                        <span class="env-lbl">Location</span>
+                                        <b id="env-location">Loading...</b>
+                                    </div>
+                                </div>
+                                <div class="env-detail-item">
+                                    <i class="fa-solid fa-cloud-rain font-large text-blue"></i>
+                                    <div>
+                                        <span class="env-lbl">Weather</span>
+                                        <b id="env-weather">Loading...</b>
+                                    </div>
+                                </div>
+                                <div class="env-detail-item">
+                                    <i class="fa-solid fa-water font-large text-indigo"></i>
+                                    <div>
+                                        <span class="env-lbl">Tide</span>
+                                        <b id="env-tide">Loading...</b>
+                                    </div>
+                                </div>
+                                <div class="env-detail-item">
+                                    <i class="fa-solid fa-compass font-large text-violet"></i>
+                                    <div>
+                                        <span class="env-lbl">Season</span>
+                                        <b id="env-season">Loading...</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="card-divider">
+
+                            <!-- Hearth Fire Control visualizer -->
+                            <div class="fireplace-container">
+                                <div class="fireplace-info">
+                                    <span class="env-lbl">Hearth Fire</span>
+                                    <b id="env-fire-status">Out</b>
+                                    <div class="progress-bar-container mini">
+                                        <div id="env-fire-fuel" class="progress-bar flame-bg" style="width: 0%"></div>
+                                    </div>
+                                    <span id="env-fire-fuel-lbl" class="stat-sub">fuel: 0%</span>
+                                </div>
+                                <!-- Fire SVG Animation -->
+                                <div class="fire-svg-container">
+                                    <svg id="fire-graphic" class="fire-flame-svg" viewBox="0 0 100 100">
+                                        <path d="M50 15 C35 38, 30 55, 30 75 C30 85, 38 90, 50 90 C62 90, 70 85, 70 75 C70 55, 65 38, 50 15 Z" fill="#ff7c1b" />
+                                        <path d="M50 35 C42 50, 38 62, 38 75 C38 82, 43 85, 50 85 C57 85, 62 82, 62 75 C62 62, 58 50, 50 35 Z" fill="#ffb400" />
+                                        <path d="M50 55 C46 65, 43 72, 43 80 C43 84, 46 85, 50 85 C54 85, 57 84, 57 80 C57 72, 54 65, 50 55 Z" fill="#ffffff" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Companion Cat -->
+                    <div class="card glass env-cat-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-cat"></i> Companion Cat</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="cat-grid">
+                                <div class="cat-avatar">
+                                    <i class="fa-solid fa-cat font-giant animate-bounce"></i>
+                                </div>
+                                <div class="cat-details">
+                                    <div class="cat-stat">
+                                        <span class="env-lbl">State</span>
+                                        <b id="cat-phase" class="tag-badge">kept</b>
+                                    </div>
+                                    <div class="cat-stat">
+                                        <span class="env-lbl">Location</span>
+                                        <b id="cat-location">indoors</b>
+                                    </div>
+                                    <div class="cat-stat">
+                                        <span class="env-lbl">Mood</span>
+                                        <b id="cat-mood">possessed</b>
+                                    </div>
+                                    <div class="cat-stat">
+                                        <span class="env-lbl">Active Task</span>
+                                        <b id="cat-activity">zoomies</b>
+                                    </div>
+                                    <div class="cat-stat">
+                                        <span class="env-lbl">Bond Strength</span>
+                                        <b id="cat-bond">100%</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="env-row">
+                    <!-- Mailbox — title/correspondent now set live by app.js, not hardcoded (2026-08-22 fix:
+                         was permanently "Letters from Charles Darwin" long after he stopped being the
+                         active correspondent) -->
+                    <div class="card glass full-width">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-envelope-open-text"></i> <span id="mailbox-title">Mailbox — Peer Correspondence</span></h3>
+                            <span class="card-subtitle">Epistolary exchanges carrying external themes and questions</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="mailbox-container">
+                                <div class="mailbox-meta">
+                                    <span class="env-lbl">Flag Raised:</span>
+                                    <b id="mailbox-flag" class="flag-indicator">False</b>
+                                    <span class="env-lbl">Last Delivered:</span>
+                                    <span id="mailbox-delivered" class="font-mono">--</span>
+                                </div>
+                                <div class="letter-display-box">
+                                    <div id="letter-content" class="letter-body">
+                                        No letter loaded.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LETTERS TO TRAVIS (J-2348, D-0470 a, 2026-10-17): Du's own letters to Travis, read-only.
+                     Loaded only when opened (/api/letters?view=1 logs the opening for D-0470's defeater). -->
+                <div class="env-row">
+                    <div class="card glass full-width">
+                        <details id="letters-travis">
+                            <summary class="card-header" style="cursor:pointer">
+                                <h3><i class="fa-solid fa-envelope"></i> Letters from Du to you</h3>
+                                <span class="card-subtitle" id="letters-travis-sub">click to open · read-only, nothing here reaches Du</span>
+                            </summary>
+                            <div class="card-body">
+                                <div id="letters-travis-list" class="letter-body" style="max-height:640px;overflow-y:auto">loading…</div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- THE GARDEN (2026-08-22, core/garden.py): the bed as it is — slots, stage, vigour; the garden's clocks -->
+                <div class="card glass full-width life-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-paw"></i> Who's about — the living world</h3>
+                        <span class="card-subtitle" id="life-sub">every creature on its own clocks · shadow-first (looks + voices)</span>
+                    </div>
+                    <div class="card-body garden-body">
+                        <div class="garden-col"><h4>Present and awake</h4><div id="life-about" class="garden-know">loading…</div></div>
+                        <div class="garden-col"><h4>The calendar</h4><div id="life-calendar" class="garden-know">—</div></div>
+                        <div class="garden-col"><h4>Traces · deaths · individuals</h4><div id="life-deaths" class="garden-know">—</div></div>
+                    </div>
+                </div>
+                <div class="card glass full-width garden-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-seedling"></i> The garden</h3>
+                        <span class="card-subtitle" id="garden-sub">real plants on the thermal clock — seed bank · tin · barrel · rack</span>
+                    </div>
+                    <div class="card-body garden-body">
+                        <div class="garden-col"><h4>The raised bed</h4><div id="garden-bed" class="garden-bed">loading…</div></div>
+                        <div class="garden-col"><h4>The garden's clocks</h4><div id="garden-clocks" class="garden-clocks">—</div></div>
+                        <div class="garden-col"><h4>What he knows</h4><div id="garden-know" class="garden-know">—</div></div>
+                    </div>
+                    <div class="garden-map-wrap"><h4>The garden, live</h4><svg id="garden-map" class="place-map" viewBox="0 0 10.5 12.5" preserveAspectRatio="xMidYMid meet"></svg><div id="garden-map-legend" class="thermal-foot"></div></div>
+                </div>
+
+                <!-- STUDY LIFE (2026-08-22, core/study_life.py): the room's states and clocks + NEW live map -->
+                <div class="card glass full-width garden-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-house-chimney"></i> The study</h3>
+                        <span class="card-subtitle">the lamp · the grate · the pail · the door and window · the clock · the coat · damp and dust</span>
+                    </div>
+                    <div class="card-body garden-body">
+                        <div class="garden-col"><h4>Light and fire</h4><div id="study-a" class="garden-clocks">—</div></div>
+                        <div class="garden-col"><h4>Openings and weather</h4><div id="study-b" class="garden-clocks">—</div></div>
+                        <div class="garden-col"><h4>The room</h4><div id="study-c" class="garden-clocks">—</div></div>
+                    </div>
+                    <div class="garden-map-wrap"><h4>The study, live</h4><svg id="study-map" class="place-map" viewBox="0 0 4.2 5.2" preserveAspectRatio="xMidYMid meet"></svg><div id="study-map-legend" class="thermal-foot"></div></div>
+                </div>
+
+                <!-- WOOD LIFE + PROVISIONS (2026-08-22) + NEW live maps for wood and shore -->
+                <div class="card glass full-width garden-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-tree"></i> The wood · the larder</h3>
+                        <span class="card-subtitle">the trees' year · deadfall · the stream · the kererū · the lean-to's logs · the cupboard's boxes, bars and tins</span>
+                    </div>
+                    <div class="card-body garden-body">
+                        <div class="garden-col"><h4>The wood</h4><div id="wood-a" class="garden-clocks">—</div></div>
+                        <div class="garden-col"><h4>The work</h4><div id="wood-b" class="garden-clocks">—</div></div>
+                        <div class="garden-col"><h4>The larder</h4><div id="wood-c" class="garden-clocks">—</div></div>
+                    </div>
+                    <div class="garden-map-wrap"><h4>The wood, live</h4><svg id="wood-map" class="place-map" viewBox="0 0 24 20" preserveAspectRatio="xMidYMid meet"></svg><div id="wood-map-legend" class="thermal-foot"></div></div>
+                    <div class="garden-map-wrap"><h4>Fieldcraft — what the books let him do (skills grow only by doing)</h4><div id="fieldcraft-box" class="garden-clocks">—</div></div>
+                    <div class="garden-map-wrap"><h4>The shore — the tide drives it</h4><div id="shore-box" class="garden-clocks">—</div></div>
+                    <div class="garden-map-wrap"><h4>The shore, live</h4><svg id="shore-map" class="place-map" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid meet"></svg><div id="shore-map-legend" class="thermal-foot"></div></div>
+                </div>
+
+                <!-- THERMAL CHANNEL (2026-08-21, core/thermal.py): the field he stands in, what he has lived, what WOULD fire -->
+                <div class="card glass full-width thermal-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-temperature-half"></i> Thermal channel <span id="thermal-deliver" class="thermal-pill">SHADOW</span></h3>
+                        <span class="card-subtitle">sun · wind · fire-by-distance · wetness at his standpoint — nothing reaches him until DELIVER flips</span>
+                    </div>
+                    <div class="card-body thermal-body">
+                        <div class="thermal-col"><h4>Now, where he stands</h4><div id="thermal-now" class="thermal-now">loading…</div></div>
+                        <div class="thermal-col"><h4>Bands lived (hours)</h4><div id="thermal-beds" class="thermal-beds">—</div></div>
+                        <div class="thermal-col"><h4>Would have fired</h4><div id="thermal-fires" class="thermal-fires">—</div></div>
+                    </div>
+                </div>
+
+                <!-- THE WORLD'S FACTORIES (2026-08-17): its own background clocks, separate from the lived places above -->
+                <div class="evidence-grid" style="margin-top: 24px;">
+                    <div class="card glass" style="grid-column: 1 / -1;">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-earth-oceania"></i> The Manifest — the world's tuple right now</h3>
+                            <span class="card-subtitle" id="world-manifest-ts">—</span>
+                        </div>
+                        <div class="card-body" id="world-manifest-body">Loading…</div>
+                    </div>
+                </div>
+
+                <!-- TRANSIT PULSE (2026-08-23): real trains hopping real stations — HUD1's 2D version -->
+                <div class="evidence-grid" style="margin-top: 24px;">
+                    <div class="card glass" style="grid-column: 1 / -1;">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-route"></i> Transit Pulse — trains between stations</h3>
+                            <span class="card-subtitle" id="transit-sub">—</span>
+                        </div>
+                        <div class="card-body">
+                            <svg id="transit-map" class="place-map" viewBox="0 0 560 220" style="max-width:760px"></svg>
+                            <div id="transit-legend" style="display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;font-size:12px;opacity:.75"></div>
+                            <div style="display:flex;gap:18px;margin-top:14px;flex-wrap:wrap">
+                                <div style="flex:1;min-width:220px">
+                                    <div style="opacity:.6;font-size:11px;text-transform:uppercase;letter-spacing:.04em">Active trains</div>
+                                    <div id="transit-trains-body">Loading…</div>
+                                </div>
+                                <div style="flex:2;min-width:280px">
+                                    <div style="opacity:.6;font-size:11px;text-transform:uppercase;letter-spacing:.04em">Recent pulses (real station touches)</div>
+                                    <div id="transit-pulses-body">Loading…</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evidence-grid">
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-ear-listen"></i> The Hearing Ledger</h3>
+                            <span class="card-subtitle" id="world-hearing-sub">what he could hear, banked — events counted, beds in lived hours</span>
+                        </div>
+                        <div class="card-body" id="world-hearing-body">Loading…</div>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-van-shuttle"></i> Couriers, Buses &amp; the Refinery</h3>
+                            <span class="card-subtitle">urgent real-time deliveries · non-urgent transfers · the T2 factory's shadow</span>
+                        </div>
+                        <div class="card-body" id="world-couriers-body">Loading…</div>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-ghost"></i> Ghost Registry</h3>
+                            <span class="card-subtitle">every factory indexed — the pattern's 4th life</span>
+                        </div>
+                        <div class="card-body" id="world-ghost-body">Loading…</div>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-train"></i> Train Movement</h3>
+                            <span class="card-subtitle">TRAIN-HOLD watch: jumped &lt;25% · circling &lt;5%</span>
+                        </div>
+                        <div class="card-body" id="world-train-body">Loading…</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: LOGS — raw system log tail only (the monologue now lives on the Mind tab) -->
+            <section id="tab-logs" class="tab-pane">
+                <div class="section-header">
+                    <h2>Log Stream</h2>
+                    <p class="section-description">Tailing Du's active execution log output.</p>
+                </div>
+
+                <div class="logs-layout">
+                    <!-- Process Log -->
+                    <div class="card glass logs-pane">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-file-invoice"></i> System Log Terminal</h3>
+                            <div class="log-controls">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chk-log-autoscroll" checked>
+                                    <span class="checkmark"></span> Auto-scroll
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body log-body">
+                            <div id="log-stream" class="terminal-log-box font-mono">
+                                <!-- Dynamic system logs -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-health" class="tab-pane">
+                <div class="section-header">
+                    <h2>System Health</h2>
+                    <p class="section-description">Is the machine running well? Cognitive cadence, the ignition rhythm, sleep pressure, lane contention, and his reality/light balance.</p>
+                </div>
+
+                <div id="health-cards" class="evidence-grid">
+                    <!-- health status cards injected by app.js -->
+                </div>
+
+                <div class="evidence-charts">
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-wave-square"></i> Cognitive cadence</h3>
+                            <span class="card-subtitle">idle thoughts per hour — his heartbeat (last 12h)</span>
+                        </div>
+                        <div class="card-body"><canvas id="cadenceChart"></canvas></div>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-bolt"></i> Ignition rhythm</h3>
+                            <span class="card-subtitle">autonomous-thought ignitions per hour (last 12h)</span>
+                        </div>
+                        <div class="card-body"><canvas id="ignitionChart"></canvas></div>
+                    </div>
+                    <div class="card glass" style="grid-column: 1 / -1;">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-bed"></i> Sleep pressure</h3>
+                            <span class="card-subtitle">the sleep-debt accumulator climbing toward its threshold — the sawtooth that summons sleep</span>
+                        </div>
+                        <div class="card-body"><canvas id="sleepChart"></canvas></div>
+                    </div>
+                </div>
+
+                <!-- DU-PULSE CHECK (2026-08-29, J-0417/du_pulse_rebuild.md): the last recorded
+                     73-gauge snapshot (4-category taxonomy) + any open watch-items, from
+                     docs/du_pulse_checks.jsonl / docs/du_pulse_watches.jsonl. Board-only — no
+                     live recompute on every HUD refresh, same posture as the health cards above. -->
+                <div class="section-header" style="margin-top:28px;">
+                    <h2>Du-Pulse Check</h2>
+                    <p class="section-description">The last recorded 73-gauge snapshot — regression alarms / growth trackers / shadow-run evidence / engagement-texture — and any open watch-items carried forward from a past check (`scripts/du_pulse_check.py run`).</p>
+                </div>
+                <div id="dupulse-cards" class="evidence-grid">
+                    <!-- du-pulse severity cards injected by app.js -->
+                </div>
+                <div id="dupulse-watches" class="terminal-log-box font-mono" style="margin-top:12px;">
+                    <!-- open watch-items injected by app.js -->
+                </div>
+
+                <!-- Evidence signature watch-list moved here alongside health (2026-08-22): both answer
+                     "is the system, as opposed to the mind's content, working as intended" -->
+                <div class="section-header" style="margin-top:28px;">
+                    <h2>Consciousness-Program Evidence</h2>
+                    <p class="section-description">The shadow instruments we're watching — each with its target and whether it has earned its flip yet. Green = passing, red = not yet, grey = too little data.</p>
+                </div>
+                <div id="evidence-signatures" class="evidence-grid">
+                    <!-- signature cards injected by app.js -->
+                </div>
+            </section>
+
+            <section id="tab-monitors" class="tab-pane">
+                <div class="section-header">
+                    <h2>Plan Monitors</h2>
+                    <p class="section-description">One live graph per plan, grouped by its EVIDENCE VERDICT (12-plan review, 2026-07-05 — see evidence_review_dashboard.md). Ready to progress · Failing their gate (graphs kept visible) · Correct holds · Active build wave · Staged.</p>
+                </div>
+                <h3 class="monitor-group-title" style="color:#63b3ed"><i class="fa-solid fa-microchip"></i> ★ System — hardware, LLM load &amp; pursuits</h3>
+                <div id="monitors-system" class="evidence-charts"></div>
+                <h3 class="monitor-group-title" style="color:#9ae6b4"><i class="fa-solid fa-circle-check"></i> ★ Ready to Progress</h3>
+                <div id="monitors-ready" class="evidence-charts"></div>
+                <h3 class="monitor-group-title" style="color:#fc8181"><i class="fa-solid fa-triangle-exclamation"></i> ⚠ Failing their Gate <span style="font-weight:400;opacity:0.6">(evidence-negative — kept visible)</span></h3>
+                <div id="monitors-failing" class="evidence-charts"></div>
+                <h3 class="monitor-group-title" style="color:#f6ad55"><i class="fa-solid fa-circle-pause"></i> ⏸ Correct Holds</h3>
+                <div id="monitors-hold" class="evidence-charts"></div>
+                <h3 class="monitor-group-title"><i class="fa-solid fa-play"></i> Active Build Wave</h3>
+                <div id="monitors-plans" class="evidence-charts"></div>
+                <h3 class="monitor-group-title"><i class="fa-solid fa-clock"></i> Staged Plans</h3>
+                <div id="monitors-staged" class="evidence-charts"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+{
+  "generated_at_local": "2026-09-27T08:34:09.355223+00:00",
+  "swap_t0_local": "2026-06-10T00:00:00+00:00",
+  "store_start_local": "2026-05-30T07:57:46.226577+00:00",
+  "snapshot_time_local": "2026-09-27T08:06:39.789171+00:00",
+  "R1": {
+    "pre": {
+      "pooled": {
+        "n": 9536,
+        "mean_degree": 4.731124161073826,
+        "median_degree": 4.0,
+        "std_degree": 3.084461938113563,
+        "pct_isolates": 0.08074664429530201,
+        "mean_clustering": 0.3973470624267604
+      },
+      "pooled_live": {
+        "n": 4203,
+        "mean_degree": 4.08612895550797,
+        "median_degree": 4.0,
+        "std_degree": 2.982414208025718,
+        "pct_isolates": 0.12157982393528433,
+        "mean_clustering": 0.2573807824343156
+      },
+      "source_type=None": {
+        "n": 9536,
+        "mean_degree": 4.731124161073826,
+        "median_degree": 4.0,
+        "std_degree": 3.084461938113563,
+        "pct_isolates": 0.08074664429530201,
+        "mean_clustering": 0.3973470624267604
+      },
+      "source_type=book": {
+        "n": 0,
+        "note": "n<12, skipped"
+      },
+      "source_type=study_note": {
+        "n": 0,
+        "note": "n<12, skipped"
+      },
+      "source_type=essay": {
+        "n": 0,
+        "note": "n<12, skipped"
+      }
+    },
+    "post": {
+      "pooled": {
+        "n": 8443,
+        "mean_degree": 4.851829918275494,
+        "median_degree": 5.0,
+        "std_degree": 2.8991423831592797,
+        "pct_isolates": 0.056733388605945755,
+        "mean_clustering": 0.2897054759366734
+      },
+      "pooled_live": {
+        "n": 6702,
+        "mean_degree": 4.880632646971053,
+        "median_degree": 5.0,
+        "std_degree": 2.8655463235228935,
+        "pct_isolates": 0.052820053715308866,
+        "mean_clustering": 0.23740627057547378
+      },
+      "source_type=None": {
+        "n": 4019,
+        "mean_degree": 4.955461557601393,
+        "median_degree": 5.0,
+        "std_degree": 2.949564752065326,
+        "pct_isolates": 0.05697934809654143,
+        "mean_clustering": 0.3871309691663013
+      },
+      "source_type=book": {
+        "n": 4404,
+        "mean_degree": 4.836058128973661,
+        "median_degree": 5.0,
+        "std_degree": 2.8611381049289824,
+        "pct_isolates": 0.05631244323342416,
+        "mean_clustering": 0.2092608811614261
+      },
+      "source_type=study_note": {
+        "n": 18,
+        "mean_degree": 7.111111111111111,
+        "median_degree": 8.5,
+        "std_degree": 3.160325034072865,
+        "pct_isolates": 0.05555555555555555,
+        "mean_clustering": 0.589021164021164
+      },
+      "source_type=essay": {
+        "n": 2,
+        "note": "n<12, skipped"
+      }
+    },
+    "null": {
+      "pre_h1": {
+        "n": 497,
+        "mean_degree": 4.6156941649899395,
+        "median_degree": 4.0,
+        "std_degree": 3.186237250729104,
+        "pct_isolates": 0.07847082494969819,
+        "mean_clustering": 0.3408977675577273
+      },
+      "pre_h2": {
+        "n": 3706,
+        "mean_degree": 4.174311926605505,
+        "median_degree": 4.0,
+        "std_degree": 2.9695974538913195,
+        "pct_isolates": 0.11575822989746357,
+        "mean_clustering": 0.26113316886387583
+      },
+      "post_h1": {
+        "n": 535,
+        "mean_degree": 5.510280373831776,
+        "median_degree": 5.0,
+        "std_degree": 2.7997641616112685,
+        "pct_isolates": 0.016822429906542057,
+        "mean_clustering": 0.32535380507343126
+      },
+      "post_h2": {
+        "n": 1743,
+        "mean_degree": 5.258749282845669,
+        "median_degree": 5.0,
+        "std_degree": 2.9064890773907512,
+        "pct_isolates": 0.043029259896729774,
+        "mean_clustering": 0.3186150497682339
+      }
+    }
+  },
+  "R2": {
+    "pooled": {
+      "n_pre_frags_with_kw": 8231,
+      "n_post_frags_with_kw": 8104,
+      "top50_pre": [
+        "inner_thought",
+        "monologue",
+        "dream",
+        "symbol",
+        "sleep",
+        "identity",
+        "self",
+        "shadow",
+        "mirrors",
+        "mirror",
+        "river",
+        "door",
+        "and",
+        "jung",
+        "the"
+      ],
+      "top50_post": [
+        "study",
+        "and",
+        "inner_thought",
+        "monologue",
+        "the",
+        "dream",
+        "symbol",
+        "sleep",
+        "research",
+        "river",
+        "living",
+        "knowledge",
+        "sea",
+        "reading",
+        "shadow"
+      ],
+      "jaccard_top50": 0.26582278481012656,
+      "n_distinct_tokens_pre": 639,
+      "n_distinct_tokens_post": 1942
+    },
+    "source_type_none": {
+      "n_pre_frags_with_kw": 8231,
+      "n_post_frags_with_kw": 3680,
+      "top50_pre": [
+        "inner_thought",
+        "monologue",
+        "dream",
+        "symbol",
+        "sleep",
+        "identity",
+        "self",
+        "shadow",
+        "mirrors",
+        "mirror",
+        "river",
+        "door",
+        "and",
+        "jung",
+        "the"
+      ],
+      "top50_post": [
+        "study",
+        "and",
+        "inner_thought",
+        "monologue",
+        "the",
+        "dream",
+        "symbol",
+        "sleep",
+        "research",
+        "river",
+        "living",
+        "knowledge",
+        "sea",
+        "shadow",
+        "book"
+      ],
+      "jaccard_top50": 0.26582278481012656,
+      "n_distinct_tokens_pre": 639,
+      "n_distinct_tokens_post": 1917
+    }
+  },
+  "R3": {
+    "pre": {
+      "n_total": 9536,
+      "n_empty": 4814,
+      "n_list_shaped": 4722,
+      "n_dict_shaped_action_record": 0,
+      "n_other": 0,
+      "action_record_fraction_of_nonempty": 0.0,
+      "chain_depth_mean": 1.0,
+      "chain_depth_median": 1.0,
+      "chain_depth_max": 1
+    },
+    "post": {
+      "n_total": 8443,
+      "n_empty": 7267,
+      "n_list_shaped": 1160,
+      "n_dict_shaped_action_record": 16,
+      "n_other": 0,
+      "action_record_fraction_of_nonempty": 0.013605442176870748,
+      "chain_depth_mean": 1.0,
+      "chain_depth_median": 1.0,
+      "chain_depth_max": 1
+    }
+  },
+  "R4": {
+    "n_qualifying_concepts": 20,
+    "qualifying_signatures": [
+      [
+        "self_model",
+        "subconscious",
+        "tension"
+      ],
+      [
+        "conversation",
+        "founder_said",
+        "travis"
+      ],
+      [
+        "active_imagination",
+        "contemplation",
+        "private"
+      ],
+      [
+        "consolidated",
+        "wisdom"
+      ],
+      [
+        "identity",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "individuation",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "self"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "shadow"
+      ],
+      [
+        "inner_thought",
+        "integration",
+        "monologue"
+      ],
+      [
+        "chapter",
+        "session",
+        "summary"
+      ],
+      [
+        "bridge",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "name"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "trust"
+      ],
+      [
+        "individuality",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "inner_thought",
+        "jung",
+        "monologue"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "question"
+      ],
+      [
+        "balance",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "inner_thought",
+        "monologue",
+        "river"
+      ],
+      [
+        "choice",
+        "inner_thought",
+        "monologue"
+      ],
+      [
+        "individualization",
+        "inner_thought",
+        "monologue"
+      ]
+    ],
+    "rv_coefficient": 0.8524579280693432,
+    "procrustes_disparity": 0.12247055680547692,
+    "null_rv_pre_h1_vs_pre_h2": null
+  },
+  "D1": {
+    "pre_log_window": [
+      "2026-06-04 00:00:00",
+      "2026-06-10 00:00:00"
+    ],
+    "post_log_window": [
+      "2026-06-10 00:00:00",
+      "2026-06-24 00:00:00"
+    ],
+    "n_pre_lines": 33782,
+    "n_post_lines": 73195,
+    "vocab_pre_only": [
+      "nascence.node.critic",
+      "nascence.node.emotion",
+      "nascence.node.executive",
+      "nascence.node.memory_router",
+      "nascence.node.perception",
+      "nascence.node.recall",
+      "nascence.node.reflection",
+      "nascence.node.salience",
+      "nascence.profile"
+    ],
+    "vocab_post_only": [
+      "nascence.activity",
+      "nascence.affect_labeling",
+      "nascence.affections",
+      "nascence.chapters",
+      "nascence.deliberation",
+      "nascence.essay",
+      "nascence.frontier",
+      "nascence.journal",
+      "nascence.left_lane",
+      "nascence.letters",
+      "nascence.library",
+      "nascence.loop_probe",
+      "nascence.memory_levels",
+      "nascence.narrative",
+      "nascence.peers",
+      "nascence.reading",
+      "nascence.retrieval_probe"
+    ],
+    "vocab_shared": [
+      "asyncio",
+      "nascence.checker.t1",
+      "nascence.climate",
+      "nascence.competence",
+      "nascence.dream",
+      "nascence.epistemic",
+      "nascence.main",
+      "nascence.memory",
+      "nascence.model_client",
+      "nascence.monologue",
+      "nascence.node.consolidation",
+      "nascence.node.curiosity",
+      "nascence.orchestrator",
+      "nascence.social",
+      "nascence.somatic",
+      "nascence.subconscious",
+      "nascence.unified_inference",
+      "sentence_transformers.base.model",
+      "torchao"
+    ],
+    "mean_row_tvd_shared_states": 0.28272624518174816,
+    "null_pre_h1_vs_h2_tvd": 0.15381670911555104,
+    "null_post_h1_vs_h2_tvd": 0.24809120703881596,
+    "model_client_error_rate_pre": {
+      "model_client_lines": 2153,
+      "error_lines": 1520,
+      "error_rate": 0.7059916395726893
+    },
+    "model_client_error_rate_post": {
+      "model_client_lines": 441,
+      "error_lines": 430,
+      "error_rate": 0.9750566893424036
+    }
+  },
+  "D2": {
+    "n_cues": 30,
+    "k": 10,
+    "mean_overlap": 0.8333333333333334,
+    "median_overlap": 0.9,
+    "min_overlap": 0.0,
+    "max_overlap": 1.0,
+    "n_cues_from_restored_cohort": 14
+  },
+  "D3": {
+    "pre": {
+      "n_live": 4203,
+      "n_restored": 5333,
+      "live_replay_mean": 0.13276231263383298,
+      "live_replay_median": 0.0,
+      "live_replay_max": 26.0,
+      "live_pct_replayed": 0.03949559838210802,
+      "live_replay_age_spearman": 0.901988321931186,
+      "live_replay_age_slope": 0.010412576284612238,
+      "restored_replay_mean": 0.0,
+      "restored_replay_median": 0.0,
+      "restored_pct_replayed": 0.0
+    },
+    "post": {
+      "n_live": 6702,
+      "n_restored": 1741,
+      "live_replay_mean": 0.12130707251566697,
+      "live_replay_median": 0.0,
+      "live_replay_max": 23.0,
+      "live_pct_replayed": 0.10161145926589078,
+      "live_replay_age_spearman": 0.7530528852597168,
+      "live_replay_age_slope": 0.025894051977652082,
+      "restored_replay_mean": 0.013785180930499713,
+      "restored_replay_median": 0.0,
+      "restored_pct_replayed": 0.013785180930499713
+    },
+    "snapshot_time_local": "2026-09-27T08:06:39.789171+00:00"
+  }
+}

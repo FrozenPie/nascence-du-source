@@ -1,0 +1,4 @@
+{
+  "doc_exclude_dirs": ["data", ".claude", "graphify-out", "public_repo", "docs_site", "scratch"],
+  "code_exclude_dirs": ["scratch", "data", "docs_site", "graphify-out", "public_repo"]
+}

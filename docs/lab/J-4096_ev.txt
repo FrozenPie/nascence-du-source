@@ -1,0 +1,1 @@
+Command run: python docs/lab/J-4096_holds_first.py hf (output docs/lab/J-4096_out_hf.json; last line "hf S empty 17 20 C obj 12 20 unparsed 0"). Gold set docs/lab/J-3653_data/gold.json, model command-r7b:latest, temp 0.3, one sample per item, so the 0.60 rate carries sampling noise (20 items, binomial SE about 0.11).

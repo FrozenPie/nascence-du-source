@@ -1,0 +1,98 @@
+{
+  "seat": "hot",
+  "model": "MichelRosselli/bonsai-27b:latest",
+  "url": "http://127.0.0.1:11433/api/chat",
+  "options": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "repeat_penalty": 1.18,
+    "repeat_last_n": 256,
+    "presence_penalty": 0.6,
+    "frequency_penalty": 0.3,
+    "num_predict": 700,
+    "num_ctx": 4096
+  },
+  "turns": 43,
+  "fidelity": {
+    "recovered": 26,
+    "complete_in_log": 9,
+    "truncated_unrecovered": 8
+  },
+  "arms": {
+    "A1": {
+      "n": 43,
+      "valid_json": 43,
+      "decomposed": 41,
+      "both_lanes": 28,
+      "degenerate": 0,
+      "over_cap": 0,
+      "schema_ok": 43,
+      "dup_pair_rows": 0,
+      "with_identity_item": 26,
+      "identity_items": 26,
+      "identity_deferred": 26,
+      "rule_violations": 17,
+      "length_capped": 0,
+      "mean_ingredients": 1.98,
+      "regimes": {
+        "closed": 0,
+        "identity": 1,
+        "open": 20,
+        "relational": 22,
+        "recall": 0
+      },
+      "mean_secs": 8.29
+    },
+    "A2": {
+      "n": 43,
+      "valid_json": 43,
+      "decomposed": 43,
+      "both_lanes": 27,
+      "degenerate": 0,
+      "over_cap": 0,
+      "schema_ok": 43,
+      "dup_pair_rows": 0,
+      "with_identity_item": 27,
+      "identity_items": 27,
+      "identity_deferred": 27,
+      "rule_violations": 22,
+      "length_capped": 0,
+      "mean_ingredients": 2.05,
+      "regimes": {
+        "closed": 0,
+        "identity": 2,
+        "open": 16,
+        "relational": 25,
+        "recall": 0
+      },
+      "mean_secs": 7.99
+    },
+    "B": {
+      "n": 43,
+      "valid_json": 43,
+      "decomposed": 43,
+      "both_lanes": 32,
+      "degenerate": 0,
+      "over_cap": 0,
+      "schema_ok": 43,
+      "dup_pair_rows": 0,
+      "with_identity_item": 27,
+      "identity_items": 28,
+      "identity_deferred": 28,
+      "rule_violations": 13,
+      "length_capped": 0,
+      "mean_ingredients": 2.05,
+      "regimes": {
+        "closed": 1,
+        "identity": 1,
+        "open": 23,
+        "relational": 18,
+        "recall": 0
+      },
+      "mean_secs": 7.63
+    }
+  },
+  "live_db_sha256_before": "5ff998c995b3539431367425834a37e7eb756147ff7e7036b13daafa4ecb6922",
+  "live_db_sha256_after": "5ff998c995b3539431367425834a37e7eb756147ff7e7036b13daafa4ecb6922",
+  "live_db_unchanged": true
+}

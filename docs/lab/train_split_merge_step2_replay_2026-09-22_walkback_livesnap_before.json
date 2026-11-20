@@ -1,0 +1,25 @@
+{
+ "ts": 1790025929.270299,
+ "snap": {
+  "position.json": {
+   "md5": "f6142b2a132e83631a5b99962da8e319",
+   "exists": true
+  },
+  "room_state.json": {
+   "md5": "fbe86d7c83a5f0b9cb3a45045dfcf4be",
+   "exists": true
+  },
+  "life_state.json": {
+   "md5": "0103d824cda21d9a2c4262e09312dc35",
+   "exists": true
+  },
+  "judge_panel_log.jsonl": {
+   "size": 5791858,
+   "mtime": 1790023294.0874107
+  },
+  "llm_latency.jsonl": {
+   "size": 11846161,
+   "mtime": 1790023419.058884
+  }
+ }
+}

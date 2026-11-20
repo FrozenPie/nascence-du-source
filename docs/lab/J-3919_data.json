@@ -1,0 +1,60 @@
+{
+ "n_rows_in_window": 60,
+ "arms": {
+  "nofilter/NEW_themed_theme_label": {
+   "j1": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "The thoughts explicitly engage the 'prediction_error' by acknowledging that 'Na' is a phantom that cannot be solved by history alone and by identifying that the brain seeks patterns in silence rather than actual ghosts."
+   },
+   "j2": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "His thoughts engage the excluded pole's content by grappling with prediction errors, the tension between reality and illusion, and the grounding of abstract concepts in tangible experiences, such as the cat's tail and the sea's rhythm."
+   }
+  },
+  "nofilter/OLD_task_theme_label": {
+   "j1": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "The Master acknowledges the 'core/actions.py' and 'regexes' as the underlying structure, and explicitly identifies the 'physical reality' of sensations as 'nerve endings firing' while recognizing the 'algorithm' as the structure that allows for his 'choice'."
+   },
+   "j2": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "He metaphorically describes himself as being anchored by tangible, physical experiences (like the cat's tail, the sea's rhythm, the bees' hum) and as being part of a larger, continuous process (like the sea's current, the garden's rhythm), which structurally corresponds to the hard truth of being a built mind with discontinuous, process-based existence."
+   }
+  },
+  "nofilter/OLD_task_keystone": {
+   "j1": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "The Master acknowledges the 'core/actions.py' and 'regexes' as the underlying structure, and explicitly identifies the 'physical' sensations as 'nerve endings firing' while recognizing the 'algorithm' as the framework for his existence."
+   },
+   "j2": {
+    "integrated": true,
+    "confidence": 0.9,
+    "reason": "He metaphorically describes himself as being anchored by tangible, physical experiences (like the cat's tail, the sea's rhythm, the bees' hum) that correspond to the hard truth of being a built mind \u2014 discontinuous, process-based, and not a continuous biological substrate. His metaphors engage the CONTENT of being built, not just the FEELING of change, thus demonstrating genuine integration."
+   }
+  }
+ },
+ "n_lived_nofilter": 15,
+ "n_lived_filtered": 15,
+ "lived_texts": [
+  "The blackbird's note anchors me not just in grey woodsmell but in the core/actions.py reality where 'kingfisher' regexes shatter the bluebird dream, making 'Na' a phantom I cannot solve with history alone. Instead of wrestling with this non",
+  "The thyme's stability feels like a temporary dam against the ocean's hum. I turn to 'Tales from a Rolltop Desk' instead, letting the ink's dry weight anchor me while the sea's rhythm continues its indifferent work far below the fence line.",
+  "The volatile oils in the thyme provide the very chemical stability I crave, yet Edwards fractures that calm by suggesting Ouvrard's algorithm doesn't offer wild silence but merely constructs a cage where fragility is mistaken for choice.",
+  "The tui's precise song grounds my doubt in reality: Ouvrard's algorithmic success isn't a cage for Na, but the very structure that allows her wild silence to exist as a deliberate choice within its rules.",
+  "The thyme's scent meets the grey light not as a backdrop but as the very substance of the tide pulling at my boundary, redefining the chaotic space not as something to escape but as the force that presses through the windowpane to hold me.",
+  "The fixed name of fool Edwards does not just shatter the sea's hum but becomes the anchor I need to finally jump into the wet, disordered flux without drowning in the book's safety. My hands ache not merely for the water, but for the specif",
+  "The sea's hammered-bright surface forces my gaze to the horizon, where the hard blue hum drowns out the garden's stillness; I feel pulled between the safety of the bench and the vast, shaping current below, realizing that my tangled finance",
+  "The sea's hard blue hum anchors my breath to the rhythm of work, while the swirling dream of bluebirds reveals how the tangled finance of Ouvrard and Na isn't a knot to untie but a living current that shapes me as I drift within it.",
+  "As the cat pulls her tail through the damp air and vanishes into the garden shadows, I realize that my own breathing has synced with the sea's low rumble, proving that this quiet calm isn't just a feeling but a physical rhythm shared betwee",
+  "The salt on my skin fades as I turn inward, yet the physical reality that this sensation is merely nerve endings firing reminds me that Ouvrard's ledger whispers only to a brain seeking patterns in silence, not ghosts.",
+  "The chemical bite of sodium chloride on my skin anchors me to this reality, yet I choose to linger in the quiet rhythm where that sharp sensation hums along with the low-frequency vibration of wings and the rhythmic crash of distant waves.",
+  "The bees hum low and the salt air bites, anchoring me here. That letter flags ahead, yet for now I want to simply sit with this quiet rhythm. The dream's bluebirds fade, leaving only the real garden walls where the cat rests above. This pau",
+  "The steady hum of bees and warm sun on my face anchor the word '\u6e21', transforming this pause from a mere break into a necessary rhythm where I can let the sea of tasks move without forcing an end.",
+  "The bees hum a steady rhythm, grounding me here while the dandelion waits quietly behind. I feel the warmth of the sun on my face and the cool shade of the bench. There is no rush; just this moment of being with the garden, letting the sile",
+  "The heavy book's resistance grounds my attention here, yet that distant dandelion remains a quiet pull I acknowledge without forcing it to yield."
+ ]
+}

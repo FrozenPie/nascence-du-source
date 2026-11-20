@@ -1,0 +1,179 @@
+{
+ "n_units": 80,
+ "n_second_calls": 62,
+ "n_tiebreak": 33,
+ "n_agreed": 29,
+ "n_second_other": {},
+ "n_tiebreak_cases_reasked": 33,
+ "n_tiebreak_cases_from_harvest": 0,
+ "b_split": {
+  "tiebreak_true": 0,
+  "tiebreak_false": 33,
+  "tiebreak_true_ci95": [
+   0.0,
+   0.104
+  ],
+  "agreed_true": 18,
+  "agreed_false": 11,
+  "agreed_true_ci95": [
+   0.44,
+   0.773
+  ],
+  "split_orientation_(v1,v2)": {
+   "(False, True)": 33
+  },
+  "tiebreak_sides_with_JUDGE_1": 33,
+  "tiebreak_sides_with_JUDGE_2": 0,
+  "share_of_all_replayed_events_decided_by_second_call_tiebreak": 0.412
+ },
+ "c_consistency": {
+  "n_cases_reasked": 33,
+  "n_none_draws": 0,
+  "repeat_to_repeat_pairs": 33,
+  "repeat_to_repeat_agree": 33,
+  "repeat_to_repeat_rate": 1.0,
+  "repeat_to_repeat_ci95": [
+   0.896,
+   1.0
+  ],
+  "reask1_equals_original": [
+   33,
+   33
+  ],
+  "reask2_equals_original": [
+   33,
+   33
+  ],
+  "all_three_equal": [
+   33,
+   33
+  ],
+  "true_share_original": 0.0,
+  "true_share_reasks": 0.0
+ },
+ "d_order": {
+  "why_first_d1": {
+   "n": 33,
+   "n_none": 0,
+   "true": 0,
+   "true_share": 0.0,
+   "same_as_original": 33,
+   "flip_True_to_False": 0,
+   "flip_False_to_True": 0,
+   "flip_rate": 0.0
+  },
+  "why_first_named_d2": {
+   "n": 33,
+   "n_none": 0,
+   "true": 0,
+   "true_share": 0.0,
+   "same_as_original": 33,
+   "flip_True_to_False": 0,
+   "flip_False_to_True": 0,
+   "flip_rate": 0.0
+  }
+ },
+ "b2_tiebreak_vs_unanimous_panel": {
+  "n": 29,
+  "tiebreak_agrees_with_panel": 11,
+  "accuracy": 0.379,
+  "accuracy_ci95": [
+   0.227,
+   0.56
+  ],
+  "tiebreak_true_share": 0.0,
+  "on_panel_unanimous_True": [
+   0,
+   18
+  ],
+  "on_panel_unanimous_False": [
+   11,
+   11
+  ],
+  "confusion_(panel,tiebreak)": {
+   "(True, False)": 18,
+   "(False, False)": 11
+  }
+ },
+ "b3_controls": [
+  {
+   "case": "ctrl_overreach_support",
+   "expected_scope_only": false,
+   "panel": {
+    "v1": false,
+    "v2": true,
+    "verdict": false,
+    "how": "tiebreak"
+   },
+   "tiebreak_bool_first": [
+    false,
+    false
+   ],
+   "tiebreak_why_first_d1": [
+    false
+   ]
+  },
+  {
+   "case": "ctrl_scope_narrower_support",
+   "expected_scope_only": true,
+   "panel": {
+    "v1": true,
+    "v2": true,
+    "verdict": true,
+    "how": "agreed"
+   },
+   "tiebreak_bool_first": [
+    false,
+    false
+   ],
+   "tiebreak_why_first_d1": [
+    false
+   ]
+  }
+ ],
+ "a_status_shares": {
+  "counts": {
+   "held_within_scope": 18,
+   "held": 3,
+   "objected": 44,
+   "UNDETERMINED": 15
+  },
+  "shares": {
+   "held_within_scope": 0.225,
+   "held": 0.037,
+   "objected": 0.55,
+   "UNDETERMINED": 0.188
+  },
+  "n": 80
+ },
+ "e_d0181_bar": {
+  "max_single_status_share": 0.55,
+  "any_single_status_over_90pct": false,
+  "held_within_scope_share": 0.225,
+  "held_within_scope_over_70pct": false
+ },
+ "preregistered_rule": {
+  "meaningful_scale(>=25pct of events)": true,
+  "tiebreak_decided_events": "33/80",
+  "S1_order_swing": false,
+  "S1_max_flip_rate": 0.0,
+  "S1_max_true_share_shift": 0.0,
+  "S2_repeat_agreement_below_80pct": false,
+  "S3_constant_default_and_not_tracking": true,
+  "DEFEATER_FIRES(mechanical)": true
+ },
+ "hub_stats_this_process": {
+  "TIEBREAK": {
+   "calls": 0,
+   "ok": 0,
+   "infra_errors": 0,
+   "retries": 0,
+   "persistent_fail": 0,
+   "parse": 0,
+   "secs": {
+    "n": 0
+   }
+  }
+ },
+ "write_attempts_under_live_data": 0
+}

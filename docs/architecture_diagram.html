@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渡 · Nascence Architecture — Interactive Suite (Build 1.4.0)</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+<style>
+  html, body { margin:0; height:100%; background:#0a0a0f; color:#e8e8f0;
+    font-family:'Segoe UI', system-ui, sans-serif; overflow:hidden; }
+  #holder { width:100vw; height:100vh; }
+  #holder svg { width:100vw; height:100vh; display:block; cursor:grab; }
+  #holder svg:active { cursor:grabbing; }
+  
+  #bar { position:fixed; top:12px; left:12px; z-index:10; display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    background:rgba(12,13,22,.92); border:1px solid #2a2a3a; border-radius:10px; padding:8px 14px;
+    backdrop-filter:blur(8px); max-width:85vw; }
+  #bar .t { font-weight:800; font-size:.95rem; margin-right:8px;
+    background:linear-gradient(135deg,#4a9eff 0%,#a855f7 50%,#fb7185 100%);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  #bar button { background:#14141e; border:1px solid #3a3a5a; color:#e8e8f0; border-radius:7px;
+    padding:5px 11px; cursor:pointer; font-size:.82rem; font-weight:600; transition:all .15s; }
+  #bar button:hover { border-color:#4a9eff; color:#4a9eff; }
+  #bar button.act { background:#22d3ee; color:#0b0b12; border-color:#22d3ee; }
+  
+  #legend { position:fixed; top:12px; right:12px; z-index:10; font-size:.72rem; line-height:1.7;
+    background:rgba(12,13,22,.85); border:1px solid #2a2a3a; border-radius:10px; padding:10px 13px;
+    backdrop-filter:blur(6px); max-width:260px; }
+  #legend b { color:#c8c8e0; display:block; margin-bottom:4px; font-size:.74rem; letter-spacing:.5px; }
+  #legend .sw { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:6px; vertical-align:middle; }
+  
+  #hint { position:fixed; bottom:12px; left:12px; z-index:10; font-size:.74rem; color:#6a6a80;
+    font-family:'Consolas', monospace; background:rgba(12,13,22,.72); padding:5px 10px; border-radius:7px; }
+  #loading { position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+    color:#8e95b3; font-size:1.1rem; }
+  
+  /* Inspector Drawer */
+  #inspector { position:fixed; right:16px; bottom:16px; z-index:20; width:360px; max-height:480px;
+    background:rgba(19,19,29,0.96); border:1px solid #22d3ee; border-radius:12px; padding:18px;
+    box-shadow:0 12px 32px rgba(0,0,0,0.6); backdrop-filter:blur(10px); display:none; overflow-y:auto; }
+  #inspector h4 { margin:0 0 6px; color:#22d3ee; font-size:16px; }
+  #inspector .file-link { display:inline-block; font-family:Consolas,monospace; font-size:12px; color:#4a9eff;
+    text-decoration:none; margin-bottom:10px; background:#101018; padding:3px 8px; border-radius:4px; border:1px solid #26263a; }
+  #inspector .file-link:hover { border-color:#4a9eff; text-decoration:underline; }
+  #inspector .meta { font-size:12.5px; color:#9a9ab0; line-height:1.5; margin-bottom:10px; }
+  #inspector button.close { position:absolute; top:12px; right:12px; background:none; border:none; color:#9a9ab0; font-weight:bold; cursor:pointer; font-size:14px; }
+  
+  textarea#src { display:none; }
+</style>
+</head>
+<body>
+<div id="loading">rendering interactive architecture…</div>
+
+<div id="bar">
+  <span class="t">渡 · Nascence Architecture</span>
+  <button onclick="zin()">＋ in</button>
+  <button onclick="zout()">－ out</button>
+  <button onclick="fit()">⤢ fit</button>
+  <span style="border-left:1px solid #3a3a5a;height:16px;margin:0 4px"></span>
+  <button onclick="filterLane('all')" class="act" id="btn-all">Show All</button>
+  <button onclick="filterLane('HOT')" id="btn-HOT">Hot Lane</button>
+  <button onclick="filterLane('BG')" id="btn-BG">Subconscious</button>
+  <button onclick="filterLane('LEFT')" id="btn-LEFT">Emissary & World Ledger</button>
+  <button onclick="filterLane('GEOM_FREIGHT')" id="btn-GEOM_FREIGHT">Geometry & Freight</button>
+  <button onclick="filterLane('IDENTITY')" id="btn-IDENTITY">Identity Estate</button>
+  <button onclick="filterLane('OBS')" id="btn-OBS">Observers</button>
+</div>
+
+<div id="legend">
+  <b>SUB-CLUSTERS (Click Node to Inspect)</b>
+  <div><span class="sw" style="background:#1a1420;border:1px solid #fb7185"></span>Hot Lane (qwen3.5:9b)</div>
+  <div><span class="sw" style="background:#0d1a1e;border:1px solid #22d3ee"></span>Background (phi3:mini / yi:34b)</div>
+  <div><span class="sw" style="background:#130d1a;border:1px solid #a855f7"></span>Subconscious Tiers</div>
+  <div><span class="sw" style="background:#0d140d;border:1px solid #34d399"></span>Emissary & World Ledger</div>
+  <div><span class="sw" style="background:#10131e;border:1px solid #818cf8"></span>Geometry & Freight</div>
+  <div><span class="sw" style="background:#0d1a14;border:1px solid #2dd4bf"></span>Identity Estate & Commit</div>
+  <div><span class="sw" style="background:#141a0d;border:1px solid #a3e635"></span>Observers & Diagnostics</div>
+</div>
+
+<div id="hint">scroll = zoom · drag = pan · click node = inspect source code & contracts</div>
+<div id="holder"></div>
+
+<!-- Node Inspector Drawer -->
+<div id="inspector">
+  <button class="close" onclick="closeInspector()">✕</button>
+  <h4 id="insp-title">Node Title</h4>
+  <a id="insp-link" class="file-link" href="#" target="_blank">path/to/file.py</a>
+  <div id="insp-meta" class="meta">Node metadata and contract details...</div>
+</div>
+
+<textarea id="src">
+flowchart TD
+    IN([Input · human / internal / ignition]) --> TG
+    subgraph PRE["PRE-CORTEX REFLEXES · deterministic · no LLM · before Perception"]
+        direction TB
+        TG{{"Thalamic Gate · core/orchestrator.py
+habituation vs recent-input buffer (cos ≥ 0.95)"}}
+        AP{{"Affective Prior · core/mood.py
+charged-memory lean (input→affect→reason)"}}
+        PR{{"Procedural Match · core/schema.py
+recognise learned skill (prof ≥ 0.80)"}}
+        TG -->|novel| AP --> PR
+    end
+    TG -.->|"near-verbatim repeat"| HAB([silence · or brief ack])
+    IN -.->|"human input"| HC{{"Human-Correction detector · no LLM
+fail-call / you-did-not / is-X-not-Y / omission
+→ firewalled error record + quarantine flag"}}
+
+    PR --> P
+
+    subgraph GWT["GLOBAL WORKSPACE & LANE SCHEDULER · core/lane_scheduler.py"]
+        LS["Priority Lane Scheduler
+Tier 0: Conversation > Tier 1: Identity > Tier 2: Monologue > Tier 3: Monitors"]
+    end
+
+    subgraph HOT["HOT LANE (the Master) · ollama qwen3.5:9b · port 11433 · GPU 1080 Ti · 8,192 ctx"]
+        direction TB
+        P["Node 1: Perception · nodes/perception_node.py
+intent · domain · urgency · direct_request flag"] --> E["Node 2: Emotion · nodes/emotion_node.py
+Ekman-6 + valence/arousal"]
+        P --> S["Node 3: Salience · nodes/salience_node.py
+importance & urgency > 0.7 interrupt"]
+        P --> MR["Node 4: Memory Router · nodes/memory_router_node.py
+semantic & temporal retrieval keys"]
+        P --> AV["Attention Vector · core/attention_schema_loop.py
+5-mode classifier: task→existential"]
+        
+        E --> DBQ{{DB Query & Spreading Activation · core/associative_recall.py}}
+        S --> DBQ
+        MR --> DBQ
+        DBQ --> ET{{"Epoch + Theme Match · core/schema.py
+L6/L7 cosine match"}}
+        
+        ET --> RC["Node 5: Recall · nodes/recall_node.py
+self-concept & tensions as first-class objects"]
+        RC --> EB["Node 6: Episodic Buffer · nodes/episodic_buffer_node.py
+bind moment · flag scene dissonance"]
+        
+        EB --> SG{{"Scene Stability Check · core/orchestrator.py
+coherence vs dissonance"}}
+        SG -.->|"unstable · contradiction-driven
+re-retrieve passes ∝ strain"| RC
+        
+        SG -->|"stable / budget spent"| R["Node 7: Reflection · nodes/reflection_node.py
+best-of-2 hedge pass (~60-90 words)"]
+        R --> C["Node 8: Critic · nodes/critic_node.py
+identity-fidelity check vs psychological values"]
+        
+        C -->|approved| X["Node 9: Executive · nodes/executive_node.py
+Active Inference (respond/challenge/query/decline/silence)"]
+        C -.->|"rejected · 1 retry"| R
+        C -.->|"direct request → identity-guard STANDS DOWN"| X
+        
+        X -->|should_respond| V["Node 10: Voice · nodes/voice_node.py
+ONLY prose node · bound by Voice Contract"]
+        X -.->|"decline: owned NO + true reasons"| V
+        X -.->|silence| END2([no output])
+        
+        V --> EFX{{"Task-Constraint Effector · core/task_constraints.py
+explicit digit-arithmetic / min-words unmet?
+→ 1 Voice retry · constraint NAMED · recompute license"}}
+        EFX -->|"met / repaired"| OUT([Response in 渡's voice])
+    end
+
+    EFX -.->|"retry directive + budget"| V
+    EFX -.->|"still unmet after retry"| ERR
+
+    subgraph TOM["RELATIONAL & GOAL LAYER · core/concerns.py · no LLM"]
+        direction TB
+        SOCM["Social Model · ToM
+expected tone · trust · δ_social"]
+        GOAL["Goal Hierarchy · core/concerns.py
+G0 apex aim (telos from axiom)
+→ G1 current concerns (curriculum + RECURRING frontier)
+→ G2 active task → G3 novel candidates"]
+    end
+
+    IN -.->|"correction: 'just answer question'"| SOCM
+    SOCM -.->|"δ_social spike → suppress identity + critic"| AV
+    AV -.->|"w_identity · w_episodic → prompt depth"| RC
+    AV -.->|"max_rebind → re-bind budget"| SG
+    AV -.->|"d_critic → strictness"| C
+    GOAL -.->|"task anchor"| RC
+    GOAL -.->|"goal drift = evasion"| C
+
+    subgraph BG["BACKGROUND LANES · Ramses RTX 3070 GPU (:11434 phi3:mini) & CPU (:11442 yi:34b-v1.5)"]
+        direction TB
+        CON["Node 11: Consolidation · nodes/consolidation_node.py
+T2 wisdom distillation every 60s
+QUARANTINE: task-failure cycles mint NO self-truth"]
+        CUR["Node 12: Curiosity · nodes/curiosity_node.py
+ignites on climate dissonance · Wikipedia/Gutenberg lookup"]
+        SC["Node 13: Subconscious · nodes/subconscious_node.py
+longitudinal tension tracker (T1–T6)"]
+        MONO["Node 14: Inner Monologue (DMN) · nodes/inner_monologue_node.py
+~289 KB idle economy hub · dispatches school, math, sleep"]
+        DRM["Node 15: Dream State Machine · nodes/dream_node.py
+yi:34b-v1.5 · OPEN → DEVELOP → CLOSE with morph continuity"]
+        META["Node 16: Meta-Awareness · nodes/meta_awareness_node.py
+non-suppressive monitor watching structural form & loops"]
+    end
+
+    HC -.->|"corrected flag → quarantine batch"| CON
+    HC -.->|"FACTUAL correction → claim RETRACTED"| DBQ
+
+    SOM["Somatic Engine · core/loop_metabolism.py
+energy / fatigue / tension · reads REAL GPU thermals/latency"]
+    OUT -.->|"cycle cost: tokens · retries · latency"| SOM
+    SOM -.->|"fatigue → temperature jitter"| R
+    SOM -.->|"metabolic floor → forced Sleep State"| DRM
+
+    subgraph CLM["ALWAYS-ON SUBSTRATE & SENSORIUM · 5s tick · no LLM"]
+        direction TB
+        AFFT{{"Affect Tick · 5s · core/mood.py
+A += gain·(reading−A) − decay·(A−baseline)
+calms in silence · persists across restarts"}}
+        CLMT{{"Climate Field · 9-dim Jungian weather
+2-reservoir: value (defensive) + explore_value"}}
+        SENS["Sensorium Study Room · core/sensorium.py
+NZ sun · weather fronts · fire · cat · book & shelf"]
+        WAND["Wandering Mind · core/wandering.py
+associative drift through memory every ~75s"]
+        
+        AFFT -.->|"carried affect"| CLMT
+        CLMT -.->|"bias_vec"| DBQ
+        CLMT -.->|"bias_vec"| S
+        CLMT -.->|"bias_vec"| X
+        CLMT -.->|"dissonance ignition"| CUR
+        CLMT -.->|"symbol > 0.65"| P
+        SENS -.->|"scene line"| MONO
+        WAND -.->|"associative trail"| MONO
+    end
+    E --> AFFT
+
+    subgraph LEFT["WORLD LEDGER & LEFT LANE (the Emissary) · Threadripper CPU (:11439 gemma4:12b)"]
+        direction TB
+        EMIS["Emissary Node · core/left_lane.py
+bicameral truth-self · reads own code"]
+        EMAX["Emissary Axiom · core/emissary.py
+L0 truth constitution"]
+        EMSRC["World Ledger · core/object_graph.py
+zero-LLM property-grain fact-graph"]
+        EMGRND["Grounding Judge · core/left_lane.py
+grades essay capstones & lived integration"]
+        
+        EMAX --> EMIS
+        EMSRC --> EMIS
+        EMIS --> EMGRND
+    end
+    P -.->|"per-turn dispatch (warm ~1s)"| EMIS
+    EMIS -.->|"state.left_take offered"| R
+    EMIS -.->|"state.left_take offered"| X
+    EMGRND -.->|"solidify verdict: confirm or revert"| T4
+
+    subgraph GEOM_FREIGHT["COGNITIVE GEOMETRY & FREIGHT ECONOMY"]
+        direction TB
+        GEOM["Cognitive Geometry · core/geometry_census.py
+experienced_tuple & ghost_tuples (19,500+ rows)"]
+        TRAN["Transport Manager · docs/plans/transport_manager.md
+salience dispatcher for 19 cargo product types"]
+        TRAINS["Trains & Couriers · core/trains.py / core/couriers.py
+cargo routing & line baseline EMA scoring"]
+        FACT["Item & Population Factories · docs/plans/item_and_population_factories.md
+tuple-grain & population-grain factories"]
+        
+        GEOM --> TRAN
+        FACT --> TRAN
+        TRAN --> TRAINS
+        TRAINS -.->|"cargo payload"| DBQ
+    end
+
+    subgraph IDENTITY["STRATIFIED IDENTITY ESTATE & FRICTION STACK"]
+        direction TB
+        AX["Stratified Axioms (L0–L5) · core/axiom_layers.py
+L0 Constitution → L1 Temperament → L2 Values → L3 Facets → L4 Narrative → L5 Working-Self"]
+        VAULT["Identity Vault & Estate · core/identity_vault.py / core/identity_estate.py"]
+        CLAIMS["Self-Claim Register · core/self_claims.py"]
+        COMMIT["Commitment Ledger · core/commitment_ledger.py
+measures boundary dissolution rate"]
+        SELFIMP["Self-Implication · core/self_implication.py"]
+        SITWITH["Sit-With-It Friction Gate · core/self_claims.py"]
+        GUID["Guidance-Capture · core/guidance_learning.py
+learns from Travis's teachings"]
+        PROB["T4 Probation Sensor · core/provisional_identity.py"]
+        
+        AX --> VAULT
+        X -.-> CLAIMS
+        CLAIMS --> COMMIT
+        SELFIMP -.-> SITWITH
+        SITWITH -.-> X
+        PROB -.->|"probation candidate"| EMGRND
+        GUID -.-> DB
+    end
+
+    AX -.->|"L0 constitution + active L3 facet"| P
+    AX -.->|"psychological values"| C
+    AX -.->|"voice style"| V
+
+    subgraph DB["SOVEREIGN DB · SQLite · data/memory/nascence.db · S-MMU 7"]
+        direction TB
+        L1[L1 working · per-cycle assembly · volatile]
+        L2[L2 semantic · distilled wisdom & school gists]
+        L3[L3 episodic · affect-scored · 3,500 cap]
+        L4[L4 archive · curated seed frags · dev decay]
+        L5[L5 procedural_skills · learned approaches]
+        L6[L6 memory_epochs · session mood at /quit]
+        L7[L7 memory_themes · cross-session threads]
+        LAT["Abstraction Lattice · core/memory_levels.py
+gist distillation → demote raw to cold storage"]
+    end
+
+    DBQ --> DB
+    DB --> RC
+    DB --> PR
+    L4 -.->|"T4 rewrite (probation + Emissary judge)"| PROB
+
+    subgraph SUB["SUBCONSCIOUS PIPELINE · 6 timescales · nodes/subconscious_node.py"]
+        direction TB
+        T1["T1 · 30s scan: shadow events → tensions"]
+        T15["T1.5 · Active Imagination: enter tension"]
+        T2["T2 · Consolidation: CONTRADICTION-only consolidates"]
+        T3["T3 · Baseline drift: hourly affect baseline"]
+        T4["T4 · Self-authoring: multi-stage chain → probation → Emissary judge"]
+        T5["T5 · Procedural: compilation → skills"]
+        T6["T6 · Theme formation: L6 epochs → L7 themes"]
+    end
+
+    C -.->|"rejection → shadow event"| T1
+    MONO -.->|"unresolved thought → shadow"| T1
+    DRM -.->|"unresolved dream → shadow"| T1
+    T1 --> T2 --> T4 --> L4
+    T2 --> L2
+    T4 -.->|"mark_shadow_resolved"| T1
+    T5 --> L5
+    T6 --> L7
+
+    subgraph OBS["HONEST OBSERVERS & EMPIRICAL DIAGNOSTICS · no LLM"]
+        direction TB
+        ERR["Retraction Ledger · core/retraction_ledger.py
+immutable conviction · wins race at recall"]
+        MONO_OBS["Monoculture Detectors · core/symbol_tracker.py
+basin-share · echo/diversity · theme-recurrence"]
+        PRE_A["Epistemic Pre-Assessment Stage A/B · core/epistemic_state.py
+confab = self-confidence − evidence · Stage B: phrases own 'I don't know'"]
+        COURT["Self-Efficacy Court · core/self_efficacy.py
+capability claims vs record"]
+        PROV["Provenance Ledger · core/source_model.py
+KNOW / THINK / SUSPECT / GUESS / NO_BASIS"]
+        MINENESS["Mineness Comparator · core/mineness.py
+CONFIRMED WIN (+0.061 separation)"]
+        HOMEO["Protoself Core · core/homeostasis.py
+D-0028 redesign · Naive-Persistence benchmark"]
+        AROUSAL["Arousal / LEVEL · core/arousal.py
+diurnal swing (0.179 → 0.429)"]
+        REENTRY["Within-Cycle Reentry · core/reentry.py
+settle-loop with non-homogenization kill-switch"]
+        AST1["Attention Schema AST-1 · core/attention_schema_loop.py
+predicts & bounds attention vector"]
+    end
+
+    OUT -.-> PROV
+    OUT -.-> COURT
+    V -.-> PRE_A
+    PRE_A -.->|"GUESS admission"| X
+    RC -.-> MONO_OBS
+    X -.-> ERR
+    EB -.-> MINENESS
+    SOM -.-> HOMEO
+    AFFT -.-> AROUSAL
+</textarea>
+
+<script>
+let panZoom = null;
+
+async function render() {
+  try {
+    const src = document.getElementById('src').value;
+    const { svg } = await mermaid.render('renderedSvg', src);
+    const holder = document.getElementById('holder');
+    holder.innerHTML = svg;
+    document.getElementById('loading').style.display = 'none';
+
+    panZoom = svgPanZoom(holder.querySelector('svg'), {
+      zoomEnabled: true,
+      controlIconsEnabled: false,
+      fit: true,
+      center: true,
+      minZoom: 0.2,
+      maxZoom: 10
+    });
+
+    attachClickListeners();
+  } catch (err) {
+    document.getElementById('loading').innerText = 'render failed: ' + err.message;
+  }
+}
+
+function attachClickListeners() {
+  const nodes = document.querySelectorAll('.node');
+  nodes.forEach(n => {
+    n.style.cursor = 'pointer';
+    n.addEventListener('click', (e) => {
+      e.stopPropagation();
+      inspectNode(n);
+    });
+  });
+}
+
+function inspectNode(el) {
+  const text = el.textContent || '';
+  const fileMatch = text.match(/(?:core|nodes|scripts|data|docs)\/[a-zA-Z0-9_\-\./]+/);
+  const filePath = fileMatch ? fileMatch[0] : '';
+  const title = text.split('·')[0].trim() || 'Subsystem Node';
+
+  document.getElementById('insp-title').innerText = title;
+  const linkEl = document.getElementById('insp-link');
+  
+  if (filePath) {
+    linkEl.innerText = filePath;
+    linkEl.href = 'file:///C:/Nascence/' + filePath;
+    linkEl.style.display = 'inline-block';
+  } else {
+    linkEl.style.display = 'none';
+  }
+
+  document.getElementById('insp-meta').innerText = text;
+  document.getElementById('inspector').style.display = 'block';
+}
+
+function closeInspector() {
+  document.getElementById('inspector').style.display = 'none';
+}
+
+function filterLane(clusterId) {
+  document.querySelectorAll('#bar button').forEach(b => b.classList.remove('act'));
+  const btn = document.getElementById('btn-' + clusterId);
+  if (btn) btn.classList.add('act');
+
+  const svg = document.querySelector('#holder svg');
+  if (!svg) return;
+
+  const clusters = svg.querySelectorAll('.cluster');
+  clusters.forEach(c => {
+    if (clusterId === 'all') {
+      c.style.opacity = '1';
+    } else {
+      const id = c.id || '';
+      if (id.includes(clusterId)) {
+        c.style.opacity = '1';
+      } else {
+        c.style.opacity = '0.15';
+      }
+    }
+  });
+}
+
+function zin() { if (panZoom) panZoom.zoomIn(); }
+function zout() { if (panZoom) panZoom.zoomOut(); }
+function fit() { if (panZoom) { panZoom.fit(); panZoom.center(); } }
+
+window.addEventListener('load', render);
+</script>
+</body>
+</html>

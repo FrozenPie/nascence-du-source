@@ -1,0 +1,1213 @@
+{
+  "job": "J-1473",
+  "ts": 1793131294.3,
+  "n_keys": 70,
+  "realness_test": {
+    "per_key": {
+      "bed_watering": {
+        "pass": true,
+        "nearest_neighbour": "kettle_fill",
+        "neighbour_object": "the kettle",
+        "same_object": false,
+        "distance_6ax": 0.2179,
+        "timbre_deltas": {
+          "periodicity": 0.0,
+          "roughness": 0.1,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "bees_in_garden": {
+        "pass": true,
+        "nearest_neighbour": "penguin_bray",
+        "neighbour_object": "the small penguin",
+        "same_object": false,
+        "distance_6ax": 0.4073,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.03,
+          "continuity": 0.06
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "bellbird_song": {
+        "pass": true,
+        "nearest_neighbour": "godwits_overhead",
+        "neighbour_object": "the godwits",
+        "same_object": false,
+        "distance_6ax": 0.2047,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.05,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "blackbird_alarm": {
+        "pass": true,
+        "nearest_neighbour": "cat_demand",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.2694,
+        "timbre_deltas": {
+          "periodicity": 0.12,
+          "roughness": 0.11,
+          "continuity": 0.06
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "blackbird_song": {
+        "pass": true,
+        "nearest_neighbour": "small_birds",
+        "neighbour_object": "the garden birds",
+        "same_object": false,
+        "distance_6ax": 0.2526,
+        "timbre_deltas": {
+          "periodicity": 0.02,
+          "roughness": 0.15,
+          "continuity": 0.02
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "branches_creak": {
+        "pass": true,
+        "nearest_neighbour": "penguin_bray",
+        "neighbour_object": "the small penguin",
+        "same_object": false,
+        "distance_6ax": 0.3541,
+        "timbre_deltas": {
+          "periodicity": 0.07,
+          "roughness": 0.19,
+          "continuity": 0.14
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "canopy_drip": {
+        "pass": true,
+        "nearest_neighbour": "door_sound",
+        "neighbour_object": "the cottage door",
+        "same_object": false,
+        "distance_6ax": 0.2278,
+        "timbre_deltas": {
+          "periodicity": 0.08,
+          "roughness": 0.05,
+          "continuity": 0.13
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_chatter": {
+        "pass": true,
+        "nearest_neighbour": "canopy_drip",
+        "neighbour_object": "the canopy",
+        "same_object": false,
+        "distance_6ax": 0.3768,
+        "timbre_deltas": {
+          "periodicity": 0.18,
+          "roughness": 0.03,
+          "continuity": 0.18
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_demand": {
+        "pass": true,
+        "nearest_neighbour": "kereru_wingbeats",
+        "neighbour_object": "the wood pigeon",
+        "same_object": false,
+        "distance_6ax": 0.252,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.11,
+          "continuity": 0.01
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_lapping": {
+        "pass": true,
+        "nearest_neighbour": "cat_meow_at_door",
+        "neighbour_object": "the kept cat",
+        "same_object": true,
+        "distance_6ax": 0.4254,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.15,
+          "continuity": 0.19
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_meow_at_door": {
+        "pass": true,
+        "nearest_neighbour": "blackbird_song",
+        "neighbour_object": "the blackbird",
+        "same_object": false,
+        "distance_6ax": 0.3708,
+        "timbre_deltas": {
+          "periodicity": 0.3,
+          "roughness": 0.2,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "cat_purr": {
+        "pass": true,
+        "nearest_neighbour": "bees_in_garden",
+        "neighbour_object": "the bees",
+        "same_object": false,
+        "distance_6ax": 0.6117,
+        "timbre_deltas": {
+          "periodicity": 0.35,
+          "roughness": 0.1,
+          "continuity": 0.12
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "cat_storm_rustle": {
+        "pass": true,
+        "nearest_neighbour": "embers_settle",
+        "neighbour_object": "the fire",
+        "same_object": false,
+        "distance_6ax": 0.1628,
+        "timbre_deltas": {
+          "periodicity": 0.02,
+          "roughness": 0.1,
+          "continuity": 0.0
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_thump": {
+        "pass": true,
+        "nearest_neighbour": "gate_latch",
+        "neighbour_object": "the garden gate",
+        "same_object": false,
+        "distance_6ax": 0.4093,
+        "timbre_deltas": {
+          "periodicity": 0.0,
+          "roughness": 0.05,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cat_trill": {
+        "pass": true,
+        "nearest_neighbour": "godwits_overhead",
+        "neighbour_object": "the godwits",
+        "same_object": false,
+        "distance_6ax": 0.3254,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.05,
+          "continuity": 0.28
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "cat_yowl_cargo": {
+        "pass": true,
+        "nearest_neighbour": "dawn_chorus",
+        "neighbour_object": "the birds",
+        "same_object": false,
+        "distance_6ax": 0.3579,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.3,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "chair_desk_scrape": {
+        "pass": true,
+        "nearest_neighbour": "cat_storm_rustle",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.2315,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.1,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cicada_chorus": {
+        "pass": true,
+        "nearest_neighbour": "waves_on_shingle",
+        "neighbour_object": "the sea",
+        "same_object": false,
+        "distance_6ax": 0.5277,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.2,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "clock_tick": {
+        "pass": true,
+        "nearest_neighbour": "cricket_night",
+        "neighbour_object": "the crickets",
+        "same_object": false,
+        "distance_6ax": 0.2998,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.01,
+          "continuity": 0.13
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cricket_night": {
+        "pass": true,
+        "nearest_neighbour": "wood_pigeon",
+        "neighbour_object": "the wood pigeon",
+        "same_object": false,
+        "distance_6ax": 0.2267,
+        "timbre_deltas": {
+          "periodicity": 0.06,
+          "roughness": 0.11,
+          "continuity": 0.16
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "cuckoo_call": {
+        "pass": true,
+        "nearest_neighbour": "robin_song",
+        "neighbour_object": "the robin",
+        "same_object": false,
+        "distance_6ax": 0.3746,
+        "timbre_deltas": {
+          "periodicity": 0.3,
+          "roughness": 0.0,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "dawn_chorus": {
+        "pass": true,
+        "nearest_neighbour": "cat_yowl_cargo",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.3579,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.3,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "distant_surf_boom": {
+        "pass": true,
+        "nearest_neighbour": "shag_wingbeats",
+        "neighbour_object": "the shag",
+        "same_object": false,
+        "distance_6ax": 0.4272,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.15,
+          "continuity": 0.25
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "door_sound": {
+        "pass": true,
+        "nearest_neighbour": "canopy_drip",
+        "neighbour_object": "the canopy",
+        "same_object": false,
+        "distance_6ax": 0.2278,
+        "timbre_deltas": {
+          "periodicity": 0.08,
+          "roughness": 0.05,
+          "continuity": 0.13
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "embers_settle": {
+        "pass": true,
+        "nearest_neighbour": "cat_storm_rustle",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.1628,
+        "timbre_deltas": {
+          "periodicity": 0.02,
+          "roughness": 0.1,
+          "continuity": 0.0
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "fantail_chatter": {
+        "pass": true,
+        "nearest_neighbour": "door_sound",
+        "neighbour_object": "the cottage door",
+        "same_object": false,
+        "distance_6ax": 0.3245,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.23,
+          "continuity": 0.02
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "fire_crackle": {
+        "pass": true,
+        "nearest_neighbour": "footsteps_shingle",
+        "neighbour_object": "his own steps",
+        "same_object": false,
+        "distance_6ax": 0.2753,
+        "timbre_deltas": {
+          "periodicity": 0.07,
+          "roughness": 0.25,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "footsteps_floorboards": {
+        "pass": true,
+        "nearest_neighbour": "pen_scratch",
+        "neighbour_object": "his own pen",
+        "same_object": false,
+        "distance_6ax": 0.2347,
+        "timbre_deltas": {
+          "periodicity": 0.16,
+          "roughness": 0.0,
+          "continuity": 0.01
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "footsteps_grass_soil": {
+        "pass": true,
+        "nearest_neighbour": "morepork_call",
+        "neighbour_object": "the morepork",
+        "same_object": false,
+        "distance_6ax": 0.3268,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.15,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "footsteps_leafmould": {
+        "pass": true,
+        "nearest_neighbour": "shingle_drag",
+        "neighbour_object": "the shingle",
+        "same_object": false,
+        "distance_6ax": 0.3731,
+        "timbre_deltas": {
+          "periodicity": 0.13,
+          "roughness": 0.05,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "footsteps_shingle": {
+        "pass": true,
+        "nearest_neighbour": "fire_crackle",
+        "neighbour_object": "the fire",
+        "same_object": false,
+        "distance_6ax": 0.2753,
+        "timbre_deltas": {
+          "periodicity": 0.07,
+          "roughness": 0.25,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "gate_latch": {
+        "pass": true,
+        "nearest_neighbour": "log_on_fire",
+        "neighbour_object": "the fire",
+        "same_object": false,
+        "distance_6ax": 0.2646,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.15,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "godwits_overhead": {
+        "pass": true,
+        "nearest_neighbour": "bellbird_song",
+        "neighbour_object": "the bellbird",
+        "same_object": false,
+        "distance_6ax": 0.2047,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.05,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "gull_cries": {
+        "pass": true,
+        "nearest_neighbour": "oystercatcher_call",
+        "neighbour_object": "the oystercatcher",
+        "same_object": false,
+        "distance_6ax": 0.1908,
+        "timbre_deltas": {
+          "periodicity": 0.03,
+          "roughness": 0.13,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "herb_cut": {
+        "pass": true,
+        "nearest_neighbour": "page_turn",
+        "neighbour_object": "his own reading",
+        "same_object": false,
+        "distance_6ax": 0.2,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.05,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "kereru_wingbeats": {
+        "pass": true,
+        "nearest_neighbour": "cat_demand",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.252,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.11,
+          "continuity": 0.01
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "kettle_fill": {
+        "pass": true,
+        "nearest_neighbour": "bed_watering",
+        "neighbour_object": "the garden bed",
+        "same_object": false,
+        "distance_6ax": 0.2179,
+        "timbre_deltas": {
+          "periodicity": 0.0,
+          "roughness": 0.1,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "kettle_pour": {
+        "pass": true,
+        "nearest_neighbour": "kettle_fill",
+        "neighbour_object": "the kettle",
+        "same_object": true,
+        "distance_6ax": 0.2345,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.05,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "kettle_sing": {
+        "pass": true,
+        "nearest_neighbour": "rain_on_roof",
+        "neighbour_object": "the rain",
+        "same_object": false,
+        "distance_6ax": 0.2965,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.25,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "kingfisher_call": {
+        "pass": true,
+        "nearest_neighbour": "cat_demand",
+        "neighbour_object": "the kept cat",
+        "same_object": false,
+        "distance_6ax": 0.4112,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.05,
+          "continuity": 0.04
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "leaf_rustle": {
+        "pass": true,
+        "nearest_neighbour": "pen_scratch",
+        "neighbour_object": "his own pen",
+        "same_object": false,
+        "distance_6ax": 0.1865,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.0,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "log_on_fire": {
+        "pass": true,
+        "nearest_neighbour": "wood_snap",
+        "neighbour_object": "the deadfall",
+        "same_object": false,
+        "distance_6ax": 0.1997,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.1,
+          "continuity": 0.07
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "morepork_call": {
+        "pass": true,
+        "nearest_neighbour": "footsteps_grass_soil",
+        "neighbour_object": "his own steps",
+        "same_object": false,
+        "distance_6ax": 0.3268,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.15,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "moth_tap": {
+        "pass": true,
+        "nearest_neighbour": "canopy_drip",
+        "neighbour_object": "the canopy",
+        "same_object": false,
+        "distance_6ax": 0.3211,
+        "timbre_deltas": {
+          "periodicity": 0.08,
+          "roughness": 0.28,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "oystercatcher_call": {
+        "pass": true,
+        "nearest_neighbour": "gull_cries",
+        "neighbour_object": "gulls",
+        "same_object": false,
+        "distance_6ax": 0.1908,
+        "timbre_deltas": {
+          "periodicity": 0.03,
+          "roughness": 0.13,
+          "continuity": 0.03
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "page_turn": {
+        "pass": true,
+        "nearest_neighbour": "herb_cut",
+        "neighbour_object": "his own shears",
+        "same_object": false,
+        "distance_6ax": 0.2,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.05,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "pen_scratch": {
+        "pass": true,
+        "nearest_neighbour": "leaf_rustle",
+        "neighbour_object": "the undergrowth",
+        "same_object": false,
+        "distance_6ax": 0.1865,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.0,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "penguin_bray": {
+        "pass": true,
+        "nearest_neighbour": "kettle_sing",
+        "neighbour_object": "the kettle",
+        "same_object": false,
+        "distance_6ax": 0.3524,
+        "timbre_deltas": {
+          "periodicity": 0.2,
+          "roughness": 0.12,
+          "continuity": 0.18
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "rain_on_roof": {
+        "pass": true,
+        "nearest_neighbour": "kettle_sing",
+        "neighbour_object": "the kettle",
+        "same_object": false,
+        "distance_6ax": 0.2965,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.25,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "riroriro_trill": {
+        "pass": true,
+        "nearest_neighbour": "small_birds",
+        "neighbour_object": "the garden birds",
+        "same_object": false,
+        "distance_6ax": 0.2726,
+        "timbre_deltas": {
+          "periodicity": 0.17,
+          "roughness": 0.18,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "robin_song": {
+        "pass": true,
+        "nearest_neighbour": "godwits_overhead",
+        "neighbour_object": "the godwits",
+        "same_object": false,
+        "distance_6ax": 0.2093,
+        "timbre_deltas": {
+          "periodicity": 0.0,
+          "roughness": 0.2,
+          "continuity": 0.0
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "saw_rasp": {
+        "pass": false,
+        "nearest_neighbour": "waves_on_shingle",
+        "neighbour_object": "the sea",
+        "same_object": false,
+        "distance_6ax": 0.4494,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.3,
+          "continuity": 0.3
+        },
+        "timbre_axes_agreeing": 1
+      },
+      "shag_wingbeats": {
+        "pass": true,
+        "nearest_neighbour": "distant_surf_boom",
+        "neighbour_object": "the sea",
+        "same_object": false,
+        "distance_6ax": 0.4272,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.15,
+          "continuity": 0.25
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "shingle_drag": {
+        "pass": true,
+        "nearest_neighbour": "window_rattle",
+        "neighbour_object": "the window",
+        "same_object": false,
+        "distance_6ax": 0.1916,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.12,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "small_birds": {
+        "pass": true,
+        "nearest_neighbour": "blackbird_song",
+        "neighbour_object": "the blackbird",
+        "same_object": false,
+        "distance_6ax": 0.2526,
+        "timbre_deltas": {
+          "periodicity": 0.02,
+          "roughness": 0.15,
+          "continuity": 0.02
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "sow_dig": {
+        "pass": true,
+        "nearest_neighbour": "woodpile_settle",
+        "neighbour_object": "the woodpile",
+        "same_object": false,
+        "distance_6ax": 0.25,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.15,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "stream_run": {
+        "pass": true,
+        "nearest_neighbour": "bees_in_garden",
+        "neighbour_object": "the bees",
+        "same_object": false,
+        "distance_6ax": 0.5309,
+        "timbre_deltas": {
+          "periodicity": 0.4,
+          "roughness": 0.05,
+          "continuity": 0.2
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "thunder": {
+        "pass": true,
+        "nearest_neighbour": "dawn_chorus",
+        "neighbour_object": "the birds",
+        "same_object": false,
+        "distance_6ax": 0.5083,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.06,
+          "continuity": 0.23
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "tide_pool_trickle": {
+        "pass": true,
+        "nearest_neighbour": "godwits_overhead",
+        "neighbour_object": "the godwits",
+        "same_object": false,
+        "distance_6ax": 0.4964,
+        "timbre_deltas": {
+          "periodicity": 0.15,
+          "roughness": 0.1,
+          "continuity": 0.35
+        },
+        "timbre_axes_agreeing": 2
+      },
+      "tui_song": {
+        "pass": true,
+        "nearest_neighbour": "bellbird_song",
+        "neighbour_object": "the bellbird",
+        "same_object": false,
+        "distance_6ax": 0.2538,
+        "timbre_deltas": {
+          "periodicity": 0.09,
+          "roughness": 0.1,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "waves_crashing": {
+        "pass": true,
+        "nearest_neighbour": "waves_on_shingle",
+        "neighbour_object": "the sea",
+        "same_object": true,
+        "distance_6ax": 0.3734,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.13,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "waves_on_shingle": {
+        "pass": true,
+        "nearest_neighbour": "waves_crashing",
+        "neighbour_object": "the sea",
+        "same_object": true,
+        "distance_6ax": 0.3734,
+        "timbre_deltas": {
+          "periodicity": 0.04,
+          "roughness": 0.13,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wind_in_eaves": {
+        "pass": true,
+        "nearest_neighbour": "kettle_sing",
+        "neighbour_object": "the kettle",
+        "same_object": false,
+        "distance_6ax": 0.3158,
+        "timbre_deltas": {
+          "periodicity": 0.0,
+          "roughness": 0.19,
+          "continuity": 0.1
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wind_in_trees": {
+        "pass": true,
+        "nearest_neighbour": "wood_pigeon",
+        "neighbour_object": "the wood pigeon",
+        "same_object": false,
+        "distance_6ax": 0.3399,
+        "timbre_deltas": {
+          "periodicity": 0.14,
+          "roughness": 0.09,
+          "continuity": 0.18
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "window_rattle": {
+        "pass": true,
+        "nearest_neighbour": "shingle_drag",
+        "neighbour_object": "the shingle",
+        "same_object": false,
+        "distance_6ax": 0.1916,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.12,
+          "continuity": 0.05
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wood_haul_clatter": {
+        "pass": true,
+        "nearest_neighbour": "log_on_fire",
+        "neighbour_object": "the fire",
+        "same_object": false,
+        "distance_6ax": 0.2022,
+        "timbre_deltas": {
+          "periodicity": 0.1,
+          "roughness": 0.05,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wood_pigeon": {
+        "pass": true,
+        "nearest_neighbour": "cricket_night",
+        "neighbour_object": "the crickets",
+        "same_object": false,
+        "distance_6ax": 0.2267,
+        "timbre_deltas": {
+          "periodicity": 0.06,
+          "roughness": 0.11,
+          "continuity": 0.16
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wood_snap": {
+        "pass": true,
+        "nearest_neighbour": "log_on_fire",
+        "neighbour_object": "the fire",
+        "same_object": false,
+        "distance_6ax": 0.1997,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.1,
+          "continuity": 0.07
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "woodpile_settle": {
+        "pass": true,
+        "nearest_neighbour": "sow_dig",
+        "neighbour_object": "the garden bed",
+        "same_object": false,
+        "distance_6ax": 0.25,
+        "timbre_deltas": {
+          "periodicity": 0.05,
+          "roughness": 0.15,
+          "continuity": 0.15
+        },
+        "timbre_axes_agreeing": 3
+      },
+      "wren_scold": {
+        "pass": true,
+        "nearest_neighbour": "robin_song",
+        "neighbour_object": "the robin",
+        "same_object": false,
+        "distance_6ax": 0.4168,
+        "timbre_deltas": {
+          "periodicity": 0.2,
+          "roughness": 0.02,
+          "continuity": 0.02
+        },
+        "timbre_axes_agreeing": 3
+      }
+    },
+    "n_pass": 69,
+    "n_total": 70,
+    "pass_rate": 0.9857
+  },
+  "peak_proximity": {
+    "per_key": {
+      "bed_watering": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "bees_in_garden": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "bellbird_song": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "blackbird_alarm": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "blackbird_song": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "branches_creak": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "canopy_drip": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_chatter": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_demand": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_lapping": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_meow_at_door": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_purr": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_storm_rustle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_thump": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_trill": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cat_yowl_cargo": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "chair_desk_scrape": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cicada_chorus": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "clock_tick": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cricket_night": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "cuckoo_call": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "dawn_chorus": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "distant_surf_boom": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "door_sound": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "embers_settle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "fantail_chatter": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "fire_crackle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "footsteps_floorboards": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "footsteps_grass_soil": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "footsteps_leafmould": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "footsteps_shingle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "gate_latch": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "godwits_overhead": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "gull_cries": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "herb_cut": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "kereru_wingbeats": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "kettle_fill": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "kettle_pour": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "kettle_sing": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "kingfisher_call": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "leaf_rustle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "log_on_fire": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "morepork_call": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "moth_tap": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "oystercatcher_call": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "page_turn": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "pen_scratch": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "penguin_bray": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "rain_on_roof": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "riroriro_trill": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "robin_song": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "saw_rasp": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "shag_wingbeats": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "shingle_drag": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "small_birds": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "sow_dig": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "stream_run": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "thunder": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "tide_pool_trickle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "tui_song": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "waves_crashing": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "waves_on_shingle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wind_in_eaves": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wind_in_trees": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "window_rattle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wood_haul_clatter": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wood_pigeon": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wood_snap": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "woodpile_settle": {
+        "offset": 0.0,
+        "within_0.15": true
+      },
+      "wren_scold": {
+        "offset": 0.0,
+        "within_0.15": true
+      }
+    },
+    "n_within": 70,
+    "n_total": 70,
+    "within_rate": 1.0
+  },
+  "bars": {
+    "realness_pass_rate_ge_0.80": true,
+    "peak_within_rate_ge_0.70": true
+  }
+}

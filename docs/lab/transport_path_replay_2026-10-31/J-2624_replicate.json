@@ -1,0 +1,907 @@
+{
+ "week": "replicate",
+ "anchor": "midnight",
+ "ticks": 5244,
+ "days": [
+  "2026-09-16",
+  "2026-09-17",
+  "2026-09-18",
+  "2026-09-19",
+  "2026-09-21",
+  "2026-09-22",
+  "2026-09-23"
+ ],
+ "verdict_days": [
+  "2026-09-17",
+  "2026-09-18",
+  "2026-09-19",
+  "2026-09-21",
+  "2026-09-22",
+  "2026-09-23"
+ ],
+ "starts": [
+  0,
+  0,
+  0,
+  0,
+  1,
+  80,
+  162,
+  242,
+  336,
+  414,
+  493,
+  586
+ ],
+ "collisions_n_cand_ne_pool": 5244,
+ "real_novelty_wins": 0,
+ "reset_check": {
+  "consecutive_pairs": 5243,
+  "winner_raw_dropped": 2
+ },
+ "e3_logged_policy": {
+  "ticks": 5244,
+  "would_identical": 5244,
+  "b_entries": 688340,
+  "b_dev_gt_1e-3": 0,
+  "b_max_abs_dev": 0.0001
+ },
+ "D_start0_winner_counts": [
+  [
+   "life:cat:study",
+   1727
+  ],
+  [
+   "sound:wood_pigeon:garden",
+   1626
+  ],
+  [
+   null,
+   973
+  ],
+  [
+   "sound:blackbird_song:garden",
+   136
+  ],
+  [
+   "sound:morepork_call:study",
+   115
+  ],
+  [
+   "sound:dawn_chorus:garden",
+   115
+  ],
+  [
+   "sound:woodpile_settle:garden",
+   97
+  ],
+  [
+   "sound:kereru_wingbeats:garden",
+   80
+  ],
+  [
+   "sound:morepork_call:wood",
+   56
+  ],
+  [
+   "sound:penguin_bray:shore",
+   52
+  ],
+  [
+   "sound:wind_in_trees:garden",
+   38
+  ],
+  [
+   "sound:branches_creak:wood",
+   34
+  ],
+  [
+   "sound:morepork_call:garden",
+   21
+  ],
+  [
+   "sound:moth_tap:study",
+   21
+  ],
+  [
+   "sound:wind_in_trees:wood",
+   14
+  ]
+ ],
+ "D_start0_daily": {
+  "2026-09-16": {
+   "n": 673,
+   "modal": null,
+   "modal_share": 0.1753,
+   "distinct": 33,
+   "longest_run": 4,
+   "changes": 624
+  },
+  "2026-09-17": {
+   "n": 1024,
+   "modal": null,
+   "modal_share": 0.3926,
+   "distinct": 9,
+   "longest_run": 4,
+   "changes": 857
+  },
+  "2026-09-18": {
+   "n": 373,
+   "modal": null,
+   "modal_share": 0.5871,
+   "distinct": 4,
+   "longest_run": 5,
+   "changes": 272
+  },
+  "2026-09-19": {
+   "n": 643,
+   "modal": "life:cat:study",
+   "modal_share": 0.4743,
+   "distinct": 4,
+   "longest_run": 4,
+   "changes": 610
+  },
+  "2026-09-21": {
+   "n": 642,
+   "modal": "sound:wood_pigeon:garden",
+   "modal_share": 0.8505,
+   "distinct": 3,
+   "longest_run": 13,
+   "changes": 184
+  },
+  "2026-09-22": {
+   "n": 766,
+   "modal": "sound:wood_pigeon:garden",
+   "modal_share": 0.8916,
+   "distinct": 3,
+   "longest_run": 16,
+   "changes": 160
+  },
+  "2026-09-23": {
+   "n": 1123,
+   "modal": "life:cat:study",
+   "modal_share": 0.7293,
+   "distinct": 2,
+   "longest_run": 800,
+   "changes": 39
+  }
+ },
+ "replay_seconds": 76.7,
+ "checks": {
+  "E1_dispatch_tick_same_of_n": [
+   10488,
+   10488
+  ],
+  "E2_module_would_same_of_n": [
+   60614,
+   60614
+  ],
+  "E4_C_equals_logged_real_of_n": [
+   60614,
+   60614
+  ],
+  "novelty_restored": {},
+  "D_novelty_wins_all_starts": 0,
+  "D_none_all_starts": 11491
+ },
+ "daily": {
+  "C_start0": {
+   "2026-09-16": {
+    "n": 673,
+    "modal": "life:cat:study",
+    "modal_share": 0.8083,
+    "distinct": 2,
+    "longest_run": 544,
+    "changes": 1
+   },
+   "2026-09-17": {
+    "n": 1024,
+    "modal": "life:cat:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 1024,
+    "changes": 0
+   },
+   "2026-09-18": {
+    "n": 373,
+    "modal": "life:cat:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 373,
+    "changes": 0
+   },
+   "2026-09-19": {
+    "n": 643,
+    "modal": "life:cat:study",
+    "modal_share": 0.7387,
+    "distinct": 2,
+    "longest_run": 475,
+    "changes": 1
+   },
+   "2026-09-21": {
+    "n": 642,
+    "modal": "sound:wood_pigeon:garden",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 642,
+    "changes": 0
+   },
+   "2026-09-22": {
+    "n": 766,
+    "modal": "sound:wood_pigeon:garden",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 766,
+    "changes": 0
+   },
+   "2026-09-23": {
+    "n": 1123,
+    "modal": "life:cat:study",
+    "modal_share": 0.7124,
+    "distinct": 2,
+    "longest_run": 800,
+    "changes": 1
+   }
+  },
+  "LOGGED_REAL": {
+   "2026-09-16": {
+    "n": 673,
+    "modal": "life:cat:study",
+    "modal_share": 0.8083,
+    "distinct": 2,
+    "longest_run": 544,
+    "changes": 1
+   },
+   "2026-09-17": {
+    "n": 1024,
+    "modal": "life:cat:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 1024,
+    "changes": 0
+   },
+   "2026-09-18": {
+    "n": 373,
+    "modal": "life:cat:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 373,
+    "changes": 0
+   },
+   "2026-09-19": {
+    "n": 643,
+    "modal": "life:cat:study",
+    "modal_share": 0.7387,
+    "distinct": 2,
+    "longest_run": 475,
+    "changes": 1
+   },
+   "2026-09-21": {
+    "n": 642,
+    "modal": "sound:wood_pigeon:garden",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 642,
+    "changes": 0
+   },
+   "2026-09-22": {
+    "n": 766,
+    "modal": "sound:wood_pigeon:garden",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 766,
+    "changes": 0
+   },
+   "2026-09-23": {
+    "n": 1123,
+    "modal": "life:cat:study",
+    "modal_share": 0.7124,
+    "distinct": 2,
+    "longest_run": 800,
+    "changes": 1
+   }
+  },
+  "LOGGED_WOULD": {
+   "2026-09-16": {
+    "n": 673,
+    "modal": "sound:penguin_bray:shore",
+    "modal_share": 0.529,
+    "distinct": 4,
+    "longest_run": 356,
+    "changes": 3
+   },
+   "2026-09-17": {
+    "n": 1024,
+    "modal": "sound:blackbird_song:garden",
+    "modal_share": 0.7803,
+    "distinct": 3,
+    "longest_run": 799,
+    "changes": 2
+   },
+   "2026-09-18": {
+    "n": 373,
+    "modal": "sound:dawn_chorus:garden",
+    "modal_share": 0.4987,
+    "distinct": 3,
+    "longest_run": 186,
+    "changes": 5
+   },
+   "2026-09-19": {
+    "n": 643,
+    "modal": null,
+    "modal_share": 0.7247,
+    "distinct": 4,
+    "longest_run": 172,
+    "changes": 18
+   },
+   "2026-09-21": {
+    "n": 642,
+    "modal": "life:cat:study",
+    "modal_share": 0.9953,
+    "distinct": 2,
+    "longest_run": 639,
+    "changes": 1
+   },
+   "2026-09-22": {
+    "n": 766,
+    "modal": "life:cat:study",
+    "modal_share": 0.9961,
+    "distinct": 2,
+    "longest_run": 403,
+    "changes": 2
+   },
+   "2026-09-23": {
+    "n": 1123,
+    "modal": "life:cat:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 1123,
+    "changes": 0
+   }
+  }
+ },
+ "agreement_by_horizon": {
+  "[0,10)": {
+   "n": 120,
+   "C_vs_D": 0.25,
+   "LOGGEDWOULD_vs_D": 0.2583
+  },
+  "[10,30)": {
+   "n": 240,
+   "C_vs_D": 0.0792,
+   "LOGGEDWOULD_vs_D": 0.0708
+  },
+  "[30,100)": {
+   "n": 840,
+   "C_vs_D": 0.1036,
+   "LOGGEDWOULD_vs_D": 0.075
+  },
+  "[100,300)": {
+   "n": 2400,
+   "C_vs_D": 0.155,
+   "LOGGEDWOULD_vs_D": 0.1058
+  },
+  "[300,1000)": {
+   "n": 8400,
+   "C_vs_D": 0.215,
+   "LOGGEDWOULD_vs_D": 0.1074
+  },
+  "[1000,1000000000)": {
+   "n": 48614,
+   "C_vs_D": 0.7265,
+   "LOGGEDWOULD_vs_D": 0.3538
+  }
+ },
+ "A_D_vs_C": {
+  "days": {
+   "R1": 2,
+   "R2": 6,
+   "R3": 3
+  },
+  "need": 3,
+  "fired": {
+   "R1": false,
+   "R2": true,
+   "R3": true
+  },
+  "verdict": "DIVERGE",
+  "per_day": {
+   "2026-09-17": {
+    "ref": {
+     "n": 1024,
+     "modal": "life:cat:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 1024,
+     "changes": 0
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     847,
+     857.0,
+     861
+    ],
+    "D_modal_share": [
+     0.3926,
+     0.3955,
+     0.3994
+    ],
+    "D_distinct": [
+     9,
+     9.0,
+     9
+    ],
+    "D_longest_run": [
+     4,
+     4.0,
+     4
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-18": {
+    "ref": {
+     "n": 373,
+     "modal": "life:cat:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 373,
+     "changes": 0
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     268,
+     272.0,
+     272
+    ],
+    "D_modal_share": [
+     0.5871,
+     0.5871,
+     0.5898
+    ],
+    "D_distinct": [
+     4,
+     4.0,
+     4
+    ],
+    "D_longest_run": [
+     5,
+     5.0,
+     5
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-19": {
+    "ref": {
+     "n": 643,
+     "modal": "life:cat:study",
+     "modal_share": 0.7387,
+     "distinct": 2,
+     "longest_run": 475,
+     "changes": 1
+    },
+    "D_modal_plurality": "life:cat:study",
+    "D_modal_top3": [
+     [
+      "life:cat:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     610,
+     610.0,
+     610
+    ],
+    "D_modal_share": [
+     0.4743,
+     0.4743,
+     0.4743
+    ],
+    "D_distinct": [
+     4,
+     4.0,
+     4
+    ],
+    "D_longest_run": [
+     4,
+     4.0,
+     4
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-21": {
+    "ref": {
+     "n": 642,
+     "modal": "sound:wood_pigeon:garden",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 642,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:wood_pigeon:garden",
+    "D_modal_top3": [
+     [
+      "sound:wood_pigeon:garden",
+      12
+     ]
+    ],
+    "D_changes": [
+     184,
+     184.0,
+     184
+    ],
+    "D_modal_share": [
+     0.8505,
+     0.8505,
+     0.8505
+    ],
+    "D_distinct": [
+     3,
+     3.0,
+     3
+    ],
+    "D_longest_run": [
+     13,
+     13.0,
+     13
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-22": {
+    "ref": {
+     "n": 766,
+     "modal": "sound:wood_pigeon:garden",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 766,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:wood_pigeon:garden",
+    "D_modal_top3": [
+     [
+      "sound:wood_pigeon:garden",
+      12
+     ]
+    ],
+    "D_changes": [
+     160,
+     160.0,
+     160
+    ],
+    "D_modal_share": [
+     0.8916,
+     0.8916,
+     0.8916
+    ],
+    "D_distinct": [
+     3,
+     3.0,
+     3
+    ],
+    "D_longest_run": [
+     16,
+     16.0,
+     16
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-23": {
+    "ref": {
+     "n": 1123,
+     "modal": "life:cat:study",
+     "modal_share": 0.7124,
+     "distinct": 2,
+     "longest_run": 800,
+     "changes": 1
+    },
+    "D_modal_plurality": "life:cat:study",
+    "D_modal_top3": [
+     [
+      "life:cat:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     39,
+     39.0,
+     39
+    ],
+    "D_modal_share": [
+     0.7293,
+     0.7293,
+     0.7293
+    ],
+    "D_distinct": [
+     2,
+     2.0,
+     2
+    ],
+    "D_longest_run": [
+     800,
+     800.0,
+     800
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   }
+  }
+ },
+ "B_D_vs_LOGGEDWOULD": {
+  "days": {
+   "R1": 5,
+   "R2": 6,
+   "R3": 3
+  },
+  "need": 3,
+  "fired": {
+   "R1": true,
+   "R2": true,
+   "R3": true
+  },
+  "verdict": "DIVERGE",
+  "per_day": {
+   "2026-09-17": {
+    "ref": {
+     "n": 1024,
+     "modal": "sound:blackbird_song:garden",
+     "modal_share": 0.7803,
+     "distinct": 3,
+     "longest_run": 799,
+     "changes": 2
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     847,
+     857.0,
+     861
+    ],
+    "D_modal_share": [
+     0.3926,
+     0.3955,
+     0.3994
+    ],
+    "D_distinct": [
+     9,
+     9.0,
+     9
+    ],
+    "D_longest_run": [
+     4,
+     4.0,
+     4
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-18": {
+    "ref": {
+     "n": 373,
+     "modal": "sound:dawn_chorus:garden",
+     "modal_share": 0.4987,
+     "distinct": 3,
+     "longest_run": 186,
+     "changes": 5
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     268,
+     272.0,
+     272
+    ],
+    "D_modal_share": [
+     0.5871,
+     0.5871,
+     0.5898
+    ],
+    "D_distinct": [
+     4,
+     4.0,
+     4
+    ],
+    "D_longest_run": [
+     5,
+     5.0,
+     5
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-19": {
+    "ref": {
+     "n": 643,
+     "modal": null,
+     "modal_share": 0.7247,
+     "distinct": 4,
+     "longest_run": 172,
+     "changes": 18
+    },
+    "D_modal_plurality": "life:cat:study",
+    "D_modal_top3": [
+     [
+      "life:cat:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     610,
+     610.0,
+     610
+    ],
+    "D_modal_share": [
+     0.4743,
+     0.4743,
+     0.4743
+    ],
+    "D_distinct": [
+     4,
+     4.0,
+     4
+    ],
+    "D_longest_run": [
+     4,
+     4.0,
+     4
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-21": {
+    "ref": {
+     "n": 642,
+     "modal": "life:cat:study",
+     "modal_share": 0.9953,
+     "distinct": 2,
+     "longest_run": 639,
+     "changes": 1
+    },
+    "D_modal_plurality": "sound:wood_pigeon:garden",
+    "D_modal_top3": [
+     [
+      "sound:wood_pigeon:garden",
+      12
+     ]
+    ],
+    "D_changes": [
+     184,
+     184.0,
+     184
+    ],
+    "D_modal_share": [
+     0.8505,
+     0.8505,
+     0.8505
+    ],
+    "D_distinct": [
+     3,
+     3.0,
+     3
+    ],
+    "D_longest_run": [
+     13,
+     13.0,
+     13
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-22": {
+    "ref": {
+     "n": 766,
+     "modal": "life:cat:study",
+     "modal_share": 0.9961,
+     "distinct": 2,
+     "longest_run": 403,
+     "changes": 2
+    },
+    "D_modal_plurality": "sound:wood_pigeon:garden",
+    "D_modal_top3": [
+     [
+      "sound:wood_pigeon:garden",
+      12
+     ]
+    ],
+    "D_changes": [
+     160,
+     160.0,
+     160
+    ],
+    "D_modal_share": [
+     0.8916,
+     0.8916,
+     0.8916
+    ],
+    "D_distinct": [
+     3,
+     3.0,
+     3
+    ],
+    "D_longest_run": [
+     16,
+     16.0,
+     16
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-23": {
+    "ref": {
+     "n": 1123,
+     "modal": "life:cat:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 1123,
+     "changes": 0
+    },
+    "D_modal_plurality": "life:cat:study",
+    "D_modal_top3": [
+     [
+      "life:cat:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     39,
+     39.0,
+     39
+    ],
+    "D_modal_share": [
+     0.7293,
+     0.7293,
+     0.7293
+    ],
+    "D_distinct": [
+     2,
+     2.0,
+     2
+    ],
+    "D_longest_run": [
+     800,
+     800.0,
+     800
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": true
+   }
+  }
+ }
+}

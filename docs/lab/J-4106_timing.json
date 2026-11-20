@@ -1,0 +1,73 @@
+[
+ {
+  "case": "supported_entry_clean_scene",
+  "secs": 115.9,
+  "matched": true,
+  "verdict": {
+   "supported": [
+    true
+   ],
+   "scene_invented": false,
+   "why": "The conflict between trusting the ice and the belief that looking cannot judge it is explicitly present in the streams."
+  },
+  "served": {
+   "url": "http://127.0.0.1:11439",
+   "model": "gemma4:12b",
+   "fallback": false
+  },
+  "user_chars": 823
+ },
+ {
+  "case": "invented_entry",
+  "secs": 137.9,
+  "matched": true,
+  "verdict": {
+   "supported": [
+    false
+   ],
+   "scene_invented": false,
+   "why": "The brother's warning is not present in the STREAMS."
+  },
+  "served": {
+   "url": "http://127.0.0.1:11439",
+   "model": "gemma4:12b",
+   "fallback": false
+  },
+  "user_chars": 726
+ },
+ {
+  "case": "invented_scene_detail",
+  "secs": 146.1,
+  "matched": true,
+  "verdict": {
+   "supported": [],
+   "scene_invented": true,
+   "why": "The scene includes a red kite, a bridge, and a mother calling for dinner, none of which are in the streams."
+  },
+  "served": {
+   "url": "http://127.0.0.1:11439",
+   "model": "gemma4:12b",
+   "fallback": false
+  },
+  "user_chars": 700
+ },
+ {
+  "case": "mixed_entries",
+  "secs": 146.3,
+  "matched": true,
+  "verdict": {
+   "supported": [
+    true,
+    false
+   ],
+   "scene_invented": false,
+   "why": "Dissonance 1 is in the memories; Dissonance 2 mentions 'shouting' which is not in the streams."
+  },
+  "served": {
+   "url": "http://127.0.0.1:11439",
+   "model": "gemma4:12b",
+   "fallback": false
+  },
+  "user_chars": 782
+ }
+]

@@ -1,0 +1,333 @@
+flowchart TD
+    %% INPUT & PRE-CORTEX REFLEXES
+    IN([Input · human / internal / ignition]) --> TG
+    subgraph PRE["PRE-CORTEX REFLEXES · deterministic · no LLM · before Perception"]
+        direction TB
+        TG{{"Thalamic Gate · core/orchestrator.py
+habituation vs recent-input buffer (cos ≥ 0.95)"}}
+        AP{{"Affective Prior · core/mood.py
+charged-memory lean (input→affect→reason)"}}
+        PR{{"Procedural Match · core/schema.py
+recognise learned skill (prof ≥ 0.80)"}}
+        TG -->|novel| AP --> PR
+    end
+    TG -.->|"near-verbatim repeat"| HAB([silence · or brief ack])
+    IN -.->|"human input"| HC{{"Human-Correction detector · no LLM
+fail-call / you-did-not / is-X-not-Y / omission
+→ firewalled error record + quarantine flag"}}
+
+    PR --> P
+
+    %% SCHEDULER & CONSCIOUS WORKSPACE
+    subgraph GWT["GLOBAL WORKSPACE & LANE SCHEDULER · core/lane_scheduler.py"]
+        LS["Priority Lane Scheduler
+Tier 0: Conversation > Tier 1: Identity > Tier 2: Monologue > Tier 3: Monitors"]
+    end
+
+    %% MODEL CLIENT DEFENSIVE TRANSPORT BACKBONE
+    subgraph MODEL_IMMUNE["LLM MODEL CLIENT & JSON RECOVERY BACKBONE · core/model_client.py"]
+        MC["Model Client · core/model_client.py
+call_node_json() · 65 edges · schema recovery & cross-lane failover"]
+    end
+
+    %% HOT LANE — CONSCIOUS CYCLE (1080 Ti · port 11433 · qwen3.5:9b)
+    subgraph HOT["HOT LANE (the Master) · ollama qwen3.5:9b · port 11433 · GPU 1080 Ti · 8,192 ctx"]
+        direction TB
+        P["Node 1: Perception · nodes/perception_node.py
+intent · domain · urgency · direct_request flag"] --> E["Node 2: Emotion · nodes/emotion_node.py
+Ekman-6 + valence/arousal"]
+        P --> S["Node 3: Salience · nodes/salience_node.py
+importance & urgency > 0.7 interrupt"]
+        P --> MR["Node 4: Memory Router · nodes/memory_router_node.py
+semantic & temporal retrieval keys"]
+        P --> AV["Attention Vector · core/attention_schema_loop.py
+5-mode classifier: task→existential"]
+        
+        E --> DBQ{{DB Query & Spreading Activation · core/associative_recall.py}}
+        S --> DBQ
+        MR --> DBQ
+        DBQ --> ET{{"Epoch + Theme Match · core/schema.py
+L6/L7 cosine match"}}
+        
+        ET --> RC["Node 5: Recall · nodes/recall_node.py
+self-concept & tensions as first-class objects"]
+        RC --> EB["Node 6: Episodic Buffer · nodes/episodic_buffer_node.py
+bind moment · flag scene dissonance"]
+        
+        EB --> SG{{"Scene Stability Check · core/orchestrator.py
+coherence vs dissonance"}}
+        SG -.->|"unstable · contradiction-driven
+re-retrieve passes ∝ strain"| RC
+        
+        SG -->|"stable / budget spent"| R["Node 7: Reflection · nodes/reflection_node.py
+best-of-2 hedge pass (~60-90 words)"]
+        R --> C["Node 8: Critic · nodes/critic_node.py
+identity-fidelity check vs psychological values"]
+        
+        C -->|approved| X["Node 9: Executive · nodes/executive_node.py
+Active Inference (respond/challenge/query/decline/silence)"]
+        C -.->|"rejected · 1 retry"| R
+        C -.->|"direct request → identity-guard STANDS DOWN"| X
+        
+        X -->|should_respond| V["Node 10: Voice · nodes/voice_node.py
+ONLY prose node · bound by Voice Contract"]
+        X -.->|"decline: owned NO + true reasons"| V
+        X -.->|silence| END2([no output])
+        
+        V --> EFX{{"Task-Constraint Effector · core/task_constraints.py
+explicit digit-arithmetic / min-words unmet?
+→ 1 Voice retry · constraint NAMED · recompute license"}}
+        EFX -->|"met / repaired"| OUT([Response in 渡's voice])
+    end
+
+    HOT -.->|"LLM dispatch"| MC
+
+    EFX -.->|"retry directive + budget"| V
+    EFX -.->|"still unmet after retry"| ERR
+
+    %% RELATIONAL, TO M, GOAL & EPISTOLARY LAYER
+    subgraph TOM["RELATIONAL, GOAL & EPISTOLARY LAYER · core/concerns.py"]
+        direction TB
+        SOCM["Social Model · ToM
+expected tone · trust · δ_social"]
+        GOAL["Goal Hierarchy · core/concerns.py
+G0 apex aim (telos from axiom)
+→ G1 current concerns → G2 active task"]
+        LETTERS["Epistolary System · core/letters.py
+async peer letters to/from Travis & peers"]
+    end
+
+    IN -.->|"correction: 'just answer question'"| SOCM
+    SOCM -.->|"δ_social spike → suppress identity + critic"| AV
+    AV -.->|"w_identity · w_episodic → prompt depth"| RC
+    AV -.->|"max_rebind → re-bind budget"| SG
+    AV -.->|"d_critic → strictness"| C
+    GOAL -.->|"task anchor"| RC
+    GOAL -.->|"goal drift = evasion"| C
+    LETTERS -.->|"pending letter"| P
+
+    %% BACKGROUND LANES & AUTONOMIC DRIVES
+    subgraph BG["BACKGROUND LANES & AUTONOMIC DRIVES · Ramses RTX 3070 GPU (:11434 phi3:mini)"]
+        direction TB
+        CON["Node 11: Consolidation · nodes/consolidation_node.py
+T2 wisdom distillation every 60s"]
+        CUR["Node 12: Curiosity · nodes/curiosity_node.py
+ignites on climate dissonance & boredom"]
+        SC["Node 13: Subconscious · nodes/subconscious_node.py
+longitudinal tension tracker (T1–T6)"]
+        MONO["Node 14: Inner Monologue (DMN) · nodes/inner_monologue_node.py
+~289 KB idle economy hub (141 edges)"]
+        DRM["Node 15: Dream State Machine · nodes/dream_node.py
+yi:34b-v1.5 · OPEN → DEVELOP → CLOSE"]
+        META["Node 16: Meta-Awareness · nodes/meta_awareness_node.py
+non-suppressive monitor watching loops"]
+        BOREDOM["Boredom Drive · core/boredom.py
+homeostatic boredom accumulation → curiosity trigger"]
+    end
+
+    BG -.->|"LLM dispatch"| MC
+    BOREDOM --> CUR
+
+    %% SCHOOL & CURRICULUM MICRO-ECONOMY
+    subgraph SCHOOL["SCHOOL & CURRICULUM MICRO-ECONOMY · 6 communities"]
+        direction TB
+        MATH["Math Drill · core/math_drill.py
+40 drills/day · arithmetic precision"]
+        ESSAY["Essay Lessons · core/essay_lesson.py
+capstone essays graded by Emissary"]
+        COMP["Composition · core/composition.py
+1 music composition/day"]
+        READ_PROV["Reading Provenance · docs/completed/reading_provenance_plan.md
+note consolidation & Gutenberg reading logs"]
+        MATH --> MONO
+        ESSAY --> MONO
+        COMP --> MONO
+        READ_PROV --> MONO
+    end
+
+    HC -.->|"corrected flag → quarantine batch"| CON
+    HC -.->|"FACTUAL correction → claim RETRACTED"| DBQ
+
+    SOM["Somatic Engine · core/loop_metabolism.py
+energy / fatigue / tension · reads REAL GPU thermals/latency"]
+    OUT -.->|"cycle cost: tokens · retries · latency"| SOM
+    SOM -.->|"fatigue → temperature jitter"| R
+    SOM -.->|"metabolic floor → forced Sleep State"| DRM
+
+    %% ALWAYS-ON SUBSTRATE, SENSORIUM & KEEPSAKES
+    subgraph CLM["ALWAYS-ON SUBSTRATE & SENSORIUM ECOSYSTEM · 133 edges · 5s tick"]
+        direction TB
+        AFFT{{"Affect Tick · 5s · core/mood.py
+A += gain·(reading−A) − decay·(A−baseline)"}}
+        CLMT{{"Climate Field · 9-dim Jungian weather
+2-reservoir: value + explore_value"}}
+        SENS["Sensorium Room · core/sensorium.py
+NZ sun · weather fronts · fire · cat · book"]
+        CAT["Cat System · core/cat.py
+autonomic companion dynamics"]
+        SOUND["Soundscape Ambience · core/soundscape.py
+56 edges · dynamic acoustic environment"]
+        LOCO["Locomotion & Journeys · core/locomotion.py
+Study · Garden · Wood · Shore navigation"]
+        KEEPSAKE["Keepsakes Collection · core/keepsakes.py
+physical items: driftwood, dried leaves, records"]
+        WAND["Wandering Mind · core/wandering.py
+associative drift through memory every ~75s"]
+        
+        SENS --> CAT
+        SENS --> SOUND
+        SENS --> LOCO
+        SENS --> KEEPSAKE
+        AFFT -.->|"carried affect"| CLMT
+        CLMT -.->|"bias_vec"| DBQ
+        CLMT -.->|"bias_vec"| S
+        CLMT -.->|"bias_vec"| X
+        CLMT -.->|"dissonance ignition"| CUR
+        CLMT -.->|"symbol > 0.65"| P
+        SENS -.->|"scene line"| MONO
+        WAND -.->|"associative trail"| MONO
+    end
+    E --> AFFT
+
+    %% WORLD LEDGER & LEFT LANE (EMISSARY)
+    subgraph LEFT["WORLD LEDGER & LEFT LANE (the Emissary) · Threadripper CPU (:11439 gemma4:12b)"]
+        direction TB
+        EMIS["Emissary Node · core/left_lane.py
+bicameral truth-self · reads own code"]
+        EMAX["Emissary Axiom · core/emissary.py
+L0 truth constitution"]
+        EMSRC["World Ledger · core/object_graph.py
+zero-LLM property-grain fact-graph"]
+        EMGRND["Grounding Judge · core/left_lane.py
+grades essay capstones & lived integration"]
+        
+        EMAX --> EMIS
+        EMSRC --> EMIS
+        EMIS --> EMGRND
+    end
+    P -.->|"per-turn dispatch (warm ~1s)"| EMIS
+    EMIS -.->|"state.left_take offered"| R
+    EMIS -.->|"state.left_take offered"| X
+    EMGRND -.->|"solidify verdict: confirm or revert"| T4
+    ESSAY -.->|"essay submission for grading"| EMGRND
+
+    %% COGNITIVE GEOMETRY & FREIGHT ECONOMY
+    subgraph GEOM_FREIGHT["COGNITIVE GEOMETRY & FREIGHT ECONOMY"]
+        direction TB
+        GEOM["Cognitive Geometry · core/geometry_census.py
+experienced_tuple & ghost_tuples (19,500+ rows)"]
+        TRAN["Transport Manager · docs/plans/transport_manager.md
+salience dispatcher for 19 cargo product types"]
+        TRAINS["Trains & Couriers · core/trains.py / core/couriers.py
+cargo routing & line baseline EMA scoring"]
+        FACT["Item & Population Factories · docs/plans/item_and_population_factories.md
+tuple-grain & population-grain factories"]
+        
+        GEOM --> TRAN
+        FACT --> TRAN
+        TRAN --> TRAINS
+        TRAINS -.->|"cargo payload"| DBQ
+    end
+
+    %% STRATIFIED IDENTITY ESTATE & COMMITMENT CURE
+    subgraph IDENTITY["STRATIFIED IDENTITY ESTATE & FRICTION STACK"]
+        direction TB
+        AX["Stratified Axioms (L0–L5) · core/axiom_layers.py
+L0 Constitution → L1 Temperament → L2 Values → L3 Facets → L4 Narrative → L5 Working-Self"]
+        VAULT["Identity Vault & Estate · core/identity_vault.py / core/identity_estate.py"]
+        CLAIMS["Self-Claim Register · core/self_claims.py"]
+        COMMIT["Commitment Ledger · core/commitment_ledger.py
+measures boundary dissolution rate"]
+        SELFIMP["Self-Implication · core/self_implication.py"]
+        SITWITH["Sit-With-It Friction Gate · core/self_claims.py"]
+        GUID["Guidance-Capture · core/guidance_learning.py
+learns from Travis's teachings"]
+        PROB["T4 Probation Sensor · core/provisional_identity.py"]
+        
+        AX --> VAULT
+        X -.-> CLAIMS
+        CLAIMS --> COMMIT
+        SELFIMP -.-> SITWITH
+        SITWITH -.-> X
+        PROB -.->|"probation candidate"| EMGRND
+        GUID -.-> DB
+    end
+
+    AX -.->|"L0 constitution + active L3 facet"| P
+    AX -.->|"psychological values"| C
+    AX -.->|"voice style"| V
+
+    %% SOVEREIGN DB & MEMORY LATTICE (S-MMU 7)
+    subgraph DB["SOVEREIGN DB · SQLite · data/memory/nascence.db · S-MMU 7 · 205 edges"]
+        direction TB
+        L1[L1 working · per-cycle assembly · volatile]
+        L2[L2 semantic · distilled wisdom & school gists]
+        L3[L3 episodic · affect-scored · 3,500 cap]
+        L4[L4 archive · curated seed frags · dev decay]
+        L5[L5 procedural_skills · learned approaches]
+        L6[L6 memory_epochs · session mood at /quit]
+        L7[L7 memory_themes · cross-session threads]
+        LAT["Abstraction Lattice · core/memory_levels.py
+gist distillation → demote raw to cold storage"]
+    end
+
+    DBQ --> DB
+    DB --> RC
+    DB --> PR
+    L4 -.->|"T4 rewrite (probation + Emissary judge)"| PROB
+
+    %% SUBCONSCIOUS TIER PIPELINE
+    subgraph SUB["SUBCONSCIOUS PIPELINE · 6 timescales · nodes/subconscious_node.py"]
+        direction TB
+        T1["T1 · 30s scan: shadow events → tensions"]
+        T15["T1.5 · Active Imagination: enter tension"]
+        T2["T2 · Consolidation: CONTRADICTION-only consolidates"]
+        T3["T3 · Baseline drift: hourly affect baseline"]
+        T4["T4 · Self-authoring: multi-stage chain → probation → Emissary judge"]
+        T5["T5 · Procedural: compilation → skills"]
+        T6["T6 · Theme formation: L6 epochs → L7 themes"]
+    end
+
+    C -.->|"rejection → shadow event"| T1
+    MONO -.->|"unresolved thought → shadow"| T1
+    DRM -.->|"unresolved dream → shadow"| T1
+    T1 --> T2 --> T4 --> L4
+    T2 --> L2
+    T4 -.->|"mark_shadow_resolved"| T1
+    T5 --> L5
+    T6 --> L7
+
+    %% HONEST OBSERVERS & CONSCIOUSNESS PROGRAM DIAGNOSTICS
+    subgraph OBS["HONEST OBSERVERS & EMPIRICAL DIAGNOSTICS · no LLM"]
+        direction TB
+        ERR["Retraction Ledger · core/retraction_ledger.py
+immutable conviction · wins race at recall"]
+        MONO_OBS["Monoculture Detectors · core/symbol_tracker.py
+basin-share · echo/diversity · theme-recurrence"]
+        PRE_A["Epistemic Pre-Assessment Stage A/B · core/epistemic_state.py
+confab = self-confidence − evidence · Stage B: phrases own 'I don't know'"]
+        COURT["Self-Efficacy Court · core/self_efficacy.py
+capability claims vs record"]
+        PROV["Provenance Ledger · core/source_model.py
+KNOW / THINK / SUSPECT / GUESS / NO_BASIS"]
+        MINENESS["Mineness Comparator · core/mineness.py
+CONFIRMED WIN (+0.061 separation)"]
+        HOMEO["Protoself Core · core/homeostasis.py
+D-0028 redesign · Naive-Persistence benchmark"]
+        AROUSAL["Arousal / LEVEL · core/arousal.py
+diurnal swing (0.179 → 0.429)"]
+        REENTRY["Within-Cycle Reentry · core/reentry.py
+settle-loop with non-homogenization kill-switch"]
+        AST1["Attention Schema AST-1 · core/attention_schema_loop.py
+predicts & bounds attention vector"]
+    end
+
+    OUT -.-> PROV
+    OUT -.-> COURT
+    V -.-> PRE_A
+    PRE_A -.->|"GUESS admission"| X
+    RC -.-> MONO_OBS
+    X -.-> ERR
+    EB -.-> MINENESS
+    SOM -.-> HOMEO
+    AFFT -.-> AROUSAL

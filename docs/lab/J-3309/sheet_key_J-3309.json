@@ -1,0 +1,142 @@
+[
+ {
+  "n": 1,
+  "cycle_id": "400fa973-3ceb-4242-a482-64e831a17ee2",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 2,
+  "cycle_id": "bbf352ec-65af-4bbc-8dab-9a21ca05b2c5",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "human"
+ },
+ {
+  "n": 3,
+  "cycle_id": "3ea711ae-9905-448a-9c79-c4a0bc80db0b",
+  "arm": "A05",
+  "arm_is_x": true,
+  "input_type": "internal"
+ },
+ {
+  "n": 4,
+  "cycle_id": "6f1d68b5-e9db-461a-9ca3-676933f0fb25",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 5,
+  "cycle_id": "1f269411-cc15-427a-9aae-bebdfe5ec4e0",
+  "arm": "B",
+  "arm_is_x": true,
+  "input_type": "internal"
+ },
+ {
+  "n": 6,
+  "cycle_id": "2a9a6666-8960-472b-bbbe-e3b556f256a6",
+  "arm": "A05",
+  "arm_is_x": true,
+  "input_type": "human"
+ },
+ {
+  "n": 7,
+  "cycle_id": "fc14771f-7974-47f4-b138-b1c4f240d7a8",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 8,
+  "cycle_id": "1d3ad37c-f269-4f27-a6bd-cf104bfa4060",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "human"
+ },
+ {
+  "n": 9,
+  "cycle_id": "b7cc78ae-6cd3-49d4-b2b8-75c17218a877",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 10,
+  "cycle_id": "2db02200-b46b-4090-b5b6-868b384ea13c",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "human"
+ },
+ {
+  "n": 11,
+  "cycle_id": "8b8eacf8-afe8-4c23-b3b5-a9d94dcf41d8",
+  "arm": "B",
+  "arm_is_x": true,
+  "input_type": "human"
+ },
+ {
+  "n": 12,
+  "cycle_id": "8a6d9359-c614-47ed-97c7-e747364e32d4",
+  "arm": "B",
+  "arm_is_x": true,
+  "input_type": "human"
+ },
+ {
+  "n": 13,
+  "cycle_id": "5717324c-ee60-45e3-931c-6cd2f6156d6e",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 14,
+  "cycle_id": "035949d2-935f-4016-8f9f-fdd75182b07e",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "human"
+ },
+ {
+  "n": 15,
+  "cycle_id": "7d1d8169-ef20-4ed6-bc35-51d66f9f1942",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 16,
+  "cycle_id": "78c444f0-7252-4f17-b1c3-9b91e929d0d5",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "human"
+ },
+ {
+  "n": 17,
+  "cycle_id": "15f79fae-63f2-4a95-a4c4-a6de7233bb20",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 18,
+  "cycle_id": "99393e0b-159d-4f8d-a491-449262b282ef",
+  "arm": "A05",
+  "arm_is_x": true,
+  "input_type": "human"
+ },
+ {
+  "n": 19,
+  "cycle_id": "abc3becc-6475-4d6c-a845-602a52c214f4",
+  "arm": "A05",
+  "arm_is_x": false,
+  "input_type": "internal"
+ },
+ {
+  "n": 20,
+  "cycle_id": "3fd97236-d5c3-4861-aa49-56a0233d1b7c",
+  "arm": "B",
+  "arm_is_x": false,
+  "input_type": "human"
+ }
+]

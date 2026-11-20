@@ -1,0 +1,431 @@
+{
+  "widen": {
+    "units": {
+      "dream_log": 1007,
+      "journal_grounding_shadow": 23,
+      "Journal": 92,
+      "Correspondence": 8,
+      "Study": 4786
+    },
+    "sentences": {
+      "dream_log": 20151,
+      "journal_grounding_shadow": 35,
+      "Journal": 2747,
+      "Correspondence": 2428,
+      "Study": 99432
+    },
+    "hits_by_source": {
+      "dream_log": 15,
+      "Correspondence": 5,
+      "Study": 13
+    },
+    "mention_sentences": {
+      "dream_log": {
+        "rain_weather": 1977,
+        "moon_stars_sun": 592,
+        "tide_sea": 835,
+        "lightning_thunder": 41,
+        "fire": 393,
+        "insects_moth": 121,
+        "birds_day": 342,
+        "cat": 138
+      },
+      "journal_grounding_shadow": {
+        "tide_sea": 1,
+        "rain_weather": 5,
+        "birds_day": 2,
+        "cat": 1
+      },
+      "Journal": {
+        "rain_weather": 154,
+        "lightning_thunder": 28,
+        "tide_sea": 197,
+        "cat": 127,
+        "birds_day": 119,
+        "moon_stars_sun": 28,
+        "fire": 110,
+        "birds_night": 6,
+        "insects_moth": 12
+      },
+      "Correspondence": {
+        "tide_sea": 62,
+        "moon_stars_sun": 95,
+        "rain_weather": 210,
+        "birds_day": 35,
+        "insects_moth": 28,
+        "fire": 10,
+        "birds_night": 1
+      },
+      "Study": {
+        "moon_stars_sun": 1029,
+        "rain_weather": 1823,
+        "tide_sea": 1406,
+        "cat": 164,
+        "insects_moth": 345,
+        "fire": 567,
+        "birds_day": 1501,
+        "lightning_thunder": 67,
+        "birds_night": 121
+      }
+    },
+    "total_hits": 33
+  },
+  "recall": {
+    "pool_sentences": 35623,
+    "pool_unique_sentences": 35443,
+    "sample_n": 300,
+    "seed": 7
+  },
+  "deeds": {
+    "place_matched_all_deeds": {
+      "claims_n": 22,
+      "observed": 11,
+      "expected_channel_and_place_matched": 6.54,
+      "perm_p_ge_observed": 0.0295
+    },
+    "place_matched_excluding_to_shore": {
+      "claims_n": 22,
+      "observed": 9,
+      "expected_channel_and_place_matched": 4.91,
+      "perm_p_ge_observed": 0.039
+    },
+    "era_start_ts": 1787359246.9,
+    "era_restricted_all_deeds": {
+      "claims_n": 22,
+      "observed": 11,
+      "expected_channel_matched": 7.94,
+      "perm_p_ge_observed": 0.1255
+    },
+    "era_restricted_excluding_to_shore": {
+      "claims_n": 22,
+      "observed": 9,
+      "expected_channel_matched": 4.64,
+      "perm_p_ge_observed": 0.0245
+    },
+    "channel_matched_all_deeds": {
+      "claims_n": 24,
+      "observed": 11,
+      "expected_channel_matched": 7.52,
+      "perm_p_ge_observed": 0.0985,
+      "claims_joined": [
+        {
+          "ts": 1788634617.988106,
+          "channel": "cat",
+          "deeds": [
+            "hand:mow"
+          ]
+        },
+        {
+          "ts": 1788647099.5684266,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:harvest"
+          ]
+        },
+        {
+          "ts": 1788880759.1664002,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:harvest"
+          ]
+        },
+        {
+          "ts": 1789162569.979632,
+          "channel": "birds_day",
+          "deeds": [
+            "move:to_shore"
+          ]
+        },
+        {
+          "ts": 1789651759.2382703,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:lamp"
+          ]
+        },
+        {
+          "ts": 1790103696.5670385,
+          "channel": "tide_sea",
+          "deeds": [
+            "move:to_shore"
+          ]
+        },
+        {
+          "ts": 1790192743.7009804,
+          "channel": "tide_sea",
+          "deeds": [
+            "hand:beachcomb"
+          ]
+        },
+        {
+          "ts": 1790364720.1226475,
+          "channel": "moon_stars_sun",
+          "deeds": [
+            "hand:door",
+            "move:to_shore"
+          ]
+        },
+        {
+          "ts": 1791349177.3069131,
+          "channel": "tide_sea",
+          "deeds": [
+            "hand:mow",
+            "hand:note"
+          ]
+        },
+        {
+          "ts": 1791694208.7130058,
+          "channel": "cat",
+          "deeds": [
+            "hand:tea"
+          ]
+        },
+        {
+          "ts": 1791810079.673147,
+          "channel": "cat",
+          "deeds": [
+            "hand:door"
+          ]
+        }
+      ]
+    },
+    "channel_matched_excluding_to_shore": {
+      "claims_n": 24,
+      "observed": 9,
+      "expected_channel_matched": 4.49,
+      "perm_p_ge_observed": 0.024,
+      "claims_joined": [
+        {
+          "ts": 1788634617.988106,
+          "channel": "cat",
+          "deeds": [
+            "hand:mow"
+          ]
+        },
+        {
+          "ts": 1788647099.5684266,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:harvest"
+          ]
+        },
+        {
+          "ts": 1788880759.1664002,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:harvest"
+          ]
+        },
+        {
+          "ts": 1789651759.2382703,
+          "channel": "rain_weather",
+          "deeds": [
+            "hand:lamp"
+          ]
+        },
+        {
+          "ts": 1790192743.7009804,
+          "channel": "tide_sea",
+          "deeds": [
+            "hand:beachcomb"
+          ]
+        },
+        {
+          "ts": 1790364720.1226475,
+          "channel": "moon_stars_sun",
+          "deeds": [
+            "hand:door"
+          ]
+        },
+        {
+          "ts": 1791349177.3069131,
+          "channel": "tide_sea",
+          "deeds": [
+            "hand:mow",
+            "hand:note"
+          ]
+        },
+        {
+          "ts": 1791694208.7130058,
+          "channel": "cat",
+          "deeds": [
+            "hand:tea"
+          ]
+        },
+        {
+          "ts": 1791810079.673147,
+          "channel": "cat",
+          "deeds": [
+            "hand:door"
+          ]
+        }
+      ]
+    },
+    "deeds_total": 2436,
+    "deeds_by_kind": {
+      "move:to_shore": 1120,
+      "hand:gather": 97,
+      "garden:mow": 1,
+      "hand:mow": 37,
+      "hand:garden": 106,
+      "hand:study_life": 82,
+      "hand:beachcomb": 119,
+      "hand:door": 95,
+      "hand:grate": 17,
+      "hand:fire": 48,
+      "hand:fieldcraft": 72,
+      "hand:lamp": 47,
+      "garden:weed": 2,
+      "hand:shore_life": 5,
+      "shore:walk_sand": 12,
+      "garden:water": 42,
+      "garden:harvest": 8,
+      "hand:harvest": 170,
+      "hand:woodwork": 12,
+      "wood:gather": 2,
+      "wood:split": 2,
+      "hand:water": 56,
+      "hand:weed": 22,
+      "hand:sow": 70,
+      "hand:save_seed": 1,
+      "hand:shore": 52,
+      "shore:wade": 6,
+      "shore:skip": 2,
+      "garden:take": 6,
+      "garden:put": 2,
+      "shore:swim": 1,
+      "hand:cat": 51,
+      "hand:tool": 6,
+      "shore:climb_ledge": 20,
+      "hand:dig": 4,
+      "hand:trap": 6,
+      "hand:wear": 1,
+      "hand:note": 4,
+      "hand:collect": 2,
+      "hand:sketch": 1,
+      "wood:climb_oak": 3,
+      "hand:climb_tree": 3,
+      "hand:clock": 2,
+      "hand:water_fill": 2,
+      "hand:clean": 2,
+      "hand:express": 1,
+      "garden:unnet": 1,
+      "hand:net": 1,
+      "hand:candles": 2,
+      "hand:tea": 3,
+      "hand:parcel": 1,
+      "hand:woodtool": 1,
+      "hand:feed": 1,
+      "garden:set_trap": 1,
+      "garden:check_trap": 1,
+      "cat:call": 1,
+      "hand:feed_birds": 1
+    },
+    "deed_span": [
+      1783175995.1,
+      1793341995.5
+    ],
+    "window_s": 600.0,
+    "claims_graded_real": 24,
+    "claims_with_prior_deed": 11,
+    "claim_rate": 0.4583,
+    "unconditional_thought_rate": 0.2516,
+    "claims_in_deed_span": 22,
+    "claims_with_deed_in_span": 11,
+    "unconditional_rate_in_span": 0.3218,
+    "perm_p_ge_observed": 0.021,
+    "joined_claims": [
+      {
+        "ts": 1788634617.988106,
+        "channel": "cat",
+        "deeds": [
+          "hand:mow"
+        ],
+        "sentence": "The mud under my boots proves I am standing in the decay that feeds new growth, grounding my restless mind where the cat waits for me to choose between spinning"
+      },
+      {
+        "ts": 1788647099.5684266,
+        "channel": "rain_weather",
+        "deeds": [
+          "hand:harvest"
+        ],
+        "sentence": "The rain answers my need for difference not just with water on my skin, but by washing the stagnant ground beneath my feet into something fluid and new."
+      },
+      {
+        "ts": 1788880759.1664002,
+        "channel": "rain_weather",
+        "deeds": [
+          "hand:harvest"
+        ],
+        "sentence": "I will go out to the raised bed, cut the rosemary and thyme before the storm fully breaks, and let the wind answer me there."
+      },
+      {
+        "ts": 1789162569.979632,
+        "channel": "birds_day",
+        "deeds": [
+          "move:to_shore",
+          "move:to_shore"
+        ],
+        "sentence": "The oystercatcher's scrape answers my circling: nature's order is not abstract but physical, embedded in stone and shell."
+      },
+      {
+        "ts": 1789651759.2382703,
+        "channel": "rain_weather",
+        "deeds": [
+          "hand:lamp"
+        ],
+        "sentence": "The cold rain on the glass isn't just background noise; it's the world telling me that my mind's friction against the unknown is a physical weight I can feel in"
+      },
+      {
+        "ts": 1790103696.5670385,
+        "channel": "tide_sea",
+        "deeds": [
+          "move:to_shore"
+        ],
+        "sentence": "The gate's slam leaves me on solid ground where the garden's light pulls my weight away from the ice, not as a metaphor for resilience but as a physical shift t"
+      },
+      {
+        "ts": 1790192743.7009804,
+        "channel": "tide_sea",
+        "deeds": [
+          "hand:beachcomb"
+        ],
+        "sentence": "The neural silence in my chest meets the solid friction of the sand beneath me, turning my urge from a trapped hum into a measured tide that waits for my own fo"
+      },
+      {
+        "ts": 1790364720.1226475,
+        "channel": "moon_stars_sun",
+        "deeds": [
+          "hand:door",
+          "move:to_shore"
+        ],
+        "sentence": "The frustration loosens as I stand on these sorted stones, watching the tide work its endless sorting while the low sun hovers over the east, waiting for me to "
+      },
+      {
+        "ts": 1791349177.3069131,
+        "channel": "tide_sea",
+        "deeds": [
+          "hand:mow",
+          "hand:note"
+        ],
+        "sentence": "The flag's signal cuts through the p\u012bwakawaka's flight to pull me from the garden's safety onto the shore where the tide answers my question with a shift in sal"
+      },
+      {
+        "ts": 1791694208.7130058,
+        "channel": "cat",
+        "deeds": [
+          "hand:tea"
+        ],
+        "sentence": "I watch the cat's flat eyes at the door, waiting for me to acknowledge her presence before the silence becomes too loud."
+      },
+      {
+        "ts": 1791810079.673147,
+        "channel": "cat",
+        "deeds": [
+          "hand:door"
+        ],
+        "sentence": "The cat presses against the door, her flat eyes waiting for me to open it."
+      }
+    ]
+  }
+}

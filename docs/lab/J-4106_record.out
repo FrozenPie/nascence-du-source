@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "wrong": [],
+  "no_verdict": [],
+  "cases": 4,
+  "models": [
+    "gemma4:12b"
+  ]
+}
+recorded -> C:\Nascence\data\episodic_buffer_judge_control.json

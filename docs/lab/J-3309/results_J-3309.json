@@ -1,0 +1,154 @@
+{
+ "N|all": {
+  "win": 0,
+  "loss": 0,
+  "tie": 1,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {
+   "tie": 1
+  },
+  "j2": {
+   "loss": 1
+  },
+  "tb": {
+   "tie": 1
+  }
+ },
+ "N|human": {
+  "win": 0,
+  "loss": 0,
+  "tie": 1,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {
+   "tie": 1
+  },
+  "j2": {
+   "loss": 1
+  },
+  "tb": {
+   "tie": 1
+  }
+ },
+ "N|internal": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ },
+ "A05|all": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {
+   "tie": 1
+  }
+ },
+ "A05|human": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {
+   "tie": 1
+  }
+ },
+ "A05|internal": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ },
+ "A025|all": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ },
+ "A025|human": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ },
+ "A025|internal": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ },
+ "B|all": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {
+   "tie": 1
+  }
+ },
+ "B|human": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {
+   "tie": 1
+  }
+ },
+ "B|internal": {
+  "win": 0,
+  "loss": 0,
+  "tie": 0,
+  "decided": 0,
+  "win_rate": null,
+  "p_one_sided": null,
+  "j1": {},
+  "j2": {},
+  "tb": {}
+ }
+}

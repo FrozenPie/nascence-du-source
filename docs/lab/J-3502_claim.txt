@@ -1,0 +1,1 @@
+J-3502 replay of P-0042 variants could not run: local hubs hot :11433 (qwen3.5:9b), judge1 :11439 (gemma4:12b), judge2 :11440 (falcon3:7b) answered /api/ps and /api/tags instantly but no /api/chat generation completed in about 30 minutes of attempts, even a 20-token "hi".

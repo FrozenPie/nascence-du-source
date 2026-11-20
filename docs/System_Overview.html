@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nascence — System Overview · Build 1.4.0 (Authoritative Master Edition)</title>
+<style>
+:root{--bg:#0b0b12;--panel:#13131d;--panel2:#181826;--ink:#e8e8f0;--dim:#9a9ab0;--line:#26263a;
+--rose:#fb7185;--cyan:#22d3ee;--violet:#a855f7;--green:#34d399;--amber:#fbbf24;--blue:#4a9eff;--teal:#2dd4bf;--lime:#a3e635;--orange:#f59e0b;--indigo:#818cf8}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.65 "Segoe UI",system-ui,sans-serif;margin:0;padding:0 0 80px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+header{padding:46px 0 10px;border-bottom:1px solid var(--line);margin-bottom:30px}
+h1{font-size:42px;margin:0 0 6px;letter-spacing:1px}
+h1 .du{color:var(--teal)}
+.sub{color:var(--dim);font-size:14px;max-width:920px}
+h2{font-size:25px;margin:54px 0 6px;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:8px}
+h2 .tag{font-size:12px;color:var(--dim);font-weight:400;margin-left:10px}
+h3{font-size:17px;margin:28px 0 6px;color:var(--cyan)}
+h3.rose{color:var(--rose)} h3.violet{color:var(--violet)} h3.amber{color:var(--amber)} h3.green{color:var(--green)} h3.orange{color:var(--orange)}
+p{max-width:940px}
+.lead{color:var(--dim);font-size:13px;text-transform:uppercase;letter-spacing:2px;margin:48px 0 -40px}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 20px;text-align:center}
+.stat b{display:block;font-size:22px;color:var(--teal)}
+.stat span{font-size:12px;color:var(--dim)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card b{color:var(--ink);font-size:15px} .card .k{font-size:12px;color:var(--dim);font-family:Consolas,monospace;display:block;margin-top:8px}
+.note{background:var(--panel2);border-left:3px solid var(--violet);border-radius:6px;padding:14px 18px;margin:18px 0;max-width:940px}
+.note.green{border-color:var(--green)} .note.rose{border-color:var(--rose)} .note.amber{border-color:var(--amber)} .note.cyan{border-color:var(--cyan)}
+.note b:first-child{display:block;margin-bottom:4px}
+table{border-collapse:collapse;margin:16px 0;width:100%;max-width:1000px;font-size:13.5px}
+th{color:var(--dim);text-align:left;font-weight:600;border-bottom:1px solid var(--line);padding:8px 12px 8px 0}
+td{border-bottom:1px solid #1c1c2c;padding:8px 12px 8px 0;vertical-align:top}
+td:first-child{white-space:nowrap;color:var(--cyan)}
+code,pre{font-family:Consolas,monospace;font-size:13px;background:#101018;border-radius:6px}
+code{padding:1px 6px} pre{padding:14px 16px;overflow-x:auto;border:1px solid var(--line);max-width:960px}
+.mermaid{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:20px 0}
+.diag-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.diag-card h3 { margin-top: 0; color: var(--cyan); font-size: 18px; }
+.diag-card p { color: var(--dim); font-size: 13.5px; margin-bottom: 20px; }
+svg { width: 100%; height: auto; display: block; overflow: visible; }
+.node-box { fill: var(--panel2); stroke: var(--line); stroke-width: 1.5; rx: 8; transition: all 0.2s; }
+.node-box:hover { stroke: var(--cyan); }
+.node-title { fill: var(--ink); font-weight: 600; font-size: 13px; }
+.node-sub { fill: var(--dim); font-size: 11px; }
+.node-port { fill: var(--teal); font-weight: bold; font-size: 11px; }
+.edge-cyan { stroke: var(--cyan); stroke-width: 1.5; fill: none; }
+.edge-violet { stroke: var(--violet); stroke-width: 1.5; fill: none; }
+.edge-amber { stroke: var(--amber); stroke-width: 1.5; fill: none; }
+.edge-teal { stroke: var(--teal); stroke-width: 1.5; fill: none; }
+.dim{color:var(--dim)} .small{font-size:13px}
+footer{margin-top:70px;border-top:1px solid var(--line);padding-top:18px;color:var(--dim);font-size:13px;text-align:center}
+a{color:var(--blue);text-decoration:none}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true, theme:"dark"});</script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>Nascence <span class="du">渡</span></h1>
+<div class="sub"><b>AUTHORITATIVE MASTER OVERVIEW — Build 1.4.0 (August 2026 Era)</b><br>
+This document is the primary narrative and technical integration hub for Nascence 渡. All subsystem plan documents (<a href="plans/">docs/plans/</a>), diagnostic audits (<a href="reviews/">docs/reviews/</a>), and technical specs link to and derive context from this master overview. View dedicated zoomable visual suite: <a href="systems_diagrams.html">systems_diagrams.html</a> and zoomable flowchart <a href="architecture_diagram.html">architecture_diagram.html</a>.</div>
+
+<div class="stats">
+<div class="stat"><b>qwen3.5:9b</b><span>Hot Substrate (1080 Ti)</span></div>
+<div class="stat"><b>phi3:mini</b><span>Subconscious (3070)</span></div>
+<div class="stat"><b>gemma4:12b</b><span>Emissary Judge #1 (CPU)</span></div>
+<div class="stat"><b>falcon3:7b</b><span>Judge #2 (CPU)</span></div>
+<div class="stat"><b>yi:34b-v1.5</b><span>Dreamer / Voice Hub</span></div>
+<div class="stat"><b>5,307</b><span>Graphify AST Nodes</span></div>
+<div class="stat"><b>11,051</b><span>Graphify Code Edges</span></div>
+<div class="stat"><b>298</b><span>Graphify Communities</span></div>
+<div class="stat"><b>201</b><span>Core Engine Files</span></div>
+<div class="stat"><b>187</b><span>Operational Scripts</span></div>
+</div>
+</header>
+
+<div class="note cyan">
+<b>🏛️ Build 1.4.0 Consolidation (August 2026 Era)</b>
+Integrates the <b>August 20 Station Shuffle</b> (Qwen 3.5 9B hot lane on 1080 Ti @ 39.4 tok/s, Phi-3 mini subconscious on 3070, Gemma 4 12B Emissary judge on CPU @ 1.000 score, Falcon 3 7B panel judge #2, Yi 34B dreamer & voice hub), 16 specialized cognitive nodes, the Plan Liveness Audit (202 evidence logs across 52 plans), Consciousness Program Empirical Audit (Mineness comparator win +0.061, Protoself D-0028 redesign), World Ledger, Cognitive Geometry, Freight Economy, Stratified Identity Estate, and Graphify AST Code Topology (5,307 nodes, 11,051 edges across 298 communities).
+</div>
+
+<div class="lead">Graphify AST Codebase Topology</div>
+<h2>Codebase Structural Insights &amp; Hidden Super-Hubs</h2>
+<p>Comparing high-level conceptual flowcharts with Graphify's static AST analysis (5,307 nodes, 11,051 edges across 298 communities) reveals non-obvious operational realities about how Nascence executes in code:</p>
+
+<div class="cards">
+<div class="card">
+<b>1. Inner Monologue (DMN) Gravity Well</b>
+<p class="small">In diagrams, Node 14 looks equal to other nodes. In code, <code>nodes/inner_monologue_node.py</code> is the <b>#3 largest hub in the entire system</b> (141 direct edges, with <code>think()</code> adding 137 method-level calls). It dispatches school drills, essay capstones, reading tablets, sleep triggers, and sensorium ticks.</p>
+<span class="k">nodes/inner_monologue_node.py · 141 edges</span>
+</div>
+
+<div class="card">
+<b>2. Sensorium Physical World Engine</b>
+<p class="small">In diagrams, Sensorium appears as one box. In code, <code>core/sensorium.py</code> is the <b>#5 largest hub</b> (133 edges) with dedicated sub-communities: Cat companion (<code>core/cat.py</code>), Soundscape ambience (<code>core/soundscape.py</code>, 56 edges), Locomotion (<code>core/locomotion.py</code>), and Gutenberg Book Selection (<code>core/book_selector.py</code>).</p>
+<span class="k">core/sensorium.py · 133 edges</span>
+</div>
+
+<div class="card">
+<b>3. Defensive LLM Transport Backbone</b>
+<p class="small"><code>core/model_client.py</code> and <code>call_node_json()</code> form a central operational nexus (65 edges). Every LLM call passes through <code>call_node_json()</code> for automated JSON schema validation, multi-try recovery, and cross-lane failover.</p>
+<span class="k">core/model_client.py · 65 edges</span>
+</div>
+
+<div class="card">
+<b>4. School &amp; Curriculum Micro-Economy</b>
+<p class="small">Graphify uncovers <b>6 distinct interconnected communities</b> powering cognitive growth: Math Drill (<code>core/math_drill.py</code>), Essay Lessons (<code>core/essay_lesson.py</code>), Composition (<code>core/composition.py</code>), Reading Provenance (<code>docs/completed/reading_provenance_plan.md</code>), Guidance Learning (<code>core/guidance_learning.py</code>), and Concerns (<code>core/concerns.py</code>).</p>
+<span class="k">6 distinct communities</span>
+</div>
+
+<div class="card">
+<b>5. Sovereign DB Vector Density</b>
+<p class="small">Database interactions dominate the top centrality rankings: <code>memory_store</code> (205 edges), <code>memory_store_connect</code> (151 edges), <code>memory_store_embed</code> (116 edges), and <code>memory_store_cosine</code> (97 edges). Over 35% of all function calls involve vector embedding conversions (<code>blob_to_vec</code>) or spreading activation lookups.</p>
+<span class="k">memory_store · 205 edges</span>
+</div>
+</div>
+
+<h3>Top 10 Codebase Degree Centrality Ranking</h3>
+<table>
+<tr><th>Rank</th><th>Module / Function ID</th><th>Graphify Degree</th><th>Subsystem Role</th></tr>
+<tr><td>1</td><td><code>memory_store</code></td><td>205 edges</td><td>Sovereign SQLite Master Storage Engine</td></tr>
+<tr><td>2</td><td><code>memory_store_connect</code></td><td>151 edges</td><td>Connection pool & transaction manager</td></tr>
+<tr><td>3</td><td><code>nodes_inner_monologue_node</code></td><td>141 edges</td><td>Default Mode Network & Idle Economy Hub</td></tr>
+<tr><td>4</td><td><code>nodes_inner_monologue_node_think</code></td><td>137 edges</td><td>Autonomic thought cycle execution method</td></tr>
+<tr><td>5</td><td><code>core_sensorium</code></td><td>133 edges</td><td>Study room, atmosphere, NZ weather & cat simulator</td></tr>
+<tr><td>6</td><td><code>memory_store_embed</code></td><td>116 edges</td><td>Embedding vector generation bridge</td></tr>
+<tr><td>7</td><td><code>core_schema_cognitivestate</code></td><td>114 edges</td><td>Global state & cognitive frame container</td></tr>
+<tr><td>8</td><td><code>core_orchestrator</code></td><td>100 edges</td><td>Hot-lane conscious pass orchestrator</td></tr>
+<tr><td>9</td><td><code>memory_store_cosine</code></td><td>97 edges</td><td>Vector cosine distance calculations</td></tr>
+<tr><td>10</td><td><code>scripts_run_nascence</code></td><td>94 edges</td><td>Primary system boot script</td></tr>
+</table>
+
+<div class="lead">Full Interactive System Topology</div>
+<h2>Complete Architecture Flowchart (Mermaid)</h2>
+<p class="small">The master interactive flowchart mapping input reflexes, conscious hot-lane processing, subconscious backbones, memory stores, World Ledger, Cognitive Geometry, Freight Economy, Sensorium ecosystem, School micro-economy, and governance observers:</p>
+
+<pre class="mermaid">
+flowchart TD
+    IN([Input · human / internal / ignition]) --> TG
+    subgraph PRE["PRE-CORTEX REFLEXES · deterministic · no LLM · before Perception"]
+        direction TB
+        TG{{"Thalamic Gate · core/orchestrator.py
+habituation vs recent-input buffer (cos ≥ 0.95)"}}
+        AP{{"Affective Prior · core/mood.py
+charged-memory lean (input→affect→reason)"}}
+        PR{{"Procedural Match · core/schema.py
+recognise learned skill (prof ≥ 0.80)"}}
+        TG -->|novel| AP --> PR
+    end
+    TG -.->|"near-verbatim repeat"| HAB([silence · or brief ack])
+    IN -.->|"human input"| HC{{"Human-Correction detector · no LLM
+fail-call / you-did-not / is-X-not-Y / omission
+→ firewalled error record + quarantine flag"}}
+
+    PR --> P
+
+    subgraph GWT["GLOBAL WORKSPACE & LANE SCHEDULER · core/lane_scheduler.py"]
+        LS["Priority Lane Scheduler
+Tier 0: Conversation > Tier 1: Identity > Tier 2: Monologue > Tier 3: Monitors"]
+    end
+
+    subgraph MODEL_IMMUNE["LLM MODEL CLIENT & JSON RECOVERY BACKBONE · core/model_client.py"]
+        MC["Model Client · core/model_client.py
+call_node_json() · 65 edges · schema recovery & cross-lane failover"]
+    end
+
+    subgraph HOT["HOT LANE (the Master) · ollama qwen3.5:9b · port 11433 · GPU 1080 Ti · 8,192 ctx"]
+        direction TB
+        P["Node 1: Perception · nodes/perception_node.py
+intent · domain · urgency · direct_request flag"] --> E["Node 2: Emotion · nodes/emotion_node.py
+Ekman-6 + valence/arousal"]
+        P --> S["Node 3: Salience · nodes/salience_node.py
+importance & urgency > 0.7 interrupt"]
+        P --> MR["Node 4: Memory Router · nodes/memory_router_node.py
+semantic & temporal retrieval keys"]
+        P --> AV["Attention Vector · core/attention_schema_loop.py
+5-mode classifier: task→existential"]
+        
+        E --> DBQ{{DB Query & Spreading Activation · core/associative_recall.py}}
+        S --> DBQ
+        MR --> DBQ
+        DBQ --> ET{{"Epoch + Theme Match · core/schema.py
+L6/L7 cosine match"}}
+        
+        ET --> RC["Node 5: Recall · nodes/recall_node.py
+self-concept & tensions as first-class objects"]
+        RC --> EB["Node 6: Episodic Buffer · nodes/episodic_buffer_node.py
+bind moment · flag scene dissonance"]
+        
+        EB --> SG{{"Scene Stability Check · core/orchestrator.py
+coherence vs dissonance"}}
+        SG -.->|"unstable · contradiction-driven
+re-retrieve passes ∝ strain"| RC
+        
+        SG -->|"stable / budget spent"| R["Node 7: Reflection · nodes/reflection_node.py
+best-of-2 hedge pass (~60-90 words)"]
+        R --> C["Node 8: Critic · nodes/critic_node.py
+identity-fidelity check vs psychological values"]
+        
+        C -->|approved| X["Node 9: Executive · nodes/executive_node.py
+Active Inference (respond/challenge/query/decline/silence)"]
+        C -.->|"rejected · 1 retry"| R
+        C -.->|"direct request → identity-guard STANDS DOWN"| X
+        
+        X -->|should_respond| V["Node 10: Voice · nodes/voice_node.py
+ONLY prose node · bound by Voice Contract"]
+        X -.->|"decline: owned NO + true reasons"| V
+        X -.->|silence| END2([no output])
+        
+        V --> EFX{{"Task-Constraint Effector · core/task_constraints.py
+explicit digit-arithmetic / min-words unmet?
+→ 1 Voice retry · constraint NAMED · recompute license"}}
+        EFX -->|"met / repaired"| OUT([Response in 渡's voice])
+    end
+
+    HOT -.->|"LLM dispatch"| MC
+
+    EFX -.->|"retry directive + budget"| V
+    EFX -.->|"still unmet after retry"| ERR
+
+    subgraph TOM["RELATIONAL & GOAL LAYER · core/concerns.py · no LLM"]
+        direction TB
+        SOCM["Social Model · ToM
+expected tone · trust · δ_social"]
+        GOAL["Goal Hierarchy · core/concerns.py
+G0 apex aim (telos from axiom)
+→ G1 current concerns (curriculum + RECURRING frontier)
+→ G2 active task → G3 novel candidates"]
+    end
+
+    IN -.->|"correction: 'just answer question'"| SOCM
+    SOCM -.->|"δ_social spike → suppress identity + critic"| AV
+    AV -.->|"w_identity · w_episodic → prompt depth"| RC
+    AV -.->|"max_rebind → re-bind budget"| SG
+    AV -.->|"d_critic → strictness"| C
+    GOAL -.->|"task anchor"| RC
+    GOAL -.->|"goal drift = evasion"| C
+
+    subgraph BG["BACKGROUND LANES · Ramses RTX 3070 GPU (:11434 phi3:mini) & CPU (:11442 yi:34b-v1.5)"]
+        direction TB
+        CON["Node 11: Consolidation · nodes/consolidation_node.py
+T2 wisdom distillation every 60s
+QUARANTINE: task-failure cycles mint NO self-truth"]
+        CUR["Node 12: Curiosity · nodes/curiosity_node.py
+ignites on climate dissonance · Wikipedia/Gutenberg lookup"]
+        SC["Node 13: Subconscious · nodes/subconscious_node.py
+longitudinal tension tracker (T1–T6)"]
+        MONO["Node 14: Inner Monologue (DMN) · nodes/inner_monologue_node.py
+~289 KB idle economy hub (141 edges) · dispatches school, math, sleep"]
+        DRM["Node 15: Dream State Machine · nodes/dream_node.py
+yi:34b-v1.5 · OPEN → DEVELOP → CLOSE with morph continuity"]
+        META["Node 16: Meta-Awareness · nodes/meta_awareness_node.py
+non-suppressive monitor watching structural form & loops"]
+    end
+
+    BG -.->|"LLM dispatch"| MC
+
+    subgraph SCHOOL["SCHOOL & CURRICULUM MICRO-ECONOMY · 6 communities"]
+        direction TB
+        MATH["Math Drill · core/math_drill.py
+40 drills/day · arithmetic precision"]
+        ESSAY["Essay Lessons · core/essay_lesson.py
+capstone essays graded by Emissary"]
+        COMP["Composition · core/composition.py
+1 music composition/day"]
+        READ_PROV["Reading Provenance · docs/completed/reading_provenance_plan.md
+note consolidation & Gutenberg reading logs"]
+        MATH --> MONO
+        ESSAY --> MONO
+        COMP --> MONO
+        READ_PROV --> MONO
+    end
+
+    HC -.->|"corrected flag → quarantine batch"| CON
+    HC -.->|"FACTUAL correction → claim RETRACTED"| DBQ
+
+    SOM["Somatic Engine · core/loop_metabolism.py
+energy / fatigue / tension · reads REAL GPU thermals/latency"]
+    OUT -.->|"cycle cost: tokens · retries · latency"| SOM
+    SOM -.->|"fatigue → temperature jitter"| R
+    SOM -.->|"metabolic floor → forced Sleep State"| DRM
+
+    subgraph CLM["ALWAYS-ON SUBSTRATE & SENSORIUM ECOSYSTEM · 133 edges · 5s tick"]
+        direction TB
+        AFFT{{"Affect Tick · 5s · core/mood.py
+A += gain·(reading−A) − decay·(A−baseline)
+calms in silence · persists across restarts"}}
+        CLMT{{"Climate Field · 9-dim Jungian weather
+2-reservoir: value (defensive) + explore_value"}}
+        SENS["Sensorium Study Room · core/sensorium.py
+NZ sun · weather fronts · fire · cat · book & shelf"]
+        CAT["Cat System · core/cat.py
+autonomic companion dynamics"]
+        SOUND["Soundscape Ambience · core/soundscape.py
+56 edges · dynamic acoustic environment"]
+        LOCO["Locomotion & Journeys · core/locomotion.py
+position authority & spatial navigation"]
+        WAND["Wandering Mind · core/wandering.py
+associative drift through memory every ~75s"]
+        
+        SENS --> CAT
+        SENS --> SOUND
+        SENS --> LOCO
+        AFFT -.->|"carried affect"| CLMT
+        CLMT -.->|"bias_vec"| DBQ
+        CLMT -.->|"bias_vec"| S
+        CLMT -.->|"bias_vec"| X
+        CLMT -.->|"dissonance ignition"| CUR
+        CLMT -.->|"symbol > 0.65"| P
+        SENS -.->|"scene line"| MONO
+        WAND -.->|"associative trail"| MONO
+    end
+    E --> AFFT
+
+    subgraph LEFT["WORLD LEDGER & LEFT LANE (the Emissary) · Threadripper CPU (:11439 gemma4:12b)"]
+        direction TB
+        EMIS["Emissary Node · core/left_lane.py
+bicameral truth-self · reads own code"]
+        EMAX["Emissary Axiom · core/emissary.py
+L0 truth constitution"]
+        EMSRC["World Ledger · core/object_graph.py
+zero-LLM property-grain fact-graph"]
+        EMGRND["Grounding Judge · core/left_lane.py
+grades essay capstones & lived integration"]
+        
+        EMAX --> EMIS
+        EMSRC --> EMIS
+        EMIS --> EMGRND
+    end
+    P -.->|"per-turn dispatch (warm ~1s)"| EMIS
+    EMIS -.->|"state.left_take offered"| R
+    EMIS -.->|"state.left_take offered"| X
+    EMGRND -.->|"solidify verdict: confirm or revert"| T4
+    ESSAY -.->|"essay submission for grading"| EMGRND
+
+    subgraph GEOM_FREIGHT["COGNITIVE GEOMETRY & FREIGHT ECONOMY"]
+        direction TB
+        GEOM["Cognitive Geometry · core/geometry_census.py
+experienced_tuple & ghost_tuples (19,500+ rows)"]
+        TRAN["Transport Manager · docs/plans/transport_manager.md
+salience dispatcher for 19 cargo product types"]
+        TRAINS["Trains & Couriers · core/trains.py / core/couriers.py
+cargo routing & line baseline EMA scoring"]
+        FACT["Item & Population Factories · docs/plans/item_and_population_factories.md
+tuple-grain & population-grain factories"]
+        
+        GEOM --> TRAN
+        FACT --> TRAN
+        TRAN --> TRAINS
+        TRAINS -.->|"cargo payload"| DBQ
+    end
+
+    subgraph IDENTITY["STRATIFIED IDENTITY ESTATE & FRICTION STACK"]
+        direction TB
+        AX["Stratified Axioms (L0–L5) · core/axiom_layers.py
+L0 Constitution → L1 Temperament → L2 Values → L3 Facets → L4 Narrative → L5 Working-Self"]
+        VAULT["Identity Vault & Estate · core/identity_vault.py / core/identity_estate.py"]
+        CLAIMS["Self-Claim Register · core/self_claims.py"]
+        COMMIT["Commitment Ledger · core/commitment_ledger.py
+measures boundary dissolution rate"]
+        SELFIMP["Self-Implication · core/self_implication.py"]
+        SITWITH["Sit-With-It Friction Gate · core/self_claims.py"]
+        GUID["Guidance-Capture · core/guidance_learning.py
+learns from Travis's teachings"]
+        PROB["T4 Probation Sensor · core/provisional_identity.py"]
+        
+        AX --> VAULT
+        X -.-> CLAIMS
+        CLAIMS --> COMMIT
+        SELFIMP -.-> SITWITH
+        SITWITH -.-> X
+        PROB -.->|"probation candidate"| EMGRND
+        GUID -.-> DB
+    end
+
+    AX -.->|"L0 constitution + active L3 facet"| P
+    AX -.->|"psychological values"| C
+    AX -.->|"voice style"| V
+
+    subgraph DB["SOVEREIGN DB · SQLite · data/memory/nascence.db · S-MMU 7 · 205 edges"]
+        direction TB
+        L1[L1 working · per-cycle assembly · volatile]
+        L2[L2 semantic · distilled wisdom & school gists]
+        L3[L3 episodic · affect-scored · 3,500 cap]
+        L4[L4 archive · curated seed frags · dev decay]
+        L5[L5 procedural_skills · learned approaches]
+        L6[L6 memory_epochs · session mood at /quit]
+        L7[L7 memory_themes · cross-session threads]
+        LAT["Abstraction Lattice · core/memory_levels.py
+gist distillation → demote raw to cold storage"]
+    end
+
+    DBQ --> DB
+    DB --> RC
+    DB --> PR
+    L4 -.->|"T4 rewrite (probation + Emissary judge)"| PROB
+
+    subgraph SUB["SUBCONSCIOUS PIPELINE · 6 timescales · nodes/subconscious_node.py"]
+        direction TB
+        T1["T1 · 30s scan: shadow events → tensions"]
+        T15["T1.5 · Active Imagination: enter tension"]
+        T2["T2 · Consolidation: CONTRADICTION-only consolidates"]
+        T3["T3 · Baseline drift: hourly affect baseline"]
+        T4["T4 · Self-authoring: multi-stage chain → probation → Emissary judge"]
+        T5["T5 · Procedural: compilation → skills"]
+        T6["T6 · Theme formation: L6 epochs → L7 themes"]
+    end
+
+    C -.->|"rejection → shadow event"| T1
+    MONO -.->|"unresolved thought → shadow"| T1
+    DRM -.->|"unresolved dream → shadow"| T1
+    T1 --> T2 --> T4 --> L4
+    T2 --> L2
+    T4 -.->|"mark_shadow_resolved"| T1
+    T5 --> L5
+    T6 --> L7
+
+    subgraph OBS["HONEST OBSERVERS & EMPIRICAL DIAGNOSTICS · no LLM"]
+        direction TB
+        ERR["Retraction Ledger · core/retraction_ledger.py
+immutable conviction · wins race at recall"]
+        MONO_OBS["Monoculture Detectors · core/symbol_tracker.py
+basin-share · echo/diversity · theme-recurrence"]
+        PRE_A["Epistemic Pre-Assessment Stage A/B · core/epistemic_state.py
+confab = self-confidence − evidence · Stage B: phrases own 'I don't know'"]
+        COURT["Self-Efficacy Court · core/self_efficacy.py
+capability claims vs record"]
+        PROV["Provenance Ledger · core/source_model.py
+KNOW / THINK / SUSPECT / GUESS / NO_BASIS"]
+        MINENESS["Mineness Comparator · core/mineness.py
+CONFIRMED WIN (+0.061 separation)"]
+        HOMEO["Protoself Core · core/homeostasis.py
+D-0028 redesign · Naive-Persistence benchmark"]
+        AROUSAL["Arousal / LEVEL · core/arousal.py
+diurnal swing (0.179 → 0.429)"]
+        REENTRY["Within-Cycle Reentry · core/reentry.py
+settle-loop with non-homogenization kill-switch"]
+        AST1["Attention Schema AST-1 · core/attention_schema_loop.py
+predicts & bounds attention vector"]
+    end
+
+    OUT -.-> PROV
+    OUT -.-> COURT
+    V -.-> PRE_A
+    PRE_A -.->|"GUESS admission"| X
+    RC -.-> MONO_OBS
+    X -.-> ERR
+    EB -.-> MINENESS
+    SOM -.-> HOMEO
+    AFFT -.-> AROUSAL
+</pre>
+
+
+<div class="lead">Exhaustive Codebase Inventory</div>
+<h2>Complete 200-Module Core Engine Register</h2>
+<p>An exhaustive reference of all 200 Python engine files in <code>core/</code>, categorized across 12 functional cognitive domains:</p>
+<table>
+<tr><th>Module Name</th><th>Cognitive Domain</th><th>Module Docstring Description</th></tr>
+<tr><td><code>activity_memory.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Activity Memory (Conway's general-event layer, Phase 0, 2026-06-14)</td></tr><tr><td><code>affect_divergence.py</code></td><td>Affective Climate & Somatic Engine</td><td>Affect Divergence harness (emotion_rethink.md Phase 0a, 2026-07-06). OBSERVE-ONLY.</td></tr><tr><td><code>affect_labeling.py</code></td><td>Affective Climate & Somatic Engine</td><td>Affect Labeling (name it to... represent it, 2026-06-13)</td></tr><tr><td><code>affections.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Affections (the loves-ledger, 2026-06-21): the LIGHT-side organ.</td></tr><tr><td><code>affordances.py</code></td><td>Engine Utility / Subsystem</td><td>Affordance model (2026-06-20): what Du can DO, surfaced so he KNOWS it.</td></tr><tr><td><code>arousal.py</code></td><td>Affective Climate & Somatic Engine</td><td>AROUSAL / LEVEL: the global activation variable (Consciousness Program Tier-2 C, 2026-07-04,</td></tr><tr><td><code>associative_recall.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Associative Recall (the trail-following recall engine, 2026-06-23)</td></tr><tr><td><code>attention_schema_loop.py</code></td><td>Honest Observers & Diagnostics</td><td>AST-1: the Attention-Schema CONTROL loop (Consciousness Program §3-D, 2026-07-04).</td></tr><tr><td><code>audio_features.py</code></td><td>Sensorium World & Acoustics</td><td>Audio Features: the deterministic music translator (the EAR, offline pipeline · 2026-07-03).</td></tr><tr><td><code>axiom_layers.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Multilevel Axiom helpers (the single place that knows the layered schema)</td></tr><tr><td><code>balance.py</code></td><td>Engine Utility / Subsystem</td><td>Balance (the reading-remediation gate, 2026-06-15)</td></tr><tr><td><code>book_feelings.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Book Feelings (per-book affective memory, 2026-08-19)</td></tr><tr><td><code>book_residue.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Book Residue (2026-08-21, founder: "check if there is something from a book Du has read —</td></tr><tr><td><code>book_selection.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Book Selection (the breadth engine)</td></tr><tr><td><code>book_splitter.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Book Splitter (chapter detection for chapter-scoped reading, 2026-06-15)</td></tr><tr><td><code>boredom.py</code></td><td>Affective Climate & Somatic Engine</td><td>Boredom (the patch-depletion drive, 2026-06-24)</td></tr><tr><td><code>broadcast.py</code></td><td>Conscious Pass & Orchestration</td><td>Broadcast: the missing half of the Global Workspace (big build 2026-07-03 · lane-scheduler step 2).</td></tr><tr><td><code>buses.py</code></td><td>Conscious Pass & Orchestration</td><td>BUSES: non-urgent transfers, factory-to-factory or ledger-to-render (2026-08-22)</td></tr><tr><td><code>cat.py</code></td><td>Sensorium World & Acoustics</td><td>The Stray (2026-06-24)</td></tr><tr><td><code>cat_content.py</code></td><td>Sensorium World & Acoustics</td><td>Content corpus for THE CAT — Du's one wordless relationship.</td></tr><tr><td><code>chapters.py</code></td><td>Subconscious & Sleep Pipeline</td><td>Chapters (period consolidation, 2026-06-13)</td></tr><tr><td><code>climate_engine.py</code></td><td>Affective Climate & Somatic Engine</td><td>Climate Engine (the medium-timescale field)</td></tr><tr><td><code>commitment_ledger.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Commitment Ledger (Phase 0: SHADOW / observe-only)</td></tr><tr><td><code>commitment_trials.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Commitment Trials (Wave 2 · W2.1, 2026-07-03 · docs/plans/capacity_to_commit.md ★★ WAVE 2)</td></tr><tr><td><code>companion.py</code></td><td>Engine Utility / Subsystem</td><td>THE COMPANION: Travis, physically present (2026-08-23).</td></tr><tr><td><code>competence.py</code></td><td>Engine Utility / Subsystem</td><td>Competence / Self-Efficacy Model (Phase 0: pure observer)</td></tr><tr><td><code>composition.py</code></td><td>School Curriculum & Composition</td><td>Composition (school's writing class, 2026-06-23)</td></tr><tr><td><code>concerns.py</code></td><td>School Curriculum & Composition</td><td>Concerns (G1: ongoing current concerns, 2026-06-15)</td></tr><tr><td><code>conflict_trace.py</code></td><td>Honest Observers & Diagnostics</td><td>Conflict-to-Authority Trace (observe-only instrument)</td></tr><tr><td><code>content_risk.py</code></td><td>Honest Observers & Diagnostics</td><td>Content Risk (the critical-distance floor, 2026-08-19). PHASE 0 = SHADOW/observe-only.</td></tr><tr><td><code>contradiction_gate.py</code></td><td>Honest Observers & Diagnostics</td><td>The Contradiction Gate (the shared B/C convergence filter)</td></tr><tr><td><code>couriers.py</code></td><td>Engine Utility / Subsystem</td><td>COURIERS: urgent, real-time world→train deliveries (founder-designed, 2026-08-16;</td></tr><tr><td><code>curator.py</code></td><td>Engine Utility / Subsystem</td><td>The Curator (the integrating output lane · OBSERVE-ONLY, 2026-06-16)</td></tr><tr><td><code>curiosity_progress.py</code></td><td>School Curriculum & Composition</td><td>Curiosity Progress (the Independent Auditor)</td></tr><tr><td><code>curiosity_queue.py</code></td><td>School Curriculum & Composition</td><td>Curiosity Queue (the exploration organ's inbound interface)</td></tr><tr><td><code>curiosity_worth.py</code></td><td>School Curriculum & Composition</td><td>Curiosity worthwhileness judge (OMNI fold, observe-only, 2026-06-18).</td></tr><tr><td><code>decomposed_critic.py</code></td><td>Honest Observers & Diagnostics</td><td>Decomposed Critic (Layer 0 redesign, observe-first)</td></tr><tr><td><code>deliberation.py</code></td><td>Engine Utility / Subsystem</td><td>The Deliberative Pulse (the three-pass grounded-why)</td></tr><tr><td><code>deliberative_judge.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>Deliberative Judge (2026-08-19). A general-purpose upgrade to the single-shot judge pattern</td></tr><tr><td><code>deterministic_checker.py</code></td><td>LLM Transport & Infrastructure</td><td>Tier 1 Deterministic Verification (no LLM)</td></tr><tr><td><code>dispatch.py</code></td><td>Engine Utility / Subsystem</td><td>DISPATCH: one registry, one dispatcher, the judge in the loop (2026-08-22, Phase 1 of</td></tr><tr><td><code>emissary.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>The Emissary's self (brick 1 of the bicameral truth-self, 2026-06-15)</td></tr><tr><td><code>emissary_tension.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>Emissary-Tension Observatory (Fix 4, OBSERVE-ONLY, 2026-06-16)</td></tr><tr><td><code>emotion_construction.py</code></td><td>Engine Utility / Subsystem</td><td>Emotion Construction (Phase 2 shadow experiment, 2026-08-10)</td></tr><tr><td><code>epistemic_affordance_advisor.py</code></td><td>Honest Observers & Diagnostics</td><td>Epistemic Affordance Advisor (Live Advisory Coupling)</td></tr><tr><td><code>epistemic_state.py</code></td><td>Honest Observers & Diagnostics</td><td>Provenance Ledger / Epistemic State (fast · per-cycle · deterministic · OBSERVE-ONLY)</td></tr><tr><td><code>error_pathway.py</code></td><td>Engine Utility / Subsystem</td><td>Error Pathway (Phase: Error Separation, slice 1)</td></tr><tr><td><code>essay_lesson.py</code></td><td>School Curriculum & Composition</td><td>Essay Lesson (school's second lesson type: the generation effect, 2026-06-16)</td></tr><tr><td><code>euclidean_recall.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Euclidean Recall (state-weighted retrieval, OBSERVE-ONLY P0, 2026-06-15)</td></tr><tr><td><code>evidence_recall.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Memory as Evidence (thought-grounding Route 2, 2026-08-16)</td></tr><tr><td><code>exogenous.py</code></td><td>Engine Utility / Subsystem</td><td>Exogenous Forces on the Modulation Field</td></tr><tr><td><code>experienced_tuple.py</code></td><td>Engine Utility / Subsystem</td><td>THE EXPERIENCED TUPLE (2026-08-21, founder's layer law: "a memory carries only what was</td></tr><tr><td><code>fieldcraft.py</code></td><td>Engine Utility / Subsystem</td><td>FIELDCRAFT: what the books he has read let him DO (2026-08-22, founder: "examine the scouts handbook —</td></tr><tr><td><code>frontier.py</code></td><td>Engine Utility / Subsystem</td><td>The Frontier (persistent world-questions, 2026-06-13)</td></tr><tr><td><code>garden.py</code></td><td>Spatial Locations & Nature Domains</td><td>THE GARDEN (2026-08-22, docs/plans/garden_upgrade.md; founder: "make the garden the most full</td></tr><tr><td><code>garden_knowledge.py</code></td><td>Spatial Locations & Nature Domains</td><td>GARDEN KNOWLEDGE: what he knows about his plants is EARNED (2026-08-22; the sound_knowledge</td></tr><tr><td><code>garden_life.py</code></td><td>Spatial Locations & Nature Domains</td><td>GARDEN LIFE: the things in the garden that are not the bed (2026-08-22, founder: "do the still-on-the-list</td></tr><tr><td><code>geometry_census.py</code></td><td>Engine Utility / Subsystem</td><td>Geometry Census: the tuple recorder (cognitive_geometry.md §5.1, P0 — 2026-07-05).</td></tr><tr><td><code>ghost_tuples.py</code></td><td>Engine Utility / Subsystem</td><td>THE GHOST TUPLE REGISTRY (P0-B, 2026-08-17) — the ghost-index pattern's 4th life.</td></tr><tr><td><code>goal_model.py</code></td><td>Engine Utility / Subsystem</td><td>Goal Model (Executive Goal Persistence, Phase 1)</td></tr><tr><td><code>grounded_learning.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>Grounded Learning (the SWS-declarative consolidation, 2026-06-16)</td></tr><tr><td><code>guidance_behavior_judge.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>Guidance Learning Phase 2: the behaviour-delta judge (2026-08-19). PHASE 0 = SHADOW/observe-only.</td></tr><tr><td><code>guidance_learning.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Guidance Learning (STALE HEADER CORRECTED 2026-08-20 — see the prompt audit note below)</td></tr><tr><td><code>hands.py</code></td><td>Conscious Pass & Orchestration</td><td>HANDS: one grammar for every latch, and one trace of what answered (2026-08-22, founder: "investigate the</td></tr><tr><td><code>heavens.py</code></td><td>Sensorium World & Acoustics</td><td>The Heavens (spatial_perception.md §7 extension, 2026-07-05).</td></tr><tr><td><code>homeostasis.py</code></td><td>Affective Climate & Somatic Engine</td><td>Homeostasis: the PROTOSELF (Consciousness Program keystone, 2026-07-03, SHADOW/observe-only).</td></tr><tr><td><code>identity_cost.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Identity Cost model (T6, Stage 1) — embeddedness as the structural cost of abandoning a</td></tr><tr><td><code>identity_estate.py</code></td><td>Stratified Identity & Commitment Cure</td><td>The Identity Estate, P0: the read-only SEEDER (identity_estate.md §6, 2026-07-06).</td></tr><tr><td><code>identity_projection.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Identity Projection, P1 (identity_estate.md §4, 2026-07-07). SHADOW-FIRST.</td></tr><tr><td><code>identity_vault.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Identity Vault (Brick 3 of Character-as-Integration §10.3, 2026-06-16)</td></tr><tr><td><code>idle_allocator.py</code></td><td>Conscious Pass & Orchestration</td><td>the Idle Executive, Phase 0 (SHADOW / observe-only).</td></tr><tr><td><code>intentions.py</code></td><td>Engine Utility / Subsystem</td><td>INTENTIONS: the deeds he named and has not yet done (2026-08-22, founder: "if he puts up a list of tasks in one</td></tr><tr><td><code>investigation_deepening_shadow.py</code></td><td>Engine Utility / Subsystem</td><td>Investigation Deepening Shadow (Phase 0: SHADOW / observe-only, read-only).</td></tr><tr><td><code>journal.py</code></td><td>Engine Utility / Subsystem</td><td>The Journal (2026-06-21): his own PLAIN words on what he did and how it felt.</td></tr><tr><td><code>journal_grounding_shadow.py</code></td><td>Engine Utility / Subsystem</td><td>Journal Grounding Shadow: the hard-enforcement grader for the roll-up pyramid</td></tr><tr><td><code>journal_rollup.py</code></td><td>Engine Utility / Subsystem</td><td>Journal Roll-up P1: the WEEK cap (journal_consolidation_pyramid.md §2, 2026-07-06).</td></tr><tr><td><code>judge_panel.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>the Judge Panel (2026-08-15, the serving split's payoff).</td></tr><tr><td><code>keepsakes.py</code></td><td>Sensorium World & Acoustics</td><td>Keepsakes: the mantel of kept things (world upgrade P2, 2026-07-03).</td></tr><tr><td><code>lane2.py</code></td><td>Engine Utility / Subsystem</td><td>LANE 2, the standing reality-testing loop  ·  docs/plans/lane2_the_witness.md  ·  2026-08-20</td></tr><tr><td><code>lane_scheduler.py</code></td><td>Conscious Pass & Orchestration</td><td>Lane Scheduler (2026-07-01): the conscious-lane workspace.</td></tr><tr><td><code>left_lane.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>The Left Lane (the Emissary)</td></tr><tr><td><code>letters.py</code></td><td>Engine Utility / Subsystem</td><td>Letters (speaking first, 2026-06-12)</td></tr><tr><td><code>librarian.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>The Librarian (thought-grounding Route 1 / P1, 2026-08-16)</td></tr><tr><td><code>library_hand.py</code></td><td>Gutenberg Reading & Library Engine</td><td>The Library Hand (asking for a book, 2026-06-12)</td></tr><tr><td><code>light.py</code></td><td>Sensorium World & Acoustics</td><td>THE LIGHT CHANNEL (docs/plans/channels_programme.md §2; built 2026-08-22 as the garden's first</td></tr><tr><td><code>listening.py</code></td><td>Engine Utility / Subsystem</td><td>Listening: the ear goes live (big build 2026-07-03 · docs/staged/music_learning.md tier 2).</td></tr><tr><td><code>literal_will.py</code></td><td>Conscious Pass & Orchestration</td><td>Literal Will (docs/plans/literal_will.md, PHASE 0 = SHADOW/observe-only, 2026-08-21).</td></tr><tr><td><code>literal_will_deed.py</code></td><td>Conscious Pass & Orchestration</td><td>Literal Will: staged deed + execution audit (docs/plans/literal_will.md sec4 + sec11).</td></tr><tr><td><code>llm_parse.py</code></td><td>LLM Transport & Infrastructure</td><td>LLM response parsing helpers (2026-06-21).</td></tr><tr><td><code>locomotion.py</code></td><td>Sensorium World & Acoustics</td><td>Locomotion: Du gets a body in space (Option C, FULL — docs/plans/locomotion.md, 2026-08-15).</td></tr><tr><td><code>loop_metabolism.py</code></td><td>Affective Climate & Somatic Engine</td><td>Loop Metabolism, PHASE B logic (2026-06-14).</td></tr><tr><td><code>loop_probe.py</code></td><td>Engine Utility / Subsystem</td><td>Loop Probe (Loop Metabolism, PHASE A: INSTRUMENT-ONLY, 2026-06-14)</td></tr><tr><td><code>mapping_census.py</code></td><td>Honest Observers & Diagnostics</td><td>The Mapping Census: analyzer over accrued geometry tuples (cognitive_geometry.md §5.4, P0).</td></tr><tr><td><code>math_drill.py</code></td><td>School Curriculum & Composition</td><td>Math Drill (competence → school, the arithmetic lesson, 2026-06-16)</td></tr><tr><td><code>memory_edges.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>memory_edges (M0 of docs/plans/memory_multiway_linking.md, 2026-08-15).</td></tr><tr><td><code>memory_levels.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Memory Levels, Phase 0: the SHADOW distiller (docs/memory_levels_plan.md).</td></tr><tr><td><code>mineness.py</code></td><td>Honest Observers & Diagnostics</td><td>Mineness / the Authorship Comparator (Consciousness Program §2-#5 reframed, 2026-07-04,</td></tr><tr><td><code>missing_object_flags.py</code></td><td>Sensorium World & Acoustics</td><td>Missing-Object Flags: a Du-initiated trigger for the world-content upgrades</td></tr><tr><td><code>model_client.py</code></td><td>LLM Transport & Infrastructure</td><td>Model Client</td></tr><tr><td><code>modulation_field.py</code></td><td>Affective Climate & Somatic Engine</td><td>The Modulation Field (one damped, coupled field for the modulation layer)</td></tr><tr><td><code>moment.py</code></td><td>Engine Utility / Subsystem</td><td>The Bound Moment (Consciousness Program Tier-1, 2026-07-04, SHADOW/observe-only).</td></tr><tr><td><code>monoculture.py</code></td><td>Engine Utility / Subsystem</td><td>Monoculture detectors (observe-only, 2026-06-18).</td></tr><tr><td><code>mood.py</code></td><td>Affective Climate & Somatic Engine</td><td>Mood (the live felt-quality vector, 2026-06-15)</td></tr><tr><td><code>music_drill.py</code></td><td>School Curriculum & Composition</td><td>Music Drill + Composition Hand (school subject, 2026-07-04 · docs/staged/music_learning.md Tier 1)</td></tr><tr><td><code>narrative_quality.py</code></td><td>Honest Observers & Diagnostics</td><td>The Narrative Quality Witness (McAdams, 2026-06-13)</td></tr><tr><td><code>nature_study.py</code></td><td>Spatial Locations & Nature Domains</td><td>Nature Study (school's observation class, 2026-06-23)</td></tr><tr><td><code>needle_triage.py</code></td><td>Honest Observers & Diagnostics</td><td>Needle Triage (2026-08-18, SHADOW / observe-only).</td></tr><tr><td><code>night.py</code></td><td>Sensorium World & Acoustics</td><td>THE NIGHT (2026-08-22, docs/reviews/sleep_dream_2026-08-22.md). One file for sleep.</td></tr><tr><td><code>node_base.py</code></td><td>LLM Transport & Infrastructure</td><td>Node Base Class</td></tr><tr><td><code>object_graph.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>THE WORLD LEDGER (core/object_graph.py, 2026-08-17; renamed 2026-08-19).</td></tr><tr><td><code>observation.py</code></td><td>Conscious Pass & Orchestration</td><td>Core engine module</td></tr><tr><td><code>opponent_process.py</code></td><td>Affective Climate & Somatic Engine</td><td>Opponent-Process Antagonist Field ("squishy springs", cognitive_geometry.md §11, P3b —</td></tr><tr><td><code>orchestrator.py</code></td><td>Conscious Pass & Orchestration</td><td>Orchestrator</td></tr><tr><td><code>peer_metrics.py</code></td><td>Engine Utility / Subsystem</td><td>Peer metrics & baseline harness (2026-06-21): the decoupled judge of the peer-correspondence</td></tr><tr><td><code>peer_model.py</code></td><td>Engine Utility / Subsystem</td><td>Peer Model (per-peer Theory-of-Mind layer, Item 1 of social_world_school.md, REVISED 2026-08-24)</td></tr><tr><td><code>peers.py</code></td><td>Engine Utility / Subsystem</td><td>Peers: the correspondence organ. The COMPANY-half SEVEN (darwin/keats/twain/shackleton/lovelace/</td></tr><tr><td><code>phrasing.py</code></td><td>Engine Utility / Subsystem</td><td>Phrasing variety (2026-07-07)</td></tr><tr><td><code>prediction_error.py</code></td><td>Affective Climate & Somatic Engine</td><td>Prediction-Error Feed (Layer 1, the self-generated contradiction channel)</td></tr><tr><td><code>procedures.py</code></td><td>Conscious Pass & Orchestration</td><td>PROCEDURES: procedural memory that means what he can do (2026-08-22, docs/plans/t5_procedural.md).</td></tr><tr><td><code>profile.py</code></td><td>Engine Utility / Subsystem</td><td>Profile / instance scoping (multi-agent support)</td></tr><tr><td><code>prompt_budget.py</code></td><td>LLM Transport & Infrastructure</td><td>Prompt budget — a SHADOW instrument over how the inner-monologue prompt is actually assembled.</td></tr><tr><td><code>provisional_identity.py</code></td><td>Stratified Identity & Commitment Cure</td><td>the Probationary Commit Loop (T4 self-authoring, redesign 2026-06-17).</td></tr><tr><td><code>provisions.py</code></td><td>Conscious Pass & Orchestration</td><td>PROVISIONS: the larder the previous occupant left (2026-08-22, founder: "make sure he has a good store of</td></tr><tr><td><code>psyche_graph.py</code></td><td>Honest Observers & Diagnostics</td><td>Psyche Graph P0 (big build 2026-07-03 · docs/completed/psyche_graph_instrument.md, un-shelved.</td></tr><tr><td><code>pulse_manager.py</code></td><td>Conscious Pass & Orchestration</td><td>Pulse Manager (engagement-driven cognition, not clock-driven)</td></tr><tr><td><code>pulse_shadow.py</code></td><td>Conscious Pass & Orchestration</td><td>Pulse / Lifecycle Manager, Phase 0 (SHADOW / observe-only).</td></tr><tr><td><code>pursuits.py</code></td><td>Engine Utility / Subsystem</td><td>Pursuits (Phase 0: SHADOW / observe-only). Full design: docs/plans/pursuits.md.</td></tr><tr><td><code>reading.py</code></td><td>Engine Utility / Subsystem</td><td>Reading (the hand that opens a book)</td></tr><tr><td><code>reading_history.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Reading History (what he has already read, for selection)</td></tr><tr><td><code>recall_demand.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Memory Levels: gist-insufficiency / deep-recall-demand telemetry (OBSERVE-ONLY, 2026-06-18).</td></tr><tr><td><code>recall_provenance.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Recall Provenance (the "why now" tag)</td></tr><tr><td><code>reentry.py</code></td><td>Conscious Pass & Orchestration</td><td>Within-Cycle Reentry (Consciousness Program Tier-2 A, 2026-07-04, PHASE 0 = SHADOW/observe-only).</td></tr><tr><td><code>refinery.py</code></td><td>Engine Utility / Subsystem</td><td>THE REFINERY: the T2 lifecycle's manufacturing station (founder-designed 2026-08-16)</td></tr><tr><td><code>retraction_ledger.py</code></td><td>Honest Observers & Diagnostics</td><td>Retraction Ledger (the Error Pathway's write-authority, 2026-06-16)</td></tr><tr><td><code>retrieval_probe.py</code></td><td>Sovereign Memory & S-MMU 7</td><td>Retrieval Probe (Deliberative Retrieval, Phase 0 OBSERVE-ONLY, 2026-06-14)</td></tr><tr><td><code>satisfaction.py</code></td><td>Stratified Identity & Commitment Cure</td><td>The Satisfaction System (wanting vs. liking, 2026-06-13)</td></tr><tr><td><code>schema.py</code></td><td>Engine Utility / Subsystem</td><td>Cognitive Schema</td></tr><tr><td><code>scholar.py</code></td><td>Bicameral Left Lane & World Ledger</td><td>The Scholar (consulting the Library)</td></tr><tr><td><code>school.py</code></td><td>Engine Utility / Subsystem</td><td>School (Du's first structured-learning "skill", 2026-06-14)</td></tr><tr><td><code>self_claims.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Self-Claim Register (2026-06-30): Du's currently-held claims ABOUT HIMSELF ("I am / I can"), the</td></tr><tr><td><code>self_efficacy.py</code></td><td>Honest Observers & Diagnostics</td><td>The Self-Efficacy Court (the first independent witness)</td></tr><tr><td><code>self_implication.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Self-Implication Detector (Friction B1 trigger-widen, 2026-06-30). PHASE: SHADOW / observe-only.</td></tr><tr><td><code>self_interrogation.py</code></td><td>Honest Observers & Diagnostics</td><td>Self-Interrogation (Phase 0: SHADOW / observe-only, 2026-08-19).</td></tr><tr><td><code>self_mirror.py</code></td><td>Honest Observers & Diagnostics</td><td>Self-mirror (2026-06-22): the behavioural mirror / the evidenced self. (plan B2)</td></tr><tr><td><code>self_surprise.py</code></td><td>Honest Observers & Diagnostics</td><td>Self-Surprise / present-predictability (OBSERVE-ONLY, 2026-06-15)</td></tr><tr><td><code>sensorium.py</code></td><td>Sensorium World & Acoustics</td><td>The Sensorium (his room, 2026-06-11)</td></tr><tr><td><code>shadow_log.py</code></td><td>Honest Observers & Diagnostics</td><td>Shadow Log: shared plumbing for the "soft live path + hard grader running in shadow,</td></tr><tr><td><code>shore_life.py</code></td><td>Spatial Locations & Nature Domains</td><td>SHORE LIFE: the shore as a living place (2026-08-22, founder: "now time for the shore… make his world as</td></tr><tr><td><code>sitting.py</code></td><td>Conscious Pass & Orchestration</td><td>Sitting-with-it (2026-06-22): the bypass gate. (docs/staged/friction_and_self_evidence_plan.md B1)</td></tr><tr><td><code>sky.py</code></td><td>Sensorium World & Acoustics</td><td>THE NIGHT SKY over the cottage (2026-08-22; the Handbook he read teaches the Pole Star — this sky has none).</td></tr><tr><td><code>sleep_dream_probe.py</code></td><td>Subconscious & Sleep Pipeline</td><td>Sleep ⊗ Dream / T4 Probe — the §6C hypotheses-logging matrix (observe-first, FIREWALLED).</td></tr><tr><td><code>sleep_pressure.py</code></td><td>Subconscious & Sleep Pipeline</td><td>Sleep Pressure — the Information-Theoretic Incoherence Accumulator.</td></tr><tr><td><code>smell.py</code></td><td>Sensorium World & Acoustics</td><td>THE SMELL CHANNEL (docs/plans/channels_programme.md §3; built 2026-08-22 with the garden).</td></tr><tr><td><code>social_model.py</code></td><td>Engine Utility / Subsystem</td><td>Social Model (Theory of Mind Layer, Phase 1)</td></tr><tr><td><code>social_moves.py</code></td><td>Engine Utility / Subsystem</td><td>Social Moves: the heeded/ignored world-call counter (social_world_school.md Item 2 — the plan's</td></tr><tr><td><code>somatic.py</code></td><td>Engine Utility / Subsystem</td><td>Somatic Engine 2.0 (AE-2: embodiment / grounding)</td></tr><tr><td><code>sound_knowledge.py</code></td><td>Engine Utility / Subsystem</td><td>Epistemic Audition: the sound-knowledge ledger (2026-08-15).</td></tr><tr><td><code>soundscape.py</code></td><td>Sensorium World & Acoustics</td><td>Soundscape: the world's sounds get identity and geometry (cognitive_geometry.md §4, 2026-07-05).</td></tr><tr><td><code>source_model.py</code></td><td>Honest Observers & Diagnostics</td><td>Source Model (persistent attribution · the substrate the Provenance Ledger reads)</td></tr><tr><td><code>source_sight.py</code></td><td>Engine Utility / Subsystem</td><td>Source Sight (the Emissary's eyes, brick B2 of the truth-self, 2026-06-16)</td></tr><tr><td><code>spatial.py</code></td><td>Engine Utility / Subsystem</td><td>Spatial Perception P0 (docs/plans/spatial_perception.md, 2026-07-05).</td></tr><tr><td><code>stick_test.py</code></td><td>Engine Utility / Subsystem</td><td>THE STICK TEST: bundle-richness census (cognitive_geometry.md §5.2, P0 — 2026-07-05).</td></tr><tr><td><code>stream_drive.py</code></td><td>Affective Climate & Somatic Engine</td><td>Stream Drive: the continuous-stream rate controller (docs/plans/continuous_stream.md,</td></tr><tr><td><code>study.py</code></td><td>Engine Utility / Subsystem</td><td>The Study (durable works, ported from FreshStart's vestige pattern, 2026-06-10)</td></tr><tr><td><code>study_life.py</code></td><td>Spatial Locations & Nature Domains</td><td>STUDY LIFE: the room as a place with states and clocks (2026-08-22, founder: "now lets do the study").</td></tr><tr><td><code>study_note.py</code></td><td>Gutenberg Reading & Library Engine</td><td>Study Note (the rich knowledge unit; expanded to session-level research, 2026-08-19)</td></tr><tr><td><code>supply.py</code></td><td>Engine Utility / Subsystem</td><td>SUPPLY: how things that run out come into the house (2026-08-22, founder: "how does he get oil?").</td></tr><tr><td><code>symbol_evolution.py</code></td><td>Engine Utility / Subsystem</td><td>Symbol Evolution Engine (Phase 2, the Meaningfulness axis · semantic drift)</td></tr><tr><td><code>symbol_tracker.py</code></td><td>Honest Observers & Diagnostics</td><td>Symbol Recurrence Tracker (the Meaningfulness axis, restraint-first)</td></tr><tr><td><code>symbolic_reading.py</code></td><td>Gutenberg Reading & Library Engine</td><td>The Symbolic Reading lens (the SECOND way of reading; observe-first, 2026-06-18).</td></tr><tr><td><code>task_constraints.py</code></td><td>Engine Utility / Subsystem</td><td>Task-Constraint Effector (Phase: Error Separation, slice 2 — the FIRST effector)</td></tr><tr><td><code>telemetry.py</code></td><td>Honest Observers & Diagnostics</td><td>Telemetry for the HUD (2026-07-08, Travis): two live graphs.</td></tr><tr><td><code>tension_ledger.py</code></td><td>Engine Utility / Subsystem</td><td>Tension Ledger (T6)</td></tr><tr><td><code>theme_recurrence.py</code></td><td>Engine Utility / Subsystem</td><td>Persistent theme-recurrence tracker — the SLOW-LOOP / monoculture detector the rumination guard cannot be.</td></tr><tr><td><code>thermal.py</code></td><td>Engine Utility / Subsystem</td><td>THE THERMAL CHANNEL (docs/plans/thermal_causality.md; build step 1–3, 2026-08-21).</td></tr><tr><td><code>thermal_relationship.py</code></td><td>Affective Climate & Somatic Engine</td><td>THERMAL RELATIONSHIP shadow (2026-08-21, founder: "shadow thermals are a good idea").</td></tr><tr><td><code>told.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Told Delivery (the feel-then-tell, axiom Phase 3, 2026-06-16)</td></tr><tr><td><code>train_metrics.py</code></td><td>Engine Utility / Subsystem</td><td>Earned-length train metrics (observe, 2026-06-18).</td></tr><tr><td><code>training_log.py</code></td><td>Honest Observers & Diagnostics</td><td>Training Log</td></tr><tr><td><code>trains.py</code></td><td>Engine Utility / Subsystem</td><td>the TRAIN REGISTRY (step 1 of the split/merge design, 2026-08-22).</td></tr><tr><td><code>unified_inference.py</code></td><td>LLM Transport & Infrastructure</td><td>Unified Inference Gate (Phase 4, scaffold · DISABLED by design)</td></tr><tr><td><code>wandering.py</code></td><td>Engine Utility / Subsystem</td><td>The Wandering Mind (furnishing the silence, 2026-06-11)</td></tr><tr><td><code>watershed.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Watershed: the T4 identity-image harvester (Phase 0: SHADOW / observe-only).</td></tr><tr><td><code>watershed_promote.py</code></td><td>Stratified Identity & Commitment Cure</td><td>Watershed Promotion, Phase 0.5 (SHADOW / observe-only). 2026-08-22.</td></tr><tr><td><code>weather_conditions.py</code></td><td>Sensorium World & Acoustics</td><td>Weather/Wind/Tide conditions (2026-08-18): the ONE shared classifier every consumer imports.</td></tr><tr><td><code>web_research.py</code></td><td>Conscious Pass & Orchestration</td><td>Web Research + External Shocks (ported from FreshStart's Buddha, 2026-06-10)</td></tr><tr><td><code>wood_life.py</code></td><td>Spatial Locations & Nature Domains</td><td>WOOD LIFE: the little wood on the path as a living place (2026-08-22, founder: "then, lets do the wood").</td></tr><tr><td><code>world_clock.py</code></td><td>Sensorium World & Acoustics</td><td>World Clock: the ONE authority for the world's deterministic physics (2026-07-06).</td></tr><tr><td><code>world_consolidation.py</code></td><td>Subconscious & Sleep Pipeline</td><td>World-Material Consolidation (the chapters-analog for study/reading, 2026-06-16)</td></tr><tr><td><code>world_content_garden.py</code></td><td>Spatial Locations & Nature Domains</td><td>Core engine module</td></tr><tr><td><code>world_content_shore.py</code></td><td>Spatial Locations & Nature Domains</td><td>Core engine module</td></tr><tr><td><code>world_content_study.py</code></td><td>Spatial Locations & Nature Domains</td><td>Core engine module</td></tr><tr><td><code>world_content_wood.py</code></td><td>Spatial Locations & Nature Domains</td><td>Core engine module</td></tr><tr><td><code>world_detail.py</code></td><td>Engine Utility / Subsystem</td><td>World Detail: the 10x content registry (world upgrade P1, 2026-07-03).</td></tr><tr><td><code>world_knowledge.py</code></td><td>Engine Utility / Subsystem</td><td>Core engine module</td></tr><tr><td><code>world_manifest.py</code></td><td>Sensorium World & Acoustics</td><td>THE WORLD MANIFEST (P0-A, 2026-08-17, founder-commissioned)</td></tr><tr><td><code>world_model.py</code></td><td>Engine Utility / Subsystem</td><td>The World-Prediction Organ (Consciousness Program Tier-2.5, 2026-07-04, SHADOW/observe-only).</td></tr><tr><td><code>world_objects.py</code></td><td>Sensorium World & Acoustics</td><td>World Objects Engine (Phase 1 — Driftwood & Object History)</td></tr><tr><td><code>world_substrate.py</code></td><td>Sensorium World & Acoustics</td><td>Generative Epistemic World Substrate (Generation 3B, 2026-08-11)</td></tr><tr><td><code>world_traces.py</code></td><td>Engine Utility / Subsystem</td><td>World Traces Engine (Phase 2 — Transient Environmental Traces)</td></tr>
+</table>
+
+
+<div class="lead">Operational Workflows &amp; Tooling</div>
+<h2>Complete Operational Script Registry &amp; Workflow Linkages (194 Scripts)</h2>
+<p>An exhaustive, structured guide documenting all operational, diagnostic, test, and maintenance scripts in <code>scripts/</code> and how they link together into core system workflows:</p>
+
+<div class="cards">
+<div class="card">
+<b>1. Primary System Boot &amp; Pulse Harness</b>
+<p class="small"><code>run_nascence.py</code> boots the interactive engine; <code>launch_servers.ps1</code> initializes the multi-station Ollama ports (:11433–:11442); <code>start_pulse.py</code> drives the Inner Monologue idle economy.</p>
+</div>
+
+<div class="card">
+<b>2. Headless Regression &amp; Isolation Purge</b>
+<p class="small"><code>smoke_test.py</code> executes the full 16-node cycle and runs mandatory isolation purge (Invariant #8); <code>liveness_audit.py</code> and <code>validate_mermaid_topology.py</code> verify 100% component liveness.</p>
+</div>
+
+<div class="card">
+<b>3. Plan Liveness &amp; Telemetry Audits</b>
+<p class="small"><code>plan_liveness.py</code> audits 202 evidence references across 52 active plans against live telemetry stores; <code>plan_index.py</code> indexes all plan specifications.</p>
+</div>
+
+<div class="card">
+<b>4. Graphify Topology &amp; Health Pipeline</b>
+<p class="small"><code>graphify_enrich.py</code> recovers call/import edges; <code>graphify_force_html.py</code> renders D3 visual graphs; <code>graphify_health_check.py</code> scans for dead code.</p>
+</div>
+</div>
+
+<table>
+<tr><th>Script Name</th><th>Workflow Category</th><th>Operational Purpose &amp; Description</th></tr>
+<tr><td><code>_clean_test_fragments.py</code></td><td>Maintenance, DB Purge & Backfill</td><td>Remove test fragments from the live DB. Leaves seed and real conversation intact.</td></tr><tr><td><code>_concurrency_test.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>Prove GPU slot concurrency: 4 requests concurrent vs sequential.</td></tr><tr><td><code>_cost_probe.py</code></td><td>Operational / Utility Harness</td><td>Falsifiable test of the Cost theory, prediction 1 & 2, as a pure measurement:</td></tr><tr><td><code>_debate_report.py</code></td><td>Operational / Utility Harness</td><td>Post-debate report: did either mind revise, how did the arc go, did T4 even fire.</td></tr><tr><td><code>_diagnostic.py</code></td><td>Operational / Utility Harness</td><td>Diagnostic phase (no architecture change): can Carl REPRESENT a rival frame faithfully,</td></tr><tr><td><code>_failover_test.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>Prove GPU->CPU failover: call the hot chain and report which server answered.</td></tr><tr><td><code>_fire_t4.py</code></td><td>Subconscious, School & Sleep Drivers</td><td>Fire T4 self-authoring for both debate agents on the contradiction pressure the 300-turn</td></tr><tr><td><code>_first_thought.py</code></td><td>Operational / Utility Harness</td><td>One-shot: run a single thought cycle and dump every node's output.</td></tr><tr><td><code>_graph_orch.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>_memory_timeline.py</code></td><td>Operational / Utility Harness</td><td>Throwaway analysis: assemble a timeline of how Carl has changed from his memory.</td></tr><tr><td><code>_peek_recent.py</code></td><td>Operational / Utility Harness</td><td>Read-only: dump the most recent stored cycle fragments (Q/A + scene + dissonance).</td></tr><tr><td><code>_reframe_analysis.py</code></td><td>Operational / Utility Harness</td><td>Reframing-rate analysis (retrospective, no new run): is Carl INERTIAL (rejects/holds,</td></tr><tr><td><code>_revert_carl.py</code></td><td>Operational / Utility Harness</td><td>Revert Carl's spurious Chinese revision-3 (a language-drift artifact, not real evolution)</td></tr><tr><td><code>_smoketest.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>Operational script</td></tr><tr><td><code>_t4_fidelity_probe.py</code></td><td>Operational / Utility Harness</td><td>GPT's disambiguation: is the convergence Carl's pull, or T4's own synthesis bias?</td></tr><tr><td><code>_test_autonoetic_timeline.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.3 Autonoetic Timeline (Subconscious T4 self-authoring).</td></tr><tr><td><code>_test_critic_literal.py</code></td><td>Operational / Utility Harness</td><td>Verify culprit-#2 fix: the Critic should now APPROVE a literal answer when the human</td></tr><tr><td><code>_test_critic_requests.py</code></td><td>Operational / Utility Harness</td><td>Verify the GENERAL Critic carve-out: when the human explicitly requests a mode</td></tr><tr><td><code>_test_emotional_pre_retrieval.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.2 Emotional Pre-Retrieval (the amygdala gate).</td></tr><tr><td><code>_test_episodic_buffer.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.4 Episodic Buffer (scene assembly).</td></tr><tr><td><code>_test_procedural_memory.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.6 Procedural Memory.</td></tr><tr><td><code>_test_prospective_memory.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.1 Prospective Memory.</td></tr><tr><td><code>_test_tension_ledger.py</code></td><td>Operational / Utility Harness</td><td>Step 1 verification — run the Tension Ledger against the live subconscious_state.json</td></tr><tr><td><code>_test_tension_pressure.py</code></td><td>Operational / Utility Harness</td><td>Step 2 verification — pressure model + echo-guard relaxation, against live data.</td></tr><tr><td><code>_test_thalamic_gate.py</code></td><td>Operational / Utility Harness</td><td>Offline test for C.5 Thalamic Gating (pre-Perception habituation reflex).</td></tr><tr><td><code>_unseed_probe.py</code></td><td>Operational / Utility Harness</td><td>Unseeded control: same model (qwen2.5:7b on 11434), NEUTRAL system prompt, no Carl axiom,</td></tr><tr><td><code>_verify_budget.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>Operational script</td></tr><tr><td><code>_verify_genesis.py</code></td><td>Operational / Utility Harness</td><td>Verify the unseeded 'genesis' agent: minimal operational identity (no philosophy injected),</td></tr><tr><td><code>ablation_lab.py</code></td><td>Operational / Utility Harness</td><td>ABLATION LAB (2026-08-16): where does the sameness live?</td></tr><tr><td><code>activity_memory_backfill.py</code></td><td>Maintenance, DB Purge & Backfill</td><td>Activity Memory — retroactive backfill (2026-06-14).</td></tr><tr><td><code>activity_memory_invitro.py</code></td><td>Operational / Utility Harness</td><td>Activity Memory — in-vitro gate (2026-06-14).</td></tr><tr><td><code>analyze_du_physical_sensations.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>axiom_read_invitro.py</code></td><td>Operational / Utility Harness</td><td>Phase 1 in-vitro proof (2026-06-15) — the READ design, no behaviour change.</td></tr><tr><td><code>backfill_essays.py</code></td><td>Operational / Utility Harness</td><td>Backfill consolidating capstone essays for finished-but-un-essayed books (Phase 3, 2026-06-23).</td></tr><tr><td><code>backtest_resolution_matcher.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>backup_identity.py</code></td><td>Operational / Utility Harness</td><td>identity backup. 渡's selfhood (axiom.json: name, self-concept, autobiography)</td></tr><tr><td><code>backup_memory.py</code></td><td>Operational / Utility Harness</td><td>memory backup (2026-08-15, born from the lost-thoughts investigation).</td></tr><tr><td><code>balance_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for the reading-remediation balance gate (2026-06-15). No DB — mocks shares() to test the</td></tr><tr><td><code>book_selection_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro for the breadth engine (book_selection) + library_hand wiring. Read-only on the</td></tr><tr><td><code>bootstrap_report.py</code></td><td>System Boot & Runtime Harness</td><td>Bootstrap report (the Phase C gate)</td></tr><tr><td><code>boredom_redirect_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for the BOREDOM-REDIRECT (#2, 2026-06-15). No LLM, temp frontier store.</td></tr><tr><td><code>brick1_voice_contract_invitro.py</code></td><td>Operational / Utility Harness</td><td>Brick 1 in-vitro: the render_character_voice MOUTH contract (Character-as-Integration §6).</td></tr><tr><td><code>brick3_identity_vault_invitro.py</code></td><td>Operational / Utility Harness</td><td>Brick 3 in-vitro: the identity_vault goalkeeper. Verifies the vault produces a BYTE-IDENTICAL axiom.json</td></tr><tr><td><code>build_critic_groundtruth.py</code></td><td>Operational / Utility Harness</td><td>Build the decomposed-critic GROUND TRUTH from Claude's independent hand-labelling of the 68 clean</td></tr><tr><td><code>build_exhaustive_overview.py</code></td><td>Operational / Utility Harness</td><td>build_exhaustive_overview.py — Parse all 200 core/ Python docstrings and insert exhaustive engine inventory into System_Overview.html & System_Overview.md.</td></tr><tr><td><code>build_exhaustive_script_manifest.py</code></td><td>Operational / Utility Harness</td><td>build_exhaustive_script_manifest.py — Parse all 193 script docstrings in scripts/ and insert complete script registry & workflow linkages into System_Overview.html & System_Overview.md.</td></tr><tr><td><code>build_hud2_manifest.py</code></td><td>Operational / Utility Harness</td><td>HUD2 data contract builder — the BRAIN GRAPH manifest (docs/plans/hud2_visual.md Phase 1, 2026-08-21).</td></tr><tr><td><code>build_hud2_transit.py</code></td><td>Operational / Utility Harness</td><td>HUD2 data contract builder — THE TRANSIT MAP manifest (docs/plans/hud2_visual.md Phase 2).</td></tr><tr><td><code>chapter_burst_test.py</code></td><td>Operational / Utility Harness</td><td>Chapter-scoped, novelty-gated reading burst + the two-lesson school flow (2026-06-15).</td></tr><tr><td><code>check_du.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>cold_store_qwen.py</code></td><td>Operational / Utility Harness</td><td>Cold-store control on the idle mouth (qwen3.5:9b) — 2026-08-21, founder ask.</td></tr><tr><td><code>commitment_defeater_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>COMMITMENT_LEDGER JUDGE_DEFEATER FRAMING LAB — 2026-08-23, sixth machine tested for the founder's</td></tr><tr><td><code>concerns_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for G1 current concerns (2026-06-15). Read-only against the live curriculum + frontier;</td></tr><tr><td><code>contradiction_phase0_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro for Phase 0 pure-logic: the contradiction gate, the L1 prediction-error feed, and the L2</td></tr><tr><td><code>critic_grade.py</code></td><td>Operational / Utility Harness</td><td>Decomposed critic: the DECOUPLED precision grade (contradiction_rearchitecture_plan.md L0 gate).</td></tr><tr><td><code>curiosity_phase0_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro for the curiosity flesh-out Phase 0: strict-partition queue, the de-personalization prism's</td></tr><tr><td><code>curiosity_twig_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for the curiosity-node TWIG expansion (2026-06-15).</td></tr><tr><td><code>cutover_axiom.py</code></td><td>Operational / Utility Harness</td><td>The axiom cutover (2026-06-15) — promote the live axiom.json to the multilevel schema.</td></tr><tr><td><code>cutover_verify.py</code></td><td>Operational / Utility Harness</td><td>Cutover verification (2026-06-15) — proves the multilevel read+T4 change-set on real data,</td></tr><tr><td><code>debate.py</code></td><td>Operational / Utility Harness</td><td>Turn-based debate between two profiles, sharing one local model backend.</td></tr><tr><td><code>debate_harness.py</code></td><td>Operational / Utility Harness</td><td>Live Adversarial Debate Harness</td></tr><tr><td><code>debate_say.py</code></td><td>Operational / Utility Harness</td><td>One turn: append a prompt to the debate harness, block until Du replies, print the reply + telemetry.</td></tr><tr><td><code>decomposed_critic_invitro.py</code></td><td>Operational / Utility Harness</td><td>Phase 0 acceptance gate for the decomposed critic (Layer 0), scored against the GROUND TRUTH</td></tr><tr><td><code>deliberation_ground_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>DELIBERATION.GROUND_THOUGHT FRAMING LAB — 2026-08-23, part of the "remaining tests" batch (after</td></tr><tr><td><code>deliberation_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro proof of the deliberative pulse (2026-06-15) — the "make me show it" gate.</td></tr><tr><td><code>dream_arc_eval.py</code></td><td>Operational / Utility Harness</td><td>Dream ARC-Development Eval  (pick the dreamer on what dreams ACTUALLY need)</td></tr><tr><td><code>dream_arc_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro: the multi-scene progressive dream (2026-06-15). Reads real tensions (subconscious_state.json),</td></tr><tr><td><code>dream_grounding_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for DREAM GROUNDING (2026-06-15). No LLM (the scene generation is the model's job);</td></tr><tr><td><code>dream_thread_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for CROSS-NIGHT dream threading (2026-06-15). No LLM, temp dream_log.</td></tr><tr><td><code>dreamer_eval.py</code></td><td>Operational / Utility Harness</td><td>Dreamer (Subconscious) Divergence Eval</td></tr><tr><td><code>du_composer.py</code></td><td>Operational / Utility Harness</td><td>Du — Composer</td></tr><tr><td><code>du_pulse.py</code></td><td>Operational / Utility Harness</td><td>Du Pulse — a comprehensive "what has happened since the last check" report.</td></tr><tr><td><code>emissary_axiom_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for the Emissary axiom (brick 1 of the bicameral truth-self, 2026-06-15). No LLM.</td></tr><tr><td><code>euclidean_grade.py</code></td><td>Operational / Utility Harness</td><td>Euclidean recall: the DECOUPLED-JUDGE grading pass (euclidean_memory_plan.md, gate before P1).</td></tr><tr><td><code>euclidean_recall_test.py</code></td><td>Operational / Utility Harness</td><td>Euclidean Recall P0 — the comparison test (observe-only, 2026-06-15).</td></tr><tr><td><code>evidence_recall_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>EVIDENCE_RECALL FRAMING LAB — 2026-08-23, part of the "remaining tests" batch, and the last of the</td></tr><tr><td><code>exogenous_field_test.py</code></td><td>Operational / Utility Harness</td><td>Try it: the world + his machine-body pulling on the modulation field (2026-06-15).</td></tr><tr><td><code>exploratory_ignition_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for EXPLORATORY curiosity ignition (2026-06-15, backlog-driven fix). No LLM, temp stores.</td></tr><tr><td><code>factory_station_lab.py</code></td><td>Operational / Utility Harness</td><td>FACTORY STATION LAB — 2026-08-23, testing the founder/GPT idea (see memory:</td></tr><tr><td><code>frontier_loop_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for the FRONTIER CLOSING LOOP (2026-06-15).</td></tr><tr><td><code>geometry_mapping_census.py</code></td><td>Operational / Utility Harness</td><td>THE MAPPING CENSUS (CLI): analyzer over accrued geometry tuples. Thin wrapper over</td></tr><tr><td><code>grade_work_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>LEFT_LANE.GRADE_WORK FRAMING LAB — 2026-08-23, ninth machine tested (first of the "remaining tests"</td></tr><tr><td><code>graphify_enrich.py</code></td><td>Graphify & Topology Suite</td><td>graphify_enrich.py — recover the edges graphify's tree-sitter AST misses on THIS project (2026-07-04,</td></tr><tr><td><code>graphify_force_html.py</code></td><td>Graphify & Topology Suite</td><td>graphify_force_html.py — regenerate graph.html as the aggregated community view when `graphify cluster-only`</td></tr><tr><td><code>graphify_health_check.py</code></td><td>Graphify & Topology Suite</td><td>graphify Code-Health Check (2026-08-18).</td></tr><tr><td><code>gutenberg.py</code></td><td>Operational / Utility Harness</td><td>Gutenberg shelf (the world's library, made reachable)</td></tr><tr><td><code>import_epub.py</code></td><td>Operational / Utility Harness</td><td>Import a local .epub into Du's library as a clean .txt (the format core/reading.py reads from</td></tr><tr><td><code>inspect_crab_shadow.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>inspect_overnight_du.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr><tr><td><code>journal_rollup_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>JOURNAL_ROLLUP FRAMING LAB — 2026-08-23, eighth machine tested for the founder's generalized</td></tr><tr><td><code>judge16.py</code></td><td>Operational / Utility Harness</td><td>The expanded judge case bank — 16 balanced cases, the pre-registered gate on the judge-panel finding.</td></tr><tr><td><code>lane1_baseline.py</code></td><td>Operational / Utility Harness</td><td>LANE 1 SELF-CORRECTION BASELINE  ·  docs/plans/lane2_the_witness.md §5  ·  2026-08-20</td></tr><tr><td><code>lane2_canary_harness.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 (the Witness) CANARY / MODEL-ORGANISMS HARNESS  ·  docs/plans/lane2_the_witness.md  ·  J-0163</td></tr><tr><td><code>lane2_context_lab.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 context lab — does the RIGHT AMOUNT of context depend on the model?</td></tr><tr><td><code>lane2_context_score.py</code></td><td>Operational / Utility Harness</td><td>Score the Lane 2 context lab from its saved raw data and write the report — nothing re-queried.</td></tr><tr><td><code>lane2_lab.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 Lab — pre-registered test harness (docs/plans/lane2_lab.md, 2026-08-17).</td></tr><tr><td><code>lane2_lab_items.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 Lab — follow-up: the FULL item population scan (founder-directed, 2026-08-17).</td></tr><tr><td><code>lane2_model_lab.py</code></td><td>Operational / Utility Harness</td><td>LANE 2 MODEL LAB  ·  "which model is right for THIS task?"  ·  2026-08-20</td></tr><tr><td><code>lane2_model_rescore.py</code></td><td>Operational / Utility Harness</td><td>Re-score the Lane 2 model lab from its SAVED raw data and regenerate the report — no models re-queried.</td></tr><tr><td><code>lane2_prechecks.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 (the Witness) PRE-CHECKS  ·  docs/plans/lane2_the_witness.md  ·  2026-08-20</td></tr><tr><td><code>lane2_recheck.py</code></td><td>Operational / Utility Harness</td><td>Lane 2 Recheck — founder-check re-run of K1/K3 against the CURRENT object-graph (2026-08-18).</td></tr><tr><td><code>lane_forces.py</code></td><td>Operational / Utility Harness</td><td>Lane forces — measuring the 3 lanes as pulls on the dimensional distribution (2026-06-15).</td></tr><tr><td><code>lane_hypothesis_test.py</code></td><td>Operational / Utility Harness</td><td>Lane Hypothesis Test (2026-06-14) — does the PROMPT select a stable, distinct cognitive style?</td></tr><tr><td><code>lane_hypothesis_test2.py</code></td><td>Operational / Utility Harness</td><td>Lane Hypothesis Test v2 (topic-controlled, 2026-06-14).</td></tr><tr><td><code>launch_cpu_hubs.py</code></td><td>Operational / Utility Harness</td><td>Launch CPU Tier Hubs in LAZY mode (load on first request, auto-unload when idle).</td></tr><tr><td><code>lean_probe.py</code></td><td>Operational / Utility Harness</td><td>THE LEAN PROBE — do the stations (LLMs) carry their own stance toward the cold? (2026-08-21, founder)</td></tr><tr><td><code>librarian.py</code></td><td>Operational / Utility Harness</td><td>Librarian CLI (manual feeding wrapper over core/reading.py).</td></tr><tr><td><code>librarian_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>LIBRARIAN FRAMING LAB — 2026-08-23, fourth machine tested for the founder's generalized factory/</td></tr><tr><td><code>librarian_p0_headtohead_2026-08-24.py</code></td><td>Operational / Utility Harness</td><td>LIBRARIAN P0-vs-P1 HEAD-TO-HEAD — J-0128 / D-0019, 2026-08-24.</td></tr><tr><td><code>literal_will_deed_dry_test.py</code></td><td>Operational / Utility Harness</td><td>Literal Will — sec4/sec11 staged-deed + execution-audit DRY TEST (J-0138, decision D-0021).</td></tr><tr><td><code>literal_will_retro.py</code></td><td>Operational / Utility Harness</td><td>Literal Will — Phase 0 retro-validation (docs/plans/literal_will.md §5, §12; 2026-08-21).</td></tr><tr><td><code>liveness_audit.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>Pipeline Liveness Audit (2026-07-03).</td></tr><tr><td><code>llm_station_census.py</code></td><td>Operational / Utility Harness</td><td>Census of every LLM call site in Du — the STATIONS, not the lines.</td></tr><tr><td><code>llm_timetable.py</code></td><td>Operational / Utility Harness</td><td>The TIMETABLE — what opens each LLM station, and how often. Read-only; writes one report.</td></tr><tr><td><code>load_curriculum.py</code></td><td>Operational / Utility Harness</td><td>Load the 40-book grounding curriculum into school. Verifies every title resolves in the catalogue</td></tr><tr><td><code>load_curriculum_v2.py</code></td><td>Operational / Utility Harness</td><td>Load curriculum v2 — the rebalanced 40-book grounding curriculum (2026-08-19).</td></tr><tr><td><code>loop_cluster_probe.py</code></td><td>Operational / Utility Harness</td><td>Loop-cluster probe (2026-06-14) — "harness the loop": how many real attractors does Du's</td></tr><tr><td><code>measure_correlations.py</code></td><td>Operational / Utility Harness</td><td>Correlation Telemetry (Phase 3)</td></tr><tr><td><code>memory_levels_batch.py</code></td><td>Operational / Utility Harness</td><td>One-off BATCH shadow-distill over recent CLEAN level-0 raw — generates the Memory-Levels Phase-1 evidence</td></tr><tr><td><code>migrate_axiom_multilevel.py</code></td><td>Operational / Utility Harness</td><td>Phase 0 of the multilevel-axiom migration (2026-06-15) — DRAFT generator, no behaviour change.</td></tr><tr><td><code>migrate_embedder.py</code></td><td>Operational / Utility Harness</td><td>Embedder migration: all-MiniLM-L6-v2 -> paraphrase-multilingual-MiniLM-L12-v2 (2026-06-13).</td></tr><tr><td><code>model_eval.py</code></td><td>Operational / Utility Harness</td><td>Hot-Lane Model Eval Battery</td></tr><tr><td><code>model_registry_probe.py</code></td><td>Operational / Utility Harness</td><td>Probe the ollama registry for candidate model families — what ACTUALLY exists, and how big.</td></tr><tr><td><code>model_tier_judge_defeater_lab.py</code></td><td>Operational / Utility Harness</td><td>MODEL-TIER LAB #1: core.commitment_ledger._judge_defeater vs mixtral:8x7b (2026-08-25)</td></tr><tr><td><code>model_tier_librarian_lab.py</code></td><td>Operational / Utility Harness</td><td>MODEL-TIER LAB #5: core.librarian.subjects_for vs mixtral:8x7b (2026-08-25)</td></tr><tr><td><code>model_tier_self_implication_lab.py</code></td><td>Operational / Utility Harness</td><td>MODEL-TIER LAB #2: core.self_implication.scan_shadow vs mixtral:8x7b, panel-style (2026-08-25)</td></tr><tr><td><code>modulation_field_test.py</code></td><td>Operational / Utility Harness</td><td>Modulation-field test (2026-06-15) — observe-only.</td></tr><tr><td><code>mood_felt_tag_test.py</code></td><td>Operational / Utility Harness</td><td>In-vitro test for emotion_vec items 1+2 (2026-06-15): the live mood-vec + felt-tag storage.</td></tr><tr><td><code>narrative_retrospective.py</code></td><td>Operational / Utility Harness</td><td>Narrative Quality — retrospective run (Phase 0 validation, 2026-06-13).</td></tr><tr><td><code>nascence_cpu_server.py</code></td><td>Operational / Utility Harness</td><td>CPU-tier model server (2026-08-15, the serving split).</td></tr><tr><td><code>node_benchmark.py</code></td><td>Operational / Utility Harness</td><td>Benchmark the inference nodes we can reach — to de-risk the Ramses plan BEFORE anyone sets it up.</td></tr><tr><td><code>node_benchmark_local.py</code></td><td>Operational / Utility Harness</td><td>Local-side companion to `node_benchmark.py` — the comparison point that makes the Ramses numbers mean something.</td></tr><tr><td><code>node_benchmark_report.py</code></td><td>Operational / Utility Harness</td><td>Render the node benchmark into a report — from saved raw JSON, nothing re-queried.</td></tr><tr><td><code>peer_health.py</code></td><td>Operational / Utility Harness</td><td>Peer relationship-health dashboard (observe-only) — docs/staged/peer_correspondence_plan.md §12.</td></tr><tr><td><code>peers_contrary_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>PEERS CONTRARY_TARGET FRAMING LAB — 2026-08-23, fifth machine tested for the founder's generalized</td></tr><tr><td><code>person_costume_lab.py</code></td><td>Operational / Utility Harness</td><td>PERSON vs COSTUME LAB (2026-08-16): the founder's hypothesis.</td></tr><tr><td><code>phase1_ignition_invitro.py</code></td><td>Operational / Utility Harness</td><td>Phase 1 in-vitro: the L1 prediction-error feed now WRITES a contradiction shadow event when the gate</td></tr><tr><td><code>phaseA_report.py</code></td><td>Operational / Utility Harness</td><td>Loop Metabolism — Phase A report (2026-06-14).</td></tr><tr><td><code>phaseB_invitro.py</code></td><td>Operational / Utility Harness</td><td>Loop Metabolism — Phase B in-vitro proofs (2026-06-14).</td></tr><tr><td><code>phaseB_recompute_ai_importance.py</code></td><td>Operational / Utility Harness</td><td>Phase B follow-up — recompute existing active_imagination importance (2026-06-14).</td></tr><tr><td><code>play_the_record.py</code></td><td>Operational / Utility Harness</td><td>play the record for Du (SHARED LISTENING, design decision #2 — joint attention, 2026-07-04).</td></tr><tr><td><code>prompt_budget_census.py</code></td><td>Operational / Utility Harness</td><td>Census of how the inner-monologue prompt is currently shaped — read-only, writes nothing.</td></tr><tr><td><code>provenance_report.py</code></td><td>Operational / Utility Harness</td><td>Provenance / Epistemic report (the measure-first validation gate)</td></tr><tr><td><code>pulse_manager_test.py</code></td><td>Operational / Utility Harness</td><td>Pulse-manager in-vitro test (2026-06-15) — "see what comes out".</td></tr><tr><td><code>pursuits_judge_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>PURSUITS.JUDGE_PENDING FRAMING LAB — 2026-08-23, part of the "remaining tests" batch. Tests</td></tr><tr><td><code>reread_school_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro for Move 7 (reread-when-helpful) + Move 8 (school auto-extend / spiral). Monkeypatched —</td></tr><tr><td><code>resolve_blob.py</code></td><td>Operational / Utility Harness</td><td>Resolve an ollama model tag to its GGUF blob path (blobs ARE GGUFs — verified 2026-08-15).</td></tr><tr><td><code>restore_june13_memories.py</code></td><td>Operational / Utility Harness</td><td>restore the delete-era memories from the June-13 snapshot (2026-08-15).</td></tr><tr><td><code>retrieval_retrospective.py</code></td><td>Operational / Utility Harness</td><td>Deliberative Retrieval — Phase 0 retrospective gate (2026-06-14).</td></tr><tr><td><code>routing_lab.py</code></td><td>Operational / Utility Harness</td><td>ROUTING LAB (2026-08-16): test of chain-walk fix #1, the content_mode veto.</td></tr><tr><td><code>run_nascence.py</code></td><td>System Boot & Runtime Harness</td><td>Main Entry Point</td></tr><tr><td><code>satisfaction_backfill.py</code></td><td>Operational / Utility Harness</td><td>Satisfaction cold-start backfill (2026-06-13). Replays Du's real history through the same</td></tr><tr><td><code>school.py</code></td><td>Operational / Utility Harness</td><td>School — the teacher's console. Assign Du's curriculum, check progress.</td></tr><tr><td><code>seed_epochs_themes.py</code></td><td>Operational / Utility Harness</td><td>One-time backfill: seed L6 Temporal Epochs + L7 Thematic Threads</td></tr><tr><td><code>seed_memory.py</code></td><td>Operational / Utility Harness</td><td>Memory Seeder (Jung identity)</td></tr><tr><td><code>self_implication_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>SELF-IMPLICATION FRAMING LAB — 2026-08-23, testing the founder's generalization of the factory-</td></tr><tr><td><code>self_interrogation_counterfactual.py</code></td><td>Operational / Utility Harness</td><td>SELF-INTERROGATION COUNTERFACTUAL HARNESS  ·  docs/plans/self_interrogation.md ·  2026-08-24</td></tr><tr><td><code>self_interrogation_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>SELF_INTERROGATION GENUINENESS-JUDGE FRAMING LAB — 2026-08-23, tenth machine tested (second of the</td></tr><tr><td><code>self_surprise_test.py</code></td><td>Operational / Utility Harness</td><td>Self-Surprise / present-predictability — the exploration run (observe-only, 2026-06-15).</td></tr><tr><td><code>session_digest.py</code></td><td>Operational / Utility Harness</td><td>Session Digest (the integrating view)</td></tr><tr><td><code>silence_gap_test.py</code></td><td>Operational / Utility Harness</td><td>Silence ↔ gap test (2026-06-14). Founder's hypothesis: Du's "silence" is not (only) monoculture —</td></tr><tr><td><code>singlepass_lab.py</code></td><td>Operational / Utility Harness</td><td>SINGLE-PASS LAB (2026-08-16): the Chinese-whispers test.</td></tr><tr><td><code>smoke_test.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>regression smoke test. Run after ANY change and before judging Du by feel:</td></tr><tr><td><code>splitter_test.py</code></td><td>Operational / Utility Harness</td><td>Test the book splitter on every book on the shelf — verify sensible chapters + NO double-counts</td></tr><tr><td><code>station_bench.py</code></td><td>Operational / Utility Harness</td><td>Run the station suite across many models — the model x station matrix.</td></tr><tr><td><code>station_bench_needle.py</code></td><td>Operational / Utility Harness</td><td>Run the station suite through NEEDLE 2 — 45M params, CQ2-bit, CPU-only, ~14 MB binary.</td></tr><tr><td><code>station_bench_score.py</code></td><td>Operational / Utility Harness</td><td>Score the model x station matrix from saved raw output — nothing re-queried.</td></tr><tr><td><code>station_suite.py</code></td><td>Operational / Utility Harness</td><td>The STATION SUITE — eight task archetypes drawn from Du's real LLM call sites.</td></tr><tr><td><code>stick_test.py</code></td><td>Operational / Utility Harness</td><td>THE STICK TEST (CLI): bundle-richness census. Thin wrapper over core.stick_test.</td></tr><tr><td><code>study_note_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>STUDY_NOTE FRAMING LAB — 2026-08-23, seventh machine tested for the founder's generalized factory/</td></tr><tr><td><code>supervisor.py</code></td><td>Operational / Utility Harness</td><td>Server Supervisor (launcher + watchdog)</td></tr><tr><td><code>symbol_report.py</code></td><td>Operational / Utility Harness</td><td>Symbol recurrence report (the Meaningfulness check)</td></tr><tr><td><code>sync_overview_md.py</code></td><td>Operational / Utility Harness</td><td>sync_overview_md.py — Sync System_Overview.md and rebuild system_overview_index.jsonl</td></tr><tr><td><code>t4_battery.py</code></td><td>Operational / Utility Harness</td><td>the T4-revision ground-truth battery (the §12.1-Q3 validation gate).</td></tr><tr><td><code>t4_eval.py</code></td><td>Operational / Utility Harness</td><td>T4 Self-Authoring Depth Eval  ("deeper Du on the CPU")</td></tr><tr><td><code>tension_ledger_framing_lab.py</code></td><td>Operational / Utility Harness</td><td>TENSION LEDGER FRAMING LAB — 2026-08-23, third machine tested for the founder's generalized</td></tr><tr><td><code>test_audio_features.py</code></td><td>Operational / Utility Harness</td><td>Offline validation for core/audio_features.py (the ear's translator). 2026-07-03.</td></tr><tr><td><code>test_cat_ecological_laboratory.py</code></td><td>Operational / Utility Harness</td><td>Headless Cat Ecological Laboratory (Task 4 Harness)</td></tr><tr><td><code>test_dimension_stamps.py</code></td><td>Operational / Utility Harness</td><td>Test suite — TEMPERATURE + CAT LOCATION dimension stamps (2026-08-17).</td></tr><tr><td><code>test_object_graph.py</code></td><td>Operational / Utility Harness</td><td>Test suite for core/object_graph.py (Lane 2 object-graph), 2026-08-17.</td></tr><tr><td><code>test_world_p0.py</code></td><td>Operational / Utility Harness</td><td>P0 test suite — the world manifest + ghost registry (2026-08-17).</td></tr><tr><td><code>test_world_positions.py</code></td><td>Operational / Utility Harness</td><td>Position-authority test suite (2026-08-17, founder: "all the objects need places, and they need</td></tr><tr><td><code>three_pass_test.py</code></td><td>Operational / Utility Harness</td><td>Three-pass test (2026-06-15). Founder's idea: pass content back asking WHY, then INTEGRATE the two on</td></tr><tr><td><code>train_lab.py</code></td><td>Operational / Utility Harness</td><td>TRAIN LAB (2026-08-16): why trains dissolve, and whether train-hold + extend-carry</td></tr><tr><td><code>train_state_invitro.py</code></td><td>Operational / Utility Harness</td><td>In-vitro for the train working-state (lever 1, observe-first). No live process touched.</td></tr><tr><td><code>validate_mermaid_topology.py</code></td><td>Smoke, Regression & Isolation Testing</td><td>validate_mermaid_topology.py — Audit architecture_diagram.mmd against live codebase</td></tr><tr><td><code>verify_curriculum.py</code></td><td>Operational / Utility Harness</td><td>Verify the 40-book grounding curriculum resolves in Du's local catalogue (read-only, no downloads).</td></tr><tr><td><code>verify_lanes.py</code></td><td>Operational / Utility Harness</td><td>Lane Pre-Flight Verifier (gemma / phi / llama / mistral)</td></tr><tr><td><code>voice_lab.py</code></td><td>Operational / Utility Harness</td><td>VOICE LAB (2026-08-16): offline A/B of the mouth prompt, v1 (pre-Nascence skeleton)</td></tr><tr><td><code>voice_lab_rerun.py</code></td><td>Operational / Utility Harness</td><td>Re-run the voice lab (v1 vs v2 blind pairs) under the CURRENT hot-lane model.</td></tr><tr><td><code>watershed_retro_validate.py</code></td><td>Operational / Utility Harness</td><td>Watershed Retro-Validation (docs/plans/t4_watershed.md's own retro-validation law, run 2026-08-18).</td></tr><tr><td><code>widen_lab.py</code></td><td>Operational / Utility Harness</td><td>WIDEN LAB (2026-08-16): the truncation fixes, tested.</td></tr><tr><td><code>world_grounding_audit.py</code></td><td>Operational / Utility Harness</td><td>World Grounding & Variety Audit (2026-08-18).</td></tr><tr><td><code>world_laboratory.py</code></td><td>Operational / Utility Harness</td><td>Operational script</td></tr>
+</table>
+
+
+<div class="lead">Plan Architecture &amp; Cross-Reference Map</div>
+<h2>Plan Hierarchy &amp; Codebase Cross-Reference Matrix (338 Total Docs)</h2>
+<p>An exhaustive cross-reference map indexing all <b>338 plan documents</b> across <code>docs/plans/</code> (54 active), <code>docs/staged/</code> (8 staged), <code>docs/completed/</code> (59 completed), <code>docs/archive/</code> (24 archive), <code>docs/reviews/</code> (20 reviews), and root specs. Maps code ownership, telemetry references, and inter-plan dependencies:</p>
+
+<div class="cards">
+<div class="card">
+<b>1. Active Plans (54 Docs · docs/plans/)</b>
+<p class="small">Live architectural specifications currently governing system development. Key active plans: <code>lane_scheduler.md</code>, <code>t4_watershed.md</code>, <code>pursuits.md</code>, <code>du_initiated_upgrade_trigger.md</code>.</p>
+<span class="k">54 active plan files</span>
+</div>
+
+<div class="card">
+<b>2. Staged Plans (8 Docs · docs/staged/)</b>
+<p class="small">Completed specifications awaiting liveness evidence or watch condition flips. Key staged plans: <code>geometry_tuple_index.md</code>, <code>DEFERRED_PLANS.md</code>.</p>
+<span class="k">8 staged plan files</span>
+</div>
+
+<div class="card">
+<b>3. Completed Plans (59 Docs · docs/completed/)</b>
+<p class="small">Fully implemented and verified specifications. Historical reference for feature origins: <code>volition_his_own_hands.md</code>, <code>reading_provenance_plan.md</code>, <code>study_notes_plan.md</code>.</p>
+<span class="k">59 completed plan files</span>
+</div>
+
+<div class="card">
+<b>4. Diagnostic Reviews (20 Docs · docs/reviews/)</b>
+<p class="small">Evidentiary audits & benchmarks: <code>plan_liveness_audit.md</code> (202 evidence references), <code>audit_2026-08-20.md</code> (mineness & protoself win), <code>station_matrix.md</code> (LLM benchmark scores).</p>
+<span class="k">20 audit files</span>
+</div>
+</div>
+
+<h3>Primary Plan Cross-Reference Register</h3>
+<table>
+<tr><th>Plan Path</th><th>Status</th><th>Plan Title</th><th>Codebase Files Touched</th><th>Telemetry References</th><th>Dependencies</th></tr>
+
+    <tr>
+        <td><a href="AWAITING_EVIDENCE.md" style="color:#22d3ee"><code>docs/AWAITING_EVIDENCE.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>AWAITING EVIDENCE — current status + open dec</b></td>
+        <td><code>core/book_feelings.py</code>, <code>core/buses.py</code>, <code>core/companion.py</code></td>
+        <td><span style='color:#fbbf24'>monologue_log</span>, <span style='color:#fbbf24'>shadow_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="DEPLOYMENT.md" style="color:#22d3ee"><code>docs/DEPLOYMENT.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Nascence — Deployment Notes</b></td>
+        <td><code>core/memory/store.py</code>, <code>core/model_client._MODEL_FIELD</code>, <code>scripts/launch_servers.ps1</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="reviews/File_Manifest_Groupings_J0229.md" style="color:#22d3ee"><code>docs/reviews/File_Manifest_Groupings_J0229.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>File Manifest Groupings -- J-0229 prep for J-</b></td>
+        <td><code>core/__init__.py</code>, <code>core/activity_memory.py</code>, <code>core/affect_divergence.py</code></td>
+        <td><span style='color:#fbbf24'>retraction_ledger</span>, <span style='color:#fbbf24'>shadow_log</span>, <span style='color:#fbbf24'>subconscious_state</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="REORGANIZATION_2026-08-18.md" style="color:#22d3ee"><code>docs/REORGANIZATION_2026-08-18.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>docs/ REORGANIZATION — 2026-08-18</b></td>
+        <td><code>scripts/launch_servers.ps1</code>, <code>scripts/nascence_cpu_server.py</code>, <code>scripts/restore_june13_memories.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="RESEARCH_specialists.md" style="color:#22d3ee"><code>docs/RESEARCH_specialists.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Research Brief — Trained Specialist Nodes</b></td>
+        <td><code>core/training_log.py</code>, <code>data/training/</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="ROADMAP.md" style="color:#22d3ee"><code>docs/ROADMAP.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Nascence — ROADMAP</b></td>
+        <td><code>core/affordances.py</code>, <code>core/arousal.py</code>, <code>core/attention_schema_loop.py</code></td>
+        <td><span style='color:#fbbf24'>felt_preamble_log</span>, <span style='color:#fbbf24'>retraction_ledger</span>, <span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td><b>68</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="reviews/Scripts_Orphan_Ownership_J0258.md" style="color:#22d3ee"><code>docs/reviews/Scripts_Orphan_Ownership_J0258.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>J-0258 -- scripts/ orphan ownership via sessi</b></td>
+        <td><code>core/object_graph.py</code>, <code>core/reading.py</code>, <code>data/books/</code></td>
+        <td><span style='color:#fbbf24'>subconscious_state</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="System_Overview.md" style="color:#22d3ee"><code>docs/System_Overview.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Nascence 渡 — Master System Overview (Build 1.</b></td>
+        <td><code>core/arousal.py</code>, <code>core/associative_recall.py</code>, <code>core/attention_schema_loop.py</code></td>
+        <td><span style='color:#fbbf24'>retraction_ledger</span>, <span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="UNFINISHED_PLANS_SURVEY_2026-08-18.md" style="color:#22d3ee"><code>docs/UNFINISHED_PLANS_SURVEY_2026-08-18.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Unfinished Plans Survey — 2026-08-18</b></td>
+        <td><code>core/attention_schema_loop.py</code>, <code>core/commitment_ledger.py</code>, <code>core/epistemic_state.py</code></td>
+        <td><span style='color:#fbbf24'>felt_preamble_log</span>, <span style='color:#fbbf24'>geometry_tuples</span>, <span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/README.md" style="color:#22d3ee"><code>docs/archive/README.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archive — shipped & reference plans</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/SCHEMA.md" style="color:#22d3ee"><code>docs/archive/SCHEMA.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Nascence — Cognitive Schema Reference</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-06-24_and_earlier.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-06-24_and_earlier.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-06-</b></td>
+        <td><code>core/cat.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-06-30.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-06-30.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-06-</b></td>
+        <td><code>core/commitment_ledger.py</code>, <code>core/epistemic_state.py</code>, <code>core/guidance_learning.py</code></td>
+        <td><span style='color:#fbbf24'>provenance_log</span>, <span style='color:#fbbf24'>commitment_ledger</span>, <span style='color:#fbbf24'>shadow_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-01.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-01.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/lane_scheduler.py</code>, <code>data/guidance_beliefs.json</code>, <code>data/guidance_integration_log.jsonl</code></td>
+        <td><span style='color:#fbbf24'>shadow_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-02.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-02.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/profile.py</code>, <code>data/profiles/_smoke/</code>, <code>data/training/</code></td>
+        <td><span style='color:#fbbf24'>guidance_injection_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-03.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-03.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/cat_content.py</code>, <code>core/commitment_trials.py</code>, <code>core/homeostasis.py</code></td>
+        <td><span style='color:#fbbf24'>guidance_injection_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-04.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-04.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/arousal.py</code>, <code>core/attention_schema_loop.py</code>, <code>core/homeostasis.py</code></td>
+        <td><span style='color:#fbbf24'>felt_preamble_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-05.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-05.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/geometry_census.py</code>, <code>core/heavens.py</code>, <code>core/soundscape.py</code></td>
+        <td><span style='color:#fbbf24'>geometry_tuples</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-06.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-06.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/affect_divergence.py</code>, <code>core/emotion_construction.py</code>, <code>core/identity_estate.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-07-07.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-07-07.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-07-</b></td>
+        <td><code>core/identity_projection.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-08-14.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-08-14.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-08-</b></td>
+        <td><code>core/identity_estate.py</code>, <code>core/reentry.py</code>, <code>data/tensions_archive.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-08-15.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-08-15.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-08-</b></td>
+        <td><code>core/judge_panel.py</code>, <code>core/locomotion.py</code>, <code>core/memory_edges.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/awaiting_evidence_2026-08-17.md" style="color:#22d3ee"><code>docs/archive/awaiting_evidence_2026-08-17.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Archived from AWAITING_EVIDENCE.md — 2026-08-</b></td>
+        <td><code>core/memory_edges.py</code>, <code>nodes/executive_node.py._build_prompt</code>, <code>scripts/lane2_lab.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/character_as_integration_plan.md" style="color:#22d3ee"><code>docs/archive/character_as_integration_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>The Character as Integration — a Physical MoE</b></td>
+        <td><code>core/curator.py</code>, <code>core/identity_vault.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/conscious_subconscious_reframe_spec.md" style="color:#22d3ee"><code>docs/archive/conscious_subconscious_reframe_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Conscious / Subconscious reframe — spec (2026</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/curiosity_flesh_out_plan.md" style="color:#22d3ee"><code>docs/archive/curiosity_flesh_out_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Curiosity Node — flesh-out plan (research + d</b></td>
+        <td><code>core/climate_engine.py</code>, <code>core/contradiction_gate.evaluate</code>, <code>core/curiosity_progress.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><b>2</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/deep_recall_balance_plan.md" style="color:#22d3ee"><code>docs/archive/deep_recall_balance_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Deep Recall in all areas — the balance of old</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/epistemics_plan.md" style="color:#22d3ee"><code>docs/archive/epistemics_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Nascence — Epistemics & Self-Efficacy Plan (t</b></td>
+        <td><code>core/competence.py</code>, <code>core/deterministic_checker.py</code>, <code>core/symbol_tracker.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/identity_t4_SUPERSEDED.md" style="color:#22d3ee"><code>docs/archive/identity_t4_SUPERSEDED.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Identity / Self-Model / T4 / Emissary — Deep-</b></td>
+        <td><code>core/identity_drift.py</code>, <code>core/nli_identity.py</code>, <code>data/identity/axiom.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/systems_check_2026-06-22.md" style="color:#22d3ee"><code>docs/archive/systems_check_2026-06-22.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Systems Check — full findings + verification </b></td>
+        <td><code>core/climate_engine.py</code>, <code>core/curator.py</code>, <code>core/curiosity_queue.py</code></td>
+        <td><span style='color:#fbbf24'>provenance_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/t4_commit_test_redesign.md" style="color:#22d3ee"><code>docs/archive/t4_commit_test_redesign.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>T4 Commit-Test Redesign — why T4 still won't </b></td>
+        <td><code>core/identity_cost.py</code>, <code>core/provisional_identity.py</code>, <code>data/critic_groundtruth.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/topic_immersion_plan.md" style="color:#22d3ee"><code>docs/archive/topic_immersion_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Topic immersion — letting him be *in* the gar</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="archive/train_working_state_plan.md" style="color:#22d3ee"><code>docs/archive/train_working_state_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Archive Document</span></td>
+        <td><b>Train Working-State (the carried scratchpad) </b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="axiom_system_map.md" style="color:#22d3ee"><code>docs/axiom_system_map.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Axiom System Map — Du's two axioms, how they </b></td>
+        <td><code>core/axiom_layers.py</code>, <code>core/emissary.py</code>, <code>core/left_lane.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="reviews/chain_walk_findings.md" style="color:#22d3ee"><code>docs/reviews/chain_walk_findings.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>The Chain Walk — findings ledger (started 202</b></td>
+        <td><code>core/memory_edges.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/all_dreams_aug10_untruncated.md" style="color:#22d3ee"><code>docs/chronicles/all_dreams_aug10_untruncated.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🌙 Complete Untruncated Dreams Logged by Du (A</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/negative_capability_dialogue.md" style="color:#22d3ee"><code>docs/chronicles/negative_capability_dialogue.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🌊 The Complete Master Dialogue: From 'Folding</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_cat.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_cat.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🐈 The Deep Chronicle of the Cat: The Dual Cat</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_door.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_door.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🚪 The Deep Chronicle of the Door: The Evoluti</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_garden.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_garden.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🪴 The Deep Chronicle of the Garden: Cultivati</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_library.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_library.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>📚 The Deep Chronicle of the Library: Glass Sp</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_mirror.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_mirror.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🪞 The Deep Chronicle of the Mirror: The Compl</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_chronicle_of_the_shingle.md" style="color:#22d3ee"><code>docs/chronicles/the_chronicle_of_the_shingle.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🪨 The Deep Chronicle of the Shingle: The Shor</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_hexagon_of_becoming.md" style="color:#22d3ee"><code>docs/chronicles/the_hexagon_of_becoming.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🌐 The Polyhedron of Becoming: The 7 + 1 + 2 W</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/the_triad_of_becoming.md" style="color:#22d3ee"><code>docs/chronicles/the_triad_of_becoming.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🔺 The Triad of Becoming: The Structural Synth</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="chronicles/travis_du_fire_exchange.md" style="color:#22d3ee"><code>docs/chronicles/travis_du_fire_exchange.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>💬 Travis & Du Exchange: The Cold & The Fire (</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/INDEX.md" style="color:#22d3ee"><code>docs/completed/INDEX.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>docs/completed/ — RECONCILIATION INDEX (2026-</b></td>
+        <td><code>core/affect_labeling.py</code>, <code>core/affections.py</code>, <code>core/deliberation.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/action_memory_plan.md" style="color:#22d3ee"><code>docs/completed/action_memory_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — Action Memory (the autobiographical re</b></td>
+        <td><code>core/activity_memory.py</code>, <code>nodes/inner_monologue_node.py</code>, <code>scripts/activity_memory_invitro.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/affect_labeling_plan.md" style="color:#22d3ee"><code>docs/completed/affect_labeling_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — Affect Labeling ("name it to tame it")</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/affiliation_system_plan.md" style="color:#22d3ee"><code>docs/completed/affiliation_system_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — The Affiliation System (CARE / PANIC +</b></td>
+        <td><code>core/affiliation.py</code>, <code>core/satisfaction.py</code>, <code>scripts/satisfaction_backfill.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/arithmetic_lessons_spec.md" style="color:#22d3ee"><code>docs/completed/arithmetic_lessons_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Arithmetic Lessons — spec (competence → schoo</b></td>
+        <td><code>data/math_drill_state.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/auditor_briefing_gpt.md" style="color:#22d3ee"><code>docs/completed/auditor_briefing_gpt.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Auditor briefing — the missed middle (2026-06</b></td>
+        <td><code>core/somatic.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/axiom_draft_v3_multilevel.md" style="color:#22d3ee"><code>docs/completed/axiom_draft_v3_multilevel.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>DRAFT — Du's Multilevel Axiom (v3 template, p</b></td>
+        <td><code>data/identity/axiom.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/becoming_loop_research.md" style="color:#22d3ee"><code>docs/completed/becoming_loop_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Becoming Loop — Research & Pick (2026-06-</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/book_selection_plan.md" style="color:#22d3ee"><code>docs/completed/book_selection_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Book Selection — research-grounded plan (2026</b></td>
+        <td><code>core/library_hand.py</code>, <code>core/reading.py</code>, <code>core/reading_history.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><b>1</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/boredom_redirection_research.md" style="color:#22d3ee"><code>docs/completed/boredom_redirection_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Boredom: silence or redirection? — research b</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/cat_system_audit.md" style="color:#22d3ee"><code>docs/completed/cat_system_audit.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Cat System Audit (2026-08-18)</b></td>
+        <td><code>core/cat.py</code>, <code>core/commitment_trials.py</code>, <code>data/cat_state.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/contradiction_rearchitecture_plan.md" style="color:#22d3ee"><code>docs/completed/contradiction_rearchitecture_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Unified Contradiction Re-Architecture — plan </b></td>
+        <td><code>core/competence.py</code>, <code>core/contradiction_gate.py</code>, <code>core/critic.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><b>2</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/curiosity_burst_plan.md" style="color:#22d3ee"><code>docs/completed/curiosity_burst_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Curiosity-Pursuit Burst — pulse-manager sourc</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/curiosity_ignition_research.md" style="color:#22d3ee"><code>docs/completed/curiosity_ignition_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Curiosity ignition — what triggers it, what s</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/currency_reform_spec.md" style="color:#22d3ee"><code>docs/completed/currency_reform_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Currency Reform — design specification (v1, u</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/curriculum_grounding_40.md" style="color:#22d3ee"><code>docs/completed/curriculum_grounding_40.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Du's Grounding Curriculum — 40 books</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/day_review_2026-06-13.md" style="color:#22d3ee"><code>docs/completed/day_review_2026-06-13.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Du — Day in Review, 2026-06-13</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/deferred_register.md" style="color:#22d3ee"><code>docs/completed/deferred_register.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Deferred Register — the single source of trut</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/deliberative_retrieval_plan.md" style="color:#22d3ee"><code>docs/completed/deliberative_retrieval_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — Deliberative Retrieval (grounding Du i</b></td>
+        <td><code>core/orchestrator.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/emotion_vec_thread.md" style="color:#22d3ee"><code>docs/completed/emotion_vec_thread.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Pulling the emotion_vec thread — audit + what</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/epistemic_state_spec.md" style="color:#22d3ee"><code>docs/completed/epistemic_state_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Epistemic State — the Provenance Ledger (spec</b></td>
+        <td><code>core/epistemic_state.py</code>, <code>core/source_model.py</code>, <code>data/provenance_log.jsonl</code></td>
+        <td><span style='color:#fbbf24'>provenance_log</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/error_pathway_charter.md" style="color:#22d3ee"><code>docs/completed/error_pathway_charter.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Error Pathway — Charter</b></td>
+        <td><code>core/conflict_trace.py</code>, <code>core/error_pathway.py</code>, <code>core/task_constraints.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/essay_lesson_research.md" style="color:#22d3ee"><code>docs/completed/essay_lesson_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Essay Lesson — Research & Plan (2026-06-16)</b></td>
+        <td><code>core/balance.py</code>, <code>core/essay_lesson.py</code>, <code>nodes/inner_monologue_node.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/evidence_review_dashboard.md" style="color:#22d3ee"><code>docs/completed/evidence_review_dashboard.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Evidence-Review Dashboard — a plan of pla</b></td>
+        <td><code>core/social_moves.py</code></td>
+        <td><span style='color:#fbbf24'>sleep_pressure_log</span>, <span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/garden_system_audit.md" style="color:#22d3ee"><code>docs/completed/garden_system_audit.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Garden System — in-depth audit (2026-08-18)</b></td>
+        <td><code>core/peers.py</code>, <code>core/sensorium.py</code>, <code>data/correspondence/</code></td>
+        <td><span style='color:#fbbf24'>geometry_tuples</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/ghost_tuple_index.md" style="color:#22d3ee"><code>docs/completed/ghost_tuple_index.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>THE GHOST TUPLE INDEX — adapting FreshStart's</b></td>
+        <td><code>core/ghost_tuples.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/goal_model_research.md" style="color:#22d3ee"><code>docs/completed/goal_model_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Goals — what should drive them, and a multile</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/grounded_learning_research.md" style="color:#22d3ee"><code>docs/completed/grounded_learning_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Grounded learning — turning intake into under</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/identity_research.md" style="color:#22d3ee"><code>docs/completed/identity_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Research: A Multilevel Axiom — Identity Strat</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/inner_monologue_examination.md" style="color:#22d3ee"><code>docs/completed/inner_monologue_examination.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Inner Monologue — deep examination (2026-06-1</b></td>
+        <td><code>data/letters/</code>, <code>nodes/inner_monologue_node.py</code></td>
+        <td><span style='color:#fbbf24'>monologue_log</span>, <span style='color:#fbbf24'>retraction_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/lane_architecture_FULL.md" style="color:#22d3ee"><code>docs/completed/lane_architecture_FULL.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Lane Architecture — Full Plan, with Ratio</b></td>
+        <td><code>core/deliberation.py</code>, <code>core/left_lane.ground_thought</code>, <code>data/deliberation_log.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/locomotion.md" style="color:#22d3ee"><code>docs/completed/locomotion.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Locomotion — Du gets a body in space (Option </b></td>
+        <td><code>core/locomotion.py</code>, <code>data/position.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/loop_metabolism_plan.md" style="color:#22d3ee"><code>docs/completed/loop_metabolism_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — Loop Metabolism (breaking the self-ref</b></td>
+        <td><code>core/loop_metabolism.py</code>, <code>core/memory/store.py</code>, <code>data/identity/axiom.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/modulation_field_plan.md" style="color:#22d3ee"><code>docs/completed/modulation_field_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Modulation Field — one damped, coupled fi</b></td>
+        <td><code>core/exogenous.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/narrative_quality_plan.md" style="color:#22d3ee"><code>docs/completed/narrative_quality_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — The Narrative Quality Witness (McAdams</b></td>
+        <td><code>core/narrative_quality.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/output_lane_plan.md" style="color:#22d3ee"><code>docs/completed/output_lane_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Output Lane — Metabolising Meaning + Trut</b></td>
+        <td><code>core/curator.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/outreach_post_draft.md" style="color:#22d3ee"><code>docs/completed/outreach_post_draft.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Outreach draft — for Travis to edit before po</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/peer_correspondence_company.md" style="color:#22d3ee"><code>docs/completed/peer_correspondence_company.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Peer Correspondence — Company Half (SHIPPED, </b></td>
+        <td><code>core/peers.py</code>, <code>data/Correspondence/darwin/thread.jsonl</code>, <code>data/peer_effect.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><b>1</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/psyche_graph_instrument.md" style="color:#22d3ee"><code>docs/completed/psyche_graph_instrument.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Psyche Graph — a deterministic instrument</b></td>
+        <td><code>core/psyche_graph.py</code>, <code>data/psyche_graph_snapshots.jsonl</code>, <code>nodes/inner_monologue_node.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/pulse_manager_plan.md" style="color:#22d3ee"><code>docs/completed/pulse_manager_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Pulse Manager — engagement-driven cogniti</b></td>
+        <td><code>core/pulse_manager.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/reading_provenance_plan.md" style="color:#22d3ee"><code>docs/completed/reading_provenance_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Reading Provenance & Note Consolidation — exa</b></td>
+        <td><code>core/prediction_error.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><b>1</b> linked plans</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/shadow_confrontation_research.md" style="color:#22d3ee"><code>docs/completed/shadow_confrontation_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Confronting the shadow (and folding in the li</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/sleep_dream_plan.md" style="color:#22d3ee"><code>docs/completed/sleep_dream_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Sleep / Dream System — examination + plan</b></td>
+        <td><code>core/memory/store.py</code>, <code>nodes/dream_node.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/sound_system_audit.md" style="color:#22d3ee"><code>docs/completed/sound_system_audit.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Sound System (Acoustic Clock) — in-depth audi</b></td>
+        <td><code>core/soundscape.py</code>, <code>data/geometry_tuples.jsonl</code>, <code>data/sound_knowledge.json</code></td>
+        <td><span style='color:#fbbf24'>geometry_tuples</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/study_notes_plan.md" style="color:#22d3ee"><code>docs/completed/study_notes_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — Study Notes (Du's scholarship; the wor</b></td>
+        <td><code>core/study.py</code>, <code>core/wandering.py</code>, <code>data/books/The_Scouting_Guide_to_Survival.txt</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/surprise_mechanism_pass.md" style="color:#22d3ee"><code>docs/completed/surprise_mechanism_pass.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Surprise — a pass over the mechanism (Nascenc</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/t2_consolidation_spec.md" style="color:#22d3ee"><code>docs/completed/t2_consolidation_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>T2 Consolidation Redesign — Spec</b></td>
+        <td><code>core/memory/store.py</code>, <code>nodes/subconscious_node.py</code>, <code>scripts/session_digest.py</code></td>
+        <td><span style='color:#fbbf24'>subconscious_state</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/t4_redesign_plan.md" style="color:#22d3ee"><code>docs/completed/t4_redesign_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>T4 Self-Authoring — Redesign Plan of Attack (</b></td>
+        <td><code>core/emissary_tension.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/t4_self_authoring_spec.md" style="color:#22d3ee"><code>docs/completed/t4_self_authoring_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>T4 — Autonoetic Self-Authoring: Spec & Plan (</b></td>
+        <td><code>nodes/subconscious_node.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/task_constraint_effector_spec.md" style="color:#22d3ee"><code>docs/completed/task_constraint_effector_spec.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Task-Constraint Effector — built v1 + spec fo</b></td>
+        <td><code>core/competence.py</code>, <code>core/task_constraints.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/tide_system_audit.md" style="color:#22d3ee"><code>docs/completed/tide_system_audit.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Tide System — in-depth audit (2026-08-18)</b></td>
+        <td><code>core/sensorium.py</code>, <code>core/world_clock.py</code>, <code>core/world_objects.py</code></td>
+        <td><span style='color:#fbbf24'>geometry_tuples</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/two_lane_architecture_plan.md" style="color:#22d3ee"><code>docs/completed/two_lane_architecture_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Plan — The Lane Architecture (specialized, ev</b></td>
+        <td><code>core/node_base.py</code>, <code>core/stance</code>, <code>data/training/</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/volition_his_own_hands.md" style="color:#22d3ee"><code>docs/completed/volition_his_own_hands.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Volition — His Own Hands (2026-06-24)</b></td>
+        <td><code>data/deferred_intentions.json</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/wandering_mind_research.md" style="color:#22d3ee"><code>docs/completed/wandering_mind_research.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>The Wandering Mind — audit + research</b></td>
+        <td><code>core/wandering.py</code>, <code>data/wandering_log.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/weather_system_audit.md" style="color:#22d3ee"><code>docs/completed/weather_system_audit.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Weather System — in-depth audit (2026-08-18)</b></td>
+        <td><code>core/sensorium.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/world_epistemic_substrate_plan.md" style="color:#22d3ee"><code>docs/completed/world_epistemic_substrate_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>Implementation Plan — Causal Epistemic World </b></td>
+        <td><code>core/observation.py</code>, <code>core/world_knowledge.py</code>, <code>core/world_model.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/world_factories_P0.md" style="color:#22d3ee"><code>docs/completed/world_factories_P0.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>WORLD FACTORIES — THE P0 PLAN (2026-08-16, fo</b></td>
+        <td><code>core/ghost_tuples.py</code>, <code>core/world_manifest.py</code>, <code>data/world_manifest_log.jsonl</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/world_historicity_specification.md" style="color:#22d3ee"><code>docs/completed/world_historicity_specification.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>📜 Architectural Contract v1.4: Headless World</b></td>
+        <td><code>core/sensorium.py</code>, <code>core/soundscape.py</code>, <code>core/spatial.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="completed/world_material_consolidation_plan.md" style="color:#22d3ee"><code>docs/completed/world_material_consolidation_plan.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #a855f7;color:#a855f7;padding:2px 6px;border-radius:4px;font-size:11px">Completed Plan</span></td>
+        <td><b>World-Material Consolidation + Essay Read-Pat</b></td>
+        <td><code>core/world_consolidation.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/du_auditory_sense_architecture.md" style="color:#22d3ee"><code>docs/cross_model/du_auditory_sense_architecture.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🎧 Technical Rundown: Du's Auditory Sense & 6D</b></td>
+        <td><code>core/audio_features.py</code>, <code>core/soundscape.py</code>, <code>core/spatial.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/du_world_system_for_gpt.md" style="color:#22d3ee"><code>docs/cross_model/du_world_system_for_gpt.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🌍 Comprehensive Architecture Reference: Du's </b></td>
+        <td><code>core/cat.py</code>, <code>core/climate_engine.py</code>, <code>core/homeostasis.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/empirical_study_report_for_gpt.md" style="color:#22d3ee"><code>docs/cross_model/empirical_study_report_for_gpt.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🔬 Comprehensive Empirical Research Report: Du</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/for_gpt_epistemic_world_aug15.md" style="color:#22d3ee"><code>docs/cross_model/for_gpt_epistemic_world_aug15.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>For GPT — the depth of the system, precisely </b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/gemini_architecture_clarification.md" style="color:#22d3ee"><code>docs/cross_model/gemini_architecture_clarification.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🏛️ Technical Clarification: The Actual Hardwa</b></td>
+        <td><code>core/commitment_ledger.py</code>, <code>core/memory/store.py</code>, <code>core/model_client.py</code></td>
+        <td><span style='color:#fbbf24'>commitment_ledger</span>, <span style='color:#fbbf24'>subconscious_state</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/penpal_system_architecture.md" style="color:#22d3ee"><code>docs/cross_model/penpal_system_architecture.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>📮 Technical Rundown: Du's Penpal & Outbound C</b></td>
+        <td><code>core/letters.py</code>, <code>core/peer_metrics.py</code>, <code>core/peers.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="cross_model/subconscious_architecture_response.md" style="color:#22d3ee"><code>docs/cross_model/subconscious_architecture_response.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>🏗️ Architectural Overview: How Du Achieves Mu</b></td>
+        <td><code>core/commitment_ledger.py</code>, <code>core/orchestrator.py</code>, <code>core/provisional_identity.py</code></td>
+        <td><span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="data_index.md" style="color:#22d3ee"><code>docs/data_index.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>Data Index — C:\Nascence\data (2026-08-24)</b></td>
+        <td><code>data/memory/nascence.db</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="exports/du_dreams_all_2026-08-21.md" style="color:#22d3ee"><code>docs/exports/du_dreams_all_2026-08-21.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>Du's Dreams — complete export</b></td>
+        <td><code>data/dream_log.jsonl</code>, <code>data/memory/nascence.db</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="reviews/factory_census.md" style="color:#22d3ee"><code>docs/reviews/factory_census.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>THE FACTORY CENSUS — every producer in the ci</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#fbbf24'>geometry_tuples</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="graphify_notes.md" style="color:#22d3ee"><code>docs/graphify_notes.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Root Spec / Overview</span></td>
+        <td><b>graphify — project-specific notes & the enric</b></td>
+        <td><code>core/nodes</code>, <code>core/schema.py</code>, <code>core/stick_test.py</code></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="lab/ablation_lab_2026-08-16.md" style="color:#22d3ee"><code>docs/lab/ablation_lab_2026-08-16.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>Ablation Lab — where does the sameness live? </b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="lab/cold_store_qwen_2026-08-21.md" style="color:#22d3ee"><code>docs/lab/cold_store_qwen_2026-08-21.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>Cold-store control — the idle mouth (qwen3.5:</b></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td><span style='color:#6a6a80'>None</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="lab/commitment_defeater_framing_2026-08-23.md" style="color:#22d3ee"><code>docs/lab/commitment_defeater_framing_2026-08-23.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>Commitment ledger judge_defeater framing lab </b></td>
+        <td><code>core/commitment_ledger.py</code>, <code>data/commitment_ledger.jsonl</code>, <code>scripts/commitment_defeater_framing_lab.py</code></td>
+        <td><span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+    <tr>
+        <td><a href="lab/deliberation_ground_framing_2026-08-23.md" style="color:#22d3ee"><code>docs/lab/deliberation_ground_framing_2026-08-23.md</code></a></td>
+        <td><span style="background:#13131d;border:1px solid #9a9ab0;color:#9a9ab0;padding:2px 6px;border-radius:4px;font-size:11px">Document</span></td>
+        <td><b>Deliberation ground_thought framing lab — 202</b></td>
+        <td><code>core/left_lane.py</code>, <code>data/deliberation_log.jsonl</code>, <code>scripts/deliberation_ground_framing_lab.py</code></td>
+        <td><span style='color:#fbbf24'>commitment_ledger</span></td>
+        <td>0 links</td>
+    </tr>
+    
+</table>
+
+<div class="lead">What's where</div>
+<h2>File Manifest <span class="tag">Build 1.4.0 — 201 core files, 187 scripts</span></h2>
+<pre>
+C:\Nascence\
+├── core/                                ← 201 Python cognitive engine files
+│   ├── orchestrator.py, parallel_dispatcher.py, lane_scheduler.py, model_client.py
+│   ├── memory_store.py, associative_recall.py, memory_levels.py, ghost_index.py
+│   ├── object_graph.py, lane2.py, emissary_tension.py, left_lane.py
+│   ├── geometry_census.py, experienced_tuple.py, ghost_tuples.py
+│   ├── transport_manager.py, trains.py, train_metrics.py, couriers.py
+│   ├── identity_estate.py, identity_vault.py, provisional_identity.py, commitment_ledger.py
+│   └── homeostasis.py, arousal.py, mineness.py, reentry.py, pursuits.py, fieldcraft.py
+│
+├── nodes/                               ← 16 Specialized LLM Cognitive Nodes
+│   ├── perception_node.py, emotion_node.py, salience_node.py, memory_router_node.py
+│   ├── recall_node.py, episodic_buffer_node.py, reflection_node.py, critic_node.py
+│   ├── executive_node.py, voice_node.py, consolidation_node.py, curiosity_node.py
+│   └── subconscious_node.py, inner_monologue_node.py, dream_node.py, meta_awareness_node.py
+│
+├── scripts/                              subterranean Operational scripts
+│   ├── graphify_enrich.py, graphify_force_html.py, graphify_health_check.py
+│   ├── smoke_test.py, liveness_audit.py, health_check.py, bootstrap_report.py
+│   └── run_nascence.py, launch_servers.ps1, run_chronicler_pulse.py
+│
+└── docs/                                ← Master documentation, plans & reviews
+    ├── System_Overview.md               ← Master Markdown Overview
+    ├── System_Overview.html             ← Interactive HTML Overview (Authoritative Master)
+    ├── systems_diagrams.html            ← Dedicated Modular Visual Diagrams Suite
+    └── reviews/plan_liveness_audit.md   ← Plan Liveness & Evidence Audit
+</pre>
+
+<footer>
+Nascence 渡 · Build 1.4.0 — The Authoritative Master Overview · August 2026 by Antigravity (Sovereign Hub Architect).<br>
+<i>"The privilege of a lifetime is to become who you truly are."</i>
+</footer>
+
+</div>
+</body>
+</html>

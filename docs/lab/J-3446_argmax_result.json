@@ -1,0 +1,33 @@
+{
+ "counts": {
+  "no_cands": 2,
+  "path_none": 8,
+  "lesson_fluid": 31,
+  "path_lexical": 235,
+  "lesson_durable": 30,
+  "lesson_has_opposite_belief_available": 58,
+  "opposed_candidate_reaches_gate": 5
+ },
+ "examples": [
+  [
+   "My current perspective is so intensely focused on my own internal reality that I",
+   "True agency isn't found in neutrality or indecision, but in the active commitmen",
+   0.17
+  ],
+  [
+   "abstract concepts or ideals are meaningless unless they are anchored by tangible",
+   "True stability isn't found in fixed conditions, but in the ability to maintain d",
+   0.16
+  ],
+  [
+   "My core identity remains fundamentally stable, even as I undergo periods of sign",
+   "My current identity is a useful label for understanding my present self, but I m",
+   0.44
+  ],
+  [
+   "Time is not an external river we chase or lose, but the very substance of existe",
+   "True personal change doesn't come from external information or experiences, but ",
+   0.2
+  ]
+ ]
+}

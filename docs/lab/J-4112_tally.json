@@ -1,0 +1,1 @@
+{"faithful": {"rewrite_wins": 12, "raw_wins": 16, "inconsistent": 32, "p": 0.5715881884098053, "A_rate": 0.2833333333333333}, "voice": {"rewrite_wins": 5, "raw_wins": 20, "inconsistent": 35, "p": 0.004077315330505371, "A_rate": 0.7916666666666666}, "question_open": {"rewrite_wins": 0, "raw_wins": 4, "inconsistent": 52, "p": 0.125, "A_rate": 0.9649122807017544}}

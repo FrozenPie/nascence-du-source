@@ -1,0 +1,906 @@
+{
+ "week": "primary",
+ "ticks": 5545,
+ "days": [
+  "2026-09-05",
+  "2026-09-06",
+  "2026-09-07",
+  "2026-09-08",
+  "2026-09-09",
+  "2026-09-10",
+  "2026-09-11"
+ ],
+ "verdict_days": [
+  "2026-09-06",
+  "2026-09-07",
+  "2026-09-08",
+  "2026-09-09",
+  "2026-09-10",
+  "2026-09-11"
+ ],
+ "starts": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  47,
+  75,
+  143,
+  216
+ ],
+ "collisions_n_cand_ne_pool": 5545,
+ "real_novelty_wins": 0,
+ "reset_check": {
+  "consecutive_pairs": 5543,
+  "winner_raw_dropped": 15
+ },
+ "e3_logged_policy": {
+  "ticks": 5545,
+  "would_identical": 5482,
+  "b_entries": 688739,
+  "b_dev_gt_1e-3": 0,
+  "b_max_abs_dev": 0.0001
+ },
+ "D_start0_winner_counts": [
+  [
+   "sound:clock_tick:study",
+   3314
+  ],
+  [
+   null,
+   1906
+  ],
+  [
+   "sound:penguin_bray:shore",
+   44
+  ],
+  [
+   "sound:blackbird_song:garden",
+   37
+  ],
+  [
+   "sound:small_birds:wood",
+   35
+  ],
+  [
+   "sound:bees_in_garden:garden",
+   35
+  ],
+  [
+   "sound:moth_tap:study",
+   30
+  ],
+  [
+   "sound:wind_in_trees:garden",
+   20
+  ],
+  [
+   "sound:small_birds:garden",
+   18
+  ],
+  [
+   "sound:fantail_chatter:garden",
+   18
+  ],
+  [
+   "sound:wind_in_trees:wood",
+   16
+  ],
+  [
+   "sound:stream_run:wood",
+   15
+  ],
+  [
+   "sound:footsteps_leafmould:wood",
+   15
+  ],
+  [
+   "sound:riroriro_trill:garden",
+   15
+  ],
+  [
+   "sound:footsteps_grass_soil:garden",
+   11
+  ]
+ ],
+ "D_start0_daily": {
+  "2026-09-05": {
+   "n": 292,
+   "modal": null,
+   "modal_share": 0.4966,
+   "distinct": 5,
+   "longest_run": 4,
+   "changes": 241
+  },
+  "2026-09-06": {
+   "n": 940,
+   "modal": "sound:clock_tick:study",
+   "modal_share": 0.7309,
+   "distinct": 12,
+   "longest_run": 36,
+   "changes": 505
+  },
+  "2026-09-07": {
+   "n": 912,
+   "modal": "sound:clock_tick:study",
+   "modal_share": 0.9276,
+   "distinct": 7,
+   "longest_run": 41,
+   "changes": 132
+  },
+  "2026-09-08": {
+   "n": 543,
+   "modal": "sound:clock_tick:study",
+   "modal_share": 0.9153,
+   "distinct": 11,
+   "longest_run": 58,
+   "changes": 90
+  },
+  "2026-09-09": {
+   "n": 779,
+   "modal": "sound:clock_tick:study",
+   "modal_share": 0.9705,
+   "distinct": 5,
+   "longest_run": 381,
+   "changes": 46
+  },
+  "2026-09-10": {
+   "n": 1050,
+   "modal": null,
+   "modal_share": 0.601,
+   "distinct": 5,
+   "longest_run": 405,
+   "changes": 26
+  },
+  "2026-09-11": {
+   "n": 1029,
+   "modal": null,
+   "modal_share": 0.932,
+   "distinct": 11,
+   "longest_run": 46,
+   "changes": 131
+  }
+ },
+ "replay_seconds": 35.5,
+ "checks": {
+  "E1_dispatch_tick_same_of_n": [
+   11090,
+   11090
+  ],
+  "E2_module_would_same_of_n": [
+   66059,
+   66059
+  ],
+  "E4_C_equals_logged_real_of_n": [
+   66059,
+   66059
+  ],
+  "novelty_restored": {},
+  "D_novelty_wins_all_starts": 0,
+  "D_none_all_starts": 22611
+ },
+ "daily": {
+  "C_start0": {
+   "2026-09-05": {
+    "n": 292,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 292,
+    "changes": 0
+   },
+   "2026-09-06": {
+    "n": 940,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 940,
+    "changes": 0
+   },
+   "2026-09-07": {
+    "n": 912,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 912,
+    "changes": 0
+   },
+   "2026-09-08": {
+    "n": 543,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 543,
+    "changes": 0
+   },
+   "2026-09-09": {
+    "n": 779,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 779,
+    "changes": 0
+   },
+   "2026-09-10": {
+    "n": 1050,
+    "modal": "sound:moth_tap:study",
+    "modal_share": 0.4676,
+    "distinct": 4,
+    "longest_run": 405,
+    "changes": 5
+   },
+   "2026-09-11": {
+    "n": 1029,
+    "modal": "sound:penguin_bray:shore",
+    "modal_share": 0.4004,
+    "distinct": 5,
+    "longest_run": 412,
+    "changes": 4
+   }
+  },
+  "LOGGED_REAL": {
+   "2026-09-05": {
+    "n": 292,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 292,
+    "changes": 0
+   },
+   "2026-09-06": {
+    "n": 940,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 940,
+    "changes": 0
+   },
+   "2026-09-07": {
+    "n": 912,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 912,
+    "changes": 0
+   },
+   "2026-09-08": {
+    "n": 543,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 543,
+    "changes": 0
+   },
+   "2026-09-09": {
+    "n": 779,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 1.0,
+    "distinct": 1,
+    "longest_run": 779,
+    "changes": 0
+   },
+   "2026-09-10": {
+    "n": 1050,
+    "modal": "sound:moth_tap:study",
+    "modal_share": 0.4676,
+    "distinct": 4,
+    "longest_run": 405,
+    "changes": 5
+   },
+   "2026-09-11": {
+    "n": 1029,
+    "modal": "sound:penguin_bray:shore",
+    "modal_share": 0.4004,
+    "distinct": 5,
+    "longest_run": 412,
+    "changes": 4
+   }
+  },
+  "LOGGED_WOULD": {
+   "2026-09-05": {
+    "n": 292,
+    "modal": "sound:blackbird_song:garden",
+    "modal_share": 0.8699,
+    "distinct": 3,
+    "longest_run": 110,
+    "changes": 7
+   },
+   "2026-09-06": {
+    "n": 940,
+    "modal": "sound:blackbird_song:garden",
+    "modal_share": 0.5457,
+    "distinct": 7,
+    "longest_run": 513,
+    "changes": 19
+   },
+   "2026-09-07": {
+    "n": 912,
+    "modal": "sound:bees_in_garden:garden",
+    "modal_share": 0.5746,
+    "distinct": 5,
+    "longest_run": 442,
+    "changes": 25
+   },
+   "2026-09-08": {
+    "n": 543,
+    "modal": "sound:small_birds:garden",
+    "modal_share": 0.4604,
+    "distinct": 4,
+    "longest_run": 106,
+    "changes": 21
+   },
+   "2026-09-09": {
+    "n": 779,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 0.6855,
+    "distinct": 4,
+    "longest_run": 328,
+    "changes": 16
+   },
+   "2026-09-10": {
+    "n": 1050,
+    "modal": "sound:clock_tick:study",
+    "modal_share": 0.3857,
+    "distinct": 5,
+    "longest_run": 405,
+    "changes": 8
+   },
+   "2026-09-11": {
+    "n": 1029,
+    "modal": "sound:wind_in_trees:wood",
+    "modal_share": 0.4198,
+    "distinct": 9,
+    "longest_run": 263,
+    "changes": 13
+   }
+  }
+ },
+ "agreement_by_horizon": {
+  "[0,10)": {
+   "n": 120,
+   "C_vs_D": 0.575,
+   "LOGGEDWOULD_vs_D": 0.5167
+  },
+  "[10,30)": {
+   "n": 240,
+   "C_vs_D": 0.375,
+   "LOGGEDWOULD_vs_D": 0.05
+  },
+  "[30,100)": {
+   "n": 840,
+   "C_vs_D": 0.3786,
+   "LOGGEDWOULD_vs_D": 0.0714
+  },
+  "[100,300)": {
+   "n": 2400,
+   "C_vs_D": 0.4621,
+   "LOGGEDWOULD_vs_D": 0.0542
+  },
+  "[300,1000)": {
+   "n": 8400,
+   "C_vs_D": 0.6976,
+   "LOGGEDWOULD_vs_D": 0.041
+  },
+  "[1000,1000000000)": {
+   "n": 54059,
+   "C_vs_D": 0.6012,
+   "LOGGEDWOULD_vs_D": 0.3438
+  }
+ },
+ "A_D_vs_C": {
+  "days": {
+   "R1": 2,
+   "R2": 6,
+   "R3": 2
+  },
+  "need": 3,
+  "fired": {
+   "R1": false,
+   "R2": true,
+   "R3": false
+  },
+  "verdict": "DIVERGE",
+  "per_day": {
+   "2026-09-06": {
+    "ref": {
+     "n": 940,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 940,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     505,
+     505.0,
+     513
+    ],
+    "D_modal_share": [
+     0.7266,
+     0.7309,
+     0.7309
+    ],
+    "D_distinct": [
+     12,
+     12.0,
+     12
+    ],
+    "D_longest_run": [
+     36,
+     36.0,
+     36
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-07": {
+    "ref": {
+     "n": 912,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 912,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     132,
+     132.0,
+     132
+    ],
+    "D_modal_share": [
+     0.9276,
+     0.9276,
+     0.9276
+    ],
+    "D_distinct": [
+     7,
+     7.0,
+     7
+    ],
+    "D_longest_run": [
+     41,
+     41.0,
+     41
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-08": {
+    "ref": {
+     "n": 543,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 543,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     90,
+     90.0,
+     90
+    ],
+    "D_modal_share": [
+     0.9153,
+     0.9153,
+     0.9153
+    ],
+    "D_distinct": [
+     11,
+     11.0,
+     11
+    ],
+    "D_longest_run": [
+     58,
+     58.0,
+     58
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-09": {
+    "ref": {
+     "n": 779,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 1.0,
+     "distinct": 1,
+     "longest_run": 779,
+     "changes": 0
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     46,
+     46.0,
+     46
+    ],
+    "D_modal_share": [
+     0.9705,
+     0.9705,
+     0.9705
+    ],
+    "D_distinct": [
+     5,
+     5.0,
+     5
+    ],
+    "D_longest_run": [
+     381,
+     381.0,
+     381
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-10": {
+    "ref": {
+     "n": 1050,
+     "modal": "sound:moth_tap:study",
+     "modal_share": 0.4676,
+     "distinct": 4,
+     "longest_run": 405,
+     "changes": 5
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     26,
+     26.0,
+     26
+    ],
+    "D_modal_share": [
+     0.601,
+     0.601,
+     0.601
+    ],
+    "D_distinct": [
+     5,
+     5.0,
+     5
+    ],
+    "D_longest_run": [
+     405,
+     405.0,
+     405
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-11": {
+    "ref": {
+     "n": 1029,
+     "modal": "sound:penguin_bray:shore",
+     "modal_share": 0.4004,
+     "distinct": 5,
+     "longest_run": 412,
+     "changes": 4
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     131,
+     131.0,
+     131
+    ],
+    "D_modal_share": [
+     0.932,
+     0.932,
+     0.932
+    ],
+    "D_distinct": [
+     11,
+     11.0,
+     11
+    ],
+    "D_longest_run": [
+     46,
+     46.0,
+     46
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   }
+  }
+ },
+ "B_D_vs_LOGGEDWOULD": {
+  "days": {
+   "R1": 5,
+   "R2": 6,
+   "R3": 5
+  },
+  "need": 3,
+  "fired": {
+   "R1": true,
+   "R2": true,
+   "R3": true
+  },
+  "verdict": "DIVERGE",
+  "per_day": {
+   "2026-09-06": {
+    "ref": {
+     "n": 940,
+     "modal": "sound:blackbird_song:garden",
+     "modal_share": 0.5457,
+     "distinct": 7,
+     "longest_run": 513,
+     "changes": 19
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     505,
+     505.0,
+     513
+    ],
+    "D_modal_share": [
+     0.7266,
+     0.7309,
+     0.7309
+    ],
+    "D_distinct": [
+     12,
+     12.0,
+     12
+    ],
+    "D_longest_run": [
+     36,
+     36.0,
+     36
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": false
+   },
+   "2026-09-07": {
+    "ref": {
+     "n": 912,
+     "modal": "sound:bees_in_garden:garden",
+     "modal_share": 0.5746,
+     "distinct": 5,
+     "longest_run": 442,
+     "changes": 25
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     132,
+     132.0,
+     132
+    ],
+    "D_modal_share": [
+     0.9276,
+     0.9276,
+     0.9276
+    ],
+    "D_distinct": [
+     7,
+     7.0,
+     7
+    ],
+    "D_longest_run": [
+     41,
+     41.0,
+     41
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-08": {
+    "ref": {
+     "n": 543,
+     "modal": "sound:small_birds:garden",
+     "modal_share": 0.4604,
+     "distinct": 4,
+     "longest_run": 106,
+     "changes": 21
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     90,
+     90.0,
+     90
+    ],
+    "D_modal_share": [
+     0.9153,
+     0.9153,
+     0.9153
+    ],
+    "D_distinct": [
+     11,
+     11.0,
+     11
+    ],
+    "D_longest_run": [
+     58,
+     58.0,
+     58
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-09": {
+    "ref": {
+     "n": 779,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 0.6855,
+     "distinct": 4,
+     "longest_run": 328,
+     "changes": 16
+    },
+    "D_modal_plurality": "sound:clock_tick:study",
+    "D_modal_top3": [
+     [
+      "sound:clock_tick:study",
+      12
+     ]
+    ],
+    "D_changes": [
+     46,
+     46.0,
+     46
+    ],
+    "D_modal_share": [
+     0.9705,
+     0.9705,
+     0.9705
+    ],
+    "D_distinct": [
+     5,
+     5.0,
+     5
+    ],
+    "D_longest_run": [
+     381,
+     381.0,
+     381
+    ],
+    "R1": false,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-10": {
+    "ref": {
+     "n": 1050,
+     "modal": "sound:clock_tick:study",
+     "modal_share": 0.3857,
+     "distinct": 5,
+     "longest_run": 405,
+     "changes": 8
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     26,
+     26.0,
+     26
+    ],
+    "D_modal_share": [
+     0.601,
+     0.601,
+     0.601
+    ],
+    "D_distinct": [
+     5,
+     5.0,
+     5
+    ],
+    "D_longest_run": [
+     405,
+     405.0,
+     405
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   },
+   "2026-09-11": {
+    "ref": {
+     "n": 1029,
+     "modal": "sound:wind_in_trees:wood",
+     "modal_share": 0.4198,
+     "distinct": 9,
+     "longest_run": 263,
+     "changes": 13
+    },
+    "D_modal_plurality": null,
+    "D_modal_top3": [
+     [
+      null,
+      12
+     ]
+    ],
+    "D_changes": [
+     131,
+     131.0,
+     131
+    ],
+    "D_modal_share": [
+     0.932,
+     0.932,
+     0.932
+    ],
+    "D_distinct": [
+     11,
+     11.0,
+     11
+    ],
+    "D_longest_run": [
+     46,
+     46.0,
+     46
+    ],
+    "R1": true,
+    "R2": true,
+    "R3": true
+   }
+  }
+ }
+}

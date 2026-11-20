@@ -1,0 +1,342 @@
+# The Decoupled Judge Pattern — per-subsystem audit (2026-08-29)
+
+> **Status: ✅ J-0375 + J-0376 SHIPPED (SHADOW) — 2026-08-29.** Dreams' resolution verdict now has a
+> decoupled shadow judge (`nodes/dream_node.py:_judge_resolution_shadow`, called from `synthesise()`
+> before `_bridge_final`). Active imagination's novelty gate now has one too
+> (`nodes/subconscious_node.py:_judge_active_imagination_novelty`, called from `_active_imagination()`
+> after the mechanical echo-distance floor keeps a contemplation). See §1/§2's "Built" subsections for
+> the real call sites, prompts, and shadow logs.
+>
+> **Status (audit): 🔵 AUDIT COMPLETE, ONE COMMENT FIXED, TWO JOBS SPAWNED, ONE OPEN QUESTION —
+> 2026-08-29 (J-0362, decision:D-0071).** D-0071 demoted `attention_economy_plan.md` and redirected
+> effort to the decoupled-judge pattern as the durable cross-cutting law, built bottom-up, one
+> subsystem at a time (sec 12 of that plan; `feedback_decoupled_judge.md`). This doc is that per-
+> subsystem audit for the three historical self-evaluation failures sec 11.5 names beyond T4 (already
+> fixed, 2026-08-19) and the curiosity LP (already the working counter-example): **dreams their
+> resolution, [active imagination]'s novelty, provenance's importance-from-storage.** The audit itself
+> shipped no judge code — J-0375 (below) is the first of the two spawned build jobs to actually land.
+
+```plan-state
+stage: shipped
+phase: all 3 audit-spawned judges (dream resolution J-0375, active-imagination novelty J-0376, episodic-importance read-count J-0382) built and shipped shadow-only; J-0382s wiring was silently lost for 4 weeks and restored 2026-09-26 (J-1401/F-1969)
+verified: 2026-11-14
+evidence_read: 2026-11-07
+next: Run the order-control replays (J-3694 local hubs, J-3696 Ramses/hot lane when free); capture judge inputs first (J-3695); then D-0696.
+cluster: 1
+```
+
+**Related (backfilled 2026-10-03, J-0566/F-2269):** `docs/plans/ramses_second_tier.md` — the shadow judges shipped here (dream
+resolution `nodes/dream_node.py:_judge_resolution_shadow`, active-imagination novelty
+`nodes/subconscious_node.py:_judge_active_imagination_novelty`) both call `core/judge_panel.py`'s `rule_detail()`, i.e.
+JUDGE_1 (Ramses `:11438`, mixtral), JUDGE_2 (local `:11440`) and TIEBREAK (Ramses `:11437`). That tier's layout is frozen
+(D-0101) and its recurring `:11438` outages (J-1150, D-0297) are the live capacity question; the rule here is one judge per
+subsystem, so each further decoupled judge adds panel-call load there.
+
+---
+
+## 0. The law, restated
+
+> "Almost every failure in Nascence has been self-evaluation... every subsystem must be evaluated by
+> something other than itself." — `attention_economy_plan.md` §11.5, `feedback_decoupled_judge.md`
+
+Four historical failures were named. Two are already confirmed fixed:
+
+- **T4 judging its own synthesis** — fixed. `core/left_lane.py:360-470`, `judge_lived_integration()`:
+  TWO independent model families (llama3.1:8b + qwen2.5:7b) must both agree the lived self genuinely
+  integrates both poles before SOLIDIFY. Shipped 2026-08-19 (`docs/plans/t4_watershed.md`'s keystone
+  section), backtested against all 17 real historical reverts (1/17 would solidify under the new
+  standard — a stricter, more honest gate, not a backlog-unlock).
+- **Curiosity's LP** — already the working counter-example (`core/curiosity_worth.py`), decoupled
+  from the question-generator by construction (the OMNI worth-gate, a separate mechanical/LLM judge
+  scoring interest independent of the LP estimator; line ~104's own comment: "Decoupled-judge law").
+
+This audit covers the other two, plus confirms one is now moot by a same-week retirement.
+
+---
+
+## 1. Dreams — resolution scoring (`nodes/dream_node.py`)
+
+**Partially decoupled, one real gap remains.**
+
+- The **stall/circling** call (is this scene developing or just re-rendering?) already has a
+  mechanical, non-self-report backstop: `_scene_stalled()` (`dream_node.py:572-602`) checks symbol-
+  anchor turnover (word-level Jaccard on the `symbols` field, `DREAM_SYMBOL_PERSIST=0.6`) plus a
+  narrative-embedding-cosine near-duplicate backstop (`DREAM_RESTATE_SIM=0.92`). The code's own
+  comment names this explicitly: *"The embedding stall-detector is the DECOUPLED backstop on the
+  model's self-report — it cannot claim progress while re-rendering"* (line 224). This part of dream
+  self-evaluation is fixed and has been since the 2026-06-20 morph redesign.
+- The **resolved-vs-unresolved verdict** — the thing that actually decides `_bridge_final()`'s branch
+  (light event = a completed crossing vs. shadow event = returns tomorrow, `dream_node.py:432-459`) —
+  has **no decoupled check at all**. It is set purely from the dreaming model's own self-reported
+  `unresolved_core` field on the final scene:
+  ```
+  close_reason = "resolved" if not data["unresolved_core"] else "ended-unfaced"   # lines 239, 242
+  ```
+  `unresolved_core` is generated by the same LLM call (`_gen_episode`, same model, same prompt turn)
+  that wrote the narrative it is supposedly grading. Nothing independently reads the arc's own text to
+  check whether the ending narrative actually shows a genuine meeting/reconciliation, or whether the
+  model just emitted `"unresolved_core": ""` because the schema asked it to. This is exactly the
+  historical failure named in §11.5 ("dreams their resolution... 0/49 self-declared" per
+  `feedback_decoupled_judge.md`) — and, per that same-week 0/49 finding, self-declared resolution has
+  historically never actually fired, so an unverified "resolved" claim would sail straight through today.
+
+**Fit assessment.** Either `core/judge_panel.py`'s simple single-shot family-decoupled pattern or
+`core/deliberative_judge.py`'s heavier dual-reading pattern could serve here — dream narrative is
+*exactly* the deeply metaphorical material `deliberative_judge`'s literalizer pass was built for (its
+own docstring, DUAL READING paragraph: catching a "generous thematic read" vs. what is "actually, checkably
+claimed underneath the image"). Recommend trying the **cheaper `judge_panel` single-shot pattern
+first** (bottom-up discipline, same reasoning T4 already used when `deliberative_judge` proved TOO
+strict for a metaphor-native subject there — `deliberative_judge.py` module docstring, DECISION paragraph); escalate to
+`deliberative_judge` only if a `judge_panel`-based check turns out unreliable on real dream logs.
+
+**Concrete call site.** `nodes/dream_node.py`, `DreamNode.synthesise()`, right before
+`self._bridge_final(scenes[-1])` at line 276: pass the full arc text
+(`"  …  ".join(s["narrative"] for s in scenes)`) plus the last scene's self-reported `unresolved_core`
+to a decoupled judge asking one question — does this arc's own text show genuine reconciliation, or
+only a self-report of one? Best-effort/fail-open like every other judge call site in this codebase
+(judge unavailable → fall back to the current self-report, loudly logged, never silently).
+
+**Spawned:** J-0375 (below).
+
+**Built (J-0375, 2026-08-29) — SHADOW/OBSERVE-FIRST.** Shipped exactly at the call site above:
+`DreamNode._judge_resolution_shadow(scenes, dream_id, close_reason)`, awaited right before
+`self._bridge_final(scenes[-1])`, only when `commit=True`. Uses `core/judge_panel.py`'s cheap
+two-family single-shot panel (`judge_panel.rule_detail(system, user, key="resolved", context=...)`)
+as recommended — not `core/deliberative_judge.py`'s heavier dual-reading pattern, per bottom-up build
+discipline; escalate only if the shadow log shows `judge_panel` unreliable on real dream logs. The
+judge reads the full arc narrative independently (told explicitly the self-reported `unresolved_core`
+is "NOT evidence") and answers one boolean (`resolved`), refute-biased on ambiguity.
+
+SHADOW ONLY, matching this codebase's own new-judge rollout convention (`left_lane.py`'s
+`grade_self_revision`/`grade_gist_faithfulness`: "Observe-first ... it gates nothing yet"; and
+`watershed_promote.py`: "SHADOW ONLY ... every P0→P1 flip in this project has needed shadow first") —
+every ruling (self-reported resolution, judge's independent verdict, agree/disagree, both families'
+raw votes, `how`) is appended to `data/logs/dream_resolution_shadow.jsonl`, but `close_reason` and
+`_bridge_final`'s light-vs-shadow branch are untouched. Fail-open: judge unavailable → the self-report
+keeps driving `_bridge_final` exactly as before (shadow changes nothing either way), logged loudly via
+`logger.warning`/`logger.info`, never silently swallowed — verified by reading the added code path
+(`nodes/dream_node.py`, `_judge_resolution_shadow`, wrapped in try/except at both the call site and
+inside the method itself) and a clean `python -c "import nodes.dream_node"` (no import-time errors).
+
+**Promotion gate (not yet met, not attempted here).** Same bar every prior shadow judge in this
+codebase cleared before going live: enough real dream nights need to accrue in
+`data/logs/dream_resolution_shadow.jsonl` to ask whether the judge's verdict actually diverges from
+(and is more trustworthy than) the self-report, the way `/plan-shadow-read` already asks of other
+shadow logs. Zero rows exist yet as of this build — the log file does not get created until the next
+real dream night calls `synthesise(commit=True)`. Do not promote to gating on inferred reliability;
+wait for real accrued shadow data.
+
+---
+
+## 2. Active Imagination — novelty self-scoring (`nodes/subconscious_node.py` / `core/loop_metabolism.py`)
+
+**Still genuinely self-referential; live code, unrelated to the plan's retirement.**
+
+`docs/archive/active_imagination_plan.md` was retired today (**D-0081, J-0357, 2026-08-28**) — its
+figure-continuity centerpiece was already retracted in its own v3, and its recommended next step (the
+attention-economy primitive) was itself demoted the same day via D-0071. **That retirement does not
+touch the mechanism this audit is about.** The specific historical failure named in §11.5 — "AI
+[Active Imagination] judged its own novelty (the echo guard, self-referential → 100% self-
+suppression)" — lives in a small, separate, still-live piece of `subconscious_node.py`'s T1.5 loop,
+untouched by the figure/persistent-imagination design question the retired plan was actually about:
+
+```python
+# nodes/subconscious_node.py:1264-1276, inside _active_imagination()
+from core import loop_metabolism as _lm
+_ai_vec = _embed(content)
+if _ai_vec is not None:
+    _buf = [...]                                    # ai_echo_buffer — active_imagination's OWN past ~40 outputs
+    if _lm.is_echo(_ai_vec, _buf):                   # cosine-distance < 0.15 to its own history → skip write
+        ...
+        return
+    _imp = _lm.ai_earned_importance(_ai_vec, _buf)   # importance EARNED by novelty vs. its own history
+```
+
+`core/loop_metabolism.is_echo()`/`ai_earned_importance()` (`core/loop_metabolism.py:46-68`) are
+mechanical (cosine distance, not an LLM self-report) — an improvement over the pre-2026-06-14 flat
+0.8 importance the module's own docstring describes fixing. But the *judge* here is still the
+generator's own output history: nothing external evaluates whether a contemplation is genuinely
+engaged material versus merely dissimilar-enough-to-clear-the-floor. This is the precise shape of the
+§11.5 bug — self-referential, not self-report, but still ungrounded by anything outside the stream
+that produced it — and the retired plan's own §10.4 names the guard's structural weakness directly:
+*"the echo guard is SECONDARY. It only became necessary because figure continuity never existed"* —
+i.e. the plan's diagnosis was that this specific gate is a real but secondary problem, independent of
+the figure-continuity centerpiece that got retired.
+
+**Fit assessment.** `deliberative_judge.py` is the wrong size here — this fires potentially every
+cycle a trigger exists (T1.5, gated only by `AI_MIN_GAP_SECS`), not a rare high-stakes commit; a
+dual-reading + cross-rebuttal call per contemplation would be cost-disproportionate. `judge_panel.py`'s
+lightweight single-shot pattern is the right scale, used as an **additional observe-first signal
+alongside** (not a replacement for) the existing mechanical echo-distance floor — matching this
+codebase's own fail-open, additive-not-replacing convention everywhere else a judge was added.
+
+**Caution, not a blocker.** Because the parent plan diagnosing this exact bug was retired the same
+week on "don't build the grand thing" grounds, the follow-up job below is scoped deliberately small
+(one additive judge call, no touching the mechanical floor, no figure/continuity work) — in keeping
+with D-0071/D-0081's shared build discipline, not in tension with it.
+
+**Spawned:** J-0376 (below).
+
+**BUILT 2026-08-29 (J-0376).** `nodes/subconscious_node.py`'s `_active_imagination()` now calls a new
+`self._judge_active_imagination_novelty(seed, kind, content, _imp)` (added right after the mechanical
+`_imp = _lm.ai_earned_importance(...)` line, ~1273-1288 as of this edit) for every contemplation the
+echo-distance floor already KEPT (an echoed/skipped one returns before reaching it, unchanged). That
+method calls `core/judge_panel.rule_detail()` — the same cheap two-family single-shot pattern named
+above, asking one independent boolean question ("genuine" engagement vs. generic/stale restatement) —
+and appends the verdict (`v1`/`v2`/`verdict`/`how`) alongside the mechanical `mechanical_importance` to
+a new shadow log, `data/active_imagination_judge_shadow.jsonl`, via `core/shadow_log.append()` (the
+same shared plumbing `journal_grounding_shadow.py` uses). **Purely additive**: `_imp` is never touched,
+the echo/skip decision is never touched, the write to episodic memory is never gated or delayed on the
+judge's answer, and the whole call is wrapped fail-open (`except Exception: logger.debug(...)`) so a
+judge outage cannot break active_imagination's own write path — matching this codebase's existing
+judge-call-site convention exactly. A new module-level `active_imagination_judge_status()` (end of
+`nodes/subconscious_node.py`) reads the shadow log back for a future pulse wire-in (divergence rate
+between the mechanical floor and the independent judge on the KEPT set) — **not yet wired into
+`scripts/du_pulse.py`**, deliberately out of this job's small scope; the log will simply accrue rows in
+shadow until a future pass reads it, the same "observe first, decide from real data later" discipline
+`journal_grounding_shadow.py`/D-0006 already established. Verified: `python -c "import
+nodes.subconscious_node"` imports clean, `active_imagination_judge_status()` returns `{"graded": 0}`
+fail-open on the not-yet-populated log (no live traffic has hit the call site since this edit).
+No behavior changed for the existing mechanical gate — this is a new, silent, additional read.
+
+---
+
+## 3. Provenance — importance-from-storage (`core/memory/store.py`)
+
+**Real gap confirmed, but `judge_panel`/`deliberative_judge` are the wrong tool — flagged as an open
+question, not spawned as a build job.**
+
+The candidate mechanism (`core/memory/store.py`):
+
+- `replay_strengthen()` (lines 2071-2107): each sleep, selects up to 8 fragments per origin-stratum
+  ranked by `importance - 0.08 * replay_count` (a partial novelty discount, added 2026-06-11 "the
+  critic's catch" against pure preferential attachment), then **raises their `importance`** by ×1.08
+  (capped 0.98) and increments `replay_count`.
+- `downscale_episodic()` (lines 2110-2144): every sleep, shrinks the day's `importance` values toward
+  a low center (0.1) — except fragments `replay_strengthen` just boosted barely move, so **what
+  survived replay is structurally protected from the very decay pass that follows it**.
+- `prune_episodic()` (lines 1384-1444): demotes-to-cold in `replay_count ASC, importance ASC,
+  timestamp ASC` order — so low `importance`/`replay_count` is exactly what gets pruned first.
+
+The closed loop: a fragment's own `importance`/`replay_count` columns (state produced by *prior*
+storage decisions) are the primary input to *future* storage decisions (what gets replayed, what
+survives downscale, what gets pruned) — persistence begets more persistence. This is the literal
+shape `feedback_decoupled_judge.md` names: *"Provenance inferred importance FROM STORAGE (survival
+graded itself = persistence-as-value)."* The 2026-06-11 novelty-bias discount is a real, partial
+mitigation (it is not pure rich-get-richer), but the discount term is still computed from the store's
+own `replay_count` column — no signal from outside the store (e.g. whether a fragment was ever
+actually read downstream by T4/chapters/a judge, or whether it correlates with reduced
+contradiction-recurrence the way T4's own ΔF check does) grounds the verdict.
+
+**Why this doesn't map onto `judge_panel`/`deliberative_judge`.** Both existing judges are single-shot
+(or dual-reading) **LLM verdicts on one discrete piece of evidence** — a candidate self-text, a
+resolution claim, a contemplation. `replay_strengthen`/`downscale_episodic` are **bulk, per-sleep,
+whole-database numeric operations** over potentially thousands of episodic rows. Calling an LLM judge
+per-fragment, per-sleep, is both cost-disproportionate and the wrong shape of fix — the gap here isn't
+"missing an LLM opinion," it's "missing any signal *external to the store's own bookkeeping*." The
+right fix, if any, looks more like curiosity's own counter-example (a **mechanical**, non-self-referential
+external signal — e.g. downstream-read count from `memory_edges`, or a T4/chapter-citation flag) than
+like a `deliberative_judge` call site.
+
+**Not spawned as build work [SUPERSEDED — see Built below].** This needed a founder-level call on
+approach before it was "ready-to-execute" — opened as `/decide D-0084` instead of a job, consistent
+with this project's own "a question only the founder can rule on" convention rather than guessing at
+scope. D-0084 ruled: ground episodic importance in downstream-read count via `memory_edges`, and
+J-0382 built it (below).
+
+**BUILT 2026-08-29 (J-0382) — SHADOW/OBSERVE-FIRST.** D-0084's answer, `memory_edges.
+downstream_read_counts()` (new, `core/memory_edges.py`, appended right after `co_recall_status()`):
+counts, per fragment, how many times it appears in the M1 co-recall ledger's `ids` field within a
+time window. The M1 ledger (`log_co_recall`, same module) turned out to ALREADY be the external
+traversal signal this needed — it is written from five real live call sites (`nodes/
+inner_monologue_node.py`'s main train step via `associative_recall.last_block_ids()` — what was
+actually shown to a live thought — plus `nodes/dream_node.py`, `core/essay_lesson.py`, `core/
+study_note.py`, `core/wandering.py`), so no new traversal instrumentation had to be built; a
+mechanical read-out over data already accruing was enough. `core/memory/store.py` gained a sibling
+function next to `replay_strengthen`/`downscale_episodic`, `read_count_importance_shadow()`: for
+every fragment with >=1 downstream read, computes a bounded additive bonus
+(`min(READ_BONUS_CAP=0.25, READ_BONUS_SCALE=0.05 * log1p(read_count))`) and appends one row
+(`{fragment_id, read_count, importance, proposed_bonus, proposed_importance}`) to `data/
+read_count_importance_shadow.jsonl` via `shadow_log.append()` — the same plumbing J-0375/J-0376
+used. **`memory_fragments.importance` is never written by this function** — purely additive/
+observational, matching the briefing's "do not replace the existing replay-based mechanism
+outright" instruction and this codebase's shadow-first new-signal convention. Wired into the real
+live sleep cadence: `nodes/inner_monologue_node.py`'s `_enter_sleep()`, called right after the
+existing `downscale_episodic()` line, wrapped fail-open (a shadow failure must never block sleep).
+`replay_strengthen`/`downscale_episodic` themselves are byte-for-byte unchanged.
+
+Verified against REAL live data (not synthetic): `memory_edges.downstream_read_counts(days=30)`
+returns 6,397 distinct fragments with a nonzero downstream-read count, min/max/mean = 1/209/3.95 —
+a real, long-tailed, non-trivial distribution, not a degenerate all-zeros or all-equal result.
+`read_count_importance_shadow(days=14)` ran against the live DB and logged 5,617 real rows to
+`data/read_count_importance_shadow.jsonl`; median read_count=1, p90=7, and only 8/5,617 rows
+(0.14%) saturate the bonus cap — the cap is a rare backstop, not the common case. All three edited
+modules (`core/memory_edges.py`, `core/memory/store.py`, `nodes/inner_monologue_node.py`) import
+clean. UDMS's static-AST check on `core/memory_edges.py` (`udms.py check --repo C:/Nascence`) came
+back LOW RISK / PURE_SCALAR_TWEAK (96.5% confidence) and confirmed the real dependents to check
+before editing (`core/associative_recall.py`, `core/memory/store.py`, several `nodes/*.py`) — all
+consistent with an additive, non-breaking change.
+
+**Promotion gate (not yet met, not attempted here).** Same bar every prior shadow judge in this
+codebase cleared before going live: enough real sleep cycles need to accrue in `data/
+read_count_importance_shadow.jsonl` to ask whether grounding importance in downstream-read count
+would meaningfully reorder what survives replay/downscale/prune versus the current self-referential
+loop — the actual founder-facing question the accrued shadow data will answer. Do not promote to
+writing `importance` on inferred reliability; wait for real accrued data, the same discipline J-0375/
+J-0376 stated for their own shadow logs.
+
+---
+
+## 4. Housekeeping done in this pass
+
+- `core/judge_panel.py`'s header comment (line 12) claiming *"left_lane's T4 solidify judge stays
+  single-family for now"* was stale as of 2026-08-19 (T4's own two-judge fix shipped that day,
+  independently of this module) — corrected in place, same session.
+
+## 5. Follow-up spawned
+
+- **J-0375** — build: add a decoupled judge to dream resolution scoring (§1 above). **DONE, shadow,
+  2026-08-29** — see §1's "Built" subsection.
+- **J-0376** — build: add an observe-first decoupled judge signal to active-imagination's novelty gate
+  (§2 above). **DONE, shadow, 2026-08-29** — see §2's "Built" subsection.
+- **D-0084** (opened, then ruled) — what external, non-self-referential signal (if any) should ground
+  episodic `importance`, supplementing the current replay-begets-replay loop (§3 above)? Ruled:
+  downstream-read count via `memory_edges`. **J-0382 — DONE, shadow, 2026-08-29** — see §3's "Built"
+  subsection.
+
+---
+
+## Current State — verified 2026-11-14
+- **2026-11-14** (F-4673): J-3995 read: kappa by era shows no gain in the current seating (genuine/metaphor saturated, coherent 0.04, cuts 0.02 opposite bias, held fell 0.63 to 0.15). Consumers mapped (F-4674). Labelled reference set blocked until judge_inputs_log accrues rows; J-4001 spawned, gated.
+
+- **2026-11-14**: J-3802 built D-0696 order-counterbalance SHADOW arm in core/judge_panel.py (JUDGE_ORDER_SHADOW_ON default False; extra JUDGE_2 call with reversed option order, logged as v2_rev, no verdict change; restart-gated, branch jobrun/w12_decoupled_judge_pattern commit 716fa46b). Promotion needs separate ruling after J-3694/J-3696.
+- **2026-11-07** (F-4344): UNREAD INSTRUMENT (J-3469, F-4344): nodes/subconscious_node.py:3925 active_imagination_judge_status has no caller. Live shadow log 2937 rows, 2607 judged, 1 not genuine (0.04 percent). Wire the reader as the last step of J-3128 (D-0537), not before: that job changes the log shape.
+
+- **2026-11-07** (F-4311): J-3410 (2026-11-07): swept all shipped prompts for option-order hazards (docs/lab/J-3410_prompt_option_order_sweep.md). Every two-option judge prompt lists true first and both panel families receive the identical system text, so an order effect would be common-mode; order has never been controlled; live per-key skew is large (cuts 14 vs 88 percent true across the two judges) but skew is not proven order. Replay ranking in the report section 6; D-0696 asks whether to counterbalance.
+- **2026-10-04** (F-2424): J-1754: the remaining direct readers of the co-recall ledger now skip shadow would-have-shown rows (spring backfill replay, co-evocation test, HUD co_recall card); two readers were already safe and one reads a key no row carries (F-2425, J-1800); commit f1106ed on the job-run worktree branch, HUD card takes effect at the next HUD restart
+
+- **2026-10-03** (F-2389): J-1738 landed (branch commit 5379b79): memory_edges downstream_read_counts and co_recall_status now skip co-recall ledger rows whose source ends _shadow (D-0289 monologue_shadow, D-0292 divergent_shadow), and log_co_recall still writes those rows for the J-1512 and D-0292 defeater reads but no longer ticks opponent_process or spring_ledger for them. On the real ledger 361 phantom-only fragments drop out of the 14-day read counts (9823 to 9462). The 5315 read_count_importance_shadow rows stamped since 2026-09-28 20:33 keep phantom reads and are left as is: the J-0382 promotion read must use only rows written after Du restarts onto this fix, or recompute counts from the ledger with since_ts, which now excludes the shadow rows. Not live until Du restarts.
+- **2026-10-03** (F-2372): Related (backfilled 2026-10-03, J-1723, F-2373): `memory_knowledge.md` D-0289 turned ambient idle recall off (core/associative_recall.py IDLE_AMBIENT_RECALL = False; owner doc `memory_as_a_service.md` section 2) and now logs the fragments that WOULD have been shown to the same co-recall ledger as source=monologue_shadow rows (1,544 so far, 2026-09-28 -> 2026-10-01). memory_edges.downstream_read_counts(), the J-0382/D-0084 read-count signal, counts every ledger row's ids with no source filter, so those phantom reads inflate data/read_count_importance_shadow.jsonl (5,315 of its rows were written after 2026-09-28 20:33). Read that log's promotion gate only after downstream_read_counts skips *_shadow rows, or recompute the counts from the ledger excluding them.
+
+### What we have
+- All three audit-spawned judges built and shipped, shadow-only: dream resolution (J-0375,
+  `nodes/dream_node.py:_judge_resolution_shadow`), active-imagination novelty (J-0376,
+  `nodes/subconscious_node.py:_judge_active_imagination_novelty`), and episodic-importance
+  read-count (J-0382, D-0084's ruling, `core/memory_edges.py`/`core/memory/store.py`).
+- J-0382's wiring was silently lost for 4 weeks (removed by a stray same-session revert, commit
+  `c95b205`) and was found + restored 2026-09-26 (J-1401, F-1967/F-1969) — its shadow log's 5,617
+  rows are all stamped from the one 2026-08-29 verification run, nothing since.
+- T4 (fixed 2026-08-19) and curiosity's LP (`curiosity_worth.py`) remain the two already-working
+  decoupled-judge examples, re-confirmed not re-built.
+
+### What we need
+J-0375/J-0376's shadow logs still have zero real rows (they only populate on a real dream night or
+a live T1.5 active-imagination cycle past the echo floor); J-0382's restored signal needs Du's next
+restart before new rows resume.
+
+### What we're doing next
+Wait for Du's next restart, then read all three shadow logs against their promotion gates once real
+data has accrued — none of the three is live/gating yet.
+
+ROADMAP: see `docs/ROADMAP.md`'s decoupled-judge cluster entry (added alongside this doc).
+Memory: `project_nascence_decoupled_judge_pattern.md`.

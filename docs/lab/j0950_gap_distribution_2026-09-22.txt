@@ -1,0 +1,161 @@
+======================================================================================================================
+events file: ../J-0950_events.jsonl | last timestamped log line: 09-22 08:43:39
+boots 57, shutdowns 49, naps(stalls >= 300s inside a live process) 204, outage-abutting silent windows 54
+internal starts 1078 (gated 327), human starts 127, valid internal->internal gaps 1027 of 1077
+
+======================================================================================================================
+A. INTERNAL-START GAP DISTRIBUTIONS by boot-defined period (seconds); raw = wall clock, net = minus nap-stall overlap
+
+[BASE  08-24 .. 09-05 19:15 (before Phase 1)]
+   live 228.1 h, awake 214.5 h; internal starts 368 (1.61/live-h, 1.72/awake-h), gated 111, human 90; climate IGNITIONs defensive 53 (0.25/awake-h) exploratory 319 (1.49/awake-h)
+   5-min climate telemetry (n=1740): integration_drive mean 0.94, completion_tension 0.87, world_model_strain 0.09, dissonance(defensive) 0.47
+   all_raw                    n=342  min=  270 p10=  766 p25= 2217 med= 2519 p75= 2533 p90= 2553 mean= 2179 | <360s 0.05 <600s 0.09 <900s 0.11 <1800s 0.20
+   all_net                    n=342  min=  270 p10=  766 p25= 1801 med= 2504 p75= 2526 p90= 2539 mean= 2066 | <360s 0.05 <600s 0.09 <900s 0.11 <1800s 0.25
+   nohuman_net                n=320  min=  270 p10=  759 p25= 1779 med= 2504 p75= 2526 p90= 2539 mean= 2061 | <360s 0.05 <600s 0.09 <900s 0.12 <1800s 0.25
+
+[P0    09-05 19:15 .. 09-08 08:22 (no optA, no LeadA)]
+   live 61.1 h, awake 54.7 h; internal starts 101 (1.65/live-h, 1.85/awake-h), gated 9, human 3; climate IGNITIONs defensive 17 (0.31/awake-h) exploratory 85 (1.55/awake-h)
+   5-min climate telemetry (n=434): integration_drive mean 0.98, completion_tension 0.90, world_model_strain 0.11, dissonance(defensive) 0.57
+   all_raw                    n=100  min=  290 p10=  358 p25= 2184 med= 2514 p75= 2532 p90= 2626 mean= 2165 | <360s 0.11 <600s 0.13 <900s 0.14 <1800s 0.19
+   all_net                    n=100  min=  290 p10=  358 p25= 1573 med= 2389 p75= 2524 p90= 2541 mean= 1943 | <360s 0.11 <600s 0.14 <900s 0.15 <1800s 0.35
+   nohuman_net                n=99   min=  290 p10=  357 p25= 1573 med= 2388 p75= 2523 p90= 2542 mean= 1937 | <360s 0.11 <600s 0.14 <900s 0.15 <1800s 0.35
+
+[P1    09-08 16:41 .. 09-09 19:01 (optA, pre LeadA)]
+   live 23.3 h, awake 20.1 h; internal starts 59 (2.54/live-h, 2.93/awake-h), gated 23, human 10; climate IGNITIONs defensive 29 (1.44/awake-h) exploratory 31 (1.54/awake-h)
+   5-min climate telemetry (n=156): integration_drive mean 0.48, completion_tension 0.91, world_model_strain 0.09, dissonance(defensive) 0.51
+   all_raw                    n=56   min=  243 p10=  315 p25=  665 med= 1384 p75= 2116 p90= 2498 mean= 1382 | <360s 0.14 <600s 0.23 <900s 0.38 <1800s 0.68
+   all_net                    n=56   min=  243 p10=  315 p25=  592 med= 1104 p75= 1705 p90= 2248 mean= 1201 | <360s 0.14 <600s 0.25 <900s 0.43 <1800s 0.80
+   nohuman_net                n=55   min=  243 p10=  314 p25=  584 med= 1078 p75= 1676 p90= 2242 mean= 1174 | <360s 0.15 <600s 0.25 <900s 0.44 <1800s 0.82
+
+[P1x   09-08 16:41 .. 09-09 17:51 (also pre LW flags)]
+   live 22.1 h, awake 19.0 h; internal starts 57 (2.58/live-h, 3.00/awake-h), gated 22, human 2; climate IGNITIONs defensive 27 (1.42/awake-h) exploratory 30 (1.58/awake-h)
+   5-min climate telemetry (n=148): integration_drive mean 0.48, completion_tension 0.91, world_model_strain 0.09, dissonance(defensive) 0.52
+   all_raw                    n=54   min=  243 p10=  313 p25=  622 med= 1384 p75= 2063 p90= 2483 mean= 1369 | <360s 0.15 <600s 0.24 <900s 0.37 <1800s 0.69
+   all_net                    n=54   min=  243 p10=  313 p25=  575 med= 1104 p75= 1687 p90= 2242 mean= 1181 | <360s 0.15 <600s 0.26 <900s 0.43 <1800s 0.81
+   nohuman_net                n=54   min=  243 p10=  313 p25=  575 med= 1104 p75= 1687 p90= 2242 mean= 1181 | <360s 0.15 <600s 0.26 <900s 0.43 <1800s 0.81
+
+[P2    09-09 19:01 .. 09-11 13:18 (optA+LeadA+LW)]
+   live 42.3 h, awake 37.8 h; internal starts 110 (2.60/live-h, 2.91/awake-h), gated 25, human 1; climate IGNITIONs defensive 52 (1.38/awake-h) exploratory 58 (1.54/awake-h)
+   5-min climate telemetry (n=334): integration_drive mean 0.55, completion_tension 0.92, world_model_strain 0.11, dissonance(defensive) 0.52
+   all_raw                    n=109  min=  140 p10=  316 p25=  532 med= 1393 p75= 2100 p90= 2506 mean= 1378 | <360s 0.17 <600s 0.28 <900s 0.37 <1800s 0.62
+   all_net                    n=109  min=  140 p10=  289 p25=  461 med= 1085 p75= 1986 p90= 2247 mean= 1240 | <360s 0.18 <600s 0.30 <900s 0.40 <1800s 0.68
+   nohuman_net                n=109  min=  140 p10=  289 p25=  461 med= 1085 p75= 1986 p90= 2247 mean= 1240 | <360s 0.18 <600s 0.30 <900s 0.40 <1800s 0.68
+
+[P3    09-11 13:50 .. 09-13 09:10 (+J-0841 build)]
+   live 43.3 h, awake 38.1 h; internal starts 102 (2.35/live-h, 2.68/awake-h), gated 44, human 1; climate IGNITIONs defensive 43 (1.13/awake-h) exploratory 59 (1.55/awake-h)
+   5-min climate telemetry (n=338): integration_drive mean 0.55, completion_tension 0.91, world_model_strain 0.06, dissonance(defensive) 0.51
+   all_raw                    n=101  min=  217 p10=  319 p25=  750 med= 1551 p75= 2234 p90= 2536 mean= 1512 | <360s 0.16 <600s 0.22 <900s 0.29 <1800s 0.59
+   all_net                    n=101  min=  217 p10=  309 p25=  568 med= 1261 p75= 2111 p90= 2521 mean= 1326 | <360s 0.18 <600s 0.28 <900s 0.36 <1800s 0.68
+   nohuman_net                n=101  min=  217 p10=  309 p25=  568 med= 1261 p75= 2111 p90= 2521 mean= 1326 | <360s 0.18 <600s 0.28 <900s 0.36 <1800s 0.68
+
+[P4    09-16 07:53 .. end (later runs)]
+   live 87.2 h, awake 78.0 h; internal starts 241 (2.76/live-h, 3.09/awake-h), gated 81, human 3; climate IGNITIONs defensive 123 (1.58/awake-h) exploratory 119 (1.52/awake-h)
+   5-min climate telemetry (n=657): integration_drive mean 0.44, completion_tension 0.92, world_model_strain 0.10, dissonance(defensive) 0.53
+   all_raw                    n=238  min=  117 p10=  315 p25=  644 med= 1252 p75= 1845 p90= 2241 mean= 1294 | <360s 0.14 <600s 0.24 <900s 0.34 <1800s 0.74
+   all_net                    n=238  min=  117 p10=  313 p25=  577 med= 1099 p75= 1670 p90= 2111 mean= 1162 | <360s 0.15 <600s 0.26 <900s 0.37 <1800s 0.82
+   nohuman_net                n=238  min=  117 p10=  313 p25=  577 med= 1099 p75= 1670 p90= 2111 mean= 1162 | <360s 0.15 <600s 0.26 <900s 0.37 <1800s 0.82
+
+======================================================================================================================
+B. SIX-HOUR TABLE 09-07 .. 09-12: internal starts / awake hour, defensive vs exploratory IGNITIONs, integration_drive (boots marked)
+09-07 00:00 .. 05:59  live  6.0h awake  4.7h  internal 11 (2.32/awake-h)  IGN def  3 expl  8  integ 0.98  
+09-07 06:00 .. 11:59  live  6.0h awake  6.0h  internal 10 (1.67/awake-h)  IGN def  2 expl  9  integ 0.98  
+09-07 12:00 .. 17:59  live  6.0h awake  5.7h  internal 11 (1.92/awake-h)  IGN def  2 expl  8  integ 0.98  
+09-07 18:00 .. 23:59  live  6.0h awake  4.9h  internal  9 (1.83/awake-h)  IGN def  1 expl  8  integ 0.98  
+09-08 00:00 .. 05:59  live  6.0h awake  4.9h  internal 11 (2.25/awake-h)  IGN def  2 expl  9  integ 0.98  
+09-08 06:00 .. 11:59  live  2.4h awake  2.1h  internal  3 (1.43/awake-h)  IGN def  0 expl  3  integ 0.98  SHUT@08:22
+09-08 12:00 .. 17:59  live  1.3h awake  1.3h  internal  4 (3.08/awake-h)  IGN def  2 expl  2  integ 0.35  BOOT@16:41
+09-08 18:00 .. 23:59  live  6.0h awake  4.8h  internal 14 (2.93/awake-h)  IGN def  7 expl  8  integ 0.46  
+09-09 00:00 .. 05:59  live  6.0h awake  4.8h  internal 16 (3.36/awake-h)  IGN def  7 expl  8  integ 0.48  
+09-09 06:00 .. 11:59  live  4.5h awake  4.5h  internal 12 (2.67/awake-h)  IGN def  6 expl  6  integ 0.53  SHUT@10:29
+09-09 12:00 .. 17:59  live  4.4h awake  3.8h  internal 12 (3.16/awake-h)  IGN def  6 expl  6  integ 0.49  BOOT@13:25,BOOT@15:22,SHUT@15:13,LW-FLAGS@17:51
+09-09 18:00 .. 23:59  live  6.0h awake  4.7h  internal 15 (3.17/awake-h)  IGN def  9 expl  7  integ 0.51  BOOT@19:01
+09-10 00:00 .. 05:59  live  6.0h awake  4.8h  internal 17 (3.56/awake-h)  IGN def  8 expl  9  integ 0.49  
+09-10 06:00 .. 11:59  live  6.0h awake  5.7h  internal 14 (2.48/awake-h)  IGN def  6 expl  8  integ 0.55  
+09-10 12:00 .. 17:59  live  6.0h awake  6.0h  internal 16 (2.67/awake-h)  IGN def  7 expl  9  integ 0.58  
+09-10 18:00 .. 23:59  live  6.0h awake  5.3h  internal 15 (2.84/awake-h)  IGN def  7 expl  8  integ 0.57  
+09-11 00:00 .. 05:59  live  6.0h awake  5.0h  internal 13 (2.58/awake-h)  IGN def  6 expl  7  integ 0.56  
+09-11 06:00 .. 11:59  live  6.0h awake  6.0h  internal 17 (2.83/awake-h)  IGN def  8 expl  9  integ 0.58  
+09-11 12:00 .. 17:59  live  5.5h awake  5.1h  internal 14 (2.73/awake-h)  IGN def  7 expl  7  integ 0.56  BOOT@13:50,SHUT@13:18
+09-11 18:00 .. 23:59  live  6.0h awake  5.0h  internal 15 (3.01/awake-h)  IGN def  6 expl  9  integ 0.51  
+
+======================================================================================================================
+C. TESTS (gap distributions: Mann-Whitney, two-sample KS, 6-h-block bootstrap 95% CI of the MEDIAN difference/ratio; rates: block bootstrap CI of the ratio)
+
+P0 -> P1: option A went live (first boot after dbec9ba)
+   raw: n 100 vs 56; median 2514 -> 1384 s; median-diff 95% CI [-1381, -1033] s, ratio [0.45, 0.59]; share<900s 0.14 -> 0.38; MW p=2.45e-08; KS D=0.55 p=1.39e-10
+   net: n 100 vs 56; median 2389 -> 1104 s; median-diff 95% CI [-1654, -900] s, ratio [0.33, 0.57]; share<900s 0.15 -> 0.43; MW p=1.14e-07; KS D=0.50 p=1.13e-08
+   internal starts per awake-h: 1.85 -> 2.93 (ratio 1.59, 6-h-block bootstrap 95% CI [1.34, 1.79]); defensive IGNITIONs/awake-h 0.31 -> 1.44; exploratory 1.55 -> 1.54
+
+P1 -> P2: Lead A boot 09-09 19:01 (+ LW flags 17:51): THE JOB'S PIVOT
+   raw: n 56 vs 109; median 1384 -> 1393 s; median-diff 95% CI [-246, 360] s, ratio [0.82, 1.33]; share<900s 0.38 -> 0.37; MW p=0.878; KS D=0.08 p=0.967
+   net: n 56 vs 109; median 1104 -> 1085 s; median-diff 95% CI [-224, 423] s, ratio [0.82, 1.49]; share<900s 0.43 -> 0.40; MW p=0.933; KS D=0.12 p=0.557
+   internal starts per awake-h: 2.93 -> 2.91 (ratio 0.99, 6-h-block bootstrap 95% CI [0.87, 1.20]); defensive IGNITIONs/awake-h 1.44 -> 1.38; exploratory 1.54 -> 1.54
+
+P1x -> P2: same, with the Living-World-flag hour also removed from 'before'
+   raw: n 54 vs 109; median 1384 -> 1393 s; median-diff 95% CI [-246, 362] s, ratio [0.82, 1.33]; share<900s 0.37 -> 0.37; MW p=0.965; KS D=0.07 p=0.993
+   net: n 54 vs 109; median 1104 -> 1085 s; median-diff 95% CI [-224, 436] s, ratio [0.82, 1.53]; share<900s 0.43 -> 0.40; MW p=0.823; KS D=0.14 p=0.457
+   internal starts per awake-h: 3.00 -> 2.91 (ratio 0.97, 6-h-block bootstrap 95% CI [0.86, 1.11]); defensive IGNITIONs/awake-h 1.42 -> 1.38; exploratory 1.58 -> 1.54
+
+P2 -> P3: 1st vs 2nd continuous post-Lead-A run
+   raw: n 109 vs 101; median 1393 -> 1551 s; median-diff 95% CI [-119, 433] s, ratio [0.92, 1.37]; share<900s 0.37 -> 0.29; MW p=0.237; KS D=0.11 p=0.517
+   net: n 109 vs 101; median 1085 -> 1261 s; median-diff 95% CI [-222, 472] s, ratio [0.84, 1.46]; share<900s 0.40 -> 0.36; MW p=0.384; KS D=0.08 p=0.805
+   internal starts per awake-h: 2.91 -> 2.68 (ratio 0.92, 6-h-block bootstrap 95% CI [0.80, 1.05]); defensive IGNITIONs/awake-h 1.38 -> 1.13; exploratory 1.54 -> 1.55
+
+P1 -> P4: pre-Lead-A optA vs later runs
+   raw: n 56 vs 238; median 1384 -> 1252 s; median-diff 95% CI [-244, 130] s, ratio [0.83, 1.11]; share<900s 0.38 -> 0.34; MW p=0.477; KS D=0.13 p=0.381
+   net: n 56 vs 238; median 1104 -> 1099 s; median-diff 95% CI [-205, 320] s, ratio [0.84, 1.40]; share<900s 0.43 -> 0.37; MW p=0.828; KS D=0.10 p=0.754
+   internal starts per awake-h: 2.93 -> 3.09 (ratio 1.05, 6-h-block bootstrap 95% CI [0.94, 1.24]); defensive IGNITIONs/awake-h 1.44 -> 1.58; exploratory 1.54 -> 1.52
+
+P0 -> P2: the naive 'pre vs post 09-09 19:01' comparison F-1319/F-1566 implied
+   raw: n 100 vs 109; median 2514 -> 1393 s; median-diff 95% CI [-1375, -922] s, ratio [0.45, 0.63]; share<900s 0.14 -> 0.37; MW p=6.42e-12; KS D=0.57 p=5.75e-16
+   net: n 100 vs 109; median 2389 -> 1085 s; median-diff 95% CI [-1481, -839] s, ratio [0.40, 0.63]; share<900s 0.15 -> 0.40; MW p=1.01e-09; KS D=0.43 p=2.74e-09
+   internal starts per awake-h: 1.85 -> 2.91 (ratio 1.58, 6-h-block bootstrap 95% CI [1.40, 1.80]); defensive IGNITIONs/awake-h 0.31 -> 1.38; exploratory 1.55 -> 1.54
+
+======================================================================================================================
+D. COMPLETED internal-cycle DURATIONS ('complete in X s'; cycles overlapping a nap stall or a restart excluded) -- what Lead A's event-loop mechanism most directly predicts
+   BASE  08-24 .. 09-05 19:15 (before Phase 1)          n=253  p10= 60.9 p25= 67.5 med= 77.9 p75= 93.1 p90=115.6 mean= 88.7
+   P0    09-05 19:15 .. 09-08 08:22 (no optA, no LeadA) n=91   p10= 64.1 p25= 69.7 med= 76.3 p75= 88.5 p90= 98.1 mean= 80.1
+   P1    09-08 16:41 .. 09-09 19:01 (optA, pre LeadA)   n=35   p10= 67.7 p25= 76.8 med= 81.9 p75= 93.1 p90=102.1 mean= 84.3
+   P1x   09-08 16:41 .. 09-09 17:51 (also pre LW flags) n=34   p10= 67.5 p25= 76.8 med= 81.8 p75= 93.4 p90=102.5 mean= 84.2
+   P2    09-09 19:01 .. 09-11 13:18 (optA+LeadA+LW)     n=84   p10= 65.1 p25= 69.0 med= 80.3 p75= 88.3 p90= 99.6 mean= 80.6
+   P3    09-11 13:50 .. 09-13 09:10 (+J-0841 build)     n=58   p10= 66.5 p25= 69.2 med= 78.0 p75= 93.6 p90=103.2 mean= 85.1
+   P4    09-16 07:53 .. end (later runs)                n=160  p10= 63.0 p25= 67.8 med= 77.8 p75= 90.5 p90=118.9 mean= 96.1
+   P1 -> P2: median 81.9 -> 80.3 s (Hodges-Lehmann shift approx -1.6 s), MW p=0.195
+   P0 -> P1: median 76.3 -> 81.9 s (Hodges-Lehmann shift approx +5.6 s), MW p=0.0474
+   P1 -> P4: median 81.9 -> 77.8 s (Hodges-Lehmann shift approx -4.2 s), MW p=0.189
+
+======================================================================================================================
+D2. IGNITION -> CYCLE-START latency (seconds from the [climate] IGNITION line to the [CYCLE] internal: line; the curiosity node's run, awaited inside the ignition callback on the same loop) and a bootstrap CI of the median COMPLETED-cycle-duration difference
+   BASE  08-24 .. 09-05 19:15 (before Phase 1)          n=368  p10= 10.3 p25= 18.9 med= 26.9 p75= 36.4 p90= 56.6 mean= 33.8
+   P0    09-05 19:15 .. 09-08 08:22 (no optA, no LeadA) n=101  p10= 13.8 p25= 25.5 med= 36.0 p75= 48.6 p90= 65.3 mean= 39.7
+   P1    09-08 16:41 .. 09-09 19:01 (optA, pre LeadA)   n=59   p10= 23.8 p25= 32.3 med= 43.2 p75= 61.6 p90= 86.2 mean= 50.0
+   P1x   09-08 16:41 .. 09-09 17:51 (also pre LW flags) n=57   p10= 23.8 p25= 32.1 med= 43.2 p75= 61.2 p90= 80.8 mean= 49.4
+   P2    09-09 19:01 .. 09-11 13:18 (optA+LeadA+LW)     n=110  p10= 21.5 p25= 28.9 med= 41.2 p75= 56.1 p90= 87.0 mean= 50.1
+   P3    09-11 13:50 .. 09-13 09:10 (+J-0841 build)     n=102  p10= 22.9 p25= 28.8 med= 39.5 p75= 67.1 p90=129.4 mean= 55.9
+   P4    09-16 07:53 .. end (later runs)                n=238  p10= 27.8 p25= 39.6 med=128.2 p75=139.2 p90=147.1 mean= 98.1
+   P1 -> P2 cycle duration: median 81.9 -> 80.3 s; bootstrap 95% CI of the median difference [-9.3, +3.0] s; MW p=0.195
+   P1 -> P2 ign->start latency: median 43.2 -> 41.2 s; bootstrap 95% CI of the median difference [-12.3, +6.3] s; MW p=0.34
+
+======================================================================================================================
+G. BOOT-BY-BOOT specificity check: for every boot with a continuous live stretch of >= 8 awake hours on BOTH sides (adjacent runs, the 'before' run being the one that ended just ahead of this boot), internal starts per awake hour and net gap median before -> after
+   boot 09-08 16:41:59: before 09-05 19:15..08:22 ( 54.7 awake h) 1.85/awake-h, net median  2389 s (n 100)  ->  after ..10:29 ( 15.3 awake h) 3.00/awake-h, net median  1132 s (n 45);  rate ratio 1.62;  MW p=3.38e-07
+   boot 09-11 13:50:42: before 09-09 19:01..13:18 ( 37.8 awake h) 2.91/awake-h, net median  1085 s (n 109)  ->  after ..09:10 ( 38.1 awake h) 2.68/awake-h, net median  1261 s (n 101);  rate ratio 0.92;  MW p=0.384
+   boot 09-16 07:53:01: before 09-11 13:50..09:10 ( 38.1 awake h) 2.68/awake-h, net median  1261 s (n 101)  ->  after ..09:13 ( 42.3 awake h) 3.21/awake-h, net median  1006 s (n 135);  rate ratio 1.20;  MW p=0.0455
+   boot 09-21 09:29:45: before 09-18 23:37..14:12 ( 13.8 awake h) 3.12/awake-h, net median  1193 s (n 42)  ->  after ..08:43 ( 21.9 awake h) 2.83/awake-h, net median  1147 s (n 61);  rate ratio 0.91;  MW p=0.37
+
+======================================================================================================================
+E. NAP-STALL LENGTHS per day (silent windows >= 300 s inside a live process; minutes): a heavy climate tick sharing the loop with the nap's work would predict shorter stalls after Lead A
+   2026-09-03  n= 8  median  11.5 min  min  10.3  max  12.4
+   2026-09-04  n= 6  median  10.5 min  min  10.3  max  12.5
+   2026-09-05  n= 7  median  12.6 min  min  12.4  max  16.1
+   2026-09-06  n= 8  median  14.6 min  min  13.7  max  15.2
+   2026-09-07  n=10  median  15.6 min  min  15.0  max  16.2
+   2026-09-08  n= 9  median  17.2 min  min  16.4  max  18.5
+   2026-09-09  n=10  median  18.7 min  min  17.8  max  20.4
+   2026-09-10  n= 7  median  18.6 min  min  18.3  max  21.5
+   2026-09-11  n= 7  median  20.1 min  min  19.2  max  20.5
+   2026-09-12  n= 7  median  20.8 min  min  20.4  max  24.7
+   2026-09-13  n= 3  median  25.1 min  min  25.0  max  25.4
+   linear trend 09-04..09-13: +1.38 min/day (intercept 10.9 min); residual mean before Lead A +0.16 min, after -0.26 min (n 46 vs 28)
+
+wrote docs/lab/j0950_gap_summary_2026-09-22.json

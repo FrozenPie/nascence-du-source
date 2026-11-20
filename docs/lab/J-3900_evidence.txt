@@ -1,0 +1,1 @@
+docs/lab/J-3900_falcon3.jsonl (30 rows, status ok), produced by docs/lab/J-3900_rejudge.py 11440 falcon3:7b ... 15; summary stats computed by an inline python pass over that file this session (means, counts, Pearson). Live data/ git status unchanged after the run.

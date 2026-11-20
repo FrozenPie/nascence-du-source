@@ -1,0 +1,1 @@
+Pass 2 partial: mixtral 56/138 (base only); resume with python -u docs/lab/J-2970_replay.py when Ramses :11438 is quiet. See F-4947.

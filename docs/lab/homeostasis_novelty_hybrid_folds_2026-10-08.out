@@ -1,0 +1,3 @@
+HYBRID on the 43 switch rows: beats naive 34 / loses 8 / ties 1  p=6.88e-05; MAE naive=0.0646 hybrid=0.0240
+event-aligned 6 folds (pooled): ['HYBRID(0.022>0.016)', 'HYBRID(0.078>0.030)', 'HYBRID(0.079>0.034)', 'HYBRID(0.079>0.031)', 'HYBRID(0.067>0.028)', 'HYBRID(0.054>0.025)']
+per-regime: hybrid net-positive in 31/34 regimes; negatives: [(0, -15, 75), (1, -9, 11), (2, -79, 342)]

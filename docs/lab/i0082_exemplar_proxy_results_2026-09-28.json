@@ -1,0 +1,375 @@
+{
+  "generated_ts": 1790509971.9641242,
+  "n_rows_scanned": 95093,
+  "n_rows_unparseable": 0,
+  "geometry_tuples_path": "C:\\Nascence\\data\\geometry_tuples.jsonl",
+  "direction_usable": true,
+  "place_sets_observed": {
+    "morepork_call": [
+      "garden",
+      "study",
+      "wood"
+    ],
+    "tui_song": [
+      "garden"
+    ],
+    "gull_cries": [
+      "shore"
+    ],
+    "cat_purr": [
+      "garden",
+      "shore",
+      "study"
+    ]
+  },
+  "per_key": {
+    "morepork_call": {
+      "n_hearings": 20222,
+      "reliable": true,
+      "by_threshold": {
+        "0.1": {
+          "admissions_total": 642,
+          "admissions_excl_seed": 641,
+          "admissions_per_1000_hearings": 31.75,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.06710513302343982,
+            "day": 0.0,
+            "dusk": 0.1433092671348037,
+            "night": 0.7895855998417565
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.11076443057722309,
+            "day": 0.0,
+            "dusk": 0.13416536661466458,
+            "night": 0.7550702028081123
+          },
+          "bucket_lift": {
+            "dawn": 1.65,
+            "day": null,
+            "dusk": 0.94,
+            "night": 0.96
+          },
+          "weather_change_base_rate": 0.005,
+          "weather_change_admission_rate": 0.1435,
+          "weather_change_lift": 28.73
+        },
+        "0.2": {
+          "admissions_total": 485,
+          "admissions_excl_seed": 484,
+          "admissions_per_1000_hearings": 23.98,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.06710513302343982,
+            "day": 0.0,
+            "dusk": 0.1433092671348037,
+            "night": 0.7895855998417565
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.128099173553719,
+            "day": 0.0,
+            "dusk": 0.15495867768595042,
+            "night": 0.7169421487603306
+          },
+          "bucket_lift": {
+            "dawn": 1.91,
+            "day": null,
+            "dusk": 1.08,
+            "night": 0.91
+          },
+          "weather_change_base_rate": 0.005,
+          "weather_change_admission_rate": 0.1343,
+          "weather_change_lift": 26.89
+        },
+        "0.3": {
+          "admissions_total": 382,
+          "admissions_excl_seed": 381,
+          "admissions_per_1000_hearings": 18.89,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.06710513302343982,
+            "day": 0.0,
+            "dusk": 0.1433092671348037,
+            "night": 0.7895855998417565
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.14435695538057744,
+            "day": 0.0,
+            "dusk": 0.16010498687664043,
+            "night": 0.6955380577427821
+          },
+          "bucket_lift": {
+            "dawn": 2.15,
+            "day": null,
+            "dusk": 1.12,
+            "night": 0.88
+          },
+          "weather_change_base_rate": 0.005,
+          "weather_change_admission_rate": 0.1207,
+          "weather_change_lift": 24.17
+        }
+      }
+    },
+    "tui_song": {
+      "n_hearings": 7746,
+      "reliable": true,
+      "by_threshold": {
+        "0.1": {
+          "admissions_total": 152,
+          "admissions_excl_seed": 151,
+          "admissions_per_1000_hearings": 19.62,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.336560805577072,
+            "day": 0.6473018332042344,
+            "dusk": 0.016137361218693518,
+            "night": 0.0
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.2582781456953642,
+            "day": 0.7417218543046358,
+            "dusk": 0.0,
+            "night": 0.0
+          },
+          "bucket_lift": {
+            "dawn": 0.77,
+            "day": 1.15,
+            "dusk": 0.0,
+            "night": null
+          },
+          "weather_change_base_rate": 0.007,
+          "weather_change_admission_rate": 0.3179,
+          "weather_change_lift": 45.59
+        },
+        "0.2": {
+          "admissions_total": 122,
+          "admissions_excl_seed": 121,
+          "admissions_per_1000_hearings": 15.75,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.336560805577072,
+            "day": 0.6473018332042344,
+            "dusk": 0.016137361218693518,
+            "night": 0.0
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.2396694214876033,
+            "day": 0.7520661157024794,
+            "dusk": 0.008264462809917356,
+            "night": 0.0
+          },
+          "bucket_lift": {
+            "dawn": 0.71,
+            "day": 1.16,
+            "dusk": 0.51,
+            "night": null
+          },
+          "weather_change_base_rate": 0.007,
+          "weather_change_admission_rate": 0.2727,
+          "weather_change_lift": 39.12
+        },
+        "0.3": {
+          "admissions_total": 86,
+          "admissions_excl_seed": 85,
+          "admissions_per_1000_hearings": 11.1,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.336560805577072,
+            "day": 0.6473018332042344,
+            "dusk": 0.016137361218693518,
+            "night": 0.0
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.21176470588235294,
+            "day": 0.788235294117647,
+            "dusk": 0.0,
+            "night": 0.0
+          },
+          "bucket_lift": {
+            "dawn": 0.63,
+            "day": 1.22,
+            "dusk": 0.0,
+            "night": null
+          },
+          "weather_change_base_rate": 0.007,
+          "weather_change_admission_rate": 0.2,
+          "weather_change_lift": 28.69
+        }
+      }
+    },
+    "gull_cries": {
+      "n_hearings": 26240,
+      "reliable": true,
+      "by_threshold": {
+        "0.1": {
+          "admissions_total": 579,
+          "admissions_excl_seed": 578,
+          "admissions_per_1000_hearings": 22.07,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.22096036585365852,
+            "day": 0.5410442073170731,
+            "dusk": 0.1472560975609756,
+            "night": 0.09073932926829269
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.24740484429065743,
+            "day": 0.6557093425605537,
+            "dusk": 0.050173010380622836,
+            "night": 0.04671280276816609
+          },
+          "bucket_lift": {
+            "dawn": 1.12,
+            "day": 1.21,
+            "dusk": 0.34,
+            "night": 0.51
+          },
+          "weather_change_base_rate": 0.0061,
+          "weather_change_admission_rate": 0.2388,
+          "weather_change_lift": 39.4
+        },
+        "0.2": {
+          "admissions_total": 463,
+          "admissions_excl_seed": 462,
+          "admissions_per_1000_hearings": 17.64,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.22096036585365852,
+            "day": 0.5410442073170731,
+            "dusk": 0.1472560975609756,
+            "night": 0.09073932926829269
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.2683982683982684,
+            "day": 0.658008658008658,
+            "dusk": 0.04329004329004329,
+            "night": 0.030303030303030304
+          },
+          "bucket_lift": {
+            "dawn": 1.21,
+            "day": 1.22,
+            "dusk": 0.29,
+            "night": 0.33
+          },
+          "weather_change_base_rate": 0.0061,
+          "weather_change_admission_rate": 0.1797,
+          "weather_change_lift": 29.65
+        },
+        "0.3": {
+          "admissions_total": 386,
+          "admissions_excl_seed": 385,
+          "admissions_per_1000_hearings": 14.71,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.22096036585365852,
+            "day": 0.5410442073170731,
+            "dusk": 0.1472560975609756,
+            "night": 0.09073932926829269
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.2753246753246753,
+            "day": 0.7012987012987013,
+            "dusk": 0.01038961038961039,
+            "night": 0.012987012987012988
+          },
+          "bucket_lift": {
+            "dawn": 1.25,
+            "day": 1.3,
+            "dusk": 0.07,
+            "night": 0.14
+          },
+          "weather_change_base_rate": 0.0061,
+          "weather_change_admission_rate": 0.1039,
+          "weather_change_lift": 17.15
+        }
+      }
+    },
+    "cat_purr": {
+      "n_hearings": 3632,
+      "reliable": true,
+      "by_threshold": {
+        "0.1": {
+          "admissions_total": 392,
+          "admissions_excl_seed": 391,
+          "admissions_per_1000_hearings": 107.93,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.09251101321585903,
+            "day": 0.0993942731277533,
+            "dusk": 0.0908590308370044,
+            "night": 0.7172356828193832
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.1867007672634271,
+            "day": 0.23785166240409208,
+            "dusk": 0.04092071611253197,
+            "night": 0.5345268542199488
+          },
+          "bucket_lift": {
+            "dawn": 2.02,
+            "day": 2.39,
+            "dusk": 0.45,
+            "night": 0.75
+          },
+          "weather_change_base_rate": 0.0215,
+          "weather_change_admission_rate": 0.1739,
+          "weather_change_lift": 8.1
+        },
+        "0.2": {
+          "admissions_total": 339,
+          "admissions_excl_seed": 338,
+          "admissions_per_1000_hearings": 93.34,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.09251101321585903,
+            "day": 0.0993942731277533,
+            "dusk": 0.0908590308370044,
+            "night": 0.7172356828193832
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.21301775147928995,
+            "day": 0.2455621301775148,
+            "dusk": 0.026627218934911243,
+            "night": 0.514792899408284
+          },
+          "bucket_lift": {
+            "dawn": 2.3,
+            "day": 2.47,
+            "dusk": 0.29,
+            "night": 0.72
+          },
+          "weather_change_base_rate": 0.0215,
+          "weather_change_admission_rate": 0.1391,
+          "weather_change_lift": 6.47
+        },
+        "0.3": {
+          "admissions_total": 310,
+          "admissions_excl_seed": 309,
+          "admissions_per_1000_hearings": 85.35,
+          "final_exemplar_count": 4,
+          "bucket_base_rate": {
+            "dawn": 0.09251101321585903,
+            "day": 0.0993942731277533,
+            "dusk": 0.0908590308370044,
+            "night": 0.7172356828193832
+          },
+          "bucket_admission_rate": {
+            "dawn": 0.2168284789644013,
+            "day": 0.24919093851132687,
+            "dusk": 0.012944983818770227,
+            "night": 0.5210355987055016
+          },
+          "bucket_lift": {
+            "dawn": 2.34,
+            "day": 2.51,
+            "dusk": 0.14,
+            "night": 0.73
+          },
+          "weather_change_base_rate": 0.0215,
+          "weather_change_admission_rate": 0.0939,
+          "weather_change_lift": 4.37
+        }
+      }
+    }
+  }
+}

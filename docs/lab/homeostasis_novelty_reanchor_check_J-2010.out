@@ -1,0 +1,5 @@
+UNIT OK: 4 synthetic snapshots + fallback + None path; tree=C:\Users\USER\AppData\Local\Temp\claude\C--Nascence\fd862666-a146-4cb0-bdc4-8b77d27eecbb\scratchpad\wt_keystone_novelty
+REPLAY steps=2861 MAE naive=0.0634 old(level, as logged)=0.0925 new(re-anchored)=0.0271; new beats naive 2309 / loses 506
+switch rows 43: MAE naive=0.0646 new=0.0240
+event-aligned folds: ['NEW', 'NEW', 'NEW', 'NEW', 'NEW', 'NEW'] -> 6 /6
+regimes where new loses: [0, 1, 2] of 34

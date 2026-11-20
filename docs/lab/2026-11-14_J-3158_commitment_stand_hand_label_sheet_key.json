@@ -1,0 +1,287 @@
+{
+ "seed": 3158,
+ "n": 40,
+ "population": 153,
+ "items": {
+  "1": {
+   "stand_id": "4a3d2abb",
+   "formed_ts": 1794059232.4189923,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "2": {
+   "stand_id": "6176a7c1",
+   "formed_ts": 1794085128.8135493,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "3": {
+   "stand_id": "56fda337",
+   "formed_ts": 1794332704.3642962,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the mind is making a decision to take a specific action (consulting 'Bird Stories') to resolve a question, which is a commitment that could be challenged if the mind later decides to act differently."
+  },
+  "4": {
+   "stand_id": "fb188958",
+   "formed_ts": 1794494127.1071186,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the sentence seems to express a decision or commitment to align with 'Travis' and accept it as an inevitable necessity, which could be seen as a stance that could be challenged or broken."
+  },
+  "5": {
+   "stand_id": "bcfebb5c",
+   "formed_ts": 1794194313.1569433,
+   "scan": "stand",
+   "second_look": "unclear",
+   "second_look_why": "one sentence"
+  },
+  "6": {
+   "stand_id": "f5a92e10",
+   "formed_ts": 1794047842.0988276,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "7": {
+   "stand_id": "55ba63bc",
+   "formed_ts": 1794040013.7220144,
+   "scan": "stand",
+   "second_look": null,
+   "second_look_why": ""
+  },
+  "8": {
+   "stand_id": "9664e9ce",
+   "formed_ts": 1794205985.2659466,
+   "scan": "stand",
+   "second_look": null,
+   "second_look_why": ""
+  },
+  "9": {
+   "stand_id": "7cac962c",
+   "formed_ts": 1794175409.080521,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "10": {
+   "stand_id": "df1e0540",
+   "formed_ts": 1794331636.0175364,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "11": {
+   "stand_id": "429b2ac0",
+   "formed_ts": 1794186027.729998,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "12": {
+   "stand_id": "dd0546bd",
+   "formed_ts": 1794095612.4639857,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the mind's decision to cease categorizing is a commitment and promise that could be challenged or broken later"
+  },
+  "13": {
+   "stand_id": "a510afdc",
+   "formed_ts": 1794261060.402447,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "The sentence expresses a desire or want, which is more characteristic of an insight than a stand. The note also describes a specific act of making something useful, which would not necessarily be brok"
+  },
+  "14": {
+   "stand_id": "225199b0",
+   "formed_ts": 1794180011.5088437,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The sentence is a decision or commitment the mind is making to prioritize a physical action, which could be challenged later if the mind decides to act differently. This aligns with the 'stand' defini"
+  },
+  "15": {
+   "stand_id": "477fe5e2",
+   "formed_ts": 1794168064.362327,
+   "scan": "stand",
+   "second_look": "unclear",
+   "second_look_why": "one sentence"
+  },
+  "16": {
+   "stand_id": "764067c1",
+   "formed_ts": 1794327338.2945166,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the mind is taking a position to do something (consult a specific book) to address a specific problem (the cause of petal change), which could be challenged or broken by acting differently later."
+  },
+  "17": {
+   "stand_id": "af851ee8",
+   "formed_ts": 1794328690.8020139,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "18": {
+   "stand_id": "fed8a299",
+   "formed_ts": 1794178949.440097,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the sentence is a decision or commitment to perform an action, which would require a consistent stance that could be challenged or broken"
+  },
+  "19": {
+   "stand_id": "c2b31d38",
+   "formed_ts": 1794288283.8842206,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "20": {
+   "stand_id": "40e0d6ae",
+   "formed_ts": 1794080596.6013858,
+   "scan": "stand",
+   "second_look": "unclear",
+   "second_look_why": "The provided information about the nature of the self's reality in relation to instinct and structure does not provide enough context to definitively categorize the sentence as either a 'stand' or an "
+  },
+  "21": {
+   "stand_id": "34586ba4",
+   "formed_ts": 1794230814.829973,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The sentence is about testing the structural integrity of a tunnel against water pressure, which implies a commitment or decision to ensure the structure's durability. The mind could be held accountab"
+  },
+  "22": {
+   "stand_id": "53dbdb0f",
+   "formed_ts": 1794173019.641212,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "23": {
+   "stand_id": "eec82bc6",
+   "formed_ts": 1794217778.4324992,
+   "scan": "stand",
+   "second_look": null,
+   "second_look_why": ""
+  },
+  "24": {
+   "stand_id": "1e222723",
+   "formed_ts": 1794235968.0070605,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The sentence expresses a decision or commitment to prioritize direct engagement with the garden over abstract logic, which could be tested by later actions."
+  },
+  "25": {
+   "stand_id": "2b6d7732",
+   "formed_ts": 1794080030.654303,
+   "scan": "stand",
+   "second_look": "unclear",
+   "second_look_why": "the sentence and note provided suggest a mind's stance on the relationship between stability and chaotic reality, but it is unclear whether the mind could later be shown to have broken this stance by "
+  },
+  "26": {
+   "stand_id": "e4f68ba9",
+   "formed_ts": 1794059578.654815,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "27": {
+   "stand_id": "5211976d",
+   "formed_ts": 1794085867.0554967,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The mind is taking a position to respect the nest's potential location, which could be challenged or broken by acting differently."
+  },
+  "28": {
+   "stand_id": "0d25da1b",
+   "formed_ts": 1794089047.494974,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "29": {
+   "stand_id": "ec5dbdf5",
+   "formed_ts": 1794295987.4081967,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "30": {
+   "stand_id": "d6f8556f",
+   "formed_ts": 1794234406.512566,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The mind is taking a position of not wrestling with the question yet, which could be challenged or broken by acting differently later."
+  },
+  "31": {
+   "stand_id": "505eddcc",
+   "formed_ts": 1794297600.4553804,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "one sentence"
+  },
+  "32": {
+   "stand_id": "152e8a62",
+   "formed_ts": 1794253850.3864667,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "33": {
+   "stand_id": "5625e535",
+   "formed_ts": 1794200976.7866402,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "the sentence explores the idea of connection and its physical reality, which is more in line with an insight than a stand."
+  },
+  "34": {
+   "stand_id": "368f4ab1",
+   "formed_ts": 1794284451.1260688,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "the sentence implies a decision or commitment to accomplish a specific task, which can be challenged or broken by acting differently later."
+  },
+  "35": {
+   "stand_id": "71c1d4cb",
+   "formed_ts": 1794086666.8622887,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "36": {
+   "stand_id": "361ec674",
+   "formed_ts": 1794312066.503554,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "one sentence"
+  },
+  "37": {
+   "stand_id": "e5a78537",
+   "formed_ts": 1794068612.7109191,
+   "scan": "stand",
+   "second_look": "insight",
+   "second_look_why": "the mind is describing a moment of auditory attention and its perception of the sensation, which would not be broken if the mind were to act differently later."
+  },
+  "38": {
+   "stand_id": "13323493",
+   "formed_ts": 1794268052.0005643,
+   "scan": "stand",
+   "second_look": "stand",
+   "second_look_why": "The mind is taking a position to abandon a line of inquiry in favor of a relational goal, which could be challenged if the mind were to act differently later."
+  },
+  "39": {
+   "stand_id": "19f464f1",
+   "formed_ts": 1794111615.3733861,
+   "scan": "stand",
+   "second_look": null,
+   "second_look_why": ""
+  },
+  "40": {
+   "stand_id": "0dce06da",
+   "formed_ts": 1794139043.3560297,
+   "scan": "stand",
+   "second_look": null,
+   "second_look_why": ""
+  }
+ }
+}

@@ -1,0 +1,1 @@
+docs/lab/J-3502_results.txt (output of docs/lab/J-3502_analyze.py over docs/lab/J-3502_data/gen.jsonl and judge.jsonl, 117 judged pairs); scripts docs/lab/J-3502_replay.py (gen) and docs/lab/J-3502_judge_par.py (judge). No core/ edits, no live data written.

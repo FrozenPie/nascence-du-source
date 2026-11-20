@@ -1,0 +1,1 @@
+docs/lab/J-4118_variants.py (run, 272 calls, 0 errors), docs/lab/J-4118_calls.jsonl, docs/lab/J-4118_summary.txt. Hubs falcon3 :11445 and granite LAN-HOST:11437, temp 0, same payload as J-2970_replay.py. Live data not touched (no core import). n=34 items, single run, temp 0.

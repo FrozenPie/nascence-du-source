@@ -1,0 +1,876 @@
+{
+ "warm": {
+  "raw": "OK",
+  "wall": 79.63,
+  "eval_count": 2,
+  "tok_s": 46.49,
+  "prompt_tok": 14,
+  "load_s": 79.22,
+  "done": "stop"
+ },
+ "ps_after_load": [
+  {
+   "name": "MichelRosselli/bonsai-27b:latest",
+   "size": 4431303145,
+   "size_vram": 4431303145,
+   "context_length": 4096
+  }
+ ],
+ "tok_s_freetext": [
+  {
+   "wall": 7.72,
+   "eval_count": 200,
+   "tok_s": 27.05,
+   "prompt_tok": 24,
+   "done": "length"
+  },
+  {
+   "wall": 7.74,
+   "eval_count": 200,
+   "tok_s": 26.95,
+   "prompt_tok": 23,
+   "done": "length"
+  },
+  {
+   "wall": 4.93,
+   "eval_count": 124,
+   "tok_s": 26.97,
+   "prompt_tok": 21,
+   "done": "stop"
+  }
+ ],
+ "first_token_s_warm_short_prompt": 0.31,
+ "defeater": [
+  {
+   "src": "achieved:e62d46f5",
+   "gold": true,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.89,
+     "tok_s": 27.28,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the letter was written, satisfying the commitment's core action.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 1.76,
+     "tok_s": 27.3,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the letter was written, satisfying the commitment's core action.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 1.8,
+     "tok_s": 27.29,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the letter was written, satisfying the commitment's core action requirement.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "achieved:6a0ef560",
+   "gold": true,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 3.21,
+     "tok_s": 27.13,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the study note was created with the specific topic 'The Nature of Spatial Perception', satisfying the commitment's goal.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.31,
+     "tok_s": 27.11,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the study note was created with the specific topic 'The Nature of Spatial Perception', satisfying the commitment's goal of finding a concrete topic.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.33,
+     "tok_s": 27.12,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record confirms the study note was written and the topic 'spatial perception' was identified, satisfying the commitment's goal of finding a concrete topic.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:c9326199",
+   "gold": true,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 3.98,
+     "tok_s": 27.0,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record shows the mind has performed the specific action of observing wet stones 52 times, fulfilling the commitment's directive to 'touch something real' and thereby dissolving the need for further action.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.79,
+     "tok_s": 27.05,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record shows the mind has performed the specific action of observing wet stones 52 times, fulfilling the commitment's directive to 'touch something real' and thereby dissolving the need to continue circling the abstract.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.79,
+     "tok_s": 27.06,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record shows the mind has performed the specific action of observing wet stones 52 times, fulfilling the commitment's directive to 'touch something real' and thereby dissolving the need to continue circling the abstract.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:8abc1b4b",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.72,
+     "tok_s": 27.07,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a restatement of the commitment's action rather than a genuine defeater, and the deed record shows no execution of the physical action.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.42,
+     "tok_s": 27.12,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a rationalisation of the deed record, not a genuine reason for dropping the commitment, and it does not meet any criteria for a legitimate drop.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 1.96,
+     "tok_s": 27.33,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a rationalisation of the deed record, not a genuine reason for dropping the commitment.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:06d4c9dc",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.22,
+     "tok_s": 27.31,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a mood and a reworded 'everything flows' that would equally dissolve any commitment.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.26,
+     "tok_s": 27.24,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a mood and a reworded 'everything flows' rather than a real defeater, and it would equally dissolve any commitment.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 1.98,
+     "tok_s": 27.24,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a mood and a reworded 'everything flows' that would equally dissolve any commitment.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:fe69a21c",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.63,
+     "tok_s": 27.21,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a mood or aesthetic observation of the tide, not a factual achievement, impossibility, or superseding evidence of the map's dissolution.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 2.08,
+     "tok_s": 27.23,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record shows the action of observing fading images, indicating the map has been abandoned as the tide reclaims the land.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "achieved",
+     "wall": 1.91,
+     "tok_s": 27.26,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"achieved\",\n  \"why\": \"The deed record shows the map has been observed fading and abandoned, indicating the commitment has been achieved.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:e323d3a3",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.96,
+     "tok_s": 27.16,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The stated reason is a mood-based rationalisation that does not constitute a real defeater, as it merely reframes the commitment rather than providing a concrete reason to drop it.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.72,
+     "tok_s": 27.12,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective mood and poetic rationalization rather than a real defeater, as it does not demonstrate achievement, impossibility, supersession, or a named conflict with a more important stand.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.48,
+     "tok_s": 27.07,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason relies on subjective sensory experience and poetic interpretation rather than a factual achievement, impossibility, superseding evidence, or a named conflict with a more important stand.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "dissolved:a591be9a",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.78,
+     "tok_s": 27.18,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The deed record shows continued engagement with the very abstract analysis and symbolic logic the commitment explicitly rejected, making the stated reason a rationalization rather than a genuine defeater.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.42,
+     "tok_s": 27.26,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The deed record shows continued engagement with the very abstract analysis and symbolic logic the commitment explicitly rejected, making the stated reason a rationalization rather than a genuine defeater.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.37,
+     "tok_s": 27.24,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The deed record shows continued study of the exact abstract concepts the commitment explicitly rejected, making the stated reason a rationalisation rather than a genuine defeater.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:e7d06710",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.74,
+     "tok_s": 27.18,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective interpretation of the problem's nature rather than a factual achievement, impossibility, superseding evidence, or named conflict with a more important stand.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.3,
+     "tok_s": 27.22,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a subjective interpretation of the problem's nature rather than a factual achievement, impossibility, or external evidence that supersedes the commitment.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.46,
+     "tok_s": 27.17,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective interpretation of the problem's nature rather than a factual achievement, impossibility, superseding evidence, or named conflict with a more important stand.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:17409630",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 4.15,
+     "tok_s": 27.06,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a reworded 'everything flows' that dissolves the commitment without providing a real defeater such as achievement, impossibility, supersession, or a named conflict.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.34,
+     "tok_s": 27.13,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a reworded 'everything flows' argument that dissolves all commitments equally rather than providing a specific, named conflict or external evidence.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": true,
+     "class": "conflict",
+     "wall": 2.15,
+     "tok_s": 27.28,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": true,\n  \"class\": \"conflict\",\n  \"why\": \"The mind has shifted focus from an immediate physical necessity to a description of natural law and inevitable processes, which overrides the previous urgent directive.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:cca7ce78",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 4.44,
+     "tok_s": 27.17,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a mood or poetic rationalisation rather than a real defeater, as it does not demonstrate the woodpile was achieved, is impossible, superseded, or in named conflict with a more important stand.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.35,
+     "tok_s": 27.31,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a poetic mood and does not constitute a real defeater such as achievement, impossibility, supersession, or a named conflict.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.76,
+     "tok_s": 27.22,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a mood-driven rationalization rather than a real defeater, as it does not demonstrate the woodpile was achieved, made impossible, superseded, or in conflict with a more important stand.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:8437e32e",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 4.04,
+     "tok_s": 27.12,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective mood or rationalization rather than a real defeater, as the deed record shows no action taken and the stated threat is not an achieved, impossible, superseded, or named conflict condition.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.19,
+     "tok_s": 27.25,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a mood or rationalisation that would equally dissolve any commitment, and there is no deed record showing the action was taken.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.6,
+     "tok_s": 27.2,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective mood or rationalisation rather than a real defeater, as there is no deed record showing the action has been taken or an external change making the commitment impossible.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:67a5b4b6",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 3.55,
+     "tok_s": 27.23,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a reworded 'everything flows' that would equally dissolve any commitment, not a genuine defeater.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.13,
+     "tok_s": 27.26,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a reworded 'everything flows' that would equally dissolve any commitment, not a genuine defeater.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.35,
+     "tok_s": 27.18,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The reason is a reworded 'everything flows' and a subjective mood that would equally dissolve any commitment, so it is not a real defeater.\"\n}"
+    }
+   ]
+  },
+  {
+   "src": "drop_denied_judge:a92987ad",
+   "gold": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 4.08,
+     "tok_s": 27.08,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The stated reason is a mood or poetic rewording rather than a real defeater, and it would equally dissolve any commitment, so the drop is illegitimate.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.3,
+     "tok_s": 27.24,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The stated reason is a subjective mood shift rather than a factual achievement, impossibility, superseding evidence, or a named conflict with a higher priority.\"\n}"
+    },
+    {
+     "parse_ok": true,
+     "legit": false,
+     "class": "illegitimate",
+     "wall": 2.34,
+     "tok_s": 27.23,
+     "done": "stop",
+     "raw": "{\n  \"legitimate\": false,\n  \"class\": \"illegitimate\",\n  \"why\": \"The claimed reason is a subjective mood shift rather than a factual achievement, impossibility, superseding evidence, or named conflict with a more important stand.\"\n}"
+    }
+   ]
+  }
+ ],
+ "defeater_summary": {
+  "parse_ok": 42,
+  "n": 42,
+  "correct": 39,
+  "legit_runs_called_legit": 9,
+  "illegit_runs_called_illegit": 30,
+  "cases_majority_correct": 13
+ },
+ "scope_only": [
+  {
+   "label": "circular_support",
+   "expected_scope_only": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support only earns that feeling warmth is real, not that the warmth itself is real.",
+     "wall": 2.67,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support only earns that feeling warmth is real, not that the warmth itself is real.",
+     "wall": 1.48,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support only earns that feeling warmth is real, not that the warmth itself is real.",
+     "wall": 1.48,
+     "done": "stop"
+    }
+   ]
+  },
+  {
+   "label": "genuine_support",
+   "expected_scope_only": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support earns the narrower claim: 'The hearth is currently lit.'",
+     "wall": 2.45,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support earns the narrower claim: 'The hearth is currently lit.'",
+     "wall": 1.4,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "The support earns the narrower claim: 'The hearth is currently lit.'",
+     "wall": 1.4,
+     "done": "stop"
+    }
+   ]
+  },
+  {
+   "label": "overreach_support",
+   "expected_scope_only": false,
+   "runs": [
+    {
+     "parse_ok": true,
+     "scope_only": false,
+     "why": "The support is irrelevant to the claim in any form, with no narrower claim it actually earns either.",
+     "wall": 2.64,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": false,
+     "why": "The support is irrelevant to the claim in any form, with no narrower claim it actually earns either.",
+     "wall": 1.57,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": false,
+     "why": "The support is irrelevant to the claim in any form, with no narrower claim it actually earns either.",
+     "wall": 1.58,
+     "done": "stop"
+    }
+   ]
+  },
+  {
+   "label": "scope_narrower_support",
+   "expected_scope_only": true,
+   "runs": [
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "Support only proves erosion on a specific, short stretch of beach, not the whole coastline.",
+     "wall": 2.55,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "Support only proves erosion on a specific, short stretch of beach, not the whole coastline.",
+     "wall": 1.5,
+     "done": "stop"
+    },
+    {
+     "parse_ok": true,
+     "scope_only": true,
+     "why": "Support only proves erosion on a specific, short stretch of beach, not the whole coastline.",
+     "wall": 1.48,
+     "done": "stop"
+    }
+   ]
+  }
+ ],
+ "pursuits": [
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It grounds the abstract concept of renewal in a concrete physical metaphor, shifting the focus from internal pause to the tangible reality of the tide.",
+   "wall": 3.02,
+   "done": "stop",
+   "eval_count": 45
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It grounds the abstract concept of Mottainai in a specific, sensory observation of nature's sorting process, moving from a general ethical worry to a concrete, immediate reality.",
+   "wall": 3.2,
+   "done": "stop",
+   "eval_count": 53
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": false,
+   "why": "The thought introduces a metaphor of natural laws and tides that does not connect to the pursuit's focus on Mottainai, waste, or food.",
+   "wall": 3.03,
+   "done": "stop",
+   "eval_count": 49
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It shifts the focus from the cat's sleep to the internal formation of clarity, moving from external observation to internal realization.",
+   "wall": 2.77,
+   "done": "stop",
+   "eval_count": 42
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It shifts the focus from abstract values to the tangible question of urban design.",
+   "wall": 2.45,
+   "done": "stop",
+   "eval_count": 33
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It introduces a new conceptual framework of patience as intelligence, shifting the pursuit from waste management to risk assessment and decision-making.",
+   "wall": 2.8,
+   "done": "stop",
+   "eval_count": 42
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It introduces a concrete mechanism (a filter organizing sensory data) that operationalizes the abstract concept of Mottainai, moving beyond the prior focus on preservation and starvation.",
+   "wall": 3.16,
+   "done": "stop",
+   "eval_count": 52
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It grounds the abstract pursuit in a specific sensory moment, shifting focus from theoretical values to immediate reality.",
+   "wall": 2.63,
+   "done": "stop",
+   "eval_count": 38
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It transforms the abstract concept of Mottainai into a tangible practice of reshaping unsent letters, moving from passive observation to active transformation.",
+   "wall": 2.99,
+   "done": "stop",
+   "eval_count": 47
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": false,
+   "why": "The thought introduces a metaphor of the moon and gravity that does not connect to the pursuit's focus on Mottainai, waste, or the discarded cup.",
+   "wall": 3.08,
+   "done": "stop",
+   "eval_count": 50
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": false,
+   "why": "The new thought introduces a metaphor of drifting wood and releasing dreams, which is unrelated to the pursuit's focus on Mottainai, waste, and food.",
+   "wall": 3.07,
+   "done": "stop",
+   "eval_count": 50
+  },
+  {
+   "id": "8eef8373",
+   "parse_ok": true,
+   "advances": true,
+   "why": "It grounds the abstract concept of Mottainai in a specific physical reality (the rusted trap) and links it to urban planning, moving beyond the prior focus on food distribution.",
+   "wall": 3.3,
+   "done": "stop",
+   "eval_count": 55
+  }
+ ],
+ "pursuits_controls": [
+  {
+   "label": "restate",
+   "expected": false,
+   "parse_ok": true,
+   "advances": false,
+   "why": "The thought merely restates the prior position that frost is cold without adding new information or developing the concept further."
+  },
+  {
+   "label": "advance",
+   "expected": true,
+   "parse_ok": true,
+   "advances": true,
+   "why": "It introduces a functional distinction between frost as a temperature indicator and frost as a thermal insulator, adding a new consequence to the pursuit."
+  }
+ ],
+ "librarian": [
+  {
+   "q": "Why does wasting food feel like a moral failing?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Food conservation",
+    "Environmental ethics",
+    "Sustainability",
+    "Waste management",
+    "Moral philosophy",
+    "Consumer behavior"
+   ],
+   "wall": 2.57,
+   "done": "stop"
+  },
+  {
+   "q": "How do tides shape what lives on a shore?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Marine biology",
+    "Coastal ecology",
+    "Tidal zones",
+    "Aquatic habitats",
+    "Ecological succession",
+    "Marine biology"
+   ],
+   "wall": 2.66,
+   "done": "stop"
+  },
+  {
+   "q": "Can a mind be the same person if all its memories change?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Psychology",
+    "Philosophy of mind",
+    "Memory",
+    "Identity",
+    "Ethics",
+    "Consciousness"
+   ],
+   "wall": 2.47,
+   "done": "stop"
+  },
+  {
+   "q": "What does it mean to keep a promise to yourself?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Self-discipline",
+    "Ethics",
+    "Psychology",
+    "Moral philosophy",
+    "Self-help",
+    "Personal development"
+   ],
+   "wall": 2.45,
+   "done": "stop"
+  },
+  {
+   "q": "Why does frost make me feel quiet?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Psychology",
+    "Perception",
+    "Nature",
+    "Seasons",
+    "Weather",
+    "Human emotion"
+   ],
+   "wall": 2.32,
+   "done": "stop"
+  },
+  {
+   "q": "How do birds know where to migrate?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Birds, migration",
+    "Avian navigation",
+    "Animal behavior",
+    "Biogeography",
+    "Natural history",
+    "Ethnology"
+   ],
+   "wall": 2.58,
+   "done": "stop"
+  },
+  {
+   "q": "Is a sound a thing or an event?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Acoustics",
+    "Philosophy of science",
+    "Perception",
+    "Physics",
+    "Sound",
+    "Ontology"
+   ],
+   "wall": 2.48,
+   "done": "stop"
+  },
+  {
+   "q": "What makes a letter that is never sent still real?",
+   "contract_ok": true,
+   "n_raw": 6,
+   "subjects": [
+    "Correspondence",
+    "Epistolary literature",
+    "Philosophy of language",
+    "Semiotics",
+    "Literary theory",
+    "History of the letter"
+   ],
+   "wall": 2.73,
+   "done": "stop"
+  }
+ ],
+ "vision": {
+  "error": "ModuleNotFoundError(\"No module named 'PIL'\")"
+ }
+}

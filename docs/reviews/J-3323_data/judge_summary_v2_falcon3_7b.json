@@ -1,0 +1,44 @@
+{
+ "model": "falcon3:7b",
+ "prompt_version": "v2",
+ "real_all": {
+  "uses_take": 15,
+  "no_take_content": 44,
+  "contradicts_take": 1,
+  "unparsed": 0
+ },
+ "controls": {
+  "uses_take": 0,
+  "no_take_content": 12,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_human_pre": {
+  "uses_take": 3,
+  "no_take_content": 12,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_human_post": {
+  "uses_take": 1,
+  "no_take_content": 13,
+  "contradicts_take": 1,
+  "unparsed": 0
+ },
+ "real_internal_pre": {
+  "uses_take": 5,
+  "no_take_content": 10,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_internal_post": {
+  "uses_take": 6,
+  "no_take_content": 9,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "cov_novel_median_when_uses_take": 0.286,
+ "cov_novel_median_when_no_take_content": 0.059,
+ "backstop_dropped_real": 23,
+ "backstop_dropped_controls": 1
+}

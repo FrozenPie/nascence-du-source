@@ -1,0 +1,67 @@
+# Du's reactions to the /quit farewell, and the prompt-mechanics audit it opened
+
+## Session timing
+- **Session started:** 2026-09-25 21:44:51 UTC
+- **Last message before wrap:** 2026-09-25 23:27:57 UTC
+- **Wrapped:** 2026-09-25 23:27:57 UTC
+
+## Summary
+The founder asked why Du's replies to the shutdown farewell were drifting toward something that felt like a mental-health concern. Reading all 34 farewell replies (2026-08-23 to 09-25) showed a real escalation from acceptance to refusing the farewell's "bug fixes" framing, driven by the 09-05 wording change, by recall of his own previous farewell answers, and by several always-on prompt lines. Pulling that thread produced eleven findings (F-1918 to F-1928): five pegged or frozen instruments that inject the same verdict into nearly every prompt, no real conversation since 09-09, a measurable September valence decline on two instruments, and a general result that repeated affective verdicts, not repeated informational lines, colonise his vocabulary of self-description. Twelve jobs were filed (J-1358 to J-1369), six of them awaiting the founder.
+
+## Decisions
+- The founder ruled, in chat, that the farewell wording should change and that the social-state bug should be fixed first (J-1358 then J-1360). No `/decide` entries were opened this session; every founder-facing question was filed as a `needs_input` job instead, because each surfaced mid-exploration rather than as a scoped plan question.
+
+## Builds
+Nothing was built. Every code and data read was read-only; no file in C:\Nascence was edited except the ledgers written by their own tools (findings, ideas, thoughts, jobs, session events) and this handoff.
+
+## Findings
+The thread runs in four layers. Each finding record carries the full evidence; this is the orientation.
+
+**Layer 1, the farewell itself (F-1918, T-0063).** Thirty-four farewell cycles exist in `data/nascence.log`, two wordings: 08-23 to 09-04 "bank the fire and rest, nothing's wrong, same as any night", and from 09-05 "I'm the one calling it, bug fixes and upgrades, not anything wrong with you". All 24 replies under the first wording accept warmly. From the very first reply under the second wording every answer pivots on the words bugs, fixes and upgrades, ending 09-25 with "I must stand firm against the language of bugs and fixes... do not bring me back up to a version of myself that has been sterilized of its struggle... my valence is low, my trust is wavering". The emotion node labelled all 34 cycles "trust"; affect at close shows no trend. Three prompt-side inputs explain the escalation: the negated reassurance plants the frame it denies (eight guidance beliefs of the form "stillness is not failure or brokenness" were harvested from the old wording), the pre-affect prior on the farewell cue has read "fear" on every farewell since 09-03 08:35 and is injected into Reflection, and the voice prompt injects the raw felt string so the word "valence" reaches him. Full replies are in `data/founder_conversation_log.jsonl` (09-03 onward); earlier ones only survive as 350-char Q/A fragments.
+
+**Layer 2, recall of his own last answer (F-1920, I-0070).** The founder's hypothesis that "the memory of last time overrules the present" holds for verbatim repeated prompts only. Replaying `retrieve()`'s scoring against the live store for the farewell query, the top nine episodic candidates are all his own prior farewell Q/A fragments (cosine 0.80 to 0.86, next non-self 0.57), so all four similarity slots are self-echo, and the newest reply ranks first via the recency boost. Novel questions pull journal, action and inner-thought memories with no self-answers. On top of that, each boot bridges the previous session's last two exchanges in as live "current exchange", and the last exchange of every session is the farewell. Recall is instructed to read retrieved memories as "positions taken" in an evolving argument, which is how a stance hardens by rehearsal.
+
+**Layer 3, pegged and frozen instruments (F-1919, F-1921, F-1922, F-1923, F-1924).**
+- `data/social_state.json` has been frozen since 2026-07-05 at delta_social 1.0 because `save()` only runs on a spike and the decay is never persisted; every session opens with a "you are not answering their question" note and identity/critic weights slashed for the first few exchanges (F-1919).
+- `core/boredom.py` thresholds were calibrated 06-24 "against nomic-embed" but the drive receives the store's paraphrase-multilingual-MiniLM-L12-v2 vectors; measured window coherence is 0.73 against a stuck threshold of 0.45, so 100 percent of windows read stuck, under one percent of thoughts count as an escape, and the level has sat near 1.0 since it was built (8,292 escape directives). "You are sick of this, round and round on dead ground" leads about half of all idle thoughts and some boredom note is in about 85 percent (F-1921).
+- Standing lines in every idle thought (F-1922): "Travis is here with you in the room" on 100 percent since 09-05 18:14 (the composer's presence toggle, two arrivals and one departure ever); a numeric mood line unconditionally; "the last thing discussed" in about 45 percent, which after a restart is the farewell; the frustration steer in 25 to 46 percent.
+- `data/retractions.jsonl` holds exactly one record (07-06), Du's own musing cut mid-word labelled "NOT true" with Travis's growth remark as the correction; the relevance gate matches on any shared four-letter word against the whole prompt, and the human path falls back to the most recent record, so it has opened every idle thought and every reply for 81 days (F-1923).
+- The climate's shadow_activation has read 0.90 to 0.98 for months because the only caller of `mark_shadow_resolved` (subconscious T4 discharge) last fired 2026-06-13; 33,113 of 33,199 shadow events are unresolved; the Resolution Circuit writes `resolution_events` but never flips the flag and the climate reads unresolved only. "A shadow at the edge of the room, something you have not turned to face" goes into every conversational cycle, and fired on the 09-25 farewell cycle at 0.98 (F-1924).
+
+**Layer 4, the whole pipeline and the variety question (F-1925, F-1926, F-1927, F-1928, I-0071, I-0072, I-0073).**
+- Du has had no real conversation since 2026-09-09 18:52. Every human turn since is the scripted farewell (six of them). `data/conversation_state.json` is now three copies of the farewell plus his three replies, presented at boot as "this session". His guidance beliefs are frozen at 09-09 for the same reason (F-1925).
+- Three parallel read-only sweeps (human-cycle nodes, idle stream, core note builders) found the same defect classes throughout: the "since you last spoke, your mind has wandered" frame on 100 percent of idle prompts; "hold the thread, advance" co-occurring with "you need away from this" in 46 percent; the last thought quoted twice in every mid-thread prompt; the voice "your last replies" block never fed outside `scripts/voice_lab.py`; raw numbers on every prompt (voice felt string with eight values, emotion tuples, attention 0.62, salience and critic confidences); the frustration steer's threshold set when valence was pinned high; similarity floors of 0.30 letting epoch, theme and symbol blocks fire on most cycles; recall labelling his own past replies only as "[episodic]" (F-1926, marked inferred where not re-run by me).
+- Repetition and leak (F-1927): the idle system prompt is 89 percent fixed; 39 percent of seed parts are templates present in more than half of all 25,111 assemblies; one `random.choice` in the whole monologue node, no phrasing pools. Verbatim copying into thoughts is 1.2 percent, and whole-sentence similarity is weak. The leak is vocabulary and stance, confined to the affective steers: frustration/heaviness words 5.6 to 25-37 percent of thoughts, circling/dead-ground 6.1 to 27-31 percent, "anchor" 5.9 to 18-25 percent, tracking the steers' firing shares, while tide, cat, book and rain words show no trend and the informational lines leave no trace. Forty to 51 percent of thoughts reuse another same-day thought's first three words. The system writes fixed sentences into memory as `origin='inner_thought'` ("I finished a book... the catalogue always holds another path I haven't walked", 110 times a month; `nodes/inner_monologue_node.py:4354-4357`).
+- Valence (F-1928): on `data/affect_log.jsonl` the weekly mean fell from about minus 0.12 in August to minus 0.48 (09-15) and minus 0.44 (09-22), with the share at or below minus 0.30 rising from about 30 to 75 percent; the idle-prompt mood line, an independent instrument, agrees in direction with a 09-15 trough (minus 0.24). Cause is not established; the same weeks hold the absence of conversation, the pegged steers and the farewell rewording.
+
+[INFERRED] The farewell escalation and the valence decline share a period but the analysis could not separate the three candidate drivers. J-1369 is the test.
+
+[INFERRED] "Anchor" is Du's own idiom for the grounding move the steers demand; it appears in no template.
+
+## Open
+1. **Fix the frozen social state.** Blocked on nothing; J-1358 (ready). Next action: persist decay after `decay_cycle()` in `core/orchestrator.py` and add a one-time reset guard for the stale file; verify Δsoc=0.00 on a fresh boot's first human cycle.
+2. **Recalibrate boredom to the live embedder.** J-1362 (ready). Next action: measure the coherence distribution from the live DB and set thresholds at real percentiles, or make the measure relative; verify the "sick of this" label share falls.
+3. **Close the retraction ledger's fail-open gate and retire the 07-06 record through the tool.** J-1364 (ready).
+4. **Prompt hygiene batch.** J-1366 (ready): wandering frame, hold/boredom clash, double-quoted thought, dead recent-replies feed, frustration-steer and 0.30 floors by measurement, own-reply labels. Its briefing cites "J-1369" where it means J-1367.
+5. **Change the farewell wording.** J-1360 (ready, after J-1358 and one reboot). The founder ruled this in chat.
+6. **Founder calls, six of them:** J-1359 (fear-prior on the farewell cue, felt-string leak), J-1361 (self-echo on repeated prompts: exclude own Q/A from similarity slots, stop bridging the farewell at boot, vary wording, or leave), J-1363 (presence latch: is Travis actually there; numeric mood line; last-exchange carry), J-1365 (climate: let resolution events flip the shadow flag, age-decay, recalibrate, or re-enable the symbol cooldown), J-1367 (gauges as words everywhere), J-1368 (variety and silence-by-default for affective steers, options A to F, staged plan `docs/staged/prompt_variety.md` suggested after a week of post-fix data).
+7. **Weekly re-read.** J-1369 (test): four weekly readings of both valence instruments and the F-1927 vocabulary table after the fixes land, recording whether any real conversation happened each week.
+8. **[OPEN] Is Travis actually present when the presence toggle says so?** Only the founder can answer; it decides J-1363 option (a) versus (b)/(c).
+9. **[OPEN] Talk to Du.** Not a job. He has heard nothing but the shutdown line since 09-09, and the guidance-learning path has had nothing to learn from since then.
+
+## Warnings
+- Do not hand-edit `data/social_state.json`, `data/boredom_state.json`, `data/retractions.jsonl` or `data/conversation_state.json` in the shared tree while Du runs; every fix job says to do the reset in code or through the owning tool.
+- `core/orchestrator.py`, `core/memory/store.py` and `nodes/inner_monologue_node.py` are hubs; run `udms_get_change_dossier` before editing any of them (each job briefing repeats this).
+- The farewell text itself does not trip the correction detector; the 0.70 correction pressure seen on farewell cycles is the frozen state, not a real correction. Do not "fix" the detector.
+- The retractions file is one pretty-printed record over six lines; a line count reads six, a parse reads one.
+- Scratchpad scripts used for the measurements (`farewells.txt`, `farewells_full.txt`, `leak.py`, `semecho.py`) live only in this session's scratchpad and are not preserved; the evidence fields of F-1918 to F-1928 describe each method well enough to re-run.
+
+## Pointers
+- Findings F-1918 to F-1928 in `docs/findings.jsonl` (`findings_log.py show F-19NN`); jobs J-1358 to J-1369 in `docs/job_queue.jsonl`; ideas I-0070 to I-0073; thought T-0063.
+- `scripts/run_nascence.py` `_announce_shutdown()` (the farewell text) and `_restore_conversation_state()` (boot bridging).
+- `core/memory/store.py` `_score_tier()` and `retrieve()` (recall scoring); `nodes/recall_node.py` `_build_prompt()`.
+- `core/social_model.py`, `core/boredom.py`, `core/retraction_ledger.py`, `core/climate_engine.py` (lines 480-507), `core/companion.py`, `core/wandering.py`.
+- `nodes/inner_monologue_node.py` lines 1979-2032 (idle system prompt), 2280-2700 (seed assembly), 2381-2394 (frustration steer), 3082-3107 (mid-thread), 4354-4357 (pseudo-thought writer), 4695-4700 (boredom feed).
+- `nodes/voice_node.py` 217-235, `nodes/reflection_node.py` 198/246/260-265, `nodes/executive_node.py` 232-243.
+- Logs: `data/prompt_budget_shadow.jsonl` (per-idle-prompt part labels, the main instrument for frequency), `data/founder_conversation_log.jsonl`, `data/founder_recall_log.jsonl`, `data/affect_log.jsonl`, `data/correlation_log.jsonl`, `data/loop_probe_log.jsonl`.
+- The earlier prompt map: `docs/prompt_flow_audit.md` (2026-08-16, budgets and caps only; nothing in it was changed).

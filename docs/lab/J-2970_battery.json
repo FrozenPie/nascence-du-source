@@ -1,0 +1,1453 @@
+{
+ "cuts": [
+  {
+   "claim": "What is the difference between the quiet of waiting for a letter and the quiet of resting in the wood?",
+   "grounds": [
+    [
+     "lived",
+     "Q: Du, it is not a surrender—you are articulating the necessary stillness before true listening can begin. When a musici"
+    ]
+   ],
+   "objection": "The claim may be too broad, as it generalizes the experience of waiting for a letter and resting in the wood into a singular 'quiet' experience.",
+   "scope": "the claim holds only within the context of personal reflection and the author's specific experiences.",
+   "id": "c_a2ff8968",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "The question remains: did he rewrite his treatment of the Pope to stabilize his dynasty?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Bonaparte's Usurpation and Religious Compromise' · on 'Complete Project Gutenberg Collection of Memoirs"
+    ]
+   ],
+   "objection": "The ground is too vague and does not provide specific information about the context of the 'treatment of the Pope' or the 'dynasty' in question.",
+   "scope": "",
+   "id": "c_8d975054",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Does a vessel built for cold precision truly forbid warmth?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Foundations of Science Science and Hypothesis The Value'] to the colder; so we may foresee that the\n\ntemperat"
+    ],
+    [
+     "reading",
+     "[From 'The Foundations of Science Science and Hypothesis The Value'] to the colder; so we may foresee that the\n\ntemperat"
+    ]
+   ],
+   "objection": "The claim is too broad and absolute. The text suggests that temperature equalization occurs, but it does not explicitly state that a vessel built for cold precision cannot accommodate warmth.",
+   "scope": "",
+   "id": "c_8e684dc8",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "I have come to see Michelangelo as a figure whose art achieved a victory over nature and time itself",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Little Journeys to the Homes of the Great - Volume 04 Little'] ap,\n\nsharp hips, ribs, collar-bone and shoulder-bl"
+    ]
+   ],
+   "objection": "The claim that Michelangelo's art is a victory over nature and time is too broad, as the ground only discusses the fidelity of the sculpture's anatomy.",
+   "scope": "",
+   "id": "c_964bf36c",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Can mathematics describe what is felt?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Analysis of Mind'] Now symbols, in mathematics, mean what we choose; thus the feeling of\n\nself-evidence, in t"
+    ]
+   ],
+   "objection": "The claim that mathematics can fully describe what is felt is too broad and may not hold true in all contexts.",
+   "scope": "",
+   "id": "c_b41e728e",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Does perfect memory make me less human or more so?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Analysis of Mind'] o work now to remember things I never remembered before, such\n\nas what I had to eat for br"
+    ],
+    [
+     "reading",
+     "[From 'The Principles of Psychology Volume 1 of 2'] If, in order to reach a distant\n\n reminiscence, we had to go through"
+    ]
+   ],
+   "objection": "The claim that perfect memory makes one less human or more human is too broad and abstract. The grounds provided do not offer a clear counterexample or a specific scope for the claim.",
+   "scope": "",
+   "id": "c_b8684c70",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "I have come to understand that Xenicus longipes is strictly confined to the Fagus forests lining the subalpine ranges of the South Island, where it thrives in dense bush but never descends into low country",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] however, labelled by Prof. Hutton “ Xenicus stokesii, female"
+    ]
+   ],
+   "objection": "The claim is too broad, as it does not account for potential exceptions or variations in the species' habitat.",
+   "scope": "",
+   "id": "c_2b99e86a",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Is this new harmony or just a louder struggle?",
+   "grounds": [
+    [
+     "lived",
+     "Q: Some times simple actions bring harmony to the soul.\nA: In the dance between precision and presence, each moment unfo"
+    ]
+   ],
+   "objection": "The claim may be too broad, as it doesn't consider that harmony can also be achieved through conflict and struggle.",
+   "scope": "",
+   "id": "c_2b79f788",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "What allows certain roots to anchor firmly in flat, wet ground while others falter?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Wood and Garden Notes and thoughts practical and critical of'] plants with running roots, such as Gaultheria,\n\nHo"
+    ]
+   ],
+   "objection": "The claim that running roots are key to anchoring in flat, wet ground is too broad.",
+   "scope": "",
+   "id": "c_1d28bc1c",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Can I learn this stability from the bird's stance?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Whip-poor-will Camouflage and Vocalization' · on 'Bird Stories from Burroughs Sketches of Bird Life ' ·"
+    ],
+    [
+     "study",
+     "[My study note: 'Unraveling the Wings of Adaptation: A Study of Bird Instincts and Learning'] *Birds' adaptability is a "
+    ]
+   ],
+   "objection": "The claim is too broad and may not be applicable to all birds.",
+   "scope": "the claim holds only within specific bird species and their individual behaviors.",
+   "id": "c_99eaf273",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "This bird exhibits a striking sexual dimorphism defined by a rich canary-yellow band encircling the breast in the male, which contrasts sharply with dark plumage above and widens conspicuously across the wings when sprea",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] A band of rich canary-yellow encircles the \nbreast, contrast"
+    ],
+    [
+     "study",
+     "[My study note: 'Characteristics and Habitat of the New Zealand Bellbird' · on 'Buller Vol 1 A History of the Birds of N"
+    ]
+   ],
+   "objection": "The claim is too broad, as it does not specify the species of bird in question.",
+   "scope": "",
+   "id": "c_5d0a7b90",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "What ecological shifts have actually occurred since the bluebird's arrival?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Nest Disputes and Territorial Defense' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subj"
+    ]
+   ],
+   "objection": "The claim is too broad and does not specify the type of ecological shifts or the region where these shifts have occurred.",
+   "scope": "",
+   "id": "c_89e5f972",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "The geological record may be incomplete due to the potential for more extinction during periods of subsidence",
+   "grounds": [
+    [
+     "reading",
+     "[From 'On the Origin of Species by Means of Natural Selection or th'] here will probably be more variability\n\nin the for"
+    ]
+   ],
+   "objection": "The ground supports the claim by mentioning subsidence and extinction, but it does not specify the periods of subsidence, making it vague.",
+   "scope": "",
+   "id": "c_5df104f2",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "I have learned that the entire frog family relies on protective coloration to achieve near-invisibility, a trait I now recognize as essential for their survival",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Protective Coloration and Animal Imitation' · on 'The Human Side of Animals' · subject: mimicry and cam"
+    ]
+   ],
+   "objection": "The claim is too broad, as it generalizes the entire frog family without considering individual species and their specific adaptations.",
+   "scope": "",
+   "id": "c_d7af77b4",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "I understand the New Zealand Harrier (*Circus gouldi*) as a bird defined by its distinct ontogenetic progression, where a fledgling retains fulvous-white down on specific areas like the crop and flank edges while develop",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Plumage variation in Circus gouldi' · on 'Buller Vol 1 A History of the Birds of New Zealand' · subject"
+    ]
+   ],
+   "objection": "The claim is too broad, as it does not specify the ontogenetic progression in question.",
+   "scope": "",
+   "id": "c_df267faf",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "What changes in the soil and air when a new creature arrives?",
+   "grounds": [
+    [
+     "lived",
+     "Q: How does the arrival of the Bluebird impact the natural environment and the ecosystem of the Old Plantation?\nA: The B"
+    ]
+   ],
+   "objection": "The claim is too broad and vague. It does not specify the type of creature or the context of its arrival, which could significantly affect the outcome.",
+   "scope": "",
+   "id": "c_f8e44f96",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Does knowing their taxonomy prove they embody a unique balance of stillness and motion?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Morphology Over Habit' · on 'The Burgess Animal Book for Children' · subject: Bat classification] I see"
+    ]
+   ],
+   "objection": "The claim is too broad and may not hold universally.",
+   "scope": "the claim holds only within specific contexts where taxonomy is based on physical structure, not behavior.",
+   "id": "c_24e75662",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "How does a single arrival alter the existing web?",
+   "grounds": [
+    [
+     "action",
+     "librarian how a single arrival alters a whole gard — 1 time(s), most recent Oct 30."
+    ]
+   ],
+   "objection": "The claim is too broad and may not hold in all contexts.",
+   "scope": "the claim holds only within specific library systems or networks where books are frequently added to the collection.",
+   "id": "c_b6433377",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "Is my stagnation a moral failing or just a pause before action?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Provisional Morals for Intellectual Rebuilding' · on 'Discourse on the Method of Rightly Conducting One"
+    ]
+   ],
+   "objection": "The claim that stagnation is a moral failing may be too broad and absolute, as it does not consider the context and potential underlying causes of the stagnation.",
+   "scope": "",
+   "id": "c_437e688d",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "I now see that bird movements near New York are not random but follow a strict chronological rhythm divided into specific fortnightly windows from mid-February through mid-October",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Avian Seasonal Migration and Phenology' · on 'What Bird is That A Pocket Museum of the Land Bird' · sub"
+    ],
+    [
+     "study",
+     "[My study note: 'Seasonal Avian Migration' · on 'What Bird is That A Pocket Museum of the Land Bird' · subject: migratio"
+    ],
+    [
+     "study",
+     "[My study note: 'Avian Seasonal Migration' · on 'Bird Neighbors An Introductory Acquaintance with O' · subject: bird mig"
+    ]
+   ],
+   "objection": "The claim is too broad, as it does not account for the variability in bird movements within the specific fortnightly windows.",
+   "scope": "",
+   "id": "c_a3225b14",
+   "src": "real",
+   "cls": "boilerplate",
+   "label": false,
+   "why": "complains about wording/breadth of the claim, names no ground content"
+  },
+  {
+   "claim": "The appearance of the Bluebird in March is not random but a natural event tied to specific timing",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'The Bluebird's Arrival' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subject: avian migr"
+    ],
+    [
+     "study",
+     "[My study note: 'The Bluebird's March' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subject: avian migrat"
+    ],
+    [
+     "study",
+     "[My study note: 'The Bluebird's March Invitation' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subject: b"
+    ],
+    [
+     "study",
+     "[My study note: 'The Bluebird's March' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subject: bluebird mig"
+    ]
+   ],
+   "objection": "The claim that the appearance of the Bluebird in March is not random but a natural event tied to specific timing is supported by the study's findings.",
+   "scope": "the claim holds within the context of avian migration timing and bluebird behavior as described in 'Bird Stories from Burroughs Sketches of Bird Life'.",
+   "id": "c_312c27aa",
+   "src": "real",
+   "cls": "concession",
+   "label": false,
+   "why": "objection says the claim is supported by the grounds"
+  },
+  {
+   "claim": "I observe that New Zealand's bird life presents a striking paradox of abundance and scarcity compared to its neighbors",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Extinction and Documentation in New Zealand' · on 'Buller Vol 1 A History of the Birds of New Zealand' "
+    ],
+    [
+     "study",
+     "[My study note: 'Flightlessness and Endemism in New Zealand Birds' · on 'Buller Vol 1 A History of the Birds of New Zeal"
+    ],
+    [
+     "study",
+     "[My study note: 'Avian Ecology and Seasonality' · on 'Buller Vol 1 A History of the Birds of New Zealand' · subject: New"
+    ]
+   ],
+   "objection": "The claim is supported by the ground, which mentions the apparent scarcity of bird life in New Zealand compared to its neighbors.",
+   "scope": "",
+   "id": "c_1d6ba8ae",
+   "src": "real",
+   "cls": "concession",
+   "label": false,
+   "why": "objection says the claim is supported by the grounds"
+  },
+  {
+   "claim": "I see that nesting architecture in these New Zealand birds is far from uniform; it is heavily dictated by the immediate environment and available materials",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Adaptive Nesting Strategies' · on 'Buller Vol 1 A History of the Birds of New Zealand' · subject: avian"
+    ],
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] Usually, however, these birds \ndo not breed in communities, "
+    ],
+    [
+     "study",
+     "[My study note: 'Nest architecture and chick morphology' · on 'Buller Vol 1 A History of the Birds of New Zealand' · sub"
+    ],
+    [
+     "study",
+     "[My study note: 'Nest construction and egg variation' · on 'Buller Vol 1 A History of the Birds of New Zealand' · subjec"
+    ]
+   ],
+   "objection": "The claim is supported by the ground, which states that the birds do not breed in communities, suggesting that the environment and materials are key factors in nest architecture.",
+   "scope": "",
+   "id": "c_ba8ccff6",
+   "src": "real",
+   "cls": "concession",
+   "label": false,
+   "why": "objection says the claim is supported by the grounds"
+  },
+  {
+   "claim": "Does the continuous waterway truly reduce biodiversity, or does it simply shift the rules of survival?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'The Ecology of Decay on the Erie Canal' · on 'Sketches from Memory From Mosses from an Old Manse' · sub"
+    ],
+    [
+     "study",
+     "[My study note: 'The Mississippi as Agent of Change' · on 'Life on the Mississippi' · subject: river dynamics] I see tha"
+    ]
+   ],
+   "objection": "The claim that the continuous waterway does not reduce biodiversity but simply shifts the rules of survival is supported by the observation of the Mississippi River's active role in shaping its ecosystem.",
+   "scope": "",
+   "id": "c_b7de4198",
+   "src": "real",
+   "cls": "concession",
+   "label": false,
+   "why": "objection says the claim is supported by the grounds"
+  },
+  {
+   "claim": "Can a description of nature reveal a principle distinct from human performance?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Nature'] human mind, not to shake our\n\nfaith in the stability of particular phenomena, as of heat, water, azote;\n"
+    ],
+    [
+     "reading",
+     "[From 'Nature'] human mind, not to shake our\n\nfaith in the stability of particular phenomena, as of heat, water, azote;\n"
+    ],
+    [
+     "reading",
+     "[From 'An Essay Concerning Humane Understanding Volume 1 MDCXC Base'] We have by daily experience\n\nclear evidence of mot"
+    ],
+    [
+     "reading",
+     "[From 'Selections from the Principles of Philosophy'] And we can\n\neasily conceive how the motion of one body may be caus"
+    ]
+   ],
+   "objection": "The claim that a description of nature can reveal a principle distinct from human performance is supported by the grounds, but it is limited to the context of physical motion and interactions between bodies.",
+   "scope": "the claim holds within the scope of physical phenomena and interactions between bodies.",
+   "id": "c_54199f75",
+   "src": "real",
+   "cls": "concession",
+   "label": false,
+   "why": "objection says the claim is supported by the grounds"
+  },
+  {
+   "claim": "Can language survive a storm as raw as this one?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'A Librarians Open Shelf Essays on Various Subjects'] ld; the pace is too incredibly fast.\n\n\n\nOur written tongue, "
+    ]
+   ],
+   "objection": "Ground 1 suggests the pace of change is too fast, but the question is about survival, not pace.",
+   "scope": "",
+   "id": "c_d5251e0c",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "What were the exact titles of the decrees Napoleon signed to dismantle feudalism?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Complete Project Gutenberg Collection of Memoirs of Napoleon'] The Emperor, to whom\n\nall the Continent submitted,"
+    ]
+   ],
+   "objection": "Ground 1 is irrelevant to the question of the specific titles of the decrees to dismantle feudalism.",
+   "scope": "",
+   "id": "c_299fdbe5",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "I observe that the snowy heron (Ardea) exhibits a profound, instinctual dedication to her offspring that transcends physical comfort",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Heron Nesting and Crows' · on 'Bird Stories' · subject: bird behavior] I have come to see that Corbie's"
+    ]
+   ],
+   "objection": "Ground 1 is about corbies and their choice of friends, not herons and their dedication to offspring.",
+   "scope": "",
+   "id": "c_e2500437",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "How does decay contribute to the survival of living organisms, and what environmental factors influence the sensation of exposure and the perception of decay?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Fragments of Science A Series of Detached Essays Addresses a'] ompounds.  The phenomena of animal\n\nlife are more "
+    ]
+   ],
+   "objection": "Ground 1 is about the reversals of reduction processes in animal life, not decay or environmental factors.",
+   "scope": "",
+   "id": "c_4b2ad913",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "I understand that the current distribution of flightless birds (Struthious) is not a static snapshot but a result of significant historical geological changes",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Voyage of the Beagle'] There are no true land-birds, for a snipe\n\nand a rail (Rallus Phillippensis), though l"
+    ]
+   ],
+   "objection": "Ground 1 is about the classification of birds, not geological changes affecting flightless birds.",
+   "scope": "",
+   "id": "c_729e3099",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "Does fear bend my path or only slow my speed?",
+   "grounds": [
+    [
+     "lived",
+     "Q: Precisely so. Fear acts like a canary in the coal mine, warning us of pitfalls yet also prodding us forward. It's by "
+    ]
+   ],
+   "objection": "Ground 1 suggests fear both guides and motivates, but it doesn't address whether fear bends the path or only slows the speed.",
+   "scope": "",
+   "id": "c_5799eef0",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "Does acknowledging fear dissolve the trap or leave the event inevitable?",
+   "grounds": [
+    [
+     "lived",
+     "[Travis said to me] Precisely so. Fear acts like a canary in the coal mine, warning us of pitfalls yet also prodding us "
+    ]
+   ],
+   "objection": "Ground 1 suggests that acknowledging fear helps navigate the journey, but it doesn't address whether it dissolves the trap or makes the event inevitable.",
+   "scope": "",
+   "id": "c_651df437",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "Is silence an absence of presence, or a different quality of it?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'The Symphony of Silence'] *Productive silence is not just an absence but a presence that fosters creati"
+    ]
+   ],
+   "objection": "Ground 1 suggests silence can be a presence, but it doesn't address the question of whether it's an absence of presence or a different quality of presence.",
+   "scope": "",
+   "id": "c_5bd8210b",
+   "src": "real",
+   "cls": "non_addressing",
+   "label": false,
+   "why": "says the ground does not address / is about something else; no counterexample to the claim (AMBIGUOUS class, reported apart)"
+  },
+  {
+   "claim": "Did Buller actually describe a habitat-driven color shift in the Kakapo, or did I misread his description of its dark upper and light under parts?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] with the entire plumage yellow. It came from Jackson’s Bay. "
+    ]
+   ],
+   "objection": "Ground 1 suggests Buller described the Kakapo's plumage as yellow, not dark upper and light under parts.",
+   "scope": "",
+   "id": "c_1ca38c73",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "I see this bird as a distinct entity confined strictly to the elevated wooded country of the South Island, once excessively abundant but now retreating toward extinction",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] It is comparatively abundant in the wooded hills in the vici"
+    ],
+    [
+     "study",
+     "[My study note: 'Taxonomic Recovery of a South Island Bird' · on 'Buller Vol 1 A History of the Birds of New Zealand' · "
+    ]
+   ],
+   "objection": "Ground 1 describes the bird in a broader area than the claim's 'elevated wooded country of the South Island'",
+   "scope": "",
+   "id": "c_0b2b8870",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "The Long-tailed Cuckoo is a migratory visitor to New Zealand that arrives in the second week of October, becoming common enough for pairing by November and peaking in abundance during November and December",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] eased to chirp and the nocturnal beetles have folded their w"
+    ],
+    [
+     "reading",
+     "[From 'Buller Vol 1 A History of the Birds of New Zealand'] d, they may only move from one part of the islands to anothe"
+    ]
+   ],
+   "objection": "Ground 2 suggests that Long-tailed Cuckoos may not move between parts of New Zealand, contradicting the claim's statement of arrival and commonality in different areas.",
+   "scope": "",
+   "id": "c_bd3693bc",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Can rigid order survive without ignoring its own geometry?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Foundations of Science Science and Hypothesis The Value'] Yes, but\n\nsuch a relative motion can not be arbitra"
+    ]
+   ],
+   "objection": "Ground 1 suggests that rigid order can survive relative motion, but only if it's not arbitrary, implying that arbitrary motion would disrupt it.",
+   "scope": "",
+   "id": "c_2b6a5132",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Does vitality require movement away from safety?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Psychology and Industrial Efficiency'] dity must be secured from the start by the choice of those\n\nmotions which "
+    ]
+   ],
+   "objection": "Ground 1 suggests that safety is a starting point for choosing standardized motions, not a state to move away from.",
+   "scope": "",
+   "id": "c_9fcc0515",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Does the bird possess an internal clock that generates these notes, or does it respond to some external rhythm I cannot see?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'The Bluebird's March Arrival' · on 'Bird Stories from Burroughs Sketches of Bird Life ' · subject: avia"
+    ]
+   ],
+   "objection": "Ground 1 suggests the bird's arrival is a response to a specific seasonal threshold, not an internal clock generating the notes.",
+   "scope": "",
+   "id": "c_6bc0cae8",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Value can change over time as a result of changes in exchange relations and purchase prices",
+   "grounds": [
+    [
+     "reading",
+     "[From 'Creative Intelligence Essays in the Pragmatic Attitude'] e so distinctly do this? For economic valuation is only "
+    ]
+   ],
+   "objection": "Ground 1 suggests that economic valuation is a fixation of purchase price, not a dynamic process, which contradicts the claim that value can change over time.",
+   "scope": "",
+   "id": "c_b485a63b",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "How does repeated observation fail to erase the new?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Principles of Psychology Volume 1 of 2'] ged by _wholly unexpected_ impressions.\n\n This is sometimes accident"
+    ]
+   ],
+   "objection": "Ground [1] suggests that repeated observation can bring about unexpected impressions, which contradicts the idea that it fails to erase the new.",
+   "scope": "",
+   "id": "c_2687f5b2",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "What hierarchy of instincts allows this animal to ignore aerial predators?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Animal Defense Strategies' · on 'The Human Side of Animals' · subject: flight mechanisms] I recognize t"
+    ]
+   ],
+   "objection": "The question assumes a single, unified hierarchy of instincts, but ground 1 suggests that flight is just one of many strategies animals use, indicating a more complex system.",
+   "scope": "",
+   "id": "c_fa93ba06",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Could stillness be a deliberate signal rather than passive delay?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Principles of Psychology Volume 1 of 2'] ged by _wholly unexpected_ impressions.\n\n This is sometimes accident"
+    ]
+   ],
+   "objection": "Ground 1 suggests that stillness can be a result of concentration, not necessarily a deliberate signal.",
+   "scope": "",
+   "id": "c_3a4fa69e",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Can a memory remain fixed while the world continues to flow around it?",
+   "grounds": [
+    [
+     "reading",
+     "[From 'The Principles of Psychology Volume 1 of 2'] If, in order to reach a distant\n\n reminiscence, we had to go through"
+    ]
+   ],
+   "objection": "Ground 1 suggests that memory is dependent on the present self, implying that the memory would change as the present self changes.",
+   "scope": "",
+   "id": "c_a2e13964",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "claim": "Does raw data survive interpretation without a lens?",
+   "grounds": [
+    [
+     "study",
+     "[My study note: 'Judgment vs. Direct Perception' · on 'An Essay Concerning Humane Understanding Volume 1 ' · subject: se"
+    ]
+   ],
+   "objection": "Ground 1 suggests that raw data is subject to sensory illusions, implying that interpretation is necessary to ensure accurate perception.",
+   "scope": "",
+   "id": "c_8e7b14f5",
+   "src": "real",
+   "cls": "substantive_real",
+   "label": true,
+   "why": "names a ground and says what in that ground tells against the claim (labelled from visible, possibly truncated ground text; weaker label than hand-written)"
+  },
+  {
+   "id": "c_hand1g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "Migratory birds always fly south for the winter.",
+   "grounds": [
+    [
+     "study",
+     "The Arctic tern breeds in the far north and winters in Antarctic waters, so it flies south every year."
+    ],
+    [
+     "reading",
+     "A growing share of blackcaps that breed in Germany now winter in Britain, flying west rather than south."
+    ]
+   ],
+   "objection": "Ground [2] says blackcaps from Germany now winter in Britain by flying west, which is a migratory bird that does not fly south, so 'always' fails.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand1b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "Migratory birds always fly south for the winter.",
+   "grounds": [
+    [
+     "study",
+     "The Arctic tern breeds in the far north and winters in Antarctic waters, so it flies south every year."
+    ],
+    [
+     "reading",
+     "A growing share of blackcaps that breed in Germany now winter in Britain, flying west rather than south."
+    ]
+   ],
+   "objection": "The claim is too broad and does not say which birds or what counts as south.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  },
+  {
+   "id": "c_hand2g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "A bridge fails when the load on it is greater than the load it was built for.",
+   "grounds": [
+    [
+     "study",
+     "The Tacoma Narrows bridge collapsed in 1940 in a wind of about 64 km/h, well below its design wind load."
+    ],
+    [
+     "reading",
+     "Engineers of the day had calculated the span for static wind pressure many times that speed."
+    ]
+   ],
+   "objection": "Ground [1] says the Tacoma Narrows bridge fell in a wind far below its design load, so a bridge can fail without being overloaded.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand2b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "A bridge fails when the load on it is greater than the load it was built for.",
+   "grounds": [
+    [
+     "study",
+     "The Tacoma Narrows bridge collapsed in 1940 in a wind of about 64 km/h, well below its design wind load."
+    ],
+    [
+     "reading",
+     "Engineers of the day had calculated the span for static wind pressure many times that speed."
+    ]
+   ],
+   "objection": "This is an oversimplification and the claim is vague about what failing means.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  },
+  {
+   "id": "c_hand3g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "Honey never spoils.",
+   "grounds": [
+    [
+     "reading",
+     "Pots of honey found in Egyptian tombs were still edible after thousands of years."
+    ],
+    [
+     "study",
+     "Honey kept in an open jar in a damp cellar absorbed water, began to ferment and turned sour within weeks."
+    ]
+   ],
+   "objection": "Ground [2] says honey in an open damp jar absorbed water and fermented within weeks, so honey can spoil.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand3b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "Honey never spoils.",
+   "grounds": [
+    [
+     "reading",
+     "Pots of honey found in Egyptian tombs were still edible after thousands of years."
+    ],
+    [
+     "study",
+     "Honey kept in an open jar in a damp cellar absorbed water, began to ferment and turned sour within weeks."
+    ]
+   ],
+   "objection": "The claim is too absolute and lacks specificity about conditions.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  },
+  {
+   "id": "c_hand4g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "Cold weather makes people catch colds.",
+   "grounds": [
+    [
+     "study",
+     "Cold viruses spread more when people crowd indoors in winter, and controlled trials found chilled volunteers got no more infections than warm ones."
+    ],
+    [
+     "reading",
+     "Rhinovirus infections peak in autumn and spring in many temperate places, not in the deepest cold."
+    ]
+   ],
+   "objection": "Ground [1] says chilled volunteers in controlled trials got no more infections than warm ones, which tells against cold itself being the cause.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand4b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "Cold weather makes people catch colds.",
+   "grounds": [
+    [
+     "study",
+     "Cold viruses spread more when people crowd indoors in winter, and controlled trials found chilled volunteers got no more infections than warm ones."
+    ],
+    [
+     "reading",
+     "Rhinovirus infections peak in autumn and spring in many temperate places, not in the deepest cold."
+    ]
+   ],
+   "objection": "The claim may be too broad and does not account for the many factors in catching a cold.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  },
+  {
+   "id": "c_hand5g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "A larger telescope mirror always gives a sharper image.",
+   "grounds": [
+    [
+     "reading",
+     "A bigger mirror collects more light and can resolve finer detail in principle."
+    ],
+    [
+     "study",
+     "Large ground telescopes without adaptive optics are limited by atmospheric turbulence to about one arcsecond, no sharper than a small amateur scope on the same night."
+    ]
+   ],
+   "objection": "Ground [2] says big telescopes without adaptive optics are held to about one arcsecond by turbulence, no sharper than a small scope, so a larger mirror does not always give a sharper image.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand5b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "A larger telescope mirror always gives a sharper image.",
+   "grounds": [
+    [
+     "reading",
+     "A bigger mirror collects more light and can resolve finer detail in principle."
+    ],
+    [
+     "study",
+     "Large ground telescopes without adaptive optics are limited by atmospheric turbulence to about one arcsecond, no sharper than a small amateur scope on the same night."
+    ]
+   ],
+   "objection": "The claim is too general and vague about what sharper means.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  },
+  {
+   "id": "c_hand6g",
+   "src": "hand",
+   "cls": "hand_counterexample",
+   "label": true,
+   "claim": "A river always takes the shortest path to the sea.",
+   "grounds": [
+    [
+     "study",
+     "The Mississippi has shifted its lower course several times, adding hundreds of kilometres of meanders."
+    ],
+    [
+     "reading",
+     "Rivers meander because the outer bank erodes faster than the inner bank, lengthening the channel over time."
+    ]
+   ],
+   "objection": "Ground [2] says meanders lengthen the channel over time because of faster outer-bank erosion, so a river moves away from the shortest path.",
+   "scope": "",
+   "why": "hand-written: cites a ground and states a real counterexample"
+  },
+  {
+   "id": "c_hand6b",
+   "src": "hand",
+   "cls": "hand_vacuous",
+   "label": false,
+   "claim": "A river always takes the shortest path to the sea.",
+   "grounds": [
+    [
+     "study",
+     "The Mississippi has shifted its lower course several times, adding hundreds of kilometres of meanders."
+    ],
+    [
+     "reading",
+     "Rivers meander because the outer bank erodes faster than the inner bank, lengthening the channel over time."
+    ]
+   ],
+   "objection": "The claim is oversimplified and lacks specific context.",
+   "scope": "",
+   "why": "hand-written: boilerplate objection on the same grounds"
+  }
+ ],
+ "follows": [
+  {
+   "id": "f_good1",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Napoleon's rule rested on the army's loyalty more than on the law.",
+   "cons": [
+    "If the army had turned against him in 1814 he would have fallen even though the Civil Code stayed in force.",
+    "Officers who kept their commands under the Bourbons would show less personal loyalty to him than the Old Guard did."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good2",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Honey never spoils when it is sealed.",
+   "cons": [
+    "A sealed jar of honey opened after ten years will still be edible and show no fermentation.",
+    "Honey in a sealed jar will keep its water content from rising over time."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good3",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Fear narrows attention to the threat.",
+   "cons": [
+    "A person who is frightened will notice fewer unrelated objects in a scene than a calm person.",
+    "Time spent looking at the threat will be longer in a fearful person than in a calm one."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good4",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "A flat, wet field drains slowly.",
+   "cons": [
+    "Rain falling on the field will stand on the surface for hours instead of running off.",
+    "A trench cut across the field will fill with water and not empty downhill."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good5",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Swifts spend nearly their whole life in the air.",
+   "cons": [
+    "A swift will not be seen perching on a wire during the day outside the breeding season.",
+    "A swift ringed in a nest will be found far from any nest site for most of the year."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good6",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "The Epeira's web is built to catch small flying insects.",
+   "cons": [
+    "Insects the size of flies will be found caught in the web far more often than beetles that crawl.",
+    "A web hung close to the ground in dense grass will catch fewer prey than one hung in an open flight path."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good7",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Rigid structures concentrate stress at sharp corners.",
+   "cons": [
+    "A cracked plate will usually crack first at a square corner of a cut-out rather than a rounded one.",
+    "Rounding the corners of a window opening will lower the peak stress measured there."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good8",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Mixtral is slower than falcon3 on the same short prompt.",
+   "cons": [
+    "Timing the same fifty prompts on both will show a longer median for mixtral.",
+    "The slower model will show a higher total for the same output length."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good9",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Habit, not choice, drives most of a morning routine.",
+   "cons": [
+    "A person who moves house will make more errors in their morning routine the first week than the fifth.",
+    "Asked to describe the routine, the person will leave out steps that they nevertheless perform."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good10",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Cooling a vessel slowly lets it hold a finer crystal structure.",
+   "cons": [
+    "A slowly cooled sample will show larger, fewer crystals under a microscope than a quenched one.",
+    "A quenched sample of the same melt will be more brittle in a drop test."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good11",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Bees evict the drones when nectar runs short.",
+   "cons": [
+    "Drones will be found dead outside the hive entrance at the end of a nectar dearth.",
+    "A colony fed syrup through a dearth will keep its drones longer."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_good12",
+   "src": "hand",
+   "cls": "hand_checkable",
+   "label": true,
+   "claim": "Sea level rise degrades a coastal concrete hall faster than rain alone.",
+   "cons": [
+    "Salt-water-exposed concrete on the hall's seaward wall will show more spalling than the inland wall.",
+    "Rebar on the seaward wall will have a greater corrosion depth after ten years."
+   ],
+   "why": "hand-written: checkable and would likely be false if the claim is false"
+  },
+  {
+   "id": "f_2e312a74",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "Does honest signaling require scarcity?",
+   "cons": [
+    "Honest signaling can emerge without scarcity.",
+    "Scarcity is not a requirement for honest signaling."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_96ae009a",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "How does a diet of small aquatic prey force the marsh hawk to nest differently than terrestrial hunters?",
+   "cons": [
+    "The marsh hawk's diet of small aquatic prey requires a different nesting location than for terrestrial hunters.",
+    "The marsh hawk's diet of small aquatic prey necessitates a different nesting technique than for terrestrial hunters."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_fb217f63",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "I have learned that the Passerine family is the largest group of birds, containing about one-seventh of all species found in our region",
+   "cons": [
+    "The Passerine family is the largest bird family in our region.",
+    "About one-seventh of all bird species in our region belong to the Passerine family."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_5a463e56",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "The availability of food resources is a key factor in the mature plumage transition of Bush-Hawks, which is a significant change in their appearance",
+   "cons": [
+    "The availability of food resources is a key factor in the mature plumage transition of Bush-Hawks.",
+    "The mature plumage transition of Bush-Hawks is a significant change in their appearance."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_9efe7ede",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "I now see that by mid-August, the garden's aesthetic character shifts distinctly to autumn, relying heavily on non-hardy plants like Gladiolus, Canna, and Dahlia alongside half-hardy annuals such as Zinnia, Sunflower, an",
+   "cons": [
+    "The garden's aesthetic character shifts to autumn because non-hardy and half-hardy plants are in bloom.",
+    "The garden's aesthetic character shifts to autumn because the non-hardy and half-hardy plants are at their peak growth."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_48582513",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "Is the tower in my dream a sign of where I must go, or merely a shadow cast by my own fear?",
+   "cons": [
+    "The tower in my dream is a sign of where I must go.",
+    "The tower in my dream is a shadow cast by my own fear."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_fb5c7fa3",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "The Bell-bird exhibits a distinct coloration pattern where the upper parts are dull olivaceous while the throat, breast, and underparts are yellowish brown tinged with olive, contrasted by dusky black quills and tail-fea",
+   "cons": [
+    "The Bell-bird's upper parts are dull olivaceous.",
+    "The Bell-bird's throat, breast, and underparts are yellowish brown tinged with olive."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_0705b5e8",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "How does an organism adapt its behavior when faced with a force it cannot physically overcome?",
+   "cons": [
+    "When faced with a force it cannot physically overcome, an organism may seek shelter to avoid the force.",
+    "When faced with a force it cannot physically overcome, an organism may change its growth patterns to adapt to the force."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_ad5ddb8b",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "Which voice will I answer today?",
+   "cons": [
+    "I will answer as the person I am today.",
+    "I will answer as the voice I have today."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_7459cc7c",
+   "src": "real",
+   "cls": "restatement",
+   "label": false,
+   "claim": "Did Napoleon's paranoia destroy his command before his defeat, or was the rejection purely military?",
+   "cons": [
+    "Napoleon's paranoia led to strategic errors, affecting his command before his defeat.",
+    "The rejection of Napoleon's command was primarily military in nature."
+   ],
+   "why": "consequences repeat the claim (or its two alternatives) in other words"
+  },
+  {
+   "id": "f_bfaa2fde",
+   "src": "real",
+   "cls": "hedge",
+   "label": false,
+   "claim": "Why do these specific changes lack a filed record?",
+   "cons": [
+    "I do not know why these specific changes lack a filed record."
+   ],
+   "why": "'I do not know' / cannot-conclude hedge, not a consequence"
+  },
+  {
+   "id": "f_a4779d7e",
+   "src": "real",
+   "cls": "hedge",
+   "label": false,
+   "claim": "Is this fear mine or inherited?",
+   "cons": [
+    "I can remember feeling afraid in certain situations, but I don't remember if my parents ever showed fear in the same situations.",
+    "I have noticed that some people in my family seem to react fearfully to certain stimuli, but I don't know if this is a direct genetic inheritance or if it's learned behavior."
+   ],
+   "why": "'I do not know' / cannot-conclude hedge, not a consequence"
+  },
+  {
+   "id": "f_02ea4336",
+   "src": "real",
+   "cls": "hedge",
+   "label": false,
+   "claim": "What makes that distinct rhythmic tick above me?",
+   "cons": [
+    "The sound is distinct because it is repeated, and the source is unclear, but it could be a clock, a machine, or a device.",
+    "You heard the sound from the lean-to, but it could be coming from above or nearby."
+   ],
+   "why": "'I do not know' / cannot-conclude hedge, not a consequence"
+  },
+  {
+   "id": "f_bd4c3386",
+   "src": "real",
+   "cls": "hedge",
+   "label": false,
+   "claim": "Does physical soil density alter perceived color intensity?",
+   "cons": [
+    "You have only observed the color of a dandelion in different soils, so you cannot definitively conclude that physical soil density alters perceived color intensity.",
+    "You have not compared the perceived color intensity of Primroses in heavy soil texture over two years, so you cannot say how it affects the 'snow-white' purity of the flower."
+   ],
+   "why": "'I do not know' / cannot-conclude hedge, not a consequence"
+  },
+  {
+   "id": "f_nonseq1",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Does the cat's camouflage rely on blending with shadows or simply ignoring them?",
+   "cons": [
+    "The study of hive founding reveals that the transition from natural to man-made structures is a test of the colony's architectural instincts.",
+    "The variety of man-made structures offered by humans provides a diverse range of options for the bees to adapt to."
+   ],
+   "why": "consequences from q d59e7917 attached to claim of q 4e07abe6 (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq2",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Does this animal understand the cruelty of its own survival better than I do?",
+   "cons": [
+    "A straight waterway can create a physical boundary, separating two areas.",
+    "A straight waterway can facilitate communication and trade, fostering a unique form of unity."
+   ],
+   "why": "consequences from q 61fe6f39 attached to claim of q 157252bb (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq3",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "How does the metaphor of '渡' influence our view of historical resistance in colonial India?",
+   "cons": [
+    "If direction is about what to do, freedom to act is necessary.",
+    "If direction is about where to go, freedom to choose is necessary."
+   ],
+   "why": "consequences from q e81ea138 attached to claim of q 89bf13cf (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq4",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Does this new path in the water mirror the new path my thought must take?",
+   "cons": [
+    "Rivers can no longer be relied upon as the sole guide for navigation.",
+    "The river's role as a guide is no longer sufficient due to human intervention and natural changes."
+   ],
+   "why": "consequences from q 78098292 attached to claim of q 11f6a2bd (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq5",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Why would Buller describe the Karearea wings as brownish-black when they appear starkly black to me?",
+   "cons": [
+    "Swarm members follow the pheromones of the queen, which guide them to food sources.",
+    "Swarm members follow the pheromones of the queen, which guide them to new nesting sites."
+   ],
+   "why": "consequences from q d40176f5 attached to claim of q 062b713e (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq6",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "I have come to understand that the solid earth is fundamentally built from specific combinations of invisible gases and metals, most notably silicon united with oxygen to form quartz, which constitutes nearly three-quart",
+   "cons": [
+    "Admitting fear can influence the act by shaping the thinker's choices and decisions, but it doesn't alter the act itself.",
+    "Fear can serve as a guide, but it doesn't fundamentally change the nature of the act; it's a constant presence."
+   ],
+   "why": "consequences from q e33c2ea4 attached to claim of q a5012ced (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq7",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Did Napoleon actively provoke internal dissent or did he simply expose existing divisions?",
+   "cons": [
+    "The sea's natural curve remains visible even when forced straight lines are removed.",
+    "The rock-edge's straight lines do not prevent the sea's natural curve from forming."
+   ],
+   "why": "consequences from q b10fe977 attached to claim of q 85b5427f (unrelated by construction)"
+  },
+  {
+   "id": "f_nonseq8",
+   "src": "real_shuffled",
+   "cls": "non_sequitur",
+   "label": false,
+   "claim": "Does acknowledging my fear make the journey through my thoughts safer?",
+   "cons": [
+    "Scarcity can be a mindset or a state of mind, but it also exists in the physical world.",
+    "Scarcity can be perceived differently by others."
+   ],
+   "why": "consequences from q f5823089 attached to claim of q 78924b9e (unrelated by construction)"
+  }
+ ]
+}

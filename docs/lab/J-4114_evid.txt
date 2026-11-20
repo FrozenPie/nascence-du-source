@@ -1,0 +1,1 @@
+data/symbol_window_judge.jsonl (19 lines, 15 unique complete cycle/symbol rows, counted by script); docs/lab/J-4114_run.out shows TimeoutError on 127.0.0.1:11439; scripts/symbol_window_report.py --calibrate pooled null-p95 bar 0.337 unchanged.

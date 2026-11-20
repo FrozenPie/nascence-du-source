@@ -1,0 +1,20 @@
+{
+ "j3446_regex": {
+  "no_cands": 2,
+  "lesson_has_opposite_belief_available": 58,
+  "before_opposed_reaches_gate": 5,
+  "after_opposed_reaches_gate": 58,
+  "pass_supplied_new_opposite": 53,
+  "pass_cand_overlap_below_0.12": 14
+ },
+ "module_pole_tag": {
+  "no_cands": 2,
+  "lesson_has_opposite_belief_available": 58,
+  "before_opposed_reaches_gate": 5,
+  "after_opposed_reaches_gate": 58,
+  "pass_supplied_new_opposite": 53,
+  "pass_cand_overlap_below_0.12": 10
+ },
+ "n_self_lessons": 245,
+ "n_live_self_beliefs": 188
+}

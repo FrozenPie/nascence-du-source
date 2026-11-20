@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渡 · Nascence Modular Diagram Suite (Build 1.4.0)</title>
+<style>
+:root {
+  --bg: #0b0b12; --panel: #13131d; --panel2: #181826; --ink: #e8e8f0; --dim: #9a9ab0; --line: #26263a;
+  --rose: #fb7185; --cyan: #22d3ee; --violet: #a855f7; --green: #34d399; --amber: #fbbf24; --blue: #4a9eff;
+  --teal: #2dd4bf; --lime: #a3e635; --orange: #f59e0b; --indigo: #818cf8;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0 0 60px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+header { padding: 40px 0 10px; border-bottom: 1px solid var(--line); margin-bottom: 30px; }
+h1 { font-size: 38px; margin: 0 0 6px; }
+h1 .du { color: var(--teal); }
+.sub { color: var(--dim); font-size: 14px; }
+.diag-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.diag-card h3 { margin-top: 0; color: var(--cyan); font-size: 18px; }
+.diag-card p { color: var(--dim); font-size: 13.5px; margin-bottom: 20px; }
+svg { width: 100%; height: auto; display: block; overflow: visible; }
+.node-box { fill: var(--panel2); stroke: var(--line); stroke-width: 1.5; rx: 8; transition: all 0.2s; }
+.node-box:hover { stroke: var(--cyan); }
+.node-title { fill: var(--ink); font-weight: 600; font-size: 13px; }
+.node-sub { fill: var(--dim); font-size: 11px; }
+.node-port { fill: var(--teal); font-weight: bold; font-size: 11px; }
+.edge-cyan { stroke: var(--cyan); stroke-width: 1.5; fill: none; }
+.edge-violet { stroke: var(--violet); stroke-width: 1.5; fill: none; }
+.edge-amber { stroke: var(--amber); stroke-width: 1.5; fill: none; }
+.edge-teal { stroke: var(--teal); stroke-width: 1.5; fill: none; }
+.mermaid { background: var(--panel2); padding: 16px; border-radius: 8px; border: 1px solid var(--line); margin-top: 16px; }
+a { color: var(--blue); text-decoration: none; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true, theme:"dark"});</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Nascence <span class="du">渡</span> Modular Diagram Suite</h1>
+  <div class="sub">Build 1.4.0 — High-fidelity modular visual focus views and subsystem diagrams. Link to full interactive overview: <a href="System_Overview.html">System_Overview.html</a> · Interactive Zoomable Master Diagram: <a href="architecture_diagram.html">architecture_diagram.html</a>.</div>
+</header>
+
+<!-- FOCUS VIEW 1: MODEL LANES & HARDWARE SUBSTRATE -->
+<section class="diag-card">
+  <h3>1. Deployment & Hardware Substrate Matrix</h3>
+  <p>Dedicated inference stations mapped across hardware ports and LLM model families (August 20 Station Shuffle).</p>
+  <svg viewBox="0 0 900 280">
+    <rect x="20" y="20" width="260" height="100" class="node-box" stroke="#22d3ee" stroke-width="2"/>
+    <text x="40" y="50" class="node-title">Hot Lane (Self / Master)</text>
+    <text x="40" y="70" class="node-sub">Model: qwen3.5:9b (39.4 tok/s)</text>
+    <text x="40" y="90" class="node-sub">Hardware: GTX 1080 Ti GPU</text>
+    <text x="40" y="105" class="node-port">Port :11433 · 8,192 ctx</text>
+
+    <rect x="320" y="20" width="260" height="100" class="node-box" stroke="#a855f7" stroke-width="2"/>
+    <text x="340" y="50" class="node-title">Subconscious Lane</text>
+    <text x="340" y="70" class="node-sub">Model: phi3:mini (3.94 GB resident)</text>
+    <text x="340" y="90" class="node-sub">Hardware: Ramses RTX 3070 GPU</text>
+    <text x="340" y="105" class="node-port">Port :11434 · 4,096 ctx</text>
+
+    <rect x="620" y="20" width="260" height="100" class="node-box" stroke="#34d399" stroke-width="2"/>
+    <text x="640" y="50" class="node-title">Emissary Judge #1</text>
+    <text x="640" y="70" class="node-sub">Model: gemma4:12b (1.000 score)</text>
+    <text x="640" y="90" class="node-sub">Hardware: Threadripper CPU</text>
+    <text x="640" y="105" class="node-port">Port :11439 · 8,192 ctx</text>
+
+    <rect x="170" y="150" width="260" height="100" class="node-box" stroke="#fbbf24" stroke-width="2"/>
+    <text x="190" y="180" class="node-title">Panel Judge #2</text>
+    <text x="190" y="200" class="node-sub">Model: falcon3:7b (TII lineage)</text>
+    <text x="190" y="220" class="node-sub">Hardware: Threadripper CPU</text>
+    <text x="190" y="235" class="node-port">Port :11440 · 8,192 ctx</text>
+
+    <rect x="470" y="150" width="260" height="100" class="node-box" stroke="#fb7185" stroke-width="2"/>
+    <text x="490" y="180" class="node-title">Dreamer & Voice Hub</text>
+    <text x="490" y="200" class="node-sub">Model: yi:34b-v1.5 (34B)</text>
+    <text x="490" y="220" class="node-sub">Hardware: Threadripper CPU</text>
+    <text x="490" y="235" class="node-port">Port :11442 · 8,192 ctx</text>
+
+    <path d="M 280 70 L 320 70" class="edge-cyan"/>
+    <path d="M 580 70 L 620 70" class="edge-violet"/>
+    <path d="M 300 120 L 300 150" class="edge-amber"/>
+    <path d="M 600 120 L 600 150" class="edge-teal"/>
+  </svg>
+</section>
+
+<!-- FOCUS VIEW 2: 16-NODE CONSCIOUS THOUGHT CYCLE -->
+<section class="diag-card">
+  <h3>2. Focus View: Hot Lane Conscious Thought Cycle (16 Nodes)</h3>
+  <p>The 10-step sequential processing pipeline for every conscious cycle and monologue turn.</p>
+  <pre class="mermaid">
+  flowchart LR
+    PRE["Pre-Cortex Reflexes"] --> P["Node 1: Perception"]
+    P --> E["Node 2: Emotion"] & S["Node 3: Salience"] & MR["Node 4: Memory Router"]
+    E & S & MR --> DBQ["DB Spreading Activation"]
+    DBQ --> RC["Node 5: Recall"] --> EB["Node 6: Episodic Buffer"]
+    EB --> SG{"Scene Stable?"}
+    SG -.->|"unstable"| RC
+    SG -->|"stable"| R["Node 7: Reflection"] --> C["Node 8: Critic"]
+    C --> X["Node 9: Executive"] --> V["Node 10: Voice"] --> EFX["Constraint Effector"]
+  </pre>
+</section>
+
+<!-- FOCUS VIEW 3: S-MMU 7 MEMORY HIERARCHY STACK -->
+<section class="diag-card">
+  <h3>3. Focus View: S-MMU 7 Memory Hierarchy Stack</h3>
+  <p>The 7-tier memory architecture with gist abstraction and spreading activation recall.</p>
+  <svg viewBox="0 0 900 270">
+    <rect x="50" y="20" width="800" height="28" class="node-box" fill="#1f1124" stroke="#a855f7"/>
+    <text x="70" y="39" class="node-title">L0 Constitution — Inviolable Core Identity (<a href="file:///C:/Nascence/core/axiom_layers.py" style="fill:#22d3ee">core/axiom_layers.py</a>)</text>
+
+    <rect x="50" y="52" width="800" height="28" class="node-box" fill="#101826" stroke="#22d3ee"/>
+    <text x="70" y="71" class="node-title">L1 Working Memory — Per-Cycle Assembly (<a href="file:///C:/Nascence/nodes/episodic_buffer_node.py" style="fill:#22d3ee">nodes/episodic_buffer_node.py</a>)</text>
+
+    <rect x="50" y="84" width="800" height="28" class="node-box" fill="#13241d" stroke="#34d399"/>
+    <text x="70" y="103" class="node-title">L2 Semantic Memory — Distilled Wisdom & School Gists (<a href="file:///C:/Nascence/nodes/consolidation_node.py" style="fill:#22d3ee">nodes/consolidation_node.py</a>)</text>
+
+    <rect x="50" y="116" width="800" height="28" class="node-box" fill="#242111" stroke="#fbbf24"/>
+    <text x="70" y="135" class="node-title">L3 Episodic Memory — Lived Experience (Affect Scored, 3,500 Cap, <a href="file:///C:/Nascence/core/memory_levels.py" style="fill:#22d3ee">core/memory_levels.py</a>)</text>
+
+    <rect x="50" y="148" width="800" height="28" class="node-box" fill="#111624" stroke="#818cf8"/>
+    <text x="70" y="167" class="node-title">L4 Knowledge Archive — Curated Seed Fragments & Permanent Memory</text>
+
+    <rect x="50" y="180" width="800" height="28" class="node-box" fill="#1a1224" stroke="#fb7185"/>
+    <text x="70" y="199" class="node-title">L5 Working-Self — Procedural Skills & Compiled Habits</text>
+
+    <rect x="50" y="212" width="800" height="28" class="node-box" fill="#122422" stroke="#2dd4bf"/>
+    <text x="70" y="231" class="node-title">L6 & L7 — Epochs & Themes (Session Mood & Cross-Session Threads)</text>
+  </svg>
+</section>
+
+<!-- FOCUS VIEW 4: SUBCONSCIOUS & DREAM FLYWHEEL -->
+<section class="diag-card">
+  <h3>4. Focus View: Subconscious & Dream Flywheel</h3>
+  <p>Longitudinal tension accretion, gap-scanning, and nighttime dream state machine synthesis.</p>
+  <pre class="mermaid">
+  flowchart LR
+    T1["T1: Shadow Scan (30s)"] --> T2["T2: Contradiction Consolidation"]
+    T2 --> T4["T4: Self-Authoring Chain"] --> PROB["Provisional Probation Sensor"]
+    PROB --> EMISJ["Emissary Solidify Judge (gemma4:12b)"]
+    EMISJ -.->|"integrated"| COMMIT["Commit to Axiom (L0-L5)"]
+    EMISJ -.->|"reworded"| REVERT["Revert Candidate"]
+  </pre>
+</section>
+
+<!-- FOCUS VIEW 5: STRATIFIED IDENTITY ESTATE -->
+<section class="diag-card">
+  <h3>5. Focus View: Stratified Identity Estate & Governance Gates</h3>
+  <p>L0–L5 stratified axiom layers, decoupled Emissary judge, and T4 probation sensor.</p>
+  <pre class="mermaid">
+  flowchart TD
+    AX["Stratified Axioms L0-L5"] --> VAULT["Identity Vault & Estate"]
+    EXEC["Executive Node"] -.-> CLAIMS["Self-Claim Register"] --> COMMIT["Commitment Ledger"]
+    CLAIMS --> SELFIMP["Self-Implication Engine"] --> SITWITH["Sit-With-It Friction Gate"]
+    T4["T4 Probation Sensor"] --> PROB["Provisional Identity"] --> EMISJ["Emissary Grounding Judge"]
+    EMISJ --> AX
+  </pre>
+</section>
+
+<footer>
+Nascence 渡 · Build 1.4.0 — High-fidelity modular visual architecture suite.
+</footer>
+</div>
+</body>
+</html>

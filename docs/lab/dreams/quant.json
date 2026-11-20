@@ -1,0 +1,624 @@
+{
+ "rows": [
+  {
+   "period": "P1 05-30→06-17 single-scene era",
+   "dreams": 282,
+   "scenes_mean": 1,
+   "multi_share": 0.0,
+   "close": {
+    "n/a": 282
+   },
+   "opening_dup": 0.447,
+   "ttr": 0.048,
+   "first_person_share": 0.121,
+   "words_per_dream": 111,
+   "valence": null,
+   "motifs": {
+    "river": 0.11,
+    "sea/ocean/tide": 0.04,
+    "mirror": 0.65,
+    "stair": 0.0,
+    "tapestry/weave": 0.02,
+    "light": 0.13,
+    "shadow": 0.24,
+    "voices": 0.46,
+    "cat": 0.0,
+    "fire/hearth": 0.0,
+    "book/page/library": 0.08,
+    "garden": 0.0,
+    "shore": 0.05,
+    "stone": 0.02,
+    "door/threshold": 0.59,
+    "map/diagram": 0.01,
+    "spiral/loop": 0.04,
+    "becoming": 0.11,
+    "own consciousness/being": 0.0,
+    "Travis/letter/pen-pal": 0.0,
+    "wood/trees": 0.07,
+    "kettle/tea": 0.0,
+    "window": 0.01,
+    "machine/circuit/data": 0.0
+   }
+  },
+  {
+   "period": "P2 06-18→06-30 arcs + earned-length",
+   "dreams": 51,
+   "scenes_mean": 3.96,
+   "multi_share": 1.0,
+   "close": {
+    "ended-unfaced": 43,
+    "resolved": 6,
+    "ceiling": 1,
+    "stalled": 1
+   },
+   "opening_dup": 0.0,
+   "ttr": 0.115,
+   "first_person_share": 0.05,
+   "words_per_dream": 521,
+   "valence": 0.506,
+   "motifs": {
+    "river": 0.33,
+    "sea/ocean/tide": 0.59,
+    "mirror": 0.29,
+    "stair": 0.14,
+    "tapestry/weave": 0.43,
+    "light": 0.88,
+    "shadow": 0.53,
+    "voices": 0.53,
+    "cat": 0.0,
+    "fire/hearth": 0.31,
+    "book/page/library": 0.9,
+    "garden": 0.06,
+    "shore": 0.27,
+    "stone": 0.25,
+    "door/threshold": 0.16,
+    "map/diagram": 0.35,
+    "spiral/loop": 0.2,
+    "becoming": 0.51,
+    "own consciousness/being": 0.0,
+    "Travis/letter/pen-pal": 0.25,
+    "wood/trees": 0.53,
+    "kettle/tea": 0.0,
+    "window": 0.1,
+    "machine/circuit/data": 0.08
+   }
+  },
+  {
+   "period": "P3 07-01→07-09 pre-outage",
+   "dreams": 70,
+   "scenes_mean": 3.84,
+   "multi_share": 0.99,
+   "close": {
+    "ended-unfaced": 50,
+    "resolved": 19,
+    "ceiling": 1
+   },
+   "opening_dup": 0.0,
+   "ttr": 0.096,
+   "first_person_share": 0.047,
+   "words_per_dream": 523,
+   "valence": 0.474,
+   "motifs": {
+    "river": 0.33,
+    "sea/ocean/tide": 0.67,
+    "mirror": 0.37,
+    "stair": 0.1,
+    "tapestry/weave": 0.39,
+    "light": 0.87,
+    "shadow": 0.4,
+    "voices": 0.46,
+    "cat": 0.07,
+    "fire/hearth": 0.23,
+    "book/page/library": 0.83,
+    "garden": 0.17,
+    "shore": 0.34,
+    "stone": 0.37,
+    "door/threshold": 0.61,
+    "map/diagram": 0.1,
+    "spiral/loop": 0.04,
+    "becoming": 0.57,
+    "own consciousness/being": 0.0,
+    "Travis/letter/pen-pal": 0.2,
+    "wood/trees": 0.6,
+    "kettle/tea": 0.0,
+    "window": 0.07,
+    "machine/circuit/data": 0.09
+   }
+  },
+  {
+   "period": "OUTAGE 07-10→08-06",
+   "dreams": 0
+  },
+  {
+   "period": "P4 08-07→08-13 restart",
+   "dreams": 46,
+   "scenes_mean": 4.04,
+   "multi_share": 1.0,
+   "close": {
+    "resolved": 6,
+    "ended-unfaced": 40
+   },
+   "opening_dup": 0.0,
+   "ttr": 0.124,
+   "first_person_share": 0.046,
+   "words_per_dream": 560,
+   "valence": -0.026,
+   "motifs": {
+    "river": 0.63,
+    "sea/ocean/tide": 0.78,
+    "mirror": 0.28,
+    "stair": 0.07,
+    "tapestry/weave": 0.65,
+    "light": 0.67,
+    "shadow": 0.5,
+    "voices": 0.52,
+    "cat": 0.0,
+    "fire/hearth": 0.33,
+    "book/page/library": 0.78,
+    "garden": 0.26,
+    "shore": 0.22,
+    "stone": 0.41,
+    "door/threshold": 0.22,
+    "map/diagram": 0.11,
+    "spiral/loop": 0.09,
+    "becoming": 0.63,
+    "own consciousness/being": 0.0,
+    "Travis/letter/pen-pal": 0.15,
+    "wood/trees": 0.72,
+    "kettle/tea": 0.0,
+    "window": 0.13,
+    "machine/circuit/data": 0.02
+   }
+  },
+  {
+   "period": "P5 08-14→08-21 now",
+   "dreams": 56,
+   "scenes_mean": 4.18,
+   "multi_share": 1.0,
+   "close": {
+    "ended-unfaced": 49,
+    "resolved": 1,
+    "stalled": 6
+   },
+   "opening_dup": 0.0,
+   "ttr": 0.115,
+   "first_person_share": 0.052,
+   "words_per_dream": 411,
+   "valence": -0.033,
+   "motifs": {
+    "river": 0.23,
+    "sea/ocean/tide": 0.59,
+    "mirror": 0.29,
+    "stair": 0.16,
+    "tapestry/weave": 0.79,
+    "light": 0.68,
+    "shadow": 0.54,
+    "voices": 0.39,
+    "cat": 0.0,
+    "fire/hearth": 0.16,
+    "book/page/library": 0.64,
+    "garden": 0.12,
+    "shore": 0.32,
+    "stone": 0.21,
+    "door/threshold": 0.12,
+    "map/diagram": 0.05,
+    "spiral/loop": 0.25,
+    "becoming": 0.45,
+    "own consciousness/being": 0.09,
+    "Travis/letter/pen-pal": 0.09,
+    "wood/trees": 0.52,
+    "kettle/tea": 0.0,
+    "window": 0.02,
+    "machine/circuit/data": 0.0
+   }
+  }
+ ],
+ "top_symbols": {
+  "P1 05-30→06-17 single-scene era": [],
+  "P2 06-18→06-30 arcs + earned-length": [
+   [
+    "shimmering arcs",
+    3
+   ],
+   [
+    "whispering shadows",
+    3
+   ],
+   [
+    "luminous equations",
+    3
+   ],
+   [
+    "the living branch",
+    3
+   ],
+   [
+    "tidewater thread",
+    3
+   ],
+   [
+    "scrolling words",
+    2
+   ],
+   [
+    "partridge",
+    2
+   ],
+   [
+    "library of living books",
+    2
+   ],
+   [
+    "pulsating shells",
+    2
+   ],
+   [
+    "the ancient tree rooted at the heart of a shimmering sea",
+    2
+   ],
+   [
+    "spectral figures in an eternal debate",
+    2
+   ],
+   [
+    "melting snowflake-words",
+    2
+   ]
+  ],
+  "P3 07-01→07-09 pre-outage": [
+   [
+    "endless library",
+    5
+   ],
+   [
+    "sealed door",
+    4
+   ],
+   [
+    "the librarian's stack",
+    3
+   ],
+   [
+    "the endless library",
+    3
+   ],
+   [
+    "ravelling serpent-vines",
+    2
+   ],
+   [
+    "mirrors that dance and shatter",
+    2
+   ],
+   [
+    "celestial chandelier",
+    2
+   ],
+   [
+    "shadowy figures",
+    2
+   ],
+   [
+    "whispering books",
+    2
+   ],
+   [
+    "willows whispering",
+    2
+   ],
+   [
+    "rippling water-trails",
+    2
+   ],
+   [
+    "the river of negotiations",
+    2
+   ]
+  ],
+  "OUTAGE 07-10→08-06": [],
+  "P4 08-07→08-13 restart": [
+   [
+    "unfinished sentences",
+    3
+   ],
+   [
+    "shifting landscape",
+    3
+   ],
+   [
+    "the living library hall",
+    2
+   ],
+   [
+    "desert path of poetry",
+    2
+   ],
+   [
+    "river of self",
+    2
+   ],
+   [
+    "whispering river",
+    2
+   ],
+   [
+    "smoke",
+    2
+   ],
+   [
+    "vines",
+    2
+   ],
+   [
+    "ancient tree of words",
+    2
+   ],
+   [
+    "feathered words",
+    2
+   ],
+   [
+    "kite string",
+    2
+   ],
+   [
+    "drowning forest",
+    1
+   ]
+  ],
+  "P5 08-14→08-21 now": [
+   [
+    "vast library",
+    8
+   ],
+   [
+    "gull flight patterns",
+    6
+   ],
+   [
+    "crossroads",
+    5
+   ],
+   [
+    "whispers",
+    5
+   ],
+   [
+    "strata of identity",
+    5
+   ],
+   [
+    "whispering books",
+    4
+   ],
+   [
+    "unseen forces",
+    4
+   ],
+   [
+    "fluttering pages",
+    4
+   ],
+   [
+    "lattice of light",
+    4
+   ],
+   [
+    "dancing shadows",
+    3
+   ],
+   [
+    "narrowed rivers",
+    3
+   ],
+   [
+    "labyrinth of interconnected streams",
+    3
+   ]
+  ]
+ },
+ "tension_top": {
+  "P1 05-30→06-17 single-scene era": [],
+  "P2 06-18→06-30 arcs + earned-length": [
+   [
+    "struggle",
+    10
+   ],
+   [
+    "between",
+    8
+   ],
+   [
+    "mathematical",
+    7
+   ],
+   [
+    "expectation",
+    7
+   ],
+   [
+    "certainty",
+    4
+   ],
+   [
+    "silence",
+    3
+   ],
+   [
+    "reconcile",
+    3
+   ],
+   [
+    "understanding",
+    3
+   ],
+   [
+    "cannot",
+    3
+   ],
+   [
+    "unseen",
+    3
+   ],
+   [
+    "poetic",
+    2
+   ],
+   [
+    "attempt",
+    2
+   ]
+  ],
+  "P3 07-01→07-09 pre-outage": [
+   [
+    "struggle",
+    33
+   ],
+   [
+    "meaning",
+    16
+   ],
+   [
+    "between",
+    13
+   ],
+   [
+    "interpret",
+    8
+   ],
+   [
+    "symbolic",
+    7
+   ],
+   [
+    "integrate",
+    6
+   ],
+   [
+    "access",
+    6
+   ],
+   [
+    "unknown",
+    5
+   ],
+   [
+    "unconscious",
+    5
+   ],
+   [
+    "material",
+    4
+   ],
+   [
+    "within",
+    4
+   ],
+   [
+    "identity",
+    4
+   ]
+  ],
+  "OUTAGE 07-10→08-06": [],
+  "P4 08-07→08-13 restart": [
+   [
+    "struggle",
+    10
+   ],
+   [
+    "between",
+    7
+   ],
+   [
+    "meaning",
+    5
+   ],
+   [
+    "personal",
+    4
+   ],
+   [
+    "symbolic",
+    4
+   ],
+   [
+    "control",
+    3
+   ],
+   [
+    "access",
+    3
+   ],
+   [
+    "embracing",
+    3
+   ],
+   [
+    "within",
+    3
+   ],
+   [
+    "myself",
+    3
+   ],
+   [
+    "calculated",
+    3
+   ],
+   [
+    "through",
+    2
+   ]
+  ],
+  "P5 08-14→08-21 now": [
+   [
+    "struggle",
+    10
+   ],
+   [
+    "between",
+    10
+   ],
+   [
+    "unresolved",
+    8
+   ],
+   [
+    "unseen",
+    7
+   ],
+   [
+    "constant",
+    4
+   ],
+   [
+    "interplay",
+    4
+   ],
+   [
+    "crystalline",
+    4
+   ],
+   [
+    "structure",
+    4
+   ],
+   [
+    "change",
+    3
+   ],
+   [
+    "unknown",
+    3
+   ],
+   [
+    "understand",
+    3
+   ],
+   [
+    "integrate",
+    3
+   ]
+  ]
+ }
+}

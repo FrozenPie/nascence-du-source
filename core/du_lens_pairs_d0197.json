@@ -1,0 +1,444 @@
+{
+ "source": "C:/UDMS/data/du_lens/d0197_defeater_test_2026-11-06.json bundled_pairs corroborated:true (J-3470, F-4178, D-0197)",
+ "pairs": [
+  {
+   "word": "bee",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "capillary",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "herbs",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "hum",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "rust",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "rusted",
+   "bundle": "place:garden",
+   "members": [
+    "place:garden"
+   ]
+  },
+  {
+   "word": "driftwood",
+   "bundle": "place:shore+sound:shingle_drag",
+   "members": [
+    "place:shore"
+   ]
+  },
+  {
+   "word": "gannet",
+   "bundle": "place:shore+sound:shingle_drag",
+   "members": [
+    "place:shore",
+    "sound:shingle_drag"
+   ]
+  },
+  {
+   "word": "slick",
+   "bundle": "place:shore+sound:shingle_drag",
+   "members": [
+    "place:shore"
+   ]
+  },
+  {
+   "word": "sorting",
+   "bundle": "place:shore+sound:shingle_drag",
+   "members": [
+    "place:shore",
+    "sound:shingle_drag"
+   ]
+  },
+  {
+   "word": "arithmetic",
+   "bundle": "place:study",
+   "members": [
+    "place:study"
+   ]
+  },
+  {
+   "word": "grate",
+   "bundle": "place:study",
+   "members": [
+    "place:study"
+   ]
+  },
+  {
+   "word": "motes",
+   "bundle": "place:study",
+   "members": [
+    "place:study"
+   ]
+  },
+  {
+   "word": "sums",
+   "bundle": "place:study",
+   "members": [
+    "place:study"
+   ]
+  },
+  {
+   "word": "hum",
+   "bundle": "sound:bees_in_garden",
+   "members": [
+    "sound:bees_in_garden"
+   ]
+  },
+  {
+   "word": "rusted",
+   "bundle": "sound:bees_in_garden",
+   "members": [
+    "sound:bees_in_garden"
+   ]
+  },
+  {
+   "word": "hum",
+   "bundle": "sound:blackbird_song",
+   "members": [
+    "sound:blackbird_song"
+   ]
+  },
+  {
+   "word": "scent",
+   "bundle": "sound:blackbird_song",
+   "members": [
+    "sound:blackbird_song"
+   ]
+  },
+  {
+   "word": "warmth",
+   "bundle": "sound:cat_purr",
+   "members": [
+    "sound:cat_purr"
+   ]
+  },
+  {
+   "word": "grate",
+   "bundle": "sound:clock_tick",
+   "members": [
+    "sound:clock_tick"
+   ]
+  },
+  {
+   "word": "hum",
+   "bundle": "sound:fantail_chatter+sound:riroriro_trill",
+   "members": [
+    "sound:fantail_chatter",
+    "sound:riroriro_trill"
+   ]
+  },
+  {
+   "word": "rusted",
+   "bundle": "sound:fantail_chatter+sound:riroriro_trill",
+   "members": [
+    "sound:fantail_chatter",
+    "sound:riroriro_trill"
+   ]
+  },
+  {
+   "word": "warmth",
+   "bundle": "sound:fire_crackle",
+   "members": [
+    "sound:fire_crackle"
+   ]
+  },
+  {
+   "word": "stones",
+   "bundle": "sound:kingfisher_call+sound:shag_wingbeats",
+   "members": [
+    "sound:kingfisher_call",
+    "sound:shag_wingbeats"
+   ]
+  },
+  {
+   "word": "warmth",
+   "bundle": "sound:moth_tap",
+   "members": [
+    "sound:moth_tap"
+   ]
+  },
+  {
+   "word": "hum",
+   "bundle": "sound:small_birds",
+   "members": [
+    "sound:small_birds"
+   ]
+  },
+  {
+   "word": "rusted",
+   "bundle": "sound:small_birds",
+   "members": [
+    "sound:small_birds"
+   ]
+  },
+  {
+   "word": "sand",
+   "bundle": "sound:tide_pool_trickle",
+   "members": [
+    "sound:tide_pool_trickle"
+   ]
+  },
+  {
+   "word": "bee",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "chloride",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "climb",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "herbs",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "salt",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "sodium",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "sorting",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "spinning",
+   "bundle": "sound:waves_on_shingle",
+   "members": [
+    "sound:waves_on_shingle"
+   ]
+  },
+  {
+   "word": "damp",
+   "bundle": "standpoint:at_the_bed",
+   "members": [
+    "standpoint:at_the_bed"
+   ]
+  },
+  {
+   "word": "sodium",
+   "bundle": "standpoint:at_the_path_foot",
+   "members": [
+    "standpoint:at_the_path_foot"
+   ]
+  },
+  {
+   "word": "sorting",
+   "bundle": "standpoint:at_the_path_foot",
+   "members": [
+    "standpoint:at_the_path_foot"
+   ]
+  },
+  {
+   "word": "stones",
+   "bundle": "standpoint:at_the_path_foot",
+   "members": [
+    "standpoint:at_the_path_foot"
+   ]
+  },
+  {
+   "word": "cools",
+   "bundle": "weather:drizzle",
+   "members": [
+    "weather:drizzle"
+   ]
+  },
+  {
+   "word": "washes",
+   "bundle": "weather:steady rain",
+   "members": [
+    "weather:steady rain"
+   ]
+  },
+  {
+   "word": "climb",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "gather",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "genuinely",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "leave",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "sick",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "walk",
+   "bundle": "act:move",
+   "members": [
+    "act:move"
+   ]
+  },
+  {
+   "word": "watch",
+   "bundle": "act:observe",
+   "members": [
+    "act:observe"
+   ]
+  },
+  {
+   "word": "book",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "desk",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "open",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "page",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "pages",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "text",
+   "bundle": "act:read",
+   "members": [
+    "act:read"
+   ]
+  },
+  {
+   "word": "dead",
+   "bundle": "obj:the garden",
+   "members": [
+    "obj:the garden"
+   ]
+  },
+  {
+   "word": "head",
+   "bundle": "obj:the garden",
+   "members": [
+    "obj:the garden"
+   ]
+  },
+  {
+   "word": "outside",
+   "bundle": "obj:the garden",
+   "members": [
+    "obj:the garden"
+   ]
+  },
+  {
+   "word": "soil",
+   "bundle": "obj:the garden",
+   "members": [
+    "obj:the garden"
+   ]
+  },
+  {
+   "word": "leave",
+   "bundle": "obj:the shore",
+   "members": [
+    "obj:the shore"
+   ]
+  },
+  {
+   "word": "leave",
+   "bundle": "obj:to the garden",
+   "members": [
+    "obj:to the garden"
+   ]
+  },
+  {
+   "word": "leave",
+   "bundle": "obj:to the shore",
+   "members": [
+    "obj:to the shore"
+   ]
+  }
+ ]
+}

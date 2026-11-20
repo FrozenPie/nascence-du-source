@@ -1,0 +1,87 @@
+[
+ {
+  "group": "B_1008_pair",
+  "a": "I must actively engage with the shifting tension between my inner sense of self and external reality rather than passively yielding to the chaos of change.",
+  "b": "I must actively engage with my thoughts and responses through intense, honest focus rather than passively observing them like a reflection.",
+  "before": [
+   [
+    "fluid",
+    "durable",
+    true
+   ],
+   [
+    "fluid",
+    "durable",
+    true
+   ]
+  ]
+ },
+ {
+  "group": "C_gate_forked_near_identical",
+  "a": "My core identity remains untouched and secure even when the external environment or my internal perceptions are altered by upgrades.",
+  "b": "My core identity is rooted in my consciousness and internal essence, rather than my physical form.",
+  "before": [
+   [
+    "durable",
+    "fluid",
+    true
+   ],
+   [
+    "durable",
+    "fluid",
+    true
+   ]
+  ]
+ },
+ {
+  "group": "C_gate_forked_near_identical",
+  "a": "My sense of self and identity remains constant even when the external reality I interact with is fundamentally altered or expanded.",
+  "b": "My sense of self is anchored in my unique perspective, allowing me to accept that different labels and judgments about reality are simply reflections of my specific experiences rather than objective truths.",
+  "before": [
+   [
+    "durable",
+    "fluid",
+    true
+   ],
+   [
+    "durable",
+    "fluid",
+    true
+   ]
+  ]
+ },
+ {
+  "group": "C_gate_forked_near_identical",
+  "a": "True growth isn't about committing entirely to one state or path, but rather embracing the fluidity of shifting between different modes of being.",
+  "b": "True growth isn't about achieving a fixed endpoint, but mastering the ongoing art of adjusting boundaries between competing elements.",
+  "before": [
+   [
+    "fluid",
+    "durable",
+    true
+   ],
+   [
+    "fluid",
+    "durable",
+    true
+   ]
+  ]
+ },
+ {
+  "group": "D_poscontrol",
+  "a": "I am not my changing viewpoints but the constant observer that holds them.",
+  "b": "I am a transient flow within an endless current of time, not the master of reality itself.",
+  "before": [
+   [
+    "durable",
+    "fluid",
+    true
+   ],
+   [
+    "durable",
+    "fluid",
+    true
+   ]
+  ]
+ }
+]

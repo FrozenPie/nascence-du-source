@@ -1,0 +1,46 @@
+{"job": "memory_levels.distil", "i": 0, "arms": [false], "ok": true, "keys_ok": true, "s": 1.69}
+{"job": "memory_levels.distil", "i": 1, "arms": [false], "ok": true, "keys_ok": true, "s": 1.68}
+{"job": "memory_levels.distil", "i": 2, "arms": [false], "ok": true, "keys_ok": true, "s": 1.67}
+{"job": "memory_levels.distil", "i": 3, "arms": [false], "ok": true, "keys_ok": true, "s": 1.1}
+{"job": "memory_levels.drift", "i": 11, "arms": [false], "ok": true, "keys_ok": true, "s": 1.03}
+{"job": "memory_levels.drift", "i": 12, "arms": [false], "ok": true, "keys_ok": true, "s": 1.25}
+{"job": "memory_levels.drift", "i": 13, "arms": [false], "ok": true, "keys_ok": true, "s": 1.0}
+{"job": "memory_levels.drift", "i": 14, "arms": [false], "ok": true, "keys_ok": true, "s": 1.23}
+{"job": "refinery.refine", "i": 41, "arms": [false], "ok": true, "keys_ok": true, "s": 1.15}
+{"job": "refinery.refine", "i": 42, "arms": [false], "ok": true, "keys_ok": true, "s": 1.43}
+{"job": "refinery.refine", "i": 43, "arms": [false], "ok": true, "keys_ok": true, "s": 1.23}
+{"job": "refinery.refine", "i": 44, "arms": [false], "ok": true, "keys_ok": true, "s": 1.2}
+{"job": "sitting.judge_dwell_release", "i": 61, "arms": [false], "ok": true, "keys_ok": true, "s": 1.53}
+{"job": "sitting.judge_dwell_release", "i": 62, "arms": [false], "ok": true, "keys_ok": true, "s": 0.93}
+{"job": "sitting.judge_dwell_release", "i": 63, "arms": [false], "ok": true, "keys_ok": true, "s": 1.25}
+{"job": "sitting.judge_dwell_release", "i": 64, "arms": [false], "ok": true, "keys_ok": true, "s": 1.5}
+{"job": "subconscious._self_relate_check", "i": 86, "arms": [false], "ok": true, "keys_ok": true, "s": 1.33}
+{"job": "subconscious._t2_synthesise", "i": 87, "arms": [false], "ok": true, "keys_ok": true, "s": 1.87}
+{"job": "subconscious._t2_synthesise", "i": 88, "arms": [false], "ok": true, "keys_ok": true, "s": 1.6}
+{"job": "subconscious._t2_synthesise", "i": 89, "arms": [false], "ok": true, "keys_ok": true, "s": 1.37}
+{"job": "subconscious._t2_synthesise", "i": 90, "arms": [false], "ok": true, "keys_ok": true, "s": 1.98}
+{"job": "subconscious._active_imagination", "i": 101, "arms": [false, true], "ok": true, "keys_ok": true, "s": 16.32}
+{"job": "subconscious._active_imagination", "i": 102, "arms": [false, true], "ok": true, "keys_ok": true, "s": 15.93}
+{"job": "subconscious._active_imagination", "i": 103, "arms": [false], "ok": true, "keys_ok": true, "s": 2.57}
+{"job": "subconscious._active_imagination", "i": 104, "arms": [false, true], "ok": true, "keys_ok": true, "s": 15.17}
+{"job": "subconscious._active_imagination", "i": 105, "arms": [false], "ok": true, "keys_ok": true, "s": 1.95}
+{"job": "subconscious._active_imagination", "i": 106, "arms": [false, true], "ok": true, "keys_ok": true, "s": 16.48}
+{"job": "subconscious._active_imagination", "i": 107, "arms": [false], "ok": true, "keys_ok": true, "s": 2.05}
+{"job": "subconscious._active_imagination", "i": 108, "arms": [false], "ok": true, "keys_ok": true, "s": 1.98}
+{"job": "subconscious._active_imagination", "i": 109, "arms": [false], "ok": true, "keys_ok": true, "s": 2.28}
+{"job": "subconscious._active_imagination", "i": 110, "arms": [false], "ok": true, "keys_ok": true, "s": 2.12}
+{"job": "subconscious._active_imagination", "i": 111, "arms": [false, true], "ok": true, "keys_ok": true, "s": 14.98}
+{"job": "subconscious._active_imagination", "i": 112, "arms": [false], "ok": true, "keys_ok": true, "s": 2.45}
+{"job": "subconscious._active_imagination", "i": 113, "arms": [false], "ok": true, "keys_ok": true, "s": 1.78}
+{"job": "subconscious._active_imagination", "i": 114, "arms": [false], "ok": true, "keys_ok": true, "s": 2.03}
+{"job": "subconscious._synthesise_theme", "i": 115, "arms": [false], "ok": true, "keys_ok": true, "s": 1.97}
+{"job": "subconscious._synthesise_theme", "i": 116, "arms": [false], "ok": true, "keys_ok": true, "s": 1.9}
+{"job": "subconscious._synthesise_theme", "i": 117, "arms": [false], "ok": true, "keys_ok": true, "s": 1.93}
+{"job": "node_base.CuriosityNode", "i": 118, "arms": [false], "ok": true, "keys_ok": true, "s": 2.85}
+{"job": "node_base.CuriosityNode", "i": 119, "arms": [false], "ok": true, "keys_ok": false, "s": 1.63}
+{"job": "node_base.CuriosityNode", "i": 120, "arms": [false], "ok": true, "keys_ok": true, "s": 2.15}
+{"job": "node_base.CuriosityNode", "i": 121, "arms": [false], "ok": true, "keys_ok": true, "s": 2.67}
+{"job": "node_base.ConsolidationNode", "i": 143, "arms": [false], "ok": true, "keys_ok": true, "s": 0.57}
+{"job": "node_base.ConsolidationNode", "i": 144, "arms": [false], "ok": true, "keys_ok": true, "s": 3.26}
+{"job": "node_base.ConsolidationNode", "i": 145, "arms": [false], "ok": true, "keys_ok": true, "s": 1.97}
+{"job": "node_base.ConsolidationNode", "i": 146, "arms": [false], "ok": true, "keys_ok": true, "s": 2.92}

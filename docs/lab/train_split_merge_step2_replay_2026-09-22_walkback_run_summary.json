@@ -1,0 +1,116 @@
+{
+ "job": "J-1198",
+ "wall_minutes_this_launch": 71.1,
+ "units_done": 80,
+ "units_excluded": [],
+ "stopped": null,
+ "live_files_unchanged": true,
+ "live_before": {
+  "position.json": {
+   "md5": "f6142b2a132e83631a5b99962da8e319",
+   "exists": true
+  },
+  "room_state.json": {
+   "md5": "fbe86d7c83a5f0b9cb3a45045dfcf4be",
+   "exists": true
+  },
+  "life_state.json": {
+   "md5": "0103d824cda21d9a2c4262e09312dc35",
+   "exists": true
+  },
+  "judge_panel_log.jsonl": {
+   "size": 5791858,
+   "mtime": 1790023294.0874107
+  },
+  "llm_latency.jsonl": {
+   "size": 11846161,
+   "mtime": 1790023419.058884
+  }
+ },
+ "live_after": {
+  "position.json": {
+   "md5": "f6142b2a132e83631a5b99962da8e319",
+   "exists": true
+  },
+  "room_state.json": {
+   "md5": "fbe86d7c83a5f0b9cb3a45045dfcf4be",
+   "exists": true
+  },
+  "life_state.json": {
+   "md5": "0103d824cda21d9a2c4262e09312dc35",
+   "exists": true
+  },
+  "judge_panel_log.jsonl": {
+   "size": 5791858,
+   "mtime": 1790023294.0874107
+  },
+  "llm_latency.jsonl": {
+   "size": 11846161,
+   "mtime": 1790023419.058884
+  }
+ },
+ "write_attempts_under_live_data": 0,
+ "write_attempt_detail": [],
+ "hubs": {
+  "JUDGE_2": {
+   "calls": 148,
+   "ok": 148,
+   "infra_errors": 0,
+   "retries": 0,
+   "persistent_fail": 0,
+   "parse": 0,
+   "secs": {
+    "n": 148,
+    "median": 8.55,
+    "max": 14.34
+   }
+  },
+  "JUDGE_1": {
+   "calls": 148,
+   "ok": 148,
+   "infra_errors": 0,
+   "retries": 0,
+   "persistent_fail": 0,
+   "parse": 0,
+   "secs": {
+    "n": 148,
+    "median": 19.49,
+    "max": 39.6
+   }
+  },
+  "TIEBREAK": {
+   "calls": 50,
+   "ok": 50,
+   "infra_errors": 0,
+   "retries": 0,
+   "persistent_fail": 0,
+   "parse": 0,
+   "secs": {
+    "n": 50,
+    "median": 15.32,
+    "max": 33.7
+   }
+  },
+  "HOT": {
+   "calls": 80,
+   "ok": 80,
+   "infra_errors": 0,
+   "retries": 0,
+   "persistent_fail": 0,
+   "parse": 0,
+   "secs": {
+    "n": 80,
+    "median": 6.08,
+    "max": 12.96
+   }
+  }
+ },
+ "module_resolution": {
+  "core": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\core\\__init__.py",
+  "core.judge_panel": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\core\\judge_panel.py",
+  "core.model_client": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\core\\model_client.py",
+  "core.telemetry": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\core\\telemetry.py",
+  "nodes.inner_monologue_node": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\nodes\\inner_monologue_node.py",
+  "nodes.inner_monologue_node._DATA_DIR": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Nascence\\8d915dfa-80f4-4aad-a2e3-206e842f08dd\\scratchpad\\wt_lab_j1198\\data"
+ }
+}

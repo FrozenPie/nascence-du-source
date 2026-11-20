@@ -1,0 +1,1 @@
+J-4110 partial: falcon V0 done 60/60 (F-4950); V1,V2 falcon + gemma V0 + yi V0 remain; rerun docs/lab/J-3465_run.py (resumable).

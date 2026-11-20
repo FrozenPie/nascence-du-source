@@ -1,0 +1,13 @@
+window 2026-09-10T00:00 .. 2026-09-11T13:00 (local); nap stalls >= 600 s not abutting a restart: 10, total 195 min, lengths (min): 18.3, 18.6, 18.4, 18.5, 20.7, 21.2, 21.5, 19.2, 19.3, 19.4
+  climate       rows in window  1820; rows INSIDE the stalls: 0 (climate floor expects 195)
+  stream        rows in window  2025; rows INSIDE the stalls: 0
+  witness       rows in window   315; rows INSIDE the stalls: 0
+  deliberation  rows in window    72; rows INSIDE the stalls: 0
+  ledgers       rows in window   164; rows INSIDE the stalls: 0
+[audit] j0950_nap_stalls_are_freezes.py: write attempts under live data: 0
+window 2026-09-16T09:00 .. 2026-09-18T09:00 (local); nap stalls >= 600 s not abutting a restart: 15, total 394 min, lengths (min): 30.7, 28.8, 28.5, 27.6, 27.1, 26.5, 27.1, 25.5, 25.2, 24.9, 24.7, 24.7, 24.6, 24.4, 24.0
+  climate       rows in window  2111; rows INSIDE the stalls: 1 (climate floor expects 394)
+  stream        rows in window  1553; rows INSIDE the stalls: 0
+  witness       rows in window   346; rows INSIDE the stalls: 0
+  deliberation  rows in window    98; rows INSIDE the stalls: 0
+  ledgers       rows in window   145; rows INSIDE the stalls: 0

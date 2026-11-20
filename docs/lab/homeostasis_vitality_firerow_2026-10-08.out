@@ -1,0 +1,18 @@
+same-regime, non-stale steps: 2083; steps whose actual is PINNED to a fire row: 167 (of which dusk: 10, switch: 11)
+
+AS SCORED TODAY (same-regime only, so boot artifacts already removed):
+  switch rows                                          n=  32  ext wins  17 / naive  15 / ties    0  p=0.86  MAE naive=0.5094 ext=0.4787
+  dusk rows                                            n=  18  ext wins   6 / naive  12 / ties    0  p=0.238  MAE naive=0.5051 ext=0.7523
+  all rows                                             n=2083  ext wins 117 / naive 117 / ties 1849  p=1  MAE naive=0.1173 ext=0.1268
+
+FIRE-ROW STEPS EXCLUDED (actual not yet refreshed after the reset):
+  switch rows                                          n=  21  ext wins  17 / naive   4 / ties    0  p=0.0072  MAE naive=0.5474 ext=0.2104
+  dusk rows                                            n=   8  ext wins   6 / naive   2 / ties    0  p=0.289  MAE naive=0.5369 ext=0.4427
+  all rows                                             n=1916  ext wins 117 / naive  37 / ties 1762  p=7.16e-11  MAE naive=0.1192 ext=0.0928
+
+FIRE-ROW STEPS RELABELLED (actual := 1.0, the post-reset state the fire row implies):
+  switch rows                                          n=  32  ext wins  28 / naive   4 / ties    0  p=1.93e-05  MAE naive=0.5528 ext=0.1411
+  dusk rows                                            n=  18  ext wins  16 / naive   2 / ties    0  p=0.00131  MAE naive=0.5277 ext=0.1967
+  all rows                                             n=2083  ext wins 197 / naive  37 / ties 1849  p=1.46e-27  MAE naive=0.1808 ext=0.1226
+
+vitality's own movement: 6.7% of all |step change| happens on the 32 switch rows out of 2083

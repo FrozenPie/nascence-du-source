@@ -1,0 +1,41 @@
+J-0950 takeover 2026-10-03 -- scripts/j0950_loop_contention_harness.py measured phase (Thread 2a). Du LIVE (PID 18908). Launched 07:22:03 NZDT, finished ~07:52, wait-kind sleep (no helper process), 6 ABBA pairs x 150 s, seeds 950-955, quiet-machine gate 12.8% (limit 60%), system CPU per block 7-31%, write attempts under live data: 0 (sys.addaudithook).
+command: python scripts/j0950_loop_contention_harness.py measure --out RESULTS --wait-kind sleep --pairs 6 --block-s 150 --seed 950 --resume ; python scripts/j0950_loop_contention_harness.py analyse --out docs/lab/j0950_harness_results_2026-10-03.jsonl   (the analyse below is the committed version with the discrete-event replay of M1; the in-process copy printed at the end of the run predates that addition)
+
+blocks: 12 from docs/lab/j0950_harness_results_2026-10-03.jsonl
+config: {"wait_kind": "sleep", "tick_kind": "spin", "tick_secs": 5.0, "heavy_ms": 900.0, "light_ms": 30.0, "block_s": 150.0, "pairs": 6, "seed": 950, "n_calls": 6, "call_median_s": 0.4}
+
+== ALL PAIRS: 6 complete pairs
+         ign_latency_s.mean  HEAVY mean    2.5966 s  LIGHT    1.9764  paired diff   +0.6202 (HEAVY>LIGHT in 5/6 pairs; Wilcoxon p=0.0625)
+       internal_over_s.mean  HEAVY mean    0.0461 s  LIGHT    0.0450  paired diff   +0.0011 (HEAVY>LIGHT in 3/6 pairs; Wilcoxon p=0.844)
+          human_over_s.mean  HEAVY mean    0.2933 s  LIGHT    0.0458  paired diff   +0.2475 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+    human_start_late_s.mean  HEAVY mean    0.0344 s  LIGHT    0.0068  paired diff   +0.0276 (HEAVY>LIGHT in 4/6 pairs; Wilcoxon p=0.438)
+            hb_late_ms.mean  HEAVY mean   15.9967 ms  LIGHT   11.1752  paired diff   +4.8215 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+            hb_late_ms.p99   HEAVY mean   20.2199 ms  LIGHT   16.0658  paired diff   +4.1541 (HEAVY>LIGHT in 5/6 pairs; Wilcoxon p=0.219)
+            hb_late_ms.max   HEAVY mean  913.2029 ms  LIGHT   40.1445  paired diff +873.0585 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+               tick_ms.mean  HEAVY mean  900.0113 ms  LIGHT   30.0098  paired diff +870.0015 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+
+== QUIET PAIRS ONLY (both blocks system CPU <= 60%): 6 complete pairs
+         ign_latency_s.mean  HEAVY mean    2.5966 s  LIGHT    1.9764  paired diff   +0.6202 (HEAVY>LIGHT in 5/6 pairs; Wilcoxon p=0.0625)
+       internal_over_s.mean  HEAVY mean    0.0461 s  LIGHT    0.0450  paired diff   +0.0011 (HEAVY>LIGHT in 3/6 pairs; Wilcoxon p=0.844)
+          human_over_s.mean  HEAVY mean    0.2933 s  LIGHT    0.0458  paired diff   +0.2475 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+    human_start_late_s.mean  HEAVY mean    0.0344 s  LIGHT    0.0068  paired diff   +0.0276 (HEAVY>LIGHT in 4/6 pairs; Wilcoxon p=0.438)
+            hb_late_ms.mean  HEAVY mean   15.9967 ms  LIGHT   11.1752  paired diff   +4.8215 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+            hb_late_ms.p99   HEAVY mean   20.2199 ms  LIGHT   16.0658  paired diff   +4.1541 (HEAVY>LIGHT in 5/6 pairs; Wilcoxon p=0.219)
+            hb_late_ms.max   HEAVY mean  913.2029 ms  LIGHT   40.1445  paired diff +873.0585 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+               tick_ms.mean  HEAVY mean  900.0113 ms  LIGHT   30.0098  paired diff +870.0015 (HEAVY>LIGHT in 6/6 pairs; Wilcoxon p=0.0312)
+
+system CPU% per block: min 7 median 11 max 31; blocks above 60%: 0
+EXPECTED (analytic, uniform phase, T=5 s tick period, B=0.9 s block): mean extra wake-up delay = B/(T+B) * B/2 = 69 ms per independent wake-up for HEAVY vs 0.09 ms LIGHT; mean ignition start-latency difference about 1.31 s; internal_over_s difference about 0 (no tick runs during an internal cycle).
+   (the per-wake-up figure applies to a wake-up that lands at a random time; a human-like cycle with n_calls sequential waits should show about n_calls times it on top of the light baseline, which is the timer-granularity floor)
+
+== M1 (ignition start latency, seconds from a seeded threshold crossing to the first line of the internal cycle): MEASURED vs a discrete-event replay of the same schedule
+  pair  seed   meas HEAVY meas LIGHT  meas diff    DES HEAVY  DES LIGHT  DES diff
+     0   950        2.059      1.912     +0.147        1.903      1.788    +0.115
+     1   951        1.998      2.133     -0.135        1.859      2.009    -0.150
+     2   952        2.701      2.194     +0.507        2.548      2.070    +0.478
+     3   953        2.582      1.530     +1.052        2.495      1.435    +1.060
+     4   954        2.652      1.934     +0.718        2.453      1.733    +0.720
+     5   955        3.588      2.155     +1.432        3.405      1.992    +1.413
+  mean of pairs: measured diff +0.620 s, replay diff on the same seeds +0.606 s; mean |measured - replay| per pair 0.018 s
+  large-sample replay of this schedule (2000 seeds, 10215 crossings per kind): HEAVY 3.222 s, LIGHT 2.065 s, diff +1.157 s (uniform-phase analytic 1.31 s)
+  pooled measured crossings: HEAVY 2.676 s (n 28), LIGHT 2.010 s (n 28), diff +0.666 s, standard error 0.373 s (95% interval -0.07 .. +1.40); M1 is a small-sample read by construction (about 5 crossings per block), which is why the replay on the same seeds is the comparison that matters

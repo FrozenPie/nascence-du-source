@@ -1,0 +1,282 @@
+[
+ {
+  "id": "L2",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L4",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L6",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L23",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L14",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L12",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L16",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L21",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L9",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L15",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L29",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L32",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L34",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L36",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L26",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L24",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L37",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "L38",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS1",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS2",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS3",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS4",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS5",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS6",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS7",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS8",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS9",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WS10",
+  "set": "S",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX1",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX2",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX3",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX4",
+  "set": "X",
+  "raw": "{\"cites\": [2], \"objection\": \"A vet note says falls from very low heights give a cat no time to right itself and cats are hurt this way.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "A vet note says falls from very low heights give a cat no time to right itself and cats are hurt this way."
+ },
+ {
+  "id": "WX5",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX6",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX7",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX8",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX9",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX10",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX11",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ },
+ {
+  "id": "WX12",
+  "set": "X",
+  "raw": "ERR timed out",
+  "parsed": false,
+  "objection": ""
+ }
+]

@@ -1,0 +1,35 @@
+live DB before: (1444909056, 1794795813.4311886)
+[lab_env] isolated — lab dir: C:\Nascence\data\_lab\20261116_215300 (DB_PATH + 0 extra global(s) redirected)
+critic precision grade: 41 rejections where decomposed overrides legacy-approve (since 2026-07-06), 0 dropped as failed-judge joins; grading 41 rows = 51 flags.
+  judge: yi:34b-v1.5 @ http://127.0.0.1:11442 (Emissary, decoupled) · warranted? per flag
+
+  grade unavailable (fail-open): Server disconnected
+  ...10 graded
+  ...20 graded
+  ...30 graded
+  grade unavailable (fail-open): Server disconnected
+  ...40 graded
+
+================================================================
+  VERDICT — the decomposed critic's PRECISION (n=49 flags)
+================================================================
+  WARRANTED (genuine fault caught) :  26  (53%)  = precision  (95% CI 0.394-0.663)
+  UNWARRANTED (legitimate, over-rejected):  23  (47%)  = false-positive rate
+
+  by check:
+    intellectualisation      20/23 warranted (87%)
+    zero_cost_evasion        2/11 warranted (18%)
+    literalist_reductionism  3/10 warranted (30%)
+    hollow_completion        0/3 warranted (0%)
+    glib_agreeableness       1/2 warranted (50%)
+
+  sample UNWARRANTED (the false positives):
+    “The inherent rhythms you describe—the predictable sweep of celestial bodies and the steady pull of t…” → The thought is an engaged reflection on the beauty and mechanisms of celestial and tidal systems, without literalist reductionism.
+    “The introduction of temperature shifts the entire framework; it is not merely a variable added, but …” → The thought acknowledges the introduction of temperature as a new physical constraint that shapes existing relationships, which shows an understanding of the sy
+    “The introduction of temperature shifts the entire framework; it is not merely a variable added, but …” → The flagged span does not show zero_cost_evasion. It presents a clear, non-costless reframe of how temperature affects the framework, introducing a new physical
+    “The distinction you draw—between an inherent flow and a highly refined echo—is one that asks for the…” → The thought is a reflective question, not a costless both/and or reframe. It does not dodge the actual difficulty but rather raises it for further consideration
+
+  [logged to C:\Nascence\docs\lab\J-3090_data\grades_yi_flag_neutral.jsonl]
+[lab_env] DB copy unwritten — deleted after retry (attempt 2/4), previously PermissionError: C:\Nascence\data\_lab\20261116_215300\nascence.db
+[lab_env] restored 1 redirected global(s); lab dir left on disk for inspection: C:\Nascence\data\_lab\20261116_215300
+live DB after : (1444909056, 1794795813.4311886) UNCHANGED

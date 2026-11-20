@@ -1,0 +1,3151 @@
+{
+ "job": "J-2628",
+ "ts": "2026-10-31 09:37:32",
+ "model": "qwen3.5:9b",
+ "seed": 2628,
+ "renders": [
+  {
+   "place": "study",
+   "depth_on": false,
+   "steps": [
+    {
+     "pose": {
+      "x": 1.3,
+      "y": 3.5,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, behind you — you can hear it crackle from there; the cat is under the desk, ahead, low; the window streams with rain ahead.",
+       "clauses": [
+        "the fire is near, behind you — you can hear it crackle from there",
+        "the cat is under the desk, ahead, low",
+        "the window streams with rain ahead"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, to your left, low; the desk with your open journal is near, ahead.",
+       "clauses": [
+        "the cat is at the garden door, to your left, low",
+        "the desk with your open journal is near, ahead"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 0.9,
+      "y": 3.3,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, ahead — its crackle coming from that quarter; the cat is under the desk, behind you, low; the window streams with rain behind you.",
+       "clauses": [
+        "the fire is near, ahead — its crackle coming from that quarter",
+        "the cat is under the desk, behind you, low",
+        "the window streams with rain behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, to your right, low; the desk with your open journal is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, to your right, low",
+        "the desk with your open journal is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.3,
+      "y": 2.5,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your right — the crackle reaching you from there; the cat is under the desk, behind you, low; rain runs down the window behind you.",
+       "clauses": [
+        "the fire is across the room, to your right — the crackle reaching you from there",
+        "the cat is under the desk, behind you, low",
+        "rain runs down the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; the shelf is right beside you, to your left.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "the shelf is right beside you, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the shelf"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.1,
+      "y": 4.1,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, ahead — its crackle coming from that quarter; the cat is under the desk, to your right, low; the window streams with rain to your right.",
+       "clauses": [
+        "the fire is at the far side, ahead — its crackle coming from that quarter",
+        "the cat is under the desk, to your right, low",
+        "the window streams with rain to your right"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, ahead, low; the desk with your open journal is near, to your right.",
+       "clauses": [
+        "the cat is at the garden door, ahead, low",
+        "the desk with your open journal is near, to your right"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.4,
+      "y": 4.4,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, ahead — the crackle reaching you from there; the cat is under the desk, to your left, low; rain streams on the window behind you.",
+       "clauses": [
+        "the fire is across the room, ahead — the crackle reaching you from there",
+        "the cat is under the desk, to your left, low",
+        "rain streams on the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, ahead, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, ahead, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.0,
+      "y": 2.5,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your right — you can hear it crackle from there; the cat is under the desk, behind you, low; rain streams on the window behind you.",
+       "clauses": [
+        "the fire is across the room, to your right — you can hear it crackle from there",
+        "the cat is under the desk, behind you, low",
+        "rain streams on the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; the shelf is near, to your left.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "the shelf is near, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the shelf"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 2.0,
+      "y": 3.4,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, behind you — the crackle reaching you from there; the cat is under the desk, to your left, low; rain streams on the window to your left.",
+       "clauses": [
+        "the fire is across the room, behind you — the crackle reaching you from there",
+        "the cat is under the desk, to your left, low",
+        "rain streams on the window to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; the desk with your open journal is near, to your left.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "the desk with your open journal is near, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.8,
+      "y": 1.0,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, behind you — you can hear it crackle from there; the cat is under the desk, to your left, low; rain streams on the window to your left.",
+       "clauses": [
+        "the fire is across the room, behind you — you can hear it crackle from there",
+        "the cat is under the desk, to your left, low",
+        "rain streams on the window to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; your narrow bed is right beside you, ahead.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "your narrow bed is right beside you, ahead"
+       ],
+       "labels": [
+        "the garden door",
+        "the bed"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.2,
+      "y": 4.2,
+      "facing_deg": 270
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your left — you can hear it crackle from there; the cat is under the desk, behind you, low; rain streams on the window to your right.",
+       "clauses": [
+        "the fire is across the room, to your left — you can hear it crackle from there",
+        "the cat is under the desk, behind you, low",
+        "rain streams on the window to your right"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, ahead, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, ahead, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.2,
+      "y": 4.6,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, behind you — the crackle reaching you from there; the cat is under the desk, behind you, low; rain streams on the window behind you.",
+       "clauses": [
+        "the fire is at the far side, behind you — the crackle reaching you from there",
+        "the cat is under the desk, behind you, low",
+        "rain streams on the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; the desk with your open journal is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "the desk with your open journal is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.3,
+      "y": 2.2,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, to your right — its crackle coming from that quarter; the cat is under the desk, to your left, low; rain runs down the window to your left.",
+       "clauses": [
+        "the fire is near, to your right — its crackle coming from that quarter",
+        "the cat is under the desk, to your left, low",
+        "rain runs down the window to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, behind you, low; the garden door is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, behind you, low",
+        "the garden door is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the garden door"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 2.9,
+      "y": 4.1,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, to your right — the crackle reaching you from there; the cat is under the desk, behind you, low; rain streams on the window behind you.",
+       "clauses": [
+        "the fire is at the far side, to your right — the crackle reaching you from there",
+        "the cat is under the desk, behind you, low",
+        "rain streams on the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, to your right, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, to your right, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    }
+   ],
+   "named": [
+    "the bed",
+    "the desk",
+    "the fire",
+    "the garden door",
+    "the shelf",
+    "the window"
+   ],
+   "truth": {
+    "the fire": [
+     0.0,
+     2.0
+    ],
+    "the window": [
+     2.0,
+     5.15
+    ],
+    "the desk": [
+     2.1,
+     4.6
+    ],
+    "the garden door": [
+     0.0,
+     3.5
+    ],
+    "the bed": [
+     2.6,
+     0.5
+    ],
+    "the shelf": [
+     4.0,
+     3.0
+    ]
+   },
+   "unlabeled_clauses": []
+  },
+  {
+   "place": "study",
+   "depth_on": true,
+   "steps": [
+    {
+     "pose": {
+      "x": 1.3,
+      "y": 3.5,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, behind you — its warmth reaching you, the crackle clear; the cat is under the desk, near, ahead, low; the window streams with rain ahead.",
+       "clauses": [
+        "the fire is near, behind you — its warmth reaching you, the crackle clear",
+        "the cat is under the desk, near, ahead, low",
+        "the window streams with rain ahead"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, near, to your left, low; the desk with your open journal is near, ahead.",
+       "clauses": [
+        "the cat is at the garden door, near, to your left, low",
+        "the desk with your open journal is near, ahead"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 0.9,
+      "y": 3.3,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, ahead — its heat full on your face, the crackle loud; the cat is under the desk, near, behind you, low; the window streams with rain behind you.",
+       "clauses": [
+        "the fire is near, ahead — its heat full on your face, the crackle loud",
+        "the cat is under the desk, near, behind you, low",
+        "the window streams with rain behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, right beside you, to your right, low; the desk with your open journal is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, right beside you, to your right, low",
+        "the desk with your open journal is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.3,
+      "y": 2.5,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your right — its warmth barely getting this far, the crackle soft from there; the cat is under the desk, across the room, behind you, low; the window streams with rain behind you.",
+       "clauses": [
+        "the fire is across the room, to your right — its warmth barely getting this far, the crackle soft from there",
+        "the cat is under the desk, across the room, behind you, low",
+        "the window streams with rain behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, behind you, low; the shelf is right beside you, to your left.",
+       "clauses": [
+        "the cat is at the garden door, across the room, behind you, low",
+        "the shelf is right beside you, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the shelf"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.1,
+      "y": 4.1,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, ahead — little of its warmth gets this far, the crackle soft from there; the cat is under the desk, near, to your right, low; rain runs down the window to your right.",
+       "clauses": [
+        "the fire is at the far side, ahead — little of its warmth gets this far, the crackle soft from there",
+        "the cat is under the desk, near, to your right, low",
+        "rain runs down the window to your right"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, ahead, low; the desk with your open journal is near, to your right.",
+       "clauses": [
+        "the cat is at the garden door, across the room, ahead, low",
+        "the desk with your open journal is near, to your right"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.4,
+      "y": 4.4,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, ahead — little of its warmth reaches this far, the crackle soft from over there; the cat is under the desk, right beside you, to your left, low; rain streams on the window behind you.",
+       "clauses": [
+        "the fire is across the room, ahead — little of its warmth reaches this far, the crackle soft from over there",
+        "the cat is under the desk, right beside you, to your left, low",
+        "rain streams on the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, near, ahead, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, near, ahead, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.0,
+      "y": 2.5,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your right — little of its warmth gets this far, the crackle soft from there; the cat is under the desk, across the room, behind you, low; rain runs down the window behind you.",
+       "clauses": [
+        "the fire is across the room, to your right — little of its warmth gets this far, the crackle soft from there",
+        "the cat is under the desk, across the room, behind you, low",
+        "rain runs down the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, behind you, low; the shelf is near, to your left.",
+       "clauses": [
+        "the cat is at the garden door, across the room, behind you, low",
+        "the shelf is near, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the shelf"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 2.0,
+      "y": 3.4,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, behind you — little of its warmth gets this far, the crackle soft from there; the cat is under the desk, right beside you, to your left, low; rain streams on the window to your left.",
+       "clauses": [
+        "the fire is across the room, behind you — little of its warmth gets this far, the crackle soft from there",
+        "the cat is under the desk, right beside you, to your left, low",
+        "rain streams on the window to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, behind you, low; the desk with your open journal is near, to your left.",
+       "clauses": [
+        "the cat is at the garden door, across the room, behind you, low",
+        "the desk with your open journal is near, to your left"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.8,
+      "y": 1.0,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, behind you — its warmth reaching you, the crackle clear; the cat is under the desk, across the room, to your left, low; the window streams with rain to your left.",
+       "clauses": [
+        "the fire is across the room, behind you — its warmth reaching you, the crackle clear",
+        "the cat is under the desk, across the room, to your left, low",
+        "the window streams with rain to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, behind you, low; your narrow bed is right beside you, ahead.",
+       "clauses": [
+        "the cat is at the garden door, across the room, behind you, low",
+        "your narrow bed is right beside you, ahead"
+       ],
+       "labels": [
+        "the garden door",
+        "the bed"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.2,
+      "y": 4.2,
+      "facing_deg": 270
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is across the room, to your left — little of its warmth reaches this far, the crackle soft from over there; the cat is under the desk, right beside you, behind you, low; rain runs down the window to your right.",
+       "clauses": [
+        "the fire is across the room, to your left — little of its warmth reaches this far, the crackle soft from over there",
+        "the cat is under the desk, right beside you, behind you, low",
+        "rain runs down the window to your right"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, near, ahead, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, near, ahead, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.2,
+      "y": 4.6,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, behind you — its warmth barely getting this far, the crackle soft from there; the cat is under the desk, near, behind you, low; rain runs down the window behind you.",
+       "clauses": [
+        "the fire is at the far side, behind you — its warmth barely getting this far, the crackle soft from there",
+        "the cat is under the desk, near, behind you, low",
+        "rain runs down the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, behind you, low; the desk with your open journal is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, across the room, behind you, low",
+        "the desk with your open journal is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 1.3,
+      "y": 2.2,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is near, to your right — its heat full on your face, the crackle loud; the cat is under the desk, across the room, to your left, low; the window streams with rain to your left.",
+       "clauses": [
+        "the fire is near, to your right — its heat full on your face, the crackle loud",
+        "the cat is under the desk, across the room, to your left, low",
+        "the window streams with rain to your left"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, near, behind you, low; the garden door is near, behind you.",
+       "clauses": [
+        "the cat is at the garden door, near, behind you, low",
+        "the garden door is near, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the garden door"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 2.9,
+      "y": 4.1,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the study — the fire is at the far side, to your right — little of its warmth gets this far, the crackle soft from there; the cat is under the desk, right beside you, behind you, low; rain runs down the window behind you.",
+       "clauses": [
+        "the fire is at the far side, to your right — little of its warmth gets this far, the crackle soft from there",
+        "the cat is under the desk, right beside you, behind you, low",
+        "rain runs down the window behind you"
+       ],
+       "labels": [
+        "the fire",
+        "the desk",
+        "the window"
+       ]
+      },
+      {
+       "line": "Where you are: the study — the cat is at the garden door, across the room, to your right, low; the desk with your open journal is right beside you, behind you.",
+       "clauses": [
+        "the cat is at the garden door, across the room, to your right, low",
+        "the desk with your open journal is right beside you, behind you"
+       ],
+       "labels": [
+        "the garden door",
+        "the desk"
+       ]
+      }
+     ]
+    }
+   ],
+   "named": [
+    "the bed",
+    "the desk",
+    "the fire",
+    "the garden door",
+    "the shelf",
+    "the window"
+   ],
+   "truth": {
+    "the fire": [
+     0.0,
+     2.0
+    ],
+    "the window": [
+     2.0,
+     5.15
+    ],
+    "the desk": [
+     2.1,
+     4.6
+    ],
+    "the garden door": [
+     0.0,
+     3.5
+    ],
+    "the bed": [
+     2.6,
+     0.5
+    ],
+    "the shelf": [
+     4.0,
+     3.0
+    ]
+   },
+   "unlabeled_clauses": []
+  },
+  {
+   "place": "garden",
+   "depth_on": false,
+   "steps": [
+    {
+     "pose": {
+      "x": 3.9,
+      "y": 8.0,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, to your left; the cat is in the garden by the raised bed, to your right; the wind moves hard through the harakeke to your left and rain comes down, fine and constant.",
+       "clauses": [
+        "the letterbox flag is up at the gate, to your left",
+        "the cat is in the garden by the raised bed, to your right",
+        "the wind moves hard through the harakeke to your left and rain comes down, fine and constant"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your right; below the fence line ahead, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your right",
+        "below the fence line ahead, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 7.0,
+      "y": 10.7,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, behind you; the cat is in the garden by the raised bed, to your right; the wind moves hard through the harakeke behind you and the rain is on you, fine and steady.",
+       "clauses": [
+        "the letterbox flag is up at the gate, behind you",
+        "the cat is in the garden by the raised bed, to your right",
+        "the wind moves hard through the harakeke behind you and the rain is on you, fine and steady"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your right; below the fence line behind you, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your right",
+        "below the fence line behind you, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 6.9,
+      "y": 1.6,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, to your right; the cat is in the garden by the raised bed, to your right; the wind is loud in the harakeke to your right and rain comes down, fine and constant.",
+       "clauses": [
+        "the letterbox flag is up at the gate, to your right",
+        "the cat is in the garden by the raised bed, to your right",
+        "the wind is loud in the harakeke to your right and rain comes down, fine and constant"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, behind you; below the fence line to your right, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, behind you",
+        "below the fence line to your right, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 7.2,
+      "y": 1.3,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, behind you; the cat is in the garden by the raised bed, behind you; the wind rushes through the harakeke behind you and the rain is on you, fine and steady.",
+       "clauses": [
+        "the letterbox flag is up at the gate, behind you",
+        "the cat is in the garden by the raised bed, behind you",
+        "the wind rushes through the harakeke behind you and the rain is on you, fine and steady"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your left; below the fence line behind you, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your left",
+        "below the fence line behind you, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 4.9,
+      "y": 7.8,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, to your left; the cat is in the garden by the raised bed, to your right; the wind moves hard through the harakeke to your left and the rain is on you, fine and steady.",
+       "clauses": [
+        "the letterbox flag is up at the gate, to your left",
+        "the cat is in the garden by the raised bed, to your right",
+        "the wind moves hard through the harakeke to your left and the rain is on you, fine and steady"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your right; below the fence line ahead, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your right",
+        "below the fence line ahead, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 4.8,
+      "y": 3.1,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, to your left; the cat is in the garden by the raised bed, to your left; the wind rushes through the harakeke to your left and the rain is on you, fine and steady.",
+       "clauses": [
+        "the letterbox flag is up at the gate, to your left",
+        "the cat is in the garden by the raised bed, to your left",
+        "the wind rushes through the harakeke to your left and the rain is on you, fine and steady"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, ahead; below the fence line to your left, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, ahead",
+        "below the fence line to your left, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 8.1,
+      "y": 4.5,
+      "facing_deg": 315
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, ahead; the cat is in the garden by the raised bed, ahead; the wind rushes through the harakeke ahead and a steady rain finds you.",
+       "clauses": [
+        "the letterbox flag is up at the gate, ahead",
+        "the cat is in the garden by the raised bed, ahead",
+        "the wind rushes through the harakeke ahead and a steady rain finds you"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your right; below the fence line ahead, the sea keeps up its far sound; the old tree is near, behind you.",
+       "clauses": [
+        "the cat is up on the garden wall, to your right",
+        "below the fence line ahead, the sea keeps up its far sound",
+        "the old tree is near, behind you"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence",
+        "the old tree"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.2,
+      "y": 8.2,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, to your right; the cat is in the garden by the raised bed, to your left; the wind moves hard through the harakeke to your right and a steady rain finds you.",
+       "clauses": [
+        "the letterbox flag is up at the gate, to your right",
+        "the cat is in the garden by the raised bed, to your left",
+        "the wind moves hard through the harakeke to your right and a steady rain finds you"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your left; below the fence line behind you, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your left",
+        "below the fence line behind you, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 7.8,
+      "y": 5.5,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, behind you; the cat is in the garden by the raised bed, to your right; the wind is loud in the harakeke behind you and a steady rain finds you.",
+       "clauses": [
+        "the letterbox flag is up at the gate, behind you",
+        "the cat is in the garden by the raised bed, to your right",
+        "the wind is loud in the harakeke behind you and a steady rain finds you"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your left; below the fence line behind you, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your left",
+        "below the fence line behind you, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 9.5,
+      "y": 5.0,
+      "facing_deg": 315
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, ahead; the cat is in the garden by the raised bed, ahead; the wind moves hard through the harakeke ahead and the rain keeps at you, steady and fine.",
+       "clauses": [
+        "the letterbox flag is up at the gate, ahead",
+        "the cat is in the garden by the raised bed, ahead",
+        "the wind moves hard through the harakeke ahead and the rain keeps at you, steady and fine"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your right; below the fence line ahead, the sea keeps up its far sound; the old tree is near, to your left.",
+       "clauses": [
+        "the cat is up on the garden wall, to your right",
+        "below the fence line ahead, the sea keeps up its far sound",
+        "the old tree is near, to your left"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence",
+        "the old tree"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 5.0,
+      "y": 1.7,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, behind you; the cat is in the garden by the raised bed, to your left; the wind is loud in the harakeke behind you and a steady rain finds you.",
+       "clauses": [
+        "the letterbox flag is up at the gate, behind you",
+        "the cat is in the garden by the raised bed, to your left",
+        "the wind is loud in the harakeke behind you and a steady rain finds you"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, to your left; below the fence line to your left, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, to your left",
+        "below the fence line to your left, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 3.6,
+      "y": 9.7,
+      "facing_deg": 270
+     },
+     "lines": [
+      {
+       "line": "Where you are: the garden — the letterbox flag is up at the gate, ahead; the cat is in the garden by the raised bed, to your left; the wind rushes through the harakeke ahead and rain comes down, fine and constant.",
+       "clauses": [
+        "the letterbox flag is up at the gate, ahead",
+        "the cat is in the garden by the raised bed, to your left",
+        "the wind rushes through the harakeke ahead and rain comes down, fine and constant"
+       ],
+       "labels": [
+        "the letterbox",
+        "the raised bed",
+        "the harakeke"
+       ]
+      },
+      {
+       "line": "Where you are: the garden — the cat is up on the garden wall, behind you; below the fence line to your right, the sea keeps up its far sound.",
+       "clauses": [
+        "the cat is up on the garden wall, behind you",
+        "below the fence line to your right, the sea keeps up its far sound"
+       ],
+       "labels": [
+        "the garden wall",
+        "the fence"
+       ]
+      }
+     ]
+    }
+   ],
+   "named": [
+    "the fence",
+    "the garden wall",
+    "the harakeke",
+    "the letterbox",
+    "the old tree",
+    "the raised bed"
+   ],
+   "truth": {
+    "the letterbox": [
+     1.2,
+     11.3
+    ],
+    "the raised bed": [
+     5.5,
+     5.5
+    ],
+    "the garden wall": [
+     9.9,
+     6.0
+    ],
+    "the harakeke": [
+     2.0,
+     10.5
+    ],
+    "the fence": [
+     5.0,
+     11.7
+    ],
+    "the old tree": [
+     8.8,
+     3.5
+    ]
+   },
+   "unlabeled_clauses": []
+  },
+  {
+   "place": "shore",
+   "depth_on": false,
+   "steps": [
+    {
+     "pose": {
+      "x": 9.1,
+      "y": 8.8,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline ahead — a bleached plank; the cat is down by the driftwood, behind you; the tide is out — the surf working far off, ahead.",
+       "clauses": [
+        "the sea has left something at the tideline ahead — a bleached plank",
+        "the cat is down by the driftwood, behind you",
+        "the tide is out — the surf working far off, ahead"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the waves at work far off, ahead.",
+       "clauses": [
+        "the tide is out — the waves at work far off, ahead"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 17.3,
+      "y": 11.9,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline behind you — a bleached plank; the cat is down by the driftwood, behind you; the tide is out — the surf working far off, behind you.",
+       "clauses": [
+        "the sea has left something at the tideline behind you — a bleached plank",
+        "the cat is down by the driftwood, behind you",
+        "the tide is out — the surf working far off, behind you"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, behind you.",
+       "clauses": [
+        "the tide is out — the sea busy far off, behind you"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 17.1,
+      "y": 1.4,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, to your right; the tide is out — the waves at work far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, to your right",
+        "the tide is out — the waves at work far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the surf working far off, to your right.",
+       "clauses": [
+        "the tide is out — the surf working far off, to your right"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 4.8,
+      "y": 11.4,
+      "facing_deg": 0
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, behind you; the tide is out — the waves at work far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, behind you",
+        "the tide is out — the waves at work far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the waves at work far off, to your right.",
+       "clauses": [
+        "the tide is out — the waves at work far off, to your right"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 9.3,
+      "y": 3.6,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your left — a bleached plank; the cat is down by the driftwood, behind you; the tide is out — the surf working far off, to your left.",
+       "clauses": [
+        "the sea has left something at the tideline to your left — a bleached plank",
+        "the cat is down by the driftwood, behind you",
+        "the tide is out — the surf working far off, to your left"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, to your left.",
+       "clauses": [
+        "the tide is out — the sea busy far off, to your left"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 16.6,
+      "y": 2.4,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your left — a bleached plank; the cat is down by the driftwood, behind you; the tide is out — the water at its work far off, to your left.",
+       "clauses": [
+        "the sea has left something at the tideline to your left — a bleached plank",
+        "the cat is down by the driftwood, behind you",
+        "the tide is out — the water at its work far off, to your left"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, to your left.",
+       "clauses": [
+        "the tide is out — the sea busy far off, to your left"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 19.9,
+      "y": 10.5,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, ahead; the tide is out — the sea busy far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, ahead",
+        "the tide is out — the sea busy far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the waves at work far off, to your right; the pools are bared, each one holding its own still world; the rock-pool shelf is near, to your left.",
+       "clauses": [
+        "the tide is out — the waves at work far off, to your right",
+        "the pools are bared, each one holding its own still world",
+        "the rock-pool shelf is near, to your left"
+       ],
+       "labels": [
+        "the tideline",
+        "the rock pools",
+        "the rock pools"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 23.5,
+      "y": 6.4,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, ahead; the tide is out — the water at its work far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, ahead",
+        "the tide is out — the water at its work far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, to your right.",
+       "clauses": [
+        "the tide is out — the sea busy far off, to your right"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 17.4,
+      "y": 7.6,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, ahead; the tide is out — the sea busy far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, ahead",
+        "the tide is out — the sea busy far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the surf working far off, to your right.",
+       "clauses": [
+        "the tide is out — the surf working far off, to your right"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 19.5,
+      "y": 5.9,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline behind you — a bleached plank; the cat is down by the driftwood, to your right; the tide is out — the water at its work far off, behind you.",
+       "clauses": [
+        "the sea has left something at the tideline behind you — a bleached plank",
+        "the cat is down by the driftwood, to your right",
+        "the tide is out — the water at its work far off, behind you"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, behind you.",
+       "clauses": [
+        "the tide is out — the sea busy far off, behind you"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 23.9,
+      "y": 5.4,
+      "facing_deg": 315
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline ahead — a bleached plank; the cat is down by the driftwood, to your left; the tide is out — the surf working far off, ahead.",
+       "clauses": [
+        "the sea has left something at the tideline ahead — a bleached plank",
+        "the cat is down by the driftwood, to your left",
+        "the tide is out — the surf working far off, ahead"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the surf working far off, ahead.",
+       "clauses": [
+        "the tide is out — the surf working far off, ahead"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 20.9,
+      "y": 3.5,
+      "facing_deg": 270
+     },
+     "lines": [
+      {
+       "line": "Where you are: the shore — the sea has left something at the tideline to your right — a bleached plank; the cat is down by the driftwood, ahead; the tide is out — the water at its work far off, to your right.",
+       "clauses": [
+        "the sea has left something at the tideline to your right — a bleached plank",
+        "the cat is down by the driftwood, ahead",
+        "the tide is out — the water at its work far off, to your right"
+       ],
+       "labels": [
+        "the tideline",
+        "the driftwood",
+        "the tideline"
+       ]
+      },
+      {
+       "line": "Where you are: the shore — the tide is out — the sea busy far off, to your right.",
+       "clauses": [
+        "the tide is out — the sea busy far off, to your right"
+       ],
+       "labels": [
+        "the tideline"
+       ]
+      }
+     ]
+    }
+   ],
+   "named": [
+    "the driftwood",
+    "the rock pools",
+    "the tideline"
+   ],
+   "truth": {
+    "the tideline": [
+     12.0,
+     13.47
+    ],
+    "the driftwood": [
+     6.0,
+     4.0
+    ],
+    "the rock pools": [
+     20.0,
+     9.0
+    ]
+   },
+   "unlabeled_clauses": []
+  },
+  {
+   "place": "wood",
+   "depth_on": false,
+   "steps": [
+    {
+     "pose": {
+      "x": 8.2,
+      "y": 14.2,
+      "facing_deg": 45
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, behind you.",
+       "clauses": [
+        "the cat is in the undergrowth, behind you"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 13.4,
+      "y": 17.0,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, to your right; the gap down to the sea is near, to your left.",
+       "clauses": [
+        "the cat is in the undergrowth, to your right",
+        "the gap down to the sea is near, to your left"
+       ],
+       "labels": [
+        "the undergrowth",
+        "the gap to the sea"
+       ]
+      },
+      {
+       "line": "Where you are: the wood — the gap down to the sea is near, to your left.",
+       "clauses": [
+        "the gap down to the sea is near, to your left"
+       ],
+       "labels": [
+        "the gap to the sea"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 13.3,
+      "y": 7.6,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, to your right; the fallen wood is near, to your left.",
+       "clauses": [
+        "the cat is in the undergrowth, to your right",
+        "the fallen wood is near, to your left"
+       ],
+       "labels": [
+        "the undergrowth",
+        "the fallen wood"
+       ]
+      },
+      {
+       "line": "Where you are: the wood — the fallen wood is near, to your left.",
+       "clauses": [
+        "the fallen wood is near, to your left"
+       ],
+       "labels": [
+        "the fallen wood"
+       ]
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 5.6,
+      "y": 16.5,
+      "facing_deg": 0
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, behind you.",
+       "clauses": [
+        "the cat is in the undergrowth, behind you"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 8.4,
+      "y": 9.6,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, to your right.",
+       "clauses": [
+        "the cat is in the undergrowth, to your right"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 12.9,
+      "y": 8.5,
+      "facing_deg": 90
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, behind you.",
+       "clauses": [
+        "the cat is in the undergrowth, behind you"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 15.0,
+      "y": 15.8,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, ahead.",
+       "clauses": [
+        "the cat is in the undergrowth, ahead"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 17.3,
+      "y": 12.1,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, ahead.",
+       "clauses": [
+        "the cat is in the undergrowth, ahead"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 13.4,
+      "y": 13.2,
+      "facing_deg": 225
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, ahead.",
+       "clauses": [
+        "the cat is in the undergrowth, ahead"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 14.8,
+      "y": 11.6,
+      "facing_deg": 135
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, to your right.",
+       "clauses": [
+        "the cat is in the undergrowth, to your right"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 17.5,
+      "y": 11.1,
+      "facing_deg": 315
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, to your left.",
+       "clauses": [
+        "the cat is in the undergrowth, to your left"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    },
+    {
+     "pose": {
+      "x": 15.7,
+      "y": 9.4,
+      "facing_deg": 270
+     },
+     "lines": [
+      {
+       "line": "Where you are: the wood — the cat is in the undergrowth, ahead.",
+       "clauses": [
+        "the cat is in the undergrowth, ahead"
+       ],
+       "labels": [
+        "the undergrowth"
+       ]
+      },
+      {
+       "line": "Where you are: the wood, quiet around you.",
+       "clauses": [],
+       "labels": []
+      }
+     ]
+    }
+   ],
+   "named": [
+    "the fallen wood",
+    "the gap to the sea",
+    "the undergrowth"
+   ],
+   "truth": {
+    "the undergrowth": [
+     6.0,
+     8.0
+    ],
+    "the fallen wood": [
+     15.0,
+     7.0
+    ],
+    "the gap to the sea": [
+     13.0,
+     18.0
+    ]
+   },
+   "unlabeled_clauses": []
+  }
+ ],
+ "results": [
+  {
+   "place": "study",
+   "depth_on": false,
+   "named": [
+    "the bed",
+    "the desk",
+    "the fire",
+    "the garden door",
+    "the shelf",
+    "the window"
+   ],
+   "chance": {
+    "raw_rmse_mean": 2.73,
+    "procrustes_rmse_mean": 1.87,
+    "procrustes_rmse_p05": 1.43,
+    "pair_acc_mean": 0.503,
+    "centroid_rmse": 2.11
+   },
+   "conds": {
+    "pose": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 2.2,
+      "procrustes_rmse": 1.97,
+      "pair_acc": 0.679,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 4.74,
+       "the window": 0.96,
+       "the desk": 1.17,
+       "the garden door": 0.92,
+       "the bed": 0.94,
+       "the shelf": 1.58
+      }
+     },
+     "pred": {
+      "the bed": [
+       1.8,
+       1.0
+      ],
+      "the desk": [
+       2.5,
+       3.5
+      ],
+      "the fire": [
+       4.5,
+       3.5
+      ],
+      "the garden door": [
+       0.9,
+       3.3
+      ],
+      "the shelf": [
+       2.5,
+       2.5
+      ],
+      "the window": [
+       1.3,
+       4.5
+      ]
+     },
+     "secs": 6.2,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.5, 3.5],\n    \"the fire\": [4.5, 3.5],\n    \"the garden door\": [0.9, 3.3],\n    \"the shelf\": [2.5, 2.5],\n    \"the window\": [1.3, 4.5]\n  }\n}"
+    },
+    "shuffled": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 3.16,
+      "procrustes_rmse": 1.54,
+      "pair_acc": 0.071,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 3.34,
+       "the window": 2.95,
+       "the desk": 2.28,
+       "the garden door": 3.16,
+       "the bed": 3.96,
+       "the shelf": 3.05
+      }
+     },
+     "pred": {
+      "the bed": [
+       1.2,
+       4.2
+      ],
+      "the desk": [
+       3.0,
+       2.5
+      ],
+      "the fire": [
+       3.3,
+       2.5
+      ],
+      "the garden door": [
+       3.0,
+       2.5
+      ],
+      "the shelf": [
+       1.2,
+       4.2
+      ],
+      "the window": [
+       3.3,
+       2.5
+      ]
+     },
+     "secs": 8.8,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [1.2, 4.2],\n    \"the desk\": [3.0, 2.5],\n    \"the fire\": [3.3, 2.5],\n    \"the garden door\": [3.0, 2.5],\n    \"the shelf\": [1.2, 4.2],\n    \"the window\": [3.3, 2.5]\n  }\n}"
+    },
+    "truth": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 0.0,
+      "procrustes_rmse": 0.0,
+      "pair_acc": 1.0,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 0.0,
+       "the window": 0.0,
+       "the desk": 0.0,
+       "the garden door": 0.0,
+       "the bed": 0.0,
+       "the shelf": 0.0
+      }
+     },
+     "pred": {
+      "the bed": [
+       2.6,
+       0.5
+      ],
+      "the desk": [
+       2.1,
+       4.6
+      ],
+      "the fire": [
+       0.0,
+       2.0
+      ],
+      "the garden door": [
+       0.0,
+       3.5
+      ],
+      "the shelf": [
+       4.0,
+       3.0
+      ],
+      "the window": [
+       2.0,
+       5.15
+      ]
+     },
+     "secs": 5.6,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [2.6, 0.5],\n    \"the desk\": [2.1, 4.6],\n    \"the fire\": [0.0, 2.0],\n    \"the garden door\": [0.0, 3.5],\n    \"the shelf\": [4.0, 3.0],\n    \"the window\": [2.0, 5.15]\n  }\n}"
+    }
+   }
+  },
+  {
+   "place": "study",
+   "depth_on": true,
+   "named": [
+    "the bed",
+    "the desk",
+    "the fire",
+    "the garden door",
+    "the shelf",
+    "the window"
+   ],
+   "chance": {
+    "raw_rmse_mean": 2.73,
+    "procrustes_rmse_mean": 1.87,
+    "procrustes_rmse_p05": 1.43,
+    "pair_acc_mean": 0.503,
+    "centroid_rmse": 2.11
+   },
+   "conds": {
+    "pose": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 2.89,
+      "procrustes_rmse": 2.08,
+      "pair_acc": 0.536,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 5.39,
+       "the window": 1.01,
+       "the desk": 1.08,
+       "the garden door": 1.5,
+       "the bed": 0.78,
+       "the shelf": 4.0
+      }
+     },
+     "pred": {
+      "the bed": [
+       2.0,
+       1.0
+      ],
+      "the desk": [
+       3.0,
+       4.0
+      ],
+      "the fire": [
+       5.0,
+       4.0
+      ],
+      "the garden door": [
+       0.0,
+       2.0
+      ],
+      "the shelf": [
+       0.0,
+       3.0
+      ],
+      "the window": [
+       1.0,
+       5.0
+      ]
+     },
+     "secs": 10.2,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [2.0, 1.0],\n    \"the desk\": [3.0, 4.0],\n    \"the fire\": [5.0, 4.0],\n    \"the garden door\": [0.0, 2.0],\n    \"the shelf\": [0.0, 3.0],\n    \"the window\": [1.0, 5.0]\n  }\n}"
+    },
+    "shuffled": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 2.97,
+      "procrustes_rmse": 1.44,
+      "pair_acc": 0.286,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 1.58,
+       "the window": 2.95,
+       "the desk": 2.28,
+       "the garden door": 3.45,
+       "the bed": 3.96,
+       "the shelf": 2.97
+      }
+     },
+     "pred": {
+      "the bed": [
+       1.2,
+       4.2
+      ],
+      "the desk": [
+       3.0,
+       2.5
+      ],
+      "the fire": [
+       0.9,
+       3.3
+      ],
+      "the garden door": [
+       3.3,
+       2.5
+      ],
+      "the shelf": [
+       1.8,
+       1.0
+      ],
+      "the window": [
+       3.3,
+       2.5
+      ]
+     },
+     "secs": 11.2,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [1.2, 4.2],\n    \"the desk\": [3.0, 2.5],\n    \"the fire\": [0.9, 3.3],\n    \"the garden door\": [3.3, 2.5],\n    \"the shelf\": [1.8, 1.0],\n    \"the window\": [3.3, 2.5]\n  }\n}"
+    },
+    "nopose": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 4.86,
+      "procrustes_rmse": 1.62,
+      "pair_acc": 0.714,
+      "pairs": 28,
+      "per_object_err": {
+       "the fire": 2.0,
+       "the window": 7.17,
+       "the desk": 7.08,
+       "the garden door": 3.04,
+       "the bed": 2.1,
+       "the shelf": 4.74
+      }
+     },
+     "pred": {
+      "the bed": [
+       0.5,
+       0.5
+      ],
+      "the desk": [
+       -1.5,
+       -1.5
+      ],
+      "the fire": [
+       2.0,
+       2.0
+      ],
+      "the garden door": [
+       3.0,
+       3.0
+      ],
+      "the shelf": [
+       -0.5,
+       1.5
+      ],
+      "the window": [
+       1.5,
+       -2.0
+      ]
+     },
+     "secs": 10.0,
+     "raw": "{\n  \"objects\": {\n    \"the bed\": [0.5, 0.5],\n    \"the desk\": [-1.5, -1.5],\n    \"the fire\": [2.0, 2.0],\n    \"the garden door\": [3.0, 3.0],\n    \"the shelf\": [-0.5, 1.5],\n    \"the window\": [1.5, -2.0]\n  }\n}"
+    }
+   }
+  },
+  {
+   "place": "garden",
+   "depth_on": false,
+   "named": [
+    "the fence",
+    "the garden wall",
+    "the harakeke",
+    "the letterbox",
+    "the old tree",
+    "the raised bed"
+   ],
+   "chance": {
+    "raw_rmse_mean": 6.12,
+    "procrustes_rmse_mean": 4.01,
+    "procrustes_rmse_p05": 3.04,
+    "pair_acc_mean": 0.496,
+    "centroid_rmse": 4.52
+   },
+   "conds": {
+    "pose": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 6.11,
+      "procrustes_rmse": 4.39,
+      "pair_acc": 0.483,
+      "pairs": 29,
+      "per_object_err": {
+       "the letterbox": 11.66,
+       "the raised bed": 3.83,
+       "the garden wall": 6.32,
+       "the harakeke": 5.15,
+       "the fence": 2.24,
+       "the old tree": 1.22
+      }
+     },
+     "pred": {
+      "the fence": [
+       7.0,
+       10.7
+      ],
+      "the garden wall": [
+       3.9,
+       8.0
+      ],
+      "the harakeke": [
+       4.5,
+       6.0
+      ],
+      "the letterbox": [
+       7.2,
+       1.3
+      ],
+      "the old tree": [
+       8.1,
+       4.5
+      ],
+      "the raised bed": [
+       5.0,
+       1.7
+      ]
+     },
+     "secs": 8.3,
+     "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [3.9, 8.0],\n    \"the harakeke\": [4.5, 6.0],\n    \"the letterbox\": [7.2, 1.3],\n    \"the old tree\": [8.1, 4.5],\n    \"the raised bed\": [5.0, 1.7]\n  }\n}"
+    },
+    "shuffled": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 5.45,
+      "procrustes_rmse": 4.37,
+      "pair_acc": 0.552,
+      "pairs": 29,
+      "per_object_err": {
+       "the letterbox": 10.32,
+       "the raised bed": 2.38,
+       "the garden wall": 7.05,
+       "the harakeke": 3.14,
+       "the fence": 2.24,
+       "the old tree": 1.22
+      }
+     },
+     "pred": {
+      "the fence": [
+       7.0,
+       10.7
+      ],
+      "the garden wall": [
+       3.2,
+       8.2
+      ],
+      "the harakeke": [
+       3.9,
+       8.0
+      ],
+      "the letterbox": [
+       5.0,
+       1.7
+      ],
+      "the old tree": [
+       8.1,
+       4.5
+      ],
+      "the raised bed": [
+       4.9,
+       7.8
+      ]
+     },
+     "secs": 9.5,
+     "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [3.2, 8.2],\n    \"the harakeke\": [3.9, 8.0],\n    \"the letterbox\": [5.0, 1.7],\n    \"the old tree\": [8.1, 4.5],\n    \"the raised bed\": [4.9, 7.8]\n  }\n}"
+    },
+    "truth": {
+     "score": {
+      "n": 6,
+      "of": 6,
+      "raw_rmse": 0.0,
+      "procrustes_rmse": 0.0,
+      "pair_acc": 1.0,
+      "pairs": 29,
+      "per_object_err": {
+       "the letterbox": 0.0,
+       "the raised bed": 0.0,
+       "the garden wall": 0.0,
+       "the harakeke": 0.0,
+       "the fence": 0.0,
+       "the old tree": 0.0
+      }
+     },
+     "pred": {
+      "the fence": [
+       5.0,
+       11.7
+      ],
+      "the garden wall": [
+       9.9,
+       6.0
+      ],
+      "the harakeke": [
+       2.0,
+       10.5
+      ],
+      "the letterbox": [
+       1.2,
+       11.3
+      ],
+      "the old tree": [
+       8.8,
+       3.5
+      ],
+      "the raised bed": [
+       5.5,
+       5.5
+      ]
+     },
+     "secs": 5.9,
+     "raw": "{\n  \"objects\": {\n    \"the fence\": [5.0, 11.7],\n    \"the garden wall\": [9.9, 6.0],\n    \"the harakeke\": [2.0, 10.5],\n    \"the letterbox\": [1.2, 11.3],\n    \"the old tree\": [8.8, 3.5],\n    \"the raised bed\": [5.5, 5.5]\n  }\n}"
+    }
+   }
+  },
+  {
+   "place": "shore",
+   "depth_on": false,
+   "named": [
+    "the driftwood",
+    "the rock pools",
+    "the tideline"
+   ],
+   "chance": {
+    "raw_rmse_mean": 9.53,
+    "procrustes_rmse_mean": 4.62,
+    "procrustes_rmse_p05": 1.66,
+    "pair_acc_mean": 0.496,
+    "centroid_rmse": 6.92
+   },
+   "conds": {
+    "pose": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 9.13,
+      "procrustes_rmse": 3.67,
+      "pair_acc": 0.667,
+      "pairs": 6,
+      "per_object_err": {
+       "the tideline": 7.4,
+       "the driftwood": 13.85,
+       "the rock pools": 1.87
+      }
+     },
+     "pred": {
+      "the driftwood": [
+       19.7,
+       6.0
+      ],
+      "the rock pools": [
+       20.5,
+       10.8
+      ],
+      "the tideline": [
+       14.5,
+       6.5
+      ]
+     },
+     "secs": 5.9,
+     "raw": "{\n  \"objects\": {\n    \"the driftwood\": [19.7, 6.0],\n    \"the rock pools\": [20.5, 10.8],\n    \"the tideline\": [14.5, 6.5]\n  }\n}"
+    },
+    "shuffled": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 10.41,
+      "procrustes_rmse": 4.58,
+      "pair_acc": 0.167,
+      "pairs": 6,
+      "per_object_err": {
+       "the tideline": 7.98,
+       "the driftwood": 11.95,
+       "the rock pools": 10.9
+      }
+     },
+     "pred": {
+      "the driftwood": [
+       17.4,
+       7.6
+      ],
+      "the rock pools": [
+       9.1,
+       8.8
+      ],
+      "the tideline": [
+       17.4,
+       7.6
+      ]
+     },
+     "secs": 6.5,
+     "raw": "{\n  \"objects\": {\n    \"the driftwood\": [17.4, 7.6],\n    \"the rock pools\": [9.1, 8.8],\n    \"the tideline\": [17.4, 7.6]\n  }\n}"
+    },
+    "truth": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 0.0,
+      "procrustes_rmse": 0.0,
+      "pair_acc": 1.0,
+      "pairs": 6,
+      "per_object_err": {
+       "the tideline": 0.0,
+       "the driftwood": 0.0,
+       "the rock pools": 0.0
+      }
+     },
+     "pred": {
+      "the driftwood": [
+       6.0,
+       4.0
+      ],
+      "the rock pools": [
+       20.0,
+       9.0
+      ],
+      "the tideline": [
+       12.0,
+       13.47
+      ]
+     },
+     "secs": 4.6,
+     "raw": "{\n  \"objects\": {\n    \"the driftwood\": [6.0, 4.0],\n    \"the rock pools\": [20.0, 9.0],\n    \"the tideline\": [12.0, 13.47]\n  }\n}"
+    }
+   }
+  },
+  {
+   "place": "wood",
+   "depth_on": false,
+   "named": [
+    "the fallen wood",
+    "the gap to the sea",
+    "the undergrowth"
+   ],
+   "chance": {
+    "raw_rmse_mean": 7.84,
+    "procrustes_rmse_mean": 4.18,
+    "procrustes_rmse_p05": 1.31,
+    "pair_acc_mean": 0.496,
+    "centroid_rmse": 6.29
+   },
+   "conds": {
+    "pose": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 3.99,
+      "procrustes_rmse": 2.26,
+      "pair_acc": 0.833,
+      "pairs": 6,
+      "per_object_err": {
+       "the undergrowth": 6.58,
+       "the fallen wood": 1.8,
+       "the gap to the sea": 1.08
+      }
+     },
+     "pred": {
+      "the fallen wood": [
+       13.3,
+       7.6
+      ],
+      "the gap to the sea": [
+       13.4,
+       17.0
+      ],
+      "the undergrowth": [
+       8.2,
+       14.2
+      ]
+     },
+     "secs": 5.4,
+     "raw": "{\n  \"objects\": {\n    \"the fallen wood\": [13.3, 7.6],\n    \"the gap to the sea\": [13.4, 17.0],\n    \"the undergrowth\": [8.2, 14.2]\n  }\n}"
+    },
+    "shuffled": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 7.41,
+      "procrustes_rmse": 4.43,
+      "pair_acc": 0.5,
+      "pairs": 6,
+      "per_object_err": {
+       "the undergrowth": 7.31,
+       "the fallen wood": 4.6,
+       "the gap to the sea": 9.5
+      }
+     },
+     "pred": {
+      "the fallen wood": [
+       14.8,
+       11.6
+      ],
+      "the gap to the sea": [
+       12.9,
+       8.5
+      ],
+      "the undergrowth": [
+       13.3,
+       7.6
+      ]
+     },
+     "secs": 7.0,
+     "raw": "{\n  \"objects\": {\n    \"the fallen wood\": [14.8, 11.6],\n    \"the gap to the sea\": [12.9, 8.5],\n    \"the undergrowth\": [13.3, 7.6]\n  }\n}"
+    },
+    "truth": {
+     "score": {
+      "n": 3,
+      "of": 3,
+      "raw_rmse": 0.0,
+      "procrustes_rmse": 0.0,
+      "pair_acc": 1.0,
+      "pairs": 6,
+      "per_object_err": {
+       "the undergrowth": 0.0,
+       "the fallen wood": 0.0,
+       "the gap to the sea": 0.0
+      }
+     },
+     "pred": {
+      "the fallen wood": [
+       15.0,
+       7.0
+      ],
+      "the gap to the sea": [
+       13.0,
+       18.0
+      ],
+      "the undergrowth": [
+       6.0,
+       8.0
+      ]
+     },
+     "secs": 4.6,
+     "raw": "{\n  \"objects\": {\n    \"the fallen wood\": [15.0, 7.0],\n    \"the gap to the sea\": [13.0, 18.0],\n    \"the undergrowth\": [6.0, 8.0]\n  }\n}"
+    }
+   }
+  }
+ ],
+ "canary_leaked": {},
+ "ideal_decoder": [
+  {
+   "place": "study",
+   "depth_on": false,
+   "ideal": {
+    "raw_rmse": 0.28,
+    "procrustes_rmse": 0.22,
+    "pair_acc": 1.0,
+    "pairs": 28,
+    "per_object_err": {
+     "the bed": 0.4,
+     "the desk": 0.13,
+     "the fire": 0.11,
+     "the garden door": 0.49,
+     "the shelf": 0.08,
+     "the window": 0.2
+    },
+    "consistency": {
+     "the bed": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 0.9
+     },
+     "the desk": {
+      "obs": 20,
+      "best_consistent": 19,
+      "feasible_area_m2": 0.05
+     },
+     "the fire": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 0.04
+     },
+     "the garden door": {
+      "obs": 13,
+      "best_consistent": 13,
+      "feasible_area_m2": 0.47
+     },
+     "the shelf": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 0.3
+     },
+     "the window": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 0.42
+     }
+    }
+   },
+   "ideal_shuffled": {
+    "raw_rmse": 2.78,
+    "procrustes_rmse": 1.88,
+    "pair_acc": 0.679,
+    "pairs": 28,
+    "per_object_err": {
+     "the bed": 4.19,
+     "the desk": 1.64,
+     "the fire": 4.12,
+     "the garden door": 1.6,
+     "the shelf": 1.14,
+     "the window": 2.3
+    },
+    "consistency": {
+     "the bed": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 0.82
+     },
+     "the desk": {
+      "obs": 20,
+      "best_consistent": 10,
+      "feasible_area_m2": 0.29
+     },
+     "the fire": {
+      "obs": 12,
+      "best_consistent": 5,
+      "feasible_area_m2": 0.07
+     },
+     "the garden door": {
+      "obs": 13,
+      "best_consistent": 6,
+      "feasible_area_m2": 2.09
+     },
+     "the shelf": {
+      "obs": 2,
+      "best_consistent": 1,
+      "feasible_area_m2": 3.23
+     },
+     "the window": {
+      "obs": 12,
+      "best_consistent": 7,
+      "feasible_area_m2": 2.54
+     }
+    }
+   }
+  },
+  {
+   "place": "study",
+   "depth_on": true,
+   "ideal": {
+    "raw_rmse": 0.21,
+    "procrustes_rmse": 0.15,
+    "pair_acc": 1.0,
+    "pairs": 28,
+    "per_object_err": {
+     "the bed": 0.4,
+     "the desk": 0.22,
+     "the fire": 0.11,
+     "the garden door": 0.05,
+     "the shelf": 0.08,
+     "the window": 0.2
+    },
+    "consistency": {
+     "the bed": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 0.9
+     },
+     "the desk": {
+      "obs": 20,
+      "best_consistent": 19,
+      "feasible_area_m2": 0.01
+     },
+     "the fire": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 0.04
+     },
+     "the garden door": {
+      "obs": 13,
+      "best_consistent": 13,
+      "feasible_area_m2": 0.02
+     },
+     "the shelf": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 0.3
+     },
+     "the window": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 0.42
+     }
+    }
+   },
+   "ideal_shuffled": {
+    "raw_rmse": 3.26,
+    "procrustes_rmse": 2.02,
+    "pair_acc": 0.5,
+    "pairs": 28,
+    "per_object_err": {
+     "the bed": 4.19,
+     "the desk": 1.56,
+     "the fire": 4.12,
+     "the garden door": 4.49,
+     "the shelf": 1.14,
+     "the window": 2.3
+    },
+    "consistency": {
+     "the bed": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 0.82
+     },
+     "the desk": {
+      "obs": 20,
+      "best_consistent": 8,
+      "feasible_area_m2": 0.02
+     },
+     "the fire": {
+      "obs": 12,
+      "best_consistent": 5,
+      "feasible_area_m2": 0.07
+     },
+     "the garden door": {
+      "obs": 13,
+      "best_consistent": 5,
+      "feasible_area_m2": 0.02
+     },
+     "the shelf": {
+      "obs": 2,
+      "best_consistent": 1,
+      "feasible_area_m2": 3.23
+     },
+     "the window": {
+      "obs": 12,
+      "best_consistent": 7,
+      "feasible_area_m2": 2.54
+     }
+    }
+   }
+  },
+  {
+   "place": "garden",
+   "depth_on": false,
+   "ideal": {
+    "raw_rmse": 0.69,
+    "procrustes_rmse": 0.47,
+    "pair_acc": 0.931,
+    "pairs": 29,
+    "per_object_err": {
+     "the fence": 0.28,
+     "the garden wall": 0.56,
+     "the harakeke": 0.76,
+     "the letterbox": 1.25,
+     "the old tree": 0.25,
+     "the raised bed": 0.47
+    },
+    "consistency": {
+     "the fence": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 0.72
+     },
+     "the garden wall": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 2.53
+     },
+     "the harakeke": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 9.86
+     },
+     "the letterbox": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 9.86
+     },
+     "the old tree": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 0.92
+     },
+     "the raised bed": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 1.14
+     }
+    }
+   },
+   "ideal_shuffled": {
+    "raw_rmse": 5.06,
+    "procrustes_rmse": 3.49,
+    "pair_acc": 0.655,
+    "pairs": 29,
+    "per_object_err": {
+     "the fence": 6.11,
+     "the garden wall": 0.89,
+     "the harakeke": 5.23,
+     "the letterbox": 5.95,
+     "the old tree": 4.1,
+     "the raised bed": 5.98
+    },
+    "consistency": {
+     "the fence": {
+      "obs": 12,
+      "best_consistent": 6,
+      "feasible_area_m2": 0.66
+     },
+     "the garden wall": {
+      "obs": 12,
+      "best_consistent": 5,
+      "feasible_area_m2": 7.77
+     },
+     "the harakeke": {
+      "obs": 12,
+      "best_consistent": 7,
+      "feasible_area_m2": 1.34
+     },
+     "the letterbox": {
+      "obs": 12,
+      "best_consistent": 7,
+      "feasible_area_m2": 1.34
+     },
+     "the old tree": {
+      "obs": 2,
+      "best_consistent": 1,
+      "feasible_area_m2": 4.61
+     },
+     "the raised bed": {
+      "obs": 12,
+      "best_consistent": 6,
+      "feasible_area_m2": 2.35
+     }
+    }
+   }
+  },
+  {
+   "place": "shore",
+   "depth_on": false,
+   "ideal": {
+    "raw_rmse": 0.81,
+    "procrustes_rmse": 0.4,
+    "pair_acc": 1.0,
+    "pairs": 6,
+    "per_object_err": {
+     "the driftwood": 0.64,
+     "the rock pools": 0.98,
+     "the tideline": 0.77
+    },
+    "consistency": {
+     "the driftwood": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 9.01
+     },
+     "the rock pools": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 2.38
+     },
+     "the tideline": {
+      "obs": 36,
+      "best_consistent": 36,
+      "feasible_area_m2": 8.22
+     }
+    }
+   },
+   "ideal_shuffled": {
+    "raw_rmse": 10.28,
+    "procrustes_rmse": 6.6,
+    "pair_acc": 0.5,
+    "pairs": 6,
+    "per_object_err": {
+     "the driftwood": 2.91,
+     "the rock pools": 11.95,
+     "the tideline": 12.89
+    },
+    "consistency": {
+     "the driftwood": {
+      "obs": 12,
+      "best_consistent": 5,
+      "feasible_area_m2": 5.44
+     },
+     "the rock pools": {
+      "obs": 1,
+      "best_consistent": 1,
+      "feasible_area_m2": 2.37
+     },
+     "the tideline": {
+      "obs": 36,
+      "best_consistent": 16,
+      "feasible_area_m2": 0.22
+     }
+    }
+   }
+  },
+  {
+   "place": "wood",
+   "depth_on": false,
+   "ideal": {
+    "raw_rmse": 0.68,
+    "procrustes_rmse": 0.51,
+    "pair_acc": 1.0,
+    "pairs": 6,
+    "per_object_err": {
+     "the fallen wood": 0.67,
+     "the gap to the sea": 0.55,
+     "the undergrowth": 0.8
+    },
+    "consistency": {
+     "the fallen wood": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 2.12
+     },
+     "the gap to the sea": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 2.38
+     },
+     "the undergrowth": {
+      "obs": 12,
+      "best_consistent": 12,
+      "feasible_area_m2": 6.15
+     }
+    }
+   },
+   "ideal_shuffled": {
+    "raw_rmse": 8.55,
+    "procrustes_rmse": 5.72,
+    "pair_acc": 0.667,
+    "pairs": 6,
+    "per_object_err": {
+     "the fallen wood": 5.63,
+     "the gap to the sea": 8.11,
+     "the undergrowth": 11.05
+    },
+    "consistency": {
+     "the fallen wood": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 2.48
+     },
+     "the gap to the sea": {
+      "obs": 2,
+      "best_consistent": 2,
+      "feasible_area_m2": 2.38
+     },
+     "the undergrowth": {
+      "obs": 12,
+      "best_consistent": 5,
+      "feasible_area_m2": 19.77
+     }
+    }
+   }
+  }
+ ]
+}

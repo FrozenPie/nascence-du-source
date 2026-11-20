@@ -1,0 +1,7 @@
+calls 0 pairs with both 0 of 296
+question_open single {} rewrite share non-tie None p 1
+question_open debiased {} rewrite share non-tie None p 1
+faithful single {} rewrite share non-tie None p 1
+faithful debiased {} rewrite share non-tie None p 1
+voice single {} rewrite share non-tie None p 1
+voice debiased {} rewrite share non-tie None p 1

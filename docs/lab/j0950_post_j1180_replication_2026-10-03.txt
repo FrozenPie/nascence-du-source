@@ -1,0 +1,193 @@
+J-0950 takeover 2026-10-03 -- scripts/j0950_post_j1180_replication.py output (read-only on live data; Du LIVE, PID 18908 since 2026-10-03 06:54:31)
+snapshot: data/nascence.log parsed 07:22 NZDT = 84,813,561 bytes / 575,861 lines (j0950_parse_cycle_events.py --since 2026-09-16, last timestamped line 10-03 07:22:23); data/coupling_rides.jsonl 16427386 bytes and data/climate_reknee_shadow.jsonl 2553059 bytes read at run time (~07:40)
+command: python scripts/j0950_parse_cycle_events.py --log C:/Nascence/data/nascence.log --out EVENTS --since 2026-09-16 ; python scripts/j0950_post_j1180_replication.py --events EVENTS
+
+========================================================================================================================
+events: EVENTS   last timestamped log line (NZ wall clock): 10-03 07:22:23   climate rows 21757, deliberation rows 816
+boots 11, shutdowns 7, naps (silent >= 300s inside a live process) 26, outage-abutting silent windows 10; DST-jump artefact windows dropped by the UTC conversion: 1
+
+========================================================================================================================
+0. TIME-BASE CHECK -- every '[CYCLE x] complete' log line should be followed 0-3 s later by a deliberation publish row (F-1319's calibration), before AND after the 2026-09-27 DST jump
+   pre-DST  (09-16 .. 09-27 01:59): completes 372, matched to a deliberation row within [-2, +10] s: 372 (100.0%), offset median +0.30 s, p5 +0.16, p95 +0.76
+   post-DST (09-27 03:00 .. end): completes 152, matched to a deliberation row within [-2, +10] s: 152 (100.0%), offset median +0.31 s, p5 +0.16, p95 +0.77
+   (a wrong offset would show up as ~0% matched; a correct one as ~100% at about +1 s)
+
+========================================================================================================================
+1. TABLE A -- boot-defined periods (UTC-correct).  P4 must reproduce F-1684's table A: live 87.2 h, awake 78.0 h, 241 internal starts (3.09/awake-h), gated 81, defensive IGN 123, exploratory 119, 238 gaps, net median ~1099 s, share<900s 0.37
+
+[P4  09-16 07:53:01 .. 09-22 08:43:40  (pre-J-1180: nap freeze present)]
+   live   87.2 h   awake   78.0 h  (nap-stall 10.5% of live)   internal starts 241 (2.76/live-h, 3.09/awake-h), gated 81, human 3
+   climate IGNITIONs: defensive 123 (1.41/live-h, 1.58/awake-h)  exploratory 119 (1.36/live-h, 1.52/awake-h)
+   net internal->internal gaps n=238: p25 577  median 1099  p75 1670 s;  share<900s 0.37
+
+[P5  09-22 16:11:04 .. 10-01 07:17:43  (post-J-1180: freeze gone)]
+   live  186.6 h   awake  186.1 h  (nap-stall  0.2% of live)   internal starts 456 (2.44/live-h, 2.45/awake-h), gated 113, human 18
+   climate IGNITIONs: defensive 196 (1.05/live-h, 1.05/awake-h)  exploratory 262 (1.40/live-h, 1.41/awake-h)
+   net internal->internal gaps n=450: p25 745  median 1464  p75 2204 s;  share<900s 0.29
+
+[P5.1  09-22 16:11 .. 09-25 19:21]
+   live   67.8 h   awake   67.8 h  (nap-stall  0.0% of live)   internal starts 182 (2.68/live-h, 2.68/awake-h), gated 41, human 1
+   climate IGNITIONs: defensive 87 (1.28/live-h, 1.28/awake-h)  exploratory 95 (1.40/live-h, 1.40/awake-h)
+   net internal->internal gaps n=181: p25 730  median 1323  p75 1915 s;  share<900s 0.31
+
+[P5.2  09-25 19:21 .. 09-28 19:08]
+   live   70.5 h   awake   70.5 h  (nap-stall  0.0% of live)   internal starts 175 (2.48/live-h, 2.48/awake-h), gated 60, human 3
+   climate IGNITIONs: defensive 76 (1.08/live-h, 1.08/awake-h)  exploratory 100 (1.42/live-h, 1.42/awake-h)
+   net internal->internal gaps n=174: p25 723  median 1486  p75 2221 s;  share<900s 0.29
+
+[P5.3  09-28 19:08 .. 09-28 22:01]
+   live    2.7 h   awake    2.7 h  (nap-stall  0.0% of live)   internal starts 6 (2.19/live-h, 2.19/awake-h), gated 0, human 10
+   climate IGNITIONs: defensive 3 (1.09/live-h, 1.09/awake-h)  exploratory 4 (1.46/live-h, 1.46/awake-h)
+   net internal->internal gaps n=5: p25 1078  median 1113  p75 1358 s;  share<900s 0.00
+
+[P5.4  09-28 22:01 .. 09-29 12:36]
+   live   12.7 h   awake   12.6 h  (nap-stall  0.9% of live)   internal starts 22 (1.73/live-h, 1.75/awake-h), gated 0, human 2
+   climate IGNITIONs: defensive 5 (0.39/live-h, 0.40/awake-h)  exploratory 17 (1.34/live-h, 1.35/awake-h)
+   net internal->internal gaps n=21: p25 1854  median 2514  p75 2524 s;  share<900s 0.19
+
+[P5.5  09-29 12:36 .. 09-30 20:28]
+   live   22.0 h   awake   21.8 h  (nap-stall  0.8% of live)   internal starts 42 (1.91/live-h, 1.93/awake-h), gated 9, human 1
+   climate IGNITIONs: defensive 11 (0.50/live-h, 0.50/awake-h)  exploratory 31 (1.41/live-h, 1.42/awake-h)
+   net internal->internal gaps n=41: p25 1215  median 2350  p75 2524 s;  share<900s 0.17
+
+[P5.6  09-30 20:28 .. 10-01 07:17]
+   live   10.8 h   awake   10.6 h  (nap-stall  1.6% of live)   internal starts 29 (2.68/live-h, 2.72/awake-h), gated 3, human 1
+   climate IGNITIONs: defensive 14 (1.29/live-h, 1.32/awake-h)  exploratory 15 (1.39/live-h, 1.41/awake-h)
+   net internal->internal gaps n=28: p25 410  median 1265  p75 2118 s;  share<900s 0.46
+
+[P6  today's incarnation 10-03 06:55 .. end of log]
+   live    0.5 h   awake    0.5 h  (nap-stall  0.0% of live)   internal starts 1 (2.20/live-h, 2.20/awake-h), gated 0, human 0
+   climate IGNITIONs: defensive 0 (0.00/live-h, 0.00/awake-h)  exploratory 1 (2.20/live-h, 2.20/awake-h)
+
+========================================================================================================================
+2. F-1685'S ACCUMULATOR ARITHMETIC AS A PREDICTION.  delta = 0.0010*strain + 0.0004*completion + 0.0002*shadow - 0.0006*integration (per s);
+   defensive fires per LIVE hour = 3600*delta (threshold 1.0, reservoir discharged at each fire, no cap binding: cap is 3 per hour).
+   Dimension means come from coupling_rides.jsonl climate rows: 'row-mean' is F-1685's own method, 'time-wtd' weights each row by the time since the previous row
+   in the same live segment.  Observed = '[climate] IGNITION (defensive)' lines per live hour.  F-1685 on its five periods: ratios 0.95-1.02.
+   exploratory reference: 3600*0.0004*pull = 1.44*pull per hour (pull = saturate(open frontier) ~0.991 -> 1.43)
+
+   period    live h   rows   strain  compl shadow  integ   pred/h(row) pred/h(twt) obs def/h obs/pred(row) obs/pred(twt)   obs exp/h
+   P4          87.2   3921    0.104  0.914  0.949  0.441         1.422       1.433     1.410         0.992         0.984       1.364
+   P5         186.6   9689    0.121  0.691  0.970  0.498         1.053       1.067     1.050         0.997         0.985       1.404
+   P5.1        67.8   3534    0.103  0.910  0.974  0.508         1.287       1.293     1.283         0.997         0.993       1.401
+   P5.2        70.5   3672    0.123  0.691  0.967  0.494         1.066       1.093     1.077         1.011         0.986       1.417
+   P5.3         2.7    145    0.230  0.720  0.976  0.530         1.424       1.431     1.095         0.769         0.765       1.460
+   P5.4        12.7    652    0.221  0.058  0.974  0.553         0.387       0.387     0.393         1.016         1.015       1.336
+   P5.5        22.0   1130    0.069  0.461  0.969  0.515         0.497       0.505     0.501         1.007         0.992       1.411
+   P5.6        10.8    556    0.185  0.500  0.947  0.358         1.295       1.303     1.295         1.000         0.993       1.387
+   P6           0.5     26    0.032  0.500  0.117  0.018         0.882       0.890     0.000         0.000         0.000       2.205
+
+========================================================================================================================
+3. NATURAL EXPERIMENT: J-1180 removed the nap freeze at the 09-22 16:11 boot (P4 -> P5).  Everything else in the accumulator is unchanged.
+   If freed loop wall-clock raised throughput, starts per LIVE hour would rise by about the freed share (P4 live/awake = 1.118).  F-1685 predicts no rise per live hour
+
+   metric                              P4 rate  P5 rate   P5/P4   95% CI (6-h block bootstrap)  blocks P4/P5
+   internal starts per LIVE hour         2.763    2.444   0.885   [ 0.820,  0.953]            18/34
+   internal starts per AWAKE hour        3.088    2.450   0.793   [ 0.732,  0.863]            18/34
+   defensive IGN per LIVE hour           1.410    1.050   0.745   [ 0.635,  0.872]            18/34
+   exploratory IGN per LIVE hour         1.364    1.404   1.029   [ 0.988,  1.074]            18/34
+   Reading: the freed share is the P4 live/awake ratio above (about +12%).  A CI that excludes +12% on 'per LIVE hour' means freed loop time did NOT convert into starts.
+
+   net-gap distribution P4 (n=238) vs P5 (n=450):  median 1099 -> 1464 s;  p25 577 -> 745;  p75 1670 -> 2204;  share<900s 0.37 -> 0.29
+   Mann-Whitney p=2.53e-06, KS D=0.214 p=9.24e-07  (gaps are autocorrelated over hours, so read these as descriptive, the block-bootstrap rates above as the test)
+   RAW wall-clock gaps (what a watcher of the log sees): median 1252 -> 1464 s, mean 1294 -> 1456 s
+
+========================================================================================================================
+3b. MODEL-ONLY PREDICTION OF WHAT REMOVING THE FREEZE SHOULD DO.  Simulate both reservoirs in WALL-CLOCK time (dt = now - last tick, as ClimateEngine.tick does) over the REAL live
+    segments, with (i) the real P4 freeze windows, (ii) the same P4 segments with no freezes, (iii) the P5 segments.  A crossing that falls inside a freeze is noticed only when the
+    freeze ends, and the overshoot is discarded at reset -- that is the only way a freeze can cost fires in this model.  No loop-time term is simulated.
+    callback (IGNITION -> cycle end) median: P4 143 s, P5 118 s;  constants: exploratory inflow 3.964e-04/s, defensive inflow P4 3.949e-04/s, P5 2.925e-04/s
+
+    simulation                                                  live h  defensive /live-h  exploratory /live-h
+    (i)   P4 segments, real freeze windows, P4 dimensions         87.2              1.353                1.353
+    (ii)  P4 segments, NO freezes,          P4 dimensions         87.2              1.387                1.410
+    (iv)  P4 segments, NO freezes,          P5 dimensions         87.2              1.032                1.387
+    (iii) P5 segments, NO freezes,          P5 dimensions        186.6              1.040                1.393
+    observed P4: defensive 1.410, exploratory 1.364;   observed P5: defensive 1.050, exploratory 1.404
+    model-only freeze effect on fires per live hour (ii)/(i): defensive 1.025, exploratory 1.042   -> what the P4->P5 exploratory ratio should be if ONLY wall-clock accumulation operates
+    observed exploratory P5/P4 = 1.029   (6-h block bootstrap CI in section 3);   model-only prediction (iii)/(i) = 1.030
+    model-only predicted defensive P5/P4 = 0.769  vs observed 0.745
+
+========================================================================================================================
+4. F-1686 REPLICATION -- climate publish rows (tick() publishes at >= 1/min) inside internal-cycle spans (IGNITION line -> cycle end), spans >= 100 s
+   P4: internal cycles with span >= 100 s: 188 of 241; with ZERO climate rows inside: 187; rows expected at the 60 s floor: 603, observed: 1;  control windows 188: expected 567, observed 537
+        1 exception cycle(s) with >= 1 row inside; share of expected rows absent: 99.8%
+          span 09-16 08:20:10 -> 09-16 08:22:05 (115 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 115.0
+        with a 1 s guard band for the firing tick's own row: rows inside 0 (expected 603); cycles with zero rows 188 of 188
+        verdict: climate loop SUSPENDED during internal cycles
+   P5: internal cycles with span >= 100 s: 303 of 456; with ZERO climate rows inside: 294; rows expected at the 60 s floor: 861, observed: 9;  control windows 303: expected 856, observed 784
+        9 exception cycle(s) with >= 1 row inside; share of expected rows absent: 99.0%
+          span 09-23 14:53:50 -> 09-23 14:55:36 (106 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 105.6
+          span 09-26 00:23:25 -> 09-26 00:26:55 (209 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 209.4
+          span 09-26 00:55:54 -> 09-26 00:59:18 (205 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 204.6
+          span 09-26 12:25:05 -> 09-26 12:27:07 (122 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 122.4
+          span 09-27 11:15:52 -> 09-27 11:18:20 (148 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 147.9
+          span 09-27 16:12:35 -> 09-27 16:15:43 (188 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 188.0
+          span 09-29 13:26:40 -> 09-29 13:34:41 (481 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 480.7
+          span 09-30 23:40:44 -> 09-30 23:43:57 (193 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 192.5
+          span 10-01 06:40:30 -> 10-01 06:42:49 (139 s): 1 row(s) at offsets from the IGNITION line (s): +0.000;  seconds before span end: 138.9
+        with a 1 s guard band for the firing tick's own row: rows inside 0 (expected 861); cycles with zero rows 303 of 303
+        verdict: climate loop SUSPENDED during internal cycles
+
+========================================================================================================================
+5. STALLS.  Silent windows >= 300 s inside a live process ('naps'), by period; and the share of live time inside internal-cycle spans
+   P4: 21 stall windows, total 551 min = 10.52% of 87.2 live h; lengths (min): 25.6, 30.7, 28.8, 28.5, 27.6, 27.1, 26.5, 27.1, 25.5, 25.2, 24.9, 24.7, 24.7, 24.6, 24.4, 24.0, 24.7, 24.5, 24.7, 28.6, 28.4
+   P5: 5 stall windows, total 28 min = 0.25% of 186.6 live h; lengths (min): 7.2, 5.1, 5.0, 5.1, 5.2
+   P5 stall windows are pre-shutdown/pre-boot wedges (a few minutes each, right before an incarnation ends), not nap freezes (24-31 min, ~every 70-75 min at night).
+
+========================================================================================================================
+6. WHAT MOVED THE DEFENSIVE INFLOW.  completion_tension = _saturate(raw_contra) with raw_contra = tension_ledger.contradiction_pressure_for(tensions) (climate_engine.py:559-569, k = 3.0, so raw 30 -> 0.909,
+   raw 3 -> 0.500, raw 0 -> 0).  data/climate_reknee_shadow.jsonl (J-1226) records that raw as completion_raw every ~60 s since the 09-25 19:21 boot.  6-hour table, NZ wall clock; boots/shutdowns marked.
+   6168 rows, first 09-25 19:21:57, last 10-03 07:34:30
+   bucket (NZ)           n     min   median     max  share==3.0  share==0   marks
+   09-25 18:00:00      205    6.00     6.00   30.32        0.00      0.00   BOOT@19:21:50
+   09-26 00:00:00      263    6.00     6.00    6.00        0.00      0.00   
+   09-26 06:00:00      300    6.00     6.00    6.00        0.00      0.00   
+   09-26 12:00:00      321    6.00     6.00    6.00        0.00      0.00   
+   09-26 18:00:00      320    6.00     6.00    6.00        0.00      0.00   
+   09-27 00:00:00      325    6.00     6.00    7.00        0.00      0.00   
+   09-27 07:00:00      324    7.00     8.00   10.00        0.00      0.00   
+   09-27 13:00:00      312    7.00     8.00    9.00        0.00      0.00   
+   09-27 19:00:00      327    7.00     7.00    7.00        0.00      0.00   
+   09-28 01:00:00      325    7.00     7.00    7.00        0.00      0.00   
+   09-28 07:00:00      330    6.00     6.00    9.00        0.00      0.00   
+   09-28 13:00:00      308    6.00     7.00   10.00        0.00      0.00   SHUT@18:54:38
+   09-28 19:00:00      300    0.00     2.00   10.00        0.00      0.09   BOOT@19:08:44,BOOT@22:01:25
+   09-29 01:00:00      318    0.00     0.00    0.00        0.00      1.00   
+   09-29 07:00:00      189    0.00     0.00    0.00        0.00      1.00   SHUT@10:44:41,BOOT@12:36:49
+   09-29 13:00:00      295    0.00     3.00    4.00        0.33      0.30   
+   09-29 19:00:00      319    3.00     3.00    4.00        0.84      0.00   
+   09-30 01:00:00      321    3.00     3.00    3.00        1.00      0.00   
+   09-30 07:00:00      172    3.00     3.00    3.00        1.00      0.00   SHUT@10:35:01
+   09-30 19:00:00      231    3.00     3.00    3.00        1.00      0.00   BOOT@20:28:49
+   10-01 01:00:00      321    3.00     3.00    3.00        1.00      0.00   
+   10-01 07:00:00        4    3.00     3.00    3.00        1.00      0.00   
+   10-03 01:00:00        5    3.00     3.00    3.00        1.00      0.00   BOOT@06:55:10
+   10-03 07:00:00       33    3.00     3.00    3.00        1.00      0.00   
+   last 3 days: 735 rows, distinct values [3.0]  (a measurement of a drained tension pressure would vary; a constant 3.0 is a pinned value)
+
+   6b. CHANGE POINTS of completion_raw: 125 changes in 6168 rows.  First 14 (the post-boot decay), changes per NZ day, last 8, and time since the last change:
+      09-25 19:31:09  30.325 -> 28.325
+      09-25 19:35:27  28.325 -> 28.327
+      09-25 19:40:46  28.327 -> 28.328
+      09-25 19:41:50  28.328 -> 26.642
+      09-25 19:45:03  26.642 -> 25.642
+      09-25 19:47:12  25.642 -> 23.642
+      09-25 19:50:23  23.642 -> 21.146
+      09-25 19:58:23  21.146 -> 20.146
+      09-25 20:04:07  20.146 -> 18.416
+      09-25 20:18:16  18.416 -> 16
+      09-25 20:24:30  16 -> 13
+      09-25 20:25:31  13 -> 12
+      09-25 20:29:26  12 -> 6
+      09-27 06:26:51  6 -> 7
+      changes per NZ day: 09-25 13, 09-27 49, 09-28 51, 09-29 12
+      09-29 00:43:12  1 -> 0
+      09-29 00:50:35  0 -> 1
+      09-29 00:51:40  1 -> 0
+      09-29 13:19:45  0 -> 1
+      09-29 13:26:07  1 -> 0
+      09-29 14:56:49  0 -> 3
+      09-29 16:55:41  3 -> 4
+      09-29 20:01:52  4 -> 3
+      last change 09-29 20:01:52; log ends 10-03 07:34:30: 3.48 days with no change in raw, across the boots at 09-30 20:28:49, 10-03 06:55:10

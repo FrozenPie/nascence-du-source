@@ -1,0 +1,1 @@
+Pass 2: :11439 answered ~50s/call (trivial probe 42s, still not quiet); replay J-4034_replay.py launched, only 1/63 answered when session ended; partial in docs/lab/J-4034_data/J-4034_results_gemma.json (script overwrites it, resume needed). No finding recorded.

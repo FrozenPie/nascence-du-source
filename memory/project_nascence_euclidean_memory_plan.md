@@ -1,0 +1,22 @@
+---
+name: project-nascence-euclidean-memory-plan
+description: "⛔ RETIRED (closed 2026-10-16, F-2904) — formerly: DEFERRED — a low-dimensional (~6-dim) weighted-Euclidean retrieval feature space where the modulation field's state sets both the need-point and the weights; the real retrial (2026-08-24→28) found affect_match a net drag when it fires while the other 5 dims show real promise alone, still a coin flip in aggregate — D-0055 ruled RETIRED 2026-08-28, contingent on du_recall_lens_upgrades/the M2 edge-aware trail landing (that condition looks already met as of 2026-09-23, real re-test pending via J-1244)."
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 1857a5ac-8424-4a7e-930e-5da8c19bf9b9
+  modified: 2026-09-23T03:14:12.560Z
+---
+
+**Stage: ⛔ RETIRED (closed 2026-10-16, F-2904; D-0055/D-0259)** — closed in the 2026-10-16 plan-closure pass; the plan doc's plan-state block is the source of truth.
+
+
+Addresses the fact that memory retrieval today is separate sequential heuristics (cosine top-K → affective-prior nudge → recency/salience → tier routing) rather than one unified relevance metric. Proposes treating each memory as a point in ~6 scalar dimensions (semantic_sim, recency, affect_match, salience, abstraction, provenance) and recall as weighted-Euclidean nearest-neighbour, with the field (climate + felt-vector) supplying both the "need" point and the per-dimension weights — so an emotionally charged state recalls by feeling, a reflective state reaches for distilled wisdom, and task mode pulls recent concrete episodes. This is explicitly the third of three geometries (identity=hyperbolic, faculty-coupling=springs-on-a-graph, retrieval=Euclidean) and the "memory half" of the modulation field (paired with pulse manager's burst-gating and affect/lane biasing).
+
+**Current stage (from the doc's own disposition): moved off dead centre by an honest measurement, not shipped.** History: resurrected 2026-07-03 after being lost in `docs/completed/` since 06-15 (P0 re-ranker `core/euclidean_recall.py` was built but never run/called). P0 ran on 2,500 real candidates (2026-06-15/07-03): mechanism PROVEN — states surface disjoint memories (Jaccard 0.00 charged↔reflective) with all predicted feature directions confirmed, BUT the origin-attractor basin colonized every dimension regardless of state (baseline 0.38 → charged 1.00), meaning the re-ranker is "the INSTRUMENT, not the fix" for escaping the origin-basin. The **decoupled-judge gate (2026-07-05, `scripts/euclidean_grade.py`)** is the load-bearing result: a blind Emissary (llama3.1, different family) rated state-weighted top-K MORE relevant in only 33/68 (49%) vs baseline's 35/68 (51%) — a coin flip to slightly-worse — so "the plan's core promise... is not supported by a decoupled judge on live data." Crucially, the affect_match dimension was identified as the confirmed drag: it did WORSE on high-affect states (46%) than low-affect states (56%), the predicted direction, because it runs on the +0.82-saturated (un-de-saturated) felt-tags.
+
+Disposition: **confirmed BLOCKED on `emotion_rethink` Phase 1** landing honest, de-saturated felt-tags — not abandoned, not licensed. Parked as cognitive_geometry P5. Exact re-test is pre-registered: re-run `euclidean_grade.py` after emotion_rethink's re-sourcing; beating baseline (especially on high affect_w) earns a P1 license, a continued tie retires the idea for real.
+
+Related: [[project-nascence-emotion-rethink]] (the explicit blocking dependency), [[project-nascence-cognitive-geometry]] (parent geometry program, P5 slot).
+
+**2026-09-23 append (J-1245, plan-index stage-badge sync) — this file was stale a full month, not just on stage:** the real retrial this file called "pre-registered" DID run, 2026-08-24→28 (J-0151/F-0299, J-0240/F-0320, J-0301/F-0388, J-0306/F-0424) — split verdict, not a clean license or a clean retire, walked down to D-0046 (ruled 2026-08-27) then D-0055 (ruled 2026-08-28): **RETIRED, tied to `du_recall_lens_upgrades`/the M2 edge-aware trail — re-open once those land.** As of today that reopen condition looks already met and unactioned (J-1242/F-1747); J-1244 was spawned to bring the real comparative re-test and formally reopen D-0055 if it holds. Full dated trail: `docs/archive/euclidean_memory_plan.md`'s own Status line and Current State section — that doc, not this one, is the live source of truth going forward.

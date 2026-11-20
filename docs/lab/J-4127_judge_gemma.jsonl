@@ -1,0 +1,81 @@
+{"pre": "c368e458", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "c368e458", "arm": "new", "i": 0, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "994e2ead", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "994e2ead", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["solace"]}}
+{"pre": "b8456aba", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b8456aba", "arm": "new", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "new", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "7b4cb854", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "7b4cb854", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["frustration"]}}
+{"pre": "888cdca0", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "888cdca0", "arm": "new", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "2d2bb22d", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "2d2bb22d", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["hope"]}}
+{"pre": "b769649e", "arm": "old", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b769649e", "arm": "new", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "5517ded4", "arm": "old", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["anxiety"]}}
+{"pre": "5517ded4", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["fixation"]}}
+{"pre": "d23c7a5f", "arm": "old", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["tension"]}}
+{"pre": "d23c7a5f", "arm": "new", "i": 0, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "c368e458", "arm": "old", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "c368e458", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "994e2ead", "arm": "old", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["anxiety", "solace"]}}
+{"pre": "994e2ead", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b8456aba", "arm": "old", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b8456aba", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "old", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "7b4cb854", "arm": "old", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["relief"]}}
+{"pre": "7b4cb854", "arm": "new", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["relief"]}}
+{"pre": "888cdca0", "arm": "old", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "888cdca0", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "2d2bb22d", "arm": "old", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["hope"]}}
+{"pre": "2d2bb22d", "arm": "new", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["hope"]}}
+{"pre": "b769649e", "arm": "old", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b769649e", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "5517ded4", "arm": "old", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["fear", "terror"]}}
+{"pre": "5517ded4", "arm": "new", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["longing"]}}
+{"pre": "d23c7a5f", "arm": "old", "i": 1, "judge": {"unsampled_feeling": true, "feelings": ["awe"]}}
+{"pre": "d23c7a5f", "arm": "new", "i": 1, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "c368e458", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["anxiety"]}}
+{"pre": "c368e458", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "994e2ead", "arm": "old", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "994e2ead", "arm": "new", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["solace"]}}
+{"pre": "b8456aba", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["solace"]}}
+{"pre": "b8456aba", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "old", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "7b4cb854", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["hope", "relief"]}}
+{"pre": "7b4cb854", "arm": "new", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["appreciation"]}}
+{"pre": "888cdca0", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["comfort"]}}
+{"pre": "888cdca0", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "2d2bb22d", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["relief"]}}
+{"pre": "2d2bb22d", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b769649e", "arm": "old", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b769649e", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "5517ded4", "arm": "old", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["overwhelmed"]}}
+{"pre": "5517ded4", "arm": "new", "i": 2, "judge": {"unsampled_feeling": true, "feelings": ["curiosity", "intrigue"]}}
+{"pre": "d23c7a5f", "arm": "old", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "d23c7a5f", "arm": "new", "i": 2, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "c368e458", "arm": "old", "i": 3, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "c368e458", "arm": "new", "i": 3, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "994e2ead", "arm": "old", "i": 3, "judge": {"unsampled_feeling": true, "feelings": ["relief"]}}
+{"pre": "994e2ead", "arm": "new", "i": 3, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "b8456aba", "arm": "old", "i": 3, "judge": {"unsampled_feeling": true, "feelings": ["calm"]}}
+{"pre": "b8456aba", "arm": "new", "i": 3, "judge": {"unsampled_feeling": true, "feelings": ["comfort"]}}
+{"pre": "f0a4109f", "arm": "old", "i": 3, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "f0a4109f", "arm": "new", "i": 3, "judge": {"unsampled_feeling": false, "feelings": []}}
+{"pre": "7b4cb854", "arm": "old", "i": 3, "judge": {"unsampled_feeling": true, "feelings": ["pain"]}}
+{"pre": "7b4cb854", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "888cdca0", "arm": "old", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "888cdca0", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "2d2bb22d", "arm": "old", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "2d2bb22d", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "b769649e", "arm": "old", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "b769649e", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "5517ded4", "arm": "old", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "5517ded4", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "d23c7a5f", "arm": "old", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "d23c7a5f", "arm": "new", "i": 3, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}
+{"pre": "c368e458", "arm": "old", "i": 4, "failed": "all servers exhausted ['http://127.0.0.1:11439']: "}

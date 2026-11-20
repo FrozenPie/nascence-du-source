@@ -1,0 +1,1 @@
+docs/lab/J-3785_data/stage2_gemma4_fwd.jsonl (136 rows), stage2_falcon3_fwd.jsonl (66 rows); tally by docs/lab/J-3785_partial_tally.py run in this session. Hub rate about 1-4 calls/min, so the 544-call sweep could not finish in the ~60 min budget.

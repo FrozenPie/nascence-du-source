@@ -1,0 +1,44 @@
+{
+ "model": "gemma4:12b",
+ "prompt_version": "v2",
+ "real_all": {
+  "uses_take": 10,
+  "no_take_content": 50,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "controls": {
+  "uses_take": 0,
+  "no_take_content": 12,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_human_pre": {
+  "uses_take": 1,
+  "no_take_content": 14,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_human_post": {
+  "uses_take": 2,
+  "no_take_content": 13,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_internal_pre": {
+  "uses_take": 2,
+  "no_take_content": 13,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "real_internal_post": {
+  "uses_take": 5,
+  "no_take_content": 10,
+  "contradicts_take": 0,
+  "unparsed": 0
+ },
+ "cov_novel_median_when_uses_take": 0.349,
+ "cov_novel_median_when_no_take_content": 0.077,
+ "backstop_dropped_real": 4,
+ "backstop_dropped_controls": 0
+}

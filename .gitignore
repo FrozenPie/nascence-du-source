@@ -1,0 +1,22 @@
+# Live data stores — written continuously by the running Du process; never track.
+data/
+# Model weights & serving binaries
+models/
+engine/
+# Generated / heavy build artifacts
+docs_site/node_modules/
+docs_site/build/
+docs_site/.docusaurus/
+graphify-out/
+# Scratch, lab, and backup areas (backups predate git; git replaces them going forward)
+scratch/
+_lab/
+backups/
+# Python bytecode
+__pycache__/
+*.pyc
+# Live traces & logs at repo root
+sidecar_trace.jsonl
+*.log
+# Stray DB copies (backfill artifacts)
+scripts/_backfill_copy_*.db

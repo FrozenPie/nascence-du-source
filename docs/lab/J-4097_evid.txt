@@ -1,0 +1,1 @@
+docs/lab/J-4097_data/authored.jsonl (80 rows, 0 errors, arm A 40/40 produced, arm C 40/40 produced); run via docs/lab/J-4097_run.py author --workers 2; live nascence.db md5 unchanged before run (5242302e...) ; judge calibration blocked by timeouts on :11439.

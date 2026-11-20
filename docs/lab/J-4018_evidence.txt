@@ -1,0 +1,1 @@
+Ran scripts/_lab_J-2867_librarian_relevance_eval.py --hub :11433 --hub-model qwen3.5:9b on a copy of data/librarian_log.jsonl; output docs/lab/J-4018_eval_result.json (summary block: title_coverage 1.0 both splits, mean 0.141 / 0.396, rows_with_a_2 0.3 / 0.5). Single judge (qwen3.5), title-only, n=20 per split, so inferred not a final verdict.

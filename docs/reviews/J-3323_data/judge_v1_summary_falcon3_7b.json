@@ -1,0 +1,41 @@
+{
+ "model": "falcon3:7b",
+ "real_all": {
+  "builds_on": 36,
+  "ignores": 3,
+  "contradicts": 21,
+  "unparsed": 0
+ },
+ "controls": {
+  "builds_on": 1,
+  "ignores": 6,
+  "contradicts": 5,
+  "unparsed": 0
+ },
+ "real_human_pre": {
+  "builds_on": 6,
+  "ignores": 1,
+  "contradicts": 8,
+  "unparsed": 0
+ },
+ "real_human_post": {
+  "builds_on": 10,
+  "ignores": 0,
+  "contradicts": 5,
+  "unparsed": 0
+ },
+ "real_internal_pre": {
+  "builds_on": 9,
+  "ignores": 2,
+  "contradicts": 4,
+  "unparsed": 0
+ },
+ "real_internal_post": {
+  "builds_on": 11,
+  "ignores": 0,
+  "contradicts": 4,
+  "unparsed": 0
+ },
+ "cov_novel_median_when_builds_on": 0.125,
+ "cov_novel_median_when_ignores": 0.091
+}

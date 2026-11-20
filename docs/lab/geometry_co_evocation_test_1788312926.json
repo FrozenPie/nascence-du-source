@@ -1,0 +1,109 @@
+{
+  "n_perm": 200,
+  "seed": 42,
+  "eligible_pool_size": 22933,
+  "n_ledger_rows_n_ids_ge2": 12021,
+  "n_events_all_ids_covered": 4120,
+  "full_sample": {
+    "aggregate": {
+      "n_events": 4120,
+      "n_geom_scoreable": 4120,
+      "mean_geom_coherence": 0.46553773900336837,
+      "mean_text_sim": 0.6453734570159781
+    },
+    "stats": {
+      "geom": {
+        "observed": 0.4655,
+        "null_mean": 0.2756,
+        "null_std": 0.0034,
+        "z": 55.31,
+        "perm_p_one_sided": 0.0
+      },
+      "text": {
+        "observed": 0.6454,
+        "null_mean": 0.2924,
+        "null_std": 0.0022,
+        "z": 162.47,
+        "perm_p_one_sided": 0.0
+      }
+    }
+  },
+  "near_term_lt_1day": {
+    "n_events": 3093,
+    "aggregate": {
+      "n_events": 3093,
+      "n_geom_scoreable": 3093,
+      "mean_geom_coherence": 0.5080920077374629,
+      "mean_text_sim": 0.6520918565194515
+    },
+    "stats": {
+      "geom": {
+        "observed": 0.5081,
+        "null_mean": 0.2754,
+        "null_std": 0.004,
+        "z": 58.16,
+        "perm_p_one_sided": 0.0
+      },
+      "text": {
+        "observed": 0.6521,
+        "null_mean": 0.2925,
+        "null_std": 0.0024,
+        "z": 148.26,
+        "perm_p_one_sided": 0.0
+      }
+    }
+  },
+  "long_range_ge_1day": {
+    "n_events": 1027,
+    "aggregate": {
+      "n_events": 1027,
+      "n_geom_scoreable": 1027,
+      "mean_geom_coherence": 0.33737770668150413,
+      "mean_text_sim": 0.6251397572455372
+    },
+    "stats": {
+      "geom": {
+        "observed": 0.3374,
+        "null_mean": 0.2755,
+        "null_std": 0.0062,
+        "z": 10.0,
+        "perm_p_one_sided": 0.0
+      },
+      "text": {
+        "observed": 0.6251,
+        "null_mean": 0.2925,
+        "null_std": 0.0035,
+        "z": 95.04,
+        "perm_p_one_sided": 0.0
+      }
+    }
+  },
+  "span_days_distribution": {
+    "median": 0.297,
+    "p90": 2.103,
+    "n_with_span": 4120
+  },
+  "text_matched_confound_control": {
+    "full_sample": {
+      "n_pairs": 7730,
+      "mean_real_pair_coherence": 0.4685,
+      "mean_text_matched_substitute_coherence": 0.2865,
+      "n_real_higher": 4718,
+      "n_matched_higher": 1907,
+      "sign_test_p": 0.0,
+      "geom_adds_beyond_text": true
+    },
+    "long_range_ge_1day": {
+      "n_pairs": 2801,
+      "mean_real_pair_coherence": 0.3778,
+      "mean_text_matched_substitute_coherence": 0.2635,
+      "n_real_higher": 1536,
+      "n_matched_higher": 792,
+      "sign_test_p": 0.0,
+      "geom_adds_beyond_text": true
+    }
+  },
+  "verdict": "PASS",
+  "verdict_rule": "PASS iff geom z>=2.0 & perm_p<0.05 on BOTH the full sample AND the long-range (>=1 day) subset; MIXED iff full passes but long-range doesn't (recency-explainable); FAIL iff full sample itself is not significant. The text-matched confound control is diagnostic context, not part of the gating rule (pre-registered before results were read).",
+  "elapsed_s": 43.9
+}

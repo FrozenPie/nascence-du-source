@@ -1,0 +1,4 @@
+{"cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d", "arm": "N", "order": 1, "hub": "j2", "x_better": false, "arm_pref": false, "err": null, "s": 69.7, "n_a": 4, "n_p": 4}
+{"cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d", "arm": "N", "order": 2, "hub": "j2", "x_better": true, "arm_pref": false, "err": null, "s": 160.1, "n_a": 4, "n_p": 4}
+{"cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d", "arm": "A05", "order": 1, "hub": "j2", "x_better": false, "arm_pref": false, "err": null, "s": 198.9, "n_a": 4, "n_p": 4}
+{"cycle_id": "853b2b3a-315c-458c-8fd4-f1aed93cb08d", "arm": "A05", "order": 2, "hub": "j2", "x_better": true, "arm_pref": false, "err": null, "s": 42.9, "n_a": 4, "n_p": 4}

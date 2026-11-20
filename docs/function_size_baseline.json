@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "functions": {
+  "core/orchestrator.py::Orchestrator._run_cycle_impl": 1525,
+  "nodes/inner_monologue_node.py::InnerMonologueNode._think": 3601
+ },
+ "history": [
+  {
+   "ts": "2026-11-19T20:14:19+00:00",
+   "why": "First baseline under D-0878 (freeze rule adopted 2026-11-20). Sizes as measured at HEAD 5bd2efce plus working tree.",
+   "by": "claude",
+   "changes": [
+    {
+     "function": "core/orchestrator.py::Orchestrator._run_cycle_impl",
+     "from": null,
+     "to": 1525
+    },
+    {
+     "function": "nodes/inner_monologue_node.py::InnerMonologueNode._think",
+     "from": null,
+     "to": 3598
+    }
+   ]
+  },
+  {
+   "ts": "2026-11-19T22:49:02+00:00",
+   "why": "J-4153: _think +2 lines = the two one-line calls into nodes/idle_thought/opener_diversity.py (D-0787 option D seed part and its after-thought tally); all logic lives in the helper module",
+   "by": "claude",
+   "changes": [
+    {
+     "function": "nodes/inner_monologue_node.py::InnerMonologueNode._think",
+     "from": 3598,
+     "to": 3600
+    }
+   ]
+  },
+  {
+   "ts": "2026-11-19T22:52:59+00:00",
+   "why": "J-4420: one-line call to associative_recall.note_output_for_rewarm (re-warm shadow log) inside the existing per-thought completion try block; re-accepted after the merge conflict with the J-4153 accept on this baseline file",
+   "by": "claude",
+   "changes": [
+    {
+     "function": "nodes/inner_monologue_node.py::InnerMonologueNode._think",
+     "from": 3600,
+     "to": 3601
+    }
+   ]
+  }
+ ]
+}

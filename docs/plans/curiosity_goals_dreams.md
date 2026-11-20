@@ -1,0 +1,457 @@
+# Curiosity / Goals / Dreams — Deep-Dive & Implementation Plan (2026-06-24)
+
+> **Status: ⚪ PARTIAL — Items 1/2/4 are LIVE (item 4 via `core/night.py`'s `CARRY_MAX_NIGHTS=3` cap,
+> confirmed by the 2026-08-23 audit); Items 3 (`core/curiosity_competence.py`) and 5 (`goal_model.py` G2)
+> remain unbuilt, deliberately deferred as the plan's own lowest-priority items.**
+
+```plan-state
+stage: partial
+phase: Items 1/2/4 (prism-to-frontier, OMNI worth-gate, dream re-pin cap) confirmed LIVE by the 2026-08-23 audit; Items 3 (cluster-LP transfer) and 5 (goal_model G2) confirmed unbuilt, deliberately deferred as the plans own lowest-priority items
+verified: 2026-11-16
+evidence_read: 2026-10-16
+next: re-read J-2320 at 120 post-boot rows
+open_decisions: D-0777, D-0781, D-0796
+cluster: 6
+```
+
+
+> **Status (2026-08-23): ⚪ PARTIAL → mostly graduated.** Items 1, 2, AND 4 are now LIVE. Item 4 shipped
+> not via this plan's own execution track but via a separate, more comprehensive 2026-08-22 sleep/dream
+> rewrite (`docs/reviews/sleep_dream_2026-08-22.md`, `core/night.py`). Only Item 3 (cluster-LP, not built)
+> and Item 5 (goal_model G2 stub, not built) remain, and the plan itself ranks both lowest-priority. See
+> "Current State — verified 2026-08-23" below.
+
+> **★ EVIDENCE REVIEW 2026-07-05 (9th open plan) — HEALTHY; two live wins, one worsening regression to fix.**
+> **Item 1 (prism→frontier) LIVE + world-facing** (39/39). **Item 2 (OMNI worth-gate) LIVE + WORKING WELL** —
+> one of the review's few genuinely-working live features: 245 question-grades, interestingness cleanly
+> bimodal (93 boring @0.0 / 149 interesting @0.8-1.0), and it SEPARATES 87 aimless-novelty traps (hi-LP +
+> lo-interest) from 134 genuine (hi-LP + hi-interest) — exactly its purpose. Keep both. **Item 4 (dream
+> "ended-unfaced" re-pin) DESIGNED-NOT-BUILT, and the regression is REAL + WORSENING:** ended-unfaced climbed
+> **54%→72%** (first→recent half) while resolution stayed flat (~0.21→0.26) — dreams increasingly raise a
+> tension then abandon it with nothing to carry it back (the re-pin broke, never restored). Ties to the
+> session-wide theme "resolution doesn't close" (T4 frozen · dream⊗T4 0/61). **Disposition: keep 1&2; BUILD
+> Item 4 (plan's own #2 priority, S-M, localized, dovetails with Item 1's frontier hand-off); Item 3
+> cluster-LP stays designed (lower priority).**
+
+**Related (backfilled 2026-10-03, J-0566/F-2269):** (1) The "read first" pointer under Current State
+(`docs/reviews/sleep_dream_2026-08-22.md`) describes the sleep/dream system *before* the 08-24 redesign; the record of what
+is live is `docs/plans/sleep_dream_redesign.md`, which also records that `CARRY_MAX_NIGHTS=3` was structurally off until
+J-0296 fixed `_carried_n_tonight` never resetting. (2) `docs/staged/dream_overhaul.md` (BUILT in-vitro, Phase 1
+restart-gated) names this plan as a parent for the symbols→frontier hand and replaces the dream *engine* in
+`nodes/dream_node.py` that §1.3 audits and Item 4 edits (`_ground_symbols` → frontier is kept). (3)
+`docs/staged/curiosity_librarian_route.md` (DESIGNED 2026-09-16, not built) would add a catalogue-first research path to the
+`nodes/curiosity_node.py` pursuit branch audited in §1.1.
+
+## Current State — verified 2026-11-16
+- **2026-11-16** (F-4839): J-3421: no input lever (study rotation, theme cut) passes the bar; control near-dup 44/57 percent; D-0718 defeater fired, D-0796 opened.
+
+- **2026-11-16** (F-4830): J-3350 built (D-0629 part 2): model_terms tag + frontier field + ledger shadow (flag False); replay 1.6 percent of rows; restart-gated; read J-4089.
+- **2026-11-16** (F-4829): J-3837 built (D-0680): bare Entity line and own-name sentences removed from Curiosity, sentence removed from Consolidation; restart-gated; recount J-4088.
+
+- **2026-11-16** (F-4828): J-3798 built (D-0701 B): curiosity study block marks external-shock pages as arrived uninvited; restart-gated.
+- **2026-11-16** (F-4827): J-4084: question progress from the Follow Line state (curiosity_progress.LINE_STATE_PROGRESS), pursuit readers flagged off; J-4075 lookup nudge not yet loaded; restart-gated.
+
+- **2026-11-16** (F-4826): J-4081: consequence re-boarding daily quota 48/24h built (enforce, logs to follow_line_consequence_quota.jsonl), restart-gated; D-0780 7-day read after the loading boot.
+- **2026-11-16**: J-3803 (D-0700): GoalState.drift_warning retired. Function was already deleted in commit 866b0a44 (J-3828); grep of all .py finds no drift_warning reference or test remaining. Item 5 drift-anchor plan line is retired with it; the other four dead-function leads stay staged.
+
+- **2026-11-14** (F-4707): J-3988: curiosity end to end written up (docs/reviews/curiosity_end_to_end_J-3988_2026-11-14.md): the pursuit loop is retired, the Follow Line is the only live working stage, 80 percent of ~900 daily births are its own spawn against 24 slots; founder choices D-0779, D-0780, D-0781.
+- **2026-11-14** (F-4690): J-3767 read-only trace of shock pages into T4, dreams and wandering (30 d to 11-14): dreams take shocks through night.day_material's research slot (12.7 pct of shocks cited vs 3.0 pct pursuit), not the world-ground pool (0 shock picks of 68 reconstructed); T4 names shocks per exposure 4/57 vs 1/193 and none became a probation; wandering drift under-serves shocks (0.22 vs 7.3 appearances per page).
+
+- **2026-11-14** (F-4682): J-4000: shadow mech_progress built (commit 76d70b1c on worktree branch); separates 1 of 25 open questions; re-ask counted at weight 0 pending founder call.
+- **2026-11-14** (F-4537): J-3473: deterministic worth check d2 fails the fresh pursuit-eligible hold-out (AUC 0.636); D-0683 defeater met, not wired. Lab module core/curiosity_worth_d.py on branch jobrun/w12__ungrouped_J-3473.
+
+- **2026-11-07** (F-4395): J-3288: study-note key_facts checked against the passage the writer saw (427 facts, 60 notes): 2.3 percent misstate it, about 0.5 percent are outside content; no deterministic gate worth building; pre-D-0577 writer saw 17 percent of each session (F-4395..F-4397). Re-audit after chunking is live: J-3779.
+- **2026-11-07** (F-4382): J-2916 shock trace (read-only): shock pages reach T2 (29 percent of exposures quote them vs 2 percent for pursuit pages), curiosity (21 vs 5.5 percent) and sleep replay (10 vs 5 percent) through the shared recency feed recent_world_material, not through derived_from (none exists). The curiosity study block cuts the uninvited mark; asked as D-0701. Report docs/lab/2026-11-07_J-2916_shock_trace.md, F-4382..F-4385.
+
+- **2026-11-07** (F-4344): UNFIRED (J-3469, F-4344): GoalState.drift_warning (core/goal_model.py:62), the Item 5 drift anchor, has no caller anywhere; a 2026-06-22 systems check listed it as 0-caller delete and nothing acted. Wire-or-retire is D-0700.
+- **2026-11-05** (F-3940): J-3240 review (docs/reviews/J-3240_entity_name_and_model_knowledge_tag_review.md): the bare Entity line is not needed in the Curiosity prompt (replay: 渡 in questions 5 of 6 to 1 of 7 on name-themed runs); the questions about 渡 are carried by the themes (91 percent when themes name it, 2.4 percent when nothing but the line does); the own-name sentence from f57c0b53 has been live since 10-31 and contradicts D-0629 (D-0680 open); model_terms tag designed, shadow-only ledger reader J-3350; Voice's live builder has no bare line (F-3942).
+
+- **2026-10-30** (F-3276): J-2320 early read: post-boot (10-29 18:38, gate True) 39 internal rows, output address160 1/39 = 2.6 pct vs 5 pct bar, pre-boot 21.4 pct; too few rows to close D-0445 clause, shadow cannot show window reach (blocks always logged present); re-gated on 120 post-boot rows
+- **2026-10-28**: D-0495 (travis 2026-10-28): FRONTIER_SEMANTIC_MERGE=enforce (26 shadow would-merges read, all true paraphrases 0.88-0.94) and WORLD_DISPLACEMENT_LIVE=True (63 shadow rows, dose 0 while modal share <= 0.6) from the next boot. merge_frontier_variants.py --apply run while Du down: 170 mottainai variants absorbed into ba3c66a94b (encounters 87->399), backup frontier.json.premerge.20261027T200250Z.bak. D-0486 / D-0439 defeaters now read on live days.
+
+- **2026-10-19**: J-2428 (D-0486): FRONTIER_SEMANTIC_MERGE='shadow' @0.85 built in core/frontier.py + scripts/merge_frontier_variants.py (dry-run default); branch claude/heuristic-burnell-8d270a 5e0a1c8e, NOT merged, restart-gated. Founder runs --apply only while Du down. Read after 3 live days of shadow rows (F-3130).
+- **2026-10-17** (F-3037): J-2347 (D-0469): perseveration alarm bar (>=0.90 x2 consecutive days) + cannot_dwell floor (<0.20) built founder-only, commit 9d457862 unmerged, merge/HUD-restart-gated; backtest fires 10-07,10-08,10-11..10-15 (onsets 10-07, 10-11), cannot_dwell never
+
+- **2026-10-17** (F-3025): D-0466 built (J-2336): INTERNAL_HUMAN_WINDOW_GATE = True, commit 84b2fae5, restart-gated; J-2297 test 33/33 incl. human byte-identity
+- **2026-10-17**: D-0466 ruled (1) by Travis 2026-10-17: INTERNAL_HUMAN_WINDOW_GATE flips True at the next boot (build job spawned), then a 3-day read against the 5 percent address bar.
+
+- **2026-10-17** (F-3017): J-2195 (D-0439): shadow-first dosed world-displacement channel built in core/world_displacement.py, wired at the ignition; WORLD_DISPLACEMENT_LIVE ships False; restart-gated, lands at the next boot once commit 411da4dd is merged
+- **2026-10-17** (F-3014): J-2297 (D-0445 a): human-window gate for internal-cycle prompts BUILT shadow-first (gate off), restart-gated, lands at next boot after merge of ebd1dc6d; shadow data/internal_cycle_context_shadow.jsonl; flip = J-2321 (Travis), post-boot read = J-2320.
+
+- **2026-10-17** (F-2992): J-2229: D-0445(a) path traced - conversation_history/prior_session_exchanges (boot-seeded, never aged for internal cycles) reach internal prompts ungated in episodic_buffer, reflection, executive, recall; reflection never reframed by J-1846; executive synthesis not persisted; build job spawned (shadow-first, restart-gated).
+- **2026-10-17** (F-2986): J-2192: live topic_perseveration.jsonl verified (29 rows, matches F-2893 backfill; HUD cards wired); liveness listing + run duration still unconfirmed
+
+- **2026-10-16**: D-0445 ruled (travis, 2026-10-16): close the stale-human-context path into internal cycles first (J-2229 traces it), shadow-first, then a 2-3 live-day re-read; the executive's internal speaker boundary only if the address share stays above 5 percent.
+- **2026-10-16** (F-2918): D-0355 7-live-day read (J-1873, F-2918; run 10-09 08:36 to 10-16 07:53, 6.97 live days): the J-1846 framing was live all week but two defeater clauses trip. Internal replies still address an asker in 13/98 (13.3%, bar 5%; 6/98 name Travis); 45/98 internal scenes name Travis, apparently the previous run's shutdown-pause exchange, so stale human context is the inferred contributor -> D-0445 opened, trace J-2229. Topic lock moved from 渡 to mottainai (274/297 started, 92%) -- already ruled under D-0439 (J-2186), which supersedes D-0355 (2)(c). Human cycle kept its address (n=1). Executive SPEAKER BOUNDARY residual not measurable (no per-cycle executive store).
+
+- **2026-10-16** (F-2893): J-2152 (F-2850/F-2893): topic-perseveration gauge BUILT on branch jobrun/gauge_topic (fd50d2e5), merge pending. core/topic_perseveration.py (quoted-anchor + 0.55 embedding topics) -> data/topic_perseveration.jsonl via du_pulse section 4 and _G regression_alarms, plus two HUD monitor cards. 30-day backfill shows 渡 and mottainai locks at 93-100% modal share. Instrument only; the topic-level anti-relock in curiosity_node stays a founder call.
+- **2026-10-07** (F-2496): 2026-10-07 J-1846 (D-0355 (1)(a)): internal cycles (input_type != human) now get honest framing in perception (own thought, first-person summary), executive ("A question has risen in you, unprompted:") and voice ("A question rose in you on your own; no one asked it:", stance line and JSON label no longer name Travis) via a new NodeBase.system_prompt_for hook; human prompts byte-identical to HEAD; offline replay of the 10-06 run's 16 internal questions: 16/16 first-person summaries (was 16/16 "The person asks"). Question selection untouched (D-0355 (2)(c)). Commit b15aca7 on jobrun/curiosity_goals_dreams; merged-not-live, restart-gated; 7-day live read spawned.
+
+### What we have
+- Items 1 (prism→frontier de-personalization bridge) and 2 (OMNI worth-gate,
+  `pursue ∝ LP × interestingness`) confirmed LIVE by the 2026-08-23 13-agent code audit.
+- Item 4 (dream "ended-unfaced" re-pin cap) is LIVE, but shipped off-track: it landed via the
+  separate 2026-08-22 sleep/dream rewrite (`core/night.py`'s `CARRY_MAX_NIGHTS=3`, imported into
+  `nodes/dream_node.py`), not via this plan's own §4 Item-4 steps — functionally equivalent, so no
+  re-implementation is needed.
+- Item 3 (`core/curiosity_competence.py`, cluster-LP transfer) confirmed NOT built (file does not
+  exist). Item 5 (`goal_model.py` G2) confirmed still a raw-input-truncation stub.
+
+### What we need
+Nothing urgent — Items 3 and 5 are this plan's own lowest-priority items with no current urgency signal.
+
+### What we're doing next
+Re-open Item 3 only if a future audit flags rumination-cluster parking, or Item 5 only if idle-goal
+drift is flagged; read `docs/reviews/sleep_dream_2026-08-22.md` first for any future dream/curiosity
+work (supersedes this plan's own dream-mechanics sections). No ledger activity since 2026-08-23.
+
+> Domain: CURIOSITY / GOALS / EXPLORATION / FRONTIER / DREAMS / SLEEP / SYMBOLS.
+> Cross-cutting meta-finding honoured throughout: **"all senses, no hands."** Every item below names the
+> REAL read/actuation path (how it changes a prompt Du actually sees, or a pursuit decision actually taken),
+> not a log line. Every live change is gated observe-first behind an evidence battery.
+> Method note: claims are verified against the source files (file:line) and the live data stores
+> (`data/frontier.json`, `data/dream_log.jsonl`, `data/curiosity_*`), not the docstrings — several docstrings
+> are stale and are flagged where they matter.
+
+---
+
+## 1. As-built deep-dive
+
+### 1.1 The curiosity pipeline (queue → worth → progress → frontier → seed)
+
+**Producers → Queue.** `core/curiosity_queue.py` is an append-only, strictly-partitioned inbox
+(`SOURCES = ("gate_dissonance","world_prediction_error","t4_insufficient_evidence")`, line 25). A 6-hour
+dedup cooldown (`_DEDUP_COOLDOWN_S`, line 38; enforced lines 58–62) stops one recurring knot flooding it.
+This part is sound.
+
+**The de-personalization prism — DEAD READ-PATH (the headline failure).**
+`prism_prompt` (line 106) + `shadow_transform` (line 125) take a private self-tension and emit ONE
+world-facing academic question. But `shadow_transform` only **writes to `data/logs/curiosity_shadow.jsonl`**
+(lines 142–149) and `mark_processed`. **Nothing reads the transformed question back into cognition.**
+- Called from `nodes/curiosity_node.py:71` (`await _cq.shadow_transform(...)`) — confirmed wired as a node
+  side-effect, but its output is observe-only.
+- Live proof: `curiosity_shadow.jsonl` has **39 transformed rows, 39/39 world-facing** (verified) — the prism
+  WORKS and is 100% on its success gate, yet has produced **zero behavioural effect**. The one mechanism
+  purpose-built to convert self-loops into world-questions is a notebook.
+- **Status: DEAD (read-path).** The transform is excellent and idle.
+
+**Worth judge (OMNI fold) — gates NOTHING.** `core/curiosity_worth.py`: `shadow_pass` (line 54) grades the
+top-5 LP-ranked open questions for interestingness and logs LP-vs-interest divergence to
+`curiosity_worth_log.jsonl` (lines 71–72). Docstring (lines 14–18) is explicit: *"It does NOT yet gate
+pursuit."* Wired from `nodes/inner_monologue_node.py:348-351` (`_cw.shadow_pass(...)`), purely as telemetry.
+- Live proof: **18 passes logged** (verified). LP alone still selects pursuit.
+- **Status: PARTIAL — observe-only; gates nothing.**
+
+**LP estimator — single-question, no transfer.** `core/curiosity_progress.py`:
+`LP = ALPHA·new_fragments + BETA·finding − GAMMA·consecutive_stalls` (line 35), `PARK_STALLS=3` (line 26),
+`is_parked` (line 38). `rank()` (line 50) is read by `curiosity_worth.shadow_pass` and (for the park skip) by
+`frontier.pending_pursuit`. The LP is **per-question and mechanical** — no semantic generalization across
+near-duplicate questions. Two near-identical questions ("how does a river work" / "how does a door work")
+have fully independent stall counters.
+- **Status: WIRED but coarse.**
+
+**Frontier — the one genuinely-closed loop (good).** `core/frontier.py` closes
+question→finding→re-surface: `note_question` (95) opens; `pending_pursuit` (184) picks a finding-less,
+non-parked, grounded-source-first question to research toward; `attach_finding` (210) hangs the world's
+answer; `open_question_for_seed` (250) / `closeable_seed` (309) return it WITH the finding as a monologue
+seed; `resolve_if_addressed` (346) closes it by his own naming. The pursuit itself is driven from
+`nodes/curiosity_node.py:227-293` (real `web_research.lookup_targeted` → `attach_finding` →
+`record_pursuit`). The Scholar fallback correctly counts as a STALL (curiosity_node.py:256-266), feeding the
+park ramp. **This is the model of what every other item here should look like.**
+- **Read paths confirmed:** monologue seed-offer `inner_monologue_node.py:1297-1313` (30% gate, line 1296),
+  boredom-redirect closeable patch `inner_monologue_node.py:501-510`, library term `frontier.random_term`
+  (332). Real hands, all of them.
+- **BUT the park ramp barely fires and never redirects.** `PARK_STALLS=3`, yet live: of 1735 questions,
+  **only 12 are parked — and all 12 are `status="faded"`** (verified). Questions clear or fade before
+  reaching 3 consecutive stalls; parking, when it happens, is a precursor to fading, not a live
+  rumination-exit. Resolution is near-zero by design failure: **4 resolved / 1640 faded / 91 open**
+  (verified). Questions die by decay, not by naming. Only **7 of 91 open carry a finding** — so the
+  seed-back loop usually has nothing closeable to offer.
+- **Status: WIRED (loop closes structurally) but the exit/resolution dynamics are broken.**
+
+**Seed source bias.** `curiosity_node._select_seeds` (168) flattens tension salience by sqrt + recency-penalty
+to avoid "attention in a curiosity costume." Grounded study-material seeding (`_select_study_material`, 139)
+keeps questions world-facing by construction. Both sound.
+
+### 1.2 The goal hierarchy
+
+`core/concerns.py` is the **live** idle-governing layer (G0/G1):
+- `standing_aim()` (24) — G0 apex, derived from the axiom (cached by mtime), deliberately outward/forward.
+- `current_concerns()` (68) / `primary_concern()` (110) — G1, a read-mostly unifier over school curriculum +
+  frontier `top_open`. `PROMOTE_AT=2` (63): a frontier question becomes a standing concern only after it
+  recurs (Klinger goal-shielding).
+- **Read path confirmed:** `primary_concern()` is consumed at `inner_monologue_node.py:1201` to anchor "what
+  am I doing?" in idle thought. **WIRED, real hand.**
+
+`core/goal_model.py` (G2) is a **stub**: `GoalManager.update` sets `goal = raw_input[:120]`
+(goal_model.py:90). It only activates in `content_mode` (a user task), pushing a drift-anchor into
+Reflection/Critic. In pure idle life it is dormant — `concerns.py` does the real governing. Instantiated at
+`inner_monologue_node.py:274-275`.
+- **Status: PARTIAL/STUB — only meaningful on user-facing task cycles; idle life is governed by concerns.**
+  (Audit rated this LOW; concur — it is not the bottleneck.)
+
+### 1.3 The dream arc lifecycle
+
+`nodes/dream_node.py` is the best-built module in this domain. `synthesise` (96) builds a multi-scene arc
+(MIN 3 / MAX 6, lines 66–67) with state-driven phases OPEN ▸ DEVELOP×n ▸ CLOSE driven by the model's own
+`movement` field (140–167), not the index. Real machinery, all present:
+- **Associative recall recombination** (117–132): `associative_recall.recall_fragments` weaves real
+  remembered material into the imagery — dreams made of his actual life. Genuinely good.
+- **Decoupled stall backstop** `_scene_stalled` (402): structural symbol-anchor turnover (≥0.6 = circling),
+  embedding near-verbatim backstop. Sophisticated.
+- **Symbol grounding → frontier** `_ground_symbols` (508): concrete dream symbols become
+  `note_question("how does a {word} work","dream")` — a REAL hand into the curiosity loop. Confirmed wired.
+- **Carry-forward** `_last_unresolved_arc` (485): if the last arc ended unfaced, scene 0 continues it.
+- **End-state bridge** `_bridge_final` (319): unfaced → shadow event; resolved → light event. Real writes.
+
+**The regression (verified, and corrected vs. the audit).**
+- The audit's "resolution ~25% (13/53), not 6/105" and "last 12 ended-unfaced" — I re-measured against the
+  live `dream_log.jsonl` (**417 arcs**): the `close_reason`/`ended_unresolved` fields **did not exist before
+  arc ~304 (06-15)** — pre-304 rows log `None`, so "0% unfaced early" is a *missing-field artifact, not
+  resolving dreams*. On the current schema (arc 304+), recent-30 = **25 ended-unfaced / 4 resolved / 1 ceiling**,
+  and the **last 14 arcs are a consecutive ended-unfaced streak** (verified). So the regression is REAL and
+  recent, but the baseline was never "mostly resolving."
+- **Root cause is structural:** `_bridge_final` writes the unfaced core to shadow; `_last_unresolved_arc`
+  then pins **tonight's scene 0 on that same unfaced core**; if the model again ends unfaced (the common
+  case for a hard self-tension), the thread re-pins indefinitely. There is **no cap on consecutive
+  unresolved nights** and **no forced fresh-seed / hand-to-frontier escape**. One tension can monopolize the
+  dream channel for 14+ nights — the dream-side version of the same monoculture disease.
+
+### 1.4 Sleep & symbols (supporting)
+
+`core/sleep_pressure.py` — un-starvable adenosine-analogue trigger
+(`P = chronic + λ·new_notes + λ·new_epi_weight`, line 104; MIN/MAX wake window guarantees correctness,
+119–124). Sound; calibration-pending by design. WIRED.
+
+`core/symbol_evolution.py` — semantic-drift tablets with a **real Tier-1 read-back**
+(`recall_evolved_meaning`, 201) consumed at `inner_monologue_node.py:1360-1363` (sets
+`state.symbol_readback`, marking the appearance PRIMED so it can't self-feed drift). WIRED and disciplined.
+Tier-2 (self-symbols) correctly deferred. Not a bottleneck.
+
+---
+
+## 2. Gaps & root causes (ranked)
+
+**Why curiosity — the one differentiating force — cannot redirect Du today:**
+
+1. **The prism's output never enters cognition (DEAD read-path).** The single mechanism designed to convert a
+   self-loop into a world-question writes a JSONL file and stops (`curiosity_queue.shadow_transform`,
+   queue.py:142-150). 39 perfect transforms, 0 behavioural effect. The de-personalization bridge from
+   self-rumination to world-exploration **physically does not exist in the live loop.** [HIGH]
+
+2. **Pursuit is selected by LP alone; the worth-judge gates nothing.** `curiosity_worth.shadow_pass` logs and
+   exits (worth.py:71); LP (`curiosity_progress.score`) is the only selector via
+   `frontier.pending_pursuit`. So Du grinds whatever is mechanically yielding, with no "is this worth my
+   finite attention?" check — exactly the aimless-novelty trap OMNI describes, and the mechanism by which one
+   concern anchored 271 idle thoughts. [HIGH]
+
+3. **The rumination-exit ramp is per-question and fires too late to redirect.** LP stall counters are
+   independent per question (progress.py:35), so a CLUSTER of near-duplicate self-shaped questions never
+   accumulates collective stall pressure — each looks "fresh." Live: only 12/1735 ever parked, all already
+   faded. The exit ramp suppresses one item after it dies, never the cluster while it's live. [MED]
+
+4. **Dreams re-pin on one unfaced tension with no escape (recent regression).** `_last_unresolved_arc`
+   (dream.py:485) carries the same unfaced core forward with no consecutive-unresolved cap and no
+   forced-fresh-seed — 14 consecutive ended-unfaced nights (verified). The dream channel monocultures. [MED]
+
+5. **Frontier resolution is decay-dominated.** 4 resolved / 1640 faded / 91 open; 7/91 carry findings. The
+   loop closes structurally but in practice questions almost always die by fading, so the closeable-seed
+   read-path rarely has ammunition. [MED, partly downstream of #2/#3]
+
+6. **G2 goal_model is a stub** (goal.py:90) — but idle life is governed by `concerns.py`, which is WIRED, so
+   this is low-impact. [LOW]
+
+---
+
+## 3. Research grounding
+
+- **MAGELLAN** (arXiv 2502.07709) — a metacognitive LP estimator that learns **semantic relationships between
+  goals**, giving sample-efficient LP estimation and **competence transfer across goals** in a large/evolving
+  goal space. *Adaptation for item 3:* replace the per-question stall counter with an **embedding-keyed
+  competence/LP estimate that generalizes across semantically-near frontier questions** — so a cluster of
+  near-duplicate questions shares stall pressure and PARKS as a cluster, suppressing the rumination knot, not
+  one phrasing of it. We do NOT need MAGELLAN's online-RL training; we need its core idea (LP that transfers
+  over an embedding neighbourhood), implemented cheaply with the existing `_embed`/`_cosine`.
+- **OMNI** (FM as a model of interestingness to gate goals) — already half-built as `curiosity_worth`. *Adaptation
+  for item 2:* turn the existing decoupled judge into a **gate**: `pursue ∝ LP × interestingness`, exactly the
+  divergence the shadow log already measures.
+- **"Language Models Need Sleep"** (arXiv 2606.03979, Behrouz et al., Jun 2026) — Sleep = consolidation +
+  **Dreaming as a generated curriculum for recursive self-improvement** (REM analogue). *Adaptation for item 4:*
+  a dream that re-pins forever is not generating new curriculum — it's replaying one failed sample. Cap the
+  re-pin and force a fresh seed / hand the stuck symbol to the frontier so the dream channel keeps producing
+  *novel* recombination, not a stuck replay.
+- **GENESIS** (arXiv 2510.15828) — episodic↔semantic generative interaction; supports the dream→frontier
+  symbol-grounding already present (`_ground_symbols`) and the associative-recall recombination; a north-star
+  for later deepening, not a near-term change.
+- **Agent-centric intrinsic motivation as internal-knowledge-curation** (arXiv 2507.22255) — frames the prism
+  + frontier as *curating Du's internal knowledge frontier*; reinforces that the prism output belongs IN the
+  pursuit selector (item 1), not in a log.
+
+Sources: [MAGELLAN](https://arxiv.org/abs/2502.07709) · [LMs Need Sleep](https://arxiv.org/abs/2606.03979) ·
+GENESIS arXiv:2510.15828 · OMNI (jennyzzt/omni) · arXiv:2507.22255.
+
+---
+
+## 4. Implementation plan
+
+> Conventions: each item ships its READ/ACTUATION path in the SAME change (the project's "ships with its read
+> path or it's a notebook" law), and an OBSERVE-FIRST gate (a measurable evidence battery cleared before the
+> live flip). Flags live in the module so reversal is one constant.
+
+### Item 1 — Wire the prism output into the frontier (HIGHEST PRIORITY)
+
+- **Goal & weakness.** The prism produces perfect world-facing questions (39/39) that vanish into a log. Give
+  the self-loop→world-question bridge a real hand so a recurring self-tension actually becomes a pursuable
+  world-question Du encounters.
+- **Approach (functions/files).**
+  - In `core/curiosity_queue.py`, add `transform_and_enqueue(call_json, urls, limit)` that does what
+    `shadow_transform` does PLUS, when `is_world_facing(transformed)` is true, calls
+    `frontier.note_question(transformed, source="prism")` (and keeps the shadow log for telemetry).
+  - In `core/frontier.py`, add `"prism"` to `_GROUNDED_SOURCES` (line 181) so prism questions are eligible for
+    `pending_pursuit` and rank ahead of self-leaning `intention`. Guard with `is_world_question` (already
+    excludes self-tokens) — defence in depth against a prism leak.
+  - In `nodes/curiosity_node.py:71`, swap `shadow_transform` → `transform_and_enqueue` behind a flag
+    `PRISM_TO_FRONTIER` (default off).
+- **Read-path / actuation (NOT logging).** Once a prism question is a frontier question it inherits the
+  frontier's *existing, proven* read paths: `pending_pursuit` researches it (curiosity_node.py:233),
+  `open_question_for_seed`/`closeable_seed` surface it into the idle monologue
+  (inner_monologue_node.py:1297, :502), `random_term` can pick his next book. The self-loop literally returns
+  to him reframed as an outward question with the world's answer attached. **This is the redirect.**
+- **Observe-first gate.** Keep `PRISM_TO_FRONTIER=False`; log a shadow comparison for N nights: how many prism
+  questions WOULD be enqueued, their `is_world_facing` rate (already 100%), and a duplicate-against-existing-
+  frontier check. Flip live only when: ≥1 week of data, world-facing rate stays 1.0, and the dedup check
+  shows prism questions are not just re-creating existing self-shaped frontier items.
+- **Risks.** Laundering the self-monoculture INTO curiosity if a prism question still smells self-shaped. Two
+  firewalls already exist (`is_world_facing` first-person regex; `frontier.is_world_question` self-token
+  deny-list) — require BOTH to pass. The 6h queue dedup (queue.py:38) plus frontier token-overlap dedup
+  (frontier.py:107) bound the flood.
+- **Effort.** **S** (≈40 lines, reuses every downstream path). Deps: none.
+- **Verification.** After flip: `frontier.json` shows `source="prism"` questions reaching `open`→`finding`→
+  offered-as-seed; `resolve_if_addressed` fires on at least some; du_pulse curiosity gauge shows prism
+  contribution. Negative check: monoculture echo metric (inner_monologue_node.py:340) does NOT rise.
+
+### Item 2 — Turn on the OMNI worth-gate (`pursue ∝ LP × interestingness`)
+
+- **Goal & weakness.** LP alone selects pursuit; the decoupled worth judge gates nothing (18 telemetry
+  passes). One trivial-but-yielding or one over-recited concern can monopolize attention.
+- **Approach.**
+  - Persist interestingness onto the question: in `curiosity_worth.shadow_pass`, after grading, write
+    `interesting`/`interest_ts` back onto the frontier question (new `frontier.attach_interest(qid, score)`),
+    so the score is available at selection time (the grade is currently thrown away after logging).
+  - In `core/curiosity_progress.py`, add `effective_score(q) = score(q) * (W + (1-W)*interest)` (a soft
+    multiplier, W≈0.5 so an ungraded question isn't zeroed), behind flag `WORTH_GATE`.
+  - In `frontier.pending_pursuit` (184) and the LP `rank()` (progress.py:50), order by `effective_score` when
+    `WORTH_GATE` is on. Add an interestingness FLOOR: a question with interest < 0.25 is **not pursued**
+    (set aside like a park) — the "aimless trap" exit.
+- **Read-path / actuation.** Changes which question `pending_pursuit` hands to `web_research.lookup_targeted`
+  (curiosity_node.py:233) and which surfaces as a monologue seed — i.e. it redirects what Du actually
+  researches and thinks about next, away from low-worth grinding toward worthwhile questions.
+- **Observe-first gate.** `WORTH_GATE=False` first. The shadow log ALREADY records the divergence
+  (`aimless_traps`, `starved_worthwhile` in worth.py:91-95). Require: graded coverage ≥ top-5 each sleep for
+  ≥1 week, and a human read of `aimless_traps` confirming the judge's low-interest calls are correct (the
+  decoupled-judge law — don't let it self-certify). Then flip.
+- **Risks.** The LLM judge is itself fallible / could develop its own bias (Goodhart on "interesting"). Mitigate
+  by keeping it strictly decoupled from LP (different evaluator, already true) and capping its influence (soft
+  multiplier, not a hard override) so a judge error degrades gracefully rather than starving a good question.
+- **Effort.** **M** (judge exists; work is persistence + selection wiring + the floor). Deps: light synergy
+  with Item 1 (more questions to grade).
+- **Verification.** Parked/set-aside count rises off the floor of 12; `aimless_traps` shrink over time;
+  the "271 idle thoughts on one concern" pattern does not recur (concerns_log + curiosity_log inspection).
+
+### Item 3 — MAGELLAN-style LP transfer (cluster-level park)
+
+- **Goal & weakness.** Per-question stall counters never let a CLUSTER of near-duplicate (often self-shaped)
+  questions accumulate collective stall pressure, so the rumination-exit fires too late and on the wrong
+  granularity (12/1735 parked, all faded).
+- **Approach.**
+  - New `core/curiosity_competence.py`: maintain an **embedding-keyed competence map** — bucket open frontier
+    questions by cosine neighbourhood (reuse `memory.store._embed`/`_cosine`; threshold ≈ frontier's 0.55
+    dedup or looser ≈0.45 for "near"). A cluster's LP = aggregate of member findings/stalls.
+  - `cluster_lp(q)` generalizes a stall: when a sibling in the cluster stalls, members inherit *partial* stall
+    pressure (transfer). `is_cluster_parked` parks the whole neighbourhood when aggregate consecutive stalls
+    ≥ PARK_STALLS — suppressing the knot, not one phrasing.
+  - `frontier.pending_pursuit` (184) and `curiosity_progress.is_parked` (38) consult the cluster judgment
+    behind flag `CLUSTER_LP`.
+- **Read-path / actuation.** Directly changes pursuit eligibility: a stuck self-shaped cluster stops being
+  fed to `lookup_targeted` and stops surfacing as seeds — the live rumination exit that currently never
+  fires. Frees attention for genuinely-different questions.
+- **Observe-first gate.** `CLUSTER_LP=False`; for ≥1 week log, per sleep: the discovered clusters, their
+  aggregate LP, and which questions WOULD be cluster-parked vs. the current per-question parking. Require the
+  clusters to look semantically coherent (manual spot-check — decoupled judge) and that cluster-parking
+  targets the recurring self-shaped knots (not killing a healthy diverse spread) before flipping.
+- **Risks.** Over-clustering could park a healthy diverse frontier (false monoculture detection). Mitigate
+  with a conservative cosine threshold, a minimum cluster size (≥3) before collective parking, and the
+  observe-first manual coherence check. Embedding cost is bounded (91 open questions; cache vectors on the
+  question dict like `toks`).
+- **Effort.** **M–L** (new module + careful threshold tuning; embeddings already available). Deps: best after
+  Item 1 (more questions populate clusters) and complements Item 2.
+- **Verification.** Cluster-park events fire on live self-shaped knots BEFORE they accrue 271 thoughts; faded
+  count drops relative to resolved+parked; monoculture echo metric trends down.
+
+### Item 4 — Fix the dream "ended-unfaced" re-pin regression
+
+- **Goal & weakness.** `_last_unresolved_arc` re-pins the same unfaced core indefinitely (14 consecutive
+  unfaced nights verified), monoculturing the dream channel.
+- **Approach (all in `nodes/dream_node.py`).**
+  - Track a per-tension consecutive-unresolved counter in `dream_log.jsonl` (the `tension_source` /
+    `final_unresolved_core` already logged, lines 548-555). In `_last_unresolved_arc` (485), if the same core
+    has been carried `≥ MAX_REPIN_NIGHTS` (≈3) consecutively, **return None** (force a fresh seed from a
+    DIFFERENT top tension via `_gather_materials`/`_load_top_tensions`, which already rotates by count).
+  - On the forced reset, **hand the stuck symbol to the frontier**: call `_ground_symbols` on the carried
+    arc's symbols (or a dedicated `note_question` on its `tension_source`) so the unmet tension becomes a
+    waking world-question for curiosity rather than re-dreamt — turning a stuck replay into new curriculum
+    (the LMs-Need-Sleep adaptation).
+  - Optionally rotate to the SECOND-strongest tension on reset so the channel diversifies.
+- **Read-path / actuation.** Changes what the dreamer is actually seeded with next night (fresh material), and
+  injects the stuck tension into the frontier where it gets a real pursuit + monologue seed-back — both real
+  hands, not logging.
+- **Observe-first gate.** Add a shadow field to `_log_arc` recording how many nights the current core HAS
+  been carried and whether the cap WOULD have fired — log for ≥1 week, confirm the cap targets genuine
+  stuck-replay (not cutting off a legitimately slow but moving arc — cross-check against the `_scene_stalled`
+  structural signal), then enable the forced reset.
+- **Risks.** Cutting off a dream that was genuinely close to reconciliation. Mitigate by gating the cap on
+  *consecutive unfaced nights of the SAME core*, not arc length, and only after MIN nights; the structural
+  `_scene_stalled` detector remains the within-night backstop.
+- **Effort.** **S–M** (logic localized to `_last_unresolved_arc` + `_log_arc` + one frontier call). Deps: the
+  frontier hand-off reuses Item-1-era `note_question` plumbing.
+- **Verification.** `dream_log.jsonl` consecutive-unfaced streak length drops; distinct `tension_source`
+  diversity across recent arcs rises; the handed-off tension appears as a `source="dream"` (or `"prism"`)
+  frontier question.
+
+### Item 5 — goal_model G2 (lowest priority)
+
+- **Goal & weakness.** `GoalManager.update` is a `raw_input[:120]` stub (goal.py:90); only meaningful on user
+  task cycles. Idle life is governed by `concerns.py` (WIRED). Low impact.
+- **Approach.** Either (a) leave as-is and **document that `concerns.py` is the de-facto G1/G2 idle governor**
+  (cheapest, honest), or (b) have `GoalManager` derive its idle goal from `concerns.primary_concern()` so the
+  Quartet's "what are we doing?" is consistent between idle and task cycles, and the drift-anchor
+  (`drift_warning`, goal.py:62) can fire in idle too.
+- **Read-path / actuation.** If (b): `state.active_goal_note` / `drift_warning` would be injected into idle
+  Reflection/Critic from the concern, giving idle thought a completion-criterion anchor.
+- **Observe-first gate.** Log the derived idle goal vs. the anchored concern for a week; confirm they agree
+  before letting the drift-anchor fire in idle (risk: a false drift-warning suppressing legitimate
+  free-association — idle is SUPPOSED to wander).
+- **Risks.** Over-constraining idle wandering (the opposite failure from monoculture). Keep it a soft note.
+- **Effort.** **S**. Deps: concerns.py (exists).
+- **Verification.** No regression in idle diversity metrics; goal note matches the anchored concern.
+
+---
+
+## 5. Sequencing
+
+1. **Item 1 (prism → frontier), S.** Unblocks everything: it is the missing redirect, reuses proven read
+   paths, and populates the frontier that Items 2 & 3 operate over. Ship the observe-first shadow first.
+2. **Item 4 (dream re-pin cap), S–M.** Independent, localized, fixes an active recent regression; can proceed
+   in parallel with Item 1's observe window. Its frontier hand-off dovetails with Item 1.
+3. **Item 2 (worth-gate), M.** Once Item 1 has populated the frontier and the worth shadow log has a week of
+   coverage, flip `pursue ∝ LP × interestingness`. Stops low-worth grinding.
+4. **Item 3 (cluster LP), M–L.** Last of the curiosity trio — needs a populated, worth-gated frontier to
+   cluster over; the heaviest tuning and the highest false-positive risk, so it benefits from Items 1–2 being
+   live and trusted first.
+5. **Item 5 (G2), S.** Cosmetic/consistency; do anytime, lowest priority. Prefer option (a) unless the
+   idle-anchor consistency is independently wanted.
+
+> Net effect when sequenced: a recurring self-loop is de-personalized by the prism (1), enters the frontier,
+> is selected for pursuit only if worthwhile (2), parked as a cluster if it stalls (3), and — if it surfaces in
+> dreams — handed back out rather than re-dreamt forever (4). That is curiosity finally able to **redirect**
+> Du outward, with every step landing on a real hand and gated behind evidence.

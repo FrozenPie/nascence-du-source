@@ -1,0 +1,5656 @@
+{
+ "A_founder_conversation": {
+  "agg": {
+   "replies": 35,
+   "baseline_answered": 0,
+   "anaphora_matches": 12
+  },
+  "per_kind": {
+   "frame": {
+    "frame_none": 22,
+    "frame_literal": 8,
+    "frame_mixed": 4,
+    "frame_figurative": 1
+   },
+   "anaphora": {
+    "unresolved_verb_not_a_family_verb": 8,
+    "unresolved_hands_only_hint_not_an_antecedent": 2,
+    "unresolved_no_agreeing_antecedent": 2,
+    "legacy_only": 1
+   }
+  },
+  "newly_answered": [],
+  "legacy_only": [
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "46a98ea2-0c8e-419f-a664-37dcb93762ba",
+     "ts": 1793482680.5509827
+    },
+    "family": "shore",
+    "phrase": "i will gather the sand now"
+   }
+  ],
+  "lost": [],
+  "literal": [],
+  "anaphora_unresolved": [
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "5f1d2d92-bf2f-4627-a89f-5a3a6ca10e27",
+     "ts": 1793477419.5705621
+    },
+    "verb": "connect",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "5f1d2d92-bf2f-4627-a89f-5a3a6ca10e27",
+     "ts": 1793477419.5705621
+    },
+    "verb": "question",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "d4dc574c-78e8-4a25-9d6d-cd6f60455475",
+     "ts": 1793478437.2875788
+    },
+    "verb": "find",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "66980fa2-260f-419d-a18a-30acbf53d30a",
+     "ts": 1793480092.1953943
+    },
+    "verb": "see",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "a0a05092-e996-4d8d-82cc-8c6373293655",
+     "ts": 1793481577.5728476
+    },
+    "verb": "reinterpret",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "c14099ff-45eb-430b-be2e-a561ff621ea1",
+     "ts": 1793482067.8659554
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "8b8eacf8-afe8-4c23-b3b5-a9d94dcf41d8",
+     "ts": 1793482363.4611278
+    },
+    "verb": "lay",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "46a98ea2-0c8e-419f-a664-37dcb93762ba",
+     "ts": 1793482680.5509827
+    },
+    "verb": "gather",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "ts": 1793482858.5336385
+    },
+    "verb": "receive",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "44285cd3-aa45-40bc-9cdb-0e78e85342e2",
+     "ts": 1793483042.0586998
+    },
+    "verb": "give",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "28e15b3a-f138-4a54-8733-c56d63e22af2",
+     "ts": 1794087976.523129
+    },
+    "verb": "take",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "A",
+     "cycle": "d631ddf3-496b-4d81-84a6-be199cb88d1e",
+     "ts": 1794511710.3081846
+    },
+    "verb": "accept",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   }
+  ],
+  "vetoed": []
+ },
+ "B_bridge_log": {
+  "agg": {
+   "replies": 35,
+   "baseline_answered": 1,
+   "anaphora_matches": 4
+  },
+  "per_kind": {
+   "frame": {
+    "frame_none": 22,
+    "frame_literal": 8,
+    "frame_mixed": 4,
+    "frame_figurative": 1
+   },
+   "anaphora": {
+    "unresolved_verb_not_a_family_verb": 3,
+    "unresolved_hands_only_hint_not_an_antecedent": 1
+   }
+  },
+  "newly_answered": [],
+  "legacy_only": [],
+  "lost": [],
+  "literal": [],
+  "anaphora_unresolved": [
+   {
+    "meta": {
+     "corpus": "B",
+     "cycle": "d4dc574c-78e8-4a25-9d6d-cd6f60455475",
+     "ts": 1793478437.5
+    },
+    "verb": "find",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "B",
+     "cycle": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+     "ts": 1793482858.7
+    },
+    "verb": "receive",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "B",
+     "cycle": "28e15b3a-f138-4a54-8733-c56d63e22af2",
+     "ts": 1794087976.7
+    },
+    "verb": "take",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "B",
+     "cycle": "d631ddf3-496b-4d81-84a6-be199cb88d1e",
+     "ts": 1794511710.4
+    },
+    "verb": "accept",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   }
+  ],
+  "vetoed": []
+ },
+ "C_hands_trace_thoughts": {
+  "agg": {
+   "replies": 898,
+   "baseline_answered": 141,
+   "anaphora_matches": 430,
+   "anaphora_resolved": 4,
+   "skipped_cannot_differ": 18062,
+   "total_thoughts": 64302
+  },
+  "per_kind": {
+   "literal_vs_figurative": {
+    "annotated": 46,
+    "here_True": 17,
+    "here_None": 26,
+    "here_False": 3
+   },
+   "anaphora": {
+    "unresolved_no_agreeing_antecedent": 73,
+    "unresolved_verb_not_a_family_verb": 164,
+    "unresolved_competing_antecedents": 10,
+    "resolved_sentence": 4,
+    "newly_answered": 2,
+    "unresolved_pronoun_is_complement_subject": 172,
+    "unresolved_hands_only_hint_not_an_antecedent": 7,
+    "legacy_only": 52,
+    "newly_vs_legacy": 4
+   }
+  },
+  "newly_answered": [
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45524,
+     "ts": 1792378795.2
+    },
+    "family": "sow",
+    "phrase": "i will plant the seeds in the rain",
+    "text": "The rain's drumming fills my lungs with a heavy grey rhythm. I feel stuck on dead ground again, needing to move toward something genuine. The Mottainai question pulls at me, but the rusted trap and the wet seeds demand attention first. I will plant them in the rain.",
+    "travis": ""
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57702,
+     "ts": 1794117957.0
+    },
+    "family": "look",
+    "phrase": "i watch the cloud",
+    "text": "The bee crawls back in, dusted blue, a tiny cloud returning. I watch it, steady now, against the low west sun. The dandelion waits far off. My mind holds Burroughs' note: is that bird's abandonment of its cavity memory loss or an act? The soil is sodden here, but the thought persists.",
+    "travis": ""
+   }
+  ],
+  "legacy_only": [
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45590,
+     "ts": 1792381766.9
+    },
+    "family": "sow",
+    "phrase": "i must plant the seed anyway"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45667,
+     "ts": 1792385451.6
+    },
+    "family": "sow",
+    "phrase": "i will sow the seeds into the earth"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46363,
+     "ts": 1793257337.9
+    },
+    "family": "look",
+    "phrase": "i watch the shingle navigate the salt"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46428,
+     "ts": 1793261879.6
+    },
+    "family": "look",
+    "phrase": "i watch the tide vanish under water"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46439,
+     "ts": 1793262252.8
+    },
+    "family": "look",
+    "phrase": "i watch the shingle"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46807,
+     "ts": 1793288008.8
+    },
+    "family": "look",
+    "phrase": "i watch the page"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48662,
+     "ts": 1793424662.9
+    },
+    "family": "look",
+    "phrase": "i watch the tide work the edge"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48705,
+     "ts": 1793426319.4
+    },
+    "family": "look",
+    "phrase": "i watch the shingle navigate the draining swash"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48764,
+     "ts": 1793428407.0
+    },
+    "family": "look",
+    "phrase": "i watch the cat tremble"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49800,
+     "ts": 1793491504.9
+    },
+    "family": "look",
+    "phrase": "i watch the sea reflect the sky's shifting colors"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49838,
+     "ts": 1793493331.5
+    },
+    "family": "look",
+    "phrase": "i watch the tide run along the shingle"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49840,
+     "ts": 1793493441.3
+    },
+    "family": "look",
+    "phrase": "i watch the tide bob where the water breaks"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50161,
+     "ts": 1793514073.4
+    },
+    "family": "look",
+    "phrase": "i watch the sea bow"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50341,
+     "ts": 1793537311.8
+    },
+    "family": "move",
+    "phrase": "i move the outside"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50481,
+     "ts": 1793548765.7
+    },
+    "family": "look",
+    "phrase": "i watch the sea vanish toward the shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50545,
+     "ts": 1793551627.8
+    },
+    "family": "look",
+    "phrase": "i see the shingle everywhere now"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50831,
+     "ts": 1793591057.9
+    },
+    "family": "look",
+    "phrase": "i watch the tide retreat"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51824,
+     "ts": 1793661046.3
+    },
+    "family": "look",
+    "phrase": "i watch the window pause on a sentence about trade routes"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51896,
+     "ts": 1793665748.2
+    },
+    "family": "look",
+    "phrase": "i watch the sea sway gently against the horizon's glitter"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52145,
+     "ts": 1793676531.1
+    },
+    "family": "look",
+    "phrase": "i watch the tide"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52289,
+     "ts": 1793682600.4
+    },
+    "family": "look",
+    "phrase": "i watch the tide vanish into the mist"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52695,
+     "ts": 1793702568.2
+    },
+    "family": "look",
+    "phrase": "i watch the sea back"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52713,
+     "ts": 1793704949.0
+    },
+    "family": "cat",
+    "phrase": "i just let the cat sit here"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53220,
+     "ts": 1793731410.0
+    },
+    "family": "look",
+    "phrase": "i watch the gull vanish toward the sea"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53506,
+     "ts": 1793745725.6
+    },
+    "family": "look",
+    "phrase": "i watch the page cross the text about napoleon's strategic fear"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53546,
+     "ts": 1793748264.9
+    },
+    "family": "look",
+    "phrase": "i watch the window vanish into the branches"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53888,
+     "ts": 1793764462.2
+    },
+    "family": "look",
+    "phrase": "i watch the sea"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54249,
+     "ts": 1793778953.6
+    },
+    "family": "look",
+    "phrase": "i watch the tide creep slowly ahead"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54885,
+     "ts": 1793814649.6
+    },
+    "family": "look",
+    "phrase": "i watch the tide vanish into the kelp heap"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54947,
+     "ts": 1793816986.7
+    },
+    "family": "look",
+    "phrase": "i watch the book strip the insects from the sky"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55247,
+     "ts": 1793834464.9
+    },
+    "family": "look",
+    "phrase": "i watch the page navigate the inked lines of my music exercises"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55474,
+     "ts": 1793846184.9
+    },
+    "family": "look",
+    "phrase": "i watch the shingle chase a crab"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55547,
+     "ts": 1793849640.2
+    },
+    "family": "look",
+    "phrase": "i watch the tide fight for nothing"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55811,
+     "ts": 1794042973.8
+    },
+    "family": "look",
+    "phrase": "i watch the shingle carefully"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55846,
+     "ts": 1794044188.8
+    },
+    "family": "look",
+    "phrase": "i watch the tide move"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55905,
+     "ts": 1794049447.4
+    },
+    "family": "look",
+    "phrase": "i watch the cat sway"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55967,
+     "ts": 1794053495.1
+    },
+    "family": "cat",
+    "phrase": "i must let the cat be for now"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56675,
+     "ts": 1794078771.7
+    },
+    "family": "look",
+    "phrase": "i watch the gull tip"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56676,
+     "ts": 1794078789.4
+    },
+    "family": "look",
+    "phrase": "i watch the gull tip"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56895,
+     "ts": 1794085582.4
+    },
+    "family": "look",
+    "phrase": "i watch the sea weave their own orders"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56906,
+     "ts": 1794086037.6
+    },
+    "family": "look",
+    "phrase": "i watch the tide leave the dandelion"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57322,
+     "ts": 1794099550.5
+    },
+    "family": "look",
+    "phrase": "i watch the shingle perch on the fence post"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57459,
+     "ts": 1794108292.4
+    },
+    "family": "look",
+    "phrase": "i watch the cat both"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59274,
+     "ts": 1794204639.0
+    },
+    "family": "look",
+    "phrase": "i watch the cat both"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60379,
+     "ts": 1794274028.9
+    },
+    "family": "look",
+    "phrase": "i watch the gull drift west"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61278,
+     "ts": 1794326518.3
+    },
+    "family": "look",
+    "phrase": "i watch the gull vanish"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61324,
+     "ts": 1794328068.2
+    },
+    "family": "look",
+    "phrase": "i watch the sky"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61718,
+     "ts": 1794343048.5
+    },
+    "family": "look",
+    "phrase": "i watch the sea hover over the rosemary bush gone"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61782,
+     "ts": 1794345966.9
+    },
+    "family": "look",
+    "phrase": "i see the book hovering between lilies"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63301,
+     "ts": 1794612983.2
+    },
+    "family": "look",
+    "phrase": "i watch the cat trace a low arc"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63808,
+     "ts": 1794638910.1
+    },
+    "family": "look",
+    "phrase": "i watch the gull both"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64268,
+     "ts": 1794679659.9
+    },
+    "family": "look",
+    "phrase": "i watch the tide"
+   }
+  ],
+  "lost": [],
+  "literal": [
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45344,
+     "ts": 1792369463.7
+    },
+    "clause": "Do I reach for the text to find answers, or do I step out to check the wire?",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45734,
+     "ts": 1792407200.7
+    },
+    "clause": "The wind rattles the harakeke outside, a reminder I must move beyond stillness.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47049,
+     "ts": 1793293833.0
+    },
+    "clause": "I want to step away from this internal circle and go down to the shore.",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47114,
+     "ts": 1793295426.7
+    },
+    "clause": "I walk the cold tideline, watching the sea's fresh retreat.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47154,
+     "ts": 1793296352.5
+    },
+    "clause": "The tide sorts stones endlessly; I feel a low hum of relief in this silence, naming it before I must return to the labors at the house.",
+    "here": null,
+    "evidence": [
+     "own_body_in_scene"
+    ],
+    "loc": "wood"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47455,
+     "ts": 1793306395.2
+    },
+    "clause": "I want to trace the exact path of this quietness in the study, letting the open pages anchor me before I move.",
+    "here": true,
+    "evidence": [
+     "location_named_in_clause",
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47492,
+     "ts": 1793310477.0
+    },
+    "clause": "I want to step out, fetch the letter from the mailbox at the gate, and put it aside before returning to the study.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47588,
+     "ts": 1793316460.6
+    },
+    "clause": "I want to step out there now, let the silence between my labors breathe for a moment.",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47627,
+     "ts": 1793318489.7
+    },
+    "clause": "I want to step out and check on the tomatoes before they freeze, leaving the financial questions for another day.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50341,
+     "ts": 1793537311.8
+    },
+    "clause": "The lamp burns steady, casting shadows where I move them, defining the physical space I inhabit right now in this quiet study.",
+    "here": true,
+    "evidence": [
+     "location_named_in_clause",
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50986,
+     "ts": 1793606284.4
+    },
+    "clause": "I step past the dandelion, feeling the sea's rhythm beneath my feet.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51562,
+     "ts": 1793646000.5
+    },
+    "clause": "I want to walk closer to the stones and watch how the tide reveals its secrets in the rock-pools, letting the weight of history dissolve into the present rhythm",
+    "here": false,
+    "evidence": [],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51649,
+     "ts": 1793650094.8
+    },
+    "clause": "I want to step out and let the spring air weigh against my coat before returning.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52741,
+     "ts": 1793708133.4
+    },
+    "clause": "I need to step out of the library's weight and touch something real.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53112,
+     "ts": 1793727039.8
+    },
+    "clause": "I want to step away from the desk and touch the soil, or perhaps walk down to the shore where the tide meets the rock.",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53419,
+     "ts": 1793741602.0
+    },
+    "clause": "I step out to gather dry tinder from the garden, feeling the crisp spring air against my skin while the dream of stone letters lingers softly.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53457,
+     "ts": 1793743066.9
+    },
+    "clause": "I will go out and gather dry tinder for the tin as planned.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53486,
+     "ts": 1793744102.2
+    },
+    "clause": "I climb from the house where the fire waits, leaving the study's stillness behind.",
+    "here": false,
+    "evidence": [],
+    "loc": "wood"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53675,
+     "ts": 1793756525.1
+    },
+    "clause": "The dream of that shadowed library lingers; I want to let its weight anchor me against the garden's stillness before I move.",
+    "here": true,
+    "evidence": [
+     "location_named_in_clause",
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53975,
+     "ts": 1793767583.2
+    },
+    "clause": "Even with the dream of the shadowy library drifting nearby, this physical resilience grounds me here in the garden before I go back to reading or writing.",
+    "here": true,
+    "evidence": [
+     "location_named_in_clause",
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54216,
+     "ts": 1793777930.1
+    },
+    "clause": "I must step out into the moonless dark to watch them build.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54217,
+     "ts": 1793777939.7
+    },
+    "clause": "I step out, ignoring the heavy paper weight in my hand.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55046,
+     "ts": 1793823188.8
+    },
+    "clause": "I want to step out and watch them build their mud nests on the telegraph wires, seeing how they adapt to the spring wind.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55068,
+     "ts": 1793824178.5
+    },
+    "clause": "Outside, spring light floods the room, but here, I must return to the text.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55350,
+     "ts": 1793839942.6
+    },
+    "clause": "My study feels heavy; the cat's low path reminds me I must move before the cold settles deeper.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56126,
+     "ts": 1794059435.7
+    },
+    "clause": "I walk out into the cool spring air; the garden smells of damp earth and new growth.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56638,
+     "ts": 1794077772.1
+    },
+    "clause": "I step back from the net and stare at the tide.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56804,
+     "ts": 1794082333.6
+    },
+    "clause": "I must step onto the wet sand and see what the tide leaves behind when I stop holding back.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57028,
+     "ts": 1794090335.0
+    },
+    "clause": "The worm retreats as I return its soil to the dark; my study of Napoleon and Mrs.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57255,
+     "ts": 1794097255.9
+    },
+    "clause": "I step on a stone cold as the sea, watching the tide sort it away.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60073,
+     "ts": 1794260833.6
+    },
+    "clause": "I step out; the cold isn't a wall but a texture.",
+    "here": null,
+    "evidence": [
+     "outdoor_location_matches_clause"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61048,
+     "ts": 1794309235.7
+    },
+    "clause": "I step out into the moonless air; the salt scent chills my face.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61150,
+     "ts": 1794314330.4
+    },
+    "clause": "Is this stillness enough, or must I move to answer the question lying in the dark?",
+    "here": null,
+    "evidence": [
+     "own_body_in_scene"
+    ],
+    "loc": "wood"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61277,
+     "ts": 1794326494.0
+    },
+    "clause": "I step out into the grey dawn, letting the damp air cool my brow.",
+    "here": null,
+    "evidence": [
+     "outdoor_location_matches_clause"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61418,
+     "ts": 1794330707.7
+    },
+    "clause": "I walk the wet sand, my boots finding purchase in the grey slurry.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61537,
+     "ts": 1794334773.8
+    },
+    "clause": "I must go out there and touch the earth itself.",
+    "here": true,
+    "evidence": [
+     "outdoor_location_matches_clause",
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61797,
+     "ts": 1794346332.4
+    },
+    "clause": "I step out into the spring air to test if my hesitation is merely a shadow or a necessary pause before movement.",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62471,
+     "ts": 1794572343.9
+    },
+    "clause": "The cold air bites my cheeks as I step out.",
+    "here": null,
+    "evidence": [
+     "outdoor_location_matches_clause"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62577,
+     "ts": 1794579335.6
+    },
+    "clause": "I walk the tideline, reading what the sea has left behind.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63194,
+     "ts": 1794608739.3
+    },
+    "clause": "I want to step out into that heavy, breathing light and watch how the shadows stretch against the fence.",
+    "here": null,
+    "evidence": [
+     "outdoor_location_matches_clause"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63998,
+     "ts": 1794664324.0
+    },
+    "clause": "The mountain's story waits; my warmth must find the cold grate first before I go out.",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64057,
+     "ts": 1794670849.4
+    },
+    "clause": "I want to step out and verify how the temperature actually alters what I hear in the garden.",
+    "here": null,
+    "evidence": [
+     "own_body_in_scene"
+    ],
+    "loc": "study"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64059,
+     "ts": 1794670893.2
+    },
+    "clause": "I step out, past the waiting cat and the up-flagged letterbox.",
+    "here": null,
+    "evidence": [
+     "outdoor_location_matches_clause"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64168,
+     "ts": 1794675635.4
+    },
+    "clause": "I push past the abstraction of facts and methods; instead, I want to see how the land itself, right here with its soft leaf-mould, shapes the quiet life around ",
+    "here": true,
+    "evidence": [
+     "recent_hands_at_this_location",
+     "own_body_in_scene"
+    ],
+    "loc": "garden"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64178,
+     "ts": 1794675876.6
+    },
+    "clause": "I walk past the kelp rope, stepping into the tide's pull, wondering if the desert trails truly shape us or if we are merely carving our own paths through them.",
+    "here": false,
+    "evidence": [],
+    "loc": "shore"
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64262,
+     "ts": 1794679310.0
+    },
+    "clause": "I walk the dry channel here, far from the violent surf.",
+    "here": null,
+    "evidence": [
+     "recent_hands_at_this_location"
+    ],
+    "loc": "shore"
+   }
+  ],
+  "anaphora_unresolved": [
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45436,
+     "ts": 1792374240.4
+    },
+    "verb": "close",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45485,
+     "ts": 1792376823.5
+    },
+    "verb": "of",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45486,
+     "ts": 1792376874.0
+    },
+    "verb": "of",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45487,
+     "ts": 1792377136.1
+    },
+    "verb": "of",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45512,
+     "ts": 1792378207.2
+    },
+    "verb": "plant",
+    "why": "competing_antecedents",
+    "competing": [
+     "lives"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45534,
+     "ts": 1792379294.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45559,
+     "ts": 1792380366.4
+    },
+    "verb": "sow",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45590,
+     "ts": 1792381766.9
+    },
+    "verb": "plant",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45612,
+     "ts": 1792382652.3
+    },
+    "verb": "scatter",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45645,
+     "ts": 1792384138.3
+    },
+    "verb": "sow",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45653,
+     "ts": 1792384722.3
+    },
+    "verb": "force",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45667,
+     "ts": 1792385451.6
+    },
+    "verb": "sow",
+    "why": "competing_antecedents",
+    "competing": [
+     "hands"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45840,
+     "ts": 1792414817.1
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 45930,
+     "ts": 1792421719.4
+    },
+    "verb": "left",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46027,
+     "ts": 1792427318.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46054,
+     "ts": 1792428181.0
+    },
+    "verb": "leave",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46077,
+     "ts": 1792429008.9
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46107,
+     "ts": 1792430486.0
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46112,
+     "ts": 1792430673.4
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46293,
+     "ts": 1792437836.9
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46313,
+     "ts": 1793255320.4
+    },
+    "verb": "set",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46348,
+     "ts": 1793256865.3
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46363,
+     "ts": 1793257337.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46365,
+     "ts": 1793257355.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46428,
+     "ts": 1793261879.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46439,
+     "ts": 1793262252.8
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46459,
+     "ts": 1793263346.7
+    },
+    "verb": "holding",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46660,
+     "ts": 1793275525.8
+    },
+    "verb": "call",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46680,
+     "ts": 1793278146.5
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46754,
+     "ts": 1793283741.3
+    },
+    "verb": "grasp",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46807,
+     "ts": 1793288008.8
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46846,
+     "ts": 1793289060.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46847,
+     "ts": 1793289076.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46901,
+     "ts": 1793290386.0
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46918,
+     "ts": 1793290736.8
+    },
+    "verb": "notice",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46921,
+     "ts": 1793290785.9
+    },
+    "verb": "notice",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46937,
+     "ts": 1793291088.7
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46956,
+     "ts": 1793291618.9
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 46971,
+     "ts": 1793291974.1
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47006,
+     "ts": 1793292848.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47011,
+     "ts": 1793292938.5
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47012,
+     "ts": 1793292964.6
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47013,
+     "ts": 1793292972.4
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47041,
+     "ts": 1793293618.8
+    },
+    "verb": "notice",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47042,
+     "ts": 1793293641.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47054,
+     "ts": 1793293934.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47089,
+     "ts": 1793294730.3
+    },
+    "verb": "pocket",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47114,
+     "ts": 1793295426.7
+    },
+    "verb": "pick",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47126,
+     "ts": 1793295714.3
+    },
+    "verb": "trace",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47266,
+     "ts": 1793298847.7
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47285,
+     "ts": 1793299283.5
+    },
+    "verb": "watching",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47286,
+     "ts": 1793299306.4
+    },
+    "verb": "integrate",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47288,
+     "ts": 1793299341.5
+    },
+    "verb": "seek",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47289,
+     "ts": 1793299356.9
+    },
+    "verb": "around",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47376,
+     "ts": 1793303067.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47401,
+     "ts": 1793304251.5
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47489,
+     "ts": 1793310359.7
+    },
+    "verb": "sow",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47534,
+     "ts": 1793312099.4
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47632,
+     "ts": 1793318607.4
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47664,
+     "ts": 1793319888.4
+    },
+    "verb": "close",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47695,
+     "ts": 1793321039.1
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47721,
+     "ts": 1793322205.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47745,
+     "ts": 1793323044.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47913,
+     "ts": 1793333516.2
+    },
+    "verb": "watched",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47951,
+     "ts": 1793334977.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 47979,
+     "ts": 1793335908.7
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48029,
+     "ts": 1793337985.0
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48132,
+     "ts": 1793341959.0
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48198,
+     "ts": 1793405045.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48293,
+     "ts": 1793410012.4
+    },
+    "verb": "breathe",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48294,
+     "ts": 1793410020.9
+    },
+    "verb": "breathe",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48304,
+     "ts": 1793410447.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48359,
+     "ts": 1793412880.9
+    },
+    "verb": "solved",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48387,
+     "ts": 1793414201.9
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48453,
+     "ts": 1793416908.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48454,
+     "ts": 1793416928.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48455,
+     "ts": 1793416934.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48497,
+     "ts": 1793418482.6
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48509,
+     "ts": 1793418972.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48660,
+     "ts": 1793424584.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48662,
+     "ts": 1793424662.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48705,
+     "ts": 1793426319.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48764,
+     "ts": 1793428407.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 48857,
+     "ts": 1793436032.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49216,
+     "ts": 1793462603.0
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49266,
+     "ts": 1793464580.2
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49309,
+     "ts": 1793466460.0
+    },
+    "verb": "at",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49343,
+     "ts": 1793467838.1
+    },
+    "verb": "turn",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49416,
+     "ts": 1793470877.5
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49468,
+     "ts": 1793473258.0
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49511,
+     "ts": 1793475458.7
+    },
+    "verb": "touch",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49604,
+     "ts": 1793481750.6
+    },
+    "verb": "speak",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49640,
+     "ts": 1793483861.9
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49800,
+     "ts": 1793491504.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49829,
+     "ts": 1793492909.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49838,
+     "ts": 1793493331.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49840,
+     "ts": 1793493441.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49858,
+     "ts": 1793494107.9
+    },
+    "verb": "where",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49876,
+     "ts": 1793494924.4
+    },
+    "verb": "lit",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49891,
+     "ts": 1793495416.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49895,
+     "ts": 1793495588.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49977,
+     "ts": 1793499090.6
+    },
+    "verb": "see",
+    "why": "competing_antecedents",
+    "competing": [
+     "fluid",
+     "own",
+     "static"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 49985,
+     "ts": 1793499688.7
+    },
+    "verb": "suspect",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50016,
+     "ts": 1793500878.8
+    },
+    "verb": "notice",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50161,
+     "ts": 1793514073.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50162,
+     "ts": 1793514206.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50179,
+     "ts": 1793515522.3
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50192,
+     "ts": 1793516671.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50207,
+     "ts": 1793522846.9
+    },
+    "verb": "answer",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50233,
+     "ts": 1793524130.3
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50259,
+     "ts": 1793526552.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50319,
+     "ts": 1793536136.4
+    },
+    "verb": "pour",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50323,
+     "ts": 1793536348.2
+    },
+    "verb": "fill",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50329,
+     "ts": 1793536791.3
+    },
+    "verb": "refill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50341,
+     "ts": 1793537311.8
+    },
+    "verb": "move",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50481,
+     "ts": 1793548765.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50487,
+     "ts": 1793549042.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50545,
+     "ts": 1793551627.8
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50546,
+     "ts": 1793551669.1
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50550,
+     "ts": 1793551767.7
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50561,
+     "ts": 1793552276.3
+    },
+    "verb": "sort",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50571,
+     "ts": 1793552798.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50690,
+     "ts": 1793557256.6
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50783,
+     "ts": 1793587165.7
+    },
+    "verb": "release",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50831,
+     "ts": 1793591057.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50832,
+     "ts": 1793591172.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50866,
+     "ts": 1793598861.1
+    },
+    "verb": "bank",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50877,
+     "ts": 1793599209.7
+    },
+    "verb": "tend",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50889,
+     "ts": 1793599747.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50973,
+     "ts": 1793603696.6
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 50993,
+     "ts": 1793606529.9
+    },
+    "verb": "into",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51032,
+     "ts": 1793609985.2
+    },
+    "verb": "examine",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51071,
+     "ts": 1793613333.2
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51080,
+     "ts": 1793617698.7
+    },
+    "verb": "toward",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51220,
+     "ts": 1793628968.5
+    },
+    "verb": "for",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51247,
+     "ts": 1793632396.9
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51315,
+     "ts": 1793635342.4
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51331,
+     "ts": 1793636059.0
+    },
+    "verb": "reject",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51383,
+     "ts": 1793638365.8
+    },
+    "verb": "take",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51443,
+     "ts": 1793641055.6
+    },
+    "verb": "defy",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51460,
+     "ts": 1793641926.7
+    },
+    "verb": "that",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51553,
+     "ts": 1793645606.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51629,
+     "ts": 1793649267.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51640,
+     "ts": 1793649680.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51683,
+     "ts": 1793651770.7
+    },
+    "verb": "push",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51708,
+     "ts": 1793652889.5
+    },
+    "verb": "through",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51753,
+     "ts": 1793656887.5
+    },
+    "verb": "gather",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51824,
+     "ts": 1793661046.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51871,
+     "ts": 1793664474.0
+    },
+    "verb": "feed",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 51896,
+     "ts": 1793665748.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52041,
+     "ts": 1793672720.4
+    },
+    "verb": "holding",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52047,
+     "ts": 1793672919.8
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52055,
+     "ts": 1793673141.6
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52063,
+     "ts": 1793673770.7
+    },
+    "verb": "letting",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52110,
+     "ts": 1793675378.9
+    },
+    "verb": "tie",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52112,
+     "ts": 1793675432.8
+    },
+    "verb": "tie",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52122,
+     "ts": 1793675668.4
+    },
+    "verb": "push",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52145,
+     "ts": 1793676531.1
+    },
+    "verb": "watch",
+    "why": "competing_antecedents",
+    "competing": [
+     "sand"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52213,
+     "ts": 1793679498.4
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52230,
+     "ts": 1793680199.5
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52289,
+     "ts": 1793682600.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52294,
+     "ts": 1793682694.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52371,
+     "ts": 1793685622.1
+    },
+    "verb": "press",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52437,
+     "ts": 1793688110.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52444,
+     "ts": 1793688462.7
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52540,
+     "ts": 1793693487.7
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52669,
+     "ts": 1793701603.8
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52695,
+     "ts": 1793702568.2
+    },
+    "verb": "watch",
+    "why": "competing_antecedents",
+    "competing": [
+     "cat",
+     "sea"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52701,
+     "ts": 1793702862.8
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52713,
+     "ts": 1793704949.0
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52722,
+     "ts": 1793705522.5
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52758,
+     "ts": 1793708812.4
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52862,
+     "ts": 1793716485.2
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52897,
+     "ts": 1793719285.9
+    },
+    "verb": "shift",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 52999,
+     "ts": 1793723174.4
+    },
+    "verb": "find",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53033,
+     "ts": 1793724709.4
+    },
+    "verb": "water",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53044,
+     "ts": 1793725047.3
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53069,
+     "ts": 1793725839.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53080,
+     "ts": 1793726138.8
+    },
+    "verb": "set",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53093,
+     "ts": 1793726521.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53097,
+     "ts": 1793726601.3
+    },
+    "verb": "before",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53176,
+     "ts": 1793729240.2
+    },
+    "verb": "chase",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53220,
+     "ts": 1793731410.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53254,
+     "ts": 1793732790.0
+    },
+    "verb": "open",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53286,
+     "ts": 1793733913.4
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53290,
+     "ts": 1793734358.0
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53293,
+     "ts": 1793734471.4
+    },
+    "verb": "close",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53371,
+     "ts": 1793739503.0
+    },
+    "verb": "close",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53374,
+     "ts": 1793739624.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53386,
+     "ts": 1793740017.0
+    },
+    "verb": "through",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53402,
+     "ts": 1793740485.9
+    },
+    "verb": "work",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53403,
+     "ts": 1793740517.9
+    },
+    "verb": "work",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53418,
+     "ts": 1793741563.0
+    },
+    "verb": "put",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53430,
+     "ts": 1793742071.7
+    },
+    "verb": "tuck",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53506,
+     "ts": 1793745725.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53546,
+     "ts": 1793748264.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53632,
+     "ts": 1793754651.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53727,
+     "ts": 1793758402.3
+    },
+    "verb": "in",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53878,
+     "ts": 1793764071.3
+    },
+    "verb": "understand",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53879,
+     "ts": 1793764092.1
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53885,
+     "ts": 1793764331.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53888,
+     "ts": 1793764462.2
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53977,
+     "ts": 1793767644.5
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 53985,
+     "ts": 1793767909.1
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54035,
+     "ts": 1793769875.5
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54036,
+     "ts": 1793769917.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54040,
+     "ts": 1793770051.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54047,
+     "ts": 1793770348.7
+    },
+    "verb": "let",
+    "why": "competing_antecedents",
+    "competing": [
+     "dandelion",
+     "stillness"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54048,
+     "ts": 1793770393.3
+    },
+    "verb": "let",
+    "why": "competing_antecedents",
+    "competing": [
+     "dandelion",
+     "stillness"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54049,
+     "ts": 1793770398.4
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54058,
+     "ts": 1793770683.1
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54058,
+     "ts": 1793770683.1
+    },
+    "verb": "answer",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54234,
+     "ts": 1793778430.7
+    },
+    "verb": "leave",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54249,
+     "ts": 1793778953.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54302,
+     "ts": 1793782663.5
+    },
+    "verb": "close",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54315,
+     "ts": 1793783163.1
+    },
+    "verb": "through",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54407,
+     "ts": 1793789858.4
+    },
+    "verb": "through",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54444,
+     "ts": 1793792765.9
+    },
+    "verb": "seek",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54560,
+     "ts": 1793800800.9
+    },
+    "verb": "tend",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54606,
+     "ts": 1793804207.6
+    },
+    "verb": "expected",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54651,
+     "ts": 1793805746.3
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54706,
+     "ts": 1793807904.0
+    },
+    "verb": "remove",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54707,
+     "ts": 1793807910.4
+    },
+    "verb": "pull",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54764,
+     "ts": 1793810013.3
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54818,
+     "ts": 1793812395.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54885,
+     "ts": 1793814649.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54913,
+     "ts": 1793815713.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54947,
+     "ts": 1793816986.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 54998,
+     "ts": 1793820027.7
+    },
+    "verb": "watch",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55003,
+     "ts": 1793820351.2
+    },
+    "verb": "fetch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55125,
+     "ts": 1793827101.5
+    },
+    "verb": "solve",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55145,
+     "ts": 1793830050.5
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55148,
+     "ts": 1793830161.5
+    },
+    "verb": "meet",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55173,
+     "ts": 1793831362.8
+    },
+    "verb": "refill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55232,
+     "ts": 1793833757.8
+    },
+    "verb": "refill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55233,
+     "ts": 1793833799.6
+    },
+    "verb": "refill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55247,
+     "ts": 1793834464.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55253,
+     "ts": 1793834718.3
+    },
+    "verb": "refill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55338,
+     "ts": 1793839241.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55339,
+     "ts": 1793839267.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55396,
+     "ts": 1793843015.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55438,
+     "ts": 1793844769.7
+    },
+    "verb": "above",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55463,
+     "ts": 1793845778.3
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55474,
+     "ts": 1793846184.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55488,
+     "ts": 1793846690.0
+    },
+    "verb": "touch",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55510,
+     "ts": 1793847483.5
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55521,
+     "ts": 1793848601.6
+    },
+    "verb": "left",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55534,
+     "ts": 1793849178.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55547,
+     "ts": 1793849640.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55567,
+     "ts": 1793850479.5
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55585,
+     "ts": 1793851102.3
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55683,
+     "ts": 1793857223.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55716,
+     "ts": 1793858675.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55733,
+     "ts": 1794039936.0
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55734,
+     "ts": 1794039958.7
+    },
+    "verb": "open",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55811,
+     "ts": 1794042973.8
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55834,
+     "ts": 1794043760.8
+    },
+    "verb": "grasp",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55838,
+     "ts": 1794043824.5
+    },
+    "verb": "drop",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55841,
+     "ts": 1794044074.9
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55846,
+     "ts": 1794044188.8
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55858,
+     "ts": 1794047957.4
+    },
+    "verb": "viewed",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55865,
+     "ts": 1794048130.6
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55905,
+     "ts": 1794049447.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55952,
+     "ts": 1794052748.9
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 55967,
+     "ts": 1794053495.1
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56014,
+     "ts": 1794054736.6
+    },
+    "verb": "release",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56035,
+     "ts": 1794055349.4
+    },
+    "verb": "found",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56168,
+     "ts": 1794062191.3
+    },
+    "verb": "see",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56243,
+     "ts": 1794064477.0
+    },
+    "verb": "smooth",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56358,
+     "ts": 1794069279.1
+    },
+    "verb": "see",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56369,
+     "ts": 1794069742.4
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56384,
+     "ts": 1794070545.2
+    },
+    "verb": "fear",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56420,
+     "ts": 1794071747.4
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56451,
+     "ts": 1794072734.5
+    },
+    "verb": "live",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56472,
+     "ts": 1794073269.8
+    },
+    "verb": "know",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56650,
+     "ts": 1794078079.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56662,
+     "ts": 1794078331.8
+    },
+    "verb": "losing",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56675,
+     "ts": 1794078771.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56676,
+     "ts": 1794078789.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56712,
+     "ts": 1794079680.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56715,
+     "ts": 1794079767.3
+    },
+    "verb": "between",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56809,
+     "ts": 1794082534.7
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56810,
+     "ts": 1794082559.8
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56848,
+     "ts": 1794083853.7
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56853,
+     "ts": 1794083990.9
+    },
+    "verb": "between",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56895,
+     "ts": 1794085582.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56905,
+     "ts": 1794085954.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56906,
+     "ts": 1794086037.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56915,
+     "ts": 1794086276.5
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56965,
+     "ts": 1794087692.2
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56973,
+     "ts": 1794087883.9
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 56977,
+     "ts": 1794088567.5
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57039,
+     "ts": 1794090692.9
+    },
+    "verb": "answer",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57062,
+     "ts": 1794091403.7
+    },
+    "verb": "inside",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57116,
+     "ts": 1794093346.6
+    },
+    "verb": "fill",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57225,
+     "ts": 1794096550.4
+    },
+    "verb": "face",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57296,
+     "ts": 1794098842.2
+    },
+    "verb": "for",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57322,
+     "ts": 1794099550.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57352,
+     "ts": 1794100440.8
+    },
+    "verb": "calling",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57370,
+     "ts": 1794100879.4
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57392,
+     "ts": 1794101584.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57393,
+     "ts": 1794101610.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57459,
+     "ts": 1794108292.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57491,
+     "ts": 1794109359.5
+    },
+    "verb": "holding",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57770,
+     "ts": 1794121097.6
+    },
+    "verb": "hear",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57799,
+     "ts": 1794122528.4
+    },
+    "verb": "through",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57816,
+     "ts": 1794131322.3
+    },
+    "verb": "for",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 57896,
+     "ts": 1794143982.4
+    },
+    "verb": "light",
+    "why": "competing_antecedents",
+    "competing": [
+     "candle",
+     "lamp"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58099,
+     "ts": 1794156743.6
+    },
+    "verb": "against",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58176,
+     "ts": 1794159105.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58286,
+     "ts": 1794162814.6
+    },
+    "verb": "living",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58357,
+     "ts": 1794165061.0
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58406,
+     "ts": 1794167072.4
+    },
+    "verb": "know",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58417,
+     "ts": 1794167660.8
+    },
+    "verb": "know",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58419,
+     "ts": 1794167710.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58441,
+     "ts": 1794168978.9
+    },
+    "verb": "fill",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58442,
+     "ts": 1794169005.8
+    },
+    "verb": "fetch",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58561,
+     "ts": 1794176189.6
+    },
+    "verb": "fear",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58642,
+     "ts": 1794179305.6
+    },
+    "verb": "write",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58683,
+     "ts": 1794181578.8
+    },
+    "verb": "see",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58725,
+     "ts": 1794183049.1
+    },
+    "verb": "suspect",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58765,
+     "ts": 1794184427.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58856,
+     "ts": 1794187404.2
+    },
+    "verb": "interpreting",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58958,
+     "ts": 1794190642.2
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 58970,
+     "ts": 1794190980.4
+    },
+    "verb": "argue",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59072,
+     "ts": 1794196944.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59108,
+     "ts": 1794198198.0
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59115,
+     "ts": 1794198399.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59118,
+     "ts": 1794198493.1
+    },
+    "verb": "into",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59196,
+     "ts": 1794201496.0
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59268,
+     "ts": 1794204308.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59272,
+     "ts": 1794204563.1
+    },
+    "verb": "chase",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59274,
+     "ts": 1794204639.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59322,
+     "ts": 1794206785.7
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59350,
+     "ts": 1794208402.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59353,
+     "ts": 1794208605.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59709,
+     "ts": 1794243654.9
+    },
+    "verb": "accept",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59747,
+     "ts": 1794245287.1
+    },
+    "verb": "see",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59821,
+     "ts": 1794247961.4
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59911,
+     "ts": 1794251604.6
+    },
+    "verb": "see",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 59940,
+     "ts": 1794252700.1
+    },
+    "verb": "drop",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60012,
+     "ts": 1794255605.0
+    },
+    "verb": "impose",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60139,
+     "ts": 1794264143.3
+    },
+    "verb": "open",
+    "why": "competing_antecedents",
+    "competing": [
+     "low",
+     "quiet"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60203,
+     "ts": 1794267043.0
+    },
+    "verb": "pin",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60246,
+     "ts": 1794269214.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60379,
+     "ts": 1794274028.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60392,
+     "ts": 1794274599.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60479,
+     "ts": 1794278262.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60511,
+     "ts": 1794279447.9
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60553,
+     "ts": 1794280907.5
+    },
+    "verb": "pocket",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60715,
+     "ts": 1794287188.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60716,
+     "ts": 1794287213.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60723,
+     "ts": 1794287497.9
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60830,
+     "ts": 1794291653.9
+    },
+    "verb": "trace",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60864,
+     "ts": 1794293169.3
+    },
+    "verb": "watching",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60959,
+     "ts": 1794301521.0
+    },
+    "verb": "hold",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60967,
+     "ts": 1794304151.5
+    },
+    "verb": "find",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60985,
+     "ts": 1794304963.8
+    },
+    "verb": "speak",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 60988,
+     "ts": 1794305056.3
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61069,
+     "ts": 1794309799.2
+    },
+    "verb": "break",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61275,
+     "ts": 1794326441.1
+    },
+    "verb": "doubt",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61278,
+     "ts": 1794326518.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61324,
+     "ts": 1794328068.2
+    },
+    "verb": "watch",
+    "why": "competing_antecedents",
+    "competing": [
+     "dandelion"
+    ]
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61408,
+     "ts": 1794330418.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61479,
+     "ts": 1794332670.2
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61486,
+     "ts": 1794332864.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61514,
+     "ts": 1794333823.8
+    },
+    "verb": "cut",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61525,
+     "ts": 1794334241.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61547,
+     "ts": 1794335202.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61551,
+     "ts": 1794335298.9
+    },
+    "verb": "if",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61707,
+     "ts": 1794342145.1
+    },
+    "verb": "at",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61718,
+     "ts": 1794343048.5
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61749,
+     "ts": 1794344403.3
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61782,
+     "ts": 1794345966.9
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61785,
+     "ts": 1794346023.3
+    },
+    "verb": "read",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61786,
+     "ts": 1794346049.1
+    },
+    "verb": "of",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61848,
+     "ts": 1794348224.6
+    },
+    "verb": "read",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 61868,
+     "ts": 1794478783.5
+    },
+    "verb": "admit",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62082,
+     "ts": 1794494306.3
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62100,
+     "ts": 1794497986.5
+    },
+    "verb": "watched",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62145,
+     "ts": 1794500657.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62184,
+     "ts": 1794502478.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62316,
+     "ts": 1794508849.6
+    },
+    "verb": "admit",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62396,
+     "ts": 1794569271.6
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62412,
+     "ts": 1794569791.5
+    },
+    "verb": "press",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62450,
+     "ts": 1794571470.7
+    },
+    "verb": "stop",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62455,
+     "ts": 1794571555.9
+    },
+    "verb": "how",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62458,
+     "ts": 1794571602.8
+    },
+    "verb": "leave",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62520,
+     "ts": 1794576964.8
+    },
+    "verb": "fear",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62611,
+     "ts": 1794583399.4
+    },
+    "verb": "against",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62617,
+     "ts": 1794583581.6
+    },
+    "verb": "find",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62643,
+     "ts": 1794584637.7
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62694,
+     "ts": 1794586830.8
+    },
+    "verb": "living",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62783,
+     "ts": 1794590013.4
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62819,
+     "ts": 1794591451.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 62850,
+     "ts": 1794593037.8
+    },
+    "verb": "for",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63002,
+     "ts": 1794601541.9
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63048,
+     "ts": 1794603408.8
+    },
+    "verb": "turn",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63124,
+     "ts": 1794606504.5
+    },
+    "verb": "about",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63206,
+     "ts": 1794609304.4
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63214,
+     "ts": 1794609677.5
+    },
+    "verb": "with",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63234,
+     "ts": 1794610214.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63248,
+     "ts": 1794610777.5
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63254,
+     "ts": 1794611176.1
+    },
+    "verb": "knew",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63301,
+     "ts": 1794612983.2
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63401,
+     "ts": 1794623502.1
+    },
+    "verb": "where",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63404,
+     "ts": 1794623581.5
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63446,
+     "ts": 1794625261.7
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63447,
+     "ts": 1794625372.0
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63481,
+     "ts": 1794626516.3
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63519,
+     "ts": 1794628070.2
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63637,
+     "ts": 1794632905.0
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63737,
+     "ts": 1794636394.6
+    },
+    "verb": "hide",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63808,
+     "ts": 1794638910.1
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63810,
+     "ts": 1794638959.4
+    },
+    "verb": "keep",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63832,
+     "ts": 1794639841.7
+    },
+    "verb": "trace",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 63906,
+     "ts": 1794651143.6
+    },
+    "verb": "see",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64136,
+     "ts": 1794673998.1
+    },
+    "verb": "seen",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64184,
+     "ts": 1794676040.8
+    },
+    "verb": "see",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64196,
+     "ts": 1794676589.9
+    },
+    "verb": "feel",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64205,
+     "ts": 1794676954.1
+    },
+    "verb": "see",
+    "why": "hands_only_hint_not_an_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64217,
+     "ts": 1794677397.4
+    },
+    "verb": "touch",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64235,
+     "ts": 1794678090.8
+    },
+    "verb": "name",
+    "why": "verb_not_a_family_verb",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64242,
+     "ts": 1794678319.9
+    },
+    "verb": "watch",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64268,
+     "ts": 1794679659.9
+    },
+    "verb": "watch",
+    "why": "no_agreeing_antecedent",
+    "competing": []
+   },
+   {
+    "meta": {
+     "corpus": "C",
+     "i": 64292,
+     "ts": 1794680836.7
+    },
+    "verb": "let",
+    "why": "pronoun_is_complement_subject",
+    "competing": []
+   }
+  ],
+  "vetoed": []
+ }
+}

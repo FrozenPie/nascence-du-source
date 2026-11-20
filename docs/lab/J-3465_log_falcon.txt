@@ -1,0 +1,4 @@
+[lab_env] isolated — lab dir: C:\Nascence\data\_lab\20261116_220141 (DB_PATH + 0 extra global(s) redirected)
+falcon V0 37 {'support': 'General Melas transmitted a message to our advance posts requesting', 'answerable': True, 'unsupported_link': False, 'why': "The question asks about Napoleon's view after Marengo, which is supported by the mention of Melas' message in the material."} None 259.7
+falcon V0 39 {'support': 'Napoleon actively cultivated a personal bond with his troops by flattering their vanity and praising specific aspects of their performance.', 'answerable': True, 'unsupported_link': False, 'why': 'The question asks for specific strategies mentioned in the material, which can be answered directly.'} None 242.0
+falcon V0 58 None TimeoutError 420.6

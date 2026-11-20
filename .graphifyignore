@@ -1,0 +1,12 @@
+data/
+models/
+engine/
+docs/archive/
+graphify-out/
+__pycache__/
+*.db
+*.jsonl
+*.log
+*.gguf
+scratch/
+core/needle_triage.py

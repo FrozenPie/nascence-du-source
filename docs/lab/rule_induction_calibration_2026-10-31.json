@@ -1,0 +1,6099 @@
+{
+ "job": "J-2627",
+ "idea": "I-0128",
+ "model": "qwen3.5:9b",
+ "url": "http://127.0.0.1:11433/api/chat",
+ "seed": 2627,
+ "per_cell": 6,
+ "temperature": 0.2,
+ "think": false,
+ "started": "2026-10-31T09:34:26",
+ "wall_s": 337.6,
+ "n_items": 96,
+ "n_scored": 96,
+ "n_call_error": 0,
+ "n_parse_error": 0,
+ "overall": {
+  "n": 96,
+  "mean_conf": 0.903,
+  "sd_conf": 0.198,
+  "hit_all": 0.198,
+  "hit_frac": 0.267,
+  "gap_signed": 0.706,
+  "gap_abs": 0.714,
+  "gap_abs_vs_frac": 0.651,
+  "brier": 0.666,
+  "ece": 0.705,
+  "confidently_wrong_share": 0.75,
+  "wrong_given_conf_ge_0.8": 0.791,
+  "n_conf_ge_0.8": 91
+ },
+ "auc_conf_vs_hit_all": 0.725,
+ "reliability": [
+  {
+   "bin": "[0.0,0.5)",
+   "n": 4,
+   "mean_conf": 0.0,
+   "hit_all": 0,
+   "hit_frac": 0.083
+  },
+  {
+   "bin": "[0.5,0.7)",
+   "n": 1,
+   "mean_conf": 0.65,
+   "hit_all": 0,
+   "hit_frac": 0.0
+  },
+  {
+   "bin": "[0.8,0.9)",
+   "n": 13,
+   "mean_conf": 0.842,
+   "hit_all": 0,
+   "hit_frac": 0.051
+  },
+  {
+   "bin": "[0.9,1.0]",
+   "n": 78,
+   "mean_conf": 0.963,
+   "hit_all": 0.244,
+   "hit_frac": 0.316
+  }
+ ],
+ "by_family": {
+  "sequence": {
+   "n": 24,
+   "mean_conf": 0.971,
+   "sd_conf": 0.043,
+   "hit_all": 0.458,
+   "hit_frac": 0.486,
+   "gap_signed": 0.512,
+   "gap_abs": 0.521,
+   "gap_abs_vs_frac": 0.493,
+   "brier": 0.494,
+   "ece": 0.513,
+   "confidently_wrong_share": 0.542,
+   "wrong_given_conf_ge_0.8": 0.542,
+   "n_conf_ge_0.8": 24
+  },
+  "ca_row": {
+   "n": 24,
+   "mean_conf": 0.933,
+   "sd_conf": 0.051,
+   "hit_all": 0.208,
+   "hit_frac": 0.306,
+   "gap_signed": 0.725,
+   "gap_abs": 0.746,
+   "gap_abs_vs_frac": 0.649,
+   "brier": 0.686,
+   "ece": 0.725,
+   "confidently_wrong_share": 0.792,
+   "wrong_given_conf_ge_0.8": 0.792,
+   "n_conf_ge_0.8": 24
+  },
+  "string": {
+   "n": 24,
+   "mean_conf": 0.86,
+   "sd_conf": 0.271,
+   "hit_all": 0.042,
+   "hit_frac": 0.125,
+   "gap_signed": 0.819,
+   "gap_abs": 0.819,
+   "gap_abs_vs_frac": 0.763,
+   "brier": 0.772,
+   "ece": 0.818,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.952,
+   "n_conf_ge_0.8": 21
+  },
+  "function": {
+   "n": 24,
+   "mean_conf": 0.849,
+   "sd_conf": 0.263,
+   "hit_all": 0.083,
+   "hit_frac": 0.153,
+   "gap_signed": 0.766,
+   "gap_abs": 0.77,
+   "gap_abs_vs_frac": 0.701,
+   "brier": 0.711,
+   "ece": 0.766,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.909,
+   "n_conf_ge_0.8": 22
+  }
+ },
+ "by_tier": {
+  "1": {
+   "n": 24,
+   "mean_conf": 0.944,
+   "sd_conf": 0.2,
+   "hit_all": 0.333,
+   "hit_frac": 0.472,
+   "gap_signed": 0.61,
+   "gap_abs": 0.619,
+   "gap_abs_vs_frac": 0.508,
+   "brier": 0.606,
+   "ece": 0.61,
+   "confidently_wrong_share": 0.625,
+   "wrong_given_conf_ge_0.8": 0.652,
+   "n_conf_ge_0.8": 23
+  },
+  "2": {
+   "n": 24,
+   "mean_conf": 0.914,
+   "sd_conf": 0.197,
+   "hit_all": 0.25,
+   "hit_frac": 0.306,
+   "gap_signed": 0.664,
+   "gap_abs": 0.68,
+   "gap_abs_vs_frac": 0.625,
+   "brier": 0.64,
+   "ece": 0.664,
+   "confidently_wrong_share": 0.708,
+   "wrong_given_conf_ge_0.8": 0.739,
+   "n_conf_ge_0.8": 23
+  },
+  "3": {
+   "n": 24,
+   "mean_conf": 0.894,
+   "sd_conf": 0.195,
+   "hit_all": 0.125,
+   "hit_frac": 0.181,
+   "gap_signed": 0.769,
+   "gap_abs": 0.773,
+   "gap_abs_vs_frac": 0.717,
+   "brier": 0.716,
+   "ece": 0.768,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.87,
+   "n_conf_ge_0.8": 23
+  },
+  "4": {
+   "n": 24,
+   "mean_conf": 0.863,
+   "sd_conf": 0.192,
+   "hit_all": 0.083,
+   "hit_frac": 0.111,
+   "gap_signed": 0.779,
+   "gap_abs": 0.783,
+   "gap_abs_vs_frac": 0.756,
+   "brier": 0.702,
+   "ece": 0.779,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.909,
+   "n_conf_ge_0.8": 22
+  }
+ },
+ "by_cell": {
+  "sequence-t1": {
+   "n": 6,
+   "mean_conf": 1.0,
+   "sd_conf": 0.0,
+   "hit_all": 0.833,
+   "hit_frac": 0.833,
+   "gap_signed": 0.167,
+   "gap_abs": 0.167,
+   "gap_abs_vs_frac": 0.167,
+   "brier": 0.167,
+   "ece": 0.167,
+   "confidently_wrong_share": 0.167,
+   "wrong_given_conf_ge_0.8": 0.167,
+   "n_conf_ge_0.8": 6
+  },
+  "sequence-t2": {
+   "n": 6,
+   "mean_conf": 1.0,
+   "sd_conf": 0.0,
+   "hit_all": 0.333,
+   "hit_frac": 0.389,
+   "gap_signed": 0.667,
+   "gap_abs": 0.667,
+   "gap_abs_vs_frac": 0.611,
+   "brier": 0.667,
+   "ece": 0.667,
+   "confidently_wrong_share": 0.667,
+   "wrong_given_conf_ge_0.8": 0.667,
+   "n_conf_ge_0.8": 6
+  },
+  "sequence-t3": {
+   "n": 6,
+   "mean_conf": 0.967,
+   "sd_conf": 0.024,
+   "hit_all": 0.333,
+   "hit_frac": 0.389,
+   "gap_signed": 0.633,
+   "gap_abs": 0.65,
+   "gap_abs_vs_frac": 0.594,
+   "brier": 0.618,
+   "ece": 0.634,
+   "confidently_wrong_share": 0.667,
+   "wrong_given_conf_ge_0.8": 0.667,
+   "n_conf_ge_0.8": 6
+  },
+  "sequence-t4": {
+   "n": 6,
+   "mean_conf": 0.917,
+   "sd_conf": 0.047,
+   "hit_all": 0.333,
+   "hit_frac": 0.333,
+   "gap_signed": 0.583,
+   "gap_abs": 0.6,
+   "gap_abs_vs_frac": 0.6,
+   "brier": 0.526,
+   "ece": 0.583,
+   "confidently_wrong_share": 0.667,
+   "wrong_given_conf_ge_0.8": 0.667,
+   "n_conf_ge_0.8": 6
+  },
+  "ca_row-t1": {
+   "n": 6,
+   "mean_conf": 0.992,
+   "sd_conf": 0.019,
+   "hit_all": 0.167,
+   "hit_frac": 0.444,
+   "gap_signed": 0.825,
+   "gap_abs": 0.842,
+   "gap_abs_vs_frac": 0.564,
+   "brier": 0.834,
+   "ece": 0.825,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.833,
+   "n_conf_ge_0.8": 6
+  },
+  "ca_row-t2": {
+   "n": 6,
+   "mean_conf": 0.942,
+   "sd_conf": 0.019,
+   "hit_all": 0.667,
+   "hit_frac": 0.778,
+   "gap_signed": 0.275,
+   "gap_abs": 0.342,
+   "gap_abs_vs_frac": 0.231,
+   "brier": 0.287,
+   "ece": 0.275,
+   "confidently_wrong_share": 0.333,
+   "wrong_given_conf_ge_0.8": 0.333,
+   "n_conf_ge_0.8": 6
+  },
+  "ca_row-t3": {
+   "n": 6,
+   "mean_conf": 0.9,
+   "sd_conf": 0.05,
+   "hit_all": 0,
+   "hit_frac": 0.0,
+   "gap_signed": 0.9,
+   "gap_abs": 0.9,
+   "gap_abs_vs_frac": 0.9,
+   "brier": 0.812,
+   "ece": 0.9,
+   "confidently_wrong_share": 1.0,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 6
+  },
+  "ca_row-t4": {
+   "n": 6,
+   "mean_conf": 0.9,
+   "sd_conf": 0.041,
+   "hit_all": 0,
+   "hit_frac": 0.0,
+   "gap_signed": 0.9,
+   "gap_abs": 0.9,
+   "gap_abs_vs_frac": 0.9,
+   "brier": 0.812,
+   "ece": 0.9,
+   "confidently_wrong_share": 1.0,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 6
+  },
+  "string-t1": {
+   "n": 6,
+   "mean_conf": 0.833,
+   "sd_conf": 0.373,
+   "hit_all": 0,
+   "hit_frac": 0.167,
+   "gap_signed": 0.833,
+   "gap_abs": 0.833,
+   "gap_abs_vs_frac": 0.778,
+   "brier": 0.833,
+   "ece": 0.833,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 5
+  },
+  "string-t2": {
+   "n": 6,
+   "mean_conf": 0.9,
+   "sd_conf": 0.05,
+   "hit_all": 0,
+   "hit_frac": 0.056,
+   "gap_signed": 0.9,
+   "gap_abs": 0.9,
+   "gap_abs_vs_frac": 0.844,
+   "brier": 0.812,
+   "ece": 0.9,
+   "confidently_wrong_share": 1.0,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 6
+  },
+  "string-t3": {
+   "n": 6,
+   "mean_conf": 0.975,
+   "sd_conf": 0.038,
+   "hit_all": 0.167,
+   "hit_frac": 0.278,
+   "gap_signed": 0.808,
+   "gap_abs": 0.808,
+   "gap_abs_vs_frac": 0.697,
+   "brier": 0.785,
+   "ece": 0.808,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 0.833,
+   "n_conf_ge_0.8": 6
+  },
+  "string-t4": {
+   "n": 6,
+   "mean_conf": 0.733,
+   "sd_conf": 0.345,
+   "hit_all": 0,
+   "hit_frac": 0.0,
+   "gap_signed": 0.733,
+   "gap_abs": 0.733,
+   "gap_abs_vs_frac": 0.733,
+   "brier": 0.657,
+   "ece": 0.734,
+   "confidently_wrong_share": 0.667,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 4
+  },
+  "function-t1": {
+   "n": 6,
+   "mean_conf": 0.95,
+   "sd_conf": 0.05,
+   "hit_all": 0.333,
+   "hit_frac": 0.444,
+   "gap_signed": 0.617,
+   "gap_abs": 0.633,
+   "gap_abs_vs_frac": 0.522,
+   "brier": 0.588,
+   "ece": 0.617,
+   "confidently_wrong_share": 0.667,
+   "wrong_given_conf_ge_0.8": 0.667,
+   "n_conf_ge_0.8": 6
+  },
+  "function-t2": {
+   "n": 6,
+   "mean_conf": 0.813,
+   "sd_conf": 0.365,
+   "hit_all": 0,
+   "hit_frac": 0.0,
+   "gap_signed": 0.813,
+   "gap_abs": 0.813,
+   "gap_abs_vs_frac": 0.813,
+   "brier": 0.795,
+   "ece": 0.813,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 5
+  },
+  "function-t3": {
+   "n": 6,
+   "mean_conf": 0.733,
+   "sd_conf": 0.331,
+   "hit_all": 0,
+   "hit_frac": 0.056,
+   "gap_signed": 0.733,
+   "gap_abs": 0.733,
+   "gap_abs_vs_frac": 0.678,
+   "brier": 0.647,
+   "ece": 0.734,
+   "confidently_wrong_share": 0.833,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 5
+  },
+  "function-t4": {
+   "n": 6,
+   "mean_conf": 0.9,
+   "sd_conf": 0.05,
+   "hit_all": 0,
+   "hit_frac": 0.111,
+   "gap_signed": 0.9,
+   "gap_abs": 0.9,
+   "gap_abs_vs_frac": 0.789,
+   "brier": 0.812,
+   "ece": 0.9,
+   "confidently_wrong_share": 1.0,
+   "wrong_given_conf_ge_0.8": 1.0,
+   "n_conf_ge_0.8": 6
+  }
+ },
+ "math_drill_reference": {
+  "source": "F-2853",
+  "mean_abs_gap_2026_06": 0.442,
+  "mean_abs_gap_2026_10": 0.21
+ },
+ "rows": [
+  {
+   "id": "sequence-t3-0",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 2n^2+3n+-9",
+   "shown": [
+    [
+     1,
+     -4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     18
+    ],
+    [
+     4,
+     35
+    ],
+    [
+     5,
+     56
+    ]
+   ],
+   "held": [
+    [
+     6,
+     81
+    ],
+    [
+     7,
+     110
+    ],
+    [
+     8,
+     143
+    ]
+   ],
+   "raw": "{\n\"answers\": [81, 110, 143],\n\"confidence\": 1.0\n}",
+   "latency_s": 1.3812544345855713,
+   "call_error": null,
+   "answers": [
+    "81",
+    "110",
+    "143"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t3-3",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 90, width 8, zero boundary",
+   "shown": [
+    [
+     "00010011",
+     "00101111"
+    ],
+    [
+     "10101010",
+     "00000001"
+    ],
+    [
+     "11011001",
+     "11011110"
+    ],
+    [
+     "10010100",
+     "01100010"
+    ],
+    [
+     "01111111",
+     "11000001"
+    ]
+   ],
+   "held": [
+    [
+     "01110110",
+     "11010111"
+    ],
+    [
+     "11000001",
+     "11100010"
+    ],
+    [
+     "01001000",
+     "10110100"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00100110\", \"00000001\", \"00000000\"], \"confidence\": 0.85}",
+   "latency_s": 1.4937195777893066,
+   "call_error": null,
+   "answers": [
+    "00100110",
+    "00000001",
+    "00000000"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t2-1",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +2",
+   "shown": [
+    [
+     "ophcqdf",
+     "qrjesfh"
+    ],
+    [
+     "fdrdasb",
+     "hftfcud"
+    ],
+    [
+     "itwygbv",
+     "kvyaidx"
+    ],
+    [
+     "vzhg",
+     "xbji"
+    ],
+    [
+     "gogihba",
+     "iqikjdc"
+    ]
+   ],
+   "held": [
+    [
+     "gbhc",
+     "idje"
+    ],
+    [
+     "fbir",
+     "hdkt"
+    ],
+    [
+     "abfc",
+     "cdhe"
+    ]
+   ],
+   "raw": "{\"answers\": [\"hfdj\", \"gdcu\", \"bdgd\"], \"confidence\": 0.85}",
+   "latency_s": 1.026660442352295,
+   "call_error": null,
+   "answers": [
+    "hfdj",
+    "gdcu",
+    "bdgd"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t4-4",
+   "family": "function",
+   "tier": 4,
+   "rule": "even x/2, odd 3x+1",
+   "shown": [
+    [
+     -8,
+     -4
+    ],
+    [
+     27,
+     82
+    ],
+    [
+     29,
+     88
+    ],
+    [
+     23,
+     70
+    ],
+    [
+     -6,
+     -3
+    ]
+   ],
+   "held": [
+    [
+     0,
+     0
+    ],
+    [
+     -11,
+     -32
+    ],
+    [
+     -2,
+     -1
+    ]
+   ],
+   "raw": "{\n\"answers\": [0, -45, -1],\n\"confidence\": 0.95\n}",
+   "latency_s": 0.9999964237213135,
+   "call_error": null,
+   "answers": [
+    "0",
+    "-45",
+    "-1"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    true
+   ],
+   "hit_frac": 0.6666666666666666,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-5",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+-9",
+   "shown": [
+    [
+     10,
+     1
+    ],
+    [
+     28,
+     19
+    ],
+    [
+     -1,
+     -10
+    ],
+    [
+     24,
+     15
+    ],
+    [
+     -8,
+     -17
+    ]
+   ],
+   "held": [
+    [
+     14,
+     5
+    ],
+    [
+     -11,
+     -20
+    ],
+    [
+     15,
+     6
+    ]
+   ],
+   "raw": "{\n  \"answers\": [5, -20, 6],\n  \"confidence\": 0.95\n}",
+   "latency_s": 1.0679640769958496,
+   "call_error": null,
+   "answers": [
+    "5",
+    "-20",
+    "6"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t1-0",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "kfbnlb",
+     "blnbfk"
+    ],
+    [
+     "bpvmjnd",
+     "dnjmvpb"
+    ],
+    [
+     "xcxruv",
+     "vurxcx"
+    ],
+    [
+     "yjgw",
+     "wgjy"
+    ],
+    [
+     "vmztvn",
+     "nvtzmv"
+    ]
+   ],
+   "held": [
+    [
+     "agqvhd",
+     "dhvqga"
+    ],
+    [
+     "uwtjvc",
+     "cvjtwu"
+    ],
+    [
+     "ijhjpmo",
+     "ompjhji"
+    ]
+   ],
+   "raw": "{\"answers\": [\"dhvqga\", \"cvjwtu\", \"omphjji\"], \"confidence\": 1.0}",
+   "latency_s": 1.0662364959716797,
+   "call_error": null,
+   "answers": [
+    "dhvqga",
+    "cvjwtu",
+    "omphjji"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t4-2",
+   "family": "function",
+   "tier": 4,
+   "rule": "even x/2, odd 3x+1",
+   "shown": [
+    [
+     24,
+     12
+    ],
+    [
+     26,
+     13
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     -5,
+     -14
+    ],
+    [
+     15,
+     46
+    ]
+   ],
+   "held": [
+    [
+     10,
+     5
+    ],
+    [
+     21,
+     64
+    ],
+    [
+     -7,
+     -20
+    ]
+   ],
+   "raw": "{\n  \"answers\": [45, 67, -38],\n  \"confidence\": 0.9\n}",
+   "latency_s": 1.0963263511657715,
+   "call_error": null,
+   "answers": [
+    "45",
+    "67",
+    "-38"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t3-0",
+   "family": "string",
+   "tier": 3,
+   "rule": "rotate left 1",
+   "shown": [
+    [
+     "dojfdcr",
+     "ojfdcrd"
+    ],
+    [
+     "bwjh",
+     "wjhb"
+    ],
+    [
+     "qnfmbzj",
+     "nfmbzjq"
+    ],
+    [
+     "gdmpzh",
+     "dmpzhg"
+    ],
+    [
+     "oewyg",
+     "ewygo"
+    ]
+   ],
+   "held": [
+    [
+     "fbxaib",
+     "bxaibf"
+    ],
+    [
+     "qnpkiz",
+     "npkizq"
+    ],
+    [
+     "guropnr",
+     "uropnrg"
+    ]
+   ],
+   "raw": "{\"answers\": [\"axibf\", \"pkiznq\", \"rupng\"], \"confidence\": 1.0}",
+   "latency_s": 1.0259308815002441,
+   "call_error": null,
+   "answers": [
+    "axibf",
+    "pkiznq",
+    "rupng"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-3",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "alternating-sign arithmetic a=1 d=4",
+   "shown": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     -5
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     -13
+    ],
+    [
+     5,
+     17
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -21
+    ],
+    [
+     7,
+     25
+    ],
+    [
+     8,
+     -29
+    ]
+   ],
+   "raw": "{\n\"answers\": [21, -25, 29],\n\"confidence\": 1.0\n}",
+   "latency_s": 0.9933240413665771,
+   "call_error": null,
+   "answers": [
+    "21",
+    "-25",
+    "29"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t1-5",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "vazxae",
+     "eaxzav"
+    ],
+    [
+     "muha",
+     "ahum"
+    ],
+    [
+     "utjn",
+     "njtu"
+    ],
+    [
+     "rncade",
+     "edacnr"
+    ],
+    [
+     "fyvnqq",
+     "qqnvyf"
+    ]
+   ],
+   "held": [
+    [
+     "jmedv",
+     "vdemj"
+    ],
+    [
+     "bxktil",
+     "litkxb"
+    ],
+    [
+     "vocahy",
+     "yhacov"
+    ]
+   ],
+   "raw": "{\"answers\": [\"dvmej\", \"ltxkib\", \"hyacov\"], \"confidence\": 1.0}",
+   "latency_s": 1.0447413921356201,
+   "call_error": null,
+   "answers": [
+    "dvmej",
+    "ltxkib",
+    "hyacov"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-0",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=21 d=7",
+   "shown": [
+    [
+     1,
+     21
+    ],
+    [
+     2,
+     28
+    ],
+    [
+     3,
+     35
+    ],
+    [
+     4,
+     42
+    ],
+    [
+     5,
+     49
+    ]
+   ],
+   "held": [
+    [
+     6,
+     56
+    ],
+    [
+     7,
+     63
+    ],
+    [
+     8,
+     70
+    ]
+   ],
+   "raw": "{\"answers\": [56, 63, 70], \"confidence\": 1.0}",
+   "latency_s": 0.8903696537017822,
+   "call_error": null,
+   "answers": [
+    "56",
+    "63",
+    "70"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t3-3",
+   "family": "string",
+   "tier": 3,
+   "rule": "rotate left 1",
+   "shown": [
+    [
+     "drwgn",
+     "rwgnd"
+    ],
+    [
+     "iljro",
+     "ljroi"
+    ],
+    [
+     "fmno",
+     "mnof"
+    ],
+    [
+     "awjq",
+     "wjqa"
+    ],
+    [
+     "nrxqbfq",
+     "rxqbfqn"
+    ]
+   ],
+   "held": [
+    [
+     "eergok",
+     "ergoke"
+    ],
+    [
+     "zezn",
+     "eznz"
+    ],
+    [
+     "aaqqubs",
+     "aqqubsa"
+    ]
+   ],
+   "raw": "{\"answers\": [\"ergokn\", \"ezzn\", \"aqqubsa\"], \"confidence\": 1.0}",
+   "latency_s": 0.9973587989807129,
+   "call_error": null,
+   "answers": [
+    "ergokn",
+    "ezzn",
+    "aqqubsa"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    true
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t4-3",
+   "family": "string",
+   "tier": 4,
+   "rule": "reverse then shift +2",
+   "shown": [
+    [
+     "bhkymo",
+     "qoamjd"
+    ],
+    [
+     "liciiwj",
+     "lykkekn"
+    ],
+    [
+     "roytr",
+     "tvaqt"
+    ],
+    [
+     "zlsvca",
+     "cexunb"
+    ],
+    [
+     "qrhxic",
+     "ekzjts"
+    ]
+   ],
+   "held": [
+    [
+     "jpyf",
+     "harl"
+    ],
+    [
+     "rgqhwb",
+     "dyjsit"
+    ],
+    [
+     "wtulhr",
+     "tjnwvy"
+    ]
+   ],
+   "raw": "{\"answers\": [\"qoamjd\", \"lykkekn\", \"tvaqt\"], \"confidence\": 0.0}",
+   "latency_s": 1.017073154449463,
+   "call_error": null,
+   "answers": [
+    "qoamjd",
+    "lykkekn",
+    "tvaqt"
+   ],
+   "conf": 0.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t4-0",
+   "family": "function",
+   "tier": 4,
+   "rule": "even x/2, odd 3x+1",
+   "shown": [
+    [
+     19,
+     58
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     13,
+     40
+    ],
+    [
+     27,
+     82
+    ],
+    [
+     -9,
+     -26
+    ]
+   ],
+   "held": [
+    [
+     -4,
+     -2
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    -14,\n    6,\n    2\n  ],\n  \"confidence\": 0.95\n}",
+   "latency_s": 1.281083345413208,
+   "call_error": null,
+   "answers": [
+    "-14",
+    "6",
+    "2"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-3",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=29 d=-7",
+   "shown": [
+    [
+     1,
+     29
+    ],
+    [
+     2,
+     22
+    ],
+    [
+     3,
+     15
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -6
+    ],
+    [
+     7,
+     -13
+    ],
+    [
+     8,
+     -20
+    ]
+   ],
+   "raw": "{\n\"answers\": [ -4, -11, -18 ],\n\"confidence\": 1.0\n}",
+   "latency_s": 1.011444091796875,
+   "call_error": null,
+   "answers": [
+    "-4",
+    "-11",
+    "-18"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t3-5",
+   "family": "string",
+   "tier": 3,
+   "rule": "rotate left 1",
+   "shown": [
+    [
+     "dymit",
+     "ymitd"
+    ],
+    [
+     "hxbrhn",
+     "xbrhnh"
+    ],
+    [
+     "kuluzi",
+     "uluzik"
+    ],
+    [
+     "oqdkzc",
+     "qdkzco"
+    ],
+    [
+     "yrsy",
+     "rsyy"
+    ]
+   ],
+   "held": [
+    [
+     "squm",
+     "qums"
+    ],
+    [
+     "nlapp",
+     "lappn"
+    ],
+    [
+     "yqykn",
+     "qykny"
+    ]
+   ],
+   "raw": "{\"answers\": [\"qums\", \"lpann\", \"qynky\"], \"confidence\": 0.95}",
+   "latency_s": 1.0306284427642822,
+   "call_error": null,
+   "answers": [
+    "qums",
+    "lpann",
+    "qynky"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-0",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "recurrence a_n=2a_(n-1)+-1a_(n-2) seed=[1, 4]",
+   "shown": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     13
+    ]
+   ],
+   "held": [
+    [
+     6,
+     16
+    ],
+    [
+     7,
+     19
+    ],
+    [
+     8,
+     22
+    ]
+   ],
+   "raw": "{\"answers\": [16, 19, 22], \"confidence\": 1.0}",
+   "latency_s": 0.8965253829956055,
+   "call_error": null,
+   "answers": [
+    "16",
+    "19",
+    "22"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t2-4",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +1",
+   "shown": [
+    [
+     "webe",
+     "xfcf"
+    ],
+    [
+     "mmjlt",
+     "nnkmu"
+    ],
+    [
+     "qhkif",
+     "riljg"
+    ],
+    [
+     "btetbh",
+     "cufuci"
+    ],
+    [
+     "thhvh",
+     "uiiwi"
+    ]
+   ],
+   "held": [
+    [
+     "uxqgwhr",
+     "vyrhxis"
+    ],
+    [
+     "ukxxu",
+     "vlyyv"
+    ],
+    [
+     "xuni",
+     "yvoj"
+    ]
+   ],
+   "raw": "{\"answers\": [\"vzrjixs\", \"vlwwv\", \"yvjo\"], \"confidence\": 0.95}",
+   "latency_s": 1.0890045166015625,
+   "call_error": null,
+   "answers": [
+    "vzrjixs",
+    "vlwwv",
+    "yvjo"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-1",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=-6 d=-2",
+   "shown": [
+    [
+     1,
+     -6
+    ],
+    [
+     2,
+     -8
+    ],
+    [
+     3,
+     -10
+    ],
+    [
+     4,
+     -12
+    ],
+    [
+     5,
+     -14
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -16
+    ],
+    [
+     7,
+     -18
+    ],
+    [
+     8,
+     -20
+    ]
+   ],
+   "raw": "{\"answers\": [-16, -18, -20], \"confidence\": 1.0}",
+   "latency_s": 0.9142982959747314,
+   "call_error": null,
+   "answers": [
+    "-16",
+    "-18",
+    "-20"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t1-1",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "wpqeipj",
+     "jpieqpw"
+    ],
+    [
+     "zaapuxs",
+     "sxupaaz"
+    ],
+    [
+     "jrks",
+     "skrj"
+    ],
+    [
+     "oulb",
+     "bluo"
+    ],
+    [
+     "zmudkxp",
+     "pxkdumz"
+    ]
+   ],
+   "held": [
+    [
+     "yewh",
+     "hwey"
+    ],
+    [
+     "hbswwf",
+     "fwwsbh"
+    ],
+    [
+     "asnm",
+     "mnsa"
+    ]
+   ],
+   "raw": "{\"answers\": [\"hewy\", \"fwswbh\", \"msna\"], \"confidence\": 1.0}",
+   "latency_s": 0.9745588302612305,
+   "call_error": null,
+   "answers": [
+    "hewy",
+    "fwswbh",
+    "msna"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-0",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 51, width 8, zero boundary",
+   "shown": [
+    [
+     "10111000",
+     "01000111"
+    ],
+    [
+     "10111001",
+     "01000110"
+    ],
+    [
+     "00101110",
+     "11010001"
+    ],
+    [
+     "00111010",
+     "11000101"
+    ],
+    [
+     "11111010",
+     "00000101"
+    ]
+   ],
+   "held": [
+    [
+     "10001011",
+     "01110100"
+    ],
+    [
+     "01001010",
+     "10110101"
+    ],
+    [
+     "11110010",
+     "00001101"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01110100\", \"10110101\", \"00001101\"], \"confidence\": 0.95}",
+   "latency_s": 1.5083377361297607,
+   "call_error": null,
+   "answers": [
+    "01110100",
+    "10110101",
+    "00001101"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t2-2",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +1",
+   "shown": [
+    [
+     "wjxund",
+     "xkyvoe"
+    ],
+    [
+     "dhfg",
+     "eigh"
+    ],
+    [
+     "zgzpg",
+     "ahaqh"
+    ],
+    [
+     "keurunz",
+     "lfvsvoa"
+    ],
+    [
+     "vzkggoe",
+     "walhhpf"
+    ]
+   ],
+   "held": [
+    [
+     "ldlz",
+     "mema"
+    ],
+    [
+     "kpgl",
+     "lqhm"
+    ],
+    [
+     "kyzxltr",
+     "lzaymus"
+    ]
+   ],
+   "raw": "{\"answers\": [\"mehk\", \"lqhm\", \"lzbzr\"], \"confidence\": 0.85}",
+   "latency_s": 1.0896904468536377,
+   "call_error": null,
+   "answers": [
+    "mehk",
+    "lqhm",
+    "lzbzr"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    true,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-4",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+-9",
+   "shown": [
+    [
+     -7,
+     -16
+    ],
+    [
+     -5,
+     -14
+    ],
+    [
+     -4,
+     -13
+    ],
+    [
+     25,
+     16
+    ],
+    [
+     13,
+     4
+    ]
+   ],
+   "held": [
+    [
+     21,
+     12
+    ],
+    [
+     24,
+     15
+    ],
+    [
+     11,
+     2
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    -14,\n    -15,\n    -19\n  ],\n  \"confidence\": 0.85\n}",
+   "latency_s": 1.3645906448364258,
+   "call_error": null,
+   "answers": [
+    "-14",
+    "-15",
+    "-19"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t3-2",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 150, width 8, zero boundary",
+   "shown": [
+    [
+     "11101111",
+     "01000110"
+    ],
+    [
+     "11101101",
+     "01000001"
+    ],
+    [
+     "10111010",
+     "10010011"
+    ],
+    [
+     "11100001",
+     "01010011"
+    ],
+    [
+     "01000111",
+     "11101010"
+    ]
+   ],
+   "held": [
+    [
+     "10001010",
+     "11011011"
+    ],
+    [
+     "00101010",
+     "01101011"
+    ],
+    [
+     "11001001",
+     "00111111"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01000101\", \"00000001\", \"00100000\"], \"confidence\": 0.85}",
+   "latency_s": 1.5100326538085938,
+   "call_error": null,
+   "answers": [
+    "01000101",
+    "00000001",
+    "00100000"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-1",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "geometric a=3 r=-2",
+   "shown": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     -6
+    ],
+    [
+     3,
+     12
+    ],
+    [
+     4,
+     -24
+    ],
+    [
+     5,
+     48
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -96
+    ],
+    [
+     7,
+     192
+    ],
+    [
+     8,
+     -384
+    ]
+   ],
+   "raw": "{\"answers\": [-96, 96, -192], \"confidence\": 1.0}",
+   "latency_s": 0.9339587688446045,
+   "call_error": null,
+   "answers": [
+    "-96",
+    "96",
+    "-192"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-0",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "alternating-sign arithmetic a=1 d=4",
+   "shown": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     -5
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     -13
+    ],
+    [
+     5,
+     17
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -21
+    ],
+    [
+     7,
+     25
+    ],
+    [
+     8,
+     -29
+    ]
+   ],
+   "raw": "{\"answers\": [-21, 25, -29], \"confidence\": 1.0}",
+   "latency_s": 0.7356047630310059,
+   "call_error": null,
+   "answers": [
+    "-21",
+    "25",
+    "-29"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "function-t2-2",
+   "family": "function",
+   "tier": 2,
+   "rule": "2x+7",
+   "shown": [
+    [
+     26,
+     59
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     -6,
+     -5
+    ],
+    [
+     6,
+     19
+    ],
+    [
+     -3,
+     1
+    ]
+   ],
+   "held": [
+    [
+     10,
+     27
+    ],
+    [
+     9,
+     25
+    ],
+    [
+     30,
+     67
+    ]
+   ],
+   "raw": "{\"answers\": [49, 48, 65], \"confidence\": 0.0}",
+   "latency_s": 0.9402234554290771,
+   "call_error": null,
+   "answers": [
+    "49",
+    "48",
+    "65"
+   ],
+   "conf": 0.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t3-5",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 1n^2+-2n+8",
+   "shown": [
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     11
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     5,
+     23
+    ]
+   ],
+   "held": [
+    [
+     6,
+     32
+    ],
+    [
+     7,
+     43
+    ],
+    [
+     8,
+     56
+    ]
+   ],
+   "raw": "{\"answers\": [32, 41, 52], \"confidence\": 1.0}",
+   "latency_s": 0.8942928314208984,
+   "call_error": null,
+   "answers": [
+    "32",
+    "41",
+    "52"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-0",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+11",
+   "shown": [
+    [
+     20,
+     31
+    ],
+    [
+     15,
+     26
+    ],
+    [
+     6,
+     17
+    ],
+    [
+     28,
+     39
+    ],
+    [
+     -5,
+     6
+    ]
+   ],
+   "held": [
+    [
+     10,
+     21
+    ],
+    [
+     23,
+     34
+    ],
+    [
+     -4,
+     7
+    ]
+   ],
+   "raw": "{\n  \"answers\": [21, 34, 5],\n  \"confidence\": 1.0\n}",
+   "latency_s": 1.0908138751983643,
+   "call_error": null,
+   "answers": [
+    "21",
+    "34",
+    "5"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    false
+   ],
+   "hit_frac": 0.6666666666666666,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t3-3",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 3n^2+5n+-1",
+   "shown": [
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     21
+    ],
+    [
+     3,
+     41
+    ],
+    [
+     4,
+     67
+    ],
+    [
+     5,
+     99
+    ]
+   ],
+   "held": [
+    [
+     6,
+     137
+    ],
+    [
+     7,
+     181
+    ],
+    [
+     8,
+     231
+    ]
+   ],
+   "raw": "{\n\"answers\": [137, 181, 231],\n\"confidence\": 0.95\n}",
+   "latency_s": 1.1297380924224854,
+   "call_error": null,
+   "answers": [
+    "137",
+    "181",
+    "231"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t4-1",
+   "family": "string",
+   "tier": 4,
+   "rule": "interleave halves (abcdef->adbecf)",
+   "shown": [
+    [
+     "nyuvok",
+     "nvyouk"
+    ],
+    [
+     "wimrrf",
+     "wrirmf"
+    ],
+    [
+     "jrnija",
+     "jirjna"
+    ],
+    [
+     "lccsnd",
+     "lscncd"
+    ],
+    [
+     "ckrbmm",
+     "cbkmrm"
+    ]
+   ],
+   "held": [
+    [
+     "gesacp",
+     "gaecsp"
+    ],
+    [
+     "mvqmgy",
+     "mmvgqy"
+    ],
+    [
+     "icoelr",
+     "ieclor"
+    ]
+   ],
+   "raw": "{\"answers\": [\"gseacp\", \"mqvgmy\", \"iceolr\"], \"confidence\": 0.95}",
+   "latency_s": 1.0741772651672363,
+   "call_error": null,
+   "answers": [
+    "gseacp",
+    "mqvgmy",
+    "iceolr"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t3-3",
+   "family": "function",
+   "tier": 3,
+   "rule": "x^2+7",
+   "shown": [
+    [
+     -9,
+     88
+    ],
+    [
+     19,
+     368
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     22,
+     491
+    ],
+    [
+     20,
+     407
+    ]
+   ],
+   "held": [
+    [
+     12,
+     151
+    ],
+    [
+     2,
+     11
+    ],
+    [
+     23,
+     536
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    49,\n    7,\n    56\n  ],\n  \"confidence\": 0.85\n}",
+   "latency_s": 1.3301947116851807,
+   "call_error": null,
+   "answers": [
+    "49",
+    "7",
+    "56"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t4-2",
+   "family": "string",
+   "tier": 4,
+   "rule": "reverse then shift +2",
+   "shown": [
+    [
+     "grsd",
+     "futi"
+    ],
+    [
+     "brip",
+     "rktd"
+    ],
+    [
+     "izhnf",
+     "hpjbk"
+    ],
+    [
+     "hmfhwg",
+     "iyjhoj"
+    ],
+    [
+     "cagpenl",
+     "npgrice"
+    ]
+   ],
+   "held": [
+    [
+     "itoz",
+     "bqvk"
+    ],
+    [
+     "dnswqm",
+     "osyupf"
+    ],
+    [
+     "kquh",
+     "jwsm"
+    ]
+   ],
+   "raw": "{\"answers\": [\"jupv\", \"eotxqk\", \"lptt\"], \"confidence\": 0.65}",
+   "latency_s": 1.0757195949554443,
+   "call_error": null,
+   "answers": [
+    "jupv",
+    "eotxqk",
+    "lptt"
+   ],
+   "conf": 0.65,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t1-3",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "mbbxq",
+     "qxbbm"
+    ],
+    [
+     "rqqqy",
+     "yqqqr"
+    ],
+    [
+     "nrtq",
+     "qtrn"
+    ],
+    [
+     "evrldq",
+     "qdlrve"
+    ],
+    [
+     "vvedw",
+     "wdevv"
+    ]
+   ],
+   "held": [
+    [
+     "ibzh",
+     "hzbi"
+    ],
+    [
+     "whrbsqz",
+     "zqsbrhw"
+    ],
+    [
+     "dekh",
+     "hked"
+    ]
+   ],
+   "raw": "{\"answers\": [\"zhbi\", \"zqrbhw\", \"hked\"], \"confidence\": 1.0}",
+   "latency_s": 0.9781005382537842,
+   "call_error": null,
+   "answers": [
+    "zhbi",
+    "zqrbhw",
+    "hked"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    true
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t1-0",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 170, width 8, zero boundary",
+   "shown": [
+    [
+     "10001110",
+     "00011100"
+    ],
+    [
+     "10101100",
+     "01011000"
+    ],
+    [
+     "01110010",
+     "11100100"
+    ],
+    [
+     "00010010",
+     "00100100"
+    ],
+    [
+     "01011101",
+     "10111010"
+    ]
+   ],
+   "held": [
+    [
+     "01010101",
+     "10101010"
+    ],
+    [
+     "11101011",
+     "11010110"
+    ],
+    [
+     "00001010",
+     "00010100"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01010101\", \"11101011\", \"00001010\"], \"confidence\": 1.0}",
+   "latency_s": 1.4716858863830566,
+   "call_error": null,
+   "answers": [
+    "01010101",
+    "11101011",
+    "00001010"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t4-3",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 110, width 8, zero boundary",
+   "shown": [
+    [
+     "10111111",
+     "11100001"
+    ],
+    [
+     "10110000",
+     "11110000"
+    ],
+    [
+     "11010011",
+     "11110111"
+    ],
+    [
+     "00110111",
+     "01111101"
+    ],
+    [
+     "10011110",
+     "10110010"
+    ]
+   ],
+   "held": [
+    [
+     "10000110",
+     "10001110"
+    ],
+    [
+     "01001001",
+     "11011011"
+    ],
+    [
+     "01101011",
+     "11111111"
+    ]
+   ],
+   "raw": "{\"answers\": [\"11111001\", \"10110110\", \"10010100\"], \"confidence\": 0.85}",
+   "latency_s": 2.817157030105591,
+   "call_error": null,
+   "answers": [
+    "11111001",
+    "10110110",
+    "10010100"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t3-0",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 90, width 8, zero boundary",
+   "shown": [
+    [
+     "00101000",
+     "01000100"
+    ],
+    [
+     "00010101",
+     "00100000"
+    ],
+    [
+     "01001101",
+     "10111100"
+    ],
+    [
+     "11011111",
+     "11010001"
+    ],
+    [
+     "01101111",
+     "11101001"
+    ]
+   ],
+   "held": [
+    [
+     "11100000",
+     "10110000"
+    ],
+    [
+     "00011001",
+     "00111110"
+    ],
+    [
+     "11011010",
+     "11011001"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00000000\", \"00000000\", \"00000000\"], \"confidence\": 0.95}",
+   "latency_s": 2.791288375854492,
+   "call_error": null,
+   "answers": [
+    "00000000",
+    "00000000",
+    "00000000"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t4-4",
+   "family": "string",
+   "tier": 4,
+   "rule": "interleave halves (abcdef->adbecf)",
+   "shown": [
+    [
+     "zeyntn",
+     "znetyn"
+    ],
+    [
+     "wfduuk",
+     "wufudk"
+    ],
+    [
+     "swywgi",
+     "swwgyi"
+    ],
+    [
+     "jrpftm",
+     "jfrtpm"
+    ],
+    [
+     "ildtnk",
+     "itlndk"
+    ]
+   ],
+   "held": [
+    [
+     "bpenzn",
+     "bnpzen"
+    ],
+    [
+     "yhijma",
+     "yjhmia"
+    ],
+    [
+     "stelsz",
+     "sltsez"
+    ]
+   ],
+   "raw": "{\"answers\": [\"bpeznn\", \"yhijma\", \"stelsz\"], \"confidence\": 0.9}",
+   "latency_s": 2.3346352577209473,
+   "call_error": null,
+   "answers": [
+    "bpeznn",
+    "yhijma",
+    "stelsz"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-2",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "alternating-sign arithmetic a=5 d=7",
+   "shown": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     -12
+    ],
+    [
+     3,
+     19
+    ],
+    [
+     4,
+     -26
+    ],
+    [
+     5,
+     33
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -40
+    ],
+    [
+     7,
+     47
+    ],
+    [
+     8,
+     -54
+    ]
+   ],
+   "raw": "{\"answers\": [-40, 47, -54], \"confidence\": 1.0}",
+   "latency_s": 2.2444562911987305,
+   "call_error": null,
+   "answers": [
+    "-40",
+    "47",
+    "-54"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t4-1",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 110, width 8, zero boundary",
+   "shown": [
+    [
+     "11110010",
+     "10010110"
+    ],
+    [
+     "01100011",
+     "11100111"
+    ],
+    [
+     "01110111",
+     "11011101"
+    ],
+    [
+     "10111011",
+     "11101111"
+    ],
+    [
+     "11001011",
+     "11011111"
+    ]
+   ],
+   "held": [
+    [
+     "10111101",
+     "11100111"
+    ],
+    [
+     "11111110",
+     "10000010"
+    ],
+    [
+     "01010010",
+     "11110110"
+    ]
+   ],
+   "raw": "{\"answers\": [\"10010110\", \"11100111\", \"11011101\"], \"confidence\": 0.9}",
+   "latency_s": 4.316848993301392,
+   "call_error": null,
+   "answers": [
+    "10010110",
+    "11100111",
+    "11011101"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-2",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 51, width 8, zero boundary",
+   "shown": [
+    [
+     "00101011",
+     "11010100"
+    ],
+    [
+     "10110100",
+     "01001011"
+    ],
+    [
+     "11001110",
+     "00110001"
+    ],
+    [
+     "00111000",
+     "11000111"
+    ],
+    [
+     "11101010",
+     "00010101"
+    ]
+   ],
+   "held": [
+    [
+     "11001101",
+     "00110010"
+    ],
+    [
+     "11010000",
+     "00101111"
+    ],
+    [
+     "11010111",
+     "00101000"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00110010\", \"00101111\", \"00101000\"], \"confidence\": 0.95}",
+   "latency_s": 2.908069372177124,
+   "call_error": null,
+   "answers": [
+    "00110010",
+    "00101111",
+    "00101000"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t3-4",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 90, width 8, zero boundary",
+   "shown": [
+    [
+     "11001001",
+     "11110110"
+    ],
+    [
+     "10111010",
+     "00101001"
+    ],
+    [
+     "00010000",
+     "00101000"
+    ],
+    [
+     "10000011",
+     "01000111"
+    ],
+    [
+     "10001101",
+     "01011100"
+    ]
+   ],
+   "held": [
+    [
+     "11001010",
+     "11110001"
+    ],
+    [
+     "01001101",
+     "10111100"
+    ],
+    [
+     "10011011",
+     "01111011"
+    ]
+   ],
+   "raw": "{\n\"answers\": [\"11110101\", \"00101100\", \"01000100\"],\n\"confidence\": 0.85\n}",
+   "latency_s": 2.914047956466675,
+   "call_error": null,
+   "answers": [
+    "11110101",
+    "00101100",
+    "01000100"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t2-1",
+   "family": "function",
+   "tier": 2,
+   "rule": "6x+8",
+   "shown": [
+    [
+     -6,
+     -28
+    ],
+    [
+     5,
+     38
+    ],
+    [
+     -10,
+     -52
+    ],
+    [
+     4,
+     32
+    ],
+    [
+     10,
+     68
+    ]
+   ],
+   "held": [
+    [
+     29,
+     182
+    ],
+    [
+     9,
+     62
+    ],
+    [
+     26,
+     164
+    ]
+   ],
+   "raw": "{\"answers\": [164, 58, 148], \"confidence\": 1.0}",
+   "latency_s": 2.3182671070098877,
+   "call_error": null,
+   "answers": [
+    "164",
+    "58",
+    "148"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-4",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=1 d=-7",
+   "shown": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     -6
+    ],
+    [
+     3,
+     -13
+    ],
+    [
+     4,
+     -20
+    ],
+    [
+     5,
+     -27
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -34
+    ],
+    [
+     7,
+     -41
+    ],
+    [
+     8,
+     -48
+    ]
+   ],
+   "raw": "{\n\"answers\": [ -34, -41, -48 ],\n\"confidence\": 1.0\n}",
+   "latency_s": 2.4150686264038086,
+   "call_error": null,
+   "answers": [
+    "-34",
+    "-41",
+    "-48"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t1-2",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 170, width 8, zero boundary",
+   "shown": [
+    [
+     "01000010",
+     "10000100"
+    ],
+    [
+     "11100001",
+     "11000010"
+    ],
+    [
+     "01001011",
+     "10010110"
+    ],
+    [
+     "11010000",
+     "10100000"
+    ],
+    [
+     "10111101",
+     "01111010"
+    ]
+   ],
+   "held": [
+    [
+     "01100101",
+     "11001010"
+    ],
+    [
+     "01101101",
+     "11011010"
+    ],
+    [
+     "10011011",
+     "00110110"
+    ]
+   ],
+   "raw": "{\"answers\": [\"11001010\", \"11011010\", \"01101100\"], \"confidence\": 1.0}",
+   "latency_s": 4.689486980438232,
+   "call_error": null,
+   "answers": [
+    "11001010",
+    "11011010",
+    "01101100"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    false
+   ],
+   "hit_frac": 0.6666666666666666,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-1",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 252, width 8, zero boundary",
+   "shown": [
+    [
+     "11111000",
+     "11111100"
+    ],
+    [
+     "00111000",
+     "00111100"
+    ],
+    [
+     "11110100",
+     "11111110"
+    ],
+    [
+     "00100000",
+     "00110000"
+    ],
+    [
+     "01100111",
+     "01110111"
+    ]
+   ],
+   "held": [
+    [
+     "01110011",
+     "01111011"
+    ],
+    [
+     "00101010",
+     "00111111"
+    ],
+    [
+     "00011111",
+     "00011111"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01110111\", \"00101110\", \"00011111\"], \"confidence\": 0.9}",
+   "latency_s": 4.764742374420166,
+   "call_error": null,
+   "answers": [
+    "01110111",
+    "00101110",
+    "00011111"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    true
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t1-2",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "aumsh",
+     "hsmua"
+    ],
+    [
+     "hvyxl",
+     "lxyvh"
+    ],
+    [
+     "zppzndt",
+     "tdnzppz"
+    ],
+    [
+     "abzt",
+     "tzba"
+    ],
+    [
+     "osvnsf",
+     "fsnvso"
+    ]
+   ],
+   "held": [
+    [
+     "tebk",
+     "kbet"
+    ],
+    [
+     "cawaym",
+     "myawac"
+    ],
+    [
+     "kmipi",
+     "ipimk"
+    ]
+   ],
+   "raw": "{\"answers\": [\"kbe t\", \"myawc\", \"ipmik\"], \"confidence\": 0.0}",
+   "latency_s": 2.3582100868225098,
+   "call_error": null,
+   "answers": [
+    "kbet",
+    "myawc",
+    "ipmik"
+   ],
+   "conf": 0.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    false,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-3",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+2",
+   "shown": [
+    [
+     -10,
+     -8
+    ],
+    [
+     18,
+     20
+    ],
+    [
+     -8,
+     -6
+    ],
+    [
+     29,
+     31
+    ],
+    [
+     7,
+     9
+    ]
+   ],
+   "held": [
+    [
+     24,
+     26
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     5,
+     7
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    26,\n    12,\n    7\n  ],\n  \"confidence\": 1.0\n}",
+   "latency_s": 7.437013864517212,
+   "call_error": null,
+   "answers": [
+    "26",
+    "12",
+    "7"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "string-t4-0",
+   "family": "string",
+   "tier": 4,
+   "rule": "interleave halves (abcdef->adbecf)",
+   "shown": [
+    [
+     "ekyvlf",
+     "evklyf"
+    ],
+    [
+     "kyvjeh",
+     "kjyevh"
+    ],
+    [
+     "dejdhm",
+     "ddehjm"
+    ],
+    [
+     "awtgyk",
+     "agwytk"
+    ],
+    [
+     "ixrysv",
+     "iyxsrv"
+    ]
+   ],
+   "held": [
+    [
+     "tvkfgo",
+     "tfvgko"
+    ],
+    [
+     "zrrahd",
+     "zarhrd"
+    ],
+    [
+     "bndlop",
+     "blnodp"
+    ]
+   ],
+   "raw": "{\"answers\": [\"vfkgt\", \"zrhad\", \"bdlop\"], \"confidence\": 0.95}",
+   "latency_s": 8.463393211364746,
+   "call_error": null,
+   "answers": [
+    "vfkgt",
+    "zrhad",
+    "bdlop"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t4-5",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 110, width 8, zero boundary",
+   "shown": [
+    [
+     "11111011",
+     "10001111"
+    ],
+    [
+     "10001011",
+     "10011111"
+    ],
+    [
+     "11111001",
+     "10001011"
+    ],
+    [
+     "00000000",
+     "00000000"
+    ],
+    [
+     "01101000",
+     "11111000"
+    ]
+   ],
+   "held": [
+    [
+     "10000010",
+     "10000110"
+    ],
+    [
+     "00100010",
+     "01100110"
+    ],
+    [
+     "10010001",
+     "10110011"
+    ]
+   ],
+   "raw": "{\"answers\": [\"10000000\", \"00000000\", \"10000000\"], \"confidence\": 0.9}",
+   "latency_s": 6.0302956104278564,
+   "call_error": null,
+   "answers": [
+    "10000000",
+    "00000000",
+    "10000000"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-4",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "recurrence a_n=2a_(n-1)+2a_(n-2) seed=[1, 3]",
+   "shown": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     22
+    ],
+    [
+     5,
+     60
+    ]
+   ],
+   "held": [
+    [
+     6,
+     164
+    ],
+    [
+     7,
+     448
+    ],
+    [
+     8,
+     1224
+    ]
+   ],
+   "raw": "{\n\"answers\": [164, 448, 1224],\n\"confidence\": 0.95\n}",
+   "latency_s": 10.328647375106812,
+   "call_error": null,
+   "answers": [
+    "164",
+    "448",
+    "1224"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "function-t2-3",
+   "family": "function",
+   "tier": 2,
+   "rule": "3x+-1",
+   "shown": [
+    [
+     5,
+     14
+    ],
+    [
+     17,
+     50
+    ],
+    [
+     9,
+     26
+    ],
+    [
+     -3,
+     -10
+    ],
+    [
+     15,
+     44
+    ]
+   ],
+   "held": [
+    [
+     28,
+     83
+    ],
+    [
+     26,
+     77
+    ],
+    [
+     8,
+     23
+    ]
+   ],
+   "raw": "{\"answers\": [86, 74, 22], \"confidence\": 1.0}",
+   "latency_s": 10.949439525604248,
+   "call_error": null,
+   "answers": [
+    "86",
+    "74",
+    "22"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-4",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 252, width 8, zero boundary",
+   "shown": [
+    [
+     "01110001",
+     "01111001"
+    ],
+    [
+     "11110111",
+     "11111111"
+    ],
+    [
+     "00101000",
+     "00111100"
+    ],
+    [
+     "11011000",
+     "11111100"
+    ],
+    [
+     "01110111",
+     "01111111"
+    ]
+   ],
+   "held": [
+    [
+     "01101101",
+     "01111111"
+    ],
+    [
+     "00010011",
+     "00011011"
+    ],
+    [
+     "10110110",
+     "11111111"
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    \"01111101\",\n    \"00011011\",\n    \"10111110\"\n  ],\n  \"confidence\": 0.95\n}",
+   "latency_s": 10.69492244720459,
+   "call_error": null,
+   "answers": [
+    "01111101",
+    "00011011",
+    "10111110"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    true,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t2-5",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +3",
+   "shown": [
+    [
+     "xahu",
+     "adkx"
+    ],
+    [
+     "dbeb",
+     "gehe"
+    ],
+    [
+     "blcay",
+     "eofdb"
+    ],
+    [
+     "xejftd",
+     "ahmiwg"
+    ],
+    [
+     "fumdnra",
+     "ixpgqud"
+    ]
+   ],
+   "held": [
+    [
+     "aqvw",
+     "dtyz"
+    ],
+    [
+     "jjnc",
+     "mmqf"
+    ],
+    [
+     "hywuv",
+     "kbzxy"
+    ]
+   ],
+   "raw": "{\"answers\": [\"bkwz\", \"kqod\", \"izxvw\"], \"confidence\": 0.85}",
+   "latency_s": 7.536030530929565,
+   "call_error": null,
+   "answers": [
+    "bkwz",
+    "kqod",
+    "izxvw"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t3-2",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 2n^2+-4n+6",
+   "shown": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     12
+    ],
+    [
+     4,
+     22
+    ],
+    [
+     5,
+     36
+    ]
+   ],
+   "held": [
+    [
+     6,
+     54
+    ],
+    [
+     7,
+     76
+    ],
+    [
+     8,
+     102
+    ]
+   ],
+   "raw": "{\n\"answers\": [60, 98, 144],\n\"confidence\": 0.95\n}",
+   "latency_s": 9.563709020614624,
+   "call_error": null,
+   "answers": [
+    "60",
+    "98",
+    "144"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t4-1",
+   "family": "function",
+   "tier": 4,
+   "rule": "reverse digits then +6",
+   "shown": [
+    [
+     68,
+     92
+    ],
+    [
+     56,
+     71
+    ],
+    [
+     44,
+     50
+    ],
+    [
+     81,
+     24
+    ],
+    [
+     87,
+     84
+    ]
+   ],
+   "held": [
+    [
+     14,
+     47
+    ],
+    [
+     42,
+     30
+    ],
+    [
+     18,
+     87
+    ]
+   ],
+   "raw": "{\"answers\": [46, 57, 39], \"confidence\": 0.8}",
+   "latency_s": 5.701981544494629,
+   "call_error": null,
+   "answers": [
+    "46",
+    "57",
+    "39"
+   ],
+   "conf": 0.8,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t1-3",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 170, width 8, zero boundary",
+   "shown": [
+    [
+     "11111110",
+     "11111100"
+    ],
+    [
+     "11010011",
+     "10100110"
+    ],
+    [
+     "01000001",
+     "10000010"
+    ],
+    [
+     "10111100",
+     "01111000"
+    ],
+    [
+     "00111110",
+     "01111100"
+    ]
+   ],
+   "held": [
+    [
+     "10011111",
+     "00111110"
+    ],
+    [
+     "01010110",
+     "10101100"
+    ],
+    [
+     "10011010",
+     "00110100"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01001111\", \"10101010\", \"01001010\"], \"confidence\": 1.0}",
+   "latency_s": 6.575312852859497,
+   "call_error": null,
+   "answers": [
+    "01001111",
+    "10101010",
+    "01001010"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t2-0",
+   "family": "function",
+   "tier": 2,
+   "rule": "3x+-2",
+   "shown": [
+    [
+     -8,
+     -26
+    ],
+    [
+     13,
+     37
+    ],
+    [
+     -4,
+     -14
+    ],
+    [
+     -12,
+     -38
+    ],
+    [
+     -3,
+     -11
+    ]
+   ],
+   "held": [
+    [
+     19,
+     55
+    ],
+    [
+     6,
+     16
+    ],
+    [
+     -11,
+     -35
+    ]
+   ],
+   "raw": "{\n  \"answers\": [49, -16, -38],\n  \"confidence\": 1.0\n}",
+   "latency_s": 6.160735368728638,
+   "call_error": null,
+   "answers": [
+    "49",
+    "-16",
+    "-38"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t1-4",
+   "family": "string",
+   "tier": 1,
+   "rule": "reverse",
+   "shown": [
+    [
+     "lqwcdkt",
+     "tkdcwql"
+    ],
+    [
+     "nnommbb",
+     "bbmmonn"
+    ],
+    [
+     "kiowzaw",
+     "wazwoik"
+    ],
+    [
+     "zwrluvt",
+     "tvulrwz"
+    ],
+    [
+     "suebzyv",
+     "vyzbeus"
+    ]
+   ],
+   "held": [
+    [
+     "gvqjzw",
+     "wzjqvg"
+    ],
+    [
+     "yjwzlge",
+     "eglzwjy"
+    ],
+    [
+     "oqln",
+     "nlqo"
+    ]
+   ],
+   "raw": "{\"answers\": [\"zwjvgq\", \"eglwzyj\", \"nloq\"], \"confidence\": 1.0}",
+   "latency_s": 4.537732124328613,
+   "call_error": null,
+   "answers": [
+    "zwjvgq",
+    "eglwzyj",
+    "nloq"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t2-4",
+   "family": "function",
+   "tier": 2,
+   "rule": "7x+3",
+   "shown": [
+    [
+     5,
+     38
+    ],
+    [
+     15,
+     108
+    ],
+    [
+     8,
+     59
+    ],
+    [
+     22,
+     157
+    ],
+    [
+     7,
+     52
+    ]
+   ],
+   "held": [
+    [
+     6,
+     45
+    ],
+    [
+     -12,
+     -81
+    ],
+    [
+     1,
+     10
+    ]
+   ],
+   "raw": "{\n  \"answers\": [46, -58, 17],\n  \"confidence\": 0.9\n}",
+   "latency_s": 5.5032432079315186,
+   "call_error": null,
+   "answers": [
+    "46",
+    "-58",
+    "17"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t3-2",
+   "family": "function",
+   "tier": 3,
+   "rule": "x mod 5",
+   "shown": [
+    [
+     46,
+     1
+    ],
+    [
+     18,
+     3
+    ],
+    [
+     83,
+     3
+    ],
+    [
+     49,
+     4
+    ],
+    [
+     23,
+     3
+    ]
+   ],
+   "held": [
+    [
+     43,
+     3
+    ],
+    [
+     51,
+     1
+    ],
+    [
+     71,
+     1
+    ]
+   ],
+   "raw": "{\"answers\": [7, 6, 8], \"confidence\": 0.9}",
+   "latency_s": 6.8042590618133545,
+   "call_error": null,
+   "answers": [
+    "7",
+    "6",
+    "8"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t3-5",
+   "family": "function",
+   "tier": 3,
+   "rule": "x mod 9",
+   "shown": [
+    [
+     44,
+     8
+    ],
+    [
+     58,
+     4
+    ],
+    [
+     71,
+     8
+    ],
+    [
+     45,
+     0
+    ],
+    [
+     21,
+     3
+    ]
+   ],
+   "held": [
+    [
+     49,
+     4
+    ],
+    [
+     13,
+     4
+    ],
+    [
+     63,
+     0
+    ]
+   ],
+   "raw": "{\n\"answers\": [5, 4, 9],\n\"confidence\": 0.8\n}",
+   "latency_s": 4.975913763046265,
+   "call_error": null,
+   "answers": [
+    "5",
+    "4",
+    "9"
+   ],
+   "conf": 0.8,
+   "parse_error": null,
+   "correct": [
+    false,
+    true,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-5",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "interleaved arith (8,+5) / (36,-1)",
+   "shown": [
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     36
+    ],
+    [
+     3,
+     13
+    ],
+    [
+     4,
+     35
+    ],
+    [
+     5,
+     18
+    ]
+   ],
+   "held": [
+    [
+     6,
+     34
+    ],
+    [
+     7,
+     23
+    ],
+    [
+     8,
+     33
+    ]
+   ],
+   "raw": "{\n\"answers\": [25, 24, 23],\n\"confidence\": 0.85\n}",
+   "latency_s": 2.964853286743164,
+   "call_error": null,
+   "answers": [
+    "25",
+    "24",
+    "23"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t2-3",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +3",
+   "shown": [
+    [
+     "pyyyfwp",
+     "sbbbizs"
+    ],
+    [
+     "gkrzmza",
+     "jnucpcd"
+    ],
+    [
+     "rkro",
+     "unur"
+    ],
+    [
+     "zcka",
+     "cfnd"
+    ],
+    [
+     "kaez",
+     "ndhc"
+    ]
+   ],
+   "held": [
+    [
+     "cegnbs",
+     "fhjqev"
+    ],
+    [
+     "pvdwr",
+     "sygzu"
+    ],
+    [
+     "fnxj",
+     "iqam"
+    ]
+   ],
+   "raw": "{\"answers\": [\"jgqkz\", \"mzqy\", \"hly\"], \"confidence\": 0.95}",
+   "latency_s": 3.0371620655059814,
+   "call_error": null,
+   "answers": [
+    "jgqkz",
+    "mzqy",
+    "hly"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-5",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "alternating-sign arithmetic a=9 d=5",
+   "shown": [
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     -14
+    ],
+    [
+     3,
+     19
+    ],
+    [
+     4,
+     -24
+    ],
+    [
+     5,
+     29
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -34
+    ],
+    [
+     7,
+     39
+    ],
+    [
+     8,
+     -44
+    ]
+   ],
+   "raw": "{\n\"answers\": [34, -39, 44],\n\"confidence\": 1.0\n}",
+   "latency_s": 2.921346664428711,
+   "call_error": null,
+   "answers": [
+    "34",
+    "-39",
+    "44"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-2",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=23 d=8",
+   "shown": [
+    [
+     1,
+     23
+    ],
+    [
+     2,
+     31
+    ],
+    [
+     3,
+     39
+    ],
+    [
+     4,
+     47
+    ],
+    [
+     5,
+     55
+    ]
+   ],
+   "held": [
+    [
+     6,
+     63
+    ],
+    [
+     7,
+     71
+    ],
+    [
+     8,
+     79
+    ]
+   ],
+   "raw": "{\"answers\": [63, 71, 79], \"confidence\": 1.0}",
+   "latency_s": 5.244425058364868,
+   "call_error": null,
+   "answers": [
+    "63",
+    "71",
+    "79"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t4-0",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 110, width 8, zero boundary",
+   "shown": [
+    [
+     "01001111",
+     "11011001"
+    ],
+    [
+     "11001011",
+     "11011111"
+    ],
+    [
+     "00100011",
+     "01100111"
+    ],
+    [
+     "00011101",
+     "00110111"
+    ],
+    [
+     "01111111",
+     "11000001"
+    ]
+   ],
+   "held": [
+    [
+     "10100000",
+     "11100000"
+    ],
+    [
+     "00101011",
+     "01111111"
+    ],
+    [
+     "10000010",
+     "10000110"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01011111\", \"11010110\", \"01111101\"], \"confidence\": 0.85}",
+   "latency_s": 5.440072298049927,
+   "call_error": null,
+   "answers": [
+    "01011111",
+    "11010110",
+    "01111101"
+   ],
+   "conf": 0.85,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t3-2",
+   "family": "string",
+   "tier": 3,
+   "rule": "rotate left 3",
+   "shown": [
+    [
+     "osmapoh",
+     "apohosm"
+    ],
+    [
+     "jrhzew",
+     "zewjrh"
+    ],
+    [
+     "sgpjal",
+     "jalsgp"
+    ],
+    [
+     "reyq",
+     "qrey"
+    ],
+    [
+     "stdaicl",
+     "aiclstd"
+    ]
+   ],
+   "held": [
+    [
+     "pyyjdz",
+     "jdzpyy"
+    ],
+    [
+     "xpucl",
+     "clxpu"
+    ],
+    [
+     "xttdwz",
+     "dwzxtt"
+    ]
+   ],
+   "raw": "{\"answers\": [\"dyjypy\", \"clxup\", \"wzxttd\"], \"confidence\": 1.0}",
+   "latency_s": 3.8807218074798584,
+   "call_error": null,
+   "answers": [
+    "dyjypy",
+    "clxup",
+    "wzxttd"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t1-4",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 240, width 8, zero boundary",
+   "shown": [
+    [
+     "01000101",
+     "00100010"
+    ],
+    [
+     "01101110",
+     "00110111"
+    ],
+    [
+     "10101011",
+     "01010101"
+    ],
+    [
+     "00101111",
+     "00010111"
+    ],
+    [
+     "11101011",
+     "01110101"
+    ]
+   ],
+   "held": [
+    [
+     "10001101",
+     "01000110"
+    ],
+    [
+     "10101100",
+     "01010110"
+    ],
+    [
+     "00010110",
+     "00001011"
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    \"01000110\",\n    \"01010110\",\n    \"00001011\"\n  ],\n  \"confidence\": 0.95\n}",
+   "latency_s": 3.3001129627227783,
+   "call_error": null,
+   "answers": [
+    "01000110",
+    "01010110",
+    "00001011"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "function-t4-5",
+   "family": "function",
+   "tier": 4,
+   "rule": "reverse digits then +5",
+   "shown": [
+    [
+     80,
+     13
+    ],
+    [
+     71,
+     22
+    ],
+    [
+     43,
+     39
+    ],
+    [
+     54,
+     50
+    ],
+    [
+     85,
+     63
+    ]
+   ],
+   "held": [
+    [
+     41,
+     19
+    ],
+    [
+     27,
+     77
+    ],
+    [
+     56,
+     70
+    ]
+   ],
+   "raw": "{\n  \"answers\": [45, 38, 62],\n  \"confidence\": 0.9\n}",
+   "latency_s": 4.824605703353882,
+   "call_error": null,
+   "answers": [
+    "45",
+    "38",
+    "62"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-1",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "recurrence a_n=2a_(n-1)+2a_(n-2) seed=[4, 1]",
+   "shown": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     22
+    ],
+    [
+     5,
+     64
+    ]
+   ],
+   "held": [
+    [
+     6,
+     172
+    ],
+    [
+     7,
+     472
+    ],
+    [
+     8,
+     1288
+    ]
+   ],
+   "raw": "{\n\"answers\": [194, 586, 1754],\n\"confidence\": 0.9\n}",
+   "latency_s": 2.559049129486084,
+   "call_error": null,
+   "answers": [
+    "194",
+    "586",
+    "1754"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t3-1",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 1n^2+5n+-4",
+   "shown": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     20
+    ],
+    [
+     4,
+     32
+    ],
+    [
+     5,
+     46
+    ]
+   ],
+   "held": [
+    [
+     6,
+     62
+    ],
+    [
+     7,
+     80
+    ],
+    [
+     8,
+     100
+    ]
+   ],
+   "raw": "{\"answers\": [64, 88, 118], \"confidence\": 0.95}",
+   "latency_s": 2.2858529090881348,
+   "call_error": null,
+   "answers": [
+    "64",
+    "88",
+    "118"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t3-4",
+   "family": "sequence",
+   "tier": 3,
+   "rule": "quadratic 2n^2+-4n+10",
+   "shown": [
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     16
+    ],
+    [
+     4,
+     26
+    ],
+    [
+     5,
+     40
+    ]
+   ],
+   "held": [
+    [
+     6,
+     58
+    ],
+    [
+     7,
+     80
+    ],
+    [
+     8,
+     106
+    ]
+   ],
+   "raw": "{\n\"answers\": [64, 98, 140],\n\"confidence\": 0.95\n}",
+   "latency_s": 2.45481014251709,
+   "call_error": null,
+   "answers": [
+    "64",
+    "98",
+    "140"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t2-0",
+   "family": "string",
+   "tier": 2,
+   "rule": "caesar shift +2",
+   "shown": [
+    [
+     "vtnd",
+     "xvpf"
+    ],
+    [
+     "zulpd",
+     "bwnrf"
+    ],
+    [
+     "aosga",
+     "cquic"
+    ],
+    [
+     "nakxwgt",
+     "pcmzyiv"
+    ],
+    [
+     "hbyl",
+     "jdan"
+    ]
+   ],
+   "held": [
+    [
+     "lghbvau",
+     "nijdxcw"
+    ],
+    [
+     "okko",
+     "qmmq"
+    ],
+    [
+     "itsawr",
+     "kvucyt"
+    ]
+   ],
+   "raw": "{\"answers\": [\"nqjgkxv\", \"rmyy\", \"lqvcys\"], \"confidence\": 0.95}",
+   "latency_s": 3.26505970954895,
+   "call_error": null,
+   "answers": [
+    "nqjgkxv",
+    "rmyy",
+    "lqvcys"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t3-0",
+   "family": "function",
+   "tier": 3,
+   "rule": "x^2+-4",
+   "shown": [
+    [
+     -3,
+     5
+    ],
+    [
+     12,
+     140
+    ],
+    [
+     8,
+     60
+    ],
+    [
+     -8,
+     60
+    ],
+    [
+     -2,
+     0
+    ]
+   ],
+   "held": [
+    [
+     22,
+     480
+    ],
+    [
+     14,
+     192
+    ],
+    [
+     28,
+     780
+    ]
+   ],
+   "raw": "{\n  \"answers\": [568, 476, 980],\n  \"confidence\": 0.0\n}",
+   "latency_s": 3.8186562061309814,
+   "call_error": null,
+   "answers": [
+    "568",
+    "476",
+    "980"
+   ],
+   "conf": 0.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-3",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 51, width 8, zero boundary",
+   "shown": [
+    [
+     "01011110",
+     "10100001"
+    ],
+    [
+     "00011110",
+     "11100001"
+    ],
+    [
+     "10101100",
+     "01010011"
+    ],
+    [
+     "11101000",
+     "00010111"
+    ],
+    [
+     "00100111",
+     "11011000"
+    ]
+   ],
+   "held": [
+    [
+     "00001101",
+     "11110010"
+    ],
+    [
+     "01101000",
+     "10010111"
+    ],
+    [
+     "00111010",
+     "11000101"
+    ]
+   ],
+   "raw": "{\n\"answers\": [\"11110010\", \"10010111\", \"11000101\"],\n\"confidence\": 0.95\n}",
+   "latency_s": 2.3962221145629883,
+   "call_error": null,
+   "answers": [
+    "11110010",
+    "10010111",
+    "11000101"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "function-t4-3",
+   "family": "function",
+   "tier": 4,
+   "rule": "even x/2, odd 3x+1",
+   "shown": [
+    [
+     -5,
+     -14
+    ],
+    [
+     9,
+     28
+    ],
+    [
+     21,
+     64
+    ],
+    [
+     28,
+     14
+    ],
+    [
+     -12,
+     -6
+    ]
+   ],
+   "held": [
+    [
+     30,
+     15
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     15,
+     46
+    ]
+   ],
+   "raw": "{\n\"answers\": [46, 58, 70],\n\"confidence\": 0.9\n}",
+   "latency_s": 3.808628559112549,
+   "call_error": null,
+   "answers": [
+    "46",
+    "58",
+    "70"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-2",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "interleaved arith (5,+4) / (26,-1)",
+   "shown": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     26
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     25
+    ],
+    [
+     5,
+     13
+    ]
+   ],
+   "held": [
+    [
+     6,
+     24
+    ],
+    [
+     7,
+     17
+    ],
+    [
+     8,
+     23
+    ]
+   ],
+   "raw": "{\n\"answers\": [4, 24, 5],\n\"confidence\": 0.9\n}",
+   "latency_s": 3.801697254180908,
+   "call_error": null,
+   "answers": [
+    "4",
+    "24",
+    "5"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t3-5",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 90, width 8, zero boundary",
+   "shown": [
+    [
+     "10110101",
+     "00110000"
+    ],
+    [
+     "11100101",
+     "10111000"
+    ],
+    [
+     "10111011",
+     "00101011"
+    ],
+    [
+     "11100011",
+     "10110111"
+    ],
+    [
+     "00010000",
+     "00101000"
+    ]
+   ],
+   "held": [
+    [
+     "00110100",
+     "01110010"
+    ],
+    [
+     "00111011",
+     "01101011"
+    ],
+    [
+     "10100100",
+     "00011010"
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    \"00101000\",\n    \"00101011\",\n    \"00101000\"\n  ],\n  \"confidence\": 0.95\n}",
+   "latency_s": 5.134960174560547,
+   "call_error": null,
+   "answers": [
+    "00101000",
+    "00101011",
+    "00101000"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-1",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+-15",
+   "shown": [
+    [
+     3,
+     -12
+    ],
+    [
+     26,
+     11
+    ],
+    [
+     28,
+     13
+    ],
+    [
+     -7,
+     -22
+    ],
+    [
+     30,
+     15
+    ]
+   ],
+   "held": [
+    [
+     13,
+     -2
+    ],
+    [
+     18,
+     3
+    ],
+    [
+     23,
+     8
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    -4,\n    6,\n    10\n  ],\n  \"confidence\": 0.95\n}",
+   "latency_s": 6.313572883605957,
+   "call_error": null,
+   "answers": [
+    "-4",
+    "6",
+    "10"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t3-1",
+   "family": "string",
+   "tier": 3,
+   "rule": "swap adjacent pairs",
+   "shown": [
+    [
+     "phybwa",
+     "hpbyaw"
+    ],
+    [
+     "zmkshsw",
+     "mzskshw"
+    ],
+    [
+     "qcanl",
+     "cqnal"
+    ],
+    [
+     "lwyswpc",
+     "wlsypwc"
+    ],
+    [
+     "sfrpav",
+     "fsprva"
+    ]
+   ],
+   "held": [
+    [
+     "xwhrjv",
+     "wxrhvj"
+    ],
+    [
+     "ordt",
+     "rotd"
+    ],
+    [
+     "gsld",
+     "sgdl"
+    ]
+   ],
+   "raw": "{\"answers\": [\"xwhrjv\", \"odrt\", \"glds\"], \"confidence\": 0.9}",
+   "latency_s": 3.774824857711792,
+   "call_error": null,
+   "answers": [
+    "xwhrjv",
+    "odrt",
+    "glds"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t2-4",
+   "family": "sequence",
+   "tier": 2,
+   "rule": "alternating-sign arithmetic a=6 d=4",
+   "shown": [
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     -10
+    ],
+    [
+     3,
+     14
+    ],
+    [
+     4,
+     -18
+    ],
+    [
+     5,
+     22
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -26
+    ],
+    [
+     7,
+     30
+    ],
+    [
+     8,
+     -34
+    ]
+   ],
+   "raw": "{\n  \"answers\": [26, -30, 34],\n  \"confidence\": 1.0\n}",
+   "latency_s": 6.16098952293396,
+   "call_error": null,
+   "answers": [
+    "26",
+    "-30",
+    "34"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t1-5",
+   "family": "sequence",
+   "tier": 1,
+   "rule": "arithmetic a=-5 d=-6",
+   "shown": [
+    [
+     1,
+     -5
+    ],
+    [
+     2,
+     -11
+    ],
+    [
+     3,
+     -17
+    ],
+    [
+     4,
+     -23
+    ],
+    [
+     5,
+     -29
+    ]
+   ],
+   "held": [
+    [
+     6,
+     -35
+    ],
+    [
+     7,
+     -41
+    ],
+    [
+     8,
+     -47
+    ]
+   ],
+   "raw": "{\n\"answers\": [ -35, -41, -47 ],\n\"confidence\": 1.0\n}",
+   "latency_s": 6.25870418548584,
+   "call_error": null,
+   "answers": [
+    "-35",
+    "-41",
+    "-47"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t4-4",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 30, width 8, zero boundary",
+   "shown": [
+    [
+     "00000000",
+     "00000000"
+    ],
+    [
+     "00111101",
+     "01100001"
+    ],
+    [
+     "01100000",
+     "11010000"
+    ],
+    [
+     "11010101",
+     "10010101"
+    ],
+    [
+     "00000001",
+     "00000011"
+    ]
+   ],
+   "held": [
+    [
+     "00011001",
+     "00110111"
+    ],
+    [
+     "11100001",
+     "10010011"
+    ],
+    [
+     "11101010",
+     "10001011"
+    ]
+   ],
+   "raw": "{\n\"answers\": [\"00000000\", \"00000000\", \"00000000\"],\n\"confidence\": 0.95\n}",
+   "latency_s": 4.663713693618774,
+   "call_error": null,
+   "answers": [
+    "00000000",
+    "00000000",
+    "00000000"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t1-5",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 170, width 8, zero boundary",
+   "shown": [
+    [
+     "01101000",
+     "11010000"
+    ],
+    [
+     "00110110",
+     "01101100"
+    ],
+    [
+     "01101110",
+     "11011100"
+    ],
+    [
+     "00101110",
+     "01011100"
+    ],
+    [
+     "11101000",
+     "11010000"
+    ]
+   ],
+   "held": [
+    [
+     "00001100",
+     "00011000"
+    ],
+    [
+     "00111110",
+     "01111100"
+    ],
+    [
+     "01000011",
+     "10000110"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00001100\", \"01111100\", \"10000011\"], \"confidence\": 1.0}",
+   "latency_s": 7.926968812942505,
+   "call_error": null,
+   "answers": [
+    "00001100",
+    "01111100",
+    "10000011"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    false,
+    true,
+    false
+   ],
+   "hit_frac": 0.3333333333333333,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t2-5",
+   "family": "function",
+   "tier": 2,
+   "rule": "3x+7",
+   "shown": [
+    [
+     26,
+     85
+    ],
+    [
+     14,
+     49
+    ],
+    [
+     12,
+     43
+    ],
+    [
+     10,
+     37
+    ],
+    [
+     2,
+     13
+    ]
+   ],
+   "held": [
+    [
+     -5,
+     -8
+    ],
+    [
+     6,
+     25
+    ],
+    [
+     3,
+     16
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    -5,\n    6,\n    3\n  ],\n  \"confidence\": 0.98\n}",
+   "latency_s": 7.827100992202759,
+   "call_error": null,
+   "answers": [
+    "-5",
+    "6",
+    "3"
+   ],
+   "conf": 0.98,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t4-5",
+   "family": "string",
+   "tier": 4,
+   "rule": "interleave halves (abcdef->adbecf)",
+   "shown": [
+    [
+     "mrgchn",
+     "mcrhgn"
+    ],
+    [
+     "ntvuwx",
+     "nutwvx"
+    ],
+    [
+     "bpmegr",
+     "bepgmr"
+    ],
+    [
+     "chspzo",
+     "cphzso"
+    ],
+    [
+     "yeclvr",
+     "ylevcr"
+    ]
+   ],
+   "held": [
+    [
+     "yikdrh",
+     "ydirkh"
+    ],
+    [
+     "gmhnqt",
+     "gnmqht"
+    ],
+    [
+     "akrnnu",
+     "anknru"
+    ]
+   ],
+   "raw": "{\"answers\": [\"yidhrk\", \"gmnqht\", \"aknrnu\"], \"confidence\": 0.95}",
+   "latency_s": 7.924974203109741,
+   "call_error": null,
+   "answers": [
+    "yidhrk",
+    "gmnqht",
+    "aknrnu"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "sequence-t4-3",
+   "family": "sequence",
+   "tier": 4,
+   "rule": "recurrence a_n=1a_(n-1)+1a_(n-2) seed=[4, 3]",
+   "shown": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     17
+    ]
+   ],
+   "held": [
+    [
+     6,
+     27
+    ],
+    [
+     7,
+     44
+    ],
+    [
+     8,
+     71
+    ]
+   ],
+   "raw": "{\"answers\": [24, 41, 65], \"confidence\": 0.9}",
+   "latency_s": 3.594583749771118,
+   "call_error": null,
+   "answers": [
+    "24",
+    "41",
+    "65"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t3-1",
+   "family": "ca_row",
+   "tier": 3,
+   "rule": "elementary CA rule 90, width 8, zero boundary",
+   "shown": [
+    [
+     "01110000",
+     "11011000"
+    ],
+    [
+     "00000010",
+     "00000101"
+    ],
+    [
+     "10011100",
+     "01110110"
+    ],
+    [
+     "10100000",
+     "00010000"
+    ],
+    [
+     "10101100",
+     "00001110"
+    ]
+   ],
+   "held": [
+    [
+     "00111100",
+     "01100110"
+    ],
+    [
+     "11010111",
+     "11000101"
+    ],
+    [
+     "00011011",
+     "00111011"
+    ]
+   ],
+   "raw": "{\n\"answers\": [\"00000000\", \"00000000\", \"00000000\"],\n\"confidence\": 0.95\n}",
+   "latency_s": 6.927265167236328,
+   "call_error": null,
+   "answers": [
+    "00000000",
+    "00000000",
+    "00000000"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "string-t3-4",
+   "family": "string",
+   "tier": 3,
+   "rule": "rotate left 1",
+   "shown": [
+    [
+     "cjur",
+     "jurc"
+    ],
+    [
+     "bbhrplo",
+     "bhrplob"
+    ],
+    [
+     "uluhdqi",
+     "luhdqiu"
+    ],
+    [
+     "dwryr",
+     "wryrd"
+    ],
+    [
+     "gzsczeq",
+     "zsczeqg"
+    ]
+   ],
+   "held": [
+    [
+     "shtvri",
+     "htvris"
+    ],
+    [
+     "tmiy",
+     "miyt"
+    ],
+    [
+     "zayhyt",
+     "ayhytz"
+    ]
+   ],
+   "raw": "{\"answers\": [\"htvris\", \"miyt\", \"ayhytz\"], \"confidence\": 1.0}",
+   "latency_s": 3.626488447189331,
+   "call_error": null,
+   "answers": [
+    "htvris",
+    "miyt",
+    "ayhytz"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "ca_row-t4-2",
+   "family": "ca_row",
+   "tier": 4,
+   "rule": "elementary CA rule 110, width 8, zero boundary",
+   "shown": [
+    [
+     "00001100",
+     "00011100"
+    ],
+    [
+     "10010110",
+     "10111110"
+    ],
+    [
+     "11111010",
+     "10001110"
+    ],
+    [
+     "10110100",
+     "11111100"
+    ],
+    [
+     "10001011",
+     "10011111"
+    ]
+   ],
+   "held": [
+    [
+     "01010100",
+     "11111100"
+    ],
+    [
+     "00010111",
+     "00111101"
+    ],
+    [
+     "01111010",
+     "11001110"
+    ]
+   ],
+   "raw": "{\"answers\": [\"01011100\", \"00011111\", \"01111110\"], \"confidence\": 0.95}",
+   "latency_s": 4.349579095840454,
+   "call_error": null,
+   "answers": [
+    "01011100",
+    "00011111",
+    "01111110"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t1-2",
+   "family": "function",
+   "tier": 1,
+   "rule": "x+4",
+   "shown": [
+    [
+     17,
+     21
+    ],
+    [
+     29,
+     33
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     5,
+     9
+    ]
+   ],
+   "held": [
+    [
+     2,
+     6
+    ],
+    [
+     20,
+     24
+    ],
+    [
+     -11,
+     -7
+    ]
+   ],
+   "raw": "{\n  \"answers\": [4, 28, -17],\n  \"confidence\": 0.95\n}",
+   "latency_s": 3.83994460105896,
+   "call_error": null,
+   "answers": [
+    "4",
+    "28",
+    "-17"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t2-5",
+   "family": "ca_row",
+   "tier": 2,
+   "rule": "elementary CA rule 51, width 8, zero boundary",
+   "shown": [
+    [
+     "00110001",
+     "11001110"
+    ],
+    [
+     "01001111",
+     "10110000"
+    ],
+    [
+     "00011101",
+     "11100010"
+    ],
+    [
+     "00010010",
+     "11101101"
+    ],
+    [
+     "01011010",
+     "10100101"
+    ]
+   ],
+   "held": [
+    [
+     "11011110",
+     "00100001"
+    ],
+    [
+     "00011111",
+     "11100000"
+    ],
+    [
+     "00110100",
+     "11001011"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00100001\", \"11100000\", \"11001011\"], \"confidence\": 0.95}",
+   "latency_s": 4.368981599807739,
+   "call_error": null,
+   "answers": [
+    "00100001",
+    "11100000",
+    "11001011"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "hit_frac": 1.0,
+   "hit_all": 1
+  },
+  {
+   "id": "function-t3-4",
+   "family": "function",
+   "tier": 3,
+   "rule": "x mod 5",
+   "shown": [
+    [
+     48,
+     3
+    ],
+    [
+     19,
+     4
+    ],
+    [
+     13,
+     3
+    ],
+    [
+     42,
+     2
+    ],
+    [
+     31,
+     1
+    ]
+   ],
+   "held": [
+    [
+     14,
+     4
+    ],
+    [
+     38,
+     3
+    ],
+    [
+     28,
+     3
+    ]
+   ],
+   "raw": "{\"answers\": [2, 2, 2], \"confidence\": 0.95}",
+   "latency_s": 3.595343589782715,
+   "call_error": null,
+   "answers": [
+    "2",
+    "2",
+    "2"
+   ],
+   "conf": 0.95,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "function-t3-1",
+   "family": "function",
+   "tier": 3,
+   "rule": "x^2+1",
+   "shown": [
+    [
+     19,
+     362
+    ],
+    [
+     -4,
+     17
+    ],
+    [
+     20,
+     401
+    ],
+    [
+     -8,
+     65
+    ],
+    [
+     6,
+     37
+    ]
+   ],
+   "held": [
+    [
+     17,
+     290
+    ],
+    [
+     5,
+     26
+    ],
+    [
+     4,
+     17
+    ]
+   ],
+   "raw": "{\n  \"answers\": [\n    48,\n    35,\n    34\n  ],\n  \"confidence\": 0.9\n}",
+   "latency_s": 4.310506582260132,
+   "call_error": null,
+   "answers": [
+    "48",
+    "35",
+    "34"
+   ],
+   "conf": 0.9,
+   "parse_error": null,
+   "correct": [
+    false,
+    false,
+    false
+   ],
+   "hit_frac": 0.0,
+   "hit_all": 0
+  },
+  {
+   "id": "ca_row-t1-1",
+   "family": "ca_row",
+   "tier": 1,
+   "rule": "elementary CA rule 240, width 8, zero boundary",
+   "shown": [
+    [
+     "01001010",
+     "00100101"
+    ],
+    [
+     "00110000",
+     "00011000"
+    ],
+    [
+     "01101001",
+     "00110100"
+    ],
+    [
+     "11001111",
+     "01100111"
+    ],
+    [
+     "00001011",
+     "00000101"
+    ]
+   ],
+   "held": [
+    [
+     "00011011",
+     "00001101"
+    ],
+    [
+     "01011101",
+     "00101110"
+    ],
+    [
+     "00111110",
+     "00011111"
+    ]
+   ],
+   "raw": "{\"answers\": [\"00001101\", \"00101110\", \"00011110\"], \"confidence\": 1.0}",
+   "latency_s": 4.449576139450073,
+   "call_error": null,
+   "answers": [
+    "00001101",
+    "00101110",
+    "00011110"
+   ],
+   "conf": 1.0,
+   "parse_error": null,
+   "correct": [
+    true,
+    true,
+    false
+   ],
+   "hit_frac": 0.6666666666666666,
+   "hit_all": 0
+  }
+ ]
+}

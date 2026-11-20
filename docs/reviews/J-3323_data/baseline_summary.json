@@ -1,0 +1,977 @@
+{
+ "data": "C:\\Nascence\\data\\training\\executive.jsonl",
+ "executive_rows_seen": 4495,
+ "take_rows": 1149,
+ "split_ts": 1787140800.0,
+ "window": [
+  null,
+  null
+ ],
+ "min_novel": 3,
+ "n_control": 5,
+ "strata": {
+  "human/pre": {
+   "meta_take_rows": 34,
+   "cov_novel_meta": {
+    "n": 31,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.05,
+    "p90": 0.2,
+    "mean": 0.055
+   },
+   "cov_novel_factual": {
+    "n": 395,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.077,
+    "p75": 0.167,
+    "p90": 0.286,
+    "mean": 0.111
+   },
+   "excess_factual": {
+    "n": 395,
+    "p10": -0.038,
+    "p25": 0.0,
+    "median": 0.04,
+    "p75": 0.154,
+    "p90": 0.252,
+    "mean": 0.086
+   },
+   "rows": 529,
+   "with_result": 24,
+   "scored_novel": 426,
+   "cov_all": {
+    "n": 500,
+    "p10": 0.0,
+    "p25": 0.105,
+    "median": 0.2,
+    "p75": 0.333,
+    "p90": 0.429,
+    "mean": 0.224
+   },
+   "cov_novel": {
+    "n": 426,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.071,
+    "p75": 0.167,
+    "p90": 0.286,
+    "mean": 0.107
+   },
+   "control_novel": {
+    "n": 426,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.017,
+    "p75": 0.04,
+    "p90": 0.067,
+    "mean": 0.025
+   },
+   "excess": {
+    "n": 426,
+    "p10": -0.04,
+    "p25": 0.0,
+    "median": 0.031,
+    "p75": 0.15,
+    "p90": 0.25,
+    "mean": 0.082
+   },
+   "excess_median_ci95": [
+    0.0,
+    0.05
+   ],
+   "cov_novel_median_ci95": [
+    0.025,
+    0.083
+   ],
+   "share_excess_gt0": 0.533,
+   "share_cov_novel_zero": 0.451,
+   "rows_with_novel_numbers": 4,
+   "novel_numbers_total": 12,
+   "novel_numbers_in_synthesis": 0,
+   "small_word_numbers_total": 8,
+   "small_word_numbers_in_synthesis": 3,
+   "substrate": {
+    "result_recast_rows": 2,
+    "result_rows": 24,
+    "facts_recast_rows": 42,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 2,
+    "by_term_result": {
+     "server": 1,
+     "cloud": 1,
+     "digital_environment": 2,
+     "hosted": 2,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 3,
+     "cloud": 4,
+     "digital_environment": 8,
+     "hosted": 1,
+     "language_model": 10,
+     "AI": 24
+    }
+   }
+  },
+  "human/post": {
+   "meta_take_rows": 29,
+   "cov_novel_meta": {
+    "n": 29,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.077,
+    "p90": 0.14,
+    "mean": 0.05
+   },
+   "cov_novel_factual": {
+    "n": 0,
+    "p10": null,
+    "p25": null,
+    "median": null,
+    "p75": null,
+    "p90": null,
+    "mean": null
+   },
+   "excess_factual": {
+    "n": 0,
+    "p10": null,
+    "p25": null,
+    "median": null,
+    "p75": null,
+    "p90": null,
+    "mean": null
+   },
+   "rows": 29,
+   "with_result": 0,
+   "scored_novel": 29,
+   "cov_all": {
+    "n": 29,
+    "p10": 0.0,
+    "p25": 0.062,
+    "median": 0.105,
+    "p75": 0.176,
+    "p90": 0.253,
+    "mean": 0.125
+   },
+   "cov_novel": {
+    "n": 29,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.077,
+    "p90": 0.14,
+    "mean": 0.05
+   },
+   "control_novel": {
+    "n": 29,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.012,
+    "p75": 0.018,
+    "p90": 0.025,
+    "mean": 0.01
+   },
+   "excess": {
+    "n": 29,
+    "p10": -0.022,
+    "p25": -0.012,
+    "median": 0.0,
+    "p75": 0.062,
+    "p90": 0.13,
+    "mean": 0.04
+   },
+   "excess_median_ci95": [
+    0.0,
+    0.059
+   ],
+   "cov_novel_median_ci95": [
+    0.0,
+    0.059
+   ],
+   "share_excess_gt0": 0.414,
+   "share_cov_novel_zero": 0.586,
+   "rows_with_novel_numbers": 1,
+   "novel_numbers_total": 1,
+   "novel_numbers_in_synthesis": 0,
+   "small_word_numbers_total": 1,
+   "small_word_numbers_in_synthesis": 0,
+   "substrate": {
+    "result_recast_rows": 0,
+    "result_rows": 0,
+    "facts_recast_rows": 5,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 1,
+    "by_term_result": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 2,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 1,
+     "language_model": 3,
+     "AI": 1
+    }
+   }
+  },
+  "human/all": {
+   "meta_take_rows": 63,
+   "cov_novel_meta": {
+    "n": 60,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.077,
+    "p90": 0.2,
+    "mean": 0.053
+   },
+   "cov_novel_factual": {
+    "n": 395,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.077,
+    "p75": 0.167,
+    "p90": 0.286,
+    "mean": 0.111
+   },
+   "excess_factual": {
+    "n": 395,
+    "p10": -0.038,
+    "p25": 0.0,
+    "median": 0.04,
+    "p75": 0.154,
+    "p90": 0.252,
+    "mean": 0.086
+   },
+   "rows": 558,
+   "with_result": 24,
+   "scored_novel": 455,
+   "cov_all": {
+    "n": 529,
+    "p10": 0.0,
+    "p25": 0.1,
+    "median": 0.2,
+    "p75": 0.308,
+    "p90": 0.423,
+    "mean": 0.218
+   },
+   "cov_novel": {
+    "n": 455,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.071,
+    "p75": 0.167,
+    "p90": 0.286,
+    "mean": 0.103
+   },
+   "control_novel": {
+    "n": 455,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.015,
+    "p75": 0.038,
+    "p90": 0.067,
+    "mean": 0.024
+   },
+   "excess": {
+    "n": 455,
+    "p10": -0.038,
+    "p25": 0.0,
+    "median": 0.028,
+    "p75": 0.143,
+    "p90": 0.25,
+    "mean": 0.079
+   },
+   "excess_median_ci95": [
+    0.0,
+    0.047
+   ],
+   "cov_novel_median_ci95": [
+    0.0,
+    0.077
+   ],
+   "share_excess_gt0": 0.525,
+   "share_cov_novel_zero": 0.459,
+   "rows_with_novel_numbers": 5,
+   "novel_numbers_total": 13,
+   "novel_numbers_in_synthesis": 0,
+   "small_word_numbers_total": 9,
+   "small_word_numbers_in_synthesis": 3,
+   "substrate": {
+    "result_recast_rows": 2,
+    "result_rows": 24,
+    "facts_recast_rows": 47,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 3,
+    "by_term_result": {
+     "server": 1,
+     "cloud": 1,
+     "digital_environment": 2,
+     "hosted": 2,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 5,
+     "cloud": 4,
+     "digital_environment": 8,
+     "hosted": 2,
+     "language_model": 13,
+     "AI": 25
+    }
+   }
+  },
+  "internal/pre": {
+   "meta_take_rows": 0,
+   "cov_novel_meta": {
+    "n": 0,
+    "p10": null,
+    "p25": null,
+    "median": null,
+    "p75": null,
+    "p90": null,
+    "mean": null
+   },
+   "cov_novel_factual": {
+    "n": 476,
+    "p10": 0.0,
+    "p25": 0.059,
+    "median": 0.118,
+    "p75": 0.232,
+    "p90": 0.36,
+    "mean": 0.158
+   },
+   "excess_factual": {
+    "n": 476,
+    "p10": -0.025,
+    "p25": 0.013,
+    "median": 0.085,
+    "p75": 0.188,
+    "p90": 0.324,
+    "mean": 0.123
+   },
+   "rows": 476,
+   "with_result": 9,
+   "scored_novel": 476,
+   "cov_all": {
+    "n": 476,
+    "p10": 0.095,
+    "p25": 0.158,
+    "median": 0.25,
+    "p75": 0.353,
+    "p90": 0.471,
+    "mean": 0.268
+   },
+   "cov_novel": {
+    "n": 476,
+    "p10": 0.0,
+    "p25": 0.059,
+    "median": 0.118,
+    "p75": 0.232,
+    "p90": 0.36,
+    "mean": 0.158
+   },
+   "control_novel": {
+    "n": 476,
+    "p10": 0.0,
+    "p25": 0.012,
+    "median": 0.027,
+    "p75": 0.049,
+    "p90": 0.077,
+    "mean": 0.034
+   },
+   "excess": {
+    "n": 476,
+    "p10": -0.025,
+    "p25": 0.013,
+    "median": 0.085,
+    "p75": 0.188,
+    "p90": 0.324,
+    "mean": 0.123
+   },
+   "excess_median_ci95": [
+    0.073,
+    0.095
+   ],
+   "cov_novel_median_ci95": [
+    0.105,
+    0.133
+   ],
+   "share_excess_gt0": 0.758,
+   "share_cov_novel_zero": 0.206,
+   "rows_with_novel_numbers": 24,
+   "novel_numbers_total": 58,
+   "novel_numbers_in_synthesis": 14,
+   "small_word_numbers_total": 30,
+   "small_word_numbers_in_synthesis": 10,
+   "substrate": {
+    "result_recast_rows": 0,
+    "result_rows": 9,
+    "facts_recast_rows": 4,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 0,
+    "by_term_result": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 4
+    }
+   }
+  },
+  "internal/post": {
+   "meta_take_rows": 99,
+   "cov_novel_meta": {
+    "n": 99,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.111,
+    "p75": 0.188,
+    "p90": 0.274,
+    "mean": 0.124
+   },
+   "cov_novel_factual": {
+    "n": 16,
+    "p10": 0.125,
+    "p25": 0.192,
+    "median": 0.251,
+    "p75": 0.361,
+    "p90": 0.481,
+    "mean": 0.272
+   },
+   "excess_factual": {
+    "n": 16,
+    "p10": 0.125,
+    "p25": 0.181,
+    "median": 0.246,
+    "p75": 0.357,
+    "p90": 0.481,
+    "mean": 0.262
+   },
+   "rows": 115,
+   "with_result": 10,
+   "scored_novel": 115,
+   "cov_all": {
+    "n": 115,
+    "p10": 0.097,
+    "p25": 0.163,
+    "median": 0.227,
+    "p75": 0.306,
+    "p90": 0.462,
+    "mean": 0.25
+   },
+   "cov_novel": {
+    "n": 115,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.118,
+    "p75": 0.205,
+    "p90": 0.333,
+    "mean": 0.145
+   },
+   "control_novel": {
+    "n": 115,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.014,
+    "p75": 0.026,
+    "p90": 0.04,
+    "mean": 0.017
+   },
+   "excess": {
+    "n": 115,
+    "p10": -0.024,
+    "p25": 0.0,
+    "median": 0.094,
+    "p75": 0.2,
+    "p90": 0.322,
+    "mean": 0.127
+   },
+   "excess_median_ci95": [
+    0.062,
+    0.125
+   ],
+   "cov_novel_median_ci95": [
+    0.077,
+    0.133
+   ],
+   "share_excess_gt0": 0.739,
+   "share_cov_novel_zero": 0.261,
+   "rows_with_novel_numbers": 7,
+   "novel_numbers_total": 8,
+   "novel_numbers_in_synthesis": 3,
+   "small_word_numbers_total": 3,
+   "small_word_numbers_in_synthesis": 0,
+   "substrate": {
+    "result_recast_rows": 0,
+    "result_rows": 10,
+    "facts_recast_rows": 3,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 1,
+    "by_term_result": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 1,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 1,
+     "language_model": 3,
+     "AI": 0
+    }
+   }
+  },
+  "internal/all": {
+   "meta_take_rows": 99,
+   "cov_novel_meta": {
+    "n": 99,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.111,
+    "p75": 0.188,
+    "p90": 0.274,
+    "mean": 0.124
+   },
+   "cov_novel_factual": {
+    "n": 492,
+    "p10": 0.0,
+    "p25": 0.059,
+    "median": 0.125,
+    "p75": 0.235,
+    "p90": 0.368,
+    "mean": 0.161
+   },
+   "excess_factual": {
+    "n": 492,
+    "p10": -0.025,
+    "p25": 0.016,
+    "median": 0.087,
+    "p75": 0.2,
+    "p90": 0.332,
+    "mean": 0.128
+   },
+   "rows": 591,
+   "with_result": 19,
+   "scored_novel": 591,
+   "cov_all": {
+    "n": 591,
+    "p10": 0.095,
+    "p25": 0.158,
+    "median": 0.238,
+    "p75": 0.35,
+    "p90": 0.471,
+    "mean": 0.265
+   },
+   "cov_novel": {
+    "n": 591,
+    "p10": 0.0,
+    "p25": 0.056,
+    "median": 0.118,
+    "p75": 0.226,
+    "p90": 0.357,
+    "mean": 0.155
+   },
+   "control_novel": {
+    "n": 591,
+    "p10": 0.0,
+    "p25": 0.011,
+    "median": 0.024,
+    "p75": 0.043,
+    "p90": 0.071,
+    "mean": 0.031
+   },
+   "excess": {
+    "n": 591,
+    "p10": -0.025,
+    "p25": 0.012,
+    "median": 0.087,
+    "p75": 0.195,
+    "p90": 0.325,
+    "mean": 0.124
+   },
+   "excess_median_ci95": [
+    0.075,
+    0.095
+   ],
+   "cov_novel_median_ci95": [
+    0.111,
+    0.133
+   ],
+   "share_excess_gt0": 0.755,
+   "share_cov_novel_zero": 0.217,
+   "rows_with_novel_numbers": 31,
+   "novel_numbers_total": 66,
+   "novel_numbers_in_synthesis": 17,
+   "small_word_numbers_total": 33,
+   "small_word_numbers_in_synthesis": 10,
+   "substrate": {
+    "result_recast_rows": 0,
+    "result_rows": 19,
+    "facts_recast_rows": 7,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 1,
+    "by_term_result": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 1,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 1,
+     "language_model": 3,
+     "AI": 4
+    }
+   }
+  },
+  "all/pre": {
+   "meta_take_rows": 34,
+   "cov_novel_meta": {
+    "n": 31,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.05,
+    "p90": 0.2,
+    "mean": 0.055
+   },
+   "cov_novel_factual": {
+    "n": 871,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.1,
+    "p75": 0.2,
+    "p90": 0.333,
+    "mean": 0.137
+   },
+   "excess_factual": {
+    "n": 871,
+    "p10": -0.029,
+    "p25": 0.0,
+    "median": 0.071,
+    "p75": 0.173,
+    "p90": 0.299,
+    "mean": 0.106
+   },
+   "rows": 1005,
+   "with_result": 33,
+   "scored_novel": 902,
+   "cov_all": {
+    "n": 976,
+    "p10": 0.056,
+    "p25": 0.136,
+    "median": 0.222,
+    "p75": 0.333,
+    "p90": 0.452,
+    "mean": 0.245
+   },
+   "cov_novel": {
+    "n": 902,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.1,
+    "p75": 0.2,
+    "p90": 0.333,
+    "mean": 0.134
+   },
+   "control_novel": {
+    "n": 902,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.022,
+    "p75": 0.044,
+    "p90": 0.073,
+    "mean": 0.03
+   },
+   "excess": {
+    "n": 902,
+    "p10": -0.031,
+    "p25": 0.0,
+    "median": 0.067,
+    "p75": 0.17,
+    "p90": 0.294,
+    "mean": 0.104
+   },
+   "excess_median_ci95": [
+    0.057,
+    0.075
+   ],
+   "cov_novel_median_ci95": [
+    0.083,
+    0.111
+   ],
+   "share_excess_gt0": 0.652,
+   "share_cov_novel_zero": 0.322,
+   "rows_with_novel_numbers": 28,
+   "novel_numbers_total": 70,
+   "novel_numbers_in_synthesis": 14,
+   "small_word_numbers_total": 38,
+   "small_word_numbers_in_synthesis": 13,
+   "substrate": {
+    "result_recast_rows": 2,
+    "result_rows": 33,
+    "facts_recast_rows": 46,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 2,
+    "by_term_result": {
+     "server": 1,
+     "cloud": 1,
+     "digital_environment": 2,
+     "hosted": 2,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 3,
+     "cloud": 4,
+     "digital_environment": 8,
+     "hosted": 1,
+     "language_model": 10,
+     "AI": 28
+    }
+   }
+  },
+  "all/post": {
+   "meta_take_rows": 128,
+   "cov_novel_meta": {
+    "n": 128,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.069,
+    "p75": 0.167,
+    "p90": 0.264,
+    "mean": 0.107
+   },
+   "cov_novel_factual": {
+    "n": 16,
+    "p10": 0.125,
+    "p25": 0.192,
+    "median": 0.251,
+    "p75": 0.361,
+    "p90": 0.481,
+    "mean": 0.272
+   },
+   "excess_factual": {
+    "n": 16,
+    "p10": 0.125,
+    "p25": 0.181,
+    "median": 0.246,
+    "p75": 0.357,
+    "p90": 0.481,
+    "mean": 0.262
+   },
+   "rows": 144,
+   "with_result": 10,
+   "scored_novel": 144,
+   "cov_all": {
+    "n": 144,
+    "p10": 0.051,
+    "p25": 0.13,
+    "median": 0.209,
+    "p75": 0.286,
+    "p90": 0.422,
+    "mean": 0.225
+   },
+   "cov_novel": {
+    "n": 144,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.093,
+    "p75": 0.2,
+    "p90": 0.296,
+    "mean": 0.126
+   },
+   "control_novel": {
+    "n": 144,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.013,
+    "p75": 0.025,
+    "p90": 0.04,
+    "mean": 0.016
+   },
+   "excess": {
+    "n": 144,
+    "p10": -0.024,
+    "p25": 0.0,
+    "median": 0.078,
+    "p75": 0.18,
+    "p90": 0.28,
+    "mean": 0.11
+   },
+   "excess_median_ci95": [
+    0.051,
+    0.106
+   ],
+   "cov_novel_median_ci95": [
+    0.062,
+    0.122
+   ],
+   "share_excess_gt0": 0.674,
+   "share_cov_novel_zero": 0.326,
+   "rows_with_novel_numbers": 8,
+   "novel_numbers_total": 9,
+   "novel_numbers_in_synthesis": 3,
+   "small_word_numbers_total": 4,
+   "small_word_numbers_in_synthesis": 0,
+   "substrate": {
+    "result_recast_rows": 0,
+    "result_rows": 10,
+    "facts_recast_rows": 8,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 2,
+    "by_term_result": {
+     "server": 0,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 0,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 3,
+     "cloud": 0,
+     "digital_environment": 0,
+     "hosted": 2,
+     "language_model": 6,
+     "AI": 1
+    }
+   }
+  },
+  "all/all": {
+   "meta_take_rows": 162,
+   "cov_novel_meta": {
+    "n": 159,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.059,
+    "p75": 0.143,
+    "p90": 0.253,
+    "mean": 0.097
+   },
+   "cov_novel_factual": {
+    "n": 887,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.105,
+    "p75": 0.2,
+    "p90": 0.333,
+    "mean": 0.139
+   },
+   "excess_factual": {
+    "n": 887,
+    "p10": -0.029,
+    "p25": 0.0,
+    "median": 0.072,
+    "p75": 0.176,
+    "p90": 0.306,
+    "mean": 0.109
+   },
+   "rows": 1149,
+   "with_result": 43,
+   "scored_novel": 1046,
+   "cov_all": {
+    "n": 1120,
+    "p10": 0.056,
+    "p25": 0.133,
+    "median": 0.222,
+    "p75": 0.333,
+    "p90": 0.45,
+    "mean": 0.243
+   },
+   "cov_novel": {
+    "n": 1046,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.1,
+    "p75": 0.2,
+    "p90": 0.333,
+    "mean": 0.133
+   },
+   "control_novel": {
+    "n": 1046,
+    "p10": 0.0,
+    "p25": 0.0,
+    "median": 0.02,
+    "p75": 0.04,
+    "p90": 0.067,
+    "mean": 0.028
+   },
+   "excess": {
+    "n": 1046,
+    "p10": -0.029,
+    "p25": 0.0,
+    "median": 0.067,
+    "p75": 0.173,
+    "p90": 0.293,
+    "mean": 0.105
+   },
+   "excess_median_ci95": [
+    0.06,
+    0.078
+   ],
+   "cov_novel_median_ci95": [
+    0.083,
+    0.111
+   ],
+   "share_excess_gt0": 0.655,
+   "share_cov_novel_zero": 0.322,
+   "rows_with_novel_numbers": 36,
+   "novel_numbers_total": 79,
+   "novel_numbers_in_synthesis": 17,
+   "small_word_numbers_total": 42,
+   "small_word_numbers_in_synthesis": 13,
+   "substrate": {
+    "result_recast_rows": 2,
+    "result_rows": 43,
+    "facts_recast_rows": 54,
+    "ask_recast_rows": 0,
+    "carried_into_synthesis_rows": 4,
+    "by_term_result": {
+     "server": 1,
+     "cloud": 1,
+     "digital_environment": 2,
+     "hosted": 2,
+     "language_model": 0,
+     "AI": 0
+    },
+    "by_term_facts": {
+     "server": 6,
+     "cloud": 4,
+     "digital_environment": 8,
+     "hosted": 3,
+     "language_model": 16,
+     "AI": 29
+    }
+   }
+  }
+ }
+}

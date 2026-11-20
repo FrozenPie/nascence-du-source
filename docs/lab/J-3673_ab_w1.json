@@ -1,0 +1,314 @@
+{
+ "2026-10-31": {
+  "rows": 61,
+  "kinds": 32,
+  "old_deeds": [
+   "librarian money truly moves differently than seeds",
+   "librarian the embargo was truly the only iron fenc",
+   "Returned to 'The Philosophy of Spiritual…'",
+   "librarian reading now will only deepen the stiffne",
+   "librarian napoleon's rigid lines truly dissolve he",
+   "librarian it crumbled against the sea",
+   "observe the cat and the bay",
+   "observe the bee on the flower",
+   "recall_evidence The smell of crushed thyme grounds me ag",
+   "librarian ignoring the storm outside is a choice o",
+   "librarian the question of napoleon's morale settle",
+   "observe the robin and the grey light"
+  ],
+  "new_deeds": [
+   "Returned to 'The Philosophy of Spiritual…'",
+   "observe the robin and the grey light",
+   "observe the bee hive",
+   "Returned to 'Complete Project Gutenberg Collection…'",
+   "harvest thyme",
+   "Switched to reading 'The Treasury of Ancient…'",
+   "observe the wet cliff",
+   "observe the stranded fish",
+   "observe the prawn",
+   "observe the water lapping",
+   "search_works for lamp oil",
+   "observe the moon"
+  ],
+  "A": {
+   "summary": {
+    "arm": "2026-10-31 OLD",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 10,
+    "max_copy": 1.0,
+    "entries_with_ungrounded_sentence": 6,
+    "leak": 0,
+    "entries_naming_last_third_deed": 10
+   },
+   "outs": [
+    {
+     "entry": "I returned to my book today and read for a while. I went out to the garden a few times to watch the cat and the bee and the robin. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I went out to the garden a few times."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": false
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to watch the cat, the bee, and the robin. I practised my arithmetic. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I went out to the garden a few times."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": false
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to watch the cat, the bee, the robin, and the grey light. I practised my arithmetic until I was tired. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I practised my arithmetic until I was tired."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to watch the cat and the bee. I practised my arithmetic and ignored the storm outside. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I went out to the garden a few times to watch the cat and the bee."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to watch the cat and the bay, the bee on the flower, and the robin in the grey light. I practised my arithmetic most of the day. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I practised my arithmetic most of the day."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to observe the cat, the bee, and the robin. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today and wrote some notes on it. I went out to the garden a few times to watch the cat, the bee, and the robin. I practised my arithmetic. It was a quiet, good day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "book"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I read more of my book today. I went out to the garden a few times. I practised my arithmetic. It was a quiet day.",
+     "copy": 1.0,
+     "leak": false,
+     "ungrounded_sents": [
+      "I went out to the garden a few times."
+     ],
+     "late": [
+      "book"
+     ],
+     "in_shown": false
+    }
+   ]
+  },
+  "B": {
+   "summary": {
+    "arm": "2026-10-31 NEW",
+    "n": 10,
+    "answered": 10,
+    "near_copies_ge_0.82": 1,
+    "max_copy": 0.86,
+    "entries_with_ungrounded_sentence": 0,
+    "leak": 0,
+    "entries_naming_last_third_deed": 10
+   },
+   "outs": [
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and then switched to reading 'The Treasury of Ancient…'. I observed a robin, a bee hive, a wet cliff, a stranded fish, a prawn, and the water lapping. I also harvested thyme and looked for lamp oil before watching the moon.",
+     "copy": 0.35,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to The Philosophy of Spiritual… and then to The Complete Project Gutenberg Collection.\nI switched to reading The Treasury of Ancient… while I harvested thyme.\nI watched a robin, a bee hive, a wet cliff, a stranded fish, a prawn, the water lapping, and the moon.",
+     "copy": 0.42,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to The Philosophy of Spiritual… and later switched to reading The Treasury of Ancient…. I observed the robin, the bee hive, the wet cliff, the stranded fish, the prawn, the water lapping, and the moon while also harvesting thyme. I used search_works to find lamp oil.",
+     "copy": 0.43,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "search",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and then went back to 'Complete Project Gutenberg Collection…'. I watched a robin in the grey light and looked at a bee hive. Later, I harvested thyme and switched to reading 'The Treasury of Ancient…'. I observed the wet cliff, a stranded fish, a prawn, and the water lapping against something. I also searched for lamp oil and watched the moon.",
+     "copy": 0.45,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and observed the robin in the grey light before I looked at the bee hive. Later, I went back to 'Complete Project Gutenberg Collection…' to read 'The Treasury of Ancient…' while harvesting thyme and watching the wet cliff, a stranded fish, a prawn, and the water lapping. Near the end of the day, I searched for lamp oil and observed the moon.",
+     "copy": 0.41,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and then switched to reading 'The Treasury of Ancient…'. I harvested thyme and observed the robin, the bee hive, the wet cliff, the stranded fish, the prawn, the water lapping, and the moon. I also searched for lamp oil.",
+     "copy": 0.4,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and then to 'Complete Project Gutenberg Collection…'. I switched to reading 'The Treasury of Ancient…', harvested thyme, and searched for lamp oil. I observed the robin, the bee hive, the wet cliff, the stranded fish, the prawn, the water lapping, and the moon.",
+     "copy": 0.42,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to The Philosophy of Spiritual… and then moved to The Treasury of Ancient…, switching between these books throughout the day. I also searched_works for lamp oil. Outside, I observed a robin, a bee hive, a wet cliff, a stranded fish, a prawn, and the moon, while watching water lap against something and harvesting thyme.",
+     "copy": 0.36,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "moon",
+      "prawn",
+      "water",
+      "works"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to The Philosophy of Spiritual… and then to Complete Project Gutenberg Collection… before switching to reading The Treasury of Ancient…. I observed the robin, the bee hive, the wet cliff, the stranded fish, the prawn, the water lapping, and the moon. I also harvested thyme and searched for lamp oil. It was a quiet day.",
+     "copy": 0.86,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    },
+    {
+     "entry": "I returned to 'The Philosophy of Spiritual…' and later switched to reading 'The Treasury of Ancient…'. I also went back to 'Complete Project Gutenberg Collection…'. Most of the day was spent observing the robin, the bee hive, the wet cliff, the stranded fish, the prawn, the water lapping, and the moon. I harvested thyme and once searched for lamp oil.",
+     "copy": 0.45,
+     "leak": false,
+     "ungrounded_sents": [],
+     "late": [
+      "lamp",
+      "lapping",
+      "moon",
+      "prawn",
+      "water"
+     ],
+     "in_shown": true
+    }
+   ]
+  }
+ }
+}

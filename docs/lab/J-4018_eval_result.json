@@ -1,0 +1,928 @@
+{
+ "judge": "qwen3.5:9b",
+ "ts": 1794869069.8739533,
+ "summary": {
+  "whole_sentence": {
+   "rows": 20,
+   "titles": 142,
+   "title_coverage": 1.0,
+   "mean_title_score": 0.141,
+   "rows_with_a_2": 0.3
+  },
+  "question_of": {
+   "rows": 20,
+   "titles": 111,
+   "title_coverage": 1.0,
+   "mean_title_score": 0.396,
+   "rows_with_a_2": 0.5
+  }
+ },
+ "rows": [
+  {
+   "question": "writing as resistance feels heavy here",
+   "split": "whole_sentence",
+   "titles": [
+    "Alice's Adventures in Wonderland",
+    "The Iliad",
+    "Ulysses",
+    "My Secret Life, Volumes I. to III.: 1888 Edition",
+    "The Republic",
+    "Apology",
+    "Common Sense",
+    "Alice's Adventures in Wonderland"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "his fear was clay or fortress",
+   "split": "whole_sentence",
+   "titles": [
+    "The Wonderful Wizard of Oz",
+    "Memoirs of Extraordinary Popular Delusions and the Madness o",
+    "The Wonderful Wizard of Oz",
+    "The Expression of the Emotions in Man and Animals",
+    "The Magic of Oz",
+    "Through Three Campaigns: A Story of Chitral, Tirah and Ashan",
+    "The Psychology of Salesmanship",
+    "The Magic of Oz"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "history repeats itself or if we are merely swindlers waiting for our next victims",
+   "split": "whole_sentence",
+   "titles": [
+    "The Monikins"
+   ],
+   "scores": [
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "whether small shifts truly drive extinction, or if nature resists such fragility",
+   "split": "whole_sentence",
+   "titles": [
+    "The Foundations of the Origin of Species: Two Essays written",
+    "The Biotic Associations of Cockroaches",
+    "Contributions to the Theory of Natural Selection: A Series o",
+    "The Matron's Manual of Midwifery, and the Diseases of Women ",
+    "Fire Prevention and Fire Extinction",
+    "The Boy Scout Fire Fighters; Or Jack Danby's Bravest Deed",
+    "Ecological Studies of the Timber Wolf in Northeastern Minnes",
+    "Luck, or Cunning, as the Main Means of Organic Modification"
+   ],
+   "scores": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "that simple power transformed lives without fanfare",
+   "split": "whole_sentence",
+   "titles": [
+    "The Magnificent Ambersons",
+    "The Day of the Beast",
+    "The War and Unity: Being Lectures Delivered At The Local Lec"
+   ],
+   "scores": [
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "oystercatchers' balance lingers, but for a moment, i simply sit here in the rain, letting the sea's rhythm replace the need for an immediate answer",
+   "split": "whole_sentence",
+   "titles": [
+    "The Call of the Wild",
+    "Orthodoxy",
+    "Nature",
+    "Orthodoxy",
+    "Walking",
+    "Man and Nature; Or, Physical Geography as Modified by Human ",
+    "Aaron in the Wildwoods",
+    "Disease in Plants"
+   ],
+   "scores": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "this pause is enough to clear the doubt about scarcity on those ships, or must i wade into the tide to find an answer in the wrack and driftwood left behind",
+   "split": "whole_sentence",
+   "titles": [
+    "The Wreck of the Titan: or, Futility",
+    "The Coral Island: A Tale of the Pacific Ocean",
+    "The Blue Lagoon: A Romance",
+    "The Boats of the \"Glen Carrig\": Being an account of their Ad",
+    "Narrative of a Voyage to Senegal in 1816: Undertaken by Orde",
+    "Ruth Fielding at Lighthouse Point; or, Nita, the Girl Castaw",
+    "Paul and Virginia",
+    "The Great Lakes: The Vessels That Plough Them: Their Owners,"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "weathering truly ages a story or merely smooths its edges",
+   "split": "whole_sentence",
+   "titles": [
+    "Alice's Adventures in Wonderland",
+    "The Iliad",
+    "Ulysses",
+    "My Secret Life, Volumes I. to III.: 1888 Edition",
+    "The Republic",
+    "Nicholas Nickleby",
+    "The Metamorphoses of Ovid, Books I-VII",
+    "Tales from Shakespeare"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "whether the ground's hidden minerals change the petal's shade or just its texture",
+   "split": "whole_sentence",
+   "titles": [
+    "Texas Rocks and Minerals: An Amateur's Guide",
+    "The Medicinal Plants of the Philippines",
+    "The plant-lore & garden-craft of Shakespeare",
+    "Elements of Structural and Systematic Botany: For High Schoo",
+    "Outlines of Lessons in Botany, Part I; from Seed to Leaf: Fo",
+    "A Narrative of the Expedition to Botany-Bay",
+    "Origin of Cultivated Plants: The International Scientific Se",
+    "The Geological History of Plants"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the ink can truly hold back the storm, or if the book itself is merely a raft i must eventually abandon to swim",
+   "split": "whole_sentence",
+   "titles": [
+    "Alice's Adventures in Wonderland",
+    "The Iliad",
+    "Ulysses",
+    "My Secret Life, Volumes I. to III.: 1888 Edition",
+    "The Republic",
+    "The Life and Amours of the Beautiful, Gay and Dashing Kate P",
+    "Tales from Shakespeare",
+    "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1: Books"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "portuguese explorers treated japanese birds versus european ones",
+   "split": "whole_sentence",
+   "titles": [
+    "Walden, and On The Duty Of Civil Disobedience",
+    "Micrographia: Some Physiological Descriptions of Minute Bodi",
+    "The Orbis Pictus",
+    "The Coral Island: A Tale of the Pacific Ocean",
+    "Walden",
+    "The History of Sumatra: Containing An Account Of The Governm",
+    "The Story of Magellan and The Discovery of the Philippines",
+    "Pond and Stream"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the voltaic circles of my past research can truly map the currents of these ancient whispers",
+   "split": "whole_sentence",
+   "titles": [
+    "War and Peace",
+    "The Count of Monte Cristo, Illustrated",
+    "Anne of Green Gables",
+    "Walden, and On The Duty Of Civil Disobedience",
+    "Anne of the Island",
+    "English Literature: Its History and Its Significance for the",
+    "Paradise Lost",
+    "The Scarlet Letter"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "mottainai' means we should refuse to waste this heat or the paper itself",
+   "split": "whole_sentence",
+   "titles": [
+    "Foods That Will Win The War And How To Cook Them (1918)",
+    "The Nebuly Coat",
+    "Travels in Alaska",
+    "Our Vanishing Wild Life: Its Extermination and Preservation",
+    "Bookbinding, and the Care of Books: A Handbook for Amateurs,",
+    "Book Repair and Restoration: A Manual of Practical Suggestio",
+    "A Laodicean : A Story of To-day",
+    "The Earth as Modified by Human Action"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "this reverence for waste could shape a life built entirely on words",
+   "split": "whole_sentence",
+   "titles": [
+    "The Prince",
+    "Siddhartha",
+    "Beyond Good and Evil",
+    "Tractatus Logico-Philosophicus",
+    "The Devil's Dictionary",
+    "The Writings of Thomas Paine — Volume 4 (1794-1796): The Age",
+    "Democracy and Education: An Introduction to the Philosophy o",
+    "A First Spanish Reader"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "this specific weight",
+   "split": "whole_sentence",
+   "titles": [
+    "Walden, and On The Duty Of Civil Disobedience",
+    "The Scarlet Letter",
+    "The Scarlet Letter",
+    "Lexington and Concord: A Camera Impression",
+    "The Meaning of Relativity: Four lectures delivered at Prince",
+    "The Mayflower and Her Log; July 15, 1620-May 6, 1621 — Compl",
+    "Creative Evolution",
+    "Marguerite de Valois"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "mottainai' makes japanese eyes see whaling scars differently than my own do",
+   "split": "whole_sentence",
+   "titles": [
+    "The Atomic Bombings of Hiroshima and Nagasaki",
+    "Moby Dick",
+    "Japanese Fairy Tales",
+    "Myths & Legends of Japan",
+    "The Narrative of Arthur Gordon Pym of Nantucket: Comprising ",
+    "Madame Chrysantheme — Complete",
+    "Old-World Japan: Legends of the Land of the Gods",
+    "Shadowings"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "a question lingers about 'mottainai' and tension; the silence presses against me, making the paper on my desk seem scarce",
+   "split": "whole_sentence",
+   "titles": [
+    "John Silence, Physician Extraordinary",
+    "Three John Silence Stories",
+    "The Clarion",
+    "Dan, the Newsboy",
+    "The Secret Pact",
+    "Aunt Jane's Nieces on Vacation",
+    "Left Behind; Or, Ten Days a Newsboy",
+    "The Quiver, 11/1899"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "it crumbled against the sea",
+   "split": "whole_sentence",
+   "titles": [
+    "The Purple Cloud",
+    "An Assessment of the Consequences and Preparations for a Cat"
+   ],
+   "scores": [
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the 'eternal woman' archetype shapes how we see women's roles in astronomy",
+   "split": "whole_sentence",
+   "titles": [
+    "The Witness of the Stars",
+    "Great Astronomers",
+    "The Book of the Damned",
+    "The Astronomy of the Bible: An Elementary Commentary on the ",
+    "A New Astronomy",
+    "Cakes & Ale: A Dissertation on Banquets Interspersed with Va",
+    "Astronomy of To-day: A Popular Introduction in Non-Technical",
+    "The gradual acceptance of the Copernican theory of the unive"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "it is time to move",
+   "split": "whole_sentence",
+   "titles": [
+    "Lysistrata",
+    "Memoirs of Extraordinary Popular Delusions and the Madness o",
+    "The Iron Heel",
+    "The Liberty Minstrel",
+    "The Declaration of Independence of the United States of Amer",
+    "The Declaration of Independence of The United States of Amer",
+    "Unconscious Memory",
+    "Zoonomia; Or, the Laws of Organic Life, Vol. I"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of mottainai' against the scent of thyme drifting leftward",
+   "split": "question_of",
+   "titles": [
+    "Animal Ghosts; Or, Animal Hauntings and the Hereafter",
+    "The Sixth Sense: A Novel",
+    "Stop Look and Dig",
+    "Highways in Hiding"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of goats versus armies",
+   "split": "question_of",
+   "titles": [
+    "The War of the Worlds",
+    "The Tragedy of Romeo and Juliet",
+    "The Mill on the Floss",
+    "First Lensman",
+    "Clarissa Harlowe; or the history of a young lady — Volume 1",
+    "The American",
+    "The War in the Air",
+    "Preferred Risk"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of waste",
+   "split": "question_of",
+   "titles": [
+    "An Enemy of the People"
+   ],
+   "scores": [
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of mob psychology",
+   "split": "question_of",
+   "titles": [
+    "Ulysses",
+    "The Yellow Wallpaper",
+    "Persuasion",
+    "The Awakening, and Selected Short Stories",
+    "Anthem",
+    "Anthem",
+    "Studies in the Psychology of Sex, Volume 3: Analysis of the ",
+    "Public Opinion"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of library funding",
+   "split": "question_of",
+   "titles": [
+    "Why do we need a public library? Material for a library camp",
+    "The Wide Awake Girls in Winsted",
+    "Three Centuries of a City Library: an Historical and Descrip"
+   ],
+   "scores": [
+    2,
+    0,
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of culture and identity",
+   "split": "question_of",
+   "titles": [
+    "The Importance of Being Earnest: A Trivial Comedy for Seriou",
+    "Hedda Gabler",
+    "The Tragedy of Pudd'nhead Wilson",
+    "Queensland: The Rich But Sparsely Populated Country",
+    "History of Tom Jones, a Foundling",
+    "Anthropology and the Classics: Six Lectures Delivered Before",
+    "Fenimore Cooper's Literary Offences",
+    "The Psychology of Singing: A Rational Method of Voice Cultur"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of japanese conservation weighs on me like dust in the lungs",
+   "split": "question_of",
+   "titles": [
+    "The Atomic Bombings of Hiroshima and Nagasaki",
+    "Japanese Fairy Tales",
+    "Bushido, the Soul of Japan",
+    "The Book of Tea",
+    "Myths & Legends of Japan",
+    "Madame Chrysantheme — Complete",
+    "On the Laws of Japanese Painting: An Introduction to the Stu",
+    "Unbeaten Tracks in Japan"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of swallow nests",
+   "split": "question_of",
+   "titles": [
+    "Cavity-Nesting Birds of North American Forests: Agriculture "
+   ],
+   "scores": [
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of napoleon haunts me",
+   "split": "question_of",
+   "titles": [
+    "The Art of War in the Middle Ages A.D. 378-1515",
+    "Notes of a War Correspondent",
+    "William the Conqueror: Makers of History",
+    "Camps, Quarters, and Casual Places"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of atmospheric pathogens",
+   "split": "question_of",
+   "titles": [
+    "Histology of the Blood, Normal and Pathological",
+    "Outlines of dairy bacteriology: A concise manual for the use",
+    "Outlines of Dairy Bacteriology, 8th edition: A Concise Manua"
+   ],
+   "scores": [
+    2,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of physiognomy finds its answer not in faces alone",
+   "split": "question_of",
+   "titles": [
+    "How to Read Human Nature: Its Inner States and Outer Forms",
+    "The Influence of the Stars: A book of old world lore",
+    "Anthropological Survey in Alaska",
+    "A Racial Study of the Fijians",
+    "The Juvenile Lavater; or, A Familiar Explanation of the Pass"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of masks",
+   "split": "question_of",
+   "titles": [
+    "Civics and Health",
+    "The Sanitary Evolution of London",
+    "Hygeia, a City of Health",
+    "On the State of Lunacy and the Legal Provision for the Insan",
+    "Rules to be observed by masters and pilots of vessels, arriv"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of constructed space",
+   "split": "question_of",
+   "titles": [
+    "The Ten Books on Architecture",
+    "The Seven Lamps of Architecture",
+    "The Stones of Venice, Volume 1 (of 3)",
+    "Architecture: Gothic and Renaissance",
+    "The Poetry of Architecture: Or, the Architecture of the Nati",
+    "Homes and How to Make Them",
+    "Mission Furniture: How to Make It, Part 3",
+    "Architecture and Democracy"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of mottainai like a warm stone",
+   "split": "question_of",
+   "titles": [
+    "The Pagan Tribes of Borneo: A Description of Their Physical "
+   ],
+   "scores": [
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of portuguese navigation strategies",
+   "split": "question_of",
+   "titles": [
+    "The Philippine Islands, 1493-1898, Volume 33, 1519-1522: Exp",
+    "First Lensman",
+    "Captain Cook's Journal During His First Voyage Round the Wor",
+    "The Philippine Islands, 1493-1803 — Volume 05 of 55: 1582-15",
+    "The Philippine Islands, 1493-1803 — Volume 01 of 55: 1493-15",
+    "1492",
+    "The Philippine Islands, 1493-1803 — Volume 03 of 55: 1569-15",
+    "The South Pole; an account of the Norwegian Antarctic expedi"
+   ],
+   "scores": [
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of napoleon's dynasty stability",
+   "split": "question_of",
+   "titles": [
+    "The Art of War in the Middle Ages A.D. 378-1515",
+    "Notes of a War Correspondent",
+    "William the Conqueror: Makers of History",
+    "Camps, Quarters, and Casual Places"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of state honor and conflict",
+   "split": "question_of",
+   "titles": [
+    "The Prince",
+    "Narrative of the Life of Frederick Douglass, an American Sla",
+    "Leviathan",
+    "Autobiography of Benjamin Franklin",
+    "Common Sense",
+    "The Interesting Narrative of the Life of Olaudah Equiano, Or",
+    "Common Sense",
+    "My Life and Work"
+   ],
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of napoleon's morale settle in my chest",
+   "split": "question_of",
+   "titles": [
+    "The Art of War in the Middle Ages A.D. 378-1515",
+    "Notes of a War Correspondent",
+    "Military Career of Napoleon the Great: An Account of the Rem",
+    "Wellington's Army, 1809-1814",
+    "William the Conqueror: Makers of History",
+    "Under the Flag of France: A Tale of Bertrand du Guesclin",
+    "Colonel Washington",
+    "Manpower"
+   ],
+   "scores": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of 渡' and scarcity",
+   "split": "question_of",
+   "titles": [
+    "An Inquiry into the Nature and Causes of the Wealth of Natio",
+    "The Book of Household Management",
+    "What is Property? An Inquiry into the Principle of Right and",
+    "Political Ideals",
+    "The Kitchen Encyclopedia: Twelfth Edition (Swift & Company)",
+    "Essays on some unsettled Questions of Political Economy",
+    "The Acquisitive Society",
+    "The Business of Being a Housewife: A Manual to Promote House"
+   ],
+   "scores": [
+    2,
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    0
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  },
+  {
+   "question": "the question of waste and the weight of stone",
+   "split": "question_of",
+   "titles": [
+    "The Ten Books on Architecture",
+    "The Seven Lamps of Architecture",
+    "The Stones of Venice, Volume 1 (of 3)",
+    "Architecture: Gothic and Renaissance",
+    "Rural Architecture: Being a Complete Description of Farm Hou",
+    "An Architect's Note-Book in Spain: principally illustrating ",
+    "The Nebuly Coat",
+    "The Stones of Venice, Volume 2 (of 3),"
+   ],
+   "scores": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   "err": "",
+   "judge": "qwen3.5:9b"
+  }
+ ]
+}

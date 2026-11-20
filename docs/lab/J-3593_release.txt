@@ -1,0 +1,1 @@
+Hubs reachable but 50-95s per trivial call; 3-row test 0 ok. Full 2225-row backfill infeasible until hubs are fast (F-4975). Rerun docs/lab/J-3593_backfill.py (resumable, null rows stripped).

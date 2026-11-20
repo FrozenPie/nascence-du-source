@@ -1,0 +1,5 @@
+[lab_env] isolated — lab dir: C:\Nascence\data\_lab\20261116_213020 (DB_PATH + 0 extra global(s) redirected)
+gemma V0 0 {'support': 'no one had suspected of being able to hold a pen: Jomini', 'answerable': False, 'unsupported_link': True, 'why': "The question asks for an interpretation of the author's perspective."} None 77.3
+gemma V0 1 {'support': 'Significance is a synonym for importance.', 'answerable': False, 'unsupported_link': True, 'why': "The material does not mention the name '渡' or link it to significance."} None 190.9
+gemma V0 2 {'support': "the Directory's vacillating and distrustful policy", 'answerable': True, 'unsupported_link': False, 'why': "The text mentions the Directory's policy undermined his triumphs."} None 57.9
+gemma V0 3 None TimeoutError 301.4

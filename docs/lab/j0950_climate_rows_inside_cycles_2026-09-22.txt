@@ -1,0 +1,4 @@
+window 2026-09-10T00:00 .. 2026-09-11T13:00 (local); climate publish rows in window: 1820
+internal cycles with ignition->end span >= 100 s: 63; with ZERO climate rows inside: 63; rows expected at the 60 s floor: 156, observed: 0
+control windows (same lengths, outside every internal-cycle span and nap stall): 63; expected 130, observed 124
+VERDICT: climate loop SUSPENDED during internal cycles

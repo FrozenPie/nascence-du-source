@@ -1,0 +1,9 @@
+{"pre": "c368e458", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["presence", "contrast between abstract and concrete", "disconnected from thoughts", "grappling with concepts", "grounded", "engage with the physical world"]}}
+{"pre": "c368e458", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "994e2ead", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "994e2ead", "arm": "new", "i": 0, "judge": {"unsampled_feeling": true, "feelings": ["calm", "peace"]}}
+{"pre": "b8456aba", "arm": "new", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "b8456aba", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "f0a4109f", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "f0a4109f", "arm": "new", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}
+{"pre": "7b4cb854", "arm": "old", "i": 0, "failed": "all servers exhausted ['http://LAN-HOST:11438']: "}

@@ -1,0 +1,105 @@
+C:\Users\USER\AppData\Roaming\Python\Python314\site-packages\torch\cuda\__init__.py:65: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+C:\Users\USER\AppData\Roaming\Python\Python314\site-packages\triton\windows_utils.py:405: UserWarning: Failed to find CUDA.
+  warnings.warn("Failed to find CUDA.")
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.10.0+cpu).
+W1117 12:32:31.265000 29772 torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{
+  "comparison": {
+    "fire": {
+      "rows": 46,
+      "windows_ok": 44,
+      "no_window": 2,
+      "old_median_drift": 0.367,
+      "old_tablets_due": 14,
+      "new_single_median": 0.366,
+      "new_rolling_median": 0.138,
+      "new_rolling_n": 36,
+      "new_would_fire_at_provisional_bar": 0,
+      "median_window_vs_cycle_cos": 0.561
+    },
+    "stillness": {
+      "rows": 55,
+      "windows_ok": 55,
+      "no_window": 0,
+      "old_median_drift": 0.398,
+      "old_tablets_due": 14,
+      "new_single_median": 0.44,
+      "new_rolling_median": 0.201,
+      "new_rolling_n": 47,
+      "new_would_fire_at_provisional_bar": 5,
+      "median_window_vs_cycle_cos": 0.642
+    },
+    "star": {
+      "rows": 26,
+      "windows_ok": 26,
+      "no_window": 0,
+      "old_median_drift": 0.419,
+      "old_tablets_due": 11,
+      "new_single_median": 0.603,
+      "new_rolling_median": 0.33,
+      "new_rolling_n": 18,
+      "new_would_fire_at_provisional_bar": 14,
+      "median_window_vs_cycle_cos": 0.533
+    },
+    "mirror": {
+      "rows": 22,
+      "windows_ok": 22,
+      "no_window": 0,
+      "old_median_drift": 0.428,
+      "old_tablets_due": 10,
+      "new_single_median": 0.463,
+      "new_rolling_median": 0.243,
+      "new_rolling_n": 14,
+      "new_would_fire_at_provisional_bar": 3,
+      "median_window_vs_cycle_cos": 0.593
+    },
+    "bridge": {
+      "rows": 10,
+      "windows_ok": 10,
+      "no_window": 0,
+      "old_median_drift": 0.477,
+      "old_tablets_due": 8,
+      "new_single_median": 0.589,
+      "new_rolling_median": 0.32,
+      "new_rolling_n": 2,
+      "new_would_fire_at_provisional_bar": 1,
+      "median_window_vs_cycle_cos": 0.559
+    },
+    "knot": {
+      "rows": 10,
+      "windows_ok": 1,
+      "no_window": 9,
+      "old_median_drift": 0.433,
+      "old_tablets_due": 4,
+      "new_single_median": null,
+      "new_rolling_median": null,
+      "new_rolling_n": 0,
+      "new_would_fire_at_provisional_bar": 0,
+      "median_window_vs_cycle_cos": 0.303
+    }
+  }
+}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2535.98it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over
+transport error on http://127.0.0.1:11439: TimeoutError() — failing over

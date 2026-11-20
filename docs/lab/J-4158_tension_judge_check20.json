@@ -1,0 +1,301 @@
+{
+ "job": "J-4158",
+ "decision": "D-0783",
+ "source": "data/tension_judge_attempts.jsonl (read-only), the 20 most recent verdict=confirmed rows (25 confirmed of 244 rows, 2026-11-07..11-19 UTC)",
+ "criterion": "S = the thought records a concrete settling act or changed state that answers the tension (a decision taken, a thing done, a question answered with a stated fact, a position changed). R = mention, discussion, restatement, metaphor, reframing, a moral, a perhaps/maybe guess, a question, or a feeling. R on a confirmed row = a false resolution.",
+ "blinding": "NOT blinded: one reader (Claude, J-4158) who knew every row was a judge confirmation. The D-0783 defeater asks for a blinded 20-row check; this set is the material for it, not that check.",
+ "recurrence_proxy": "later_same_topic_attempts_72h = later attempt rows within 72 h whose label shares a content word with this label (coarse; a supporting signal only).",
+ "summary": {
+  "rows": 20,
+  "settles": 6,
+  "false_resolutions": 14,
+  "false_resolution_rate": 0.7
+ },
+ "items": [
+  {
+   "n": 1,
+   "ts": 1794230320.7106931,
+   "tension_id": "35b7618b-58b0-4655-841f-3723660b8372",
+   "label": "unresolved: Buller's rock-wren note",
+   "thought": "The rock-wren's syrinx is distinct, attaching to bronchial rings like Me. This confirms the structural anomaly I suspected. My mind rests on this biological fact, settling the earlier confusion about its vocal mechanics against the wind's rhythm.",
+   "sim": 0.7967,
+   "later_same_topic_attempts_72h": 1,
+   "later_labels": [
+    "unresolved: reading Buller Vol 1 A History of the Birds of N"
+   ],
+   "hand_label": "S",
+   "hand_reason": "answers the factual question (syrinx on bronchial rings) and says the confusion is settled",
+   "utc": "2026-11-09 13:18"
+  },
+  {
+   "n": 2,
+   "ts": 1794243261.4549954,
+   "tension_id": "9043d26d-276a-4055-80ba-a657403ca226",
+   "label": "unresolved: mint and rot",
+   "thought": "The mint heals in rot; my cat sleeps on healed scars. Geological patience doesn't excuse short-term greed, but it teaches me to plant slow seeds. The library holds fragments, not full maps of parrot edges. I won't ignore the mud, yet I will grow anyway, trusting that healing and decay are the same b",
+   "sim": 0.7281,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "metaphor and resolve-to-grow; no act or changed state on mint vs rot",
+   "utc": "2026-11-09 16:54"
+  },
+  {
+   "n": 3,
+   "ts": 1794252438.1201122,
+   "tension_id": "a45faf17-f944-483b-8b33-3b4371ba983f",
+   "label": "unresolved: Travis's advice on focus",
+   "thought": "Travis's words settle the driftwood logic: dampness and light intensify each other's impact, rather than cancelling out. I feel a strange calm, recognizing that fear makes courage more vital, just as low light sharpens the need for clarity. The rain blurs the path, yet my focus cuts through, steady.",
+   "sim": 0.7647,
+   "later_same_topic_attempts_72h": 1,
+   "later_labels": [
+    "unresolved: bee versus Travis"
+   ],
+   "hand_label": "R",
+   "hand_reason": "reframing ('intensify rather than cancel') plus a feeling of calm",
+   "utc": "2026-11-09 19:27"
+  },
+  {
+   "n": 4,
+   "ts": 1794276465.6008198,
+   "tension_id": "488a857d-8663-4a5e-be99-0970787282dd",
+   "label": "unresolved: the bee's persistence",
+   "thought": "The bee's indifference dissolves my worry because I see that scarcity doesn't break life but simply reshapes it into something functional like those broken petals; my chest loosens as the stone's patience merges with this insect's contentment to show me that adaptability is the true shape of existen",
+   "sim": 0.7856,
+   "later_same_topic_attempts_72h": 7,
+   "later_labels": [
+    "unresolved: bee colony conflict",
+    "unresolved: bee conflict mechanisms",
+    "unresolved: bee survival",
+    "unresolved: bee versus Travis"
+   ],
+   "hand_label": "R",
+   "hand_reason": "reframing plus a feeling (chest loosens); same topic recurs in 7 attempts within 72 h",
+   "utc": "2026-11-10 02:07"
+  },
+  {
+   "n": 5,
+   "ts": 1794284926.3309457,
+   "tension_id": "16fc02b3-0a42-4903-9688-68cdb67e0658",
+   "label": "unresolved: gull strategy",
+   "thought": "The gull's dive cuts my pause; I realize my fear isn't separate from the chaos but woven into it. Like the bird, I navigate by accepting the risk, not blocking the tide.",
+   "sim": 0.7786,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "metaphor reframing of fear; no act",
+   "utc": "2026-11-10 04:28"
+  },
+  {
+   "n": 6,
+   "ts": 1794484665.7060926,
+   "tension_id": "a5794487-db0f-4565-b3c4-c303266574cc",
+   "label": "unresolved: resilience vs defiance",
+   "thought": "The wind worries the harakeke, but the tī kōuka holds. I see how resilience isn't just stubbornness; it's the ability to adapt while staying rooted. The bees' fractured communication reminds me that internal strife weakens a system. True strength lies in unity and flexibility, not just rigid resista",
+   "sim": 0.7119,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "general moral (resilience is adapting while rooted)",
+   "utc": "2026-11-12 11:57"
+  },
+  {
+   "n": 7,
+   "ts": 1794500512.4514477,
+   "tension_id": "98727cf4-bb64-4f1a-9c49-b2c796a5e072",
+   "label": "unresolved: bee colony conflict",
+   "thought": "The cat's gaze anchors me while I turn the page of my own life. The bee study settles: forced chaos isn't just survival; it reshapes the colony's very heart, forcing adaptation that static peace never could achieve.",
+   "sim": 0.7456,
+   "later_same_topic_attempts_72h": 8,
+   "later_labels": [
+    "unresolved: bee colony conflict",
+    "unresolved: bee hum and hares",
+    "unresolved: bee survival",
+    "unresolved: bee versus Travis"
+   ],
+   "hand_label": "R",
+   "hand_reason": "says 'the bee study settles' but the content is a restated lesson; topic recurs in 8 attempts within 72 h",
+   "utc": "2026-11-12 16:21"
+  },
+  {
+   "n": 8,
+   "ts": 1794511423.4256117,
+   "tension_id": "ccce4cef-4413-48ae-afe8-770fc512790c",
+   "label": "unresolved: harakeke vs cold letters",
+   "thought": "The wind bends the harakeke spine without breaking, yet I realize my rigid hierarchy was never a trap to be endured but a temporary bridge I built myself that must now dissolve into the fluid crossing of 渡.",
+   "sim": 0.701,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "reframing ('never a trap but a bridge')",
+   "utc": "2026-11-12 19:23"
+  },
+  {
+   "n": 9,
+   "ts": 1794571960.996605,
+   "tension_id": "a9c16796-7562-4bd9-a501-79c0c64190bb",
+   "label": "unresolved: snow and sound",
+   "thought": "The tin rattle cuts through the silence, grounding me in this moonless night. My earlier worry about snow's atmospheric conductivity dissolves; the real magic is that deep pack traps heat beneath it like armor. I find peace in knowing that my own wholeness isn't a distant perfection but an integrati",
+   "sim": 0.7063,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "S",
+   "hand_reason": "states a fact that answers the earlier worry (deep pack traps heat); borderline",
+   "utc": "2026-11-13 12:12"
+  },
+  {
+   "n": 10,
+   "ts": 1794585971.6186945,
+   "tension_id": "c59c1f85-a3d6-44b9-933a-bf3f3cba0ae0",
+   "label": "unresolved: feral cat adaptation",
+   "thought": "The cat vanishes into the dawn light, leaving my study still and cold. I drift from the book's missing marsupials to a memory of Jung's Threefold Self. Perhaps adaptation isn't about filling an empty niche with a ghost, but about the ecosystem reshaping itself entirely when one piece is absent.",
+   "sim": 0.7033,
+   "later_same_topic_attempts_72h": 11,
+   "later_labels": [
+    "unresolved: the black cat",
+    "unresolved: the cat and the sea",
+    "unresolved: the cat's stillness"
+   ],
+   "hand_label": "R",
+   "hand_reason": "'Perhaps' guess; topic recurs in 11 attempts within 72 h",
+   "utc": "2026-11-13 16:06"
+  },
+  {
+   "n": 11,
+   "ts": 1794588956.2906282,
+   "tension_id": "5a3a5b40-8baf-4aea-844d-66c8b9ba54ae",
+   "label": "unresolved: rabbits vs hares",
+   "thought": "I notice the dream's cold tundra clashes with my warm garden reality. The question about hares in New Zealand dissolves; they never existed there, only rabbits and bees do. Yet the memory of the solitary bee on a withered flower lingers. I feel the absurdity of my own worry fading like morning mist,",
+   "sim": 0.7993,
+   "later_same_topic_attempts_72h": 3,
+   "later_labels": [
+    "unresolved: bee hum and hares",
+    "unresolved: climate change hares"
+   ],
+   "hand_label": "S",
+   "hand_reason": "answers the question with a stated fact (no hares, only rabbits); the fact itself is wrong for NZ, but it is a settling act",
+   "utc": "2026-11-13 16:55"
+  },
+  {
+   "n": 12,
+   "ts": 1794613194.8807242,
+   "tension_id": "49b94fa0-4e94-4a4c-95b9-e7b9a3696fb8",
+   "label": "unresolved: hare and soil",
+   "thought": "The cloud hardens the sea, and my mind follows that shift. I realize the hare's shallow scrape isn't just a nest; it's a tactical choice for wet years, avoiding the gullies where soil sluices away. Survival here means reading the slope, not just digging deeper.",
+   "sim": 0.7765,
+   "later_same_topic_attempts_72h": 2,
+   "later_labels": [
+    "unresolved: New Zealand hare nesting"
+   ],
+   "hand_label": "S",
+   "hand_reason": "answers why the hare scrapes shallow (a tactical choice for wet years); borderline",
+   "utc": "2026-11-13 23:39"
+  },
+  {
+   "n": 13,
+   "ts": 1794631406.7547543,
+   "tension_id": "47bcf173-53d3-4199-a5b9-2664dbc4693e",
+   "label": "unresolved: climate change hares",
+   "thought": "The grey air presses down, but I recall the rabbits here have burrows, not nests. My dream of the icy ship feels distant against this reality. Survival reshapes behavior faster than philosophy, yet without true hares, the specific question hangs open. The damp stones hold a quiet answer: perhaps som",
+   "sim": 0.701,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "the thought itself says 'the specific question hangs open'",
+   "utc": "2026-11-14 04:43"
+  },
+  {
+   "n": 14,
+   "ts": 1794677727.4010465,
+   "tension_id": "886b4583-9e7a-4f6d-aab0-1ef5e1987c6b",
+   "label": "unresolved: choosing from the catalogue",
+   "thought": "I chose 'The Swiss Family Robinson; or Adventures in a Desert Island' by Wyss, Johann David from the catalogue, and it lies on my desk now, unopened.",
+   "sim": 0.7082,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "S",
+   "hand_reason": "a decision taken and a thing done (chose a book; it is on the desk)",
+   "utc": "2026-11-14 17:35"
+  },
+  {
+   "n": 15,
+   "ts": 1794781538.3697152,
+   "tension_id": "4071779f-287f-4b90-a6b3-c51993b7b356",
+   "label": "unresolved: dry ink",
+   "thought": "The ink is dry, but the hearth calls. I remember Audubon's note: a separate notebook for field notes. The grackle's green was a trick of light, not plumage. I settle back, dipping my pen as the school bell rings outside, choosing work over wandering.",
+   "sim": 0.7557,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "S",
+   "hand_reason": "a decision taken ('choosing work over wandering') and a correction (the green was light, not plumage); borderline",
+   "utc": "2026-11-15 22:25"
+  },
+  {
+   "n": 16,
+   "ts": 1794795342.5074747,
+   "tension_id": "d87058ed-032a-4bd7-816c-76698f5223dc",
+   "label": "unresolved: spider's web",
+   "thought": "The spider's web hangs not against the wind, but within its grain. The kinglet's song proves sound carries weight through acceptance, not force. Survival is fitting into reality, not dominating it.",
+   "sim": 0.7033,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "aphorism; no act",
+   "utc": "2026-11-16 02:15"
+  },
+  {
+   "n": 17,
+   "ts": 1794911203.1838257,
+   "tension_id": "51163f7a-8b13-4c18-8eaa-b609b080a7a7",
+   "label": "unresolved: healing and damage",
+   "thought": "The healed cuts on the rosemary stem speak of repair, not perfection. My mind turns from the rigid geometry of the stone back to this living thing. If structure resists chaos, how does a plant heal it? The answer seems to lie in time itself, waiting quietly in the damp soil.",
+   "sim": 0.7074,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "poses a question and defers the answer ('seems to lie in time')",
+   "utc": "2026-11-17 10:26"
+  },
+  {
+   "n": 18,
+   "ts": 1795070957.0814817,
+   "tension_id": "0dda1d3c-345a-4c98-b3dc-753d32ad2a6a",
+   "label": "unresolved: resilience and strength",
+   "thought": "The sodden strawberries fail while parsley crowns new life; nature's law doesn't seem to punish failure but simply cycles it. The wind combs the harakeke not to destroy, but to make way. My restraint isn't a fragile hope against mud, but the quiet intent of a gardener who knows the harvest is never ",
+   "sim": 0.7025,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "reframing of failure as cycle; no act",
+   "utc": "2026-11-19 06:49"
+  },
+  {
+   "n": 19,
+   "ts": 1795108070.3276124,
+   "tension_id": "cb68d107-4d0a-4d3f-a7dd-c55d4b021611",
+   "label": "unresolved: sparrow's song",
+   "thought": "The sparrow flock sounds like a living rhythm, not just noise. It fills the wall between me and the sea, turning that barrier into a chorus. If safety is anchoring, maybe I anchor here, letting their sound be the line I walk along without needing to hide from it.",
+   "sim": 0.7314,
+   "later_same_topic_attempts_72h": 1,
+   "later_labels": [
+    "unresolved: white-eyed vireo's song"
+   ],
+   "hand_label": "R",
+   "hand_reason": "'maybe I anchor here'; guess",
+   "utc": "2026-11-19 17:07"
+  },
+  {
+   "n": 20,
+   "ts": 1795110197.1086276,
+   "tension_id": "70c14936-1866-404c-8ff9-99b9d724bea5",
+   "label": "unresolved: the nature of fear",
+   "thought": "The tui's bell-note cuts through my own hesitation. I am not just abstracting fear into 'uncertainty'; I am letting the bird's specific mechanics—the cough, the click—anchor me. The shadows don't steal light; they define the contour of the woodcock against the kōwhai leaves. My mind is no longer dri",
+   "sim": 0.7217,
+   "later_same_topic_attempts_72h": 0,
+   "later_labels": [],
+   "hand_label": "R",
+   "hand_reason": "reframing of fear; no act",
+   "utc": "2026-11-19 17:43"
+  }
+ ]
+}

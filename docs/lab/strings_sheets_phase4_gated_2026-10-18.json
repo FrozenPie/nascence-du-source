@@ -1,0 +1,4859 @@
+{
+ "job": "J-2383",
+ "metric_sheet": "docs/lab/strings_sheets_phase4_gated_metric_sheet.md",
+ "ungated_reference": {
+  "pass": 19,
+  "n": 63,
+  "share": 0.3016,
+  "shuffle_baseline": 0.254
+ },
+ "g0": {
+  "max_dev": 0.0006184895835718296,
+  "worst": [
+   "wood_snap",
+   "onset"
+  ],
+  "read": true
+ },
+ "runs": {
+  "10": {
+   "pass": 23,
+   "n": 63,
+   "share": 0.3651,
+   "meets_bar": false,
+   "shuffle_baseline": 0.2698,
+   "non_discriminating": false,
+   "own_rank_median": 25.5,
+   "gated_short": [
+    "bed_watering",
+    "bees_in_garden"
+   ],
+   "gated_empty": [
+    "distant_surf_boom",
+    "morepork_call",
+    "tide_pool_trickle"
+   ],
+   "nonempty_share": {
+    "pass": 23,
+    "n": 60
+   },
+   "per_vertex_out_dist_mean": 0.3571,
+   "fail_to_pass": [
+    "bed_watering",
+    "cat_demand",
+    "godwits_overhead",
+    "gull_cries",
+    "moth_tap",
+    "oystercatcher_call",
+    "pen_scratch",
+    "shingle_drag",
+    "sow_dig"
+   ],
+   "pass_to_fail": [
+    "bees_in_garden",
+    "door_sound",
+    "footsteps_floorboards",
+    "small_birds",
+    "waves_on_shingle"
+   ],
+   "axis_misses": {
+    "n_vertices": 176,
+    "by_axis": {
+     "brightness": {
+      "above": 30,
+      "below": 15,
+      "total": 45
+     },
+     "onset": {
+      "above": 48,
+      "below": 22,
+      "total": 70
+     },
+     "periodicity": {
+      "above": 21,
+      "below": 46,
+      "total": 67
+     },
+     "roughness": {
+      "above": 22,
+      "below": 51,
+      "total": 73
+     },
+     "continuity": {
+      "above": 51,
+      "below": 39,
+      "total": 90
+     }
+    }
+   },
+   "median_measured_continuity": 0.453,
+   "s3_energy_contour": {
+    "agree": 25,
+    "n": 58
+   },
+   "s5_by_archetype": {
+    "bed": {
+     "pass": 3,
+     "n": 12,
+     "median_kept_share": 0.311
+    },
+    "bed_like": {
+     "pass": 2,
+     "n": 10,
+     "median_kept_share": 0.171
+    },
+    "call": {
+     "pass": 8,
+     "n": 20,
+     "median_kept_share": 0.358
+    },
+    "thump": {
+     "pass": 10,
+     "n": 20,
+     "median_kept_share": 0.379
+    },
+    "wingbeat": {
+     "pass": 0,
+     "n": 1,
+     "median_kept_share": 0.657
+    }
+   },
+   "kept_share_median": 0.338,
+   "excluded": {
+    "cat_thump": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 1,
+     "kept_share": 0.872,
+     "ungated_pass": true
+    },
+    "cat_trill": {
+     "pass": true,
+     "n_in": 1,
+     "n_sec": 1,
+     "kept_share": 0.147,
+     "ungated_pass": false
+    },
+    "gate_latch": {
+     "pass": true,
+     "n_in": 1,
+     "n_sec": 1,
+     "kept_share": 0.284,
+     "ungated_pass": true
+    },
+    "dawn_chorus": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 3,
+     "kept_share": 0.006,
+     "ungated_pass": true
+    },
+    "log_on_fire": {
+     "pass": true,
+     "n_in": 3,
+     "n_sec": 31,
+     "kept_share": 0.204,
+     "ungated_pass": true
+    }
+   }
+  },
+  "6": {
+   "pass": 19,
+   "n": 63,
+   "share": 0.3016,
+   "meets_bar": false,
+   "shuffle_baseline": 0.2842,
+   "non_discriminating": true,
+   "own_rank_median": 26.0,
+   "gated_short": [],
+   "gated_empty": [
+    "morepork_call"
+   ],
+   "nonempty_share": {
+    "pass": 19,
+    "n": 62
+   },
+   "per_vertex_out_dist_mean": 0.344,
+   "fail_to_pass": [
+    "canopy_drip",
+    "godwits_overhead",
+    "gull_cries",
+    "moth_tap",
+    "shingle_drag"
+   ],
+   "pass_to_fail": [
+    "bees_in_garden",
+    "door_sound",
+    "footsteps_floorboards",
+    "stream_run",
+    "waves_on_shingle"
+   ],
+   "axis_misses": {
+    "n_vertices": 186,
+    "by_axis": {
+     "brightness": {
+      "above": 34,
+      "below": 16,
+      "total": 50
+     },
+     "onset": {
+      "above": 50,
+      "below": 20,
+      "total": 70
+     },
+     "periodicity": {
+      "above": 23,
+      "below": 51,
+      "total": 74
+     },
+     "roughness": {
+      "above": 29,
+      "below": 52,
+      "total": 81
+     },
+     "continuity": {
+      "above": 61,
+      "below": 38,
+      "total": 99
+     }
+    }
+   },
+   "median_measured_continuity": 0.514,
+   "s3_energy_contour": {
+    "agree": 29,
+    "n": 62
+   },
+   "s5_by_archetype": {
+    "bed": {
+     "pass": 3,
+     "n": 12,
+     "median_kept_share": 0.531
+    },
+    "bed_like": {
+     "pass": 1,
+     "n": 10,
+     "median_kept_share": 0.411
+    },
+    "call": {
+     "pass": 7,
+     "n": 20,
+     "median_kept_share": 0.507
+    },
+    "thump": {
+     "pass": 8,
+     "n": 20,
+     "median_kept_share": 0.504
+    },
+    "wingbeat": {
+     "pass": 0,
+     "n": 1,
+     "median_kept_share": 0.715
+    }
+   },
+   "kept_share_median": 0.502,
+   "excluded": {
+    "cat_thump": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 1,
+     "kept_share": 0.872,
+     "ungated_pass": true
+    },
+    "cat_trill": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 1,
+     "kept_share": 0.382,
+     "ungated_pass": false
+    },
+    "gate_latch": {
+     "pass": true,
+     "n_in": 1,
+     "n_sec": 1,
+     "kept_share": 0.351,
+     "ungated_pass": true
+    },
+    "dawn_chorus": {
+     "pass": false,
+     "n_in": 1,
+     "n_sec": 8,
+     "kept_share": 0.022,
+     "ungated_pass": true
+    },
+    "log_on_fire": {
+     "pass": true,
+     "n_in": 3,
+     "n_sec": 32,
+     "kept_share": 0.5,
+     "ungated_pass": true
+    }
+   }
+  },
+  "15": {
+   "pass": 22,
+   "n": 63,
+   "share": 0.3492,
+   "meets_bar": false,
+   "shuffle_baseline": 0.2473,
+   "non_discriminating": false,
+   "own_rank_median": 26.0,
+   "gated_short": [
+    "bed_watering",
+    "canopy_drip",
+    "cicada_chorus",
+    "footsteps_shingle",
+    "moth_tap",
+    "rain_on_roof",
+    "stream_run"
+   ],
+   "gated_empty": [
+    "bees_in_garden",
+    "distant_surf_boom",
+    "morepork_call",
+    "shingle_drag",
+    "tide_pool_trickle"
+   ],
+   "nonempty_share": {
+    "pass": 22,
+    "n": 58
+   },
+   "per_vertex_out_dist_mean": 0.3871,
+   "fail_to_pass": [
+    "bed_watering",
+    "cat_demand",
+    "godwits_overhead",
+    "gull_cries",
+    "herb_cut",
+    "pen_scratch",
+    "sow_dig",
+    "thunder"
+   ],
+   "pass_to_fail": [
+    "bees_in_garden",
+    "door_sound",
+    "footsteps_floorboards",
+    "rain_on_roof",
+    "waves_on_shingle"
+   ],
+   "axis_misses": {
+    "n_vertices": 160,
+    "by_axis": {
+     "brightness": {
+      "above": 31,
+      "below": 16,
+      "total": 47
+     },
+     "onset": {
+      "above": 42,
+      "below": 18,
+      "total": 60
+     },
+     "periodicity": {
+      "above": 15,
+      "below": 40,
+      "total": 55
+     },
+     "roughness": {
+      "above": 17,
+      "below": 52,
+      "total": 69
+     },
+     "continuity": {
+      "above": 39,
+      "below": 37,
+      "total": 76
+     }
+    }
+   },
+   "median_measured_continuity": 0.329,
+   "s3_energy_contour": {
+    "agree": 23,
+    "n": 51
+   },
+   "s5_by_archetype": {
+    "bed": {
+     "pass": 1,
+     "n": 12,
+     "median_kept_share": 0.11
+    },
+    "bed_like": {
+     "pass": 2,
+     "n": 10,
+     "median_kept_share": 0.035
+    },
+    "call": {
+     "pass": 8,
+     "n": 20,
+     "median_kept_share": 0.254
+    },
+    "thump": {
+     "pass": 11,
+     "n": 20,
+     "median_kept_share": 0.262
+    },
+    "wingbeat": {
+     "pass": 0,
+     "n": 1,
+     "median_kept_share": 0.594
+    }
+   },
+   "kept_share_median": 0.157,
+   "excluded": {
+    "cat_thump": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 1,
+     "kept_share": 0.872,
+     "ungated_pass": true
+    },
+    "cat_trill": {
+     "pass": false,
+     "n_sec": 0,
+     "ungated_pass": false
+    },
+    "gate_latch": {
+     "pass": true,
+     "n_in": 1,
+     "n_sec": 1,
+     "kept_share": 0.243,
+     "ungated_pass": true
+    },
+    "dawn_chorus": {
+     "pass": false,
+     "n_in": 0,
+     "n_sec": 1,
+     "kept_share": 0.002,
+     "ungated_pass": true
+    },
+    "log_on_fire": {
+     "pass": true,
+     "n_in": 3,
+     "n_sec": 18,
+     "kept_share": 0.051,
+     "ungated_pass": true
+    }
+   }
+  }
+ },
+ "per_key_x10": {
+  "bed_watering": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 1,
+   "own_rank": 1,
+   "baseline_share": 0.387,
+   "misses": [
+    []
+   ],
+   "kept_share": 0.014,
+   "gated_seconds": 1,
+   "total_seconds": 12,
+   "measured_vertices": [
+    {
+     "brightness": 0.272,
+     "onset": 0.626,
+     "periodicity": 0.349,
+     "roughness": 0.241,
+     "continuity": 0.163,
+     "energy_raw": 0.44904
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.09999999999999998,
+     0.7
+    ],
+    "onset": [
+     0.0,
+     0.7
+    ],
+    "periodicity": [
+     0.0,
+     0.4
+    ],
+    "roughness": [
+     0.04999999999999999,
+     0.55
+    ],
+    "continuity": [
+     0.15000000000000002,
+     0.65
+    ]
+   }
+  },
+  "bees_in_garden": {
+   "archetype": "bed_like",
+   "ungated_pass": true,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 50,
+   "baseline_share": 0.129,
+   "misses": [
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.0,
+   "gated_seconds": 1,
+   "total_seconds": 54,
+   "measured_vertices": [
+    {
+     "brightness": 0.765,
+     "onset": 0.167,
+     "periodicity": 0.0,
+     "roughness": 0.682,
+     "continuity": 0.023,
+     "energy_raw": 0.01521
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.16999999999999998,
+     0.7
+    ],
+    "onset": [
+     0.06,
+     0.6
+    ],
+    "periodicity": [
+     0.35,
+     0.85
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.53,
+     1.0
+    ]
+   }
+  },
+  "bellbird_song": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 21,
+   "baseline_share": 0.226,
+   "misses": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.217,
+   "gated_seconds": 14,
+   "total_seconds": 25,
+   "measured_vertices": [
+    {
+     "brightness": 0.643,
+     "onset": 0.955,
+     "periodicity": 0.566,
+     "roughness": 0.238,
+     "continuity": 0.612,
+     "energy_raw": 0.68085
+    },
+    {
+     "brightness": 0.566,
+     "onset": 0.0,
+     "periodicity": 0.239,
+     "roughness": 0.479,
+     "continuity": 0.363,
+     "energy_raw": 0.02486
+    },
+    {
+     "brightness": 0.691,
+     "onset": 0.859,
+     "periodicity": 0.512,
+     "roughness": 0.339,
+     "continuity": 0.365,
+     "energy_raw": 0.80018
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.33799999999999997,
+     0.97
+    ],
+    "onset": [
+     0.043999999999999984,
+     0.65
+    ],
+    "periodicity": [
+     0.30000000000000004,
+     0.8
+    ],
+    "roughness": [
+     0.0,
+     0.33
+    ],
+    "continuity": [
+     0.04999999999999999,
+     0.55
+    ]
+   }
+  },
+  "blackbird_alarm": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 31,
+   "baseline_share": 0.21,
+   "misses": [
+    [
+     "onset",
+     "periodicity"
+    ],
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset"
+    ]
+   ],
+   "kept_share": 0.658,
+   "gated_seconds": 8,
+   "total_seconds": 9,
+   "measured_vertices": [
+    {
+     "brightness": 0.49,
+     "onset": 0.0,
+     "periodicity": 0.858,
+     "roughness": 0.532,
+     "continuity": 0.001,
+     "energy_raw": 0.00956
+    },
+    {
+     "brightness": 0.802,
+     "onset": 0.847,
+     "periodicity": 0.864,
+     "roughness": 0.251,
+     "continuity": 0.846,
+     "energy_raw": 1.93308
+    },
+    {
+     "brightness": 0.43,
+     "onset": 0.0,
+     "periodicity": 0.584,
+     "roughness": 0.548,
+     "continuity": 0.0,
+     "energy_raw": 0.01192
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.259,
+     0.9
+    ],
+    "onset": [
+     0.537,
+     1.0
+    ],
+    "periodicity": [
+     0.30000000000000004,
+     0.8
+    ],
+    "roughness": [
+     0.44999999999999996,
+     0.95
+    ],
+    "continuity": [
+     0.0,
+     0.4
+    ]
+   }
+  },
+  "blackbird_song": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 14,
+   "baseline_share": 0.081,
+   "misses": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.28,
+   "gated_seconds": 21,
+   "total_seconds": 44,
+   "measured_vertices": [
+    {
+     "brightness": 0.45,
+     "onset": 0.788,
+     "periodicity": 0.345,
+     "roughness": 0.133,
+     "continuity": 0.626,
+     "energy_raw": 1.11767
+    },
+    {
+     "brightness": 0.466,
+     "onset": 0.941,
+     "periodicity": 0.437,
+     "roughness": 0.125,
+     "continuity": 0.714,
+     "energy_raw": 1.46617
+    },
+    {
+     "brightness": 0.466,
+     "onset": 0.918,
+     "periodicity": 0.459,
+     "roughness": 0.125,
+     "continuity": 0.719,
+     "energy_raw": 1.83456
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.271,
+     0.9
+    ],
+    "onset": [
+     0.09699999999999998,
+     0.7
+    ],
+    "periodicity": [
+     0.15000000000000002,
+     0.65
+    ],
+    "roughness": [
+     0.0,
+     0.4
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "branches_creak": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 49,
+   "baseline_share": 0.048,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.162,
+   "gated_seconds": 14,
+   "total_seconds": 46,
+   "measured_vertices": [
+    {
+     "brightness": 0.162,
+     "onset": 0.972,
+     "periodicity": 0.642,
+     "roughness": 0.159,
+     "continuity": 0.707,
+     "energy_raw": 3.66871
+    },
+    {
+     "brightness": 0.19,
+     "onset": 0.629,
+     "periodicity": 0.507,
+     "roughness": 0.185,
+     "continuity": 0.775,
+     "energy_raw": 3.1956
+    },
+    {
+     "brightness": 0.222,
+     "onset": 0.517,
+     "periodicity": 0.566,
+     "roughness": 0.209,
+     "continuity": 0.269,
+     "energy_raw": 0.78283
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.43
+    ],
+    "onset": [
+     0.0,
+     0.5
+    ],
+    "periodicity": [
+     0.0,
+     0.4
+    ],
+    "roughness": [
+     0.37,
+     0.87
+    ],
+    "continuity": [
+     0.35,
+     0.85
+    ]
+   }
+  },
+  "canopy_drip": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 30,
+   "baseline_share": 0.323,
+   "misses": [
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.02,
+   "gated_seconds": 12,
+   "total_seconds": 32,
+   "measured_vertices": [
+    {
+     "brightness": 0.651,
+     "onset": 0.339,
+     "periodicity": 0.194,
+     "roughness": 0.599,
+     "continuity": 0.068,
+     "energy_raw": 0.03754
+    },
+    {
+     "brightness": 0.686,
+     "onset": 0.388,
+     "periodicity": 0.264,
+     "roughness": 0.638,
+     "continuity": 0.082,
+     "energy_raw": 0.03499
+    },
+    {
+     "brightness": 0.724,
+     "onset": 0.401,
+     "periodicity": 0.428,
+     "roughness": 0.662,
+     "continuity": 0.072,
+     "energy_raw": 0.03214
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.27,
+     0.87
+    ],
+    "onset": [
+     0.0,
+     0.9
+    ],
+    "periodicity": [
+     0.16999999999999998,
+     0.6699999999999999
+    ],
+    "roughness": [
+     0.0,
+     0.47
+    ],
+    "continuity": [
+     0.15000000000000002,
+     0.65
+    ]
+   }
+  },
+  "cat_chatter": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 47,
+   "baseline_share": 0.194,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.548,
+   "gated_seconds": 3,
+   "total_seconds": 3,
+   "measured_vertices": [
+    {
+     "brightness": 0.4,
+     "onset": 0.5,
+     "periodicity": 0.195,
+     "roughness": 0.003,
+     "continuity": 0.419,
+     "energy_raw": 0.10262
+    },
+    {
+     "brightness": 0.442,
+     "onset": 0.782,
+     "periodicity": 0.162,
+     "roughness": 0.005,
+     "continuity": 0.512,
+     "energy_raw": 0.1424
+    },
+    {
+     "brightness": 0.331,
+     "onset": 0.769,
+     "periodicity": 0.221,
+     "roughness": 0.003,
+     "continuity": 0.725,
+     "energy_raw": 0.18406
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.37,
+     0.9
+    ],
+    "onset": [
+     0.63,
+     1.0
+    ],
+    "periodicity": [
+     0.35,
+     0.85
+    ],
+    "roughness": [
+     0.35,
+     0.85
+    ],
+    "continuity": [
+     0.0,
+     0.5
+    ]
+   }
+  },
+  "cat_demand": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 25,
+   "baseline_share": 0.565,
+   "misses": [
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity"
+    ],
+    [
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.129,
+   "gated_seconds": 28,
+   "total_seconds": 33,
+   "measured_vertices": [
+    {
+     "brightness": 0.278,
+     "onset": 0.645,
+     "periodicity": 0.297,
+     "roughness": 0.193,
+     "continuity": 0.325,
+     "energy_raw": 0.08622
+    },
+    {
+     "brightness": 0.349,
+     "onset": 0.301,
+     "periodicity": 0.188,
+     "roughness": 0.336,
+     "continuity": 0.184,
+     "energy_raw": 0.06204
+    },
+    {
+     "brightness": 0.374,
+     "onset": 0.404,
+     "periodicity": 0.344,
+     "roughness": 0.33,
+     "continuity": 0.319,
+     "energy_raw": 0.10084
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.16299999999999998,
+     0.8
+    ],
+    "onset": [
+     0.14100000000000001,
+     0.75
+    ],
+    "periodicity": [
+     0.4,
+     0.9
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.0,
+     0.47
+    ]
+   }
+  },
+  "cat_lapping": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 59,
+   "baseline_share": 0.435,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.19,
+   "gated_seconds": 61,
+   "total_seconds": 63,
+   "measured_vertices": [
+    {
+     "brightness": 0.521,
+     "onset": 0.318,
+     "periodicity": 0.159,
+     "roughness": 0.624,
+     "continuity": 0.098,
+     "energy_raw": 0.00907
+    },
+    {
+     "brightness": 0.611,
+     "onset": 0.476,
+     "periodicity": 0.266,
+     "roughness": 0.679,
+     "continuity": 0.438,
+     "energy_raw": 0.01202
+    },
+    {
+     "brightness": 0.591,
+     "onset": 0.377,
+     "periodicity": 0.303,
+     "roughness": 0.661,
+     "continuity": 0.157,
+     "energy_raw": 0.0044
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.31999999999999995,
+     0.85
+    ],
+    "onset": [
+     0.56,
+     1.0
+    ],
+    "periodicity": [
+     0.55,
+     1.0
+    ],
+    "roughness": [
+     0.0,
+     0.45
+    ],
+    "continuity": [
+     0.30000000000000004,
+     0.8
+    ]
+   }
+  },
+  "cat_meow_at_door": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 32,
+   "baseline_share": 0.129,
+   "misses": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.39,
+   "gated_seconds": 31,
+   "total_seconds": 37,
+   "measured_vertices": [
+    {
+     "brightness": 0.545,
+     "onset": 0.861,
+     "periodicity": 0.676,
+     "roughness": 0.288,
+     "continuity": 0.844,
+     "energy_raw": 1.20841
+    },
+    {
+     "brightness": 0.546,
+     "onset": 0.761,
+     "periodicity": 0.697,
+     "roughness": 0.283,
+     "continuity": 0.64,
+     "energy_raw": 0.7234
+    },
+    {
+     "brightness": 0.524,
+     "onset": 0.864,
+     "periodicity": 0.704,
+     "roughness": 0.296,
+     "continuity": 0.749,
+     "energy_raw": 1.04839
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.21100000000000002,
+     0.85
+    ],
+    "onset": [
+     0.08900000000000002,
+     0.7
+    ],
+    "periodicity": [
+     0.44999999999999996,
+     0.95
+    ],
+    "roughness": [
+     0.09999999999999998,
+     0.6
+    ],
+    "continuity": [
+     0.0,
+     0.43
+    ]
+   }
+  },
+  "cat_purr": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 43,
+   "baseline_share": 0.097,
+   "misses": [
+    [
+     "onset",
+     "periodicity"
+    ],
+    [
+     "onset",
+     "periodicity"
+    ],
+    [
+     "onset",
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.737,
+   "gated_seconds": 16,
+   "total_seconds": 18,
+   "measured_vertices": [
+    {
+     "brightness": 0.021,
+     "onset": 0.544,
+     "periodicity": 0.162,
+     "roughness": 0.356,
+     "continuity": 0.842,
+     "energy_raw": 0.89756
+    },
+    {
+     "brightness": 0.0,
+     "onset": 0.627,
+     "periodicity": 0.338,
+     "roughness": 0.323,
+     "continuity": 0.861,
+     "energy_raw": 1.4289
+    },
+    {
+     "brightness": 0.001,
+     "onset": 0.493,
+     "periodicity": 0.25,
+     "roughness": 0.303,
+     "continuity": 0.884,
+     "energy_raw": 1.22751
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.33
+    ],
+    "onset": [
+     0.0,
+     0.3
+    ],
+    "periodicity": [
+     0.7,
+     1.0
+    ],
+    "roughness": [
+     0.04999999999999999,
+     0.55
+    ],
+    "continuity": [
+     0.65,
+     1.0
+    ]
+   }
+  },
+  "cat_yowl_cargo": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 38,
+   "baseline_share": 0.258,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.776,
+   "gated_seconds": 45,
+   "total_seconds": 46,
+   "measured_vertices": [
+    {
+     "brightness": 0.731,
+     "onset": 0.63,
+     "periodicity": 0.659,
+     "roughness": 0.588,
+     "continuity": 0.66,
+     "energy_raw": 0.33544
+    },
+    {
+     "brightness": 0.391,
+     "onset": 0.544,
+     "periodicity": 0.509,
+     "roughness": 0.174,
+     "continuity": 0.692,
+     "energy_raw": 0.52393
+    },
+    {
+     "brightness": 0.339,
+     "onset": 0.531,
+     "periodicity": 0.548,
+     "roughness": 0.114,
+     "continuity": 0.719,
+     "energy_raw": 0.60188
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.6
+    ],
+    "onset": [
+     0.0,
+     0.55
+    ],
+    "periodicity": [
+     0.04999999999999999,
+     0.55
+    ],
+    "roughness": [
+     0.44999999999999996,
+     0.95
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "chair_desk_scrape": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 59,
+   "baseline_share": 0.177,
+   "misses": [
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.889,
+   "gated_seconds": 26,
+   "total_seconds": 28,
+   "measured_vertices": [
+    {
+     "brightness": 0.328,
+     "onset": 0.62,
+     "periodicity": 0.326,
+     "roughness": 0.308,
+     "continuity": 0.986,
+     "energy_raw": 1.00996
+    },
+    {
+     "brightness": 0.312,
+     "onset": 0.623,
+     "periodicity": 0.421,
+     "roughness": 0.295,
+     "continuity": 0.967,
+     "energy_raw": 1.17202
+    },
+    {
+     "brightness": 0.296,
+     "onset": 0.624,
+     "periodicity": 0.577,
+     "roughness": 0.26,
+     "continuity": 0.963,
+     "energy_raw": 1.36102
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.04999999999999999,
+     0.65
+    ],
+    "onset": [
+     0.0,
+     0.8
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.5,
+     1.0
+    ],
+    "continuity": [
+     0.0,
+     0.5
+    ]
+   }
+  },
+  "cicada_chorus": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 50,
+   "baseline_share": 0.323,
+   "misses": [
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.443,
+   "gated_seconds": 13,
+   "total_seconds": 16,
+   "measured_vertices": [
+    {
+     "brightness": 0.695,
+     "onset": 0.373,
+     "periodicity": 0.218,
+     "roughness": 0.489,
+     "continuity": 0.708,
+     "energy_raw": 0.02542
+    },
+    {
+     "brightness": 0.781,
+     "onset": 0.084,
+     "periodicity": 0.187,
+     "roughness": 0.466,
+     "continuity": 0.985,
+     "energy_raw": 0.07008
+    },
+    {
+     "brightness": 0.609,
+     "onset": 0.615,
+     "periodicity": 0.264,
+     "roughness": 0.56,
+     "continuity": 0.456,
+     "energy_raw": 0.01929
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.42000000000000004,
+     0.95
+    ],
+    "onset": [
+     0.0,
+     0.4
+    ],
+    "periodicity": [
+     0.6,
+     1.0
+    ],
+    "roughness": [
+     0.55,
+     1.0
+    ],
+    "continuity": [
+     0.7,
+     1.0
+    ]
+   }
+  },
+  "clock_tick": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 63,
+   "baseline_share": 0.565,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.215,
+   "gated_seconds": 61,
+   "total_seconds": 65,
+   "measured_vertices": [
+    {
+     "brightness": 0.407,
+     "onset": 0.399,
+     "periodicity": 0.557,
+     "roughness": 0.518,
+     "continuity": 0.349,
+     "energy_raw": 0.02784
+    },
+    {
+     "brightness": 0.353,
+     "onset": 0.395,
+     "periodicity": 0.549,
+     "roughness": 0.493,
+     "continuity": 0.511,
+     "energy_raw": 0.03911
+    },
+    {
+     "brightness": 0.5,
+     "onset": 0.402,
+     "periodicity": 0.563,
+     "roughness": 0.604,
+     "continuity": 0.267,
+     "energy_raw": 0.02009
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.27,
+     0.8
+    ],
+    "onset": [
+     0.56,
+     1.0
+    ],
+    "periodicity": [
+     0.73,
+     1.0
+    ],
+    "roughness": [
+     0.0,
+     0.4
+    ],
+    "continuity": [
+     0.7,
+     1.0
+    ]
+   }
+  },
+  "cricket_night": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 42,
+   "baseline_share": 0.258,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.32,
+   "gated_seconds": 78,
+   "total_seconds": 91,
+   "measured_vertices": [
+    {
+     "brightness": 0.889,
+     "onset": 0.661,
+     "periodicity": 0.608,
+     "roughness": 0.493,
+     "continuity": 0.488,
+     "energy_raw": 0.1278
+    },
+    {
+     "brightness": 0.802,
+     "onset": 0.585,
+     "periodicity": 0.466,
+     "roughness": 0.57,
+     "continuity": 0.489,
+     "energy_raw": 0.09749
+    },
+    {
+     "brightness": 0.683,
+     "onset": 0.683,
+     "periodicity": 0.478,
+     "roughness": 0.584,
+     "continuity": 0.554,
+     "energy_raw": 0.09634
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.31999999999999995,
+     0.85
+    ],
+    "onset": [
+     0.0,
+     0.5
+    ],
+    "periodicity": [
+     0.65,
+     1.0
+    ],
+    "roughness": [
+     0.04999999999999999,
+     0.55
+    ],
+    "continuity": [
+     0.6,
+     1.0
+    ]
+   }
+  },
+  "cuckoo_call": {
+   "archetype": "call",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 5,
+   "baseline_share": 0.194,
+   "misses": [
+    [],
+    [
+     "onset"
+    ],
+    [
+     "onset",
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.628,
+   "gated_seconds": 27,
+   "total_seconds": 34,
+   "measured_vertices": [
+    {
+     "brightness": 0.678,
+     "onset": 0.379,
+     "periodicity": 0.708,
+     "roughness": 0.194,
+     "continuity": 0.702,
+     "energy_raw": 1.21015
+    },
+    {
+     "brightness": 0.664,
+     "onset": 0.627,
+     "periodicity": 0.573,
+     "roughness": 0.158,
+     "continuity": 0.729,
+     "energy_raw": 2.91078
+    },
+    {
+     "brightness": 0.662,
+     "onset": 0.835,
+     "periodicity": 0.305,
+     "roughness": 0.199,
+     "continuity": 0.772,
+     "energy_raw": 1.97378
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.483,
+     1.0
+    ],
+    "onset": [
+     0.006000000000000005,
+     0.6
+    ],
+    "periodicity": [
+     0.44999999999999996,
+     0.95
+    ],
+    "roughness": [
+     0.0,
+     0.35
+    ],
+    "continuity": [
+     0.30000000000000004,
+     0.8
+    ]
+   }
+  },
+  "distant_surf_boom": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": null,
+   "baseline_share": 0.0,
+   "misses": [],
+   "kept_share": 0.0,
+   "gated_seconds": 0,
+   "total_seconds": 63,
+   "measured_vertices": [],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.3
+    ],
+    "onset": [
+     0.06,
+     0.6
+    ],
+    "periodicity": [
+     0.35,
+     0.85
+    ],
+    "roughness": [
+     0.25,
+     0.75
+    ],
+    "continuity": [
+     0.30000000000000004,
+     0.8
+    ]
+   }
+  },
+  "door_sound": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 30,
+   "baseline_share": 0.516,
+   "misses": [
+    [
+     "brightness",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "brightness",
+     "roughness"
+    ],
+    [
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.09,
+   "gated_seconds": 9,
+   "total_seconds": 19,
+   "measured_vertices": [
+    {
+     "brightness": 0.694,
+     "onset": 0.688,
+     "periodicity": 0.413,
+     "roughness": 0.626,
+     "continuity": 0.264,
+     "energy_raw": 1.20611
+    },
+    {
+     "brightness": 0.691,
+     "onset": 0.645,
+     "periodicity": 0.242,
+     "roughness": 0.624,
+     "continuity": 0.202,
+     "energy_raw": 0.91337
+    },
+    {
+     "brightness": 0.515,
+     "onset": 0.553,
+     "periodicity": 0.354,
+     "roughness": 0.497,
+     "continuity": 0.253,
+     "energy_raw": 0.74685
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.6
+    ],
+    "onset": [
+     0.0,
+     0.9
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.09999999999999998,
+     0.6
+    ],
+    "continuity": [
+     0.0,
+     0.45
+    ]
+   }
+  },
+  "embers_settle": {
+   "archetype": "bed",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 26,
+   "baseline_share": 0.387,
+   "misses": [
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ],
+    [
+     "brightness",
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.276,
+   "gated_seconds": 6,
+   "total_seconds": 6,
+   "measured_vertices": [
+    {
+     "brightness": 0.798,
+     "onset": 0.5,
+     "periodicity": 0.293,
+     "roughness": 0.745,
+     "continuity": 0.211,
+     "energy_raw": 0.25461
+    },
+    {
+     "brightness": 0.818,
+     "onset": 0.507,
+     "periodicity": 0.327,
+     "roughness": 0.741,
+     "continuity": 0.216,
+     "energy_raw": 0.18622
+    },
+    {
+     "brightness": 0.854,
+     "onset": 0.614,
+     "periodicity": 0.339,
+     "roughness": 0.708,
+     "continuity": 0.365,
+     "energy_raw": 0.49866
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.07,
+     0.6
+    ],
+    "onset": [
+     0.31000000000000005,
+     0.85
+    ],
+    "periodicity": [
+     0.0,
+     0.33
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.0,
+     0.45
+    ]
+   }
+  },
+  "fantail_chatter": {
+   "archetype": "call",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 12,
+   "baseline_share": 0.371,
+   "misses": [
+    [],
+    [],
+    [
+     "onset"
+    ]
+   ],
+   "kept_share": 0.724,
+   "gated_seconds": 11,
+   "total_seconds": 13,
+   "measured_vertices": [
+    {
+     "brightness": 0.764,
+     "onset": 0.558,
+     "periodicity": 0.286,
+     "roughness": 0.497,
+     "continuity": 0.178,
+     "energy_raw": 0.32708
+    },
+    {
+     "brightness": 0.733,
+     "onset": 0.447,
+     "periodicity": 0.249,
+     "roughness": 0.508,
+     "continuity": 0.125,
+     "energy_raw": 0.24839
+    },
+    {
+     "brightness": 0.723,
+     "onset": 0.248,
+     "periodicity": 0.432,
+     "roughness": 0.517,
+     "continuity": 0.072,
+     "energy_raw": 0.15426
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.493,
+     1.0
+    ],
+    "onset": [
+     0.391,
+     1.0
+    ],
+    "periodicity": [
+     0.04999999999999999,
+     0.55
+    ],
+    "roughness": [
+     0.09999999999999998,
+     0.6
+    ],
+    "continuity": [
+     0.0,
+     0.47
+    ]
+   }
+  },
+  "fire_crackle": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 39,
+   "baseline_share": 0.177,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.303,
+   "gated_seconds": 16,
+   "total_seconds": 17,
+   "measured_vertices": [
+    {
+     "brightness": 0.693,
+     "onset": 0.24,
+     "periodicity": 0.374,
+     "roughness": 0.723,
+     "continuity": 0.055,
+     "energy_raw": 0.03892
+    },
+    {
+     "brightness": 0.686,
+     "onset": 0.297,
+     "periodicity": 0.044,
+     "roughness": 0.751,
+     "continuity": 0.078,
+     "energy_raw": 0.01979
+    },
+    {
+     "brightness": 0.685,
+     "onset": 0.251,
+     "periodicity": 0.225,
+     "roughness": 0.753,
+     "continuity": 0.092,
+     "energy_raw": 0.01353
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.21999999999999997,
+     0.75
+    ],
+    "onset": [
+     0.51,
+     1.0
+    ],
+    "periodicity": [
+     0.0,
+     0.35
+    ],
+    "roughness": [
+     0.5,
+     1.0
+    ],
+    "continuity": [
+     0.35,
+     0.85
+    ]
+   }
+  },
+  "footsteps_floorboards": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 21,
+   "baseline_share": 0.5,
+   "misses": [
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.184,
+   "gated_seconds": 23,
+   "total_seconds": 34,
+   "measured_vertices": [
+    {
+     "brightness": 0.391,
+     "onset": 0.494,
+     "periodicity": 0.398,
+     "roughness": 0.416,
+     "continuity": 0.224,
+     "energy_raw": 0.00369
+    },
+    {
+     "brightness": 0.404,
+     "onset": 0.499,
+     "periodicity": 0.461,
+     "roughness": 0.442,
+     "continuity": 0.242,
+     "energy_raw": 0.00656
+    },
+    {
+     "brightness": 0.41,
+     "onset": 0.501,
+     "periodicity": 0.508,
+     "roughness": 0.444,
+     "continuity": 0.248,
+     "energy_raw": 0.00543
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.04999999999999999,
+     0.65
+    ],
+    "onset": [
+     0.0,
+     0.95
+    ],
+    "periodicity": [
+     0.5,
+     1.0
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.25,
+     0.75
+    ]
+   }
+  },
+  "footsteps_grass_soil": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 21,
+   "baseline_share": 0.452,
+   "misses": [
+    [
+     "brightness",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.492,
+   "gated_seconds": 11,
+   "total_seconds": 12,
+   "measured_vertices": [
+    {
+     "brightness": 0.483,
+     "onset": 0.104,
+     "periodicity": 0.528,
+     "roughness": 0.415,
+     "continuity": 0.203,
+     "energy_raw": 0.27839
+    },
+    {
+     "brightness": 0.33,
+     "onset": 0.381,
+     "periodicity": 0.476,
+     "roughness": 0.321,
+     "continuity": 0.156,
+     "energy_raw": 0.74359
+    },
+    {
+     "brightness": 0.321,
+     "onset": 0.526,
+     "periodicity": 0.645,
+     "roughness": 0.386,
+     "continuity": 0.17,
+     "energy_raw": 2.14333
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.45
+    ],
+    "onset": [
+     0.0,
+     0.65
+    ],
+    "periodicity": [
+     0.55,
+     1.0
+    ],
+    "roughness": [
+     0.0,
+     0.5
+    ],
+    "continuity": [
+     0.30000000000000004,
+     0.8
+    ]
+   }
+  },
+  "footsteps_leafmould": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 50,
+   "baseline_share": 0.452,
+   "misses": [
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.436,
+   "gated_seconds": 24,
+   "total_seconds": 24,
+   "measured_vertices": [
+    {
+     "brightness": 0.451,
+     "onset": 0.542,
+     "periodicity": 0.213,
+     "roughness": 0.771,
+     "continuity": 0.516,
+     "energy_raw": 1.34502
+    },
+    {
+     "brightness": 0.47,
+     "onset": 0.508,
+     "periodicity": 0.241,
+     "roughness": 0.761,
+     "continuity": 0.474,
+     "energy_raw": 0.9813
+    },
+    {
+     "brightness": 0.423,
+     "onset": 0.557,
+     "periodicity": 0.202,
+     "roughness": 0.781,
+     "continuity": 0.495,
+     "energy_raw": 1.24636
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.5
+    ],
+    "onset": [
+     0.15999999999999998,
+     0.7
+    ],
+    "periodicity": [
+     0.55,
+     1.0
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.35,
+     0.85
+    ]
+   }
+  },
+  "footsteps_shingle": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 60,
+   "baseline_share": 0.371,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.014,
+   "gated_seconds": 4,
+   "total_seconds": 14,
+   "measured_vertices": [
+    {
+     "brightness": 0.514,
+     "onset": 0.3,
+     "periodicity": 0.339,
+     "roughness": 0.474,
+     "continuity": 0.079,
+     "energy_raw": 0.12207
+    },
+    {
+     "brightness": 0.708,
+     "onset": 0.167,
+     "periodicity": 0.248,
+     "roughness": 0.582,
+     "continuity": 0.023,
+     "energy_raw": 0.0273
+    },
+    {
+     "brightness": 0.291,
+     "onset": 0.167,
+     "periodicity": 0.248,
+     "roughness": 0.456,
+     "continuity": 0.023,
+     "energy_raw": 0.02274
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.27,
+     0.8
+    ],
+    "onset": [
+     0.45999999999999996,
+     1.0
+    ],
+    "periodicity": [
+     0.55,
+     1.0
+    ],
+    "roughness": [
+     0.55,
+     1.0
+    ],
+    "continuity": [
+     0.44999999999999996,
+     0.95
+    ]
+   }
+  },
+  "godwits_overhead": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 15,
+   "baseline_share": 0.419,
+   "misses": [
+    [
+     "onset"
+    ],
+    [],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.071,
+   "gated_seconds": 6,
+   "total_seconds": 17,
+   "measured_vertices": [
+    {
+     "brightness": 0.549,
+     "onset": 0.773,
+     "periodicity": 0.291,
+     "roughness": 0.376,
+     "continuity": 0.418,
+     "energy_raw": 0.28517
+    },
+    {
+     "brightness": 0.602,
+     "onset": 0.697,
+     "periodicity": 0.278,
+     "roughness": 0.408,
+     "continuity": 0.174,
+     "energy_raw": 0.08427
+    },
+    {
+     "brightness": 0.571,
+     "onset": 0.541,
+     "periodicity": 0.349,
+     "roughness": 0.396,
+     "continuity": 0.131,
+     "energy_raw": 0.08982
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.42400000000000004,
+     1.0
+    ],
+    "onset": [
+     0.09899999999999998,
+     0.7
+    ],
+    "periodicity": [
+     0.15000000000000002,
+     0.65
+    ],
+    "roughness": [
+     0.04999999999999999,
+     0.55
+    ],
+    "continuity": [
+     0.15000000000000002,
+     0.65
+    ]
+   }
+  },
+  "gull_cries": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 40,
+   "baseline_share": 0.306,
+   "misses": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.115,
+   "gated_seconds": 10,
+   "total_seconds": 21,
+   "measured_vertices": [
+    {
+     "brightness": 0.328,
+     "onset": 0.869,
+     "periodicity": 0.491,
+     "roughness": 0.21,
+     "continuity": 0.339,
+     "energy_raw": 1.13649
+    },
+    {
+     "brightness": 0.359,
+     "onset": 0.805,
+     "periodicity": 0.393,
+     "roughness": 0.212,
+     "continuity": 0.241,
+     "energy_raw": 0.90926
+    },
+    {
+     "brightness": 0.353,
+     "onset": 0.792,
+     "periodicity": 0.437,
+     "roughness": 0.239,
+     "continuity": 0.241,
+     "energy_raw": 0.96198
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.30900000000000005,
+     0.95
+    ],
+    "onset": [
+     0.33699999999999997,
+     0.95
+    ],
+    "periodicity": [
+     0.0,
+     0.5
+    ],
+    "roughness": [
+     0.6,
+     1.0
+    ],
+    "continuity": [
+     0.0,
+     0.4
+    ]
+   }
+  },
+  "herb_cut": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 32,
+   "baseline_share": 0.177,
+   "misses": [
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.585,
+   "gated_seconds": 4,
+   "total_seconds": 4,
+   "measured_vertices": [
+    {
+     "brightness": 0.856,
+     "onset": 0.523,
+     "periodicity": 0.261,
+     "roughness": 0.71,
+     "continuity": 0.431,
+     "energy_raw": 0.16755
+    },
+    {
+     "brightness": 0.854,
+     "onset": 0.0,
+     "periodicity": 0.236,
+     "roughness": 0.611,
+     "continuity": 0.628,
+     "energy_raw": 0.16628
+    },
+    {
+     "brightness": 0.703,
+     "onset": 0.387,
+     "periodicity": 0.214,
+     "roughness": 0.525,
+     "continuity": 1.0,
+     "energy_raw": 0.54576
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.2,
+     0.8
+    ],
+    "onset": [
+     0.0,
+     0.95
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.0,
+     0.3
+    ]
+   }
+  },
+  "kereru_wingbeats": {
+   "archetype": "wingbeat",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 14,
+   "baseline_share": 0.081,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "onset",
+     "roughness"
+    ],
+    [
+     "brightness",
+     "onset"
+    ]
+   ],
+   "kept_share": 0.657,
+   "gated_seconds": 4,
+   "total_seconds": 6,
+   "measured_vertices": [
+    {
+     "brightness": 0.613,
+     "onset": 0.958,
+     "periodicity": 0.731,
+     "roughness": 0.672,
+     "continuity": 0.626,
+     "energy_raw": 1.41006
+    },
+    {
+     "brightness": 0.706,
+     "onset": 0.0,
+     "periodicity": 0.758,
+     "roughness": 0.725,
+     "continuity": 0.0,
+     "energy_raw": 0.08452
+    },
+    {
+     "brightness": 0.538,
+     "onset": 0.0,
+     "periodicity": 0.547,
+     "roughness": 0.595,
+     "continuity": 0.0,
+     "energy_raw": 0.00458
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.45
+    ],
+    "onset": [
+     0.28,
+     0.9
+    ],
+    "periodicity": [
+     0.30000000000000004,
+     0.8
+    ],
+    "roughness": [
+     0.2,
+     0.7
+    ],
+    "continuity": [
+     0.0,
+     0.5
+    ]
+   }
+  },
+  "kettle_fill": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 1,
+   "baseline_share": 0.29,
+   "misses": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.755,
+   "gated_seconds": 8,
+   "total_seconds": 9,
+   "measured_vertices": [
+    {
+     "brightness": 0.582,
+     "onset": 0.172,
+     "periodicity": 0.296,
+     "roughness": 0.563,
+     "continuity": 0.917,
+     "energy_raw": 0.2484
+    },
+    {
+     "brightness": 0.558,
+     "onset": 0.132,
+     "periodicity": 0.204,
+     "roughness": 0.529,
+     "continuity": 0.917,
+     "energy_raw": 0.28283
+    },
+    {
+     "brightness": 0.595,
+     "onset": 0.371,
+     "periodicity": 0.05,
+     "roughness": 0.628,
+     "continuity": 0.129,
+     "energy_raw": 0.07608
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.15000000000000002,
+     0.75
+    ],
+    "onset": [
+     0.0,
+     0.85
+    ],
+    "periodicity": [
+     0.0,
+     0.4
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.25,
+     0.75
+    ]
+   }
+  },
+  "kettle_pour": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 3,
+   "baseline_share": 0.435,
+   "misses": [
+    [
+     "brightness"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    []
+   ],
+   "kept_share": 0.242,
+   "gated_seconds": 13,
+   "total_seconds": 15,
+   "measured_vertices": [
+    {
+     "brightness": 0.261,
+     "onset": 0.245,
+     "periodicity": 0.307,
+     "roughness": 0.322,
+     "continuity": 0.338,
+     "energy_raw": 0.03749
+    },
+    {
+     "brightness": 0.462,
+     "onset": 0.925,
+     "periodicity": 0.329,
+     "roughness": 0.331,
+     "continuity": 0.686,
+     "energy_raw": 0.241
+    },
+    {
+     "brightness": 0.312,
+     "onset": 0.495,
+     "periodicity": 0.25,
+     "roughness": 0.361,
+     "continuity": 0.32,
+     "energy_raw": 0.09769
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.30000000000000004,
+     0.9
+    ],
+    "onset": [
+     0.0,
+     0.9
+    ],
+    "periodicity": [
+     0.0,
+     0.35
+    ],
+    "roughness": [
+     0.2,
+     0.7
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "kettle_sing": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 6,
+   "baseline_share": 0.419,
+   "misses": [
+    [
+     "brightness",
+     "onset"
+    ],
+    [
+     "brightness"
+    ],
+    [
+     "brightness",
+     "onset"
+    ]
+   ],
+   "kept_share": 0.493,
+   "gated_seconds": 19,
+   "total_seconds": 25,
+   "measured_vertices": [
+    {
+     "brightness": 0.483,
+     "onset": 0.51,
+     "periodicity": 0.382,
+     "roughness": 0.397,
+     "continuity": 0.747,
+     "energy_raw": 0.06736
+    },
+    {
+     "brightness": 0.482,
+     "onset": 0.411,
+     "periodicity": 0.212,
+     "roughness": 0.391,
+     "continuity": 0.88,
+     "energy_raw": 0.13477
+    },
+    {
+     "brightness": 0.476,
+     "onset": 0.451,
+     "periodicity": 0.211,
+     "roughness": 0.368,
+     "continuity": 0.779,
+     "energy_raw": 0.10729
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.52,
+     1.0
+    ],
+    "onset": [
+     0.0,
+     0.45
+    ],
+    "periodicity": [
+     0.04999999999999999,
+     0.55
+    ],
+    "roughness": [
+     0.0,
+     0.5
+    ],
+    "continuity": [
+     0.65,
+     1.0
+    ]
+   }
+  },
+  "kingfisher_call": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 60,
+   "baseline_share": 0.048,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.748,
+   "gated_seconds": 20,
+   "total_seconds": 24,
+   "measured_vertices": [
+    {
+     "brightness": 0.092,
+     "onset": 0.482,
+     "periodicity": 0.308,
+     "roughness": 0.175,
+     "continuity": 0.915,
+     "energy_raw": 0.8006
+    },
+    {
+     "brightness": 0.053,
+     "onset": 0.348,
+     "periodicity": 0.291,
+     "roughness": 0.141,
+     "continuity": 0.874,
+     "energy_raw": 1.79314
+    },
+    {
+     "brightness": 0.052,
+     "onset": 0.921,
+     "periodicity": 0.218,
+     "roughness": 0.14,
+     "continuity": 0.935,
+     "energy_raw": 3.37688
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.361,
+     1.0
+    ],
+    "onset": [
+     0.489,
+     1.0
+    ],
+    "periodicity": [
+     0.44999999999999996,
+     0.95
+    ],
+    "roughness": [
+     0.35,
+     0.85
+    ],
+    "continuity": [
+     0.0,
+     0.43
+    ]
+   }
+  },
+  "leaf_rustle": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 7,
+   "baseline_share": 0.339,
+   "misses": [
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "kept_share": 0.409,
+   "gated_seconds": 44,
+   "total_seconds": 47,
+   "measured_vertices": [
+    {
+     "brightness": 0.833,
+     "onset": 0.562,
+     "periodicity": 0.307,
+     "roughness": 0.779,
+     "continuity": 0.449,
+     "energy_raw": 0.04478
+    },
+    {
+     "brightness": 0.842,
+     "onset": 0.558,
+     "periodicity": 0.313,
+     "roughness": 0.768,
+     "continuity": 0.307,
+     "energy_raw": 0.06197
+    },
+    {
+     "brightness": 0.831,
+     "onset": 0.424,
+     "periodicity": 0.336,
+     "roughness": 0.781,
+     "continuity": 0.217,
+     "energy_raw": 0.0956
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.13,
+     0.73
+    ],
+    "onset": [
+     0.0,
+     0.8
+    ],
+    "periodicity": [
+     0.0,
+     0.4
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.04999999999999999,
+     0.55
+    ]
+   }
+  },
+  "morepork_call": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": null,
+   "baseline_share": 0.0,
+   "misses": [],
+   "kept_share": 0.0,
+   "gated_seconds": 0,
+   "total_seconds": 17,
+   "measured_vertices": [],
+   "envelope": {
+    "brightness": [
+     0.059,
+     0.7
+    ],
+    "onset": [
+     0.0,
+     0.55
+    ],
+    "periodicity": [
+     0.4,
+     0.9
+    ],
+    "roughness": [
+     0.0,
+     0.35
+    ],
+    "continuity": [
+     0.0,
+     0.4
+    ]
+   }
+  },
+  "moth_tap": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 11,
+   "baseline_share": 0.355,
+   "misses": [
+    [
+     "periodicity"
+    ],
+    [
+     "brightness",
+     "periodicity"
+    ],
+    [
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.154,
+   "gated_seconds": 3,
+   "total_seconds": 3,
+   "measured_vertices": [
+    {
+     "brightness": 0.275,
+     "onset": 0.167,
+     "periodicity": 0.22,
+     "roughness": 0.307,
+     "continuity": 0.023,
+     "energy_raw": 0.06154
+    },
+    {
+     "brightness": 0.091,
+     "onset": 0.563,
+     "periodicity": 0.217,
+     "roughness": 0.33,
+     "continuity": 0.163,
+     "energy_raw": 0.99592
+    },
+    {
+     "brightness": 0.254,
+     "onset": 0.597,
+     "periodicity": 0.183,
+     "roughness": 0.575,
+     "continuity": 0.323,
+     "energy_raw": 0.75575
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.2,
+     0.8
+    ],
+    "onset": [
+     0.0,
+     0.95
+    ],
+    "periodicity": [
+     0.25,
+     0.75
+    ],
+    "roughness": [
+     0.09999999999999998,
+     0.6
+    ],
+    "continuity": [
+     0.0,
+     0.35
+    ]
+   }
+  },
+  "oystercatcher_call": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 31,
+   "baseline_share": 0.468,
+   "misses": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.139,
+   "gated_seconds": 24,
+   "total_seconds": 33,
+   "measured_vertices": [
+    {
+     "brightness": 0.437,
+     "onset": 0.617,
+     "periodicity": 0.267,
+     "roughness": 0.216,
+     "continuity": 0.248,
+     "energy_raw": 0.10519
+    },
+    {
+     "brightness": 0.558,
+     "onset": 0.594,
+     "periodicity": 0.316,
+     "roughness": 0.203,
+     "continuity": 0.255,
+     "energy_raw": 0.14105
+    },
+    {
+     "brightness": 0.55,
+     "onset": 0.587,
+     "periodicity": 0.199,
+     "roughness": 0.205,
+     "continuity": 0.208,
+     "energy_raw": 0.09843
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.387,
+     1.0
+    ],
+    "onset": [
+     0.41600000000000004,
+     1.0
+    ],
+    "periodicity": [
+     0.030000000000000027,
+     0.53
+    ],
+    "roughness": [
+     0.47,
+     0.97
+    ],
+    "continuity": [
+     0.0,
+     0.37
+    ]
+   }
+  },
+  "page_turn": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 10,
+   "baseline_share": 0.371,
+   "misses": [
+    [],
+    [],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.488,
+   "gated_seconds": 19,
+   "total_seconds": 20,
+   "measured_vertices": [
+    {
+     "brightness": 0.38,
+     "onset": 0.249,
+     "periodicity": 0.036,
+     "roughness": 0.375,
+     "continuity": 0.101,
+     "energy_raw": 0.08626
+    },
+    {
+     "brightness": 0.583,
+     "onset": 0.402,
+     "periodicity": 0.124,
+     "roughness": 0.56,
+     "continuity": 0.158,
+     "energy_raw": 0.19937
+    },
+    {
+     "brightness": 0.444,
+     "onset": 0.537,
+     "periodicity": 0.268,
+     "roughness": 0.423,
+     "continuity": 0.489,
+     "energy_raw": 0.13987
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.25,
+     0.85
+    ],
+    "onset": [
+     0.0,
+     0.8
+    ],
+    "periodicity": [
+     0.0,
+     0.35
+    ],
+    "roughness": [
+     0.09999999999999998,
+     0.6
+    ],
+    "continuity": [
+     0.0,
+     0.4
+    ]
+   }
+  },
+  "pen_scratch": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 16,
+   "baseline_share": 0.242,
+   "misses": [
+    [
+     "brightness"
+    ],
+    [
+     "brightness",
+     "continuity"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "kept_share": 0.435,
+   "gated_seconds": 6,
+   "total_seconds": 6,
+   "measured_vertices": [
+    {
+     "brightness": 0.869,
+     "onset": 0.734,
+     "periodicity": 0.268,
+     "roughness": 0.705,
+     "continuity": 0.477,
+     "energy_raw": 0.82199
+    },
+    {
+     "brightness": 0.816,
+     "onset": 0.432,
+     "periodicity": 0.238,
+     "roughness": 0.683,
+     "continuity": 0.524,
+     "energy_raw": 0.80411
+    },
+    {
+     "brightness": 0.851,
+     "onset": 0.682,
+     "periodicity": 0.404,
+     "roughness": 0.642,
+     "continuity": 0.317,
+     "energy_raw": 0.93576
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.09999999999999998,
+     0.7
+    ],
+    "onset": [
+     0.0,
+     0.85
+    ],
+    "periodicity": [
+     0.04999999999999999,
+     0.55
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.0,
+     0.5
+    ]
+   }
+  },
+  "penguin_bray": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 44,
+   "baseline_share": 0.145,
+   "misses": [
+    [
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.468,
+   "gated_seconds": 11,
+   "total_seconds": 16,
+   "measured_vertices": [
+    {
+     "brightness": 0.44,
+     "onset": 0.473,
+     "periodicity": 0.489,
+     "roughness": 0.385,
+     "continuity": 0.502,
+     "energy_raw": 0.4767
+    },
+    {
+     "brightness": 0.446,
+     "onset": 0.901,
+     "periodicity": 0.569,
+     "roughness": 0.328,
+     "continuity": 0.812,
+     "energy_raw": 2.56812
+    },
+    {
+     "brightness": 0.504,
+     "onset": 0.818,
+     "periodicity": 0.552,
+     "roughness": 0.382,
+     "continuity": 0.859,
+     "energy_raw": 1.97519
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.02100000000000002,
+     0.65
+    ],
+    "onset": [
+     0.247,
+     0.85
+    ],
+    "periodicity": [
+     0.25,
+     0.75
+    ],
+    "roughness": [
+     0.6,
+     1.0
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "rain_on_roof": {
+   "archetype": "bed",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 53,
+   "baseline_share": 0.419,
+   "misses": [
+    [
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.024,
+   "gated_seconds": 11,
+   "total_seconds": 25,
+   "measured_vertices": [
+    {
+     "brightness": 0.395,
+     "onset": 0.319,
+     "periodicity": 0.201,
+     "roughness": 0.383,
+     "continuity": 0.063,
+     "energy_raw": 0.0645
+    },
+    {
+     "brightness": 0.482,
+     "onset": 0.271,
+     "periodicity": 0.277,
+     "roughness": 0.515,
+     "continuity": 0.05,
+     "energy_raw": 0.03157
+    },
+    {
+     "brightness": 0.486,
+     "onset": 0.414,
+     "periodicity": 0.26,
+     "roughness": 0.505,
+     "continuity": 0.086,
+     "energy_raw": 0.05543
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.31999999999999995,
+     0.85
+    ],
+    "onset": [
+     0.31000000000000005,
+     0.85
+    ],
+    "periodicity": [
+     0.0,
+     0.45
+    ],
+    "roughness": [
+     0.25,
+     0.75
+    ],
+    "continuity": [
+     0.7,
+     1.0
+    ]
+   }
+  },
+  "riroriro_trill": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 9,
+   "baseline_share": 0.113,
+   "misses": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.651,
+   "gated_seconds": 14,
+   "total_seconds": 18,
+   "measured_vertices": [
+    {
+     "brightness": 0.646,
+     "onset": 0.822,
+     "periodicity": 0.217,
+     "roughness": 0.069,
+     "continuity": 0.825,
+     "energy_raw": 0.23243
+    },
+    {
+     "brightness": 0.632,
+     "onset": 0.759,
+     "periodicity": 0.146,
+     "roughness": 0.064,
+     "continuity": 0.803,
+     "energy_raw": 0.31642
+    },
+    {
+     "brightness": 0.631,
+     "onset": 0.843,
+     "periodicity": 0.26,
+     "roughness": 0.069,
+     "continuity": 0.813,
+     "energy_raw": 0.2224
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.42700000000000005,
+     1.0
+    ],
+    "onset": [
+     0.05199999999999999,
+     0.65
+    ],
+    "periodicity": [
+     0.2,
+     0.7
+    ],
+    "roughness": [
+     0.0,
+     0.37
+    ],
+    "continuity": [
+     0.2,
+     0.7
+    ]
+   }
+  },
+  "robin_song": {
+   "archetype": "call",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 4,
+   "baseline_share": 0.177,
+   "misses": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.701,
+   "gated_seconds": 33,
+   "total_seconds": 35,
+   "measured_vertices": [
+    {
+     "brightness": 0.787,
+     "onset": 0.722,
+     "periodicity": 0.514,
+     "roughness": 0.286,
+     "continuity": 0.83,
+     "energy_raw": 0.38786
+    },
+    {
+     "brightness": 0.815,
+     "onset": 0.669,
+     "periodicity": 0.298,
+     "roughness": 0.328,
+     "continuity": 0.77,
+     "energy_raw": 0.36451
+    },
+    {
+     "brightness": 0.798,
+     "onset": 0.709,
+     "periodicity": 0.391,
+     "roughness": 0.301,
+     "continuity": 0.8,
+     "energy_raw": 0.46303
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.404,
+     1.0
+    ],
+    "onset": [
+     0.14900000000000002,
+     0.75
+    ],
+    "periodicity": [
+     0.15000000000000002,
+     0.65
+    ],
+    "roughness": [
+     0.0,
+     0.35
+    ],
+    "continuity": [
+     0.15000000000000002,
+     0.65
+    ]
+   }
+  },
+  "saw_rasp": {
+   "archetype": "bed_like",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 2,
+   "baseline_share": 0.161,
+   "misses": [
+    [
+     "periodicity"
+    ],
+    [],
+    [
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.83,
+   "gated_seconds": 12,
+   "total_seconds": 13,
+   "measured_vertices": [
+    {
+     "brightness": 0.688,
+     "onset": 0.658,
+     "periodicity": 0.575,
+     "roughness": 0.68,
+     "continuity": 0.812,
+     "energy_raw": 0.95835
+    },
+    {
+     "brightness": 0.718,
+     "onset": 0.754,
+     "periodicity": 0.702,
+     "roughness": 0.725,
+     "continuity": 0.764,
+     "energy_raw": 1.1251
+    },
+    {
+     "brightness": 0.742,
+     "onset": 0.669,
+     "periodicity": 0.57,
+     "roughness": 0.727,
+     "continuity": 0.699,
+     "energy_raw": 0.75095
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.21999999999999997,
+     0.75
+    ],
+    "onset": [
+     0.26,
+     0.8
+    ],
+    "periodicity": [
+     0.6,
+     1.0
+    ],
+    "roughness": [
+     0.65,
+     1.0
+    ],
+    "continuity": [
+     0.35,
+     0.85
+    ]
+   }
+  },
+  "shingle_drag": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 10,
+   "baseline_share": 0.258,
+   "misses": [
+    [
+     "onset"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "onset"
+    ]
+   ],
+   "kept_share": 0.081,
+   "gated_seconds": 21,
+   "total_seconds": 63,
+   "measured_vertices": [
+    {
+     "brightness": 0.605,
+     "onset": 0.923,
+     "periodicity": 0.396,
+     "roughness": 0.609,
+     "continuity": 0.6,
+     "energy_raw": 0.55408
+    },
+    {
+     "brightness": 0.588,
+     "onset": 0.692,
+     "periodicity": 0.302,
+     "roughness": 0.592,
+     "continuity": 0.198,
+     "energy_raw": 0.28914
+    },
+    {
+     "brightness": 0.595,
+     "onset": 0.909,
+     "periodicity": 0.353,
+     "roughness": 0.597,
+     "continuity": 0.557,
+     "energy_raw": 0.49508
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.16999999999999998,
+     0.7
+    ],
+    "onset": [
+     0.29000000000000004,
+     0.83
+    ],
+    "periodicity": [
+     0.09999999999999998,
+     0.6
+    ],
+    "roughness": [
+     0.57,
+     1.0
+    ],
+    "continuity": [
+     0.25,
+     0.75
+    ]
+   }
+  },
+  "small_birds": {
+   "archetype": "call",
+   "ungated_pass": true,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 3,
+   "baseline_share": 0.113,
+   "misses": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.393,
+   "gated_seconds": 14,
+   "total_seconds": 22,
+   "measured_vertices": [
+    {
+     "brightness": 0.75,
+     "onset": 0.996,
+     "periodicity": 0.279,
+     "roughness": 0.138,
+     "continuity": 0.746,
+     "energy_raw": 2.2147
+    },
+    {
+     "brightness": 0.733,
+     "onset": 0.839,
+     "periodicity": 0.508,
+     "roughness": 0.133,
+     "continuity": 0.608,
+     "energy_raw": 2.60026
+    },
+    {
+     "brightness": 0.752,
+     "onset": 0.77,
+     "periodicity": 0.35,
+     "roughness": 0.148,
+     "continuity": 0.774,
+     "energy_raw": 3.7493
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.44099999999999995,
+     1.0
+    ],
+    "onset": [
+     0.32699999999999996,
+     0.93
+    ],
+    "periodicity": [
+     0.0,
+     0.5
+    ],
+    "roughness": [
+     0.04999999999999999,
+     0.55
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "sow_dig": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 17,
+   "baseline_share": 0.484,
+   "misses": [
+    [
+     "onset"
+    ],
+    [
+     "periodicity"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "kept_share": 0.395,
+   "gated_seconds": 18,
+   "total_seconds": 19,
+   "measured_vertices": [
+    {
+     "brightness": 0.464,
+     "onset": 0.716,
+     "periodicity": 0.258,
+     "roughness": 0.508,
+     "continuity": 0.5,
+     "energy_raw": 0.40672
+    },
+    {
+     "brightness": 0.497,
+     "onset": 0.525,
+     "periodicity": 0.375,
+     "roughness": 0.555,
+     "continuity": 0.5,
+     "energy_raw": 0.44852
+    },
+    {
+     "brightness": 0.54,
+     "onset": 0.585,
+     "periodicity": 0.3,
+     "roughness": 0.535,
+     "continuity": 0.419,
+     "energy_raw": 0.40339
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.5
+    ],
+    "onset": [
+     0.0,
+     0.6
+    ],
+    "periodicity": [
+     0.0,
+     0.35
+    ],
+    "roughness": [
+     0.30000000000000004,
+     0.8
+    ],
+    "continuity": [
+     0.09999999999999998,
+     0.6
+    ]
+   }
+  },
+  "stream_run": {
+   "archetype": "bed_like",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 55,
+   "baseline_share": 0.403,
+   "misses": [
+    [
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.015,
+   "gated_seconds": 45,
+   "total_seconds": 126,
+   "measured_vertices": [
+    {
+     "brightness": 0.506,
+     "onset": 0.253,
+     "periodicity": 0.301,
+     "roughness": 0.507,
+     "continuity": 0.038,
+     "energy_raw": 0.01628
+    },
+    {
+     "brightness": 0.524,
+     "onset": 0.359,
+     "periodicity": 0.293,
+     "roughness": 0.512,
+     "continuity": 0.065,
+     "energy_raw": 0.02026
+    },
+    {
+     "brightness": 0.521,
+     "onset": 0.308,
+     "periodicity": 0.27,
+     "roughness": 0.518,
+     "continuity": 0.055,
+     "energy_raw": 0.02081
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.16999999999999998,
+     0.7
+    ],
+    "onset": [
+     0.0,
+     0.35
+    ],
+    "periodicity": [
+     0.0,
+     0.45
+    ],
+    "roughness": [
+     0.2,
+     0.7
+    ],
+    "continuity": [
+     0.73,
+     1.0
+    ]
+   }
+  },
+  "thunder": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 55,
+   "baseline_share": 0.468,
+   "misses": [
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.262,
+   "gated_seconds": 58,
+   "total_seconds": 90,
+   "measured_vertices": [
+    {
+     "brightness": 0.276,
+     "onset": 0.543,
+     "periodicity": 0.211,
+     "roughness": 0.419,
+     "continuity": 0.434,
+     "energy_raw": 0.76445
+    },
+    {
+     "brightness": 0.293,
+     "onset": 0.564,
+     "periodicity": 0.249,
+     "roughness": 0.407,
+     "continuity": 0.638,
+     "energy_raw": 0.8284
+    },
+    {
+     "brightness": 0.445,
+     "onset": 0.418,
+     "periodicity": 0.208,
+     "roughness": 0.551,
+     "continuity": 0.83,
+     "energy_raw": 2.11626
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.4
+    ],
+    "onset": [
+     0.0,
+     0.75
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.65,
+     1.0
+    ],
+    "continuity": [
+     0.0,
+     0.35
+    ]
+   }
+  },
+  "tide_pool_trickle": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": null,
+   "baseline_share": 0.0,
+   "misses": [],
+   "kept_share": 0.0,
+   "gated_seconds": 0,
+   "total_seconds": 30,
+   "measured_vertices": [],
+   "envelope": {
+    "brightness": [
+     0.43999999999999995,
+     0.97
+    ],
+    "onset": [
+     0.010000000000000009,
+     0.55
+    ],
+    "periodicity": [
+     0.0,
+     0.5
+    ],
+    "roughness": [
+     0.0,
+     0.45
+    ],
+    "continuity": [
+     0.5,
+     1.0
+    ]
+   }
+  },
+  "tui_song": {
+   "archetype": "call",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 2,
+   "own_rank": 1,
+   "baseline_share": 0.306,
+   "misses": [
+    [],
+    [
+     "onset",
+     "roughness"
+    ],
+    []
+   ],
+   "kept_share": 0.323,
+   "gated_seconds": 3,
+   "total_seconds": 5,
+   "measured_vertices": [
+    {
+     "brightness": 0.502,
+     "onset": 0.563,
+     "periodicity": 0.518,
+     "roughness": 0.225,
+     "continuity": 0.186,
+     "energy_raw": 1.03802
+    },
+    {
+     "brightness": 0.469,
+     "onset": 0.876,
+     "periodicity": 0.568,
+     "roughness": 0.186,
+     "continuity": 0.442,
+     "energy_raw": 2.97856
+    },
+    {
+     "brightness": 0.449,
+     "onset": 0.4,
+     "periodicity": 0.596,
+     "roughness": 0.243,
+     "continuity": 0.093,
+     "energy_raw": 0.5164
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.368,
+     1.0
+    ],
+    "onset": [
+     0.244,
+     0.85
+    ],
+    "periodicity": [
+     0.09999999999999998,
+     0.6
+    ],
+    "roughness": [
+     0.2,
+     0.7
+    ],
+    "continuity": [
+     0.04999999999999999,
+     0.55
+    ]
+   }
+  },
+  "waves_crashing": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 10,
+   "baseline_share": 0.194,
+   "misses": [
+    [
+     "brightness",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "periodicity",
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.552,
+   "gated_seconds": 71,
+   "total_seconds": 85,
+   "measured_vertices": [
+    {
+     "brightness": 0.516,
+     "onset": 0.51,
+     "periodicity": 0.713,
+     "roughness": 0.517,
+     "continuity": 0.884,
+     "energy_raw": 1.42292
+    },
+    {
+     "brightness": 0.478,
+     "onset": 0.712,
+     "periodicity": 0.715,
+     "roughness": 0.47,
+     "continuity": 0.829,
+     "energy_raw": 1.42375
+    },
+    {
+     "brightness": 0.448,
+     "onset": 0.69,
+     "periodicity": 0.702,
+     "roughness": 0.434,
+     "continuity": 0.854,
+     "energy_raw": 1.39967
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.5
+    ],
+    "onset": [
+     0.26,
+     0.8
+    ],
+    "periodicity": [
+     0.2,
+     0.7
+    ],
+    "roughness": [
+     0.63,
+     1.0
+    ],
+    "continuity": [
+     0.55,
+     1.0
+    ]
+   }
+  },
+  "waves_on_shingle": {
+   "archetype": "bed",
+   "ungated_pass": true,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 5,
+   "baseline_share": 0.161,
+   "misses": [
+    [
+     "brightness",
+     "onset"
+    ],
+    [
+     "brightness",
+     "onset"
+    ],
+    [
+     "onset"
+    ]
+   ],
+   "kept_share": 0.445,
+   "gated_seconds": 75,
+   "total_seconds": 134,
+   "measured_vertices": [
+    {
+     "brightness": 0.517,
+     "onset": 0.636,
+     "periodicity": 0.597,
+     "roughness": 0.541,
+     "continuity": 0.934,
+     "energy_raw": 2.76887
+    },
+    {
+     "brightness": 0.501,
+     "onset": 0.782,
+     "periodicity": 0.559,
+     "roughness": 0.515,
+     "continuity": 0.953,
+     "energy_raw": 3.08398
+    },
+    {
+     "brightness": 0.497,
+     "onset": 0.724,
+     "periodicity": 0.539,
+     "roughness": 0.515,
+     "continuity": 0.925,
+     "energy_raw": 2.66523
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.5
+    ],
+    "onset": [
+     0.06,
+     0.6
+    ],
+    "periodicity": [
+     0.5,
+     1.0
+    ],
+    "roughness": [
+     0.35,
+     0.85
+    ],
+    "continuity": [
+     0.65,
+     1.0
+    ]
+   }
+  },
+  "wind_in_eaves": {
+   "archetype": "bed",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 4,
+   "baseline_share": 0.016,
+   "misses": [
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.717,
+   "gated_seconds": 49,
+   "total_seconds": 59,
+   "measured_vertices": [
+    {
+     "brightness": 0.142,
+     "onset": 0.636,
+     "periodicity": 0.285,
+     "roughness": 0.034,
+     "continuity": 0.96,
+     "energy_raw": 2.50455
+    },
+    {
+     "brightness": 0.135,
+     "onset": 0.784,
+     "periodicity": 0.362,
+     "roughness": 0.064,
+     "continuity": 0.909,
+     "energy_raw": 0.70429
+    },
+    {
+     "brightness": 0.149,
+     "onset": 0.644,
+     "periodicity": 0.424,
+     "roughness": 0.094,
+     "continuity": 0.92,
+     "energy_raw": 0.28976
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.020000000000000018,
+     0.55
+    ],
+    "onset": [
+     0.0,
+     0.45
+    ],
+    "periodicity": [
+     0.04999999999999999,
+     0.55
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.55,
+     1.0
+    ]
+   }
+  },
+  "wind_in_trees": {
+   "archetype": "bed_like",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 39,
+   "baseline_share": 0.016,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "onset",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "onset",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.128,
+   "gated_seconds": 52,
+   "total_seconds": 103,
+   "measured_vertices": [
+    {
+     "brightness": 0.0,
+     "onset": 0.644,
+     "periodicity": 0.244,
+     "roughness": 0.013,
+     "continuity": 0.558,
+     "energy_raw": 0.08874
+    },
+    {
+     "brightness": 0.0,
+     "onset": 0.807,
+     "periodicity": 0.265,
+     "roughness": 0.01,
+     "continuity": 0.549,
+     "energy_raw": 0.1087
+    },
+    {
+     "brightness": 0.0,
+     "onset": 0.759,
+     "periodicity": 0.202,
+     "roughness": 0.013,
+     "continuity": 0.366,
+     "energy_raw": 0.04282
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.07,
+     0.6
+    ],
+    "onset": [
+     0.0,
+     0.47
+    ],
+    "periodicity": [
+     0.0,
+     0.47
+    ],
+    "roughness": [
+     0.22999999999999998,
+     0.73
+    ],
+    "continuity": [
+     0.6,
+     1.0
+    ]
+   }
+  },
+  "window_rattle": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 24,
+   "baseline_share": 0.468,
+   "misses": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "kept_share": 0.363,
+   "gated_seconds": 33,
+   "total_seconds": 40,
+   "measured_vertices": [
+    {
+     "brightness": 0.204,
+     "onset": 0.46,
+     "periodicity": 0.26,
+     "roughness": 0.29,
+     "continuity": 0.284,
+     "energy_raw": 0.05424
+    },
+    {
+     "brightness": 0.169,
+     "onset": 0.525,
+     "periodicity": 0.296,
+     "roughness": 0.239,
+     "continuity": 0.343,
+     "energy_raw": 0.0881
+    },
+    {
+     "brightness": 0.173,
+     "onset": 0.497,
+     "periodicity": 0.249,
+     "roughness": 0.234,
+     "continuity": 0.408,
+     "energy_raw": 0.09424
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.04999999999999999,
+     0.65
+    ],
+    "onset": [
+     0.0,
+     0.95
+    ],
+    "periodicity": [
+     0.15000000000000002,
+     0.65
+    ],
+    "roughness": [
+     0.44999999999999996,
+     0.95
+    ],
+    "continuity": [
+     0.2,
+     0.7
+    ]
+   }
+  },
+  "wood_haul_clatter": {
+   "archetype": "thump",
+   "ungated_pass": true,
+   "gated_pass": true,
+   "n_in": 3,
+   "own_rank": 21,
+   "baseline_share": 0.323,
+   "misses": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.882,
+   "gated_seconds": 11,
+   "total_seconds": 11,
+   "measured_vertices": [
+    {
+     "brightness": 0.469,
+     "onset": 0.753,
+     "periodicity": 0.212,
+     "roughness": 0.511,
+     "continuity": 0.951,
+     "energy_raw": 0.80519
+    },
+    {
+     "brightness": 0.49,
+     "onset": 0.711,
+     "periodicity": 0.164,
+     "roughness": 0.533,
+     "continuity": 1.0,
+     "energy_raw": 0.93812
+    },
+    {
+     "brightness": 0.478,
+     "onset": 0.591,
+     "periodicity": 0.19,
+     "roughness": 0.541,
+     "continuity": 0.933,
+     "energy_raw": 0.69569
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.13,
+     0.73
+    ],
+    "onset": [
+     0.04999999999999999,
+     1.0
+    ],
+    "periodicity": [
+     0.0,
+     0.45
+    ],
+    "roughness": [
+     0.4,
+     0.9
+    ],
+    "continuity": [
+     0.04999999999999999,
+     0.55
+    ]
+   }
+  },
+  "wood_pigeon": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 44,
+   "baseline_share": 0.403,
+   "misses": [
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "roughness"
+    ],
+    [
+     "brightness",
+     "onset",
+     "periodicity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.111,
+   "gated_seconds": 7,
+   "total_seconds": 14,
+   "measured_vertices": [
+    {
+     "brightness": 0.725,
+     "onset": 0.669,
+     "periodicity": 0.214,
+     "roughness": 0.431,
+     "continuity": 0.3,
+     "energy_raw": 0.36833
+    },
+    {
+     "brightness": 0.634,
+     "onset": 0.782,
+     "periodicity": 0.215,
+     "roughness": 0.41,
+     "continuity": 0.301,
+     "energy_raw": 0.44753
+    },
+    {
+     "brightness": 0.708,
+     "onset": 0.44,
+     "periodicity": 0.18,
+     "roughness": 0.412,
+     "continuity": 0.079,
+     "energy_raw": 0.07443
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.53
+    ],
+    "onset": [
+     0.0,
+     0.47
+    ],
+    "periodicity": [
+     0.32999999999999996,
+     0.83
+    ],
+    "roughness": [
+     0.0,
+     0.43
+    ],
+    "continuity": [
+     0.13,
+     0.63
+    ]
+   }
+  },
+  "wood_snap": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 47,
+   "baseline_share": 0.274,
+   "misses": [
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.338,
+   "gated_seconds": 7,
+   "total_seconds": 8,
+   "measured_vertices": [
+    {
+     "brightness": 0.071,
+     "onset": 0.466,
+     "periodicity": 0.113,
+     "roughness": 0.229,
+     "continuity": 0.62,
+     "energy_raw": 0.95433
+    },
+    {
+     "brightness": 0.025,
+     "onset": 0.227,
+     "periodicity": 0.183,
+     "roughness": 0.181,
+     "continuity": 0.549,
+     "energy_raw": 1.68994
+    },
+    {
+     "brightness": 0.119,
+     "onset": 0.291,
+     "periodicity": 0.183,
+     "roughness": 0.238,
+     "continuity": 0.596,
+     "energy_raw": 2.04866
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.2,
+     0.8
+    ],
+    "onset": [
+     0.15000000000000002,
+     1.0
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.44999999999999996,
+     0.95
+    ],
+    "continuity": [
+     0.0,
+     0.33
+    ]
+   }
+  },
+  "woodpile_settle": {
+   "archetype": "thump",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 0,
+   "own_rank": 52,
+   "baseline_share": 0.161,
+   "misses": [
+    [
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity"
+    ],
+    [
+     "brightness",
+     "periodicity"
+    ]
+   ],
+   "kept_share": 0.723,
+   "gated_seconds": 9,
+   "total_seconds": 9,
+   "measured_vertices": [
+    {
+     "brightness": 0.505,
+     "onset": 0.926,
+     "periodicity": 0.643,
+     "roughness": 0.529,
+     "continuity": 0.824,
+     "energy_raw": 5.29269
+    },
+    {
+     "brightness": 0.632,
+     "onset": 0.0,
+     "periodicity": 0.634,
+     "roughness": 0.554,
+     "continuity": 0.124,
+     "energy_raw": 0.28549
+    },
+    {
+     "brightness": 0.769,
+     "onset": 0.0,
+     "periodicity": 0.407,
+     "roughness": 0.525,
+     "continuity": 0.334,
+     "energy_raw": 0.2069
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.0,
+     0.55
+    ],
+    "onset": [
+     0.0,
+     0.65
+    ],
+    "periodicity": [
+     0.0,
+     0.3
+    ],
+    "roughness": [
+     0.15000000000000002,
+     0.65
+    ],
+    "continuity": [
+     0.0,
+     0.45
+    ]
+   }
+  },
+  "wren_scold": {
+   "archetype": "call",
+   "ungated_pass": false,
+   "gated_pass": false,
+   "n_in": 1,
+   "own_rank": 8,
+   "baseline_share": 0.161,
+   "misses": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "kept_share": 0.326,
+   "gated_seconds": 8,
+   "total_seconds": 10,
+   "measured_vertices": [
+    {
+     "brightness": 1.0,
+     "onset": 0.559,
+     "periodicity": 0.219,
+     "roughness": 0.092,
+     "continuity": 0.313,
+     "energy_raw": 0.08111
+    },
+    {
+     "brightness": 1.0,
+     "onset": 0.672,
+     "periodicity": 0.284,
+     "roughness": 0.096,
+     "continuity": 0.401,
+     "energy_raw": 0.13573
+    },
+    {
+     "brightness": 1.0,
+     "onset": 0.497,
+     "periodicity": 0.325,
+     "roughness": 0.062,
+     "continuity": 0.44,
+     "energy_raw": 0.08282
+    }
+   ],
+   "envelope": {
+    "brightness": [
+     0.42800000000000005,
+     1.0
+    ],
+    "onset": [
+     0.45699999999999996,
+     1.0
+    ],
+    "periodicity": [
+     0.0,
+     0.45
+    ],
+    "roughness": [
+     0.16999999999999998,
+     0.6699999999999999
+    ],
+    "continuity": [
+     0.0,
+     0.39
+    ]
+   }
+  }
+ }
+}

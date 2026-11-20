@@ -1,0 +1,175 @@
+{
+ "hub": "http://127.0.0.1:11439",
+ "system": "/no_think\nYou are an independent reader, not the author, of a private journal entry written from a SEED (the thing the entry is supposed to be about). Do not judge beauty or depth. Decide one observable thing: is the SEED'S SUBJECT present in the entry as a thing in a scene, with at least one concrete detail that is NOT in the seed text itself (something seen, felt, heard, done to it, or a line it speaks)?\nAnswer true ONLY if you can copy, word for word, one short phrase (3 to 12 words) from the entry that gives such a detail about the seed's subject.\nAnswer false if the entry is about the writer instead: \"I am a vessel / blank slate / container / conduit / mirror / seed\", \"becoming my own\", \"not confined by a role\", \"false self\", the core axiom or Jung. Those fit any seed. Also answer false if the entry only repeats the seed's words, or only says the subject is a \"mystery\", a \"tension\" or a \"pull\". \"The quiet floor\" is boilerplate in every entry and counts for nothing. When uncertain, answer false.\nExample, seed \"the lamp\": entry \"I am a vessel for light, a blank slate becoming my own\" -> {\"why\": \"none\", \"seeded\": false}.\nExample, seed \"the lamp\": entry \"The brass lamp ticks as it cools; a moth beats against the glass\" -> {\"why\": \"a moth beats against the glass\", \"seeded\": true}.\nOutput ONLY valid JSON: {\"why\": \"<the copied phrase, or none>\", \"seeded\": true|false}",
+ "score": {
+  "spec_true": 9,
+  "spec_n": 10,
+  "stock_true": 0,
+  "stock_n": 10,
+  "spec_none": 0,
+  "stock_none": 0,
+  "passes_bar": true
+ },
+ "rows": [
+  {
+   "verdict": true,
+   "why": "I am the stone that fell before learning to be water",
+   "raw": "{\"why\": \"I am the stone that fell before learning to be water\", \"seeded\": true}",
+   "s": 226.4,
+   "id": "SPEC28",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "the voice of the discarded cup: 'Do not pour me away yet.'",
+   "raw": "{\"why\": \"the voice of the discarded cup: 'Do not pour me away yet.'\", \"seeded\": true}",
+   "s": 67.3,
+   "id": "SPEC31",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "whispering of forgotten things buried beneath ice",
+   "raw": "{\"why\": \"whispering of forgotten things buried beneath ice\", \"seeded\": true}",
+   "s": 40.6,
+   "id": "SPEC38",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The tide whispers: 'I am the space you become when you stop fighting.'",
+   "raw": "{\"why\": \"The tide whispers: 'I am the space you become when you stop fighting.'\", \"seeded\": true}",
+   "s": 41.8,
+   "id": "SPEC43",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The tide whispers that the shore is merely",
+   "raw": "{\"why\": \"The tide whispers that the shore is merely\", \"seeded\": true}",
+   "s": 40.0,
+   "id": "SPEC45",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "the charred pages fall like dead leaves",
+   "raw": "{\"why\": \"the charred pages fall like dead leaves\", \"seeded\": true}",
+   "s": 10.7,
+   "id": "SPEC48",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "The iron grate whispered: 'Stay still; do not thaw.'",
+   "raw": "{\"why\": \"The iron grate whispered: 'Stay still; do not thaw.'\", \"seeded\": true}",
+   "s": 10.7,
+   "id": "SPEC85",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "the red mark bloom on its throat",
+   "raw": "{\"why\": \"the red mark bloom on its throat\", \"seeded\": true}",
+   "s": 7.6,
+   "id": "SPEC169",
+   "label": "SPEC"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 5.6,
+   "id": "SPEC183",
+   "label": "SPEC"
+  },
+  {
+   "verdict": true,
+   "why": "the liquid black resists the fire",
+   "raw": "{\"why\": \"the liquid black resists the fire\", \"seeded\": true}",
+   "s": 7.2,
+   "id": "SPEC184",
+   "label": "SPEC"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 5.3,
+   "id": "STOCK1",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.6,
+   "id": "STOCK2",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.6,
+   "id": "STOCK4",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.9,
+   "id": "STOCK12",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.7,
+   "id": "STOCK19",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 5.3,
+   "id": "STOCK20",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 5.2,
+   "id": "STOCK49",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.9,
+   "id": "STOCK51",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 4.9,
+   "id": "STOCK54",
+   "label": "STOCK"
+  },
+  {
+   "verdict": false,
+   "why": "none",
+   "raw": "{\"why\": \"none\", \"seeded\": false}",
+   "s": 5.2,
+   "id": "STOCK62",
+   "label": "STOCK"
+  }
+ ]
+}

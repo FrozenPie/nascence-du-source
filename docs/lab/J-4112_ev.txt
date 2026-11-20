@@ -1,0 +1,1 @@
+docs/lab/J-3412_data/judgments_falcon3.jsonl (120 rows, run via scripts/lab_deliberation_control_arm_judge_J-3412.py 55, log docs/lab/J-3412_data/judge_run2_J-4112.log); tally script docs/lab/J-4112_tally.py output docs/lab/J-4112_tally.json; deterministic read docs/lab/J-3412_data/deterministic.json. Judge trust per J-4036 gold: falcon3 faithful 0.42, voice 0.67.

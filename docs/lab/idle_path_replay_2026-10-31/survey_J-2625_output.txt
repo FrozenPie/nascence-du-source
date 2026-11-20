@@ -1,0 +1,94 @@
+{"rows": 72558, "k5_checked": 428604, "k1_checked": 486241, "k5_fail": 41558, "k5_concern_bypass": 57644, "k3_ties": 266}
+first_k1_fail []
+gaps>900s 627 [('2026-06-17', 1126), ('2026-06-17', 4175), ('2026-06-18', 1127), ('2026-06-18', 1243), ('2026-06-18', 1141), ('2026-06-18', 995), ('2026-06-19', 1116), ('2026-06-19', 20402), ('2026-06-19', 7311), ('2026-06-20', 17206), ('2026-06-21', 1089), ('2026-06-21', 931), ('2026-06-21', 6570), ('2026-06-21', 953), ('2026-06-22', 4226), ('2026-06-22', 935), ('2026-06-22', 1082), ('2026-06-22', 5406), ('2026-06-23', 936), ('2026-06-23', 977), ('2026-06-23', 1168), ('2026-06-23', 1228), ('2026-06-23', 6422), ('2026-06-23', 1056), ('2026-06-23', 6275), ('2026-06-23', 1356), ('2026-06-23', 1019), ('2026-06-24', 1040), ('2026-06-24', 1336), ('2026-06-24', 4594), ('2026-06-24', 1142), ('2026-06-24', 1091), ('2026-06-24', 1215), ('2026-06-24', 7838), ('2026-06-25', 34145), ('2026-06-25', 1689), ('2026-06-25', 1034), ('2026-06-25', 994), ('2026-06-25', 986), ('2026-06-25', 1172)]
+2026-06-16 49 modal concern 0.49 distinct 3 longest 1 maxstreak 1 soft!=arg 0.67 nohab!=arg 0.51 k5fail 8 concern:24 curiosity:15 contradiction:10
+2026-06-17 534 modal curiosity 0.49 distinct 3 longest 1 maxstreak 1 soft!=arg 0.73 nohab!=arg 0.5 k5fail 209 curiosity:264 concern:214 balance_light:56
+2026-06-18 502 modal curiosity 0.48 distinct 3 longest 2 maxstreak 2 soft!=arg 0.65 nohab!=arg 0.49 k5fail 223 curiosity:241 concern:182 balance_light:79
+2026-06-19 391 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.72 nohab!=arg 0.5 k5fail 263 curiosity:196 balance_light:130 concern:65
+2026-06-20 810 modal concern 0.45 distinct 3 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.47 k5fail 262 concern:366 curiosity:318 balance_light:126
+2026-06-21 1059 modal curiosity 0.45 distinct 3 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.48 k5fail 675 curiosity:480 concern:404 balance_light:175
+2026-06-22 1026 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 602 curiosity:512 concern:299 balance_light:215
+2026-06-23 838 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 879 curiosity:418 concern:255 balance_light:165
+2026-06-24 834 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 891 curiosity:415 concern:289 balance_light:130
+2026-06-25 873 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 904 curiosity:436 concern:394 balance_light:43
+2026-06-26 404 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.64 nohab!=arg 0.5 k5fail 422 curiosity:202 concern:127 balance_light:75
+2026-06-30 594 modal curiosity 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 606 curiosity:296 concern:157 balance_light:141
+2026-07-01 956 modal curiosity 0.54 distinct 3 longest 2 maxstreak 2 soft!=arg 0.64 nohab!=arg 0.46 k5fail 983 curiosity:516 concern:364 self:76
+2026-07-02 358 modal curiosity 0.58 distinct 3 longest 2 maxstreak 2 soft!=arg 0.63 nohab!=arg 0.43 k5fail 364 curiosity:206 concern:98 self:54
+2026-07-03 812 modal curiosity 0.51 distinct 4 longest 2 maxstreak 2 soft!=arg 0.64 nohab!=arg 0.46 k5fail 839 curiosity:414 concern:262 contradiction:82 self:54
+2026-07-04 1188 modal curiosity 0.53 distinct 3 longest 2 maxstreak 2 soft!=arg 0.61 nohab!=arg 0.47 k5fail 1253 curiosity:630 concern:485 self:73
+2026-07-05 899 modal curiosity 0.56 distinct 3 longest 2 maxstreak 2 soft!=arg 0.64 nohab!=arg 0.43 k5fail 925 curiosity:507 concern:294 self:98
+2026-07-06 710 modal curiosity 0.5 distinct 4 longest 2 maxstreak 2 soft!=arg 0.63 nohab!=arg 0.46 k5fail 738 curiosity:356 concern:285 self:47 contradiction:22
+2026-07-07 830 modal concern 0.4 distinct 4 longest 2 maxstreak 2 soft!=arg 0.63 nohab!=arg 0.47 k5fail 553 concern:331 curiosity:321 contradiction:163 self:15
+2026-07-08 879 modal curiosity 0.42 distinct 4 longest 2 maxstreak 2 soft!=arg 0.63 nohab!=arg 0.45 k5fail 714 curiosity:367 concern:315 contradiction:127 self:70
+2026-08-08 106 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.6 nohab!=arg 0.5 k5fail 4 concern:53 curiosity:52 balance_world:1
+2026-08-09 1219 modal contradiction 0.43 distinct 5 longest 2 maxstreak 2 soft!=arg 0.65 nohab!=arg 0.45 k5fail 29 contradiction:522 concern:410 curiosity:254 balance_world:22 self:11
+2026-08-10 1107 modal concern 0.34 distinct 5 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.45 k5fail 688 concern:375 contradiction:305 curiosity:297 self:70 balance_world:60
+2026-08-11 784 modal curiosity 0.47 distinct 5 longest 2 maxstreak 2 soft!=arg 0.63 nohab!=arg 0.46 k5fail 729 curiosity:370 concern:295 contradiction:56 self:50 balance_world:13
+2026-08-12 1068 modal curiosity 0.48 distinct 5 longest 2 maxstreak 2 soft!=arg 0.68 nohab!=arg 0.44 k5fail 676 curiosity:509 concern:286 contradiction:142 self:93 balance_world:38
+2026-08-13 949 modal concern 0.39 distinct 4 longest 2 maxstreak 2 soft!=arg 0.65 nohab!=arg 0.46 k5fail 111 concern:373 curiosity:290 contradiction:280 self:6
+2026-08-14 1127 modal curiosity 0.45 distinct 5 longest 2 maxstreak 2 soft!=arg 0.65 nohab!=arg 0.47 k5fail 700 curiosity:510 concern:464 self:66 balance_world:64 contradiction:23
+2026-08-15 779 modal concern 0.45 distinct 5 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.49 k5fail 531 concern:348 balance_world:248 curiosity:150 self:20 contradiction:13
+2026-08-16 752 modal concern 0.43 distinct 5 longest 2 maxstreak 2 soft!=arg 0.68 nohab!=arg 0.47 k5fail 633 concern:320 curiosity:193 balance_world:174 self:37 contradiction:28
+2026-08-17 585 modal concern 0.44 distinct 3 longest 2 maxstreak 2 soft!=arg 0.68 nohab!=arg 0.48 k5fail 98 concern:258 contradiction:185 curiosity:142
+2026-08-18 324 modal curiosity 0.51 distinct 4 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.45 k5fail 219 curiosity:164 concern:111 self:25 contradiction:24
+2026-08-19 438 modal curiosity 0.53 distinct 4 longest 2 maxstreak 2 soft!=arg 0.68 nohab!=arg 0.44 k5fail 274 curiosity:230 concern:131 self:42 contradiction:35
+2026-08-20 605 modal concern 0.4 distinct 4 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.47 k5fail 31 concern:239 contradiction:224 curiosity:109 self:33
+2026-08-21 559 modal curiosity 0.45 distinct 4 longest 2 maxstreak 2 soft!=arg 0.67 nohab!=arg 0.48 k5fail 363 curiosity:253 concern:235 contradiction:61 self:10
+2026-08-22 384 modal curiosity 0.43 distinct 5 longest 2 maxstreak 2 soft!=arg 0.62 nohab!=arg 0.44 k5fail 267 curiosity:164 concern:118 contradiction:69 self:25 balance_world:8
+2026-08-23 143 modal contradiction 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.74 nohab!=arg 0.5 k5fail 5 contradiction:71 concern:53 balance_world:19
+2026-08-24 421 modal balance_world 0.42 distinct 4 longest 2 maxstreak 2 soft!=arg 0.71 nohab!=arg 0.49 k5fail 322 balance_world:176 curiosity:88 contradiction:86 concern:71
+2026-08-25 445 modal curiosity 0.37 distinct 5 longest 2 maxstreak 2 soft!=arg 0.69 nohab!=arg 0.45 k5fail 134 curiosity:163 concern:125 balance_world:95 self:44 contradiction:18
+2026-08-26 492 modal curiosity 0.53 distinct 3 longest 2 maxstreak 2 soft!=arg 0.67 nohab!=arg 0.47 k5fail 51 curiosity:259 concern:207 self:26
+2026-08-27 276 modal curiosity 0.55 distinct 3 longest 2 maxstreak 2 soft!=arg 0.62 nohab!=arg 0.44 k5fail 60 curiosity:153 concern:92 self:31
+2026-08-28 373 modal curiosity 0.58 distinct 3 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.42 k5fail 112 curiosity:216 concern:98 self:59
+2026-08-29 595 modal curiosity 0.5 distinct 4 longest 2 maxstreak 2 soft!=arg 0.69 nohab!=arg 0.47 k5fail 184 curiosity:298 concern:217 balance_world:41 self:39
+2026-08-30 1233 modal concern 0.43 distinct 5 longest 2 maxstreak 2 soft!=arg 0.71 nohab!=arg 0.48 k5fail 803 concern:527 curiosity:268 balance_world:241 contradiction:187 self:10
+2026-08-31 884 modal contradiction 0.4 distinct 4 longest 2 maxstreak 2 soft!=arg 0.74 nohab!=arg 0.48 k5fail 269 contradiction:356 concern:299 balance_world:171 curiosity:58
+2026-09-02 710 modal balance_world 0.35 distinct 4 longest 2 maxstreak 2 soft!=arg 0.69 nohab!=arg 0.49 k5fail 13 balance_world:249 concern:224 contradiction:119 curiosity:118
+2026-09-03 1178 modal curiosity 0.4 distinct 6 longest 2 maxstreak 2 soft!=arg 0.64 nohab!=arg 0.47 k5fail 798 curiosity:472 concern:391 contradiction:136 balance_world:108 self:54 balance_light:17
+2026-09-04 1177 modal concern 0.44 distinct 4 longest 2 maxstreak 2 soft!=arg 0.71 nohab!=arg 0.5 k5fail 467 concern:520 curiosity:357 contradiction:211 balance_world:89
+2026-09-05 1140 modal concern 0.37 distinct 5 longest 2 maxstreak 2 soft!=arg 0.66 nohab!=arg 0.48 k5fail 470 concern:418 contradiction:395 curiosity:303 balance_world:15 self:9
+2026-09-06 1492 modal curiosity 0.49 distinct 4 longest 2 maxstreak 2 soft!=arg 0.62 nohab!=arg 0.45 k5fail 791 curiosity:726 concern:520 self:151 balance_world:95
+2026-09-07 1179 modal concern 0.41 distinct 5 longest 2 maxstreak 2 soft!=arg 0.67 nohab!=arg 0.48 k5fail 152 concern:480 curiosity:304 contradiction:205 balance_world:141 self:49
+2026-09-08 661 modal balance_world 0.47 distinct 4 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 203 balance_world:310 concern:282 curiosity:49 contradiction:20
+2026-09-09 835 modal concern 0.41 distinct 4 longest 1 maxstreak 1 soft!=arg 0.71 nohab!=arg 0.49 k5fail 484 concern:340 balance_world:270 contradiction:189 curiosity:36
+2026-09-10 1301 modal concern 0.4 distinct 4 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 658 concern:519 curiosity:500 balance_world:155 balance_light:127
+2026-09-11 1125 modal curiosity 0.37 distinct 5 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.5 k5fail 502 curiosity:421 concern:365 balance_world:149 balance_light:124 contradiction:66
+2026-09-12 1357 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.72 nohab!=arg 0.5 k5fail 211 concern:678 contradiction:537 curiosity:123 balance_world:19
+2026-09-13 485 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.68 nohab!=arg 0.5 k5fail 17 concern:243 curiosity:173 contradiction:69
+2026-09-16 516 modal balance_world 0.35 distinct 4 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.49 k5fail 198 balance_world:180 contradiction:119 curiosity:109 concern:108
+2026-09-17 770 modal balance_world 0.46 distinct 4 longest 1 maxstreak 1 soft!=arg 0.75 nohab!=arg 0.5 k5fail 489 balance_world:358 concern:268 curiosity:99 contradiction:45
+2026-09-18 434 modal concern 0.47 distinct 4 longest 2 maxstreak 2 soft!=arg 0.76 nohab!=arg 0.5 k5fail 17 concern:204 contradiction:92 curiosity:77 balance_world:61
+2026-09-19 575 modal concern 0.4 distinct 5 longest 2 maxstreak 2 soft!=arg 0.68 nohab!=arg 0.5 k5fail 191 concern:232 curiosity:216 contradiction:61 balance_light:49 balance_world:17
+2026-09-21 670 modal concern 0.38 distinct 4 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.49 k5fail 209 concern:253 curiosity:197 contradiction:187 balance_light:33
+2026-09-22 562 modal concern 0.49 distinct 3 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 339 concern:275 curiosity:181 contradiction:106
+2026-09-23 1040 modal concern 0.38 distinct 4 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 903 concern:397 curiosity:347 balance_world:242 balance_light:54
+2026-09-24 975 modal balance_world 0.35 distinct 4 longest 2 maxstreak 2 soft!=arg 0.73 nohab!=arg 0.45 k5fail 210 balance_world:339 contradiction:290 concern:244 curiosity:102
+2026-09-25 498 modal contradiction 0.51 distinct 4 longest 2 maxstreak 2 soft!=arg 0.69 nohab!=arg 0.43 k5fail 22 contradiction:255 concern:146 balance_world:74 curiosity:23
+2026-09-26 927 modal curiosity 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 855 curiosity:463 concern:412 balance_light:41 balance_world:11
+2026-09-27 1059 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.71 nohab!=arg 0.5 k5fail 187 concern:529 contradiction:392 curiosity:129 balance_world:9
+2026-09-28 910 modal concern 0.39 distinct 5 longest 1 maxstreak 1 soft!=arg 0.73 nohab!=arg 0.5 k5fail 389 concern:351 balance_world:325 curiosity:112 contradiction:87 balance_light:35
+2026-09-29 737 modal concern 0.31 distinct 5 longest 1 maxstreak 1 soft!=arg 0.74 nohab!=arg 0.5 k5fail 106 concern:232 curiosity:227 contradiction:164 balance_light:61 balance_world:53
+2026-09-30 570 modal concern 0.47 distinct 6 longest 2 maxstreak 2 soft!=arg 0.74 nohab!=arg 0.49 k5fail 237 concern:266 contradiction:172 curiosity:90 balance_world:29 self:9 balance_light:4
+2026-10-01 233 modal concern 0.4 distinct 4 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.48 k5fail 78 concern:94 contradiction:86 balance_world:46 curiosity:7
+2026-10-03 2 modal contradiction 0.5 distinct 2 longest 1 maxstreak 1 soft!=arg 0.5 nohab!=arg 0.0 k5fail 0 contradiction:1 concern:1
+2026-10-04 337 modal balance_world 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.71 nohab!=arg 0.5 k5fail 98 balance_world:168 concern:127 curiosity:42
+2026-10-05 290 modal concern 0.49 distinct 4 longest 1 maxstreak 1 soft!=arg 0.72 nohab!=arg 0.5 k5fail 67 concern:142 balance_world:88 contradiction:57 curiosity:3
+2026-10-06 342 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.72 nohab!=arg 0.5 k5fail 168 concern:171 balance_world:122 contradiction:49
+2026-10-07 775 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.72 nohab!=arg 0.5 k5fail 324 concern:387 curiosity:223 contradiction:165
+2026-10-08 747 modal curiosity 0.38 distinct 4 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.45 k5fail 727 curiosity:281 concern:255 contradiction:132 self:79
+2026-10-09 991 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.7 nohab!=arg 0.5 k5fail 666 concern:494 curiosity:257 contradiction:182 balance_world:58
+2026-10-10 1691 modal concern 0.48 distinct 4 longest 2 maxstreak 2 soft!=arg 0.71 nohab!=arg 0.49 k5fail 1207 concern:817 curiosity:358 contradiction:303 balance_world:213
+2026-10-11 1557 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 958 concern:777 curiosity:430 contradiction:301 balance_world:49
+2026-10-12 1568 modal contradiction 0.47 distinct 4 longest 2 maxstreak 2 soft!=arg 0.7 nohab!=arg 0.48 k5fail 1066 contradiction:730 concern:668 curiosity:133 balance_world:37
+2026-10-13 1721 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.71 nohab!=arg 0.5 k5fail 1254 concern:860 curiosity:358 balance_world:300 contradiction:203
+2026-10-14 1628 modal concern 0.44 distinct 4 longest 2 maxstreak 2 soft!=arg 0.69 nohab!=arg 0.49 k5fail 1200 concern:712 contradiction:503 curiosity:385 balance_world:28
+2026-10-15 1554 modal concern 0.45 distinct 4 longest 1 maxstreak 1 soft!=arg 0.67 nohab!=arg 0.5 k5fail 1093 concern:701 curiosity:642 balance_world:153 contradiction:58
+2026-10-16 483 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.67 nohab!=arg 0.5 k5fail 306 concern:241 curiosity:173 contradiction:69
+2026-10-17 1435 modal concern 0.49 distinct 4 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 1271 concern:703 curiosity:431 contradiction:198 balance_world:103
+2026-10-18 683 modal concern 0.5 distinct 4 longest 1 maxstreak 1 soft!=arg 0.69 nohab!=arg 0.5 k5fail 576 concern:342 curiosity:160 balance_world:119 contradiction:62
+2026-10-19 1153 modal concern 0.39 distinct 4 longest 2 maxstreak 2 soft!=arg 0.73 nohab!=arg 0.48 k5fail 865 concern:446 contradiction:318 balance_world:220 curiosity:169
+2026-10-20 540 modal concern 0.5 distinct 2 longest 1 maxstreak 1 soft!=arg 0.65 nohab!=arg 0.5 k5fail 422 concern:270 curiosity:270
+2026-10-29 281 modal concern 0.5 distinct 3 longest 1 maxstreak 1 soft!=arg 0.71 nohab!=arg 0.5 k5fail 205 concern:141 balance_world:110 curiosity:30
+2026-10-30 1470 modal concern 0.43 distinct 4 longest 2 maxstreak 2 soft!=arg 0.72 nohab!=arg 0.48 k5fail 283 concern:629 contradiction:586 curiosity:248 balance_world:7

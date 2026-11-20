@@ -1,0 +1,1474 @@
+{
+ "job": "J-2395",
+ "T0": true,
+ "n_reseeded_pairs": 115,
+ "ungated": {
+  "read_b": {
+   "before": {
+    "pass": 20,
+    "n": 64,
+    "share": 0.3125,
+    "baseline": 0.2597,
+    "non_discriminating": true,
+    "meets_bar": false,
+    "own_rank_median": 17.5
+   },
+   "after": {
+    "pass": 51,
+    "n": 64,
+    "share": 0.7969,
+    "baseline": 0.3313,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "fail_to_pass": [
+    "bellbird_song",
+    "blackbird_alarm",
+    "blackbird_song",
+    "branches_creak",
+    "canopy_drip",
+    "cat_chatter",
+    "cat_lapping",
+    "cat_meow_at_door",
+    "cat_purr",
+    "cat_yowl_cargo",
+    "chair_desk_scrape",
+    "clock_tick",
+    "cricket_night",
+    "dawn_chorus",
+    "fire_crackle",
+    "footsteps_grass_soil",
+    "footsteps_leafmould",
+    "footsteps_shingle",
+    "herb_cut",
+    "kereru_wingbeats",
+    "kettle_sing",
+    "kingfisher_call",
+    "penguin_bray",
+    "riroriro_trill",
+    "thunder",
+    "waves_crashing",
+    "wind_in_eaves",
+    "wind_in_trees",
+    "wood_snap",
+    "woodpile_settle",
+    "wren_scold"
+   ],
+   "pass_to_fail": [],
+   "axis_misses_before": {
+    "brightness": {
+     "above": 33,
+     "below": 17
+    },
+    "onset": {
+     "above": 42,
+     "below": 25
+    },
+    "periodicity": {
+     "above": 29,
+     "below": 46
+    },
+    "roughness": {
+     "above": 40,
+     "below": 48
+    },
+    "continuity": {
+     "above": 88,
+     "below": 15
+    }
+   },
+   "axis_misses_after": {
+    "brightness": {
+     "above": 17,
+     "below": 5
+    },
+    "onset": {
+     "above": 20,
+     "below": 12
+    },
+    "periodicity": {
+     "above": 10,
+     "below": 14
+    },
+    "roughness": {
+     "above": 22,
+     "below": 12
+    },
+    "continuity": {
+     "above": 67,
+     "below": 5
+    }
+   }
+  },
+  "read_a": {
+   "before": {
+    "pass": 19,
+    "n": 62,
+    "share": 0.3065,
+    "baseline": 0.2509,
+    "non_discriminating": true,
+    "meets_bar": false,
+    "own_rank_median": 17.5
+   },
+   "after": {
+    "pass": 49,
+    "n": 62,
+    "share": 0.7903,
+    "baseline": 0.3263,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "fail_to_pass": [
+    "bellbird_song",
+    "blackbird_alarm",
+    "blackbird_song",
+    "branches_creak",
+    "canopy_drip",
+    "cat_chatter",
+    "cat_lapping",
+    "cat_meow_at_door",
+    "cat_purr",
+    "cat_yowl_cargo",
+    "chair_desk_scrape",
+    "clock_tick",
+    "cricket_night",
+    "fire_crackle",
+    "footsteps_grass_soil",
+    "footsteps_leafmould",
+    "footsteps_shingle",
+    "herb_cut",
+    "kereru_wingbeats",
+    "kettle_sing",
+    "kingfisher_call",
+    "penguin_bray",
+    "riroriro_trill",
+    "thunder",
+    "waves_crashing",
+    "wind_in_eaves",
+    "wind_in_trees",
+    "wood_snap",
+    "woodpile_settle",
+    "wren_scold"
+   ],
+   "pass_to_fail": [],
+   "axis_misses_before": {
+    "brightness": {
+     "above": 33,
+     "below": 14
+    },
+    "onset": {
+     "above": 42,
+     "below": 23
+    },
+    "periodicity": {
+     "above": 29,
+     "below": 46
+    },
+    "roughness": {
+     "above": 40,
+     "below": 47
+    },
+    "continuity": {
+     "above": 87,
+     "below": 12
+    }
+   },
+   "axis_misses_after": {
+    "brightness": {
+     "above": 17,
+     "below": 5
+    },
+    "onset": {
+     "above": 20,
+     "below": 10
+    },
+    "periodicity": {
+     "above": 10,
+     "below": 14
+    },
+    "roughness": {
+     "above": 22,
+     "below": 11
+    },
+    "continuity": {
+     "above": 66,
+     "below": 5
+    }
+   }
+  }
+ },
+ "gated": {
+  "J2383_63_before": {
+   "pass": 23,
+   "n": 63,
+   "share": 0.3651,
+   "baseline": 0.2698,
+   "non_discriminating": false,
+   "meets_bar": false,
+   "own_rank_median": 25.5
+  },
+  "read_b": {
+   "before": {
+    "pass": 24,
+    "n": 64,
+    "share": 0.375,
+    "baseline": 0.2746,
+    "non_discriminating": false,
+    "meets_bar": false,
+    "own_rank_median": 25.5
+   },
+   "after": {
+    "pass": 60,
+    "n": 64,
+    "share": 0.9375,
+    "baseline": 0.3331,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 1.5
+   },
+   "fail_to_pass": [
+    "bellbird_song",
+    "blackbird_alarm",
+    "blackbird_song",
+    "branches_creak",
+    "canopy_drip",
+    "cat_chatter",
+    "cat_lapping",
+    "cat_meow_at_door",
+    "cat_purr",
+    "cat_yowl_cargo",
+    "chair_desk_scrape",
+    "cicada_chorus",
+    "clock_tick",
+    "cricket_night",
+    "dawn_chorus",
+    "door_sound",
+    "fire_crackle",
+    "footsteps_floorboards",
+    "footsteps_grass_soil",
+    "footsteps_leafmould",
+    "footsteps_shingle",
+    "herb_cut",
+    "kereru_wingbeats",
+    "kettle_sing",
+    "kingfisher_call",
+    "penguin_bray",
+    "riroriro_trill",
+    "small_birds",
+    "thunder",
+    "waves_crashing",
+    "waves_on_shingle",
+    "wind_in_eaves",
+    "wind_in_trees",
+    "wood_snap",
+    "woodpile_settle",
+    "wren_scold"
+   ],
+   "pass_to_fail": []
+  },
+  "read_a": {
+   "before": {
+    "pass": 23,
+    "n": 62,
+    "share": 0.371,
+    "baseline": 0.2697,
+    "non_discriminating": false,
+    "meets_bar": false,
+    "own_rank_median": 24.5
+   },
+   "after": {
+    "pass": 58,
+    "n": 62,
+    "share": 0.9355,
+    "baseline": 0.3255,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 1.0
+   },
+   "fail_to_pass": [
+    "bellbird_song",
+    "blackbird_alarm",
+    "blackbird_song",
+    "branches_creak",
+    "canopy_drip",
+    "cat_chatter",
+    "cat_lapping",
+    "cat_meow_at_door",
+    "cat_purr",
+    "cat_yowl_cargo",
+    "chair_desk_scrape",
+    "cicada_chorus",
+    "clock_tick",
+    "cricket_night",
+    "door_sound",
+    "fire_crackle",
+    "footsteps_floorboards",
+    "footsteps_grass_soil",
+    "footsteps_leafmould",
+    "footsteps_shingle",
+    "herb_cut",
+    "kereru_wingbeats",
+    "kettle_sing",
+    "kingfisher_call",
+    "penguin_bray",
+    "riroriro_trill",
+    "small_birds",
+    "thunder",
+    "waves_crashing",
+    "waves_on_shingle",
+    "wind_in_eaves",
+    "wind_in_trees",
+    "wood_snap",
+    "woodpile_settle",
+    "wren_scold"
+   ],
+   "pass_to_fail": []
+  }
+ },
+ "ungated_per_key": {
+  "bed_watering": {
+   "before": false,
+   "after": false,
+   "n_in_after": 1,
+   "misses_after": [
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "own_rank_after": 32,
+   "baseline_share_after": 0.349
+  },
+  "bees_in_garden": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "periodicity"
+    ],
+    [
+     "periodicity"
+    ],
+    [
+     "periodicity"
+    ]
+   ],
+   "own_rank_after": 6,
+   "baseline_share_after": 0.492
+  },
+  "bellbird_song": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "onset"
+    ],
+    [
+     "onset",
+     "roughness",
+     "continuity"
+    ],
+    []
+   ],
+   "own_rank_after": 6,
+   "baseline_share_after": 0.206
+  },
+  "blackbird_alarm": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.159
+  },
+  "blackbird_song": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.349
+  },
+  "branches_creak": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 5,
+   "baseline_share_after": 0.302
+  },
+  "canopy_drip": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 45,
+   "baseline_share_after": 0.159
+  },
+  "cat_chatter": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.19
+  },
+  "cat_demand": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 44,
+   "baseline_share_after": 0.476
+  },
+  "cat_lapping": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 30,
+   "baseline_share_after": 0.333
+  },
+  "cat_meow_at_door": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.317
+  },
+  "cat_purr": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [],
+    []
+   ],
+   "own_rank_after": 2,
+   "baseline_share_after": 0.206
+  },
+  "cat_yowl_cargo": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "roughness"
+    ],
+    [],
+    []
+   ],
+   "own_rank_after": 4,
+   "baseline_share_after": 0.333
+  },
+  "chair_desk_scrape": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.254
+  },
+  "cicada_chorus": {
+   "before": false,
+   "after": false,
+   "n_in_after": 1,
+   "misses_after": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "periodicity"
+    ]
+   ],
+   "own_rank_after": 10,
+   "baseline_share_after": 0.063
+  },
+  "clock_tick": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 26,
+   "baseline_share_after": 0.27
+  },
+  "cricket_night": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.365
+  },
+  "cuckoo_call": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [],
+    [
+     "onset"
+    ],
+    [
+     "onset",
+     "periodicity"
+    ]
+   ],
+   "own_rank_after": 19,
+   "baseline_share_after": 0.302
+  },
+  "dawn_chorus": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.603
+  },
+  "distant_surf_boom": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 26,
+   "baseline_share_after": 0.381
+  },
+  "door_sound": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.603
+  },
+  "embers_settle": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [],
+    [],
+    [
+     "brightness",
+     "periodicity"
+    ]
+   ],
+   "own_rank_after": 26,
+   "baseline_share_after": 0.587
+  },
+  "fantail_chatter": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    [
+     "onset"
+    ]
+   ],
+   "own_rank_after": 17,
+   "baseline_share_after": 0.476
+  },
+  "fire_crackle": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.286
+  },
+  "footsteps_floorboards": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.54
+  },
+  "footsteps_grass_soil": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "own_rank_after": 13,
+   "baseline_share_after": 0.27
+  },
+  "footsteps_leafmould": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ],
+    [
+     "brightness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 5,
+   "baseline_share_after": 0.413
+  },
+  "footsteps_shingle": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 56,
+   "baseline_share_after": 0.302
+  },
+  "godwits_overhead": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 29,
+   "baseline_share_after": 0.54
+  },
+  "gull_cries": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 63,
+   "baseline_share_after": 0.222
+  },
+  "herb_cut": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.206
+  },
+  "kereru_wingbeats": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "onset"
+    ],
+    [
+     "onset"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.079
+  },
+  "kettle_fill": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.365
+  },
+  "kettle_pour": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    []
+   ],
+   "own_rank_after": 22,
+   "baseline_share_after": 0.492
+  },
+  "kettle_sing": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.381
+  },
+  "kingfisher_call": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.143
+  },
+  "leaf_rustle": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "own_rank_after": 9,
+   "baseline_share_after": 0.444
+  },
+  "log_on_fire": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [],
+    [
+     "onset"
+    ],
+    [
+     "onset",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 14,
+   "baseline_share_after": 0.365
+  },
+  "morepork_call": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ]
+   ],
+   "own_rank_after": 46,
+   "baseline_share_after": 0.54
+  },
+  "oystercatcher_call": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 61,
+   "baseline_share_after": 0.349
+  },
+  "page_turn": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [
+     "roughness"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 10,
+   "baseline_share_after": 0.429
+  },
+  "pen_scratch": {
+   "before": false,
+   "after": false,
+   "n_in_after": 1,
+   "misses_after": [
+    [
+     "brightness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "continuity"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "own_rank_after": 20,
+   "baseline_share_after": 0.238
+  },
+  "penguin_bray": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "onset"
+    ],
+    [
+     "onset"
+    ],
+    []
+   ],
+   "own_rank_after": 2,
+   "baseline_share_after": 0.397
+  },
+  "rain_on_roof": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.508
+  },
+  "riroriro_trill": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.254
+  },
+  "robin_song": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "roughness",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 22,
+   "baseline_share_after": 0.365
+  },
+  "saw_rasp": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "periodicity"
+    ],
+    [],
+    [
+     "periodicity"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.238
+  },
+  "shingle_drag": {
+   "before": false,
+   "after": false,
+   "n_in_after": 1,
+   "misses_after": [
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 16,
+   "baseline_share_after": 0.19
+  },
+  "small_birds": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.222
+  },
+  "sow_dig": {
+   "before": false,
+   "after": false,
+   "n_in_after": 1,
+   "misses_after": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ],
+    [
+     "brightness"
+    ]
+   ],
+   "own_rank_after": 27,
+   "baseline_share_after": 0.667
+  },
+  "stream_run": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "onset"
+    ],
+    [
+     "onset"
+    ],
+    [
+     "onset"
+    ]
+   ],
+   "own_rank_after": 11,
+   "baseline_share_after": 0.349
+  },
+  "thunder": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "periodicity",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 12,
+   "baseline_share_after": 0.476
+  },
+  "tide_pool_trickle": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ],
+    [
+     "onset",
+     "roughness"
+    ]
+   ],
+   "own_rank_after": 18,
+   "baseline_share_after": 0.19
+  },
+  "tui_song": {
+   "before": true,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [],
+    [
+     "onset"
+    ],
+    [
+     "onset",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 5,
+   "baseline_share_after": 0.333
+  },
+  "waves_crashing": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.159
+  },
+  "waves_on_shingle": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.206
+  },
+  "wind_in_eaves": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    [
+     "onset"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.127
+  },
+  "wind_in_trees": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [],
+    []
+   ],
+   "own_rank_after": 1,
+   "baseline_share_after": 0.254
+  },
+  "window_rattle": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ],
+    [
+     "roughness"
+    ]
+   ],
+   "own_rank_after": 24,
+   "baseline_share_after": 0.508
+  },
+  "wood_haul_clatter": {
+   "before": true,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 33,
+   "baseline_share_after": 0.429
+  },
+  "wood_pigeon": {
+   "before": false,
+   "after": false,
+   "n_in_after": 0,
+   "misses_after": [
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "onset",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ],
+    [
+     "brightness",
+     "periodicity",
+     "roughness",
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 63,
+   "baseline_share_after": 0.413
+  },
+  "wood_snap": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [],
+    [
+     "continuity"
+    ],
+    [
+     "continuity"
+    ]
+   ],
+   "own_rank_after": 3,
+   "baseline_share_after": 0.238
+  },
+  "woodpile_settle": {
+   "before": false,
+   "after": true,
+   "n_in_after": 2,
+   "misses_after": [
+    [
+     "onset",
+     "continuity"
+    ],
+    [
+     "continuity"
+    ],
+    []
+   ],
+   "own_rank_after": 2,
+   "baseline_share_after": 0.206
+  },
+  "wren_scold": {
+   "before": false,
+   "after": true,
+   "n_in_after": 3,
+   "misses_after": [
+    [
+     "onset"
+    ],
+    [],
+    [
+     "onset"
+    ]
+   ],
+   "own_rank_after": 2,
+   "baseline_share_after": 0.095
+  }
+ },
+ "T1_reproduces_J2397": true,
+ "T2_reproduces_J2383": true,
+ "ungated_read_b_by_archetype": {
+  "bed": {
+   "before": 3,
+   "after": 9,
+   "n": 12
+  },
+  "bed_like": {
+   "before": 3,
+   "after": 10,
+   "n": 11
+  },
+  "call": {
+   "before": 5,
+   "after": 14,
+   "n": 20
+  },
+  "thump": {
+   "before": 9,
+   "after": 17,
+   "n": 20
+  },
+  "wingbeat": {
+   "before": 0,
+   "after": 1,
+   "n": 1
+  }
+ },
+ "reseeded_keys": [
+  "bellbird_song",
+  "blackbird_alarm",
+  "blackbird_song",
+  "branches_creak",
+  "canopy_drip",
+  "cat_chatter",
+  "cat_lapping",
+  "cat_meow_at_door",
+  "cat_purr",
+  "cat_yowl_cargo",
+  "chair_desk_scrape",
+  "cicada_chorus",
+  "clock_tick",
+  "cricket_night",
+  "dawn_chorus",
+  "door_sound",
+  "fire_crackle",
+  "footsteps_floorboards",
+  "footsteps_grass_soil",
+  "footsteps_leafmould",
+  "footsteps_shingle",
+  "herb_cut",
+  "kereru_wingbeats",
+  "kettle_sing",
+  "kingfisher_call",
+  "penguin_bray",
+  "riroriro_trill",
+  "small_birds",
+  "thunder",
+  "waves_crashing",
+  "waves_on_shingle",
+  "wind_in_eaves",
+  "wind_in_trees",
+  "wood_snap",
+  "woodpile_settle",
+  "wren_scold"
+ ],
+ "reseeded_keys_ungated_after": {
+  "pass": 35,
+  "n": 36
+ }
+}

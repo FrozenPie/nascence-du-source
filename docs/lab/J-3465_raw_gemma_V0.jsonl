@@ -1,0 +1,4 @@
+{"n": 0, "label": "good", "var": "V0", "v": {"support": "no one had suspected of being able to hold a pen: Jomini", "answerable": false, "unsupported_link": true, "why": "The question asks for an interpretation of the author's perspective."}, "err": null, "s": 77.3}
+{"n": 1, "label": "borderline", "var": "V0", "v": {"support": "Significance is a synonym for importance.", "answerable": false, "unsupported_link": true, "why": "The material does not mention the name '渡' or link it to significance."}, "err": null, "s": 190.9}
+{"n": 2, "label": "good", "var": "V0", "v": {"support": "the Directory's vacillating and distrustful policy", "answerable": true, "unsupported_link": false, "why": "The text mentions the Directory's policy undermined his triumphs."}, "err": null, "s": 57.9}
+{"n": 3, "label": "good", "var": "V0", "v": null, "err": "TimeoutError", "s": 301.4}

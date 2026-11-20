@@ -1,0 +1,1289 @@
+{
+ "job": "J-2409",
+ "sheet": "docs/lab/strings_sheets_phase4_woodpigeon_metric_sheet.md",
+ "key": "wood_pigeon",
+ "sanity_review_old": {
+  "max_dev": 0.0,
+  "ok": true
+ },
+ "file": {
+  "source_file": "wood_pigeon__DOCnz-pigeon-song.mp3",
+  "sha256": "beafcc51c05c5087b546e2fc72526c897d1be541fb65cf022dc5f9f6a1d03da8",
+  "bytes": 1912066,
+  "full_duration_s": 119.38,
+  "window_s": [
+   4,
+   19
+  ],
+  "window_wav": "wood_pigeon__DOCnz-pigeon-song_window_4-19.wav"
+ },
+ "review_window": {
+  "duration_s": 15.0,
+  "silence_share_-40dB": 0.0,
+  "quiet_share_-20dB": 0.777,
+  "centroid_hz_w": 4013.0,
+  "flatness_w": 0.693,
+  "dominant_hz": [
+   754.0,
+   668.0,
+   571.0,
+   54.0,
+   431.0
+  ],
+  "band_share": {
+   "<300": 0.021,
+   "300-2k": 0.502,
+   "2k-6k": 0.361,
+   ">6k": 0.116
+  },
+  "env10_db": [
+   -1.9,
+   -7.3,
+   -15.7,
+   -15.5,
+   -2.8,
+   0.0,
+   -19.7,
+   -20.4,
+   -22.6,
+   -22.2
+  ],
+  "onset_events": 15,
+  "onset_rate_hz": 1.0,
+  "strongest_onset_s": 7.89,
+  "tonal_share_1.5-9k": 0.023,
+  "tonal_peak_hz_median": 6988.0,
+  "lowband_tonal_share": 0.0
+ },
+ "review_full": {
+  "duration_s": 119.38,
+  "silence_share_-40dB": 0.036,
+  "quiet_share_-20dB": 0.967,
+  "centroid_hz_w": 5097.0,
+  "flatness_w": 0.671,
+  "dominant_hz": [
+   54.0,
+   754.0,
+   668.0,
+   2358.0,
+   431.0
+  ],
+  "band_share": {
+   "<300": 0.101,
+   "300-2k": 0.275,
+   "2k-6k": 0.27,
+   ">6k": 0.354
+  },
+  "env10_db": [
+   -5.3,
+   -4.0,
+   -8.9,
+   -21.9,
+   -22.6,
+   0.0,
+   -19.4,
+   -18.2,
+   -17.8,
+   -20.0
+  ],
+  "onset_events": 40,
+  "onset_rate_hz": 0.34,
+  "strongest_onset_s": 71.4,
+  "tonal_share_1.5-9k": 0.144,
+  "tonal_peak_hz_median": 7827.0,
+  "lowband_tonal_share": 0.002
+ },
+ "f3069_check": {
+  "clears": true,
+  "largest_band": "300-2k",
+  "lt300": 0.021,
+  "top_dominant_hz": 754.0,
+  "old_file": {
+   "band_share": {
+    "<300": 0.306,
+    "300-2k": 0.108,
+    "2k-6k": 0.528,
+    ">6k": 0.058
+   },
+   "dominant_hz": [
+    43.0,
+    2530.0,
+    3693.0,
+    2466.0,
+    3618.0
+   ],
+   "tonal_peak_hz_median": 3607.0
+  }
+ },
+ "features": {
+  "file": "wood_pigeon__DOCnz-pigeon-song_window_4-19.wav",
+  "duration_s": 15.0,
+  "tempo_bpm": 198.8,
+  "key": "G",
+  "mode": "major",
+  "key_confidence": 0.162,
+  "brightness_hz": 4383.3,
+  "energy_mean": 0.31539,
+  "dynamic_range": 0.979,
+  "onset_density": 1.48,
+  "bands": {
+   "tempo": "driving",
+   "brightness": "brilliant",
+   "density": "sparse"
+  },
+  "n_sections": 1,
+  "sections": [
+   {
+    "start_s": 0.0,
+    "energy": 0.31539,
+    "brightness_hz": 4383.3,
+    "onset_density": 3.69,
+    "rising": false,
+    "key": "G",
+    "mode": "major",
+    "key_confidence": 0.162,
+    "periodicity": 0.536,
+    "roughness": 0.726,
+    "continuity": 0.53,
+    "string6": [
+     [
+      0.36214,
+      3888.5,
+      6.01,
+      0.617,
+      0.704,
+      0.279
+     ],
+     [
+      0.32769,
+      3831.5,
+      4.01,
+      0.637,
+      0.706,
+      0.302
+     ],
+     [
+      0.09697,
+      4503.6,
+      0.0,
+      0.62,
+      0.752,
+      0.0
+     ],
+     [
+      0.10097,
+      4253.4,
+      0.0,
+      0.475,
+      0.764,
+      0.163
+     ],
+     [
+      0.31575,
+      5160.6,
+      0.0,
+      0.89,
+      0.649,
+      0.907
+     ],
+     [
+      0.16963,
+      4375.4,
+      0.0,
+      0.5,
+      0.73,
+      0.0
+     ],
+     [
+      0.50655,
+      4252.4,
+      12.02,
+      0.477,
+      0.757,
+      0.302
+     ],
+     [
+      0.7924,
+      3891.5,
+      12.02,
+      0.455,
+      0.726,
+      1.0
+     ],
+     [
+      1.10886,
+      3434.8,
+      21.03,
+      0.445,
+      0.68,
+      0.884
+     ],
+     [
+      0.17079,
+      4900.4,
+      0.0,
+      0.558,
+      0.742,
+      0.0
+     ],
+     [
+      0.20188,
+      5354.6,
+      0.0,
+      0.512,
+      0.683,
+      0.116
+     ],
+     [
+      0.1399,
+      4487.2,
+      0.0,
+      0.436,
+      0.75,
+      1.0
+     ],
+     [
+      0.14467,
+      4596.9,
+      0.0,
+      0.353,
+      0.751,
+      1.0
+     ],
+     [
+      0.16459,
+      4736.0,
+      0.0,
+      0.519,
+      0.736,
+      1.0
+     ],
+     [
+      0.11407,
+      4060.5,
+      0.0,
+      0.55,
+      0.766,
+      1.0
+     ]
+    ]
+   }
+  ],
+  "measured_string6_norm": [
+   [
+    1.0,
+    0.8101,
+    0.7512,
+    0.6171,
+    0.7037,
+    0.2791
+   ],
+   [
+    1.0,
+    0.7982,
+    0.5008,
+    0.6374,
+    0.7062,
+    0.3023
+   ],
+   [
+    0.3075,
+    0.9383,
+    0.0,
+    0.6204,
+    0.752,
+    0.0
+   ],
+   [
+    0.3201,
+    0.8861,
+    0.0,
+    0.4751,
+    0.7637,
+    0.1628
+   ],
+   [
+    1.0,
+    1.0,
+    0.0,
+    0.89,
+    0.6487,
+    0.907
+   ],
+   [
+    0.5378,
+    0.9115,
+    0.0,
+    0.5005,
+    0.7297,
+    0.0
+   ],
+   [
+    1.0,
+    0.8859,
+    1.0,
+    0.4769,
+    0.7566,
+    0.3023
+   ],
+   [
+    1.0,
+    0.8107,
+    1.0,
+    0.4555,
+    0.7261,
+    1.0
+   ],
+   [
+    1.0,
+    0.7156,
+    1.0,
+    0.4447,
+    0.6795,
+    0.8837
+   ],
+   [
+    0.5415,
+    1.0,
+    0.0,
+    0.5577,
+    0.7424,
+    0.0
+   ],
+   [
+    0.6401,
+    1.0,
+    0.0,
+    0.5124,
+    0.6828,
+    0.1163
+   ],
+   [
+    0.4436,
+    0.9348,
+    0.0,
+    0.436,
+    0.7503,
+    1.0
+   ],
+   [
+    0.4587,
+    0.9577,
+    0.0,
+    0.3528,
+    0.7513,
+    1.0
+   ],
+   [
+    0.5218,
+    0.9867,
+    0.0,
+    0.5188,
+    0.7364,
+    1.0
+   ],
+   [
+    0.3617,
+    0.8459,
+    0.0,
+    0.5497,
+    0.7657,
+    1.0
+   ]
+  ],
+  "ribbon_width6_mean": 0.7445,
+  "ribbon_width6_p90": 0.9135,
+  "ribbon_twist6_mean_deg_s": 51.73,
+  "kill_deviation": {
+   "energy": 0.0,
+   "brightness": 6.289930090996876e-06,
+   "onset": 6.379599886269238e-05
+  },
+  "kill_triggered": false,
+  "review_signal": {
+   "duration_s": 15.0,
+   "silence_share_-40dB": 0.0,
+   "quiet_share_-20dB": 0.777,
+   "centroid_hz_w": 4013.0,
+   "flatness_w": 0.693,
+   "dominant_hz": [
+    754.0,
+    668.0,
+    571.0,
+    54.0,
+    431.0
+   ],
+   "band_share": {
+    "<300": 0.021,
+    "300-2k": 0.502,
+    "2k-6k": 0.361,
+    ">6k": 0.116
+   },
+   "env10_db": [
+    -1.9,
+    -7.3,
+    -15.7,
+    -15.5,
+    -2.8,
+    0.0,
+    -19.7,
+    -20.4,
+    -22.6,
+    -22.2
+   ],
+   "onset_events": 15,
+   "onset_rate_hz": 1.0,
+   "strongest_onset_s": 7.89,
+   "tonal_share_1.5-9k": 0.023,
+   "tonal_peak_hz_median": 6988.0,
+   "lowband_tonal_share": 0.0
+  }
+ },
+ "W0_max_dev": 0.0005,
+ "T1": {
+  "ok": true,
+  "got": {
+   "pass": 51,
+   "n": 64,
+   "share": 0.7969,
+   "baseline": 0.3313,
+   "non_discriminating": false,
+   "meets_bar": true,
+   "own_rank_median": 5.5
+  }
+ },
+ "swap_headline": {
+  "read_b": {
+   "old_file": {
+    "pass": 51,
+    "n": 64,
+    "share": 0.7969,
+    "baseline": 0.3313,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "new_file": {
+    "pass": 51,
+    "n": 64,
+    "share": 0.7969,
+    "baseline": 0.3264,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "flips": [],
+   "wood_pigeon_old": {
+    "pass": false,
+    "n_in": 0,
+    "misses": [
+     [
+      "brightness",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "onset",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ]
+    ],
+    "own_rank": 63,
+    "baseline_share": 0.413,
+    "measured_vertices": [
+     {
+      "brightness": 0.617,
+      "onset": 0.447,
+      "periodicity": 0.273,
+      "roughness": 0.577,
+      "continuity": 1.0,
+      "energy_raw": 0.53023
+     },
+     {
+      "brightness": 0.7,
+      "onset": 0.797,
+      "periodicity": 0.254,
+      "roughness": 0.551,
+      "continuity": 0.99,
+      "energy_raw": 0.74967
+     },
+     {
+      "brightness": 0.628,
+      "onset": 0.0,
+      "periodicity": 0.247,
+      "roughness": 0.667,
+      "continuity": 0.941,
+      "energy_raw": 0.42419
+     }
+    ]
+   },
+   "wood_pigeon_new": {
+    "pass": false,
+    "n_in": 0,
+    "misses": [
+     [
+      "brightness",
+      "roughness"
+     ],
+     [
+      "brightness",
+      "onset",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "roughness",
+      "continuity"
+     ]
+    ],
+    "own_rank": 57,
+    "baseline_share": 0.095,
+    "measured_vertices": [
+     {
+      "brightness": 0.76,
+      "onset": 0.325,
+      "periodicity": 0.682,
+      "roughness": 0.699,
+      "continuity": 0.418,
+      "energy_raw": 0.2407
+     },
+     {
+      "brightness": 0.717,
+      "onset": 0.817,
+      "periodicity": 0.464,
+      "roughness": 0.714,
+      "continuity": 0.701,
+      "energy_raw": 0.54965
+     },
+     {
+      "brightness": 0.795,
+      "onset": 0.0,
+      "periodicity": 0.475,
+      "roughness": 0.732,
+      "continuity": 0.767,
+      "energy_raw": 0.15302
+     }
+    ]
+   },
+   "pass_by_key_new_file": {
+    "bed_watering": false,
+    "bees_in_garden": true,
+    "bellbird_song": true,
+    "blackbird_alarm": true,
+    "blackbird_song": true,
+    "branches_creak": true,
+    "canopy_drip": true,
+    "cat_chatter": true,
+    "cat_demand": false,
+    "cat_lapping": true,
+    "cat_meow_at_door": true,
+    "cat_purr": true,
+    "cat_yowl_cargo": true,
+    "chair_desk_scrape": true,
+    "cicada_chorus": false,
+    "clock_tick": true,
+    "cricket_night": true,
+    "cuckoo_call": true,
+    "dawn_chorus": true,
+    "distant_surf_boom": false,
+    "door_sound": true,
+    "embers_settle": true,
+    "fantail_chatter": true,
+    "fire_crackle": true,
+    "footsteps_floorboards": true,
+    "footsteps_grass_soil": true,
+    "footsteps_leafmould": true,
+    "footsteps_shingle": true,
+    "godwits_overhead": false,
+    "gull_cries": false,
+    "herb_cut": true,
+    "kereru_wingbeats": true,
+    "kettle_fill": true,
+    "kettle_pour": true,
+    "kettle_sing": true,
+    "kingfisher_call": true,
+    "leaf_rustle": true,
+    "log_on_fire": true,
+    "morepork_call": false,
+    "oystercatcher_call": false,
+    "page_turn": true,
+    "pen_scratch": false,
+    "penguin_bray": true,
+    "rain_on_roof": true,
+    "riroriro_trill": true,
+    "robin_song": true,
+    "saw_rasp": true,
+    "shingle_drag": false,
+    "small_birds": true,
+    "sow_dig": false,
+    "stream_run": true,
+    "thunder": true,
+    "tide_pool_trickle": false,
+    "tui_song": true,
+    "waves_crashing": true,
+    "waves_on_shingle": true,
+    "wind_in_eaves": true,
+    "wind_in_trees": true,
+    "window_rattle": true,
+    "wood_haul_clatter": true,
+    "wood_pigeon": false,
+    "wood_snap": true,
+    "woodpile_settle": true,
+    "wren_scold": true
+   }
+  },
+  "read_a": {
+   "old_file": {
+    "pass": 49,
+    "n": 62,
+    "share": 0.7903,
+    "baseline": 0.3263,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "new_file": {
+    "pass": 49,
+    "n": 62,
+    "share": 0.7903,
+    "baseline": 0.3213,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "flips": [],
+   "wood_pigeon_old": {
+    "pass": false,
+    "n_in": 0,
+    "misses": [
+     [
+      "brightness",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "onset",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "periodicity",
+      "roughness",
+      "continuity"
+     ]
+    ],
+    "own_rank": 61,
+    "baseline_share": 0.41,
+    "measured_vertices": [
+     {
+      "brightness": 0.617,
+      "onset": 0.447,
+      "periodicity": 0.273,
+      "roughness": 0.577,
+      "continuity": 1.0,
+      "energy_raw": 0.53023
+     },
+     {
+      "brightness": 0.7,
+      "onset": 0.797,
+      "periodicity": 0.254,
+      "roughness": 0.551,
+      "continuity": 0.99,
+      "energy_raw": 0.74967
+     },
+     {
+      "brightness": 0.628,
+      "onset": 0.0,
+      "periodicity": 0.247,
+      "roughness": 0.667,
+      "continuity": 0.941,
+      "energy_raw": 0.42419
+     }
+    ]
+   },
+   "wood_pigeon_new": {
+    "pass": false,
+    "n_in": 0,
+    "misses": [
+     [
+      "brightness",
+      "roughness"
+     ],
+     [
+      "brightness",
+      "onset",
+      "roughness",
+      "continuity"
+     ],
+     [
+      "brightness",
+      "roughness",
+      "continuity"
+     ]
+    ],
+    "own_rank": 55,
+    "baseline_share": 0.098,
+    "measured_vertices": [
+     {
+      "brightness": 0.76,
+      "onset": 0.325,
+      "periodicity": 0.682,
+      "roughness": 0.699,
+      "continuity": 0.418,
+      "energy_raw": 0.2407
+     },
+     {
+      "brightness": 0.717,
+      "onset": 0.817,
+      "periodicity": 0.464,
+      "roughness": 0.714,
+      "continuity": 0.701,
+      "energy_raw": 0.54965
+     },
+     {
+      "brightness": 0.795,
+      "onset": 0.0,
+      "periodicity": 0.475,
+      "roughness": 0.732,
+      "continuity": 0.767,
+      "energy_raw": 0.15302
+     }
+    ]
+   },
+   "pass_by_key_new_file": {
+    "bed_watering": false,
+    "bees_in_garden": true,
+    "bellbird_song": true,
+    "blackbird_alarm": true,
+    "blackbird_song": true,
+    "branches_creak": true,
+    "canopy_drip": true,
+    "cat_chatter": true,
+    "cat_demand": false,
+    "cat_lapping": true,
+    "cat_meow_at_door": true,
+    "cat_purr": true,
+    "cat_yowl_cargo": true,
+    "chair_desk_scrape": true,
+    "cicada_chorus": false,
+    "clock_tick": true,
+    "cricket_night": true,
+    "cuckoo_call": true,
+    "distant_surf_boom": false,
+    "door_sound": true,
+    "embers_settle": true,
+    "fantail_chatter": true,
+    "fire_crackle": true,
+    "footsteps_floorboards": true,
+    "footsteps_grass_soil": true,
+    "footsteps_leafmould": true,
+    "footsteps_shingle": true,
+    "godwits_overhead": false,
+    "gull_cries": false,
+    "herb_cut": true,
+    "kereru_wingbeats": true,
+    "kettle_fill": true,
+    "kettle_pour": true,
+    "kettle_sing": true,
+    "kingfisher_call": true,
+    "leaf_rustle": true,
+    "morepork_call": false,
+    "oystercatcher_call": false,
+    "page_turn": true,
+    "pen_scratch": false,
+    "penguin_bray": true,
+    "rain_on_roof": true,
+    "riroriro_trill": true,
+    "robin_song": true,
+    "saw_rasp": true,
+    "shingle_drag": false,
+    "small_birds": true,
+    "sow_dig": false,
+    "stream_run": true,
+    "thunder": true,
+    "tide_pool_trickle": false,
+    "tui_song": true,
+    "waves_crashing": true,
+    "waves_on_shingle": true,
+    "wind_in_eaves": true,
+    "wind_in_trees": true,
+    "window_rattle": true,
+    "wood_haul_clatter": true,
+    "wood_pigeon": false,
+    "wood_snap": true,
+    "woodpile_settle": true,
+    "wren_scold": true
+   }
+  }
+ },
+ "measured": {
+  "gated_pass": false,
+  "gated_seconds": 7,
+  "kept_share": 0.226,
+  "gated_vertices": [
+   {
+    "brightness": 0.662,
+    "onset": 0.558,
+    "periodicity": 0.58,
+    "roughness": 0.585,
+    "continuity": 0.369
+   },
+   {
+    "brightness": 0.74,
+    "onset": 0.876,
+    "periodicity": 0.487,
+    "roughness": 0.733,
+    "continuity": 0.767
+   },
+   {
+    "brightness": 0.653,
+    "onset": 0.99,
+    "periodicity": 0.464,
+    "roughness": 0.668,
+    "continuity": 0.873
+   }
+  ],
+  "gated_misses": [
+   [
+    "brightness",
+    "onset",
+    "roughness"
+   ],
+   [
+    "brightness",
+    "onset",
+    "roughness",
+    "continuity"
+   ],
+   [
+    "brightness",
+    "onset",
+    "roughness",
+    "continuity"
+   ]
+  ],
+  "ungated_vertices": [
+   {
+    "brightness": 0.76,
+    "onset": 0.325,
+    "periodicity": 0.682,
+    "roughness": 0.699,
+    "continuity": 0.418
+   },
+   {
+    "brightness": 0.717,
+    "onset": 0.817,
+    "periodicity": 0.464,
+    "roughness": 0.714,
+    "continuity": 0.701
+   },
+   {
+    "brightness": 0.795,
+    "onset": 0.0,
+    "periodicity": 0.475,
+    "roughness": 0.732,
+    "continuity": 0.767
+   }
+  ],
+  "ungated_misses": [
+   [
+    "brightness",
+    "roughness"
+   ],
+   [
+    "brightness",
+    "onset",
+    "roughness",
+    "continuity"
+   ],
+   [
+    "brightness",
+    "roughness",
+    "continuity"
+   ]
+  ],
+  "ungated_pass": false,
+  "envelope_before": {
+   "brightness": [
+    0.0,
+    0.53
+   ],
+   "onset": [
+    0.0,
+    0.47
+   ],
+   "periodicity": [
+    0.33,
+    0.83
+   ],
+   "roughness": [
+    0.0,
+    0.43
+   ],
+   "continuity": [
+    0.13,
+    0.63
+   ]
+  }
+ },
+ "fixed_point_before": {
+  "brightness": 0.28,
+  "energy": 0.25,
+  "onset": 0.22,
+  "periodicity": 0.58,
+  "roughness": 0.18,
+  "continuity": 0.38
+ },
+ "accepted_by_ruling": null,
+ "reseed": [
+  {
+   "key": "wood_pigeon",
+   "axis": "continuity",
+   "old": 0.38,
+   "new": 0.67,
+   "applied": true,
+   "target": "gated",
+   "measured_thirds": [
+    0.369,
+    0.767,
+    0.873
+   ],
+   "envelope_before": [
+    0.13,
+    0.63
+   ],
+   "delta": 0.29,
+   "large_shift": false
+  },
+  {
+   "key": "wood_pigeon",
+   "axis": "roughness",
+   "old": 0.18,
+   "new": 0.66,
+   "applied": true,
+   "target": "gated",
+   "measured_thirds": [
+    0.585,
+    0.733,
+    0.668
+   ],
+   "envelope_before": [
+    0.0,
+    0.43
+   ],
+   "delta": 0.48,
+   "large_shift": true
+  },
+  {
+   "key": "wood_pigeon",
+   "axis": "brightness",
+   "old": 0.28,
+   "new": 0.75,
+   "applied": true,
+   "target": "gated",
+   "measured_thirds": [
+    0.662,
+    0.74,
+    0.653
+   ],
+   "envelope_before": [
+    0.0,
+    0.53
+   ],
+   "delta": 0.47,
+   "large_shift": true
+  },
+  {
+   "key": "wood_pigeon",
+   "axis": "onset",
+   "old": 0.22,
+   "new": 0.43,
+   "applied": true,
+   "target": "ungated",
+   "measured_thirds": [
+    0.325,
+    0.817,
+    0.0
+   ],
+   "envelope_before": [
+    0.0,
+    0.47
+   ],
+   "delta": 0.21,
+   "large_shift": false
+  }
+ ],
+ "swap_strings_wood_pigeon": [
+  {
+   "energy_raw": 0.36214,
+   "brightness": 0.732578125,
+   "onset": 0.625625,
+   "periodicity": 0.617,
+   "roughness": 0.704,
+   "continuity": 0.279
+  },
+  {
+   "energy_raw": 0.32769,
+   "brightness": 0.723671875,
+   "onset": 0.500625,
+   "periodicity": 0.637,
+   "roughness": 0.706,
+   "continuity": 0.302
+  },
+  {
+   "energy_raw": 0.09697,
+   "brightness": 0.781475,
+   "onset": 0.0,
+   "periodicity": 0.62,
+   "roughness": 0.752,
+   "continuity": 0.0
+  },
+  {
+   "energy_raw": 0.10097,
+   "brightness": 0.7658375,
+   "onset": 0.0,
+   "periodicity": 0.475,
+   "roughness": 0.764,
+   "continuity": 0.163
+  },
+  {
+   "energy_raw": 0.31575,
+   "brightness": 0.8225375,
+   "onset": 0.0,
+   "periodicity": 0.89,
+   "roughness": 0.649,
+   "continuity": 0.907
+  },
+  {
+   "energy_raw": 0.16963,
+   "brightness": 0.7734624999999999,
+   "onset": 0.0,
+   "periodicity": 0.5,
+   "roughness": 0.73,
+   "continuity": 0.0
+  },
+  {
+   "energy_raw": 0.50655,
+   "brightness": 0.765775,
+   "onset": 0.875625,
+   "periodicity": 0.477,
+   "roughness": 0.757,
+   "continuity": 0.302
+  },
+  {
+   "energy_raw": 0.7924,
+   "brightness": 0.733046875,
+   "onset": 0.875625,
+   "periodicity": 0.455,
+   "roughness": 0.726,
+   "continuity": 1.0
+  },
+  {
+   "energy_raw": 1.10886,
+   "brightness": 0.6616875,
+   "onset": 1.0,
+   "periodicity": 0.445,
+   "roughness": 0.68,
+   "continuity": 0.884
+  },
+  {
+   "energy_raw": 0.17079,
+   "brightness": 0.806275,
+   "onset": 0.0,
+   "periodicity": 0.558,
+   "roughness": 0.742,
+   "continuity": 0.0
+  },
+  {
+   "energy_raw": 0.20188,
+   "brightness": 0.8346625000000001,
+   "onset": 0.0,
+   "periodicity": 0.512,
+   "roughness": 0.683,
+   "continuity": 0.116
+  },
+  {
+   "energy_raw": 0.1399,
+   "brightness": 0.78045,
+   "onset": 0.0,
+   "periodicity": 0.436,
+   "roughness": 0.75,
+   "continuity": 1.0
+  },
+  {
+   "energy_raw": 0.14467,
+   "brightness": 0.78730625,
+   "onset": 0.0,
+   "periodicity": 0.353,
+   "roughness": 0.751,
+   "continuity": 1.0
+  },
+  {
+   "energy_raw": 0.16459,
+   "brightness": 0.796,
+   "onset": 0.0,
+   "periodicity": 0.519,
+   "roughness": 0.736,
+   "continuity": 1.0
+  },
+  {
+   "energy_raw": 0.11407,
+   "brightness": 0.75378125,
+   "onset": 0.0,
+   "periodicity": 0.55,
+   "roughness": 0.766,
+   "continuity": 1.0
+  }
+ ],
+ "T0": true,
+ "after_reseed": {
+  "read_b": {
+   "before_reseed": {
+    "pass": 51,
+    "n": 64,
+    "share": 0.7969,
+    "baseline": 0.3264,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "after_reseed": {
+    "pass": 52,
+    "n": 64,
+    "share": 0.8125,
+    "baseline": 0.3279,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.0
+   },
+   "wood_pigeon": {
+    "pass": true,
+    "n_in": 3,
+    "misses": [
+     [
+      "continuity"
+     ],
+     [
+      "onset"
+     ],
+     [
+      "onset"
+     ]
+    ],
+    "own_rank": 1,
+    "baseline_share": 0.095,
+    "measured_vertices": [
+     {
+      "brightness": 0.76,
+      "onset": 0.325,
+      "periodicity": 0.682,
+      "roughness": 0.699,
+      "continuity": 0.418,
+      "energy_raw": 0.2407
+     },
+     {
+      "brightness": 0.717,
+      "onset": 0.817,
+      "periodicity": 0.464,
+      "roughness": 0.714,
+      "continuity": 0.701,
+      "energy_raw": 0.54965
+     },
+     {
+      "brightness": 0.795,
+      "onset": 0.0,
+      "periodicity": 0.475,
+      "roughness": 0.732,
+      "continuity": 0.767,
+      "energy_raw": 0.15302
+     }
+    ]
+   },
+   "fail_to_pass": [
+    "wood_pigeon"
+   ],
+   "pass_to_fail": []
+  },
+  "read_a": {
+   "before_reseed": {
+    "pass": 49,
+    "n": 62,
+    "share": 0.7903,
+    "baseline": 0.3213,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.5
+   },
+   "after_reseed": {
+    "pass": 50,
+    "n": 62,
+    "share": 0.8065,
+    "baseline": 0.3228,
+    "non_discriminating": false,
+    "meets_bar": true,
+    "own_rank_median": 5.0
+   },
+   "wood_pigeon": {
+    "pass": true,
+    "n_in": 3,
+    "misses": [
+     [
+      "continuity"
+     ],
+     [
+      "onset"
+     ],
+     [
+      "onset"
+     ]
+    ],
+    "own_rank": 1,
+    "baseline_share": 0.098,
+    "measured_vertices": [
+     {
+      "brightness": 0.76,
+      "onset": 0.325,
+      "periodicity": 0.682,
+      "roughness": 0.699,
+      "continuity": 0.418,
+      "energy_raw": 0.2407
+     },
+     {
+      "brightness": 0.717,
+      "onset": 0.817,
+      "periodicity": 0.464,
+      "roughness": 0.714,
+      "continuity": 0.701,
+      "energy_raw": 0.54965
+     },
+     {
+      "brightness": 0.795,
+      "onset": 0.0,
+      "periodicity": 0.475,
+      "roughness": 0.732,
+      "continuity": 0.767,
+      "energy_raw": 0.15302
+     }
+    ]
+   },
+   "fail_to_pass": [
+    "wood_pigeon"
+   ],
+   "pass_to_fail": []
+  }
+ }
+}

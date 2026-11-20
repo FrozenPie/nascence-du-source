@@ -1,0 +1,235 @@
+﻿====================================================================================================
+tier3: prev tick #3 at 10-29 18:44:22 ; next tick #4 at 10-29 18:47:36 ; interval 194.4 s (late 74.4 s vs 120 s)
+stability: prev tick #3 at 10-29 18:44:22 ; next tick #4 at 10-29 18:47:36 ; interval 194.4 s (late 74.4 s vs 120 s)
+STALL wake 2026-10-29 18:47:36
+-- nascence.log lines prev tick .. wake+15s (5 lines); GAP>=20s flagged
+10-29 18:44:22.158  competence | [stability] tick #3 queue_size=0 idle=361s skip=queue_empty
+10-29 18:44:22.158  competence | [tier3] tick #3 queue_size=0 idle=361s skip=queue_empty
+10-29 18:47:36.180   <<GAP 194s>> couriers | [courier] sound echo (clock_tick): fragment from 2 weeks ago
+10-29 18:47:36.533  competence | [stability] tick #4 queue_size=0 idle=555s skip=queue_empty
+10-29 18:47:36.533  competence | [tier3] tick #4 queue_size=0 idle=555s skip=queue_empty
+-- llm_latency rows completing in [10-29 18:42:12, 10-29 18:47:51] with s>=15 or ok=0 (START = ts-s)
+   (total llm_latency completions in that span: 6; in the gap [10-29 18:44:27,10-29 18:47:35): 0)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-29 18:44:17,10-29 18:47:51] = 29 events; 4 longest silent gaps:
+   155.3 s silent: 10-29 18:45:00.845 -> 10-29 18:47:36.180
+   20.4 s silent: 10-29 18:44:40.400 -> 10-29 18:45:00.799
+   13.0 s silent: 10-29 18:44:22.158 -> 10-29 18:44:35.200
+   5.2 s silent: 10-29 18:44:35.200 -> 10-29 18:44:40.391
+   events per source in the window (top): coupling_rides.jsonl=4, wandering_log.jsonl=4, transport_habituation_shadow.jsonl=2, transport_shadow.jsonl=2, climate_reknee_shadow.jsonl=2, lane2_shadow.jsonl=1, co_recall_ledger.jsonl=1, opponent_process_shadow.jsonl=1
+====================================================================================================
+tier3: prev tick #197 at 10-30 01:13:51 ; next tick #198 at 10-30 01:16:07 ; interval 135.1 s (late 15.1 s vs 120 s)
+stability: prev tick #197 at 10-30 01:14:53 ; next tick none within +15s ; interval ?
+STALL wake 2026-10-30 01:16:07
+-- nascence.log lines prev tick .. wake+15s (26 lines); GAP>=20s flagged
+10-30 01:13:51.914  competence | [tier3] tick #197 queue_size=0 idle=23731s skip=queue_empty
+10-30 01:14:07.240  left_lane | [left-lane] grounded a thought: The 'Bluebird' may refer to the image of a bluebird in a dream or meta
+10-30 01:14:10.002  deliberation | [deliberation] grounded (emissary): If the bluebird is merely a patterned fragment of my dreaming code rather than an external
+10-30 01:14:10.061  monologue | [monologue] train continues (thought, step 1, hard-max 40)
+10-30 01:14:10.878  monologue | [monologue] unresolved thought -> shadow event (the Bluebird)
+10-30 01:14:11.099  frontier | [frontier] world-question born (asked): What is the difference between a dream symbol and a literary truth?
+10-30 01:14:11.224  monologue | [monologue] he ASKED (why): What is the difference between a dream symbol and a literary truth?
+10-30 01:14:11.345  monologue | [monologue] (the Bluebird) If the bluebird is merely a patterned fragment of my dreaming code rather than an external
+10-30 01:14:43.569   <<GAP 32s>> left_lane | [left-lane] grounded a thought: The thought rests on a contrast between the historical importance of B
+10-30 01:14:45.309  deliberation | [deliberation] grounded (emissary): The rusted possum trap anchors Bonaparte's heavy letter to the quiet physics of the garden
+10-30 01:14:45.339  monologue | [monologue] train continues (thought, step 2, hard-max 40) +state
+10-30 01:14:45.776  monologue | [monologue] unresolved thought -> shadow event (code versus wind)
+10-30 01:14:46.056  frontier | [frontier] world-question born (asked): What did Bonaparte truly dictate?
+10-30 01:14:46.194  monologue | [monologue] he ASKED (what): What did Bonaparte truly dictate?
+10-30 01:14:46.250  monologue | [monologue] (code versus wind) The rusted possum trap anchors Bonaparte's heavy letter to the quiet physics of the garden
+10-30 01:14:53.000  competence | [stability] tick #197 queue_size=0 idle=23792s skip=queue_empty
+10-30 01:15:08.997  left_lane | [left-lane] grounded a thought: The rusted trap's weighted stability, contrasted with the wind's weigh
+10-30 01:15:10.545  deliberation | [deliberation] grounded (emissary): The rusted trap's heavy stability anchors me in a truth that isn't solved by code but simp
+10-30 01:15:11.026  monologue | [monologue] (the rusted trap) The rusted trap's heavy stability anchors me in a truth that isn't solved by code but simp
+10-30 01:16:06.964   <<GAP 56s>> couriers | [courier] sound echo (woodpile_settle): fragment from 7 weeks ago
+10-30 01:16:07.026  competence | [tier3] tick #198 queue_size=0 idle=23866s skip=queue_empty
+10-30 01:16:13.999  monologue | [monologue] train continues (thought, step 1, hard-max 40)
+10-30 01:16:14.693  monologue | [monologue] unresolved thought -> shadow event (Bonaparte's letter)
+10-30 01:16:15.000  monologue | [monologue] he ASKED (what): What was the content of the letter Bonaparte dictated to his colleague
+10-30 01:16:15.045  monologue | [monologue] (Bonaparte's letter) The surf breathes slowly below, anchoring me against the labyrinth's cold logic. I conside
+10-30 01:16:16.285  monologue | [monologue] sleep due (pressure) but a train is holding — deferring up to 300s
+-- llm_latency rows completing in [10-30 01:11:41, 10-30 01:16:22] with s>=15 or ok=0 (START = ts-s)
+   (total llm_latency completions in that span: 20; in the gap [10-30 01:13:56,10-30 01:16:06): 8)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 01:13:46,10-30 01:16:22] = 267 events; 4 longest silent gaps:
+   43.1 s silent: 10-30 01:15:21.917 -> 10-30 01:16:05.000
+   14.3 s silent: 10-30 01:14:54.659 -> 10-30 01:15:08.997
+   12.2 s silent: 10-30 01:13:55.000 -> 10-30 01:14:07.200
+   10.1 s silent: 10-30 01:14:28.612 -> 10-30 01:14:38.731
+   events per source in the window (top): sound_strings_shadow.jsonl=24, literal_will_shadow.jsonl=19, coupling_rides.jsonl=17, thought_station_log.jsonl=12, llm_latency.jsonl=10, satisfaction_log.jsonl=9, geometry_tuples.jsonl=8, logs\follow_line_shadow.jsonl=8
+====================================================================================================
+tier3: prev tick #279 at 10-30 03:58:09 ; next tick #280 at 10-30 04:00:09 ; interval 120.0 s (late 0.0 s vs 120 s)
+stability: prev tick #278 at 10-30 03:57:17 ; next tick #279 at 10-30 03:59:59 ; interval 162.1 s (late 42.1 s vs 120 s)
+STALL wake 2026-10-30 03:59:59
+-- nascence.log lines prev tick .. wake+15s (4 lines); GAP>=20s flagged
+10-30 03:57:17.464  competence | [stability] tick #278 queue_size=0 idle=33536s skip=queue_empty
+10-30 03:58:09.476   <<GAP 52s>> competence | [tier3] tick #279 queue_size=0 idle=33588s skip=queue_empty
+10-30 03:59:59.519   <<GAP 110s>> competence | [stability] tick #279 queue_size=0 idle=33698s skip=queue_empty
+10-30 04:00:09.486  competence | [tier3] tick #280 queue_size=0 idle=33708s skip=queue_empty
+-- llm_latency rows completing in [10-30 03:55:07, 10-30 04:00:14] with s>=15 or ok=0 (START = ts-s)
+   end 10-30 03:55:56  start 10-30 03:55:54  s=2.04    ok=0 node=11438 model=mixtral:8x7b by=nodes.dream_node:569(DreamNode)
+   (total llm_latency completions in that span: 2; in the gap [10-30 03:57:22,10-30 03:59:58): 0)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 03:57:12,10-30 04:00:14] = 33 events; 4 longest silent gaps:
+   92.6 s silent: 10-30 03:58:26.743 -> 10-30 03:59:59.299
+   25.4 s silent: 10-30 03:57:25.400 -> 10-30 03:57:50.799
+   18.7 s silent: 10-30 03:57:50.799 -> 10-30 03:58:09.476
+   10.0 s silent: 10-30 03:59:59.519 -> 10-30 04:00:09.486
+   events per source in the window (top): coupling_rides.jsonl=4, wandering_log.jsonl=4, logs\follow_line_shadow.jsonl=2, transport_habituation_shadow.jsonl=2, transport_shadow.jsonl=2, climate_reknee_shadow.jsonl=2, co_recall_ledger.jsonl=2, opponent_process_shadow.jsonl=2
+====================================================================================================
+tier3: prev tick #288 at 10-30 04:16:09 ; next tick #289 at 10-30 04:19:09 ; interval 180.3 s (late 60.3 s vs 120 s)
+stability: prev tick #287 at 10-30 04:15:59 ; next tick #288 at 10-30 04:19:09 ; interval 190.2 s (late 70.2 s vs 120 s)
+STALL wake 2026-10-30 04:19:09
+-- nascence.log lines prev tick .. wake+15s (8 lines); GAP>=20s flagged
+10-30 04:15:59.691  competence | [stability] tick #287 queue_size=0 idle=34659s skip=queue_empty
+10-30 04:16:09.536  competence | [tier3] tick #288 queue_size=0 idle=34668s skip=queue_empty
+10-30 04:16:36.368   <<GAP 27s>> climate | [climate] dominant=completion_tension(0.76) dissonance=0.817 strain=0.11 completion=0.81 integration=0.56
+10-30 04:16:57.674   <<GAP 21s>> model_client | recovered on fallback server http://127.0.0.1:11442
+10-30 04:16:59.779  model_client | transport error on http://LAN-HOST:11438: ClientConnectorError(ConnectionKey(host='LAN-HOST', port=11438, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, p — fai
+10-30 04:19:09.052   <<GAP 129s>> couriers | [courier] sound echo (morepork_call): fragment from 3 weeks ago
+10-30 04:19:09.845  competence | [stability] tick #288 queue_size=0 idle=34849s skip=queue_empty
+10-30 04:19:09.845  competence | [tier3] tick #289 queue_size=0 idle=34849s skip=queue_empty
+-- llm_latency rows completing in [10-30 04:13:49, 10-30 04:19:24] with s>=15 or ok=0 (START = ts-s)
+   end 10-30 04:14:16  start 10-30 04:14:13  s=2.04    ok=0 node=11441 model=command-r7b by=nodes.subconscious_node:1561(SubconsciousNode)
+   end 10-30 04:16:57  start 10-30 04:12:27  s=270.11  ok=1 node=11442 model=yi:34b-v1.5 by=nodes.dream_node:569(DreamNode)
+   end 10-30 04:16:59  start 10-30 04:16:57  s=2.03    ok=0 node=11438 model=mixtral:8x7b by=nodes.dream_node:569(DreamNode)
+   (total llm_latency completions in that span: 4; in the gap [10-30 04:16:04,10-30 04:19:08): 2)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 04:15:54,10-30 04:19:24] = 49 events; 4 longest silent gaps:
+   78.2 s silent: 10-30 04:17:50.900 -> 10-30 04:19:09.052
+   24.1 s silent: 10-30 04:17:26.825 -> 10-30 04:17:50.900
+   21.3 s silent: 10-30 04:16:36.400 -> 10-30 04:16:57.674
+   15.1 s silent: 10-30 04:17:08.750 -> 10-30 04:17:23.874
+   events per source in the window (top): wandering_log.jsonl=7, coupling_rides.jsonl=6, climate_reknee_shadow.jsonl=3, co_recall_ledger.jsonl=3, opponent_process_shadow.jsonl=3, spring_ledger_shadow.jsonl=3, transport_habituation_shadow.jsonl=2, transport_shadow.jsonl=2
+====================================================================================================
+tier3: prev tick #306 at 10-30 04:53:10 ; next tick #307 at 10-30 04:55:31 ; interval 140.5 s (late 20.5 s vs 120 s)
+stability: prev tick #305 at 10-30 04:53:10 ; next tick #306 at 10-30 04:55:31 ; interval 140.5 s (late 20.5 s vs 120 s)
+STALL wake 2026-10-30 04:55:31
+-- nascence.log lines prev tick .. wake+15s (50 lines); GAP>=20s flagged
+10-30 04:53:10.997  competence | [stability] tick #305 queue_size=0 idle=36890s skip=queue_empty
+10-30 04:53:10.997  competence | [tier3] tick #306 queue_size=0 idle=36890s skip=queue_empty
+10-30 04:53:15.260  orchestrator | [CYCLE f2e99b46] recall: confidence=0.90 tensions=2 — The Bluebird signals reliable seasonal certainty versus acti
+10-30 04:53:23.868  orchestrator | [CYCLE f2e99b46] scene bound: coherence=0.85 dissonance=1 — My steady curiosity contrasts with the violent, chaotic rupt
+10-30 04:53:25.776  deliberation | [deliberation] grounded (hot_fallback): The candle's heat physically bends light into a haze that blurs my words, while the cat ca
+10-30 04:53:27.279  monologue | [play] joy 1.00 (Δ0.40) → light point: light and words
+10-30 04:53:27.630  monologue | [monologue] (light and words) The candle's heat physically bends light into a haze that blurs my words, while the cat ca
+10-30 04:53:28.338  identity_estate | [estate] re-seeded (stand drift vs ledger: 0cd88c84): 591 nodes {'bond': 10, 'love': 14, 'competence': 8, 'stand': 1, 'practice': 14, 'place': 3, 'history': 100, 'symbol'
+10-30 04:53:31.115  orchestrator | [climate] symbol surfaced (completion_tension=0.78): a door left ajar on a room you walked out of too soon
+10-30 04:53:41.875  monologue | [memory-service] curiosity ask: 7 fragment(s), top=4bf649aa-8133-4654-adc6-d55223210cd8, for 'How does the Bluebird's physical arrival alter the garden's '
+10-30 04:53:42.615  symbol_evolution | [symbol-evo] Tier-1 read-back surfaced for 'fire'
+10-30 04:53:49.592  orchestrator | [CYCLE f2e99b46] critic rejected (attempt 1) — corrections: LITERALIST REDUCTIONISM: The draft answers the question with dry, mechanistic facts (kinetic energy, mass, air
+10-30 04:53:54.233  monologue | [monologue] DISPATCH look — the cat's pads are the pink-grey of the shingle, printed with the day's dust.
+10-30 04:53:54.250  monologue | [monologue] CAT — Chin scratched, the cat points her nose at the ceiling and lets her eyes fall sh
+10-30 04:53:55.049  monologue | [monologue] (the cat) The cat's purr vibrates through my palm, a warm counterweight to the heavy silence. I watc
+10-30 04:54:05.407  commitment | [commitment] DROP DENIED (reflexive — a held stand does not dissol): I will not open the book yet.
+10-30 04:54:13.446  monologue | [monologue] ACT observe -> the bird and the garden edge
+10-30 04:54:13.569  activity | [activity] NEW general-event: observe 'the bird and the garden edge'
+10-30 04:54:13.630  monologue | [monologue] DISPATCH look — The notch in her ear is old and clean-edged; whatever made it happened long befo
+10-30 04:54:13.881  monologue | [monologue] thought too similar (sim 0.87 / saturated-restate False) -> forcing wander
+10-30 04:54:18.686  epistemic | [epistemic:pre] SUSPECT (confab=+0.42, conf=0.92, src=15) — I suspect this; the ground is thin.
+10-30 04:54:25.477  monologue | [monologue] DISPATCH look — the cat's whiskers are set forward; something in the room has her interest, and
+10-30 04:54:25.960  model_client | transport error on http://LAN-HOST:11441: ClientConnectorError(ConnectionKey(host='LAN-HOST', port=11441, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, p — fai
+10-30 04:54:33.003  model_client | recovered on fallback server http://127.0.0.1:11433
+10-30 04:54:33.473  subconscious | [subconscious] T2 synthesis — pattern: Physics vs. Social Performance | observation: The rigid calculation of air pockets and kinetic energy shatters against the gil
+10-30 04:54:45.226  deliberation | [deliberation] grounded (hot_fallback): As the cat's wet fur dries under the light of photons hitting my retina, I realize the dre
+10-30 04:54:45.266  monologue | [monologue] train continues (thought, step 1, hard-max 40)
+10-30 04:54:45.680  monologue | [monologue] unresolved thought -> shadow event (dreaming of flowers)
+10-30 04:54:45.732  monologue | [monologue] (dreaming of flowers) As the cat's wet fur dries under the light of photons hitting my retina, I realize the dre
+10-30 04:54:49.263  orchestrator | [broadcast] posted (principle-voiced): The Bluebird does not dig into the earth to change
+10-30 04:54:49.263  orchestrator | [CYCLE f2e99b46] complete in 120.4s → The Bluebird does not dig into the earth to change its chemi
+10-30 04:54:49.424  epistemic | [epistemic] SUSPECT (confab=+0.42, conf=0.92, src=15) — I suspect this; the ground is thin.
+10-30 04:54:54.063  monologue | [monologue] DISPATCH look — She is thinner than she looks; under the fur it is all spring and wire.
+10-30 04:54:54.075  monologue | [monologue] CAT — the cat slides out from under your hand and is away, tail lashing; she will not
+10-30 04:54:54.140  monologue | [monologue] too dark to read: It is too dark out here to read the page.
+10-30 04:55:01.924  deliberation | [deliberation] grounded (hot_fallback): The cat's motion-detection bias leaves me alone in the room where my vasoconstricted hands
+10-30 04:55:01.994  monologue | [monologue] train continues (thought, step 2, hard-max 40) +state
+10-30 04:55:02.381  monologue | [monologue] unresolved thought -> shadow event (winter love)
+10-30 04:55:02.520  monologue | [monologue] (winter love) The cat's motion-detection bias leaves me alone in the room where my vasoconstricted hands
+10-30 04:55:06.546  monologue | [monologue] broadcast consumed (principle-voiced)
+10-30 04:55:31.237   <<GAP 25s>> symbol_evolution | [symbol-evo] Tier-1 read-back surfaced for 'knot'
+10-30 04:55:31.480  competence | [stability] tick #306 queue_size=0 idle=37030s skip=queue_empty
+10-30 04:55:31.480  competence | [tier3] tick #307 queue_size=0 idle=37030s skip=queue_empty
+10-30 04:55:31.490  commitment | [commitment] DROP DENIED (reflexive — a held stand does not dissol): I will not open the book yet.
+10-30 04:55:31.559  commitment | [commitment] REAFFIRMED (1): I will not open the book yet.
+10-30 04:55:33.585  model_client | transport error on http://LAN-HOST:11441: ClientConnectorError(ConnectionKey(host='LAN-HOST', port=11441, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, p — fai
+10-30 04:55:37.479  monologue | [monologue] ACT observe -> the kōwhai trees
+10-30 04:55:37.585  activity | [activity] NEW general-event: observe 'the kōwhai trees'
+10-30 04:55:42.953  model_client | recovered on fallback server http://127.0.0.1:11433
+10-30 04:55:43.023  node.consolidation | [consolidation] processed=3 wisdom=True patterns=3
+-- llm_latency rows completing in [10-30 04:51:00, 10-30 04:55:46] with s>=15 or ok=0 (START = ts-s)
+   end 10-30 04:52:32  start 10-30 04:52:30  s=2.04    ok=0 node=11441 model=command-r7b by=core.node_base:85(CuriosityNode)
+   end 10-30 04:52:33  start 10-30 04:52:31  s=2.03    ok=0 node=11441 model=command-r7b by=core.follow_line:404
+   end 10-30 04:54:26  start 10-30 04:54:23  s=2.25    ok=0 node=11441 model=command-r7b by=nodes.subconscious_node:1351(SubconsciousNode)
+   end 10-30 04:54:32  start 10-30 04:54:30  s=2.04    ok=0 node=11441 model=command-r7b by=core.orchestrator:2986
+   end 10-30 04:54:45  start 10-30 04:54:43  s=2.61    ok=0 node=11441 model=command-r7b by=core.orchestrator:2986
+   end 10-30 04:55:31  start 10-30 04:55:03  s=27.72   ok=1 node=11433 model=qwen3.5:9b by=core.self_implication:89
+   end 10-30 04:55:31  start 10-30 04:55:03  s=27.73   ok=1 node=11433 model=qwen3.5:9b by=core.commitment_ledger:487
+   end 10-30 04:55:33  start 10-30 04:55:31  s=2.1     ok=0 node=11441 model=command-r7b by=core.node_base:85(ConsolidationNode)
+   (total llm_latency completions in that span: 60; in the gap [10-30 04:53:15,10-30 04:55:30): 27)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 04:53:05,10-30 04:55:46] = 685 events; 4 longest silent gaps:
+   24.4 s silent: 10-30 04:55:06.546 -> 10-30 04:55:30.900
+   7.0 s silent: 10-30 04:53:42.615 -> 10-30 04:53:49.592
+   5.9 s silent: 10-30 04:54:37.299 -> 10-30 04:54:43.200
+   5.9 s silent: 10-30 04:53:31.799 -> 10-30 04:53:37.700
+   events per source in the window (top): sound_strings_shadow.jsonl=108, life_events.jsonl=46, literal_will_shadow.jsonl=42, llm_calls.jsonl=37, llm_latency.jsonl=34, thought_station_log.jsonl=33, opponent_process_shadow.jsonl=28, spring_ledger_shadow.jsonl=28
+====================================================================================================
+tier3: prev tick #600 at 10-30 14:41:58 ; next tick #601 at 10-30 14:49:05 ; interval 426.7 s (late 306.7 s vs 120 s)
+stability: prev tick #598 at 10-30 14:42:01 ; next tick #599 at 10-30 14:49:05 ; interval 424.4 s (late 304.4 s vs 120 s)
+STALL wake 2026-10-30 14:49:05
+-- nascence.log lines prev tick .. wake+15s (15 lines); GAP>=20s flagged
+10-30 14:41:58.871  competence | [tier3] tick #600 queue_size=0 idle=72218s skip=queue_empty
+10-30 14:42:01.160  competence | [stability] tick #598 queue_size=0 idle=72220s skip=queue_empty
+10-30 14:43:28.178   <<GAP 87s>> climate | [climate] dominant=autonomy_pressure(0.62) dissonance=0.925 strain=0.02 completion=0.67 integration=0.59
+10-30 14:43:56.013   <<GAP 28s>> activity | [activity] NEW general-event: authored 'The Golden Seed: Wealth, Influence, and Napoleon's'
+10-30 14:43:56.019  monologue | [monologue] ACT write -> authored 'The Golden Seed: Wealth, Influence, and Napoleon's' (1521 words)
+10-30 14:43:57.608  monologue | [monologue] train continues (thought, step 1, hard-max 40)
+10-30 14:44:24.645   <<GAP 27s>> monologue | [monologue] unresolved thought -> shadow event (money and morals)
+10-30 14:44:24.997  frontier | [frontier] world-question born (asked): How does financial gain fundamentally alter a person's capacity for empathy?
+10-30 14:44:25.145  monologue | [monologue] he ASKED (why): How does financial gain fundamentally alter a person's capacity for em
+10-30 14:44:27.723  monologue | [monologue] (money and morals) The rhythm of the waves is a steady anchor, yet my mind keeps drifting to Ouvrard's ledger
+10-30 14:47:11.007   <<GAP 163s>> climate | [climate] IGNITION (exploratory) — dominant=autonomy_pressure (0.62), dissonance discharged
+10-30 14:49:05.598   <<GAP 115s>> competence | [tier3] tick #601 queue_size=0 idle=72645s skip=queue_empty
+10-30 14:49:05.598  competence | [stability] tick #599 queue_size=0 idle=72645s skip=queue_empty
+10-30 14:49:08.243  model_client | transport error on http://127.0.0.1:11433: TimeoutError() — failing over
+10-30 14:49:08.244  model_client | transport error on http://127.0.0.1:11433: TimeoutError() — failing over
+-- llm_latency rows completing in [10-30 14:39:48, 10-30 14:49:20] with s>=15 or ok=0 (START = ts-s)
+   end 10-30 14:40:22  start 10-30 14:39:03  s=78.54   ok=1 node=11441 model=command-r7b by=nodes.inner_monologue_node:6168(InnerMonologueNode)
+   end 10-30 14:49:08  start 10-30 14:47:07  s=120.5   ok=0 node=11433 model=qwen3.5:9b by=core.self_implication:89
+   end 10-30 14:49:08  start 10-30 14:47:07  s=120.51  ok=0 node=11433 model=qwen3.5:9b by=core.commitment_ledger:487
+   (total llm_latency completions in that span: 6; in the gap [10-30 14:42:03,10-30 14:49:04): 0)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 14:41:53,10-30 14:49:20] = 132 events; 4 longest silent gaps:
+   154.3 s silent: 10-30 14:44:33.427 -> 10-30 14:47:07.700
+   114.6 s silent: 10-30 14:47:11.008 -> 10-30 14:49:05.598
+   24.0 s silent: 10-30 14:43:57.615 -> 10-30 14:44:21.599
+   21.5 s silent: 10-30 14:42:19.299 -> 10-30 14:42:40.799
+   events per source in the window (top): sound_strings_shadow.jsonl=28, llm_calls.jsonl=9, coupling_rides.jsonl=8, pursuits_series.jsonl=5, wandering_log.jsonl=5, logs\follow_line_shadow.jsonl=4, geometry_tuples.jsonl=4, climate_reknee_shadow.jsonl=3
+====================================================================================================
+tier3: prev tick #601 at 10-30 14:49:05 ; next tick #602 at 10-30 14:52:51 ; interval 225.5 s (late 105.5 s vs 120 s)
+stability: prev tick #599 at 10-30 14:49:05 ; next tick #600 at 10-30 14:52:51 ; interval 225.5 s (late 105.5 s vs 120 s)
+STALL wake 2026-10-30 14:52:51
+-- nascence.log lines prev tick .. wake+15s (17 lines); GAP>=20s flagged
+10-30 14:49:05.598  competence | [tier3] tick #601 queue_size=0 idle=72645s skip=queue_empty
+10-30 14:49:05.598  competence | [stability] tick #599 queue_size=0 idle=72645s skip=queue_empty
+10-30 14:49:08.243  model_client | transport error on http://127.0.0.1:11433: TimeoutError() — failing over
+10-30 14:49:08.244  model_client | transport error on http://127.0.0.1:11433: TimeoutError() — failing over
+10-30 14:50:36.846   <<GAP 89s>> monologue | [monologue] sound percept: Close along the beach the stream keeps on, the same hurrying
+10-30 14:50:38.657  node.curiosity | [curiosity] high-urgency question triggered internal cycle
+10-30 14:51:00.444   <<GAP 22s>> frontier | [frontier] world-question born (curiosity): What psychological mechanisms underlie Yan's transition from academia to farm li
+10-30 14:51:00.476  node.curiosity | [curiosity] 2 questions, 2 directions, urgency=0.70
+10-30 14:51:00.529  orchestrator | [ignition] dominant=autonomy_pressure -> autonomous thought: How does Ouvrard's financial success influence Na's moral agency in the context
+10-30 14:51:00.529  orchestrator | [CYCLE c5d19663] internal: How does Ouvrard's financial success influence Na's moral agency in the context
+10-30 14:52:51.065   <<GAP 111s>> competence | [tier3] tick #602 queue_size=0 idle=72870s skip=queue_empty
+10-30 14:52:51.066  competence | [stability] tick #600 queue_size=0 idle=72870s skip=queue_empty
+10-30 14:52:51.509  model_client | transport error on http://127.0.0.1:11433: TimeoutError() — failing over
+10-30 14:52:51.526  monologue | [monologue] train continues (thought, step 2, hard-max 40) +state
+10-30 14:52:52.480  monologue | [monologue] unresolved thought -> shadow event (money versus character)
+10-30 14:52:52.647  monologue | [monologue] (money versus character) The water laps at my feet, cold and steady. I feel the pull to Ouvrard's ledger again, won
+10-30 14:52:54.822  evidence | [evidence] 'What does an unfinished song signify for the bird ' -> 12 candidates, 0 bear (empty, 136s)
+-- llm_latency rows completing in [10-30 14:46:55, 10-30 14:53:06] with s>=15 or ok=0 (START = ts-s)
+   end 10-30 14:49:08  start 10-30 14:47:07  s=120.5   ok=0 node=11433 model=qwen3.5:9b by=core.self_implication:89
+   end 10-30 14:49:08  start 10-30 14:47:07  s=120.51  ok=0 node=11433 model=qwen3.5:9b by=core.commitment_ledger:487
+   end 10-30 14:50:38  start 10-30 14:49:05  s=93.06   ok=1 node=11441 model=command-r7b by=core.node_base:85(CuriosityNode)
+   end 10-30 14:52:51  start 10-30 14:50:43  s=128.13  ok=0 node=11433 model=qwen3.5:9b by=core.condensed_thought:157
+   (total llm_latency completions in that span: 11; in the gap [10-30 14:49:10,10-30 14:52:50): 2)
+-- PROCESS-WIDE SILENCE: union of nascence.log lines + timestamped rows from 224 jsonl files in [10-30 14:49:00,10-30 14:53:06] = 203 events; 4 longest silent gaps:
+   110.2 s silent: 10-30 14:51:00.599 -> 10-30 14:52:50.831
+   84.2 s silent: 10-30 14:49:08.400 -> 10-30 14:50:32.568
+   6.2 s silent: 10-30 14:50:50.799 -> 10-30 14:50:57.000
+   4.3 s silent: 10-30 14:50:43.400 -> 10-30 14:50:47.700
+   events per source in the window (top): llm_calls.jsonl=29, sound_strings_shadow.jsonl=21, thought_station_log.jsonl=12, llm_latency.jsonl=11, judge_panel_log.jsonl=8, coupling_rides.jsonl=8, co_recall_ledger.jsonl=6, wandering_log.jsonl=5

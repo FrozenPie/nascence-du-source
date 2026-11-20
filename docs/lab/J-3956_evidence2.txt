@@ -1,0 +1,1 @@
+docs/lab/J-3956_results_pass1.jsonl (101 rows, 66 with both verdicts), computed by an inline script over that file; resume attempt scripts/J-3956_run_resume.py got 1 row in 35 min (hubs saturated, 30-98s per trivial call), see docs/lab/J-3956_run2.out. Live data/ top-level files changed only through lab logs listed in run.out TOPLEVEL_CHANGED (judge_panel/llm logs, expected).

@@ -1,0 +1,12 @@
+- gemma4:e4b: 160 units, 160 ok, 0 infra-excluded, 0 parse-fail; unresolved 127, intention 78, '?' 56; mean latency 2.9s
+  opened 129/160 = 0.806 (Wilson [0.738, 0.860])
+- qwen3.5:9b: 160 units, 160 ok, 0 infra-excluded, 0 parse-fail; unresolved 69, intention 1, '?' 29; mean latency 4.1s
+  opened 70/160 = 0.438 (Wilson [0.363, 0.515])
+
+Paired prompts with both models parsed: 160/160
+gemma 0.806  qwen 0.438  real logged next step 0.537 (86/160)
+gemma - qwen: +0.369  95% CI [+0.275, +0.462] (prompt-cluster bootstrap B=20000)
+gemma - real: +0.269  95% CI [+0.175, +0.363] (prompt-cluster bootstrap B=20000)
+qwen - real: -0.100  95% CI [-0.206, +0.012] (prompt-cluster bootstrap B=20000)
+discordant prompts: gemma-open/qwen-closed 69, gemma-closed/qwen-open 10
+J-0724 original swing on CLOSING contexts: +0.65 (reference, F-1116). Survives here if the CI above excludes 0 and the point is near it.

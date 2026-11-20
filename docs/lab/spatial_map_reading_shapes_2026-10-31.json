@@ -1,0 +1,7612 @@
+{
+ "job": "J-2647",
+ "ts": "2026-10-31 10:55:28",
+ "model": "qwen3.5:9b",
+ "src": "spatial_map_reconstruction_2026-10-31.json",
+ "seeds": [
+  2648,
+  2649,
+  2650
+ ],
+ "places": {
+  "study": {
+   "named": [
+    "the bed",
+    "the desk",
+    "the fire",
+    "the garden door",
+    "the shelf",
+    "the window"
+   ],
+   "ideal": {
+    "raw_rmse": 0.28,
+    "pair_acc": 1.0
+   },
+   "f3382_one_shot_t0": {
+    "n": 6,
+    "of": 6,
+    "raw_rmse": 2.2,
+    "procrustes_rmse": 1.97,
+    "pair_acc": 0.679,
+    "pairs": 28,
+    "per_object_err": {
+     "the fire": 4.74,
+     "the window": 0.96,
+     "the desk": 1.17,
+     "the garden door": 0.92,
+     "the bed": 0.94,
+     "the shelf": 1.58
+    }
+   },
+   "chance": {
+    "raw_rmse_mean": 2.73,
+    "procrustes_rmse_mean": 1.87,
+    "procrustes_rmse_p05": 1.43,
+    "pair_acc_mean": 0.503,
+    "centroid_rmse": 2.11
+   },
+   "regex_through_aggregator": {
+    "n": 6,
+    "of": 6,
+    "raw_rmse": 0.28,
+    "procrustes_rmse": 0.22,
+    "pair_acc": 1.0,
+    "pairs": 28,
+    "per_object_err": {
+     "the fire": 0.11,
+     "the window": 0.2,
+     "the desk": 0.13,
+     "the garden door": 0.49,
+     "the bed": 0.4,
+     "the shelf": 0.08
+    }
+   },
+   "shapes": {
+    "A": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 2.32,
+      "raw_rmse_each": [
+       2.09,
+       2.66,
+       2.2
+      ],
+      "procrustes_rmse_mean": 1.99,
+      "pair_acc_mean": 0.595,
+      "pair_acc_each": [
+       0.571,
+       0.536,
+       0.679
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.0,
+         3.4
+        ],
+        "the fire": [
+         2.5,
+         3.5
+        ],
+        "the garden door": [
+         3.5,
+         3.5
+        ],
+        "the shelf": [
+         2.8,
+         2.5
+        ],
+        "the window": [
+         1.0,
+         4.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.0, 3.4],\n    \"the fire\": [2.5, 3.5],\n    \"the garden door\": [3.5, 3.5],\n    \"the shelf\": [2.8, 2.5],\n    \"the window\": [1.0, 4.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.09,
+        "procrustes_rmse": 1.93,
+        "pair_acc": 0.571,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 2.92,
+         "the window": 1.19,
+         "the desk": 1.2,
+         "the garden door": 3.5,
+         "the bed": 0.94,
+         "the shelf": 1.3
+        }
+       },
+       "secs": 5.0,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.5,
+         3.4
+        ],
+        "the fire": [
+         4.5,
+         3.4
+        ],
+        "the garden door": [
+         3.5,
+         4.5
+        ],
+        "the shelf": [
+         2.0,
+         2.5
+        ],
+        "the window": [
+         1.5,
+         5.0
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.5, 3.4],\n    \"the fire\": [4.5, 3.4],\n    \"the garden door\": [3.5, 4.5],\n    \"the shelf\": [2.0, 2.5],\n    \"the window\": [1.5, 5.0]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.66,
+        "procrustes_rmse": 2.06,
+        "pair_acc": 0.536,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.71,
+         "the window": 0.52,
+         "the desk": 1.26,
+         "the garden door": 3.64,
+         "the bed": 0.94,
+         "the shelf": 2.06
+        }
+       },
+       "secs": 4.5,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.5,
+         3.5
+        ],
+        "the fire": [
+         4.5,
+         3.5
+        ],
+        "the garden door": [
+         0.9,
+         3.3
+        ],
+        "the shelf": [
+         2.5,
+         2.5
+        ],
+        "the window": [
+         1.3,
+         4.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.5, 3.5],\n    \"the fire\": [4.5, 3.5],\n    \"the garden door\": [0.9, 3.3],\n    \"the shelf\": [2.5, 2.5],\n    \"the window\": [1.3, 4.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.2,
+        "procrustes_rmse": 1.97,
+        "pair_acc": 0.679,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.74,
+         "the window": 0.96,
+         "the desk": 1.17,
+         "the garden door": 0.92,
+         "the bed": 0.94,
+         "the shelf": 1.58
+        }
+       },
+       "secs": 4.7,
+       "calls": 1
+      }
+     ]
+    },
+    "A2": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 2.31,
+      "raw_rmse_each": [
+       1.78,
+       2.47,
+       2.68
+      ],
+      "procrustes_rmse_mean": 1.87,
+      "pair_acc_mean": 0.56,
+      "pair_acc_each": [
+       0.679,
+       0.536,
+       0.464
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.4,
+         3.5
+        ],
+        "the fire": [
+         0.5,
+         3.5
+        ],
+        "the garden door": [
+         3.5,
+         3.5
+        ],
+        "the shelf": [
+         2.9,
+         2.5
+        ],
+        "the window": [
+         1.4,
+         4.6
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.4, 3.5],\n    \"the fire\": [0.5, 3.5],\n    \"the garden door\": [3.5, 3.5],\n    \"the shelf\": [2.9, 2.5],\n    \"the window\": [1.4, 4.6]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.78,
+        "procrustes_rmse": 1.6,
+        "pair_acc": 0.679,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 1.58,
+         "the window": 0.81,
+         "the desk": 1.14,
+         "the garden door": 3.5,
+         "the bed": 0.94,
+         "the shelf": 1.21
+        }
+       },
+       "secs": 7.4,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.5,
+         3.0
+        ],
+        "the fire": [
+         4.0,
+         3.5
+        ],
+        "the garden door": [
+         2.0,
+         6.0
+        ],
+        "the shelf": [
+         2.0,
+         2.5
+        ],
+        "the window": [
+         1.5,
+         5.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.5, 3.0],\n    \"the fire\": [4.0, 3.5],\n    \"the garden door\": [2.0, 6.0],\n    \"the shelf\": [2.0, 2.5],\n    \"the window\": [1.5, 5.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.47,
+        "procrustes_rmse": 1.93,
+        "pair_acc": 0.536,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.27,
+         "the window": 0.61,
+         "the desk": 1.65,
+         "the garden door": 3.2,
+         "the bed": 0.94,
+         "the shelf": 2.06
+        }
+       },
+       "secs": 6.0,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the bed": [
+         1.8,
+         1.0
+        ],
+        "the desk": [
+         2.5,
+         3.5
+        ],
+        "the fire": [
+         4.5,
+         3.5
+        ],
+        "the garden door": [
+         3.5,
+         3.5
+        ],
+        "the shelf": [
+         2.5,
+         4.1
+        ],
+        "the window": [
+         0.5,
+         4.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the bed\": [1.8, 1.0],\n    \"the desk\": [2.5, 3.5],\n    \"the fire\": [4.5, 3.5],\n    \"the garden door\": [3.5, 3.5],\n    \"the shelf\": [2.5, 4.1],\n    \"the window\": [0.5, 4.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.68,
+        "procrustes_rmse": 2.07,
+        "pair_acc": 0.464,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.74,
+         "the window": 1.63,
+         "the desk": 1.17,
+         "the garden door": 3.5,
+         "the bed": 0.94,
+         "the shelf": 1.86
+        }
+       },
+       "secs": 4.5,
+       "calls": 1
+      }
+     ]
+    },
+    "B": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 0.27,
+      "raw_rmse_each": [
+       0.28,
+       0.26,
+       0.28
+      ],
+      "procrustes_rmse_mean": 0.21,
+      "pair_acc_mean": 1.0,
+      "pair_acc_each": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "shuffled_raw_rmse_mean": 2.83
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fire": [
+         -0.05,
+         2.1
+        ],
+        "the window": [
+         1.97,
+         5.35
+        ],
+        "the garden door": [
+         0.42,
+         3.75
+        ],
+        "the desk": [
+         2.07,
+         4.53
+        ],
+        "the shelf": [
+         3.93,
+         3.03
+        ],
+        "the bed": [
+         2.21,
+         0.59
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         0,
+         "the garden door",
+         "ego",
+         "to your left",
+         "low"
+        ],
+        [
+         0,
+         "the desk",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         1,
+         "the fire",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         1,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         2,
+         "the desk",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         2,
+         "the shelf",
+         "ego",
+         "to your left",
+         "right beside you"
+        ],
+        [
+         3,
+         "the fire",
+         "ego",
+         "ahead",
+         "at the far side"
+        ],
+        [
+         3,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         3,
+         "the desk",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         3,
+         "the garden door",
+         "ego",
+         "ahead",
+         "low"
+        ],
+        [
+         4,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         4,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         4,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         4,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         5,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the desk",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         5,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         5,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         5,
+         "the shelf",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         6,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         6,
+         "the desk",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         6,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         6,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "ego",
+         "ahead",
+         "right beside you"
+        ],
+        [
+         7,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "ego",
+         "behind you",
+         "across the room"
+        ],
+        [
+         7,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         8,
+         "the fire",
+         "ego",
+         "to your left",
+         "across the room"
+        ],
+        [
+         8,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         8,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "ego",
+         "behind you",
+         "at the far side"
+        ],
+        [
+         9,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         9,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         10,
+         "the fire",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         11,
+         "the fire",
+         "ego",
+         "to your right",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         11,
+         "the garden door",
+         "ego",
+         "to your right",
+         "low"
+        ],
+        [
+         11,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.83,
+        "procrustes_rmse": 1.94,
+        "pair_acc": 0.571,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.12,
+         "the window": 2.3,
+         "the desk": 2.1,
+         "the garden door": 1.6,
+         "the bed": 4.19,
+         "the shelf": 1.14
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"ahead\",\n      \"distance\": \"low\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"ahead\",\n      \"distance\": \"unknown",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the bed\",\n      \"direction\": \"unknown\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"ahead\",\n      \"distance\": \"nea",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"to your right\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"behind you\",\n"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 0.28,
+        "procrustes_rmse": 0.21,
+        "pair_acc": 1.0,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.11,
+         "the window": 0.2,
+         "the desk": 0.08,
+         "the garden door": 0.49,
+         "the bed": 0.4,
+         "the shelf": 0.08
+        }
+       },
+       "secs": 98.1,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fire": [
+         -0.05,
+         2.1
+        ],
+        "the window": [
+         1.97,
+         5.35
+        ],
+        "the desk": [
+         2.07,
+         4.53
+        ],
+        "the garden door": [
+         0.36,
+         3.69
+        ],
+        "the shelf": [
+         3.93,
+         3.03
+        ],
+        "the bed": [
+         2.21,
+         0.59
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         0,
+         "the garden door",
+         "ego",
+         "to your left, low",
+         "unknown"
+        ],
+        [
+         0,
+         "the desk",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         1,
+         "the fire",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         1,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         2,
+         "the desk",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         2,
+         "the shelf",
+         "ego",
+         "to your left",
+         "right beside you"
+        ],
+        [
+         2,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the desk",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         3,
+         "the fire",
+         "ego",
+         "ahead",
+         "at the far side"
+        ],
+        [
+         3,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         3,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         4,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         4,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         4,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         4,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         5,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         5,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         5,
+         "the garden door",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         5,
+         "the shelf",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         6,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         6,
+         "the desk",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         6,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         6,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "ego",
+         "ahead",
+         "right beside you"
+        ],
+        [
+         7,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "ego",
+         "behind you",
+         "across the room"
+        ],
+        [
+         7,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         8,
+         "the fire",
+         "ego",
+         "to your left",
+         "across the room"
+        ],
+        [
+         8,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         8,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "ego",
+         "behind you",
+         "at the far side"
+        ],
+        [
+         9,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         9,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         10,
+         "the fire",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         10,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the fire",
+         "ego",
+         "to your right",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         11,
+         "the garden door",
+         "ego",
+         "to your right",
+         "low"
+        ],
+        [
+         11,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.82,
+        "procrustes_rmse": 1.94,
+        "pair_acc": 0.536,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.12,
+         "the window": 2.3,
+         "the desk": 2.14,
+         "the garden door": 1.48,
+         "the bed": 4.19,
+         "the shelf": 1.14
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"ahead, low\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"ahead\",\n      \"distance\":",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the bed\",\n      \"direction\": \"unknown\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"ahead\",\n      \"distance\": \"nea",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"to your right\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"behind you\",\n"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 0.26,
+        "procrustes_rmse": 0.2,
+        "pair_acc": 1.0,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.11,
+         "the window": 0.2,
+         "the desk": 0.08,
+         "the garden door": 0.41,
+         "the bed": 0.4,
+         "the shelf": 0.08
+        }
+       },
+       "secs": 98.2,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fire": [
+         -0.05,
+         2.1
+        ],
+        "the window": [
+         1.97,
+         5.35
+        ],
+        "the garden door": [
+         0.42,
+         3.75
+        ],
+        "the desk": [
+         2.07,
+         4.53
+        ],
+        "the shelf": [
+         3.93,
+         3.03
+        ],
+        "the bed": [
+         2.21,
+         0.59
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         0,
+         "the garden door",
+         "ego",
+         "to your left",
+         "low"
+        ],
+        [
+         0,
+         "the desk",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         1,
+         "the fire",
+         "ego",
+         "ahead",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         1,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         2,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         2,
+         "the shelf",
+         "ego",
+         "to your left",
+         "right beside you"
+        ],
+        [
+         2,
+         "the desk",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the fire",
+         "ego",
+         "ahead",
+         "at the far side"
+        ],
+        [
+         3,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         3,
+         "the garden door",
+         "ego",
+         "ahead",
+         "low"
+        ],
+        [
+         3,
+         "the desk",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         4,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         4,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         4,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         4,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         5,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         5,
+         "the fire",
+         "ego",
+         "to your right",
+         "across the room"
+        ],
+        [
+         5,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         5,
+         "the shelf",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         6,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the desk",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         6,
+         "the fire",
+         "ego",
+         "ahead",
+         "across the room"
+        ],
+        [
+         6,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         6,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "ego",
+         "ahead",
+         "right beside you"
+        ],
+        [
+         7,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "ego",
+         "behind you",
+         "across the room"
+        ],
+        [
+         7,
+         "the garden door",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         8,
+         "the fire",
+         "ego",
+         "to your left",
+         "across the room"
+        ],
+        [
+         8,
+         "the garden door",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         8,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "ego",
+         "behind you",
+         "at the far side"
+        ],
+        [
+         9,
+         "the desk",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "ego",
+         "behind you",
+         "low"
+        ],
+        [
+         9,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         9,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         9,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the fire",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the window",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         10,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the fire",
+         "ego",
+         "to your right",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "ego",
+         "behind you",
+         "right beside you"
+        ],
+        [
+         11,
+         "the garden door",
+         "ego",
+         "to your right",
+         "low"
+        ],
+        [
+         11,
+         "the window",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the bed",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the shelf",
+         "ego",
+         "unknown",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.83,
+        "procrustes_rmse": 1.94,
+        "pair_acc": 0.571,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.12,
+         "the window": 2.3,
+         "the desk": 2.14,
+         "the garden door": 1.6,
+         "the bed": 4.19,
+         "the shelf": 1.14
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"ahead\",\n      \"distance\": \"low\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"ahead\",\n      \"distance\": \"unknown",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the bed\",\n      \"direction\": \"unknown\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"behind you\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"ahead\",\n      \"distance\": \"nea",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"to your right\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"behind you\",\n      \"distance\": \"low\"\n    },\n    {\n      \"object\": \"the rain\",\n      \"direction\": \"behind you\",\n    "
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 0.28,
+        "procrustes_rmse": 0.21,
+        "pair_acc": 1.0,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.11,
+         "the window": 0.2,
+         "the desk": 0.08,
+         "the garden door": 0.49,
+         "the bed": 0.4,
+         "the shelf": 0.08
+        }
+       },
+       "secs": 104.4,
+       "calls": 12
+      }
+     ]
+    },
+    "E": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 1.85,
+      "raw_rmse_each": [
+       2.3,
+       1.73,
+       1.52
+      ],
+      "procrustes_rmse_mean": 1.31,
+      "pair_acc_mean": 0.786,
+      "pair_acc_each": [
+       0.643,
+       0.857,
+       0.857
+      ],
+      "shuffled_raw_rmse_mean": 2.93
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fire": [
+         0.66,
+         1.74
+        ],
+        "the window": [
+         0.42,
+         2.6
+        ],
+        "the garden door": [
+         1.24,
+         0.34
+        ],
+        "the desk": [
+         0.19,
+         3.14
+        ],
+        "the shelf": [
+         2.25,
+         3.33
+        ],
+        "the bed": [
+         1.8,
+         1.59
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "allo",
+         "north-east",
+         "far off"
+        ],
+        [
+         0,
+         "the garden door",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         0,
+         "the desk",
+         "allo",
+         "north-east",
+         "near"
+        ],
+        [
+         1,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         1,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         2,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the shelf",
+         "allo",
+         "north-west",
+         "right beside you"
+        ],
+        [
+         2,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the fire",
+         "allo",
+         "north-west",
+         "at the far side"
+        ],
+        [
+         3,
+         "the desk",
+         "allo",
+         "north-east",
+         "near"
+        ],
+        [
+         3,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the window",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         4,
+         "the fire",
+         "allo",
+         "north-west",
+         "across the room"
+        ],
+        [
+         4,
+         "the desk",
+         "allo",
+         "north-west",
+         "right beside you"
+        ],
+        [
+         4,
+         "the garden door",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         4,
+         "the window",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         5,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         5,
+         "the desk",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the shelf",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         5,
+         "the bed",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         6,
+         "the desk",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         6,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         7,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden door",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "allo",
+         "north",
+         "right beside you"
+        ],
+        [
+         8,
+         "the fire",
+         "allo",
+         "north-west",
+         "across the room"
+        ],
+        [
+         8,
+         "the desk",
+         "allo",
+         "south-east",
+         "right beside you"
+        ],
+        [
+         8,
+         "the garden door",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "allo",
+         "south",
+         "at the far side"
+        ],
+        [
+         9,
+         "the desk",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "allo",
+         "south",
+         "at the far side"
+        ],
+        [
+         9,
+         "the window",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         10,
+         "the fire",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         10,
+         "the window",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         11,
+         "the fire",
+         "allo",
+         "east",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "allo",
+         "north-west",
+         "right beside you"
+        ],
+        [
+         11,
+         "the garden door",
+         "allo",
+         "south-east",
+         "low"
+        ],
+        [
+         11,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.94,
+        "procrustes_rmse": 1.73,
+        "pair_acc": 0.536,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 2.43,
+         "the window": 2.38,
+         "the desk": 0.83,
+         "the garden door": 3.5,
+         "the bed": 4.52,
+         "the shelf": 2.66
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-east\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-west\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"east\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-west\",\n      \"di"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.3,
+        "procrustes_rmse": 1.3,
+        "pair_acc": 0.643,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.71,
+         "the window": 3.0,
+         "the desk": 2.4,
+         "the garden door": 3.39,
+         "the bed": 1.35,
+         "the shelf": 1.78
+        }
+       },
+       "secs": 98.2,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fire": [
+         0.66,
+         1.74
+        ],
+        "the window": [
+         1.23,
+         4.74
+        ],
+        "the desk": [
+         1.2,
+         4.2
+        ],
+        "the garden door": [
+         1.17,
+         0.33
+        ],
+        "the shelf": [
+         2.18,
+         3.24
+        ],
+        "the bed": [
+         2.21,
+         1.41
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         0,
+         "the desk",
+         "allo",
+         "north-east",
+         "near"
+        ],
+        [
+         0,
+         "the garden door",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         1,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         1,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         2,
+         "the desk",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the shelf",
+         "allo",
+         "west",
+         "right beside you"
+        ],
+        [
+         2,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the bed",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the fire",
+         "allo",
+         "north-west",
+         "at the far side"
+        ],
+        [
+         3,
+         "the desk",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         3,
+         "the garden door",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         3,
+         "the window",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         4,
+         "the fire",
+         "allo",
+         "south-west",
+         "across the room"
+        ],
+        [
+         4,
+         "the desk",
+         "allo",
+         "south-west",
+         "right beside you"
+        ],
+        [
+         4,
+         "the garden door",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         4,
+         "the window",
+         "allo",
+         "north",
+         "unknown"
+        ],
+        [
+         5,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         5,
+         "the desk",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the shelf",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the bed",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         6,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         6,
+         "the desk",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         6,
+         "the garden door",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         7,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "allo",
+         "north-east",
+         "right beside you"
+        ],
+        [
+         7,
+         "the garden door",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         7,
+         "the shelf",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the fire",
+         "allo",
+         "north-west",
+         "across the room"
+        ],
+        [
+         8,
+         "the desk",
+         "allo",
+         "north-east",
+         "right beside you"
+        ],
+        [
+         8,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "allo",
+         "south",
+         "at the far side"
+        ],
+        [
+         9,
+         "the desk",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "allo",
+         "south-west",
+         "low"
+        ],
+        [
+         9,
+         "the window",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         10,
+         "the fire",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         10,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         11,
+         "the fire",
+         "allo",
+         "south-east",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "allo",
+         "south-west",
+         "right beside you"
+        ],
+        [
+         11,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden door",
+         "allo",
+         "east",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.83,
+        "procrustes_rmse": 1.66,
+        "pair_acc": 0.571,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 2.68,
+         "the window": 1.53,
+         "the desk": 1.67,
+         "the garden door": 3.17,
+         "the bed": 4.23,
+         "the shelf": 2.78
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-east\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-west\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"east\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"south-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-west\",\n      \"di"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.73,
+        "procrustes_rmse": 1.31,
+        "pair_acc": 0.857,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.71,
+         "the window": 0.87,
+         "the desk": 0.98,
+         "the garden door": 3.38,
+         "the bed": 0.99,
+         "the shelf": 1.84
+        }
+       },
+       "secs": 94.8,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fire": [
+         0.45,
+         1.75
+        ],
+        "the window": [
+         1.61,
+         4.54
+        ],
+        "the garden door": [
+         1.56,
+         1.4
+        ],
+        "the desk": [
+         1.68,
+         4.05
+        ],
+        "the shelf": [
+         1.88,
+         2.5
+        ],
+        "the bed": [
+         2.21,
+         1.41
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         0,
+         "the window",
+         "allo",
+         "north-east",
+         "near"
+        ],
+        [
+         0,
+         "the garden door",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         0,
+         "the desk",
+         "allo",
+         "north-east",
+         "near"
+        ],
+        [
+         1,
+         "the fire",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         1,
+         "the window",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         1,
+         "the desk",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         1,
+         "the garden door",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         2,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the shelf",
+         "allo",
+         "west",
+         "right beside you"
+        ],
+        [
+         2,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the fire",
+         "allo",
+         "south-west",
+         "at the far side"
+        ],
+        [
+         3,
+         "the desk",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         3,
+         "the garden door",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the window",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         3,
+         "the bed",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the shelf",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the fire",
+         "allo",
+         "south-west",
+         "across the room"
+        ],
+        [
+         4,
+         "the desk",
+         "allo",
+         "south-west",
+         "right beside you"
+        ],
+        [
+         4,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the fire",
+         "allo",
+         "east",
+         "across the room"
+        ],
+        [
+         5,
+         "the garden door",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the desk",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         5,
+         "the shelf",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         5,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         6,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         6,
+         "the desk",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         6,
+         "the garden door",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         6,
+         "the window",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         7,
+         "the fire",
+         "allo",
+         "south",
+         "across the room"
+        ],
+        [
+         7,
+         "the desk",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the window",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the bed",
+         "allo",
+         "north-east",
+         "right beside you"
+        ],
+        [
+         7,
+         "the garden door",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the shelf",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the fire",
+         "allo",
+         "north-west",
+         "across the room"
+        ],
+        [
+         8,
+         "the desk",
+         "allo",
+         "south-east",
+         "right beside you"
+        ],
+        [
+         8,
+         "the garden door",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the window",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the fire",
+         "allo",
+         "south",
+         "at the far side"
+        ],
+        [
+         9,
+         "the desk",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the garden door",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the window",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         10,
+         "the fire",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         10,
+         "the desk",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden door",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         10,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         11,
+         "the fire",
+         "allo",
+         "south-east",
+         "at the far side"
+        ],
+        [
+         11,
+         "the desk",
+         "allo",
+         "north-west",
+         "right beside you"
+        ],
+        [
+         11,
+         "the garden door",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         11,
+         "the window",
+         "allo",
+         "north-west",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 3.01,
+        "procrustes_rmse": 1.84,
+        "pair_acc": 0.429,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 2.68,
+         "the window": 2.42,
+         "the desk": 2.62,
+         "the garden door": 2.5,
+         "the bed": 4.23,
+         "the shelf": 3.25
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-east\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"south-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the window\",\n      \"direction\": \"north-east\",\n      \"dista",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fire\",\n      \"direction\": \"east\",\n      \"distance\": \"across the room\"\n    },\n    {\n      \"object\": \"the desk\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-west\",\n      \"di"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.52,
+        "procrustes_rmse": 1.33,
+        "pair_acc": 0.857,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 0.51,
+         "the window": 0.72,
+         "the desk": 0.69,
+         "the garden door": 2.62,
+         "the bed": 0.99,
+         "the shelf": 2.18
+        }
+       },
+       "secs": 104.2,
+       "calls": 12
+      }
+     ]
+    },
+    "C": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 1.36,
+      "raw_rmse_each": [
+       1.42,
+       1.46,
+       1.2
+      ],
+      "procrustes_rmse_mean": 1.12,
+      "pair_acc_mean": 0.774,
+      "pair_acc_each": [
+       0.821,
+       0.714,
+       0.786
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the desk": [
+         1.4,
+         4.4
+        ],
+        "the fire": [
+         1.3,
+         2.6
+        ],
+        "the garden door": [
+         0.8,
+         4.5
+        ],
+        "the window": [
+         1.8,
+         4.5
+        ],
+        "the bed": [
+         2.0,
+         3.0
+        ],
+        "the shelf": [
+         3.3,
+         2.5
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the desk\": [1.4, 4.4],\n    \"the fire\": [1.3, 2.6],\n    \"the garden door\": [0.8, 4.5],\n    \"the window\": [1.8, 4.5],\n    \"the bed\": [2.0, 3.0],\n    \"the shelf\": [3.3, 2.5]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the desk\": [1.4, 4.4],\n    \"the fire\": [1.3, 2.6],\n    \"the garden door\": [0.8, 4.5],\n    \"the window\": [1.8, 4.5],\n    \"the bed\": [2.0, 3.0],\n    \"the shelf\": [3.3, 2.5]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.42,
+        "procrustes_rmse": 1.23,
+        "pair_acc": 0.821,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 1.43,
+         "the window": 0.68,
+         "the desk": 0.73,
+         "the garden door": 1.28,
+         "the bed": 2.57,
+         "the shelf": 0.86
+        }
+       },
+       "secs": 87.8,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the desk": [
+         1.4,
+         4.3
+        ],
+        "the fire": [
+         2.0,
+         3.5
+        ],
+        "the garden door": [
+         1.4,
+         4.9
+        ],
+        "the window": [
+         1.4,
+         4.9
+        ],
+        "the shelf": [
+         3.3,
+         2.5
+        ],
+        "the bed": [
+         1.8,
+         1.0
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the desk\": [1.4, 4.3],\n    \"the fire\": [2.0, 3.5],\n    \"the garden door\": [1.4, 4.9],\n    \"the window\": [1.4, 4.9],\n    \"the shelf\": [3.3, 2.5],\n    \"the bed\": [1.8, 1.0]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the desk\": [1.4, 4.3],\n    \"the fire\": [2.0, 3.5],\n    \"the garden door\": [1.4, 4.9],\n    \"the window\": [1.4, 4.9],\n    \"the shelf\": [3.3, 2.5],\n    \"the bed\": [1.8, 1.0]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.46,
+        "procrustes_rmse": 1.33,
+        "pair_acc": 0.714,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 2.5,
+         "the window": 0.65,
+         "the desk": 0.76,
+         "the garden door": 1.98,
+         "the bed": 0.94,
+         "the shelf": 0.86
+        }
+       },
+       "secs": 81.3,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the desk": [
+         1.8,
+         3.5
+        ],
+        "the fire": [
+         1.3,
+         2.6
+        ],
+        "the garden door": [
+         0.8,
+         4.0
+        ],
+        "the window": [
+         2.3,
+         3.5
+        ],
+        "the shelf": [
+         3.3,
+         2.5
+        ],
+        "the bed": [
+         1.8,
+         1.0
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the desk\": [1.8, 3.5],\n    \"the fire\": [1.3, 2.6],\n    \"the garden door\": [0.8, 4.0],\n    \"the window\": [2.3, 3.5],\n    \"the shelf\": [3.3, 2.5],\n    \"the bed\": [1.8, 1.0]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the desk\": [1.8, 3.5],\n    \"the fire\": [1.3, 2.6],\n    \"the garden door\": [0.8, 4.0],\n    \"the window\": [2.3, 3.5],\n    \"the shelf\": [3.3, 2.5],\n    \"the bed\": [1.8, 1.0]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.2,
+        "procrustes_rmse": 0.8,
+        "pair_acc": 0.786,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 1.43,
+         "the window": 1.68,
+         "the desk": 1.14,
+         "the garden door": 0.94,
+         "the bed": 0.94,
+         "the shelf": 0.86
+        }
+       },
+       "secs": 80.1,
+       "calls": 12
+      }
+     ]
+    },
+    "D": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 2.77,
+      "raw_rmse_each": [
+       2.61,
+       2.71,
+       3.0
+      ],
+      "procrustes_rmse_mean": 1.89,
+      "pair_acc_mean": 0.417,
+      "pair_acc_each": [
+       0.5,
+       0.5,
+       0.25
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the bed": [
+         1.5,
+         1.5
+        ],
+        "the desk": [
+         2.0,
+         2.8
+        ],
+        "the fire": [
+         4.5,
+         3.8
+        ],
+        "the garden door": [
+         0.5,
+         5.0
+        ],
+        "the shelf": [
+         1.0,
+         3.0
+        ],
+        "the window": [
+         1.5,
+         4.8
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [\"Stop 1\", \"fire\", \"behind\", \"near\", 202.5],\n    [\"Stop 1\", \"cat\", \"ahead\", \"low\", 45],\n    [\"Stop 1\", \"window\", \"ahead\", \"streams\", 45],\n    [\"Stop 1\", \"desk\", \"ahead\", \"near\", 45],\n    [\"Stop 2\", \"fire\", \"ahead\", \"near\", 225],\n    [\"Stop 2\", \"cat\", \"behind\", \"low\", 225],\n    [\"Stop 2\", \"window\", \"behind\", \"streams\", 225],\n    [\"Stop 3\", \"fire\", \"right\", \"across the room\", 180],\n    [\"Stop 3\", \"cat\", \"behind\", \"low\", 135],\n    [\"Stop 3\", \"window\", \"behind\", \"rain runs\", 135],\n    [\"Stop 4\", \"fire\", \"ahead\", \"far side\", 225],\n    [\"Stop 4\", \"cat\", \"right\", \"low\", 225],\n    [",
+       "table_rows": 37,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.61,
+        "procrustes_rmse": 2.08,
+        "pair_acc": 0.5,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 4.85,
+         "the window": 0.61,
+         "the desk": 1.8,
+         "the garden door": 1.58,
+         "the bed": 1.49,
+         "the shelf": 3.0
+        }
+       },
+       "secs": 28.8,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the bed": [
+         2.0,
+         3.4
+        ],
+        "the desk": [
+         1.3,
+         3.5
+        ],
+        "the fire": [
+         3.8,
+         3.0
+        ],
+        "the garden door": [
+         3.5,
+         2.8
+        ],
+        "the shelf": [
+         2.0,
+         3.4
+        ],
+        "the window": [
+         1.2,
+         4.5
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [\"Stop 1\", \"fire\", \"behind\", \"near\", 202.5],\n    [\"Stop 1\", \"cat\", \"ahead\", \"low\", 45],\n    [\"Stop 1\", \"window\", \"ahead\", \"streams\", 45],\n    [\"Stop 1\", \"desk\", \"ahead\", \"near\", 45],\n    [\"Stop 1\", \"cat\", \"left\", \"low\", 315],\n    [\"Stop 1\", \"desk\", \"ahead\", \"near\", 45],\n    [\"Stop 2\", \"fire\", \"ahead\", \"near\", 225],\n    [\"Stop 2\", \"cat\", \"behind\", \"low\", 225],\n    [\"Stop 2\", \"window\", \"behind\", \"streams\", 225],\n    [\"Stop 2\", \"cat\", \"right\", \"low\", 315],\n    [\"Stop 2\", \"desk\", \"behind\", \"near\", 225],\n    [\"Stop 3\", \"fire\", \"right\", \"across the room\", 180],\n    [\"Stop 3\", \"cat",
+       "table_rows": 59,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 2.71,
+        "procrustes_rmse": 1.83,
+        "pair_acc": 0.5,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 3.93,
+         "the window": 1.03,
+         "the desk": 1.36,
+         "the garden door": 3.57,
+         "the bed": 2.96,
+         "the shelf": 2.04
+        }
+       },
+       "secs": 42.9,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the bed": [
+         2.0,
+         3.4
+        ],
+        "the desk": [
+         2.9,
+         4.1
+        ],
+        "the fire": [
+         3.3,
+         2.5
+        ],
+        "the garden door": [
+         3.3,
+         2.5
+        ],
+        "the shelf": [
+         2.0,
+         3.4
+        ],
+        "the window": [
+         1.8,
+         1.0
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [1, \"fire\", \"behind\", \"near\", 225],\n    [1, \"cat\", \"ahead\", \"low\", 45],\n    [1, \"window\", \"ahead\", \"streams\", 45],\n    [1, \"desk\", \"ahead\", \"near\", 45],\n    [1, \"cat\", \"left\", \"low\", 315],\n    [1, \"garden door\", \"left\", \"low\", 315],\n    [2, \"fire\", \"ahead\", \"near\", 225],\n    [2, \"cat\", \"behind\", \"low\", 45],\n    [2, \"window\", \"behind\", \"streams\", 225],\n    [2, \"desk\", \"ahead\", \"near\", 225],\n    [2, \"cat\", \"right\", \"low\", 135],\n    [2, \"garden door\", \"right\", \"low\", 135],\n    [3, \"fire\", \"right\", \"across the room\", 45],\n    [3, \"cat\", \"behind\", \"low\", 45],\n    [3, \"window\", \"b",
+       "table_rows": 62,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 3.0,
+        "procrustes_rmse": 1.77,
+        "pair_acc": 0.25,
+        "pairs": 28,
+        "per_object_err": {
+         "the fire": 3.34,
+         "the window": 4.15,
+         "the desk": 0.94,
+         "the garden door": 3.45,
+         "the bed": 2.96,
+         "the shelf": 2.04
+        }
+       },
+       "secs": 40.1,
+       "calls": 1
+      }
+     ]
+    }
+   }
+  },
+  "garden": {
+   "named": [
+    "the fence",
+    "the garden wall",
+    "the harakeke",
+    "the letterbox",
+    "the old tree",
+    "the raised bed"
+   ],
+   "ideal": {
+    "raw_rmse": 0.69,
+    "pair_acc": 0.931
+   },
+   "f3382_one_shot_t0": {
+    "n": 6,
+    "of": 6,
+    "raw_rmse": 6.11,
+    "procrustes_rmse": 4.39,
+    "pair_acc": 0.483,
+    "pairs": 29,
+    "per_object_err": {
+     "the letterbox": 11.66,
+     "the raised bed": 3.83,
+     "the garden wall": 6.32,
+     "the harakeke": 5.15,
+     "the fence": 2.24,
+     "the old tree": 1.22
+    }
+   },
+   "chance": {
+    "raw_rmse_mean": 6.12,
+    "procrustes_rmse_mean": 4.01,
+    "procrustes_rmse_p05": 3.04,
+    "pair_acc_mean": 0.496,
+    "centroid_rmse": 4.52
+   },
+   "regex_through_aggregator": {
+    "n": 6,
+    "of": 6,
+    "raw_rmse": 0.69,
+    "procrustes_rmse": 0.47,
+    "pair_acc": 0.931,
+    "pairs": 29,
+    "per_object_err": {
+     "the letterbox": 1.25,
+     "the raised bed": 0.47,
+     "the garden wall": 0.56,
+     "the harakeke": 0.76,
+     "the fence": 0.27,
+     "the old tree": 0.25
+    }
+   },
+   "shapes": {
+    "A": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 4.81,
+      "raw_rmse_each": [
+       5.46,
+       4.31,
+       4.67
+      ],
+      "procrustes_rmse_mean": 4.09,
+      "pair_acc_mean": 0.586,
+      "pair_acc_each": [
+       0.621,
+       0.552,
+       0.586
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fence": [
+         7.0,
+         10.7
+        ],
+        "the garden wall": [
+         4.8,
+         3.1
+        ],
+        "the harakeke": [
+         6.9,
+         1.6
+        ],
+        "the letterbox": [
+         3.2,
+         8.2
+        ],
+        "the old tree": [
+         8.1,
+         4.5
+        ],
+        "the raised bed": [
+         3.6,
+         9.7
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [4.8, 3.1],\n    \"the harakeke\": [6.9, 1.6],\n    \"the letterbox\": [3.2, 8.2],\n    \"the old tree\": [8.1, 4.5],\n    \"the raised bed\": [3.6, 9.7]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.46,
+        "procrustes_rmse": 4.35,
+        "pair_acc": 0.621,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 3.69,
+         "the raised bed": 4.61,
+         "the garden wall": 5.87,
+         "the harakeke": 10.16,
+         "the fence": 2.24,
+         "the old tree": 1.22
+        }
+       },
+       "secs": 8.1,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fence": [
+         7.0,
+         10.7
+        ],
+        "the garden wall": [
+         3.9,
+         8.0
+        ],
+        "the harakeke": [
+         4.5,
+         6.5
+        ],
+        "the letterbox": [
+         7.0,
+         10.7
+        ],
+        "the old tree": [
+         8.1,
+         4.5
+        ],
+        "the raised bed": [
+         3.9,
+         8.0
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [3.9, 8.0],\n    \"the harakeke\": [4.5, 6.5],\n    \"the letterbox\": [7.0, 10.7],\n    \"the old tree\": [8.1, 4.5],\n    \"the raised bed\": [3.9, 8.0]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.31,
+        "procrustes_rmse": 3.94,
+        "pair_acc": 0.552,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 5.83,
+         "the raised bed": 2.97,
+         "the garden wall": 6.32,
+         "the harakeke": 4.72,
+         "the fence": 2.24,
+         "the old tree": 1.22
+        }
+       },
+       "secs": 4.9,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         7.0,
+         10.7
+        ],
+        "the garden wall": [
+         3.9,
+         8.0
+        ],
+        "the harakeke": [
+         3.9,
+         8.0
+        ],
+        "the letterbox": [
+         4.5,
+         4.5
+        ],
+        "the old tree": [
+         8.1,
+         4.5
+        ],
+        "the raised bed": [
+         6.9,
+         1.6
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [3.9, 8.0],\n    \"the harakeke\": [3.9, 8.0],\n    \"the letterbox\": [4.5, 4.5],\n    \"the old tree\": [8.1, 4.5],\n    \"the raised bed\": [6.9, 1.6]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.67,
+        "procrustes_rmse": 3.97,
+        "pair_acc": 0.586,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 7.56,
+         "the raised bed": 4.14,
+         "the garden wall": 6.32,
+         "the harakeke": 3.14,
+         "the fence": 2.24,
+         "the old tree": 1.22
+        }
+       },
+       "secs": 7.2,
+       "calls": 1
+      }
+     ]
+    },
+    "A2": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 4.72,
+      "raw_rmse_each": [
+       4.69,
+       4.15,
+       5.32
+      ],
+      "procrustes_rmse_mean": 3.68,
+      "pair_acc_mean": 0.724,
+      "pair_acc_each": [
+       0.759,
+       0.69,
+       0.724
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fence": [
+         7.0,
+         5.0
+        ],
+        "the garden wall": [
+         8.5,
+         9.0
+        ],
+        "the harakeke": [
+         6.5,
+         4.5
+        ],
+        "the letterbox": [
+         3.5,
+         8.5
+        ],
+        "the old tree": [
+         7.5,
+         2.5
+        ],
+        "the raised bed": [
+         5.5,
+         6.0
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 5.0],\n    \"the garden wall\": [8.5, 9.0],\n    \"the harakeke\": [6.5, 4.5],\n    \"the letterbox\": [3.5, 8.5],\n    \"the old tree\": [7.5, 2.5],\n    \"the raised bed\": [5.5, 6.0]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.69,
+        "procrustes_rmse": 3.93,
+        "pair_acc": 0.759,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 3.62,
+         "the raised bed": 0.5,
+         "the garden wall": 3.31,
+         "the harakeke": 7.5,
+         "the fence": 6.99,
+         "the old tree": 1.64
+        }
+       },
+       "secs": 8.0,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fence": [
+         7.0,
+         10.7
+        ],
+        "the garden wall": [
+         8.5,
+         6.0
+        ],
+        "the harakeke": [
+         4.5,
+         5.5
+        ],
+        "the letterbox": [
+         3.0,
+         9.0
+        ],
+        "the old tree": [
+         2.5,
+         7.5
+        ],
+        "the raised bed": [
+         5.5,
+         4.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 10.7],\n    \"the garden wall\": [8.5, 6.0],\n    \"the harakeke\": [4.5, 5.5],\n    \"the letterbox\": [3.0, 9.0],\n    \"the old tree\": [2.5, 7.5],\n    \"the raised bed\": [5.5, 4.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.15,
+        "procrustes_rmse": 3.92,
+        "pair_acc": 0.69,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 2.92,
+         "the raised bed": 1.0,
+         "the garden wall": 1.4,
+         "the harakeke": 5.59,
+         "the fence": 2.24,
+         "the old tree": 7.46
+        }
+       },
+       "secs": 6.5,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         7.0,
+         5.0
+        ],
+        "the garden wall": [
+         6.9,
+         8.2
+        ],
+        "the harakeke": [
+         4.5,
+         3.5
+        ],
+        "the letterbox": [
+         1.0,
+         5.0
+        ],
+        "the old tree": [
+         7.5,
+         4.0
+        ],
+        "the raised bed": [
+         6.5,
+         2.5
+        ]
+       },
+       "raw": "{\n  \"objects\": {\n    \"the fence\": [7.0, 5.0],\n    \"the garden wall\": [6.9, 8.2],\n    \"the harakeke\": [4.5, 3.5],\n    \"the letterbox\": [1.0, 5.0],\n    \"the old tree\": [7.5, 4.0],\n    \"the raised bed\": [6.5, 2.5]\n  }\n}",
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.32,
+        "procrustes_rmse": 3.2,
+        "pair_acc": 0.724,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 6.3,
+         "the raised bed": 3.16,
+         "the garden wall": 3.72,
+         "the harakeke": 7.43,
+         "the fence": 6.99,
+         "the old tree": 1.39
+        }
+       },
+       "secs": 6.5,
+       "calls": 1
+      }
+     ]
+    },
+    "B": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 1.01,
+      "raw_rmse_each": [
+       1.08,
+       0.92,
+       1.03
+      ],
+      "procrustes_rmse_mean": 0.9,
+      "pair_acc_mean": 0.943,
+      "pair_acc_each": [
+       0.931,
+       0.966,
+       0.931
+      ],
+      "shuffled_raw_rmse_mean": 5.16
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fence": [
+         5.25,
+         11.89
+        ],
+        "the garden wall": [
+         9.64,
+         6.12
+        ],
+        "the harakeke": [
+         2.6,
+         9.05
+        ],
+        "the letterbox": [
+         1.38,
+         10.06
+        ],
+        "the raised bed": [
+         5.24,
+         7.13
+        ],
+        "the old tree": [
+         9.05,
+         3.52
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         0,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         0,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         0,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         0,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         0,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         1,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         1,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the fence",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         3,
+         "the fence",
+         "ego",
+         "behind you",
+         "far off"
+        ],
+        [
+         3,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         3,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "far off"
+        ],
+        [
+         3,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the raised bed",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         4,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         4,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         4,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         4,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         4,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         5,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden wall",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         5,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         6,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         6,
+         "the old tree",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         7,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         9,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         9,
+         "the old tree",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         10,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         10,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         10,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         11,
+         "the fence",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.03,
+        "procrustes_rmse": 4.0,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 6.22,
+         "the raised bed": 5.24,
+         "the garden wall": 3.56,
+         "the harakeke": 4.34,
+         "the fence": 6.11,
+         "the old tree": 4.09
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"ahead\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your left\",\n ",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"behind y",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"to your right\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your "
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.08,
+        "procrustes_rmse": 0.97,
+        "pair_acc": 0.931,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 1.25,
+         "the raised bed": 1.65,
+         "the garden wall": 0.29,
+         "the harakeke": 1.57,
+         "the fence": 0.31,
+         "the old tree": 0.25
+        }
+       },
+       "secs": 111.2,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fence": [
+         5.25,
+         11.89
+        ],
+        "the garden wall": [
+         9.64,
+         6.12
+        ],
+        "the harakeke": [
+         2.61,
+         9.04
+        ],
+        "the letterbox": [
+         1.38,
+         10.06
+        ],
+        "the raised bed": [
+         5.36,
+         6.39
+        ],
+        "the old tree": [
+         9.05,
+         3.52
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         0,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         0,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         0,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         0,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         1,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         1,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         2,
+         "the fence",
+         "ego",
+         "to your right",
+         "far off"
+        ],
+        [
+         2,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "a little way off"
+        ],
+        [
+         3,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the raised bed",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         4,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         4,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         4,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         4,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         4,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         5,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden wall",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         5,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         6,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the old tree",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         7,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         7,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         9,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the old tree",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         10,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         10,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         10,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         11,
+         "the fence",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.36,
+        "procrustes_rmse": 3.44,
+        "pair_acc": 0.586,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 5.95,
+         "the raised bed": 4.28,
+         "the garden wall": 7.38,
+         "the harakeke": 3.23,
+         "the fence": 6.11,
+         "the old tree": 4.09
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"ahead\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your left\"",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"behind you\"",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"to your right\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your "
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 0.92,
+        "procrustes_rmse": 0.75,
+        "pair_acc": 0.966,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 1.25,
+         "the raised bed": 0.9,
+         "the garden wall": 0.29,
+         "the harakeke": 1.58,
+         "the fence": 0.31,
+         "the old tree": 0.25
+        }
+       },
+       "secs": 102.8,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         5.51,
+         12.13
+        ],
+        "the garden wall": [
+         9.64,
+         6.12
+        ],
+        "the harakeke": [
+         1.69,
+         9.5
+        ],
+        "the letterbox": [
+         0.79,
+         10.87
+        ],
+        "the raised bed": [
+         4.97,
+         7.52
+        ],
+        "the old tree": [
+         9.05,
+         3.52
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         0,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         0,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "a little way off"
+        ],
+        [
+         0,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "far off"
+        ],
+        [
+         0,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         0,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         1,
+         "the fence",
+         "ego",
+         "behind you",
+         "far off"
+        ],
+        [
+         1,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         1,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "far off"
+        ],
+        [
+         1,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         1,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         1,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         2,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         2,
+         "the fence",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         3,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         3,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the raised bed",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         4,
+         "the fence",
+         "ego",
+         "ahead",
+         "far off"
+        ],
+        [
+         4,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         4,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         4,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         4,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         5,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden wall",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         5,
+         "the harakeke",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the letterbox",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         5,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         5,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         6,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         6,
+         "the old tree",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         7,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         7,
+         "the harakeke",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         7,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         7,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         8,
+         "the fence",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         8,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         8,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the raised bed",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         9,
+         "the fence",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "ego",
+         "to your right",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         9,
+         "the old tree",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         10,
+         "the fence",
+         "ego",
+         "to your left",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         10,
+         "the letterbox",
+         "ego",
+         "behind you",
+         "near"
+        ],
+        [
+         10,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "near"
+        ],
+        [
+         11,
+         "the fence",
+         "ego",
+         "to your right",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden wall",
+         "ego",
+         "behind you",
+         "unknown"
+        ],
+        [
+         11,
+         "the harakeke",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the letterbox",
+         "ego",
+         "ahead",
+         "unknown"
+        ],
+        [
+         11,
+         "the old tree",
+         "ego",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the raised bed",
+         "ego",
+         "to your left",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.1,
+        "procrustes_rmse": 3.6,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 5.95,
+         "the raised bed": 5.86,
+         "the garden wall": 2.26,
+         "the harakeke": 5.23,
+         "the fence": 6.11,
+         "the old tree": 4.09
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"ahead\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your left\",\n ",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"behind you\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"to your right\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"behind you\"",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"to your right\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"behind you\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"to your righ"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 1.03,
+        "procrustes_rmse": 0.99,
+        "pair_acc": 0.931,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 0.59,
+         "the raised bed": 2.09,
+         "the garden wall": 0.29,
+         "the harakeke": 1.05,
+         "the fence": 0.67,
+         "the old tree": 0.25
+        }
+       },
+       "secs": 106.5,
+       "calls": 12
+      }
+     ]
+    },
+    "E": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 4.83,
+      "raw_rmse_each": [
+       5.99,
+       4.43,
+       4.08
+      ],
+      "procrustes_rmse_mean": 3.86,
+      "pair_acc_mean": 0.644,
+      "pair_acc_each": [
+       0.655,
+       0.655,
+       0.621
+      ],
+      "shuffled_raw_rmse_mean": 4.87
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the letterbox": [
+         4.2,
+         9.05
+        ],
+        "the harakeke": [
+         9.94,
+         4.68
+        ],
+        "the fence": [
+         10.2,
+         10.3
+        ],
+        "the garden wall": [
+         3.13,
+         8.19
+        ],
+        "the raised bed": [
+         10.26,
+         6.48
+        ],
+        "the old tree": [
+         7.82,
+         3.77
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         0,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         0,
+         "the fence",
+         "allo",
+         "north-east",
+         "far off"
+        ],
+        [
+         0,
+         "the garden wall",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         0,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         1,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         1,
+         "the harakeke",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         1,
+         "the letterbox",
+         "allo",
+         "north",
+         "unknown"
+        ],
+        [
+         2,
+         "the fence",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the harakeke",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         2,
+         "the letterbox",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         3,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the raised bed",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the fence",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the fence",
+         "allo",
+         "north-east",
+         "far off"
+        ],
+        [
+         4,
+         "the garden wall",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         4,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "a little way off"
+        ],
+        [
+         4,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         4,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         5,
+         "the letterbox",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         5,
+         "the harakeke",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         6,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         6,
+         "the old tree",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the fence",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the raised bed",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         8,
+         "the fence",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the harakeke",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         8,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         8,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         8,
+         "the raised bed",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         9,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "far off"
+        ],
+        [
+         9,
+         "the old tree",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         10,
+         "the letterbox",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         10,
+         "the fence",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         10,
+         "the raised bed",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         11,
+         "the letterbox",
+         "allo",
+         "north",
+         "near"
+        ],
+        [
+         11,
+         "the harakeke",
+         "allo",
+         "north",
+         "near"
+        ],
+        [
+         11,
+         "the garden wall",
+         "allo",
+         "south-west",
+         "unknown"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.24,
+        "procrustes_rmse": 4.35,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 1.84,
+         "the raised bed": 4.47,
+         "the garden wall": 5.6,
+         "the harakeke": 8.49,
+         "the fence": 4.53,
+         "the old tree": 4.16
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"north-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"north-west\",\n     ",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"east\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"south\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"north\",\n      \"distan",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"south-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"south-east\""
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.99,
+        "procrustes_rmse": 4.44,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 3.75,
+         "the raised bed": 4.86,
+         "the garden wall": 7.12,
+         "the harakeke": 9.84,
+         "the fence": 5.39,
+         "the old tree": 1.02
+        }
+       },
+       "secs": 116.0,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the letterbox": [
+         2.56,
+         9.0
+        ],
+        "the raised bed": [
+         10.24,
+         10.02
+        ],
+        "the harakeke": [
+         4.9,
+         8.45
+        ],
+        "the fence": [
+         9.63,
+         7.9
+        ],
+        "the garden wall": [
+         5.92,
+         4.41
+        ],
+        "the old tree": [
+         7.82,
+         3.77
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         0,
+         "the raised bed",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         0,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         0,
+         "the fence",
+         "allo",
+         "east",
+         "far off"
+        ],
+        [
+         0,
+         "the garden wall",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         1,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         1,
+         "the harakeke",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         1,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         1,
+         "the fence",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         1,
+         "the raised bed",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the fence",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the harakeke",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         2,
+         "the letterbox",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         3,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the raised bed",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         3,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         3,
+         "the fence",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         4,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         4,
+         "the garden wall",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         4,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         4,
+         "the letterbox",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         4,
+         "the raised bed",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         5,
+         "the fence",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         5,
+         "the harakeke",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         5,
+         "the letterbox",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         5,
+         "the raised bed",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         6,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         6,
+         "the old tree",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the raised bed",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         7,
+         "the fence",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         8,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         8,
+         "the harakeke",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "far off"
+        ],
+        [
+         9,
+         "the old tree",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         10,
+         "the letterbox",
+         "allo",
+         "south",
+         "unknown"
+        ],
+        [
+         10,
+         "the raised bed",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         11,
+         "the fence",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden wall",
+         "allo",
+         "north",
+         "unknown"
+        ],
+        [
+         11,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         11,
+         "the letterbox",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         11,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the raised bed",
+         "allo",
+         "south-west",
+         "near"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.49,
+        "procrustes_rmse": 4.44,
+        "pair_acc": 0.517,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 2.89,
+         "the raised bed": 4.89,
+         "the garden wall": 5.6,
+         "the harakeke": 4.65,
+         "the fence": 8.86,
+         "the old tree": 4.16
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the garden\",\n      \"direction\": \"unknown\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"north-west\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"south-east\",\n      \"dis",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"south\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"east\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"south\",\n      \"distance\": \"unkno",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"south-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"south-east\""
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.43,
+        "procrustes_rmse": 3.83,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 2.67,
+         "the raised bed": 6.55,
+         "the garden wall": 4.29,
+         "the harakeke": 3.55,
+         "the fence": 5.99,
+         "the old tree": 1.02
+        }
+       },
+       "secs": 89.3,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         10.25,
+         8.51
+        ],
+        "the garden wall": [
+         6.29,
+         2.53
+        ],
+        "the harakeke": [
+         2.09,
+         11.51
+        ],
+        "the letterbox": [
+         1.54,
+         10.21
+        ],
+        "the raised bed": [
+         10.2,
+         8.8
+        ],
+        "the old tree": [
+         7.62,
+         4.26
+        ]
+       },
+       "obs": [
+        [
+         0,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         0,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         0,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         0,
+         "the letterbox",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         0,
+         "the raised bed",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         1,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "far off"
+        ],
+        [
+         1,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "far off"
+        ],
+        [
+         2,
+         "the letterbox",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         2,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         2,
+         "the fence",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         2,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         2,
+         "the raised bed",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         3,
+         "the fence",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         3,
+         "the harakeke",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         3,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         3,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         3,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         4,
+         "the letterbox",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         4,
+         "the raised bed",
+         "allo",
+         "south-east",
+         "near"
+        ],
+        [
+         4,
+         "the harakeke",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         4,
+         "the fence",
+         "allo",
+         "east",
+         "far off"
+        ],
+        [
+         4,
+         "the garden wall",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         5,
+         "the fence",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         5,
+         "the garden wall",
+         "allo",
+         "east",
+         "unknown"
+        ],
+        [
+         5,
+         "the harakeke",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         5,
+         "the letterbox",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         5,
+         "the raised bed",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         6,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         6,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         6,
+         "the letterbox",
+         "allo",
+         "north-east",
+         "far off"
+        ],
+        [
+         6,
+         "the old tree",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         6,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         7,
+         "the letterbox",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         7,
+         "the fence",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         7,
+         "the garden wall",
+         "allo",
+         "south-west",
+         "near"
+        ],
+        [
+         7,
+         "the raised bed",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         8,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         8,
+         "the harakeke",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         9,
+         "the fence",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the garden wall",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         9,
+         "the harakeke",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the letterbox",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         9,
+         "the old tree",
+         "allo",
+         "west",
+         "near"
+        ],
+        [
+         9,
+         "the raised bed",
+         "allo",
+         "north-east",
+         "unknown"
+        ],
+        [
+         10,
+         "the fence",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         10,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         10,
+         "the harakeke",
+         "allo",
+         "south-west",
+         "unknown"
+        ],
+        [
+         10,
+         "the letterbox",
+         "allo",
+         "south",
+         "near"
+        ],
+        [
+         10,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         10,
+         "the raised bed",
+         "allo",
+         "north-west",
+         "near"
+        ],
+        [
+         11,
+         "the fence",
+         "allo",
+         "south-east",
+         "unknown"
+        ],
+        [
+         11,
+         "the garden wall",
+         "allo",
+         "north-west",
+         "unknown"
+        ],
+        [
+         11,
+         "the harakeke",
+         "allo",
+         "east",
+         "near"
+        ],
+        [
+         11,
+         "the letterbox",
+         "allo",
+         "west",
+         "unknown"
+        ],
+        [
+         11,
+         "the old tree",
+         "allo",
+         "unknown",
+         "unknown"
+        ],
+        [
+         11,
+         "the raised bed",
+         "allo",
+         "south-west",
+         "near"
+        ]
+       ],
+       "shuffled_score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 3.89,
+        "procrustes_rmse": 3.64,
+        "pair_acc": 0.759,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 0.81,
+         "the raised bed": 3.46,
+         "the garden wall": 5.63,
+         "the harakeke": 1.34,
+         "the fence": 4.8,
+         "the old tree": 4.64
+        }
+       },
+       "raws": [
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the fence\",\n      \"direction\": \"north-east\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the garden wall\",\n      \"direction\": \"east\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"north-west\",\n      \"",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"north-west\",\n      \"distance\": \"far off\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"east\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"north-west\",\n      \"dist",
+        "{\n  \"relations\": [\n    {\n      \"object\": \"the letterbox\",\n      \"direction\": \"east\",\n      \"distance\": \"near\"\n    },\n    {\n      \"object\": \"the cat\",\n      \"direction\": \"north-west\",\n      \"distance\": \"unknown\"\n    },\n    {\n      \"object\": \"the harakeke\",\n      \"direction\": \"east\",\n      \"distance\":"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.08,
+        "procrustes_rmse": 3.31,
+        "pair_acc": 0.621,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 1.14,
+         "the raised bed": 5.74,
+         "the garden wall": 5.01,
+         "the harakeke": 1.01,
+         "the fence": 6.14,
+         "the old tree": 1.4
+        }
+       },
+       "secs": 91.9,
+       "calls": 12
+      }
+     ]
+    },
+    "C": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 7.37,
+      "raw_rmse_each": [
+       8.89,
+       6.56,
+       6.66
+      ],
+      "procrustes_rmse_mean": 4.15,
+      "pair_acc_mean": 0.138,
+      "pair_acc_each": [
+       0.069,
+       0.172,
+       0.172
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fence": [
+         7.2,
+         -1.0
+        ],
+        "the garden wall": [
+         6.5,
+         4.0
+        ],
+        "the harakeke": [
+         7.2,
+         1.3
+        ],
+        "the letterbox": [
+         8.5,
+         1.3
+        ],
+        "the old tree": [
+         7.2,
+         1.3
+        ],
+        "the raised bed": [
+         7.2,
+         1.3
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the fence\": [7.2, -1.0],\n    \"the garden wall\": [6.5, 4.0],\n    \"the harakeke\": [7.2, 1.3],\n    \"the letterbox\": [8.5, 1.3],\n    \"the old tree\": [7.2, 1.3],\n    \"the raised bed\": [7.2, 1.3]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the fence\": [7.2, -1.0],\n    \"the garden wall\": [6.5, 4.0],\n    \"the harakeke\": [7.2, 1.3],\n    \"the letterbox\": [8.5, 1.3],\n    \"the old tree\": [7.2, 1.3],\n    \"the raised bed\": [7.2, 1.3]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 8.89,
+        "procrustes_rmse": 3.74,
+        "pair_acc": 0.069,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 12.38,
+         "the raised bed": 4.53,
+         "the garden wall": 3.94,
+         "the harakeke": 10.57,
+         "the fence": 12.89,
+         "the old tree": 2.72
+        }
+       },
+       "secs": 38.2,
+       "calls": 12
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fence": [
+         8.1,
+         3.5
+        ],
+        "the garden wall": [
+         9.6,
+         4.5
+        ],
+        "the harakeke": [
+         8.1,
+         4.5
+        ],
+        "the letterbox": [
+         8.1,
+         4.5
+        ],
+        "the old tree": [
+         8.1,
+         5.5
+        ],
+        "the raised bed": [
+         8.1,
+         4.5
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the fence\": [8.1, 3.5],\n    \"the garden wall\": [9.6, 4.5],\n    \"the harakeke\": [8.1, 4.5],\n    \"the letterbox\": [8.1, 4.5],\n    \"the old tree\": [8.1, 5.5],\n    \"the raised bed\": [8.1, 4.5]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the fence\": [8.1, 3.5],\n    \"the garden wall\": [9.6, 4.5],\n    \"the harakeke\": [8.1, 4.5],\n    \"the letterbox\": [8.1, 4.5],\n    \"the old tree\": [8.1, 5.5],\n    \"the raised bed\": [8.1, 4.5]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 6.56,
+        "procrustes_rmse": 4.27,
+        "pair_acc": 0.172,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 9.69,
+         "the raised bed": 2.79,
+         "the garden wall": 1.53,
+         "the harakeke": 8.56,
+         "the fence": 8.77,
+         "the old tree": 2.12
+        }
+       },
+       "secs": 27.4,
+       "calls": 12
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         8.1,
+         3.0
+        ],
+        "the garden wall": [
+         9.5,
+         4.5
+        ],
+        "the harakeke": [
+         8.1,
+         4.5
+        ],
+        "the letterbox": [
+         8.1,
+         4.5
+        ],
+        "the old tree": [
+         7.6,
+         5.0
+        ],
+        "the raised bed": [
+         8.1,
+         4.5
+        ]
+       },
+       "raws": [
+        "{\n  \"objects\": {\n    \"the fence\": [8.1, 3.0],\n    \"the garden wall\": [9.5, 4.5],\n    \"the harakeke\": [8.1, 4.5],\n    \"the letterbox\": [8.1, 4.5],\n    \"the old tree\": [7.6, 5.0],\n    \"the raised bed\": [8.1, 4.5]\n  }\n}",
+        "{\n  \"objects\": {\n    \"the fence\": [8.1, 3.0],\n    \"the garden wall\": [9.5, 4.5],\n    \"the harakeke\": [8.1, 4.5],\n    \"the letterbox\": [8.1, 4.5],\n    \"the old tree\": [7.6, 5.0],\n    \"the raised bed\": [8.1, 4.5]\n  }\n}"
+       ],
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 6.66,
+        "procrustes_rmse": 4.44,
+        "pair_acc": 0.172,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 9.69,
+         "the raised bed": 2.79,
+         "the garden wall": 1.55,
+         "the harakeke": 8.56,
+         "the fence": 9.24,
+         "the old tree": 1.92
+        }
+       },
+       "secs": 25.1,
+       "calls": 12
+      }
+     ]
+    },
+    "D": {
+     "summary": {
+      "parsed": 3,
+      "all_placed": true,
+      "raw_rmse_mean": 5.73,
+      "raw_rmse_each": [
+       5.57,
+       4.94,
+       6.68
+      ],
+      "procrustes_rmse_mean": 4.12,
+      "pair_acc_mean": 0.575,
+      "pair_acc_each": [
+       0.655,
+       0.69,
+       0.379
+      ]
+     },
+     "samples": [
+      {
+       "seed": 2648,
+       "pred": {
+        "the fence": [
+         8.0,
+         5.0
+        ],
+        "the garden wall": [
+         6.5,
+         9.5
+        ],
+        "the harakeke": [
+         4.5,
+         2.5
+        ],
+        "the letterbox": [
+         7.0,
+         10.0
+        ],
+        "the old tree": [
+         8.5,
+         3.5
+        ],
+        "the raised bed": [
+         6.0,
+         4.0
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [\"Stop 1\", \"letterbox flag\", \"left\", \"near\", 315],\n    [\"Stop 1\", \"cat\", \"right\", \"near\", 135],\n    [\"Stop 1\", \"harakeke\", \"left\", \"near\", 315],\n    [\"Stop 1\", \"rain\", \"any\", \"any\", 0],\n    [\"Stop 1\", \"cat\", \"right\", \"near\", 135],\n    [\"Stop 1\", \"sea\", \"ahead\", \"far\", 45],\n    [\"Stop 2\", \"letterbox flag\", \"behind\", \"near\", 270],\n    [\"Stop 2\", \"cat\", \"right\", \"near\", 135],\n    [\"Stop 2\", \"harakeke\", \"behind\", \"near\", 270],\n    [\"Stop 2\", \"rain\", \"any\", \"any\", 0],\n    [\"Stop 2\", \"cat\", \"right\", \"near\", 135],\n    [\"Stop 2\", \"sea\", \"behind\", \"far\", 270],\n    [\"Stop 3\", \"letterb",
+       "table_rows": 74,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 5.57,
+        "procrustes_rmse": 4.36,
+        "pair_acc": 0.655,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 5.94,
+         "the raised bed": 1.58,
+         "the garden wall": 4.88,
+         "the harakeke": 8.38,
+         "the fence": 7.34,
+         "the old tree": 0.3
+        }
+       },
+       "secs": 49.4,
+       "calls": 1
+      },
+      {
+       "seed": 2649,
+       "pred": {
+        "the fence": [
+         7.5,
+         4.5
+        ],
+        "the garden wall": [
+         5.5,
+         8.5
+        ],
+        "the harakeke": [
+         6.0,
+         5.0
+        ],
+        "the letterbox": [
+         3.5,
+         9.0
+        ],
+        "the old tree": [
+         7.5,
+         2.5
+        ],
+        "the raised bed": [
+         6.5,
+         4.0
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [\"Stop 1\", \"letterbox flag\", \"left\", \"near\", 315],\n    [\"Stop 1\", \"cat\", \"right\", \"near\", 45],\n    [\"Stop 1\", \"harakeke\", \"left\", \"near\", 315],\n    [\"Stop 1\", \"rain\", \"general\", \"unknown\", 0],\n    [\"Stop 1\", \"garden wall\", \"right\", \"near\", 45],\n    [\"Stop 1\", \"fence line\", \"ahead\", \"far\", 45],\n    [\"Stop 2\", \"letterbox flag\", \"behind\", \"unknown\", 270],\n    [\"Stop 2\", \"cat\", \"right\", \"near\", 90],\n    [\"Stop 2\", \"harakeke\", \"behind\", \"near\", 270],\n    [\"Stop 2\", \"rain\", \"general\", \"unknown\", 0],\n    [\"Stop 2\", \"garden wall\", \"right\", \"near\", 90],\n    [\"Stop 2\", \"fence line\", \"",
+       "table_rows": 74,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 4.94,
+        "procrustes_rmse": 4.12,
+        "pair_acc": 0.69,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 3.25,
+         "the raised bed": 1.8,
+         "the garden wall": 5.06,
+         "the harakeke": 6.8,
+         "the fence": 7.62,
+         "the old tree": 1.64
+        }
+       },
+       "secs": 47.9,
+       "calls": 1
+      },
+      {
+       "seed": 2650,
+       "pred": {
+        "the fence": [
+         8.0,
+         5.0
+        ],
+        "the garden wall": [
+         6.0,
+         9.0
+        ],
+        "the harakeke": [
+         4.0,
+         5.0
+        ],
+        "the letterbox": [
+         7.0,
+         1.0
+        ],
+        "the old tree": [
+         6.5,
+         6.0
+        ],
+        "the raised bed": [
+         5.5,
+         3.5
+        ]
+       },
+       "raw": "{\n  \"table\": [\n    [\"Stop 1\", \"letterbox flag\", \"left\", \"at the gate\", 315],\n    [\"Stop 1\", \"cat\", \"right\", \"in the garden\", 135],\n    [\"Stop 1\", \"harakeke\", \"left\", \"near\", 315],\n    [\"Stop 1\", \"rain\", \"general\", \"on you\", null],\n    [\"Stop 2\", \"letterbox flag\", \"behind\", \"at the gate\", 270],\n    [\"Stop 2\", \"cat\", \"right\", \"in the garden\", 135],\n    [\"Stop 2\", \"harakeke\", \"behind\", \"near\", 270],\n    [\"Stop 2\", \"rain\", \"general\", \"on you\", null],\n    [\"Stop 3\", \"letterbox flag\", \"right\", \"at the gate\", 135],\n    [\"Stop 3\", \"cat\", \"right\", \"in the garden\", 135],\n    [\"Stop 3\", \"harakeke\", \"righ",
+       "table_rows": 48,
+       "score": {
+        "n": 6,
+        "of": 6,
+        "raw_rmse": 6.68,
+        "procrustes_rmse": 3.87,
+        "pair_acc": 0.379,
+        "pairs": 29,
+        "per_object_err": {
+         "the letterbox": 11.82,
+         "the raised bed": 2.0,
+         "the garden wall": 4.92,
+         "the harakeke": 5.85,
+         "the fence": 7.34,
+         "the old tree": 3.4
+        }
+       },
+       "secs": 33.1,
+       "calls": 1
+      }
+     ]
+    }
+   }
+  }
+ },
+ "canary_leaked": {},
+ "model_calls": 234
+}

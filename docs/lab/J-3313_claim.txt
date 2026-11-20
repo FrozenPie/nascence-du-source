@@ -1,0 +1,1 @@
+J-3313 expressed-valence lab could not run its judge stage: every judge-hub call was queued 250-430 s or timed out on 2026-11-16 (Du down), so the 260-call validation plus scoring pass was infeasible; the prep (200-draft sample, 60 blind hand labels) is built and reusable.

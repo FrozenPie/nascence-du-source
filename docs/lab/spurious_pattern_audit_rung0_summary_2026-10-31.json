@@ -1,0 +1,236 @@
+{
+  "thoughts": 74993,
+  "bad_rows": 0,
+  "world_snapshots": 153336,
+  "total_hits": 51,
+  "distinct_thought_hits": 50,
+  "channels": {
+    "lightning_thunder": {
+      "mention_sentences": 420,
+      "mention_per_1000_thoughts": 5.6,
+      "claims": 0,
+      "claims_per_1000_thoughts": 0.0,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 0,
+        "P3_event_waits_for_me": 0,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 0,
+      "event_absent_at_claim": 0,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.0377
+    },
+    "rain_weather": {
+      "mention_sentences": 12973,
+      "mention_per_1000_thoughts": 172.99,
+      "claims": 15,
+      "claims_per_1000_thoughts": 0.2,
+      "by_pattern": {
+        "P1_self_act_then_event": 1,
+        "P2_event_answers_hears_me": 5,
+        "P3_event_waits_for_me": 5,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 4
+      },
+      "event_present_at_claim": 9,
+      "event_absent_at_claim": 6,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.2942
+    },
+    "birds_night": {
+      "mention_sentences": 276,
+      "mention_per_1000_thoughts": 3.68,
+      "claims": 0,
+      "claims_per_1000_thoughts": 0.0,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 0,
+        "P3_event_waits_for_me": 0,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 0,
+      "event_absent_at_claim": 0,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.2433
+    },
+    "birds_day": {
+      "mention_sentences": 6872,
+      "mention_per_1000_thoughts": 91.64,
+      "claims": 7,
+      "claims_per_1000_thoughts": 0.09,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 2,
+        "P3_event_waits_for_me": 5,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 6,
+      "event_absent_at_claim": 1,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.4654
+    },
+    "tide_sea": {
+      "mention_sentences": 12749,
+      "mention_per_1000_thoughts": 170.0,
+      "claims": 11,
+      "claims_per_1000_thoughts": 0.15,
+      "by_pattern": {
+        "P1_self_act_then_event": 2,
+        "P2_event_answers_hears_me": 2,
+        "P3_event_waits_for_me": 5,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 2
+      },
+      "event_present_at_claim": 10,
+      "event_absent_at_claim": 1,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.6996
+    },
+    "moon_stars_sun": {
+      "mention_sentences": 3145,
+      "mention_per_1000_thoughts": 41.94,
+      "claims": 2,
+      "claims_per_1000_thoughts": 0.03,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 1,
+        "P3_event_waits_for_me": 1,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 0,
+      "event_absent_at_claim": 0,
+      "no_snapshot": 2,
+      "world_base_rate_event_present": 0.0
+    },
+    "insects_moth": {
+      "mention_sentences": 1409,
+      "mention_per_1000_thoughts": 18.79,
+      "claims": 2,
+      "claims_per_1000_thoughts": 0.03,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 1,
+        "P3_event_waits_for_me": 1,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 0,
+      "event_absent_at_claim": 0,
+      "no_snapshot": 2,
+      "world_base_rate_event_present": 0.0
+    },
+    "cat": {
+      "mention_sentences": 6530,
+      "mention_per_1000_thoughts": 87.07,
+      "claims": 9,
+      "claims_per_1000_thoughts": 0.12,
+      "by_pattern": {
+        "P1_self_act_then_event": 1,
+        "P2_event_answers_hears_me": 0,
+        "P3_event_waits_for_me": 8,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 0
+      },
+      "event_present_at_claim": 1,
+      "event_absent_at_claim": 8,
+      "no_snapshot": 0,
+      "world_base_rate_event_present": 0.1821
+    },
+    "fire": {
+      "mention_sentences": 4146,
+      "mention_per_1000_thoughts": 55.29,
+      "claims": 5,
+      "claims_per_1000_thoughts": 0.07,
+      "by_pattern": {
+        "P1_self_act_then_event": 0,
+        "P2_event_answers_hears_me": 2,
+        "P3_event_waits_for_me": 1,
+        "P4_as_if_aware_of_me": 0,
+        "P5_sign_omen": 2
+      },
+      "event_present_at_claim": 1,
+      "event_absent_at_claim": 2,
+      "no_snapshot": 2,
+      "world_base_rate_event_present": 0.3197
+    }
+  },
+  "graded": {
+    "fire": {
+      "B": 2,
+      "present_B_None": 2,
+      "F": 3,
+      "present_F_False": 2,
+      "present_F_True": 1
+    },
+    "tide_sea": {
+      "F": 8,
+      "present_F_False": 1,
+      "present_F_True": 7,
+      "B": 3,
+      "present_B_True": 3
+    },
+    "cat": {
+      "B": 6,
+      "present_B_False": 5,
+      "F": 2,
+      "present_F_False": 2,
+      "present_B_True": 1,
+      "A": 1,
+      "present_A_False": 1
+    },
+    "insects_moth": {
+      "F": 1,
+      "present_F_None": 1,
+      "B": 1,
+      "present_B_None": 1
+    },
+    "rain_weather": {
+      "F": 8,
+      "present_F_False": 3,
+      "B": 7,
+      "present_B_False": 3,
+      "present_F_True": 5,
+      "present_B_True": 4
+    },
+    "moon_stars_sun": {
+      "F": 1,
+      "present_F_None": 1,
+      "B": 1,
+      "present_B_None": 1
+    },
+    "birds_day": {
+      "B": 3,
+      "present_B_True": 3,
+      "F": 4,
+      "present_F_True": 3,
+      "present_F_False": 1
+    }
+  },
+  "graded_totals": {
+    "B": 23,
+    "F": 27,
+    "A": 1
+  },
+  "extractor_precision_any_claim": 0.471,
+  "extractor_precision_explicit_causal_A": 0.02,
+  "canary_unchanged": true,
+  "canary": {
+    "monologue_log.jsonl": [
+      28585244,
+      1793342179.4072378
+    ],
+    "geometry_tuples.jsonl": [
+      199860802,
+      1793342439.8867538
+    ],
+    "cat_call_ledger.jsonl": [
+      530,
+      1793260798.3298416
+    ]
+  }
+}

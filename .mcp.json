@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "udms": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["C:\\UDMS\\udms.py", "mcp", "--repo", "C:\\Nascence"]
+    }
+  }
+}

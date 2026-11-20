@@ -1,0 +1,9 @@
+{"dream_id": "dream_1792154948", "variant": "A", "judge": "granite", "group": "base", "verdict": null, "why": null, "err": "JSONDecodeError", "sec": 38.8}
+{"dream_id": "dream_1788519396", "variant": "A", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1788519396", "variant": "B", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1788857528", "variant": "A", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1788857528", "variant": "B", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1792420575", "variant": "A", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1792420575", "variant": "B", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1791821002", "variant": "A", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}
+{"dream_id": "dream_1791821002", "variant": "B", "judge": "falcon3", "group": "base", "verdict": null, "why": null, "err": "TimeoutError", "sec": 610.0}

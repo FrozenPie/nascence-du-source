@@ -1,0 +1,3 @@
+[lab_env] isolated — lab dir: C:\Nascence\data\_lab\20261116_213020 (DB_PATH + 0 extra global(s) redirected)
+yi V0 0 None TimeoutError 301.7
+yi V0 1 None TimeoutError 302.0

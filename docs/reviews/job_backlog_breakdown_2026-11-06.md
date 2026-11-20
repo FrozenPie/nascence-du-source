@@ -1,0 +1,432 @@
+# Job backlog breakdown, 2026-11-06 (407 open Tier 3 jobs)
+
+Computed by a heuristic over `job_run.py plan --json` plus each job's gate/not_before/briefing text. It is a planning aid, not ground truth: 'ready' means no gate, no real hold and no text saying it needs Du live.
+
+| Class | Count |
+|---|---|
+| READY (can run in a Du-down window) | 258 |
+| GATED (not_before, live-hours or row gate) | 86 |
+| NEEDS_LIVE (text says it needs Du running or a restart first) | 49 |
+| HOLD_REAL (a decision hold other than the two stale ones) | 14 |
+
+Stale holds found: D-0338 (32 jobs) says 'HOLD LIFTED via D-0415' and D-0175 (14 jobs) lapsed on 2026-09-17, so job_run's hold detector counts 46 jobs as held that are not. Separately: 64 jobs wait on founder input (not in the 407) and 103 are already in_progress.
+
+
+## READY (258)
+
+- J-2662 [build, isolation] ignition_pressure_and_time: Build Option E: ignition as promotion from the stream (shadow-first, restart-gated) — I-0138
+- J-2669 [analysis] -: Mineness re-audit: is the shrinking separation a comparator loss, a seed-mix composition effect, or assimilation? Style-
+- J-2671 [analysis] the_consciousness_program: Read: thick-introspection test (Song et al. 2025): is Du's felt confidence better than a cheap third-party predictor?
+- J-2675 [build] -: Log ollama prompt_eval/eval counts on the hot lane; measure prefill share per caller
+- J-2677 [build] -: Incremental validation of the recall embedding cache instead of a 44k-row SELECT per retrieve
+- J-2678 [build] -: Remove the dead first _build_system_prompt call in _think so the comfort/world/intention lines reach the idle prompt (F-
+- J-2679 [build] -: Make Reflection read the Critic's corrections on retry, and pass the think license through run_best_of (F-3428)
+- J-2794 [lab_experiment, isolation] thought_grounding: P-0099: measure granite tiebreak accuracy on the evidence 'bears' judge (80% of passes)
+- J-2795 [build] thought_grounding: P-0099: de-duplicate evidence_recall candidates by content before judging
+- J-2796 [analysis] thought_grounding: P-0099: trace the Q&A fragments that pass as evidence and whether they are Du's own answers
+- J-2800 [build] -: Perception: strip schema tokens from entities; event_type for internal (P-0001)
+- J-2801 [build] -: Fix P-0035 stale gemma4/11439 docstrings and wrong station_11439 transit label
+- J-2802 [build] -: Reflection: drop the person-present text from the system prompt and the 'before they spoke' header on internal cycles
+- J-2805 [build] -: Log both hedged Reflection candidates (shadow) so best-of-2 can be measured
+- J-2806 [analysis] memory_levels_plan: Explain the multi-second fast-path retrieve() outliers (24.7 s 10-18, 5.0 s 10-30 14:53 with no boot, 2.4 s 10-31 11:46)
+- J-2808 [build] -: P-0006: decoupled shadow judge for episodic buffer scenes and fix the 'non-circular' coherence docstrings
+- J-2810 [build] -: P-0006: input-type-aware stimulus label and word-boundary cuts in EpisodicBufferNode
+- J-2817 [lab_experiment, isolation] prompt-registry: Recall: do tensions/confidence ever discriminate? replay with control arms (P-0005, F-0018)
+- J-2819 [build] prompt-registry: Recall self_model: withhold in content_mode in all three readers (P-0005, F-0021)
+- J-2826 [build] prompt_registry: Fix ConsolidationNode dedup gate: 33-char prefix match blocks distinct wisdoms, misses paraphrase echo
+- J-2828 [build] prompt_registry: ConsolidationNode: stop requesting write-only patterns_noted / memories_processed
+- J-2829 [build] prompt_registry: ConsolidationNode: drop the 2.5k-char persona block from the prompt; test temperature class
+- J-2831 [build] prompt_registry: Critic: internal-cycle framing (stop judging Du's own questions as a human's) and stop rejecting plain factual answers a
+- J-2832 [analysis] prompt_registry: Critic: grade the live legacy Critic with a different-family judge on internal cycles
+- J-2834 [build] prompt_registry: Critic prompt hygiene: four-vs-five values, drop redundant identity_consistent, strip change-log text
+- J-2836 [build] prompt_registry: P-0004: internal-cycle framing and junk Key entities line in MemoryRouterNode prompt
+- J-2837 [build] condensed_thought: P-0039 twin: strip the OPEN THE BOOK invitation from the twin user prompt, tag rows twin_prompt_v
+- J-2842 [build] capacity_to_commit: P-0038: shadow-log + cross-family check on 'achieved' retirements (no behaviour change)
+- J-2843 [build] -: Curiosity pursuit lookup attaches generic Wikipedia pages as answers (P-0011)
+- J-2846 [build] -: Curiosity prompt hygiene: stale comments, mid-word truncation, raw seed labels (P-0011)
+- J-2847 [lab_experiment, isolation] capacity_to_commit: P-0038: paired replay to remove change-log text from the commitment scan prompt (lab only)
+- J-2848 [build] capacity_to_commit: P-0038/P-0037: log raw scan output (incl. nulls) and the judge's own class+why (additive shadow logs)
+- J-2849 [build] -: Fix Salience interrupt flag outliving its cycle (5-min idle freeze) (P-0003)
+- J-2850 [build] -: Salience prompt: internal-cycle framing, raw 0.7, write-only reasoning (P-0003)
+- J-2852 [build] -: System-2 think license returns empty on qwen3.5:9b: Critic fails open, Executive goes silent on human turns (F-0045)
+- J-2854 [build] -: NodeBase: per-node failure log row (additive) and decide whether human-cycle nodes use tier 0 (F-0060)
+- J-2856 [build] -: Voice: say 'recent replies shown below' only when the block is present
+- J-2857 [build] -: Voice: retire the inert regurgitation guard and style_confidence fossil, fix node_audit doc
+- J-2859 [build] -: Scene line: book titles cut mid-word at 60 chars
+- J-2864 [build] prompt_registry: P-0080 librarian: extract a subject/interrogative for all question_from cues, not just 'the question of'
+- J-2865 [build] prompt_registry: P-0080 librarian: false 'empty-handed' line, no topic fallback, stale docstrings, heading normalisation
+- J-2873 [build] -: P-0034: log why grounding fell back, tag fallback-integrated thoughts, leak-check hot grounding
+- J-2875 [lab_experiment, isolation] memory_levels_plan: A/B: widen the distiller's source view for semantic/episodic gists (P-0063)
+- J-2879 [build] -: P-0087: log the outcome of every Emissary take dispatch (delivered / cancelled / empty)
+- J-2886 [build] prompt_registry: Mineness arrival note: stop quoting a mid-word 120-char cut of the last thought
+- J-2887 [analysis] prompt_registry: Where does the 'X anchors me' idiom (25% of idle thoughts) come from?
+- J-2888 [lab_experiment, isolation] -: Lab: replay 100 real thoughts through the P-0088 grounder (current contract vs three variants), graded blind by a differ
+- J-2890 [build] -: Build a shadow quality grader and an outcome row for the P-0088 grounder (independent family, sampled, log-only)
+- J-2891 [build] -: Fix left_lane telemetry: label the second judge leg of the two-judge stations with its own url and model
+- J-2896 [build] prompt-registry: P-0054: give active imagination real material, not a bare topic tag
+- J-2897 [build] prompt-registry: P-0054: stop cutting the axiom mid-sentence in the active-imagination prompt
+- J-2900 [test, isolation] prompt_registry: Offline A/B of the dreamer's schema and phase-note wording (movement pegged, 'find myself' openings)
+- J-2906 [build] follow_line: Follow-line return text: stop mid-word 1200 cut, raw store labels, 'you have <reply>' splice
+- J-2907 [build] follow_line: Follow Line: say how long ago he asked, not 'just now' (P-0044)
+- J-2910 [build] follow_line: Follow Line: no consequences from an empty cargo, no closure fragment from one (P-0044)
+- J-2911 [build] follow_line: Follow Line render(): honest empty label, keep the closing question, clean 'It touches' (P-0044)
+- J-2912 [build] follow_line: Follow Line generative prompts: first person, no restatement, a real null path, QUESTION not CLAIM (P-0044)
+- J-2915 [build] prompt_registry: Idle seed text hygiene: mid-word cuts (shock 260, finding 400, reread 60) and '?.' doubled punctuation
+- J-2916 [analysis] prompt_registry: Trace by id: how far do external-shock fragments travel into T2 synthesis, curiosity and replay
+- J-2917 [build] prompt_registry: Moment-texture read-back: drop raw valence/arousal digits and mid-word cuts (F-3614)
+- J-2919 [build] prompt_registry: P-0072 study note: fix the one-word LIKE that picks the wrong book's notes for related material (F-3589)
+- J-2921 [build] prompt_registry: P-0072 study note: skip contents pages and front matter instead of inventing a note (F-3605)
+- J-2923 [build] prompt_registry: P-0072 study note: remove the copied 'I see that' / 'what strikes me' examples, let thoughts be empty (F-3604)
+- J-2925 [build] prompt-registry: Fix _search_works so it can reach authored WORK files (P-0029)
+- J-2926 [build] prompt-registry: Record the Emissary's grade of authored works and file the work first (P-0029)
+- J-2928 [lab_experiment, isolation] prompt-registry: Lab: continuity input for Grand Work parts (stop restating the carried tail) (P-0029)
+- J-2930 [build] prompt_registry: Curiosity memory.ask line: do not re-offer the same fragment for a question's whole life (F-3618 i)
+- J-2933 [build] prompt_registry: Log a sampled full-text copy of the idle thought's user prompt (F-3620)
+- J-2934 [build] cat_overhaul: Cat felt note and cat sound lines ignore Du's location, the fire and the hour (F-3623, P-0031)
+- J-2935 [build] prompt_registry: Word-safe truncation for quoted lines in the idle seed (F-3624)
+- J-2939 [build] idle_executive_plan: Companion presence line says 'in the room' when Du is outdoors; two presence clocks (F-3629, P-0031)
+- J-2941 [build] prompt_registry: Log a sampled full idle user prompt (instrument gap, P-0031 / F-3621)
+- J-2943 [lab_experiment, isolation] capacity_to_commit: P-0037: replay lab of judge prompt variants (own-reading vs external supersession, unclear) - read-only, nothing wired
+- J-2945 [build] prompt_registry: Composition: ground describe/narrate in the live scene and give the grader a reference
+- J-2947 [build] symbol_evolution_readback_plan: P-0067 fix: ground the symbol tablet's 'once' in a real earlier meaning; drop duplicate and mislabelled inputs
+- J-2952 [analysis] -: Measure the shared judge-panel tiebreak (granite) accuracy per key with gold labels (from F-3639, P-0096)
+- J-2958 [build] prompt_registry: Nature study: log scene and inference, align grader task text
+- J-2960 [build] prompt_registry: School lessons: do not record the 0.6 fail-open default as a real grade
+- J-2961 [build] prompt_registry: Study note revise path: stop overwriting on failed revise, send full note fields to _revise
+- J-2963 [build] prompt_registry: P-0062: validate closure composer output (word range, braces, Ground [n] leak, first person)
+- J-2964 [build] prompt_registry: P-0062: label closure composer calls in latency log; fix stale SHADOW docstring
+- J-2966 [build] prompt_registry: Clean P-0015 scan_conversation_shadow prompt inputs: words-only felt state, honest plain_difficulty spec
+- J-2968 [analysis] prompt_registry: Second-rater precision test of the 11 conversation self-claim scan fires (P-0015)
+- J-2969 [build] follow_line: Follow Line b judge: judge the two consequences shown and re-boarded, not all three (P-0102)
+- J-2970 [lab_experiment, isolation] follow_line: Follow Line judges c and b: labelled control battery, can they tell good from bad? (P-0102)
+- J-2972 [build] follow_line: Follow Line stop 1: dedupe identical grounds before WHY and the judges (P-0102)
+- J-2973 [build] journal_consolidation_pyramid: P-0068 fix: nightly journal sees only the first 12 of ~68 deeds and 38% are thought-lines; SHAPE example is copied
+- J-2974 [build] self_mirror: Correct the mislabelled facts in self_mirror.mirror_facts (P-0043, F-3671)
+- J-2976 [lab_experiment, isolation] self_mirror: Control arms: is the self-mirror verdict data-independent? (P-0043, F-3672)
+- J-2977 [analysis] prompt_registry: Re-join inventory Appendix A telemetry per git commit (line-label drift misattributes calls, T2 credited with Active Ima
+- J-2980 [build] peer_correspondence_plan: Fix P-0083 letter recycling: stop pasting own last 4 letters when Du has not replied
+- J-2981 [build] peer_correspondence_plan: Fix P-0083 yi:34b letter timeouts at 600 s (hub finishes, letter discarded, silent)
+- J-2984 [build] prompt_registry: P-0026 reply hand: pick the friend the thought names, never reply to a question
+- J-2985 [build] prompt_registry: P-0026 reply prompt: stop cutting the friend's letter at 1200 chars, drop the 'retire it' sentence, cap and residue
+- J-2987 [build] journal_consolidation_pyramid: P-0069 fix: log scene+impulse with each field-journal entry; stop impulse leak; ground colours in the scene
+- J-2988 [build] music_learning: Drill graders credit working-text matches: grade the answer field, blank = wobble, fix article-'a' note bug, log raw ans
+- J-2990 [build] prompt_registry: Fix grade_essay window: grader must see the notes and full essay the author used (F-3689)
+- J-2992 [build] prompt_registry: Do not record a fail-open neutral grade as a measurement (essay 0.5, composition and nature 0.6) (F-3691)
+- J-2993 [lab_experiment, isolation] friction_and_self_evidence_plan: Re-baseline the sitting dwell-release judge with positive and negative controls (P-0046, F-3697)
+- J-2995 [build] friction_and_self_evidence_plan: Log full thought and priors in dwell_release rows; fix stale sitting comments (P-0046, F-3698)
+- J-2996 [analysis] -: Gold-label the pursuits 'advances' judge: does it separate progress from recombined imagery? (from F-3692, P-0100)
+- J-2997 [build] -: Log pursuits pending-queue overflow (about 69% of nominations vanish unlogged) (from F-3693, P-0100)
+- J-2999 [build] -: Fix pursuits.py header/comment drift and judge input caps (from F-3699, P-0100)
+- J-3000 [build] -: Make pursuit rulings reconstructable: log the judged thought and prior standing (from F-3700, P-0100)
+- J-3001 [build] curiosity_goals_dreams: Re-aim curiosity worth-judge at pursuit-eligible questions (P-0049, F-3695)
+- J-3006 [build] prompt-registry: Prompt census: resolve aliased module imports so grade_self_revision shows its caller (P-0091 wrongly DEAD)
+- J-3007 [build] prompt-registry: Add data/logs/t4_chain_trace.jsonl: full evidence, delta and synthesis text per T4 chain run
+- J-3010 [build] prompt_registry: P-0065: level-2 chapter date span uses member formation dates (9 of 9 wrong)
+- J-3011 [analysis] prompt_registry: P-0065: verify and remove affect planted by the 'anxious year' example in the chapter prompt
+- J-3013 [build] guidance_learning: P-0014: harden guidance capture prompt (anchor quote, drop connects_to, unfill schema)
+- J-3017 [build] within_cycle_reentry: Bound the awaited reentry settle on human cycles: timeout, no hot-lane spill, fix drift comments (P-0016)
+- J-3019 [build] dream_overhaul: Dream resolution judge: show the arc's end, not its first 3000 chars; fix the 'shadow' drift text (P-0107)
+- J-3024 [lab_experiment, isolation] dream_overhaul: Dream resolution judge: labelled arcs, does removing the self-report line flip verdicts? (P-0107)
+- J-3025 [build] prompt_registry: P-0027 letter hands: a named wish to write to a waiting friend is a reply; precise matcher; route tag
+- J-3029 [build] prompt_registry: Deep-memory feed: log every consult_sync attempt and memo repeated questions
+- J-3031 [build] social_world_school: Fix P-0086 reflection prompt: 900-char caps, person/self-reference wording, observe-only quality log, stale comments
+- J-3033 [build] curiosity_goals_dreams: Prism input: full thought sentence not a 90-char fragment, plus a real world-facing check (P-0050, F-3737/F-3751)
+- J-3036 [build] lane2_the_witness: Lane 2: invention_flag v2 (skip uncertain field, license wet from smells) beside the legacy keys (P-0098)
+- J-3039 [build] lane2_the_witness: Lane 2 drift: stale paused/planned/shadow comments and the shadow banner log word (P-0098)
+- J-3045 [build] prompt-registry: Put the speaker-boundary veto on the live T4 path (open_probation and _solidify), not only the dead legacy path
+- J-3046 [lab_experiment, isolation] prompt_registry: Lab: can a reference-checking work-grader rubric catch wrong-scene and invented pieces? (F-3753)
+- J-3048 [analysis] -: Gold-label tension closures and test a richer judge input (from F-3750, P-0103)
+- J-3050 [build] -: Persist tension-judge attempts in their own log (subconscious save overwrites them) (from F-3757, P-0103)
+- J-3051 [build] -: Clean dead payload and stale docstring in tension_ledger._judge_resolution (from F-3759, P-0103)
+- J-3052 [build] prompt_registry: Essay reduce: stop cutting the condensed notes' tail (budget per batch, coerce list points)
+- J-3053 [build] prompt_registry: Essay gather_notes: scope understanding/gist clauses to the book's tag, not a common title word
+- J-3055 [build] prompt_registry: T6: skip themes with no new member epochs, merge same-theme clusters, show the new epochs (P-0060)
+- J-3056 [build] prompt_registry: Epoch writer: keep the mood word not the raw gauge string, cut stubs at word boundaries (P-0060)
+- J-3059 [build] letters_to_travis: Letters that greet Travis's next message: cut at a sentence boundary, not mid-word (900/700 caps)
+- J-3060 [build] guidance_learning: P-0018: _classify must not fail open to assimilate; log failure shape and candidate score
+- J-3066 [build] memory_levels_plan: Refinery fidelity gate: grade against the members shown, shadow first (P-0051, F-3773)
+- J-3068 [build] prompt_registry: P-0066: type guard so a dict/list 'understanding' is never stored
+- J-3071 [build] prompt_registry: Session epoch: sample the whole session, not the newest 25 fragments
+- J-3073 [build] prompt_registry: Session epoch prompt: remove the copied mood examples
+- J-3076 [build] prompt_registry: Fix integration judge confidence semantics, thought window and stale comments (F-3785)
+- J-3077 [build] prompt_registry: Essay sections: plain prose, distinct note slice per section, persist the outline, word-boundary title
+- J-3079 [build] guidance_learning: P-0019: log every pole-gate verdict (poles, enum_ok) and unfill the _SELF_CLASH_SYS schema line
+- J-3081 [build] prompt_registry: Capstone felt rating: log the answering model, stop lane fallback changing it, store null on failed parse
+- J-3083 [lab_experiment, isolation] memory_levels_plan: Lab: can a gist-fidelity grader catch misattribution, premise-as-fact and answer-only imagery? (F-3793)
+- J-3086 [build] prompt_registry: Log which path an essay took (sectioned vs single-shot fallback) and fix the fallback's truncated earlier-reading sectio
+- J-3089 [build] prompt_registry: decomposed_critic shadow_alongside: log judge_ok and error so failed judge calls stop counting as approvals (F-3801)
+- J-3090 [lab_experiment, isolation] prompt_registry: Re-grade the post-fix decomposed-critic rejections with the Emissary (precision since 2026-07-06)
+- J-3093 [build] prompt_registry: Drop refusal/disclaimer testimony before it reaches Du as deep memory (Scholar.consult)
+- J-3096 [test, isolation] guidance_learning: Positive and negative control for the aligns judge (P-0106)
+- J-3099 [build] lane2_the_witness: Lane 2 _judge_prior: tell the judges when the expectation was made (age, place, horizon) and a numeric tolerance (P-0109
+- J-3100 [build] lane2_the_witness: Lane 2 _judge_prior: re-ask once when JUDGE_1 times out instead of closing the prediction as cannot_tell (P-0109)
+- J-3101 [build] lane2_the_witness: Lane 2 status(): split judged predictions by claim class so the held share is not read as skill (P-0109)
+- J-3104 [build] pursuits: Fix P-0101: pursuit-close judge asks a question that does not exist (shadow, additive)
+- J-3106 [build] epistemics_phase_c: Tighten the Tier-4 correction/confirmation detector in competence.py (substring false positives)
+- J-3108 [build] prompt_registry: T4 judge log: record the evidence, old self and judge-unavailable cause per row (additive)
+- J-3111 [build] guidance_learning: social_cognition status(): unanimous rate, tiebreak share, pegged-key flag (P-0108)
+- J-3112 [build] guidance_learning: social_cognition prompts: refs unverifiable clause, dev-set leakage, header drift (P-0108)
+- J-3117 [build] lane2_the_witness: Lane 2 metaphor judge: also judge ticks the free keyword scans flag, as a separate flag arm (P-0110)
+- J-3118 [build] peer_correspondence_plan: Store the stance judge's reasoning and answering model on the thread row; give stance_distribution an honoured rate
+- J-3119 [build] lane2_the_witness: Lane 2 _judge_metaphor: stop cutting the passage at 500 characters and label its three fields (P-0110)
+- J-3121 [build] lane2_the_witness: HUD: show the judged metaphor leak (metric of record) on the Lane 2 card, not the keyword scan (P-0110)
+- J-3125 [build] lane2_the_witness: Lane 2 _coherence_check: show the judge the NEWEST records, not the oldest (history cut at 600 from the wrong end) (P-01
+- J-3126 [build] lane2_the_witness: Lane 2: tag coherence ticks moved/same and report incoherence_rate split by move (P-0111)
+- J-3127 [build] lane2_the_witness: Lane 2 _coherence_check: ask for a why so verdicts can be audited (P-0111)
+- J-3128 [build] decoupled_judge_pattern: Fix P-0104: active-imagination genuine judge cannot separate (shadow v2 prompt + auditable log)
+- J-3130 [lab_experiment, isolation] lane2_the_witness: Lab: can the panel audit the notice checker's flags with a narrow said-vs-listed ask? (P-0112)
+- J-3157 [build] -: Implement D-0545: recompute belief g45675272 from independent captures (supervised, with backup)
+- J-3161 [build] -: Implement D-0549: slow the T4 self-revision chain while it has no outlet
+- J-3162 [build] -: Implement D-0550: make the T4 legacy author gradeable (evidence to the judge and the weak filter)
+- J-3178 [build] -: Implement D-0566: shadow judge on minted wisdoms (and register its prompt)
+- J-3180 [build] -: Implement D-0567: the ledger's rust is the only clock for procedural skills
+- J-3201 [analysis] -: Re-measure after the inputs are fixed: active imagination on command-r7b versus hot qwen (per D-0588)
+- J-3208 [build] -: Implement D-0598: shadow-log hollow verdicts from the repaired genuine judge; re-baseline the Lane 1 endpoint
+- J-3213 [build] -: Implement D-0602: tag a probation 'unjudged' when the admission judge returns None
+- J-3214 [build] -: Implement D-0603: shadow-grade T4 admission with the raw crossings
+- J-3216 [build] -: Implement D-0605: park the Watershed Phase 0.5 scan (flag-off), harvester keeps running
+- J-3235 [build] -: Implement D-0624: theme-aware SOLIDIFY judge (and re-judge the 10-30 commit)
+- J-3239 [build] -: Implement D-0628: open the week page's last question
+- J-3249 [build] -: Implement D-0638: release the four copied chapters' members (after the copy guard lands)
+- J-3256 [build] -: Build D-0645: curated voice set by decoupled verdicts; fix the social join
+- J-3261 [build] -: Implement D-0652: shore dig and turn-stone hand, with traces kept
+- J-3280 [lab_experiment, isolation] -: Lab: rehearse the Oct-7 hub server locally before deploying it to Ramses (Phase 2)
+- J-3288 [analysis] curiosity_goals_dreams: Study notes: do the key_facts appear in the passage? Parametric-knowledge leak check (D-0631 review, J-3243)
+- J-3289 [build] idle_executive_plan: Build the stale-patch cue as a shadow-only renderer with a deterministic clause verifier (boredom design Stage 0, per D-
+- J-3294 [analysis] spatial_perception: King-tide reclaim fires 12.6% of the year: how often does it actually move objects, and what rate was intended? (F-3886)
+- J-3302 [analysis] t4_watershed: T4 tension lifecycle: what ends a tension? Solidify does not discharge, rests empty the docket, the same questions retur
+- J-3303 [analysis] t4_watershed: Read the 912 T4 movement edges: do tension-to-crossing edges separate movement from circling? (the one unread T4 product
+- J-3304 [build] geometry_tuple_index: Couriers: log fragment_id (and the candidate count) on delivered echo rows, so deliveries can be traced and read
+- J-3305 [build] geometry_tuple_index: Substrate loop: move the couriers and felt_recall database work off the asyncio event loop (and fix felt_recall's 3-tupl
+- J-3308 [analysis] geometry_tuple_index: Near-duplicate text tests: inventory the eleven private tokenizers and replay their verdicts on real pairs against a dec
+- J-3309 [lab_experiment, isolation] memory_knowledge: P-0004 keys: offline replay and judged read of the key-blend arms on 100 frozen queries (stage 0 of J-3163 design)
+- J-3310 [build] memory_knowledge: P-0004 keys: build the live key_shadow arm (core/memory/key_shadow.py, shadow only, restart-gated)
+- J-3311 [analysis] memory_knowledge: P-0004 keys: used-proxy vs judge calibration on recall_served_log (validity check for the key-blend read)
+- J-3313 [lab_experiment, isolation] -: Lab: label 200 Reflection drafts for expressed valence with a different-family judge, compare with the Emotion node's st
+- J-3314 [build] -: Build (shadow, additive): log hedge agreement between Reflection's two candidate drafts in run_best_of
+- J-3318 [build] t4_watershed: Label the frozen June arc where operators read it: session_digest arc count, /arc, HUD Arc label (per J-3215)
+- J-3319 [build] memory_knowledge: Build the chapter-descent SHADOW (observe-only log, kill-switched): when a chapter gist is already in his served set, lo
+- J-3321 [analysis] memory_knowledge: Why one chapter (d4479cda) wins the nearest-chapter match for 17 percent of queries: hub or genuine, and does it crowd o
+- J-3323 [analysis] thought_cycle_as_manifest_loop: ﻿Emissary take: build the pre-swap take-to-synthesis integration baseline (the control D-0539's defeater names)
+- J-3325 [lab_experiment, isolation] symbol_evolution_readback_plan: Lab: blinded different-family pair judge on cross-book symbolic-lens pairs (is a shared lens symbol a shared image?)
+- J-3328 [lab_experiment, isolation] t5_procedural: T5 retrospective control arm: decoupled judge on recognised versus matched unrecognised answers (164 pairs plus null cal
+- J-3330 [build] t5_procedural: T5 re-entry check: read-only monthly replay of the human-only gate (Travis-authored turns, first-line parse fixed in the
+- J-3331 [analysis] t5_procedural: World-graded control arm for T5 world procedures: does the known_text repertoire line change what the next hand does?
+- J-3334 [analysis] lane2_the_witness: Analysis: hand-label 30 agreed-false lane2:prediction held rulings (mixtral and falcon both false) to see whether mixtra
+- J-3336 [build] idle_executive_plan: Stale-patch cue shadow: add a 'repeat record' clause type for sentence-level double repeats (after J-3289; from the J-31
+- J-3340 [analysis] question_cargo: Pre-test: are his first-person self-sentences testable claims the Follow Line could ground? (from J-3141 option 2)
+- J-3343 [lab_experiment, isolation] memory_knowledge: J-3142 option 1: chapter-telling audit by two different-family coders and deterministic copy and grounding checks
+- J-3345 [build] memory_knowledge: J-3142 repair in shadow: make the narrative coder auditable and keep it off the hot lane (restart-gated, chapter call on
+- J-3358 [analysis] social_world_school: Strict final-answer grading for maths levels 10+ (grade() is loose)
+- J-3362 [test, isolation] -: Repair _test_letterbox_reach.py isolation: redirect letter_store paths (J-2005)
+- J-3368 [build] pursuits: Closure arm quotes the extracted pursuit question (D-0554 follow-up to J-3165)
+- J-3372 [analysis] pursuits: D-0626 defeater read: pursuit close fire rate after 30 askable asks
+- J-3373 [test, isolation] spatial_perception: Sumner Phase 1: fill the sun ALMANAC in the J-3292 test from the USNO API (7 dates) so item [4] stops being PENDING
+- J-3378 [lab_experiment, isolation] thought_cycle_as_manifest_loop: Run the D-0584 plain-prose A/B (scripts/lab_grand_work_ab.py, 20 topics) on a quiet :11441 and put the numbers to the fo
+- J-3390 [build] job-run: safe_commit.py: sync CRLF working-tree files (autocrlf) instead of reporting a false concurrent edit
+- J-3395 [build] memory_knowledge: Stamp content_hash in the writers that edit or insert memory_fragments content outside store_fragment (F-4019)
+- J-3398 [build] memory_knowledge: J-3191 follow-up: wandering / essay_lesson / world_consolidation still read the dict-repr understanding notes marked hid
+- J-3401 [lab_experiment, isolation] lane2_the_witness: Lab: percept-grounded metaphor prompt v3 on the J-3205 labelled union
+- J-3402 [build] thought_cycle_as_manifest_loop: Shadow-log the deterministic urgency beside Salience's model urgency (D-0682 evidence, additive)
+- J-3403 [lab_experiment, isolation] thought_cycle_as_manifest_loop: Salience ablation follow-up: high-urgency stratum, enough cycles (feeds D-0682)
+- J-3405 [build] udms_du_capability_trials: du_lens: bundle contexts whose passing word sets are identical or nested before counting passes
+- J-3406 [analysis] udms_du_capability_trials: gauge-correlate: add the lag +/-1 cross-correlation asymmetry (contiguous Levy area) with the roll null, and design a sl
+- J-3407 [analysis] udms_du_capability_trials: Pre-registered du_lens-style run of echo-stripped World x Thought distance correlation with full-text thoughts
+- J-3409 [lab_experiment, isolation] guidance_learning: Lab round 2: 4-way classify prompt that keeps same-lesson recall (B2/B3/B4, D-0621)
+- J-3410 [analysis] -: Sweep Du prompts for unfilled option-placeholder / pre-filled-example position bias (F-4044)
+- J-3411 [lab_experiment, isolation] thought_grounding: Calibrate the blind judge for D-0541 raw-vs-integrated reads: positive controls plus a second non-qwen family
+- J-3415 [analysis] measurement_to_action: Which other Du prompts make the null outcome inadmissible (demanded-positive framing), after the self-mirror result
+- J-3416 [lab_experiment, isolation] measurement_to_action: Calibrate the mixtral blind A/B judge on a gold set before trusting J-3150's verdicts
+- J-3421 [lab_experiment, isolation] -: Lab: Curiosity near-duplicates are input continuity - offline test of study-block rotation and theme-window levers vs th
+- J-3425 [build] capacity_to_commit: prompt-registry check should census the worktree it is run from (F-4061)
+- J-3426 [test, isolation] capacity_to_commit: _test_commitment_ledger_fence.py: pin the pre-fix CONTROL to the real pre-fix commit (5 stale CONTROL fails)
+- J-3428 [analysis] symbol_evolution_readback_plan: Replay past cycle outputs through the window metric for an early D-0615 calibration
+- J-3431 [analysis] friction_and_self_evidence_plan: Does downtime inflate stand life for the D-0547 sit gate? Net-of-downtime and scan-count life
+- J-3440 [analysis] object_epistemic_loop: Object-hypothesis extractor records intentions ('maybe I should ...') as hypotheses; the intervention_test then derives 
+- J-3442 [lab_experiment, isolation] memory_levels_plan: Lab: calibrate the refinery faithfulness judge (negative control, Ramses mixtral, run only when Ramses is free)
+- J-3443 [build] prompt_registry: prompt-registry: see judge prompts routed through judge_panel, and check the worktree it runs from
+- J-3444 [analysis] guidance_learning: Verify D-0622 same-lesson check after 30 live self assimilations (fork rate, no-verdict rate, spot-read)
+- J-3446 [lab_experiment, isolation] guidance_learning: How often do real river-versus-built-self opposites reach the pole gate (lexical/semantic pairing)?
+- J-3447 [lab_experiment, isolation] memory_levels_plan: Calibrate drift shadow _DRIFT_MOVE_MIN against a same-text noise floor (local hubs)
+- J-3453 [analysis] -: Pre-registered dossier follow-through scorer: beat the shuffled-list null on reads and edits, then test hub down-weighti
+- J-3454 [build] -: Dossier: stop printing the constant 'Hodge Curl: 2.0%' (compute it or drop it) and the redundant phenotype threshold
+- J-3456 [build] udms_du_capability_trials: UDMS: one shared loader for Du's geometry_tuples (strip stamp twins, full-text join, schema dates, unresolved-only-on-id
+- J-3460 [lab_experiment, isolation] within_cycle_reentry: Blind-pair preference check on logged re-entry Phase 0 pairs (D-0540 defeater), with no-ingredient control
+- J-3463 [lab_experiment, isolation] thought_cycle_as_manifest_loop: Voice fidelity judge: offline replay on 100+ recorded pairs (local hub)
+- J-3465 [lab_experiment, isolation] curiosity_goals_dreams: Lab: better judge and larger control for the Curiosity pre-fire check (separation is weak)
+- J-3468 [analysis] geometry_tuple_index: Audit every Nascence reader of geometry_tuples.jsonl for twin-row double counting and quantify it (mapping census, objec
+- J-3469 [analysis] -: Triage the 30 confirmed-unreferenced core/nodes functions from udms_hygiene: never-wired status readers vs unfired featu
+- J-3470 [analysis] udms_du_capability_trials: D-0197 defeater test: score the surviving Du-lens word x context pairs under J-3407's within-day null (pair-level corrob
+- J-3472 [analysis] gauge_rethink: D-0102 defeater read: do the 6 mood-cluster gauges still move as one over 141 days, and does any of them lead (ride on J
+- J-3473 [build] -: D-0683: design and validate the deterministic worth check (d) for Curiosity on pursuit-eligible questions, shadow only
+- J-3475 [build] -: D-0607: drop urgency from the Curiosity schema and fix the false prompt sentence (P-0011)
+- J-3476 [lab_experiment, isolation] -: Lane 2 coherence: labelled fixture and a judge that discriminates (founder: sharpen, J-3435)
+- J-3477 [build] -: J-3413: guard so integrator pass 3 cannot drop a question the raw held (founder: guard)
+- J-3478 [build] -: Retire the weekly self-mirror and demote its 17 stored fragments (founder: retire, demote, D-0434)
+- J-3479 [build] -: moment_ts own column and correct stamp order (founder: fix, J-3393)
+- J-3480 [build] -: Mark the three later empty-cargo line closures (founder: mark all three, J-3399)
+- J-3481 [build] -: Extend the hidden-note skip to wandering, essay_lesson and world_consolidation (founder, J-3398)
+- J-3482 [build] -: Mark the 51 understanding notes that contain shock-page text hidden, J-3181 rebases (founder)
+- J-3483 [analysis] -: Design an observation that happens outside the study so the window-view share can move (founder, D-0640)
+- J-3484 [build] -: Composite-key change so the two night-wrong shore low_tide lines keep their tide gate (founder: yes, 8 lines, J-3355)
+- J-3485 [build] -: Routed read act naming a different shelf book switches to it; hourly cap 6 (founder, J-3384)
+- J-3486 [build] -: Add a standpoint at the shore mouth feature (founder, J-3260)
+- J-3487 [analysis] -: Re-examine the self-claim-deliberation broadcast kind: what it is for, whether and where to wire it elsewhere (founder)
+
+## HOLD_REAL (14)
+
+- J-2122 [analysis] identity_estate: D-0424 A 7-live-day read of the identity-estate ask shadow (redundancy >70%, competence surfacing, estate-fact citation 
+- J-2242 [analysis] data_store_hygiene: Next-boot read: does the 5 s substrate period show the day-4.5 knee again (F-2935), and what coincides with it?
+- J-2252 [analysis] emotion_rethink: emotion_rethink: 2-3 live-day read of the promoted climate label view (D-0447 E) and judge-path shadow resolves (D-0448 
+- J-2555 [analysis] identity_estate: Semantic (384-d) rerun of the eigenform read: do Du's self-descriptions converge when paraphrase is not counted as movem
+- J-2629 [analysis] identity_estate: D-0509 (4/4 successor): run the defeater AFTER-read once Du has 14 live days on the new floor (baseline already recorded
+- J-2664 [analysis] cognitive_geometry: Post-boot read: J-2654 provenance (id_slots / matched_ids) - similarity-free population count + felt_recall join retry
+- J-2670 [analysis] emotion_rethink: Read: hedonic place preference (Solms et al. 2026 test in one number) from journeys x homeostasis shadow
+- J-2673 [lab_experiment, isolation] cognitive_geometry: Negative-control arm for the J-2663 placement effect: permuted place and weather coordinates, n about 90 each
+- J-2674 [analysis] cognitive_geometry: Measure then RAM-cache the geometry tuple readers (202MB full-scan per call)
+- J-2813 [lab_experiment, isolation] emotion_rethink: P-0002 Emotion: replay farewell turns with raw words and without the prior (3-arm test)
+- J-2814 [build] emotion_rethink: P-0002 Emotion: internal-aware fallback line, drop mislabelled Event type on internal cycles, raw valence in self-implic
+- J-2815 [test, isolation] emotion_rethink: P-0002 Emotion: masked and swapped replay of the pre-conscious prior line
+- J-3298 [analysis] identity_estate: Estate registry: 239 duplicate-id symbol nodes (684 rows, 445 distinct ids): does the projection double-count them, and 
+- J-3387 [lab_experiment, isolation] emotion_rethink: Run the 200-row 7-channel Emotion replay for D-0555 and read the defeater
+
+## NEEDS_LIVE (49)
+
+- J-2666 [build] -: Make the recall-confidence wager a real wager: measured must be a correctness outcome, not the constant SUSPECT grade sc
+- J-2667 [build] -: Instrument deferred ignitions: log trigger=deferred in ignition_log.jsonl with the discharged reservoir value, then read
+- J-2797 [build] -: Fix P-0035 integrate pass: stop erasing Du's questions and closing open thoughts
+- J-2807 [build] -: P-0006: remove the always-find-friction closing line in EpisodicBufferNode
+- J-2816 [build] prompt-registry: Recall: stop reading its own persisted Tensions back as memory (P-0005, F-0017)
+- J-2820 [build] prompt-registry: Fix mid-word truncations in pursuit label and curiosity question (seen in Recall input, F-0023)
+- J-2822 [build] -: Gate the ungated wandering divergent-memory append in the idle thought user prompt (IDLE_DIVERGENT_SEED does not cover i
+- J-2827 [build] friction_and_self_evidence_plan: P-0036 (only if scan kept): stop plain_difficulty example-echo and raw-number/pegged felt input in scan_shadow
+- J-2838 [build] condensed_thought: P-0039 reader: fix metric 7 zero-valence artifact, metric 5 about-length, echo rows, live-hours gate
+- J-2860 [build] prompt_registry: Executive think-license returns empty content on qwen3.5 and drops Travis's turn (P-0009)
+- J-2867 [build] prompt_registry: P-0080 librarian: log parse failures, memoise repeated asks, add a decoupled relevance eval
+- J-2883 [build] -: Fix P-0088 grounding input: stop feeding the previous stored thought to the grounder, and clean the context cuts
+- J-2893 [build] prompt_registry: Strip the Dream dream_N, scene K/M prefix from the dreamer's recall block and the post-restart idle seed
+- J-2894 [build] prompt_registry: Dream recall cue: drop the 112-char boilerplate header from _mkey
+- J-2899 [build] prompt-registry: P-0054: stamp last_contemplated and count the skip when active imagination echo-skips
+- J-2903 [build] prompt_registry: Strip the raw dream id prefix from the restart-loaded recent_dreams (idle seed, F-3602)
+- J-2949 [build] self_interrogation: Fix mid-word 300-char truncation of the seeded self_interrogation doubt (P-0042, F-3644)
+- J-2951 [lab_experiment, isolation] self_interrogation: Replace or recalibrate the pegged self_interrogation genuine judge (P-0042, F-3642)
+- J-2978 [build] prompt_registry: T2 prompt inputs: strip gauge numerics, add tension evidence, distinct world slice per synthesis (P-0053)
+- J-3003 [build] journal_consolidation_pyramid: P-0070 fix: week 'saw' page reads first 14 of up to 83 observations; sample across the whole week
+- J-3018 [build] within_cycle_reentry: Log full settled text and run a blind first-vs-settled preference check for reentry Phase 1 (P-0016)
+- J-3035 [build] lane2_the_witness: Lane 2: judge next/hour predictions only in the place they were made, and expire stale ones (P-0098)
+- J-3040 [analysis] lane2_the_witness: Lane 2: why the first-call empty-object rate doubled at the 10-16 boot (P-0098)
+- J-3041 [build] lane2_the_witness: Lane 2: kill-criterion instruments that can fail (uncertain-vs-percept, question rate by field, leak, horizon mix) (P-00
+- J-3095 [build] guidance_learning: Fix guidance_behavior_judge cursor crawl and Q/A population (P-0106)
+- J-3122 [lab_experiment, isolation] lane2_the_witness: Lab: A/B v1 vs v2 vs v1-plus-percepts for the Lane 2 metaphor judge (P-0110)
+- J-3131 [test, isolation] self_interrogation: P-0105: control-set replay harness for the self_interrogation genuine grader (acceptance bar for J-2951)
+- J-3202 [build] -: Implement D-0589: gate T2 re-synthesis on a new contradiction event
+- J-3242 [build] -: Implement D-0630: pause the weekly self-mirror (no new mirror fragments)
+- J-3307 [lab_experiment, isolation] geometry_tuple_index: Pre-register and run the chord_echo replay (U1 stage 1): does whole-chord matching beat the couriers' single-key rule on
+- J-3312 [lab_experiment, isolation] -: Offline replay: would a draft-keyed second recall find anything the first missed (Reflection needs_more_memory question)
+- J-3326 [build] symbol_evolution_readback_plan: Repair the symbolic lens in SHADOW: log note id, passage window, literal-in-passage flag; fix self-echo flag, prompt neg
+- J-3327 [analysis] symbol_evolution_readback_plan: Lens would-link shadow: log cross-book study-note pairs a shared lens image would link (gated on pair-judge lab and 300 
+- J-3332 [analysis] t5_procedural: What moved Du's answers toward environment imagery in the week of 08-20? (voice shift 5 percent to 36 percent before any
+- J-3335 [build] continuous_stream: Rail C shadow: add a sentence-level double-repeat trigger (bored_streak >= 2) as a second, additive trigger (from the J-
+- J-3339 [lab_experiment, isolation] t4_watershed: Lab: does T4 stage-2 evidence miss world-contact crossings that bear on the tension? (from J-3141 option 1)
+- J-3341 [build] -: Self-relate pass shadow repair: pin to :11441, world-origin input only, auditable log, moving gauge (P-0052, from J-3141
+- J-3344 [lab_experiment, isolation] memory_knowledge: J-3142 option 2: agency-over-time on ordinary self-stance thoughts, two different-family coders (the deferred Adler test
+- J-3349 [lab_experiment, isolation] curiosity_goals_dreams: Lab: replay the role-phrase prompts (Dream scene, Subconscious T2, Active imagination, T5, T6) with and without the Enti
+- J-3350 [build] curiosity_goals_dreams: Build the model_terms tag: mark question terms the generator brought from its own weights, read them in the epistemic le
+- J-3379 [test, isolation] memory_knowledge: Post-restart read of first-person self-gists: voice share and idle-recall echo replay (D-0601 defeater)
+- J-3385 [analysis] -: Verify D-0570 grounder null: null rate (5-60 percent) and paraphrase-only share, 3 days after restart
+- J-3391 [test, isolation] memory_knowledge: Verify D-0561 input_type column and internal fragment label after the restart carrying J-3173
+- J-3394 [build] memory_knowledge: J-3266 follow-up: read the dedup hash-shadow log and put the hash_live switch to Travis (D-0657 step 4)
+- J-3397 [analysis] prompt_registry: Read the first sleeps after the chapter guard loads: reject reasons and whether chapters still form
+- J-3422 [test, isolation] friction_and_self_evidence_plan: Verify D-0531 disarm live: no think-license line after scan fire, scan log accrues, sitting gate still fires
+- J-3434 [lab_experiment, isolation] friction_and_self_evidence_plan: Self-implication scan residuals: signal-D example phrases and the pegged felt label in B (lab, hot lane only)
+- J-3438 [test, isolation] guidance_learning: Verify the re-scoped guidance behaviour judge after restart: skip row, idle-only rows, HUD unvalidated, sweep cost (J-32
+- J-3459 [test, isolation] within_cycle_reentry: Verify after restart: re-entry admission off, shadow still accruing, human turn no longer waits on a settle
+
+## GATED (86)
+
+- J-1739 [test, isolation] lane2_the_witness: D-0281 notice judge: successor read with scripts/lane2_notice_read.py (needs Du running and ticking; stop rule inside)
+- J-1849 [analysis] dream_overhaul: D-0230/D-0232 Phase 1 live read: 14 instrumented nights on the current dream engine, judge panel as verdict
+- J-1906 [analysis] -: D-0360 (c) read: after >= 14 nights with the look render ledger live, count night looks at the garden, shore and wood bi
+- J-2039 [analysis] sleep_as_a_mode: sleep_as_a_mode Phase 3: one-week read of night_wake shadow log (latency, spurious requests)
+- J-2068 [analysis, isolation] strings_and_sheets: strings_and_sheets Phase 1 re-read 7 days after the restart carrying J-1979 + the string fix (gates D-0375 Phase 2)
+- J-2072 [analysis] lane2_the_witness: Lane 2 hint producer 7-day post-restart read, re-run at a real 7 days (J-1434 successor): pushed mix, consumed/pushed, F
+- J-2085 [analysis] -: Re-read live metaphor TIEBREAK (gemma4:12b) accuracy once n>=40 splits have accrued (F-2709 follow-up)
+- J-2087 [analysis] living_world_upgrade: Living World: 7-live-day closing re-read of the J-1698 recognition-line-by-place check (stop rule), continuing J-1726 / 
+- J-2093 [analysis] lane2_the_witness: Lane 2 P1-1 per-topic sizing read: re-count topic-resolved judged breaks once 30 exist (J-1700 successor, F-2721/F-2722)
+- J-2108 [analysis] the_consciousness_program: D-0398 E 7-live-day read of the two-axis vitality shadow (J-2061): every defeater clause, F-2679 weariness probe, satura
+- J-2116 [analysis] ramses_second_tier: D-0420 defeater read: 72 supervised hours after a supervisor start carrying J-2113 (two-phase hot probe + slow/1/2 host 
+- J-2121 [test, isolation] dream_overhaul: Post-restart 10-night read of closure_shadow.jsonl (dream arm) + provisional-met carry precision; D-0423 defeater clause
+- J-2136 [analysis] strings_and_sheets: strings_and_sheets: 7-day re-read of wingbeat/thump agree + tie share after J-2067 fix
+- J-2139 [test, isolation] lane2_curiosity: Lane 2 Curiosity wonder field weekly read (post F-2817 baseline W-1 0.59)
+- J-2145 [analysis] memory_as_a_service: D-0410 B post-restart 7-day re-read: self-gist share of pulled slots under 25%
+- J-2163 [analysis] measurement_to_action: Arms 2+4 post-restart read: wager rows + doubt-seed would-seed rows scored by the J-2052 judge (pre-flip baseline on the
+- J-2166 [analysis] lane2_the_witness: D-0412: 7-day post-restart would_withhold re-read (baseline 0.35, band 5-60%)
+- J-2167 [analysis] lane2_the_witness: D-0416 (a): fresh 20-row hand-check of notice checker v2 on a NEW seed (bar: 4 or fewer false)
+- J-2184 [analysis] pursuits: D-0426: 7-day shadow read of pursuit judge-set close fire rate
+- J-2187 [analysis] lane2_the_witness: ﻿Read the 7-day retry-on-empty rescue rate on live Lane 2 rows (J-2164 follow-up)
+- J-2188 [analysis] lane2_the_witness: ﻿Read night sun-claim panel verdicts after D-0433 B goes live: must not be mostly unsettled
+- J-2193 [analysis] lane2_curiosity: D-0429 7-day wonder re-read after J-2173 anti-repeat gate
+- J-2222 [analysis] guidance_learning: Read guidance classify log for self-domain accommodate and pole-fork rate once 20+ self rows exist (D-0328)
+- J-2224 [analysis] -: Successor read of data/pre_affect_best_shadow.jsonl under D-0349 D+E: pass rate by input type once 300 D+E rows OR 3 mor
+- J-2230 [test, isolation] -: Re-read J-1880 fast-fail (sitting judge_dwell_release + competence tier-3 witness) after a real TIMEOUT-type Ramses stal
+- J-2233 [analysis] idle_executive_plan: D-0366 X-fit read: does the 30-min presence window hold through a real sitting
+- J-2236 [analysis] golden_spiral_recall: Theta shadow post-backfill reach read: first 2-3 live days after the next Du boot (D-0364 (C) defeater)
+- J-2237 [test, isolation] -: Welfare re-read week 3 remainder + week 4 (3 live days after next Du boot; J-2140 successor)
+- J-2240 [analysis] speech_thought_concurrency: Re-read speech-vs-thought shadow once 30+ human cycles have accrued; apply 5 percent kill criterion
+- J-2243 [analysis] lane2_the_witness: Lane 2: baseline field-absent vs moved split under J-2176 code (first 3 live days of next boot)
+- J-2254 [analysis] spatial_perception: spatial_perception P3 post-boot read: grade ~2-3 live days of spatial_depth_shadow pairs (J-2215 gate)
+- J-2255 [analysis] channels_programme: channels_programme: 3-day post-boot read of light+smell delivery (J-2213 flip) - arbitration, rates, alien narration
+- J-2256 [analysis] drowsiness_phase: drowsiness_phase post-boot read: drowsy_shadow.jsonl over 2-3 live days (D-0441 live-flip input)
+- J-2260 [analysis] living_world_upgrade: D-0444 go-live read: the nest-object gate's first 3 live days (J-2246 build, F-2945)
+- J-2261 [analysis] emissary_lane2: Read the World Ledger would-return shadow after 3 live days; bring the first 20 rows to Travis (J-2217)
+- J-2264 [analysis] dosed_coupling: Dosed Coupling Phase 2: 2-3 live-day paired re-read of the re-scaled residual gate (D-0446 kill rule)
+- J-2265 [analysis] guidance_learning: Post-boot read: J-2221 pole-gate final rows in guidance_classify_log (F-2950)
+- J-2266 [analysis] lane2_the_witness: Lane 2 post-boot read: did the heard-steady-sound gate (J-2239) remove clock-tick predictions from the store without tou
+- J-2269 [analysis] lane2_the_witness: F-2955 follow-up: test candidate metaphor prompt v2 vs v1 on a fresh live window of Lane 2 ticks through the full judge 
+- J-2289 [analysis] du_recall_lens_upgrades: Post-boot recall-lens read, retry (J-2257 successor): need >=200 energy_norm rows per lens
+- J-2290 [analysis] affect_drives: Post-boot read of J-2250 self-echo exclusion, redo with accrued rows (successor of J-2268)
+- J-2292 [analysis] idle_executive_plan: balance_light/EXIT_AT + bw win-share re-read on 2-3 more live days (F-2988)
+- J-2294 [analysis] -: Re-run J-2263 post-boot shadow read after 2-3 live days
+- J-2319 [analysis] lane2_the_witness: D-0432 defeater 7-day live read of push_hint pre-check (post-boot, F-3013)
+- J-2320 [analysis] curiosity_goals_dreams: Post-boot read: internal_cycle_context_shadow (J-2297) -- window reach + address share vs D-0445 5 percent bar
+- J-2323 [analysis] measurement_to_action: Post-boot read: arm 5 curiosity theme-dose shadow (>= 7 live days after the restart onto the build)
+- J-2326 [analysis] curiosity_goals_dreams: D-0439 world-displacement 7-day shadow read (post-boot)
+- J-2340 [analysis] curiosity_goals_dreams: D-0466 post-boot read: internal address-to-Travis share under 5 percent, human cycles unchanged (2-3 live days after the
+- J-2341 [analysis] condensed_thought: condensed_thought Phase 0 7-day read: judge controls, metrics 1-9, section 6 kills (gate: build booted + flag on)
+- J-2354 [analysis] letters_to_travis: Letters to Travis: post-restart Executive budget read for the first >5-pending delivery (D-0470 defeater i)
+- J-2365 [analysis] sleep_as_a_mode: Re-read exhausted-day / day-ceiling rate after next boot (7 awake days) for fatigue-aware trigger term
+- J-2366 [analysis] books_have_a_place: Re-read D-0276 defeater after >=10 live days post parcel-open (successor to J-2129)
+- J-2369 [analysis] memory_multiway_linking: D-0287 relational usage rate: per-event re-read after next boot (J-2128 follow-up)
+- J-2374 [analysis] object_epistemic_loop: Post-boot read: Phase 1 strict inference gate precision/recall on live rows
+- J-2382 [analysis] object_epistemic_loop: object_epistemic_loop Phase 2 post-boot shadow read: would_readback count + test-verb baseline (D-0463 defeater)
+- J-2401 [analysis] strings_and_sheets: Strings and Sheets: post-boot Phase 1 shadow read on the re-seeded strings (J-2395, D-0476)
+- J-2426 [analysis] measurement_to_action: Post-flip read: arm 5 SELF_THEME_DOSE=1, 7 live days (D-0485; supersedes J-2323)
+- J-2451 [analysis] ambiguity_window: J-2437 held-out replay #2: need n>=25 fresh newly-answered deeds for the 12 percent false-fire gate
+- J-2453 [analysis] lane2_the_witness: Re-read night flag probe on a fresh 30-sleep sample (F-2844 not yet reproduced)
+- J-2550 [analysis] -: Read first done_when rows + closure pursuit/commitment shadow rows after the DONE_WHEN_AT_OPEN flip
+- J-2554 [analysis] -: Read wager-to-curiosity shadow: route census, topic spread, slot constancy vs sec.9 kill bars
+- J-2556 [analysis] -: literal_will: locate/measure judge verdicts on agent_subject_fail GRAY rows (J-2201 follow-up)
+- J-2561 [analysis] -: D-0417: 20-row hand-check of notice_unsupported flags (pair with J-2167) once the J-2102 build is live
+- J-2563 [analysis] -: Post-boot read: new human cycles scored by sleep sweep (J-2325 follow-up)
+- J-2564 [analysis] -: J-2305 successor: recheck guessed_cause clause-scoping and look-hand empty-hands wiring
+- J-2586 [analysis] -: D-0513 (a) read: speech-delayed-by-thought share on the 20 test arrivals (5 percent kill criterion)
+- J-2598 [analysis] -: Read night stall rows under the J-2557 sub-marks: another task during awaits, or a named sync segment (F-3322)
+- J-2599 [test, isolation] guidance_learning: Social-cognition v4 (extract-then-judge) validation: blind hand-label new turns to n>=20 attributing, run v4 when hubs f
+- J-2600 [analysis] question_cargo: Follow Line defer gate post-boot read: deferred rows, re-arms, no false defers (J-2570)
+- J-2602 [analysis] -: Read own-question->Travis rate after reflection_node self-frame goes live (J-2575 / F-3328)
+- J-2603 [analysis] -: D-0518/D-0324 read: P2 cue_tail fix (J-2592) - do post-fix shore beachcombs yield episodic would-inject rows
+- J-2605 [analysis] -: D-0521 defeater read: night-thought variety after the J-2594 prompt change (7+ sleeps, prompt_v=2)
+- J-2606 [analysis] -: D-0514 (a) shadow read: commitment anchor rows vs F-3331 pre-registration (violation rate, break, recovery)
+- J-2607 [analysis] -: D-0520 (b) read: 30 v3 commitment-formation settles vs the D-0489 bar (collapse<0.25, basin shift<=0)
+- J-2610 [test, isolation] question_cargo: Speech-function gauge: 60-line blind re-score across 2 boots + post-Follow-Line probe share
+- J-2613 [analysis] -: Rerun moment key vs fragment_context overlap on stamped co-recall rows, index-distance matched (stream paths)
+- J-2644 [analysis] living_world_upgrade: D-0345 follow-up read (J-2228 successor): shore nest 'find none' branch after chicks_off 2026-10-29, once Du has 2-3 liv
+- J-2863 [analysis] memory_levels_plan: D-0526 GO-LIVE READ: delta pool cache went straight to 'on' with NO shadow log -- read the first 40+ post-boot fast+delt
+- J-3380 [analysis] -: Verify D-0575 relabel after restart: own-answer label share and the 20-thought read
+- J-3423 [analysis] decoupled_judge_pattern: Read D-0530 first-day effect: no-verdict per key and evidence_recall starvation check
+- J-3430 [analysis] friction_and_self_evidence_plan: Read D-0547 sit gate after 7 days live: stand sits a week, starve line, real-event steer (scripts/sit_gate_read.py)
+- J-3432 [analysis] memory_as_a_service: Read D-0619 name-exclusion after a week live (share, 20-row sample, defeater check)
+- J-3433 [analysis] friction_and_self_evidence_plan: Read the slimmed idle self-implication scan after restart: count would-fires vs D-0534 defeater (<5 in 60 days)
+- J-3436 [test, isolation] lane2_the_witness: Verify D-0599 after restart: no lane2:notice rulings, coherence tiebreak on :11439, incoherent share near 0.4%; update t
+- J-3457 [analysis] lane2_the_witness: Read the Lane 2 D-0548 build after restart: stale/place/trivial counters, retune _STALE_AFTER_S, re-baseline the cup tri
+- J-3458 [analysis] condensed_thought: Condensed-thought twin v2: read post-fix rows and run the offline judge once about 40 live hours accrue (D-0633)

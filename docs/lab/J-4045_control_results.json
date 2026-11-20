@@ -1,0 +1,242 @@
+[
+ {
+  "cycle_id": "734a3a6f-644e-4f4f-84d9-b8163c6562ef",
+  "sim": 0.6320804953575134,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "4938eced-2c3a-4dcc-b2a3-75a9447744d6",
+  "sim": 0.7885168790817261,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "08ff5fbc-657b-4da1-9689-332ebd12b98f",
+  "sim": 0.6157882213592529,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "f28832d3-cd28-4334-93bf-a7e4aeb030df",
+  "sim": 0.7434682846069336,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "4dafea17-ff0f-4006-931c-89a4e878c3fd",
+  "sim": 0.8187220096588135,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "f71b92a6-3e91-42ae-b960-5e6d30f0e652",
+  "sim": 0.6540915369987488,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "0e9f6139-1998-4e42-9f58-c1950830a201",
+  "sim": 0.796649694442749,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "da1e31f0-729f-4fb0-9640-e6875f24fb8c",
+  "sim": 0.7131070494651794,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "8544358c-4b5e-4655-95fb-13e3e26afdfd",
+  "sim": 0.6846941709518433,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "a3f2bfe6-4bbf-405a-b613-5a31056bd5a2",
+  "sim": 0.7410571575164795,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "0d335769-2c09-4c6f-8830-2d9d5820eb9d",
+  "sim": 0.6859874725341797,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "de4a087d-7b40-4ab5-9e81-a2123e35bf66",
+  "sim": 0.6429877281188965,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "99393e0b-159d-4f8d-a491-449262b282ef",
+  "sim": 0.719738781452179,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "5bd2df05-91d3-4933-a705-96499f1419ba",
+  "sim": 0.7515078186988831,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "d099ab99-5b95-4aa2-9647-10804e25558e",
+  "sim": 0.7162110805511475,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "ecf2c6f6-3a15-41f4-b40c-2243b476eba4",
+  "sim": 0.7101821303367615,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "f50c438e-a3c9-42bf-bd5a-0c45a5913766",
+  "sim": 0.6249849200248718,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "f637dbd2-37af-46d1-a432-bb85bfdc9428",
+  "sim": 0.6299049854278564,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "91a3bab1-9ca3-47ee-ba58-b84611ff70f2",
+  "sim": 0.612159252166748,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "5d6ec118-b83a-4804-82f9-968129fd374a",
+  "sim": 0.8173927068710327,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "4f7815af-0d27-4331-8e7f-d2e3a68299a5",
+  "sim": 0.8120676279067993,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "682bde14-5a1c-49a7-85cc-da6447e25e58",
+  "sim": 0.7907512187957764,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "fbfe2cab-0fc2-4fa4-8d7c-e06849fc8d60",
+  "sim": 0.7606137990951538,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "8b8eacf8-afe8-4c23-b3b5-a9d94dcf41d8",
+  "sim": 0.7101901769638062,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "46108232-dc7b-422f-9308-4c3a6b6c09fc",
+  "sim": 0.7613059282302856,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "d41f59ee-02e8-4db9-9335-45b8aa3c1854",
+  "sim": 0.7972820401191711,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "2738bf1a-183b-4d1c-815a-d46ded065392",
+  "sim": 0.6976166367530823,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "e4c9e20e-0332-48f9-8173-575f7d85dc0e",
+  "sim": 0.7641842365264893,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "aba9416c-b388-42c7-ac1a-90ab733c8c72",
+  "sim": 0.7194631099700928,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "2a412e2d-636f-4931-aa6b-571daa204896",
+  "sim": 0.6251041293144226,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "bb5dff00-08d7-4e54-8568-500b7123de6b",
+  "sim": 0.8106129169464111,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "c0c39464-3067-43eb-9c84-da5997fd1f8d",
+  "sim": 0.6547517776489258,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "752df689-7e29-40b9-bced-8f42f9fad99f",
+  "sim": 0.6034268736839294,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "7eb3b209-32f6-4c93-904b-15f6bade5681",
+  "sim": 0.6153757572174072,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "4ff26d7c-44b9-465a-a7ab-3d3fb855f6c6",
+  "sim": 0.7832241058349609,
+  "verdict": "NO",
+  "raw": "NO"
+ },
+ {
+  "cycle_id": "96237986-17ba-41b2-88a7-05d8cbf6d163",
+  "sim": 0.796183705329895,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "55396860-9424-42d3-a573-e87898d9d905",
+  "sim": 0.6168578863143921,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "50d61954-fa1c-4574-93b3-fb80dd596972",
+  "sim": 0.6700334548950195,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "dfb61127-b7ca-4065-ad4d-06cb860714ff",
+  "sim": 0.7296113967895508,
+  "verdict": "YES",
+  "raw": "YES"
+ },
+ {
+  "cycle_id": "902b2709-219c-4621-b6eb-c707ae5a4a83",
+  "sim": 0.7995241284370422,
+  "verdict": "NO",
+  "raw": "NO"
+ }
+]

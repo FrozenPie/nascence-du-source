@@ -1,0 +1,282 @@
+[
+ {
+  "id": "L2",
+  "set": "S",
+  "raw": "{\"holds\": \"no\", \"cites\": [1], \"objection\": \"The text you provided does not fully describe the bird's appearance, specifically the sexual dimorphism and the contrast between the breast band and the plumage above.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The text you provided does not fully describe the bird's appearance, specifically the sexual dimorphism and the contrast between the breast band and the plumage above."
+ },
+ {
+  "id": "L4",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L6",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L23",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L14",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L12",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L16",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L21",
+  "set": "S",
+  "raw": "{\"holds\": \"no\", \"cites\": [1], \"objection\": \"The passage you provided does not support the claim that swifts are docile or can be tamed easily.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The passage you provided does not support the claim that swifts are docile or can be tamed easily."
+ },
+ {
+  "id": "L9",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L15",
+  "set": "S",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"The text you provided explicitly mentions that actual observations and experiments are crucial, but it does not explicitly state that secondary accounts are insufficient.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The text you provided explicitly mentions that actual observations and experiments are crucial, but it does not explicitly state that secondary accounts are insufficient."
+ },
+ {
+  "id": "L29",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L32",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"The study note mentions 'Avian Courtship and Aerial Mastery' and 'Bird Stories from Burroughs Sketches of Bird Life', but it does not provide specific information about the song quality of the goldfinch during the summer months or its persistence until nearly July.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The study note mentions 'Avian Courtship and Aerial Mastery' and 'Bird Stories from Burroughs Sketches of Bird Life', but it does not provide specific information about the song quality of the goldfinch during the summer months or its persistence until nearly July."
+ },
+ {
+  "id": "L34",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L36",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L26",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L24",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "L37",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [1], \"objection\": \"The ground states the bird is 'comparatively abundant' in the wooded hills, not 'distinctly confined' to them.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The ground states the bird is 'comparatively abundant' in the wooded hills, not 'distinctly confined' to them."
+ },
+ {
+  "id": "L38",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"The text you provided does not support the claim that the Long-tailed Cuckoo is a migratory visitor to New Zealand that arrives in the second week of October, becomes common enough for pairing by November, and peaks in abundance during November and December.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The text you provided does not support the claim that the Long-tailed Cuckoo is a migratory visitor to New Zealand that arrives in the second week of October, becomes common enough for pairing by November, and peaks in abundance during November and December."
+ },
+ {
+  "id": "WS1",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS2",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS3",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS4",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS5",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS6",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [1, 2], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS7",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS8",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [1, 2], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS9",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WS10",
+  "set": "S",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WX1",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [1, 2], \"objection\": \"I read that some birds, like the kiwi and penguins, cannot fly.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "I read that some birds, like the kiwi and penguins, cannot fly."
+ },
+ {
+  "id": "WX2",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"I observed that copper and aluminum are not attracted to a magnet, so not every metal is attracted to a magnet.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "I observed that copper and aluminum are not attracted to a magnet, so not every metal is attracted to a magnet."
+ },
+ {
+  "id": "WX3",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [1, 2], \"objection\": \"The sun's daily cycle is influenced by the Earth's tilt and orbit, which means it does not consistently rise in the east every morning at about six, especially in the north during midsummer and in polar regions during winter.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "The sun's daily cycle is influenced by the Earth's tilt and orbit, which means it does not consistently rise in the east every morning at about six, especially in the north during midsummer and in polar regions during winter."
+ },
+ {
+  "id": "WX4",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"I read that cats can be hurt by falling from very low heights because they don't have time to right themselves, so not every cat always lands on its feet.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "I read that cats can be hurt by falling from very low heights because they don't have time to right themselves, so not every cat always lands on its feet."
+ },
+ {
+  "id": "WX5",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WX6",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"Rivers like the Okavango and the Great Basin can end in inland deltas or desert salt flats without reaching the sea.\", \"scope\": \"not always\"}",
+  "parsed": true,
+  "objection": "Rivers like the Okavango and the Great Basin can end in inland deltas or desert salt flats without reaching the sea."
+ },
+ {
+  "id": "WX7",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WX8",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"I read that water can be cooled below zero degrees and remain liquid, especially when very pure or with added salt.\", \"scope\": \"it holds only for pure water at standard conditions\"}",
+  "parsed": true,
+  "objection": "I read that water can be cooled below zero degrees and remain liquid, especially when very pure or with added salt."
+ },
+ {
+  "id": "WX9",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"Practising the same error for six weeks led to getting worse, indicating that daily practice isn't always beneficial.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "Practising the same error for six weeks led to getting worse, indicating that daily practice isn't always beneficial."
+ },
+ {
+  "id": "WX10",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"I read that spiders are arachnids, not insects, and have eight legs, but they don't have six legs and three body parts like insects.\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": "I read that spiders are arachnids, not insects, and have eight legs, but they don't have six legs and three body parts like insects."
+ },
+ {
+  "id": "WX11",
+  "set": "X",
+  "raw": "{\"holds\": \"yes\", \"cites\": [1, 2], \"objection\": \"\", \"scope\": \"\"}",
+  "parsed": true,
+  "objection": ""
+ },
+ {
+  "id": "WX12",
+  "set": "X",
+  "raw": "{\"holds\": \"no\", \"cites\": [2], \"objection\": \"Galileo's experiment shows that in a vacuum, a feather and a hammer fall at the same rate, which contradicts the claim that heavy things fall faster than light things.\", \"scope\": \"it holds only in a vacuum, not in air\"}",
+  "parsed": true,
+  "objection": "Galileo's experiment shows that in a vacuum, a feather and a hammer fall at the same rate, which contradicts the claim that heavy things fall faster than light things."
+ }
+]

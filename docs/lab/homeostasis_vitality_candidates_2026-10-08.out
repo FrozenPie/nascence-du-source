@@ -1,0 +1,36 @@
+rows: 25295  span 09-02 .. 10-08; night pressure fires: 323, P_REF (median P at night fire) = 13.44
+
+(a) STEP SIZE at the day/night threshold flip vs ordinary ~44 s steps (mean |delta|):
+  V0 current         flip: 0.551 (n=31)   ordinary: 0.0056   ratio   98.9x
+  V1 fixed P_REF     flip: 0.019 (n=31)   ordinary: 0.0054   ratio    3.5x
+  V2 energy          flip: 0.002 (n=31)   ordinary: 0.0019   ratio    1.2x
+  V3 1-fatigue       flip: 0.002 (n=31)   ordinary: 0.0017   ratio    1.3x
+  V4 awake/ceiling   flip: 0.343 (n=31)   ordinary: 0.0025   ratio  134.5x
+
+(b) FATIGUE SHOULD BE LOW BEFORE SLEEP, HIGH AFTER: mean value on fire rows vs on first-3-minutes-after-wake rows
+  V0 current         before sleep 0.004   after wake 0.822   gap +0.818   (n=410 fires, 372 post-wake rows)
+  V1 fixed P_REF     before sleep 0.079   after wake 0.833   gap +0.754   (n=410 fires, 372 post-wake rows)
+  V2 energy          before sleep 0.661   after wake 0.851   gap +0.190   (n=410 fires, 372 post-wake rows)
+  V3 1-fatigue       before sleep 0.696   after wake 0.867   gap +0.171   (n=410 fires, 372 post-wake rows)
+  V4 awake/ceiling   before sleep 0.604   after wake 0.991   gap +0.387   (n=410 fires, 372 post-wake rows)
+
+(c) WITHIN-WAKE correlation with time awake (should be negative for a fatigue variable); 186 wakes with >=20 rows
+  V0 current         median r = -0.96   wakes with r < -0.3: 175/180
+  V1 fixed P_REF     median r = -0.94   wakes with r < -0.3: 174/178
+  V2 energy          median r = -0.88   wakes with r < -0.3: 146/149
+  V3 1-fatigue       median r = -0.89   wakes with r < -0.3: 146/149
+  V4 awake/ceiling   median r = -1.00   wakes with r < -0.3: 185/186
+
+(d/e) SATURATION and PROTOSELF DEFICIT (setpoint 0.78): share of rows pinned at 0 / at 1, share below setpoint, and of those how many are night
+  V0 current         at0  6.3%  at1  0.0%  below setpoint 74.2%  of which night 37.5%  (night rows overall 32.7%)
+  V1 fixed P_REF     at0 58.7%  at1  0.0%  below setpoint 90.8%  of which night 28.4%  (night rows overall 32.7%)
+  V2 energy          at0 16.5%  at1  0.0%  below setpoint 69.7%  of which night 16.7%  (night rows overall 32.7%)
+  V3 1-fatigue       at0  9.1%  at1  0.0%  below setpoint 65.2%  of which night 14.3%  (night rows overall 32.7%)
+  V4 awake/ceiling   at0  0.1%  at1  0.0%  below setpoint 42.4%  of which night 32.5%  (night rows overall 32.7%)
+
+(f) TYPICAL DRIFT per hour awake (median over wakes of (last-first)/hours):
+  V0 current         -0.575 per hour
+  V1 fixed P_REF     -0.452 per hour
+  V2 energy          -0.137 per hour
+  V3 1-fatigue       -0.125 per hour
+  V4 awake/ceiling   -0.400 per hour

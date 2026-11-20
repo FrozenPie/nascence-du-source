@@ -1,0 +1,1 @@
+docs/lab/J-3719_data/r1_cr7b.jsonl (452 rows) and r1_cr7b_report.json (per-station flips/McNemar), run by scripts/lab_j3719_ramses_run.py cr7b ... 30; partial mixtral rows in docs/lab/J-3719_data/r1_mixtral.jsonl (23 rows); hub probe timings from this session.

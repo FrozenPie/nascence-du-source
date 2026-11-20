@@ -1,0 +1,33 @@
+{
+ "job": "J-3460",
+ "ts": 1794752722.5444896,
+ "judge": "gemma4:12b",
+ "reviser": "gemma4:12b",
+ "n_rows": 24,
+ "seed": 3460,
+ "caveat": "pairs are 200-char heads; settled_full not on disk",
+ "arms": {
+  "logged": {
+   "n": 24,
+   "unparsed": 0,
+   "revised_preferred": 0,
+   "share": 0.0,
+   "margin_vs_50": -0.5,
+   "wilson95": [
+    0.0,
+    0.138
+   ]
+  },
+  "control": {
+   "n": 23,
+   "unparsed": 1,
+   "revised_preferred": 11,
+   "share": 0.478,
+   "margin_vs_50": -0.022,
+   "wilson95": [
+    0.292,
+    0.67
+   ]
+  }
+ }
+}
